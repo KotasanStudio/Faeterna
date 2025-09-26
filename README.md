@@ -1,1 +1,1 @@
-# Faeterna v0.0
+# Faeterna
