@@ -41,20 +41,20 @@ Explora un mundo mágico consumido por la decadencia, enfréntate a criaturas co
 ---
 
 ## 📁 Estructura del Proyecto
-/assets/               → Sprites, tilesets, efectos, UI... <br>
-/scenes/               → Escenas del juego (.tscn) y niveles.<br>
-/script/               → Scripts GDScript/C#.<br>
-/.vscode/              → Configuración opcional del editor.<br>
-.gitattributes         → Normalización de archivos.<br>
-/.gitignore            → Archivos ignorados por Git.<br>
-Faeterna.csproj        → Configuración del proyecto C# (si existe).<br>
-Faeterna.sln           → Solución del proyecto.<br>
-/bosqueTutorial.tscn   → Escena tutorial.<br>
-/icon.svg              → Icono del proyecto.<br>
-project.godot          → Archivo principal de Godot.<br>
-LICENSE                → Licencia MIT.<br>
-README.md              → Documento actual.
 
+- `/assets/` → Sprites, tilesets, efectos, UI...
+- `/scenes/` → Escenas del juego (.tscn) y niveles.
+- `/script/` → Scripts GDScript/C#.
+- `/.vscode/` → Configuración opcional del editor.
+- `.gitattributes` → Normalización de archivos.
+- `/.gitignore` → Archivos ignorados por Git.
+- `Faeterna.csproj` → Configuración del proyecto C# (si existe).
+- `Faeterna.sln` → Solución del proyecto.
+- `/bosqueTutorial.tscn` → Escena tutorial.
+- `/icon.svg` → Icono del proyecto.
+- `project.godot` → Archivo principal de Godot.
+- `LICENSE` → Licencia MIT.
+- `README.md` → Documento actual.
 
 ---
 
