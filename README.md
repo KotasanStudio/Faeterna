@@ -134,16 +134,40 @@ Puedes usarlo, modificarlo y compartirlo libremente con atribución.
 
 <div align="center">
 
-[![Colaborador 1](https://images.weserv.nl/?url=github.com/BaenaArnau.png&h=100&w=100&fit=cover&mask=circle)](https://github.com/BaenaArnau)
-**Arnau Baena Perez**
-
-[![Colaborador 2](https://images.weserv.nl/?url=github.com/MrWezh.png&h=100&w=100&fit=cover&mask=circle)](https://github.com/MrWezh)
-**Wenkai Zhou**
-
-[![Colaborador 3](https://images.weserv.nl/?url=github.com/HaolinZheng.png&h=100&w=100&fit=cover&mask=circle)](https://github.com/HaolinZheng)
-**Haolin Zheng**
-
-[![Colaborador 4](https://images.weserv.nl/?url=github.com/SrG640.png&h=100&w=100&fit=cover&mask=circle)](https://github.com/SrG640)
-**Sergi Flores Varo**
+<table>
+  <tr>
+    <td align="center" width="200">
+      <a href="https://github.com/BaenaArnau">
+        <img src="https://github.com/BaenaArnau.png" width="100px" style="border-radius:50%;">
+        <br />
+        <sub><b>Arnau Baena Perez</b></sub>
+      </a>
+    </td>
+    <td align="center" width="200">
+      <a href="https://github.com/MrWezh">
+        <img src="https://github.com/MrWezh.png" width="100px" style="border-radius:50%;">
+        <br />
+        <sub><b>Wenkai Zhou</b></sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="200">
+      <a href="https://github.com/HaolinZheng">
+        <img src="https://github.com/HaolinZheng.png" width="100px" style="border-radius:50%;">
+        <br />
+        <sub><b>Haolin Zheng</b></sub>
+      </a>
+    </td>
+    <td align="center" width="200">
+      <a href="https://github.com/SrG640">
+        <img src="https://github.com/SrG640.png" width="100px" style="border-radius:50%;">
+        <br />
+        <sub><b>Sergi Flores Varo</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 </div>
+
