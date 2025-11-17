@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnsxupfi2s4fd"]
+
+[ext_resource type="Texture2D" uid="uid://bgmgx2r3ff3m1" path="res://assets/Liria/Idle.png" id="1_6ictp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j1070"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgnll"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlv2p"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i20ei"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3eeq"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wy0p5"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dr0k0"]
+atlas = ExtResource("1_6ictp")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6p2g6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgnll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlv2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i20ei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3eeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wy0p5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dr0k0")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_j1070")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_6p2g6")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.3717294
