@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
 ![Engine](https://img.shields.io/badge/Motor-Godot%204-blue)
 ![License](https://img.shields.io/badge/Licencia-MIT-green)
-![Contributions](https://img.shields.io/badge/Contribuciones-Abiertas-brightgreen)
+![Contributions](https://img.shields.io/badge/Contribuciones-Cerradas-red)
 ![Version](https://img.shields.io/badge/Versión-Pre--Alpha-orange)
 
 </div>
@@ -41,18 +41,18 @@ Explora un mundo mágico consumido por la decadencia, enfréntate a criaturas co
 ---
 
 ## 📁 Estructura del Proyecto
-/assets/               → Sprites, tilesets, efectos, UI...
-/scenes/               → Escenas del juego (.tscn) y niveles.
-/script/               → Scripts GDScript/C#.
-/.vscode/              → Configuración opcional del editor.
-.gitattributes         → Normalización de archivos.
-/.gitignore            → Archivos ignorados por Git.
-Faeterna.csproj        → Configuración del proyecto C# (si existe).
-Faeterna.sln           → Solución del proyecto.
-/bosqueTutorial.tscn   → Escena tutorial.
-/icon.svg              → Icono del proyecto.
-project.godot          → Archivo principal de Godot.
-LICENSE                → Licencia MIT.
+/assets/               → Sprites, tilesets, efectos, UI... <br>
+/scenes/               → Escenas del juego (.tscn) y niveles.<br>
+/script/               → Scripts GDScript/C#.<br>
+/.vscode/              → Configuración opcional del editor.<br>
+.gitattributes         → Normalización de archivos.<br>
+/.gitignore            → Archivos ignorados por Git.<br>
+Faeterna.csproj        → Configuración del proyecto C# (si existe).<br>
+Faeterna.sln           → Solución del proyecto.<br>
+/bosqueTutorial.tscn   → Escena tutorial.<br>
+/icon.svg              → Icono del proyecto.<br>
+project.godot          → Archivo principal de Godot.<br>
+LICENSE                → Licencia MIT.<br>
 README.md              → Documento actual.
 
 
@@ -101,7 +101,7 @@ Su capacidad aumenta con mejoras del Árbol.
 
 ## 🛠️ Tecnologías
 
-- Godot 4.x  
+- Godot 4.5  
 - GDScript / C#  
 - Sistema de animación 2D  
 - Tilesets y colisiones personalizadas  
