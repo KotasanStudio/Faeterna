@@ -9,8 +9,6 @@
 [ext_resource type="Script" uid="uid://bqdyvw1r6p6lv" path="res://scripts/Maquinas de estados/Movimiento/Estados/JumpingMovementState.cs" id="7_e68lg"]
 [ext_resource type="Script" uid="uid://cqr06fk3t2li3" path="res://scripts/Maquinas de estados/Movimiento/Estados/RunningMovementState.cs" id="8_teb3q"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j1070"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_aeewm"]
 atlas = ExtResource("1_6ictp")
 region = Rect2(0, 0, 64, 64)
@@ -99,21 +97,26 @@ animations = [{
 "texture": SubResource("AtlasTexture_ns2cb")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"idle",
 "speed": 8.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dr0k0"]
+radius = 8.0
+height = 25.555557
 
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["Lira"]]
 script = ExtResource("1_dr0k0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_j1070")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6p2g6")
-animation = &"Idle"
-frame_progress = 0.81737304
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+scale = Vector2(1.8, 1.8)
+shape = SubResource("CapsuleShape2D_dr0k0")
 
 [node name="MovementStateMachine" type="Node" parent="."]
 script = ExtResource("3_dr0k0")
