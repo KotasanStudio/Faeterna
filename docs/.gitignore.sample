@@ -1,0 +1,113 @@
+# ==================== GODOT 4 ====================
+# Carpeta de cache de Godot 4
+.godot/
+
+# Importaciones de Godot (se regeneran automáticamente)
+.import/
+*.import
+
+# Compilación de Godot Mono
+mono_assemblies/
+
+# Exports de Godot
+/export/
+/build/
+exported_symbols.txt
+
+# Plataformas específicas (descomenta lo que necesites ignorar)
+# /android/
+# /ios/
+# /web/
+# /windows/
+# /linuxbsd/
+# /macos/
+
+# Backups de escenas y recursos
+*.tscn~
+*.tres~
+
+# ==================== C# / .NET ====================
+# Build output
+/bin/
+/obj/
+/out/
+
+# Binarios compilados
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+
+# NuGet
+packages/
+.nuget/
+
+# ==================== IDE & EDITORS ====================
+# Visual Studio
+.vs/
+*.sln.iml
+*.user
+*.userprefs
+*.suo
+
+# Rider
+.idea/
+
+# VSCode (mantén extensions.json)
+.vscode/
+!.vscode/extensions.json
+
+# Otros editores
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# ==================== OS ====================
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+
+# ==================== DESARROLLO LOCAL ====================
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Temporales
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Testing
+test_results/
+coverage/
+
+# Debug
+debug.log
+*.debug
+
+# ==================== GODOT RUNTIME ====================
+# Datos de usuario (se generan en runtime)
+user://
+crashes/
+save_data/
+*.save

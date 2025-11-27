@@ -1,4 +1,173 @@
-# Godot 4+ specific ignores
+# ==================== GODOT 4 ====================
+# Godot cache, imports, and export directories
 .godot/
-.vscode/
+.import/
+*.import
+export_presets.cfg
+
+# Platform-specific exports
 /android/
+/ios/
+/web/
+/windows/
+/linuxbsd/
+/macos/
+/export/
+/build/
+
+# Godot build artifacts
+exported_symbols.txt
+*.template_release.exe
+*.template_debug.exe
+
+# Godot Mono builds
+mono_assemblies/
+
+# Scene backups
+*.tscn~
+*.tres~
+
+# ==================== C# / .NET ====================
+# Build results and output
+/bin/
+/obj/
+/out/
+/target/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+*.o
+*.a
+
+# NuGet
+packages/
+.nuget/
+*.nupkg
+
+# ==================== IDE & EDITORS ====================
+# Visual Studio
+.vs/
+*.sln.iml
+*.user
+*.userprefs
+*.suo
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VSCode (but keep some workspace files)
+.vscode/
+!.vscode/extensions.json
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim & Neovim
+.vim/
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==================== OS SPECIFIC ====================
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+$RECYCLE.BIN/
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDesktop
+*.app
+
+# Linux
+.directory
+
+# ==================== LOCAL DEVELOPMENT ====================
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+godot-debug.log
+
+# Dependencies (if using package managers)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files and caches
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+~*
+.cache/
+
+# ==================== TESTING & DEBUGGING ====================
+# Test results
+test_results/
+TestResults/
+debug_output/
+*.test
+
+# Debug files
+debug.log
+*.debug
+*.pdb
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# ==================== PROJECT SPECIFIC ====================
+# User-specific settings
+local_settings.json
+user_preferences.json
+
+# Game runtime files (generated at runtime)
+user://
+crashes/
+
+# World/save data that shouldn't be committed
+save_data/
+*.save
+*.save.*
+
+# ==================== DOCUMENTATION ====================
+# Documentation files in root (but keep /docs folder)
+/QUICK_START.md
+/DOCUMENTATION_INDEX.md
+/EXECUTIVE_SUMMARY.md
+/PRACTICES_CHECKLIST.md
+/CONTRIBUTING_GITIGNORE.md
+/SETUP_SUMMARY.md
+/SETUP_VISUAL_DIAGRAM.txt
+/INSTALLATION_COMPLETE.txt
