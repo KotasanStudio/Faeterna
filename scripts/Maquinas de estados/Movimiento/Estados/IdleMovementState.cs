@@ -10,7 +10,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 
         public override async void Ready()
         {
-            _player = (PlayerType)GetTree().GetFirstNodeInGroup("NinjaFrogGroup");
+            _player = (PlayerType)GetTree().GetFirstNodeInGroup("Lira");
             if (!_player.IsNodeReady())
                 await ToSignal(_player, "ready");
         }
