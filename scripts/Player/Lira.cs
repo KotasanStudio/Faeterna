@@ -6,7 +6,7 @@ namespace Faeterna.scripts.Player
 	public partial class Lira : CharacterBody2D
 	{
 		/// <summary>Velocidad horizontal configurada del jugador (px/s).</summary>
-		public const float Speed = 900.0f;
+		public const float Speed = 400.0f;
 
 		/// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
 		public const float JumpVelocity = -500.0f;
@@ -18,8 +18,7 @@ namespace Faeterna.scripts.Player
 		public bool CoyoteAvailable = true;
 
 		public AnimatedSprite2D animatedSprite;
-
-		public override void _Ready()
+        public override void _Ready()
 		{
 			animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		}

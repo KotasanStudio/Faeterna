@@ -14,20 +14,19 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             if (!_player.IsNodeReady())
                 await ToSignal(_player, "ready");
         }
-        
-        /// <summary>
-        /// Al entrar en el estado Idle: establece la animación.
-        /// </summary>
+
+        /// <summary>Al entrar en el estado Idle: establece la animación.</summary>
         public override void Enter()
         {
+            if (_player == null) return;
             _player.SetAnimation("idle");
             _player.MoveAndSlide();
         }
 
         /// <summary>Actualización por frame del estado Idle: decide transiciones en base a input/physics.</summary>
-        /// <param name="delta">Delta en segundos desde el último frame.</param>
         public override void Update(double delta)
         {
+            if (_player == null) return;
             if (!_player.IsOnFloor())
             {
                 GD.Print("Transitioning to falling or jumping state from idle.");
@@ -39,13 +38,15 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         }
 
         /// <summary>Procesa eventos de entrada no manejados cuando estamos en Idle.</summary>
-        /// <param name="ev">Evento de entrada recibido.</param>
         public override void HandleInput(InputEvent ev)
         {
+            if (_player == null) return;
             if (ev.IsActionPressed("move_left") || ev.IsActionPressed("move_right"))
                 stateMachine.TransitionTo("RunningMovementState");
             if (ev.IsActionPressed("jump") && _player.IsOnFloor())
                 stateMachine.TransitionTo("JumpingMovementState");
+            if (ev.IsActionPressed("dash"))
+                stateMachine.TransitionTo("DashMovementState");
         }
     }
 }
