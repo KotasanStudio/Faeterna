@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfndf3mqrnif5"]
+
+[ext_resource type="PackedScene" uid="uid://dno0b8p2pylo4" path="res://scenes/Personajes/liria3D.tscn" id="2_yjqq3"]
+
+[node name="3DDevRoom" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_yjqq3")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)

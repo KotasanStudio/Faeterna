@@ -1,0 +1,110 @@
+[gd_scene load_steps=17 format=3 uid="uid://dno0b8p2pylo4"]
+
+[ext_resource type="Script" uid="uid://cnpi7v1g3mlit" path="res://scenes/Personajes/Liria3d.cs" id="1_k0nqi"]
+[ext_resource type="Texture2D" uid="uid://dg0bwnou06xvy" path="res://assets/Liria/Idle.png" id="2_k0nqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kio6"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_du5bf"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8o1w"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7yyp"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4srx"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jsoq"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvb2u"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmxld"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gq70"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vo26"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jy2ib"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m12i2"]
+atlas = ExtResource("2_k0nqi")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m12i2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kio6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_du5bf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8o1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7yyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4srx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jsoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hvb2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmxld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3gq70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vo26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jy2ib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m12i2")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_omu25"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_k0nqi")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_m12i2")
+animation = &"new_animation"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_omu25")
