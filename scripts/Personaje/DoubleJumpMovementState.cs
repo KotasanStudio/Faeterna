@@ -1,0 +1,66 @@
+using Godot;
+using System;
+using PlayerType = Faeterna.scripts.Player.Lira;
+
+namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
+{
+    public partial class DoubleJumpMovementState : State
+    {
+        private PlayerType _player;
+
+        public override async void Ready()
+        {
+            _player = (PlayerType)GetTree().GetFirstNodeInGroup("Lira");
+            if (!_player.IsNodeReady())
+                await ToSignal(_player, "ready");
+        }
+
+        public override void Enter()
+        {
+            if (_player == null) return;
+            _player.DoubleJumpAvailable = false;
+            _player.SetAnimation("double_jump");
+            GD.Print("Entered DoubleJumpMovementState (double jump)");
+            _player.Velocity = new Vector3(_player.Velocity.X, PlayerType.JumpVelocity, 0f);
+            _player.MoveAndSlide();
+        }
+
+        public override void Update(double delta)
+        {
+            if (_player == null) return;
+            if (_player.Velocity.Y >= 0)
+            {
+                GD.Print("Transitioning to falling state from double jump.");
+                stateMachine.TransitionTo("FallingMovementState");
+            }
+            // Cuando la animación de doble salto termina, pasar a la animación de salto normal.
+            if (_player.animatedSprite != null && _player.animatedSprite.Frame == 5)
+            {
+                GD.Print("Double jump animation finished, transitioning to jump animation.");
+                _player.SetAnimation("jump");
+            }
+        }
+
+        public override void UpdatePhysics(double delta)
+        {
+            if (_player == null) return;
+            if (!_player.IsOnFloor())
+            {
+                Vector3 velocity = _player.Velocity;
+                velocity.Y += PlayerType.Gravity * (float)delta;
+                float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
+                velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
+                velocity.Z = 0f;
+                _player.Velocity = velocity;
+                _player.MoveAndSlide();
+            }
+        }
+
+        public override void HandleInput(InputEvent ev)
+        {
+            if (_player == null) return;
+            if (ev.IsActionPressed("dash"))
+                stateMachine.TransitionTo("DashMovementState");
+        }
+    }
+}
