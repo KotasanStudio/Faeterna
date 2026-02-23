@@ -5,13 +5,11 @@
 
 [node name="Node3D" type="Node3D"]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0429077, 26.666136, 0)
-
 [node name="Nivel1" parent="." instance=ExtResource("2_4qcuw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.27187, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.497369, 2.796297)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.495037, 5)
 current = true
 fov = 118.125
 
@@ -19,5 +17,8 @@ fov = 118.125
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 3.225037, 0)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="CharacterBody3D"]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.14553362, 0.5592594)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.146, 1)
 remote_path = NodePath("../../Camera3D")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.585934, 0.81035876, 0, -0.81035876, 0.585934, 111.42432, 51.39297, 81.63292)
