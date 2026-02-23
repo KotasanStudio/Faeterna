@@ -298,3 +298,13 @@ one_shot = true
 [node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
 wait_time = 0.8
 one_shot = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.146, 1)
+current = true
+fov = 118.125
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73, 2.729649)
+omni_range = 29.99
+omni_attenuation = 0.321
