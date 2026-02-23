@@ -13,12 +13,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.495037, 5)
 current = true
 fov = 118.125
 
+[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73, 2.729649)
+omni_range = 29.99
+omni_attenuation = 0.321
+
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_4qcuw")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 3.225037, 0)
 
 [node name="RemoteTransform3D" type="RemoteTransform3D" parent="CharacterBody3D"]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.146, 1)
 remote_path = NodePath("../../Camera3D")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.585934, 0.81035876, 0, -0.81035876, 0.585934, 111.42432, 51.39297, 81.63292)
