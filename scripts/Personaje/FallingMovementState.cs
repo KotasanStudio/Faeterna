@@ -36,6 +36,12 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                 velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
                 velocity.Z = 0f; // Side-scroller: sin profundidad de movimiento.
                 _player.Velocity = velocity;
+
+                if (move < 0f)
+                    _player.animatedSprite.FlipH = true;
+                else if (move > 0f)
+                    _player.animatedSprite.FlipH = false;
+                
                 _player.MoveAndSlide();
             }
 

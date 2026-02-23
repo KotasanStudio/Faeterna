@@ -28,7 +28,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         public override void Update(double delta)
         {
             if (_player == null) return;
-            if (_player.Velocity.Y >= 0)
+            if (_player.Velocity.Y < 0)
             {
                 GD.Print("Transitioning to falling state from double jump.");
                 stateMachine.TransitionTo("FallingMovementState");
@@ -52,6 +52,12 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                 velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
                 velocity.Z = 0f;
                 _player.Velocity = velocity;
+
+                if (move < 0f)
+                    _player.animatedSprite.FlipH = true;
+                else if (move > 0f)
+                    _player.animatedSprite.FlipH = false;
+
                 _player.MoveAndSlide();
             }
         }

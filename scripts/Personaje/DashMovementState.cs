@@ -49,7 +49,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             // Dirección: input → velocidad actual → derecha por defecto.
             _dashDirection = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
             if (Mathf.Abs(_dashDirection) < 0.1f)
-                _dashDirection = _player.Velocity.X >= 0f ? 1f : -1f;
+                _dashDirection = _player.animatedSprite.FlipH ? -1f : 1f;
 
             _isDashing = true;
             _player.SetAnimation("dash");
@@ -104,7 +104,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             }
             else
             {
-                stateMachine.TransitionTo(_player.Velocity.Y < 0f ? "JumpingMovementState" : "FallingMovementState");
+                stateMachine.TransitionTo(_player.Velocity.Y > 0f ? "JumpingMovementState" : "FallingMovementState");
             }
         }
     }

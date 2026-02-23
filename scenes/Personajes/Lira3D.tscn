@@ -258,8 +258,7 @@ script = ExtResource("1_41i63")
 billboard = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_5rx2b")
-animation = &"run"
-frame_progress = 0.94257426
+animation = &"jump"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.009552002, 0)
@@ -296,5 +295,5 @@ wait_time = 0.2
 one_shot = true
 
 [node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
-wait_time = 0.8
+wait_time = 0.6
 one_shot = true

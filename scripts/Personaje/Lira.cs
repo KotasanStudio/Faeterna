@@ -6,9 +6,9 @@ namespace Faeterna.scripts.Player
 	public partial class Lira : CharacterBody3D
 	{
 		/// <summary>Velocidad horizontal configurada del jugador (px/s).</summary>
-		public const float Speed = 10.0f;
+		public const float Speed = 15.0f;
 
-		/// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
+		/// <summary>Velocidad vertical aplicada al iniciar un salto (positiva = hacia arriba).</summary>
 		public const float JumpVelocity = 20.0f;
 
 		/// <summary>Gravedad usada en los estados aéreos. Equivalente a GetGravity() de 2D.</summary>
