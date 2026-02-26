@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://dphgsnp6uf1uv" path="res://scripts/Personaje/DoubleJumpMovementState.cs" id="12_mjvex"]
 [ext_resource type="Script" uid="uid://csnd5lobmm6k" path="res://scripts/Personaje/DashMovementState.cs" id="13_ivsq2"]
 [ext_resource type="Texture2D" uid="uid://diupbo7hjrfbm" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
+[ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
 
@@ -253,23 +254,46 @@ animations = [{
 radius = 0.171875
 height = 0.7267456
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tghg6"]
+shader = ExtResource("14_tu3mt")
+shader_parameter/fill_amount = 1.0
+shader_parameter/liquid_color = Color(0.5, 0.8, 1, 1)
+shader_parameter/empty_color = Color(0.1, 0.1, 0.15, 1)
+shader_parameter/wave_speed = 2.5
+shader_parameter/wave_strength = 0.015
+shader_parameter/wave_frequency = 12.0
+shader_parameter/highlight_strength = 0.4
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ove30"]
+shader = ExtResource("15_k88eo")
+shader_parameter/fill_amount = 1.0
+shader_parameter/damage_flash = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mjvex"]
+shader = ExtResource("15_k88eo")
+shader_parameter/fill_amount = 1.0
+shader_parameter/damage_flash = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ivsq2"]
+shader = ExtResource("15_k88eo")
+shader_parameter/fill_amount = 1.0
+shader_parameter/damage_flash = 0.0
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k88eo"]
 shader = ExtResource("15_k88eo")
-shader_parameter/hit_effect = 0.0
-shader_parameter/time_scale = 10.0
-shader_parameter/its_on = true
+shader_parameter/fill_amount = 1.0
+shader_parameter/damage_flash = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tu3mt"]
 shader = ExtResource("15_k88eo")
-shader_parameter/hit_effect = 0.550000026125
-shader_parameter/time_scale = 10.0
-shader_parameter/its_on = false
+shader_parameter/fill_amount = 1.0
+shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1223544882 node_paths=PackedStringArray("textureRect", "textureRect2") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1223544882 node_paths=PackedStringArray("_hearts", "_manaBar") groups=["Lira"]]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 script = ExtResource("1_41i63")
-textureRect = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Vida5")
-textureRect2 = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Vida4")
+_hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
+_manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=646032737]
 billboard = 1
@@ -329,44 +353,47 @@ omni_attenuation = 0.321
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=1213877035]
 layer = 10
 
-[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer" unique_id=717314072]
-texture_filter = 1
-offset_left = -9.0
-offset_top = -20.0
-offset_right = 90.0
-offset_bottom = 128.5
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=1695017103]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=1188151916]
+layout_mode = 2
+
+[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=304837102]
+material = SubResource("ShaderMaterial_tghg6")
+layout_mode = 2
+size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=332860234]
-offset_top = 5.0
-offset_right = 89.0
-offset_bottom = 101.0
-theme_override_constants/margin_left = 75
-theme_override_constants/margin_top = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=500794790]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=500794790]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1060747433]
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1060747433]
+material = SubResource("ShaderMaterial_ove30")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=505749267]
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=505749267]
+material = SubResource("ShaderMaterial_mjvex")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=781939487]
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=781939487]
+material = SubResource("ShaderMaterial_ivsq2")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=901438866]
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=901438866]
 material = SubResource("ShaderMaterial_k88eo")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1448049178]
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1448049178]
 material = SubResource("ShaderMaterial_tu3mt")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
