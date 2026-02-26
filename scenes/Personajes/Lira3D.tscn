@@ -1,11 +1,11 @@
-[gd_scene load_steps=44 format=3 uid="uid://dfndf3mqrnif5"]
+[gd_scene format=3 uid="uid://dfndf3mqrnif5"]
 
 [ext_resource type="Script" uid="uid://cfgy1vaghml0m" path="res://scripts/Personaje/Lira.cs" id="1_41i63"]
-[ext_resource type="Texture2D" uid="uid://c104b3b6vq1el" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
-[ext_resource type="Texture2D" uid="uid://bjnhrq3j6bx7o" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
-[ext_resource type="Texture2D" uid="uid://3ggfrlfuloa1" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
-[ext_resource type="Texture2D" uid="uid://dhwy2mjqjhjep" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
-[ext_resource type="Texture2D" uid="uid://dabq5jamxt8vv" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="Texture2D" uid="uid://d4mlm443cbej4" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
+[ext_resource type="Texture2D" uid="uid://dmmjb3lqffebt" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
+[ext_resource type="Texture2D" uid="uid://d0cpl0qv75ay" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
+[ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Maquinas de estados/Movimiento/MovementStateMachine.cs" id="7_5f38a"]
 [ext_resource type="Script" uid="uid://dldhpuejq526n" path="res://scripts/Personaje/IdleMovementState.cs" id="8_vryya"]
 [ext_resource type="Script" uid="uid://bijk16qm8nnhq" path="res://scripts/Personaje/RunningMovementState.cs" id="9_k88eo"]
@@ -13,6 +13,9 @@
 [ext_resource type="Script" uid="uid://dedcu8ga5xbh7" path="res://scripts/Personaje/FallingMovementState.cs" id="11_ove30"]
 [ext_resource type="Script" uid="uid://dphgsnp6uf1uv" path="res://scripts/Personaje/DoubleJumpMovementState.cs" id="12_mjvex"]
 [ext_resource type="Script" uid="uid://csnd5lobmm6k" path="res://scripts/Personaje/DashMovementState.cs" id="13_ivsq2"]
+[ext_resource type="Texture2D" uid="uid://diupbo7hjrfbm" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
+[ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
+[ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -250,61 +253,120 @@ animations = [{
 radius = 0.171875
 height = 0.7267456
 
-[node name="CharacterBody3D" type="CharacterBody3D" groups=["Lira"]]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k88eo"]
+shader = ExtResource("15_k88eo")
+shader_parameter/hit_effect = 0.0
+shader_parameter/time_scale = 10.0
+shader_parameter/its_on = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tu3mt"]
+shader = ExtResource("15_k88eo")
+shader_parameter/hit_effect = 0.550000026125
+shader_parameter/time_scale = 10.0
+shader_parameter/its_on = false
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1223544882 node_paths=PackedStringArray("textureRect", "textureRect2") groups=["Lira"]]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 script = ExtResource("1_41i63")
+textureRect = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Vida5")
+textureRect2 = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Vida4")
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=646032737]
 billboard = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"run"
 frame_progress = 0.94257426
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1255447418]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.009552002, 0)
 shape = SubResource("CapsuleShape3D_kgdcu")
 
-[node name="MovementStateMachine" type="Node" parent="."]
+[node name="MovementStateMachine" type="Node" parent="." unique_id=585810168]
 script = ExtResource("7_5f38a")
 initialState = NodePath("IdleMovementState")
 
-[node name="IdleMovementState" type="Node" parent="MovementStateMachine"]
+[node name="IdleMovementState" type="Node" parent="MovementStateMachine" unique_id=774917635]
 script = ExtResource("8_vryya")
 
-[node name="RunningMovementState" type="Node" parent="MovementStateMachine"]
+[node name="RunningMovementState" type="Node" parent="MovementStateMachine" unique_id=1786892160]
 script = ExtResource("9_k88eo")
 
-[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState"]
+[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState" unique_id=1107087281]
 wait_time = 0.1
 one_shot = true
 
-[node name="JumpingMovementState" type="Node" parent="MovementStateMachine"]
+[node name="JumpingMovementState" type="Node" parent="MovementStateMachine" unique_id=1972559265]
 script = ExtResource("10_tu3mt")
 
-[node name="FallingMovementState" type="Node" parent="MovementStateMachine"]
+[node name="FallingMovementState" type="Node" parent="MovementStateMachine" unique_id=1526483937]
 script = ExtResource("11_ove30")
 
-[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine"]
+[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine" unique_id=1173757790]
 script = ExtResource("12_mjvex")
 
-[node name="DashMovementState" type="Node" parent="MovementStateMachine"]
+[node name="DashMovementState" type="Node" parent="MovementStateMachine" unique_id=550498641]
 script = ExtResource("13_ivsq2")
 
-[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=383662213]
 wait_time = 0.2
 one_shot = true
 
-[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=1478200465]
 wait_time = 0.8
 one_shot = true
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=834097094]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.146, 1)
 current = true
 fov = 118.125
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D"]
+[node name="OmniLight3D" type="OmniLight3D" parent="Camera3D" unique_id=925016277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73, 2.729649)
 omni_range = 29.99
 omni_attenuation = 0.321
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=1213877035]
+layer = 10
+
+[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer" unique_id=717314072]
+texture_filter = 1
+offset_left = -9.0
+offset_top = -20.0
+offset_right = 90.0
+offset_bottom = 128.5
+texture = ExtResource("14_vryya")
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=332860234]
+offset_top = 5.0
+offset_right = 89.0
+offset_bottom = 101.0
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_top = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=500794790]
+texture_filter = 1
+layout_mode = 2
+theme_override_constants/separation = -26
+
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1060747433]
+layout_mode = 2
+texture = ExtResource("14_5f38a")
+
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=505749267]
+layout_mode = 2
+texture = ExtResource("14_5f38a")
+
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=781939487]
+layout_mode = 2
+texture = ExtResource("14_5f38a")
+
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=901438866]
+material = SubResource("ShaderMaterial_k88eo")
+layout_mode = 2
+texture = ExtResource("14_5f38a")
+
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1448049178]
+material = SubResource("ShaderMaterial_tu3mt")
+layout_mode = 2
+texture = ExtResource("14_5f38a")
