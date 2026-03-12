@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Faeterna"
-run/main_scene="uid://dtaeq0x7xhet6"
+run/main_scene="uid://wkteb4mk4vch"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://jcsdquypk00y"
 
 [dotnet]
 
@@ -57,5 +61,3 @@ dash={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
