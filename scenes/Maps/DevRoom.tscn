@@ -8,5 +8,6 @@
 [node name="Nivel1" parent="." instance=ExtResource("1_cchev")]
 position = Vector2(11543, 283)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("3_emu3q")]
+[node name="CharacterBody3D" parent="." node_paths=PackedStringArray("_hearts") instance=ExtResource("3_emu3q")]
 position = Vector2(142, 498)
+_hearts = []
