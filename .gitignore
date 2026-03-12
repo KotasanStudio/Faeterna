@@ -2,7 +2,8 @@
 # Godot cache, imports, and export directories
 .godot/
 .import/
-*.import
+# NOTA: NO ignorar *.import — Godot 4 necesita los archivos .import
+# trackeados en git para mantener los UIDs sincronizados entre desarrolladores.
 export_presets.cfg
 
 # Platform-specific exports

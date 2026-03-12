@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://hvbq82fnlefr"]
+[gd_scene format=4 uid="uid://hvbq82fnlefr"]
 
-[ext_resource type="Texture2D" uid="uid://kp5isxy8f62v" path="res://assets/Placeholder/Background/Gray.png" id="1_emu3q"]
-[ext_resource type="Texture2D" uid="uid://6plp1lub18jv" path="res://assets/Placeholder/Terrain/Terrain (16x16).png" id="2_n25mx"]
-[ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="3_emu3q"]
+[ext_resource type="Texture2D" uid="uid://dsn76e70o7pce" path="res://assets/Placeholder/Background/Gray.png" id="1_emu3q"]
+[ext_resource type="Texture2D" uid="uid://c07fbknla2wj5" path="res://assets/Placeholder/Terrain/Terrain (16x16).png" id="2_n25mx"]
+[ext_resource type="PackedScene" path="res://scenes/Personajes/Lira2D.tscn" id="3_emu3q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q40th"]
 texture = ExtResource("2_n25mx")

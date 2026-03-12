@@ -29,7 +29,7 @@ namespace Faeterna.scripts.Menus
                         GD.Print(
                             $"Save button {id} pressed. Transitioning to game scene with save slot {id}..."
                         );
-                        GetTree().ChangeSceneToFile("res://scenes/Maps/3DDevRoom.tscn");
+                        GetTree().ChangeSceneToFile("res://scenes/Maps/DevRoom.tscn");
                     }
                 );
             }
