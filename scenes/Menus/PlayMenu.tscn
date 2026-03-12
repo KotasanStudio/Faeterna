@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://cw6eyewgcvqk4"]
+
+[ext_resource type="Script" uid="uid://bt0k3km7j8uxh" path="res://scripts/Menus/PlayMenu.cs" id="1_golnt"]
+[ext_resource type="Theme" uid="uid://cji55sgs7pti4" path="res://mainTeme.tres" id="1_jxpss"]
+[ext_resource type="Texture2D" uid="uid://dyh07j8wo8ue2" path="res://assets/Menu/SaveBottonNewGame.png" id="2_b7wlv"]
+[ext_resource type="Texture2D" uid="uid://bn6n72vmwy7bp" path="res://assets/Menu/SelectEStirao.png" id="3_np5pm"]
+
+[node name="PlayMenu" type="Control" unique_id=511839655 node_paths=PackedStringArray("_saveButtons", "_deleteButton", "_backButton")]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_jxpss")
+script = ExtResource("1_golnt")
+_saveButtons = [NodePath("HBoxContainer/Save 1"), NodePath("HBoxContainer/Save 2"), NodePath("HBoxContainer/Save 3")]
+_deleteButton = NodePath("MarginContainer/VBoxContainer/Delete")
+_backButton = NodePath("MarginContainer/VBoxContainer/Back")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=777952258]
+texture_filter = 1
+custom_minimum_size = Vector2(1002, 450)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -501.0
+offset_top = -282.0
+offset_right = 501.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Save 1" type="TextureButton" parent="HBoxContainer" unique_id=376397873]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_b7wlv")
+
+[node name="Label" type="Label" parent="HBoxContainer/Save 1" unique_id=568338252]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -11.5
+offset_right = 44.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "New Save 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save 2" type="TextureButton" parent="HBoxContainer" unique_id=1807603464]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_b7wlv")
+
+[node name="Label" type="Label" parent="HBoxContainer/Save 2" unique_id=1523408062]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -11.5
+offset_right = 44.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "New Save 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save 3" type="TextureButton" parent="HBoxContainer" unique_id=564434989]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_b7wlv")
+
+[node name="Label" type="Label" parent="HBoxContainer/Save 3" unique_id=1596585643]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -11.5
+offset_right = 44.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "New Save 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=907057763]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -501.0
+offset_top = -130.0
+offset_right = 501.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1237807335]
+custom_minimum_size = Vector2(1002, 100)
+layout_mode = 2
+
+[node name="Delete" type="TextureButton" parent="MarginContainer/VBoxContainer" unique_id=2003462612]
+layout_mode = 2
+texture_normal = ExtResource("3_np5pm")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Delete" unique_id=656513805]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -11.5
+offset_right = 44.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Delete"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="TextureButton" parent="MarginContainer/VBoxContainer" unique_id=300026485]
+layout_mode = 2
+texture_normal = ExtResource("3_np5pm")
+flip_v = true
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Back" unique_id=7937975]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -11.5
+offset_right = 44.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="HBoxContainer/Save 1" to="." method="OnSavePressed" binds= [0]]
+[connection signal="pressed" from="HBoxContainer/Save 2" to="." method="OnSavePressed" binds= [1]]
+[connection signal="pressed" from="HBoxContainer/Save 3" to="." method="OnSavePressed" binds= [2]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Delete" to="." method="OnDeletePressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="OnBackPressed"]

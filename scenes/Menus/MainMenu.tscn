@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://wkteb4mk4vch"]
+
+[ext_resource type="Script" uid="uid://dk1672gffo3t1" path="res://scripts/Menus/MainMenu.cs" id="1_6p30y"]
+[ext_resource type="Theme" uid="uid://cji55sgs7pti4" path="res://mainTeme.tres" id="1_pl1hl"]
+[ext_resource type="Texture2D" uid="uid://bvvppips6fc3j" path="res://assets/Menu/SelectBotton.png" id="2_5crfs"]
+[ext_resource type="PackedScene" uid="uid://bqxuwf8fsoi7h" path="res://scenes/Menus/OptionsMenu.tscn" id="2_faaac"]
+[ext_resource type="Texture2D" uid="uid://bfuqa6n0ry3gx" path="res://assets/Menu/PortadaFaeterna.png" id="3_a24ew"]
+[ext_resource type="Shader" uid="uid://f53icga1vdof" path="res://scripts/Shaders/Menu/Blur.gdshader" id="4_blur"]
+[ext_resource type="PackedScene" uid="uid://cw6eyewgcvqk4" path="res://scenes/Menus/PlayMenu.tscn" id="7_j08g8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_blur"]
+shader = ExtResource("4_blur")
+shader_parameter/intensidad = 0.0
+
+[node name="MainMenu" type="Control" unique_id=1790737086 node_paths=PackedStringArray("_startButton", "_settingsButton", "_exitButton", "_optionsMenu", "_playMenu", "_background")]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pl1hl")
+script = ExtResource("1_6p30y")
+_startButton = NodePath("VBoxContainer/Play")
+_settingsButton = NodePath("VBoxContainer/Settings")
+_exitButton = NodePath("VBoxContainer/Exit")
+_optionsMenu = NodePath("OptionsMenu")
+_playMenu = NodePath("PlayMenu")
+_background = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=922351629]
+texture_filter = 4
+material = SubResource("ShaderMaterial_blur")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_a24ew")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2123487203]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -66.5
+offset_right = 100.0
+offset_bottom = 66.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Play" type="TextureButton" parent="VBoxContainer" unique_id=1038174534]
+layout_mode = 2
+texture_normal = ExtResource("2_5crfs")
+
+[node name="Label" type="Label" parent="VBoxContainer/Play" unique_id=616276322]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="VBoxContainer" unique_id=734561620]
+layout_mode = 2
+texture_normal = ExtResource("2_5crfs")
+flip_v = true
+
+[node name="Label" type="Label" parent="VBoxContainer/Settings" unique_id=1302222209]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="TextureButton" parent="VBoxContainer" unique_id=1098401657]
+layout_mode = 2
+texture_normal = ExtResource("2_5crfs")
+
+[node name="Label" type="Label" parent="VBoxContainer/Exit" unique_id=164161381]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsMenu" parent="." unique_id=194965363 instance=ExtResource("2_faaac")]
+visible = false
+layout_mode = 1
+
+[node name="PlayMenu" parent="." unique_id=511839655 instance=ExtResource("7_j08g8")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="OnPlayPressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="OnSettingsPressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="OnExitPressed"]
