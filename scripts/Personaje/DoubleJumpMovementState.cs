@@ -21,14 +21,16 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             _player.DoubleJumpAvailable = false;
             _player.SetAnimation("double_jump");
             GD.Print("Entered DoubleJumpMovementState (double jump)");
-            _player.Velocity = new Vector3(_player.Velocity.X, PlayerType.JumpVelocity, 0f);
+            // En 2D, JumpVelocity es negativo (hacia arriba).
+            _player.Velocity = new Vector2(_player.Velocity.X, PlayerType.JumpVelocity);
             _player.MoveAndSlide();
         }
 
         public override void Update(double delta)
         {
             if (_player == null) return;
-            if (_player.Velocity.Y < 0)
+            // En 2D, Y > 0 significa que estamos cayendo.
+            if (_player.Velocity.Y > 0)
             {
                 GD.Print("Transitioning to falling state from double jump.");
                 stateMachine.TransitionTo("FallingMovementState");
@@ -46,11 +48,10 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             if (_player == null) return;
             if (!_player.IsOnFloor())
             {
-                Vector3 velocity = _player.Velocity;
+                Vector2 velocity = _player.Velocity;
                 velocity.Y += PlayerType.Gravity * (float)delta;
                 float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
                 velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
-                velocity.Z = 0f;
                 _player.Velocity = velocity;
 
                 if (move < 0f)

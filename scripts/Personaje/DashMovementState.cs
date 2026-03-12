@@ -46,7 +46,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             _player.DashAvailable = false;
             _dashCooldownTimer.Start();
 
-            // Dirección: input → velocidad actual → derecha por defecto.
+            // Dirección: input → sprite flip → derecha por defecto.
             _dashDirection = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
             if (Mathf.Abs(_dashDirection) < 0.1f)
                 _dashDirection = _player.animatedSprite.FlipH ? -1f : 1f;
@@ -54,8 +54,8 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             _isDashing = true;
             _player.SetAnimation("dash");
 
-            // Dash horizontal puro: sin componente vertical ni de profundidad.
-            _player.Velocity = new Vector3(_dashDirection * PlayerType.Speed * 3f, 0f, 0f);
+            // Dash horizontal puro: sin componente vertical.
+            _player.Velocity = new Vector2(_dashDirection * PlayerType.Speed * 3f, 0f);
             _player.MoveAndSlide();
 
             _dashDurationTimer.Start();
@@ -66,7 +66,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             if (_player == null || !_isDashing) return;
 
             // Mantener velocidad de dash fija durante el impulso (ignorar gravedad).
-            _player.Velocity = new Vector3(_dashDirection * PlayerType.Speed * 3f, 0f, 0f);
+            _player.Velocity = new Vector2(_dashDirection * PlayerType.Speed * 3f, 0f);
             _player.MoveAndSlide();
         }
 
@@ -76,7 +76,6 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         public override void Exit()
         {
             _isDashing = false;
-            // Guard: Ready() es async, Exit() puede llamarse antes de que los timers estén asignados.
             if (_dashDurationTimer != null && !_dashDurationTimer.IsStopped())
                 _dashDurationTimer.Stop();
         }
@@ -104,7 +103,8 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             }
             else
             {
-                stateMachine.TransitionTo(_player.Velocity.Y > 0f ? "JumpingMovementState" : "FallingMovementState");
+                // En 2D, Y < 0 = subiendo (jumping), Y > 0 = bajando (falling).
+                stateMachine.TransitionTo(_player.Velocity.Y < 0f ? "JumpingMovementState" : "FallingMovementState");
             }
         }
     }
