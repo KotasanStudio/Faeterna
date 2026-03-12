@@ -25,7 +25,7 @@ project/assembly_name="Faeterna"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/YATI/plugin.cfg")
 
 [input]
 

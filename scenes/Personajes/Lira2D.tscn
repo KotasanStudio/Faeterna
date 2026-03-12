@@ -288,9 +288,8 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" groups=["Lira"]]
 script = ExtResource("1_41i63")
-_hearts = []
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
@@ -336,7 +335,7 @@ wait_time = 0.8
 one_shot = true
 
 [node name="Camera3D" type="Camera2D" parent="."]
-position = Vector2(0, -0.146)
+position = Vector2(0, -60)
 scale = Vector2(0.2, 0.2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]

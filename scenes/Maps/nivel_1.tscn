@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://13d2ye4hvyba"]
+
+[ext_resource type="PackedScene" uid="uid://c12rwgdmxrkeg" path="res://scenes/Maps/Nivel1.tmx" id="1_pmhet"]
+
+[node name="Nivel1" instance=ExtResource("1_pmhet")]
+
+[node name="Fondo" parent="." index="0"]
+position = Vector2(11687, -120)
+scale = Vector2(-9.209317, 13.231709)
+
+[node name="Fondo_Motañas" parent="." index="1"]
+visible = false
