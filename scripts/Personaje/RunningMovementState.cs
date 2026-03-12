@@ -60,11 +60,9 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         {
             if (_player == null) return;
 
-            // En 3D el movimiento horizontal sigue siendo en X.
-            // Flip del sprite según dirección para side-scroller.
             float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
 
-            Vector3 velocity = _player.Velocity;
+            Vector2 velocity = _player.Velocity;
             velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
             _player.Velocity = velocity;
 

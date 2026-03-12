@@ -29,13 +29,18 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 
             if (!_player.IsOnFloor())
             {
-                Vector3 velocity = _player.Velocity;
-                // Gravedad manual en 3D.
+                Vector2 velocity = _player.Velocity;
+                // Aplicar gravedad: en 2D sumamos la gravedad positiva (hacia abajo).
                 velocity.Y += PlayerType.Gravity * (float)delta;
                 float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
                 velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
-                velocity.Z = 0f; // Side-scroller: sin profundidad de movimiento.
                 _player.Velocity = velocity;
+
+                if (move < 0f)
+                    _player.animatedSprite.FlipH = true;
+                else if (move > 0f)
+                    _player.animatedSprite.FlipH = false;
+
                 _player.MoveAndSlide();
             }
 

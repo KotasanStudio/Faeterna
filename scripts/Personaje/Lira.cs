@@ -8,16 +8,16 @@ namespace Faeterna.scripts.Player
     /// Gestiona salud, maná, animaciones y las banderas de movimiento
     /// utilizadas por la máquina de estados.
     /// </summary>
-    public partial class Lira : CharacterBody3D
+    public partial class Lira : CharacterBody2D
     {
         /// <summary>Velocidad horizontal configurada del jugador (px/s).</summary>
-        public const float Speed = 10.0f;
+        public const float Speed = 350.0f;
 
         /// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
-        public const float JumpVelocity = 20.0f;
+        public const float JumpVelocity = -500.0f;
 
-        /// <summary>Gravedad usada en los estados aéreos. Equivalente a GetGravity() de 2D.</summary>
-        public const float Gravity = -50.0f;
+        /// <summary>Gravedad usada en los estados aéreos. Se obtiene del ProjectSettings.</summary>
+        public static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
         /// <summary>Puntos de vida máximos del personaje.</summary>
         private const int Health = 5;
@@ -40,8 +40,8 @@ namespace Faeterna.scripts.Player
         /// <summary>Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo).</summary>
         public bool CoyoteAvailable = true;
 
-        /// <summary>Referencia al nodo <see cref="AnimatedSprite3D"/> hijo que muestra las animaciones del personaje.</summary>
-        public AnimatedSprite3D animatedSprite;
+        /// <summary>Referencia al nodo <see cref="AnimatedSprite2D"/> hijo que muestra las animaciones del personaje.</summary>
+        public AnimatedSprite2D animatedSprite;
 
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] Array<TextureRect> _hearts;
@@ -50,15 +50,15 @@ namespace Faeterna.scripts.Player
         [Export] TextureRect _manaBar;
 
         /// <summary>
-        /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite3D"/> hijo.
+        /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>
         public override void _Ready()
         {
-            animatedSprite = GetNode<AnimatedSprite3D>("AnimatedSprite3D");
+            animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
         }
 
         /// <summary>
-        /// Reproduce una animación en el <see cref="AnimatedSprite3D"/> hijo.
+        /// Reproduce una animación en el <see cref="AnimatedSprite2D"/> hijo.
         /// Método auxiliar usado por los estados para cambiar la animación.
         /// </summary>
         public void SetAnimation(string animationName)
@@ -77,6 +77,7 @@ namespace Faeterna.scripts.Player
         /// <param name="amount">Cantidad de puntos de vida a restar.</param>
         public async void TakeDamage(int amount)
         {
+            GD.Print($"Duele");
             for (int i = 0; i < amount; i++)
             {
                 if (_currentHealth <= 0)
@@ -125,7 +126,6 @@ namespace Faeterna.scripts.Player
         {
             _currentHealth += amount;
             _currentHealth = Mathf.Clamp(_currentHealth, 0, Health);
-
             UpdateHearts();
         }
 
