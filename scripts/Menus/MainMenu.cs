@@ -52,7 +52,7 @@ namespace Faeterna.scripts.Menus
                     _startButton.Visible = false;
                     _settingsButton.Visible = false;
                     _exitButton.Visible = false;
-                    SetBlur(2.45f);
+                    SetBlur(0.75f);
                     _playMenu.Visible = true;
                 }
             );
@@ -68,7 +68,7 @@ namespace Faeterna.scripts.Menus
                     _startButton.Visible = false;
                     _settingsButton.Visible = false;
                     _exitButton.Visible = false;
-                    SetBlur(2.45f);
+                    SetBlur(0.75f);
                     _optionsMenu.Visible = true;
                 }
             );

@@ -30,7 +30,7 @@ _playMenu = NodePath("PlayMenu")
 _background = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=922351629]
-texture_filter = 4
+texture_filter = 3
 material = SubResource("ShaderMaterial_blur")
 layout_mode = 1
 anchors_preset = 15

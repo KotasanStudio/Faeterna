@@ -161,5 +161,15 @@ namespace Faeterna.scripts.Player
             _currentMana = Mathf.Clamp(_currentMana, 0, Mana);
             UpdateMana();
         }
+
+        public void VisibleUI(bool visible)
+        {
+            foreach (TextureRect heart in _hearts)
+            {
+                heart.Visible = visible;
+            }
+
+            _manaBar.Visible = visible;
+        }
     }
 }

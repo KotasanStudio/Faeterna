@@ -228,58 +228,47 @@ namespace Faeterna.scripts.Menus
             {
                 case 0:
                     GD.Print("Shadow Quality: Hard");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.Hard
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.Hard
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.Hard);
                     break;
                 case 1:
                     GD.Print("Shadow Quality: Soft Very Low");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftVeryLow
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftVeryLow
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.SoftVeryLow);
                     break;
                 case 2:
                     GD.Print("Shadow Quality: Soft Low");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftLow
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftLow
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.SoftLow);
                     break;
                 case 3:
                     GD.Print("Shadow Quality: Soft Medium");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftMedium
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftMedium
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.SoftMedium);
                     break;
                 case 4:
                     GD.Print("Shadow Quality: Soft High");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftHigh
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftHigh
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.SoftHigh);
                     break;
                 case 5:
                     GD.Print("Shadow Quality: Soft Ultra");
-                    RenderingServer.DirectionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftUltra
-                    );
-                    RenderingServer.PositionalSoftShadowFilterSetQuality(
-                        RenderingServer.ShadowQuality.SoftUltra
-                    );
+                    ApplyShadowQuality(RenderingServer.ShadowQuality.SoftUltra);
                     break;
+            }
+        }
+
+        private static void ApplyShadowQuality(RenderingServer.ShadowQuality quality)
+        {
+            // En entornos sin backend gráfico, RenderingServer puede no estar disponible.
+            if (DisplayServer.GetName() == "headless")
+            {
+                return;
+            }
+
+            try
+            {
+                RenderingServer.DirectionalSoftShadowFilterSetQuality(quality);
+                RenderingServer.PositionalSoftShadowFilterSetQuality(quality);
+            }
+            catch (System.Exception ex)
+            {
+                GD.PushWarning($"No se pudo aplicar la calidad de sombras: {ex.Message}");
             }
         }
 

@@ -17,6 +17,7 @@
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
+[ext_resource type="PackedScene" uid="uid://h12nrsoj3d6o" path="res://scenes/Menus/pause_menu.tscn" id="18_8x1cb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -343,6 +344,10 @@ scale = Vector2(0.2, 0.2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=408625876]
 layer = 10
+
+[node name="PauseMenu" parent="Camera3D/CanvasLayer" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("18_8x1cb")]
+visible = false
+_player = NodePath("../../..")
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=1213165656]
 offset_right = 40.0

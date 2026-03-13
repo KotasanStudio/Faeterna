@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://h12nrsoj3d6o"]
+
+[ext_resource type="Theme" uid="uid://cji55sgs7pti4" path="res://mainTeme.tres" id="1_5d2l8"]
+[ext_resource type="Script" uid="uid://dvn8lutvatyhu" path="res://scripts/Menus/PauseMenu.cs" id="2_7l7mv"]
+[ext_resource type="Texture2D" uid="uid://bvvppips6fc3j" path="res://assets/Menu/SelectBotton.png" id="3_v4r4p"]
+[ext_resource type="PackedScene" uid="uid://bqxuwf8fsoi7h" path="res://scenes/Menus/OptionsMenu.tscn" id="4_1s2dm"]
+
+[node name="PauseMenu" type="Control" unique_id=1393028770 node_paths=PackedStringArray("_returnButton", "_settingsButton", "_exitButton", "_optionsMenu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_5d2l8")
+script = ExtResource("2_7l7mv")
+_returnButton = NodePath("VBoxContainer/Retun")
+_settingsButton = NodePath("VBoxContainer/Settings")
+_exitButton = NodePath("VBoxContainer/Exit")
+_optionsMenu = NodePath("OptionsMenu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1580028541]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.14639173, 0.14639173, 0.14639173, 0.54901963)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1918357101]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_right = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 50
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=271986664]
+layout_mode = 2
+size_flags_vertical = 0
+text = "PAUSE"
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=20199531]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -66.5
+offset_right = 100.0
+offset_bottom = 66.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Retun" type="TextureButton" parent="VBoxContainer" unique_id=497726668]
+layout_mode = 2
+texture_normal = ExtResource("3_v4r4p")
+
+[node name="Label" type="Label" parent="VBoxContainer/Retun" unique_id=1741053699]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Return"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="VBoxContainer" unique_id=481443259]
+layout_mode = 2
+texture_normal = ExtResource("3_v4r4p")
+flip_v = true
+
+[node name="Label" type="Label" parent="VBoxContainer/Settings" unique_id=1590538329]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="TextureButton" parent="VBoxContainer" unique_id=1312431693]
+layout_mode = 2
+texture_normal = ExtResource("3_v4r4p")
+
+[node name="Label" type="Label" parent="VBoxContainer/Exit" unique_id=1478877409]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsMenu" parent="." unique_id=194965363 instance=ExtResource("4_1s2dm")]
+visible = false
+layout_mode = 1
