@@ -2,13 +2,11 @@ using Faeterna.scripts.Player;
 using Godot;
 using System;
 
-namespace Faeterna.Scripts.Slime
+namespace Faeterna.scripts.Slime
 {
-    public partial class Slime2D : CharacterBody2D
+    public partial class Slime : CharacterBody2D
     {
         private AnimatedSprite2D _animatedSprite;
-        [Export] public float jump_speed { get; set; }
-        [Export] public float speed { get; set; }
 
         public override void _Ready()
         {
@@ -25,19 +23,10 @@ namespace Faeterna.Scripts.Slime
 
         public void _on_attack_hit_box_body_entered(Node2D prota)
         {
-            if (prota.GetType() == typeof(Lira))
+            GD.Print("Slime hit box entered by: " + prota.Name);
+            if (prota is Lira lira)
             {
-                GD.Print("Casi Auuuuuuuuuuuuuu");
-                if (MoveAndSlide())
-                {
-                    for (int i = 0; i < GetSlideCollisionCount(); ++i)
-                    {
-                        KinematicCollision2D collision = GetSlideCollision(i);
-                        GD.Print("Auuuuuuuuuuuuuu");
-                        if (collision.GetCollider().GetType() == typeof(Lira))
-                            ((Lira)collision.GetCollider()).TakeDamage(1);
-                    }
-                }
+                lira.TakeDamage(1, GlobalPosition);
             }
         }
 

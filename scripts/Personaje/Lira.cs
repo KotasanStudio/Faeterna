@@ -1,5 +1,6 @@
 using Godot;
 using Godot.Collections;
+using Faeterna.scripts.Maquinas_de_estados.Movimiento;
 
 namespace Faeterna.scripts.Player
 {
@@ -40,8 +41,17 @@ namespace Faeterna.scripts.Player
         /// <summary>Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo).</summary>
         public bool CoyoteAvailable = true;
 
+        /// <summary>Fuerza horizontal del knockback al recibir daño.</summary>
+        private const float KnockbackForceX = 300.0f;
+
+        /// <summary>Fuerza vertical del knockback al recibir daño (negativa = hacia arriba).</summary>
+        private const float KnockbackForceY = -250.0f;
+
         /// <summary>Referencia al nodo <see cref="AnimatedSprite2D"/> hijo que muestra las animaciones del personaje.</summary>
         public AnimatedSprite2D animatedSprite;
+
+        /// <summary>Referencia a la máquina de estados de movimiento.</summary>
+        public MovementStateMachine MovementStateMachine;
 
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] Array<TextureRect> _hearts;
@@ -55,6 +65,7 @@ namespace Faeterna.scripts.Player
         public override void _Ready()
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+            MovementStateMachine = GetNode<MovementStateMachine>("MovementStateMachine");
         }
 
         /// <summary>
@@ -75,17 +86,32 @@ namespace Faeterna.scripts.Player
         /// de flash en los corazones de la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de puntos de vida a restar.</param>
-        public async void TakeDamage(int amount)
+        private bool _isInvincible = false;
+
+        /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
+        public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            GD.Print($"Duele");
+            if (_isInvincible || _currentHealth <= 0) return;
+
+            _isInvincible = true;
+
+            // Knockback: salto hacia arriba y hacia el lado contrario del atacante
+            float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
+            Velocity = new Vector2(directionX * KnockbackForceX, KnockbackForceY);
+
+            // Ceder el control al estado de knockback (bloquea el input)
+            MovementStateMachine?.TransitionTo("KnockbackMovementState");
+
             for (int i = 0; i < amount; i++)
             {
-                if (_currentHealth <= 0)
-                    return;
+                if (_currentHealth <= 0) break;
 
                 _currentHealth--;
 
-                TextureRect heart = _hearts[_currentHealth];
+                // Guardamos el índice ANTES del await para que no cambie después
+                int heartIndex = _currentHealth;
+                if (heartIndex < 0 || heartIndex >= _hearts.Count) break;
+                TextureRect heart = _hearts[heartIndex];
 
                 if (heart.Material is ShaderMaterial mat)
                 {
@@ -94,10 +120,11 @@ namespace Faeterna.scripts.Player
                     await ToSignal(GetTree().CreateTimer(0.1f), "timeout");
 
                     mat.SetShaderParameter("damage_flash", 0.0f);
-
                     mat.SetShaderParameter("fill_amount", 0.0f);
                 }
             }
+
+            _isInvincible = false;
         }
 
         /// <summary>

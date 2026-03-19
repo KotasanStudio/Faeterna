@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://hvbq82fnlefr"]
+[gd_scene load_steps=7 format=4 uid="uid://hvbq82fnlefr"]
 
 [ext_resource type="Texture2D" uid="uid://kp5isxy8f62v" path="res://assets/Placeholder/Background/Gray.png" id="1_emu3q"]
 [ext_resource type="Texture2D" uid="uid://6plp1lub18jv" path="res://assets/Placeholder/Terrain/Terrain (16x16).png" id="2_n25mx"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="3_emu3q"]
+[ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="4_n25mx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q40th"]
 texture = ExtResource("2_n25mx")
@@ -202,3 +203,6 @@ tile_set = SubResource("TileSet_vw1q8")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_emu3q")]
 position = Vector2(138, 293)
+
+[node name="Slime2D" parent="." instance=ExtResource("4_n25mx")]
+position = Vector2(681, 296)

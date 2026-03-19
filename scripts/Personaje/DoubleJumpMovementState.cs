@@ -32,13 +32,11 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             // En 2D, Y > 0 significa que estamos cayendo.
             if (_player.Velocity.Y > 0)
             {
-                GD.Print("Transitioning to falling state from double jump.");
                 stateMachine.TransitionTo("FallingMovementState");
             }
             // Cuando la animación de doble salto termina, pasar a la animación de salto normal.
             if (_player.animatedSprite != null && _player.animatedSprite.Frame == 5)
             {
-                GD.Print("Double jump animation finished, transitioning to jump animation.");
                 _player.SetAnimation("jump");
             }
         }
