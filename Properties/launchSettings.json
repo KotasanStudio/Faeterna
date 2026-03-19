@@ -1,10 +1,10 @@
 {
   "profiles": {
-    "Faeterna": {
-      "commandName": "Executable",
-      "executablePath": "/usr/bin/godot-mono",
-      "commandLineArgs": "--path .",
-      "workingDirectory": "$(ProjectDir)"
-    }
+	"Faeterna": {
+	  "commandName": "Executable",
+	  "executablePath": "/usr/bin/godot-mono",
+	  "commandLineArgs": "--path .",
+	  "workingDirectory": "$(ProjectDir)"
+	}
   }
 }

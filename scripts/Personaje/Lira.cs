@@ -1,5 +1,7 @@
 using Godot;
 using Godot.Collections;
+using Faeterna.scripts.Tools;
+using System.Threading.Tasks;
 
 namespace Faeterna.scripts.Player
 {
@@ -52,9 +54,58 @@ namespace Faeterna.scripts.Player
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>
-        public override void _Ready()
+        public override async void _Ready()
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+            UpdateHearts();
+            UpdateMana();
+
+            await TryLoadFromActiveSlotAsync();
+        }
+
+        private async Task TryLoadFromActiveSlotAsync()
+        {
+            GameData gameData = await GameSaveService.LoadActiveSlotAsync();
+            if (gameData?.PlayerData == null)
+            {
+                return;
+            }
+
+            string currentScenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(gameData.ScenePath)
+                && !string.Equals(gameData.ScenePath, currentScenePath, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return;
+            }
+
+            ApplySaveData(gameData.PlayerData);
+        }
+
+        public PlayerSaveData BuildSaveData(Vector2 position)
+        {
+            return new PlayerSaveData
+            {
+                Position = position,
+                Health = _currentHealth,
+                Mana = _currentMana,
+                DoubleJumpAvailable = DoubleJumpAvailable,
+                DashAvailable = DashAvailable,
+                CoyoteAvailable = CoyoteAvailable
+            };
+        }
+
+        public void ApplySaveData(PlayerSaveData saveData)
+        {
+            GlobalPosition = saveData.Position;
+
+            _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
+            _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
+            DoubleJumpAvailable = saveData.DoubleJumpAvailable;
+            DashAvailable = saveData.DashAvailable;
+            CoyoteAvailable = saveData.CoyoteAvailable;
+
+            UpdateHearts();
+            UpdateMana();
         }
 
         /// <summary>
