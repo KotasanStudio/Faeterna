@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="1" nextlayerid="18" nextobjectid="1">
- <tileset firstgid="1" source="../../../../../TiledProject/Faeterna/tileset4.tsx"/>
- <tileset firstgid="25" source="../../../../../TiledProject/Faeterna/2nTileset.tsx"/>
- <tileset firstgid="88" source="../../../../../TiledProject/Faeterna/1.1Tileset.tsx"/>
- <tileset firstgid="250" source="../../../../../TiledProject/Faeterna/Tileset5.tsx"/>
- <tileset firstgid="274" source="../../../../../TiledProject/Faeterna/Imagenes.tsx"/>
- <tileset firstgid="299" source="../../../../../TiledProject/Faeterna/piedras.tsx"/>
- <tileset firstgid="520" source="../../../../../TiledProject/Faeterna/FrontTree.tsx"/>
- <tileset firstgid="1260" source="../../../../../TiledProject/Faeterna/Arbustos.tsx"/>
- <tileset firstgid="2000" source="../../../../../TiledProject/Faeterna/BackTree.tsx"/>
- <tileset firstgid="2740" source="../../../../../TiledProject/Faeterna/BackTree3.tsx"/>
- <tileset firstgid="3480" source="../../../../../TiledProject/Faeterna/BackTree2.tsx"/>
- <tileset firstgid="4220" source="../../../../../TiledProject/Faeterna/FondoBosque.tsx"/>
+ <tileset firstgid="1" source="../../assets/FaeternaTiled/tileset4.tsx"/>
+ <tileset firstgid="25" source="../../assets/FaeternaTiled/2nTileset.tsx"/>
+ <tileset firstgid="88" source="../../assets/FaeternaTiled/1.1Tileset.tsx"/>
+ <tileset firstgid="250" source="../../assets/FaeternaTiled/Tileset5.tsx"/>
+ <tileset firstgid="274" source="../../assets/FaeternaTiled/Imagenes.tsx"/>
+ <tileset firstgid="299" source="../../assets/FaeternaTiled/piedras.tsx"/>
+ <tileset firstgid="520" source="../../assets/FaeternaTiled/FrontTree.tsx"/>
+ <tileset firstgid="1260" source="../../assets/FaeternaTiled/Arbustos.tsx"/>
+ <tileset firstgid="2000" source="../../assets/FaeternaTiled/BackTree.tsx"/>
+ <tileset firstgid="2740" source="../../assets/FaeternaTiled/BackTree3.tsx"/>
+ <tileset firstgid="3480" source="../../assets/FaeternaTiled/BackTree2.tsx"/>
+ <tileset firstgid="4220" source="../../assets/FaeternaTiled/FondoBosque.tsx"/>
  <layer id="11" name="Fondo" width="30" height="20">
   <data encoding="csv">
    <chunk x="-16" y="-16" width="16" height="16">

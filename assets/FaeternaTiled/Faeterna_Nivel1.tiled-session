@@ -1,0 +1,213 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "/home/dev/Documents/Descargas/SpriteTowerTile.tsx": {
+            "scaleInDock": 1
+        },
+        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/MAP.tmx": {
+            "scale": 1.1374,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 320.02813434148055,
+                "y": 10399.595568841218
+            }
+        },
+        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/SpriteTowerTile.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx": {
+            "scale": 0.5341,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 14731.32372214941,
+                "y": -377.2701741246958
+            }
+        },
+        "1.1Tileset.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "1rTileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3.4871
+        },
+        "2nTileset.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5036,
+            "scaleInEditor": 1
+        },
+        "Arboles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 3.0672
+        },
+        "Arbustos.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.3537,
+            "scaleInEditor": 1
+        },
+        "BackTree.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.7554,
+            "scaleInEditor": 0.7998
+        },
+        "BackTree2.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 2.2749,
+            "scaleInEditor": 1
+        },
+        "BackTree3.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.3033,
+            "scaleInEditor": 1
+        },
+        "Cesped_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Cesped_tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Faeterna.zip": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "FondoBosque.tsx": {
+            "scaleInDock": 0.1563,
+            "scaleInEditor": 1
+        },
+        "FrontTree.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.697,
+            "scaleInEditor": 1
+        },
+        "GiantTree.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "GiantTrees.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Imagenes.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.2106
+        },
+        "Nivel1.tmx": {
+            "scale": 0.1829,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 1637.5068343357027,
+                "y": 1282.1213778020779
+            }
+        },
+        "Tileset3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tileset4.1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tileset5.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TilesetsNivel1.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tilesets_collection.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TreeLeaves.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TreeLeaves2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TreeLeavesTiled.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "cesped.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 7.9573
+        },
+        "piedras.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "tileset4.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 0.5354,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 298.84198729921553,
+                "y": 574.3369443406798
+            }
+        }
+    },
+    "last.exportedFilePath": "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps",
+    "last.externalTilesetPath": "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps",
+    "last.imagePath": "/home/dev/Documents/TiledProject/Faeterna",
+    "map.fixedSize": false,
+    "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "FrontTree.tsx",
+        "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
+        "Arbustos.tsx",
+        "BackTree.tsx",
+        "BackTree3.tsx",
+        "BackTree2.tsx",
+        "FondoBosque.tsx"
+    ],
+    "project": "Faeterna_Nivel1.tiled-project",
+    "recentFiles": [
+        "FrontTree.tsx",
+        "FondoBosque.tsx",
+        "BackTree2.tsx",
+        "BackTree3.tsx",
+        "BackTree.tsx",
+        "Arbustos.tsx",
+        "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
+        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/SpriteTowerTile.tsx",
+        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/MAP.tmx",
+        "Nivel1.tmx",
+        "1rTileset.tsx",
+        "tileset4.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    },
+    "tileset.type": 0
+}
