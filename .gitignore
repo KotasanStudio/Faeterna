@@ -149,6 +149,9 @@ coverage/
 *.coveragexml
 
 # ==================== PROJECT SPECIFIC ====================
+# Plugin local de Rider (solo uso personal, no subir a GitHub)
+/addons/rider-plugin/
+
 # User-specific settings
 local_settings.json
 user_preferences.json
