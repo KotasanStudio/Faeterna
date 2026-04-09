@@ -5,6 +5,7 @@ namespace Faeterna.scripts.Slime
 {
     public partial class Slime : CharacterBody2D
     {
+        /// <summary>>Fuerza vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
         public float JumpForce = -380f;
         public float JumpInterval = 2.0f;
         public float HorizontalSpeed = 120f;
