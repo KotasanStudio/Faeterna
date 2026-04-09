@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://dfndf3mqrnif5"]
+[gd_scene format=3 uid="uid://dfndf3mqrnif5"]
 
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://scripts/Personaje/Lira.cs" id="1_41i63"]
 [ext_resource type="Texture2D" uid="uid://c104b3b6vq1el" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
@@ -288,102 +288,104 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=1656334360 node_paths=PackedStringArray("_hearts", "_manaBar", "_camera") groups=["Lira"]]
 script = ExtResource("1_41i63")
 _hearts = []
+_manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
+_camera = NodePath("Camera3D")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1344553600]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"run"
 frame_progress = 0.12365947
 
-[node name="CollisionShape3D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=922700742]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_tu3mt")
 
-[node name="MovementStateMachine" type="Node" parent="."]
+[node name="MovementStateMachine" type="Node" parent="." unique_id=1130351737]
 script = ExtResource("7_5f38a")
 initialState = NodePath("IdleMovementState")
 
-[node name="IdleMovementState" type="Node" parent="MovementStateMachine"]
+[node name="IdleMovementState" type="Node" parent="MovementStateMachine" unique_id=1384828844]
 script = ExtResource("8_vryya")
 
-[node name="RunningMovementState" type="Node" parent="MovementStateMachine"]
+[node name="RunningMovementState" type="Node" parent="MovementStateMachine" unique_id=1234066558]
 script = ExtResource("9_k88eo")
 
-[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState"]
+[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState" unique_id=2059792218]
 wait_time = 0.1
 one_shot = true
 
-[node name="JumpingMovementState" type="Node" parent="MovementStateMachine"]
+[node name="JumpingMovementState" type="Node" parent="MovementStateMachine" unique_id=497120526]
 script = ExtResource("10_tu3mt")
 
-[node name="FallingMovementState" type="Node" parent="MovementStateMachine"]
+[node name="FallingMovementState" type="Node" parent="MovementStateMachine" unique_id=1959946414]
 script = ExtResource("11_ove30")
 
-[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine"]
+[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine" unique_id=1017714376]
 script = ExtResource("12_mjvex")
 
-[node name="DashMovementState" type="Node" parent="MovementStateMachine"]
+[node name="DashMovementState" type="Node" parent="MovementStateMachine" unique_id=2070502164]
 script = ExtResource("13_ivsq2")
 
-[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=407920590]
 wait_time = 0.2
 one_shot = true
 
-[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=268589002]
 wait_time = 0.8
 one_shot = true
 
-[node name="Camera3D" type="Camera2D" parent="."]
+[node name="Camera3D" type="Camera2D" parent="." unique_id=827319130 groups=["Lira"]]
 position = Vector2(0, -60)
 scale = Vector2(0.2, 0.2)
 zoom = Vector2(1.5, 1.5)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=486226985]
 layer = 10
 
-[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=386813406]
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=709384888]
 layout_mode = 2
 
-[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer"]
+[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1502824004]
 material = SubResource("ShaderMaterial_tghg6")
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=691374416]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=2027369056]
 material = SubResource("ShaderMaterial_ove30")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=59921122]
 material = SubResource("ShaderMaterial_mjvex")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=608998443]
 material = SubResource("ShaderMaterial_ivsq2")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1192064899]
 material = SubResource("ShaderMaterial_k88eo")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1413696101]
 material = SubResource("ShaderMaterial_tu3mt")
 layout_mode = 2
 texture = ExtResource("14_5f38a")

@@ -3,9 +3,7 @@
  <image source="GandalfHardcore FREE Platformer Assets/BG Dirt1.png" width="192" height="128"/>
  <tile id="0">
   <objectgroup draworder="index" id="2">
-   <object id="5" x="13.0219" y="1.06301">
-    <polygon points="0,0 -12.0253,10.2315 -13.0883,30.4287 18.8685,30.9602 18.5363,12.6897 6.17876,0.0664383"/>
-   </object>
+   <object id="6" x="0" y="1" width="32" height="31"/>
   </objectgroup>
  </tile>
  <tile id="6">

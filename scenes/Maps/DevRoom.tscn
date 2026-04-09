@@ -9,4 +9,4 @@
 position = Vector2(11543, 283)
 
 [node name="CharacterBody3D" parent="." unique_id=192472602 instance=ExtResource("3_emu3q")]
-position = Vector2(14561, 495)
+position = Vector2(14562, 495)
