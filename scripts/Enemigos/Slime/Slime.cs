@@ -7,6 +7,7 @@ namespace Faeterna.scripts.Slime
     {
         /// <summary>>Fuerza vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
         public float JumpForce = -380f;
+        /// <summary>Intervalo de tiempo entre cada salto (en segundos).</summary>
         public float JumpInterval = 2.0f;
         public float HorizontalSpeed = 120f;
 
