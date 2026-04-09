@@ -272,72 +272,82 @@ namespace Faeterna.scripts.Menus
             }
         }
 
+        private float NormalizeVolumeToDb(float percentValue)
+        {
+            float normalizedValue = Mathf.Clamp(percentValue / 100f, 0f, 1f);
+            if (normalizedValue <= 0)
+            {
+                return -80f;
+            }
+            return Mathf.LinearToDb(normalizedValue);
+        }
+
         public void OnHMasterSliderValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(0, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(0, NormalizeVolumeToDb(value));
             _masterSpinBox.Value = value;
             _master.Value = value;
         }
 
         public void OnHMusicSliderValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(1, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(1, NormalizeVolumeToDb(value));
             _musicSpinBox.Value = value;
             _music.Value = value;
         }
 
         public void OnHSoundFXSliderValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(2, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(2, NormalizeVolumeToDb(value));
             _soundfxSpinBox.Value = value;
             _soundfx.Value = value;
         }
 
         public void OnHEnviromentSliderValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(3, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(3, NormalizeVolumeToDb(value));
             _enviromentSpinBox.Value = value;
             _enviroment.Value = value;
         }
 
         public void OnHUISoundSliderValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(4, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(4, NormalizeVolumeToDb(value));
             _uisoundSpinBox.Value = value;
             _uisound.Value = value;
         }
 
         public void OnSpinBoxMasterValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(0, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(0, NormalizeVolumeToDb(value));
             _masterSpinBox.Value = value;
             _master.Value = value;
         }
 
         public void OnSpinBoxMusicValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(1, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(1, NormalizeVolumeToDb(value));
             _music.Value = value;
             _musicSpinBox.Value = value;
         }
 
         public void OnSpinBoxSoundFXValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(2, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(2, NormalizeVolumeToDb(value));
             _soundfx.Value = value;
             _soundfxSpinBox.Value = value;
         }
 
         public void OnSpinBoxEnviromentValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(3, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(3, NormalizeVolumeToDb(value));
             _enviroment.Value = value;
             _enviromentSpinBox.Value = value;
         }
 
         public void OnSpinBoxUISoundValueChanged(float value)
         {
-            AudioServer.SetBusVolumeDb(4, Mathf.LinearToDb(value));
+            AudioServer.SetBusVolumeDb(4, NormalizeVolumeToDb(value));
             _uisound.Value = value;
             _uisoundSpinBox.Value = value;
         }

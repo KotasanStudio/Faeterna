@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c07fbknla2wj5" path="res://assets/Placeholder/Terrain/Terrain (16x16).png" id="2_n25mx"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="3_emu3q"]
 [ext_resource type="Script" uid="uid://cw5sxho1gcfbe" path="res://scripts/Tools/CheckPoint.cs" id="4_n25mx"]
+[ext_resource type="Texture2D" uid="uid://prkl7e3lplmy" path="res://assets/Placeholder/pngegg.png" id="5_rf47w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q40th"]
 texture = ExtResource("2_n25mx")
@@ -186,8 +187,6 @@ sources/0 = SubResource("TileSetAtlasSource_q40th")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rf47w"]
 size = Vector2(176, 142)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_qf34w"]
-
 [node name="Node2D" type="Node" unique_id=1794045777]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1000042783]
@@ -210,7 +209,7 @@ tile_set = SubResource("TileSet_vw1q8")
 position = Vector2(161, 308)
 
 [node name="CheckPoint" type="Node2D" parent="." unique_id=264203552]
-position = Vector2(1604, 836)
+position = Vector2(1610, 842)
 script = ExtResource("4_n25mx")
 
 [node name="Area2D" type="Area2D" parent="CheckPoint" unique_id=317021192]
@@ -218,7 +217,9 @@ script = ExtResource("4_n25mx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CheckPoint/Area2D" unique_id=1510974798]
 shape = SubResource("RectangleShape2D_rf47w")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CheckPoint" unique_id=758361371]
-sprite_frames = SubResource("SpriteFrames_qf34w")
+[node name="Sprite2D" type="Sprite2D" parent="CheckPoint" unique_id=1280879707]
+position = Vector2(-2.000031, -10.000046)
+scale = Vector2(0.3554687, 0.3554687)
+texture = ExtResource("5_rf47w")
 
 [connection signal="body_entered" from="CheckPoint/Area2D" to="CheckPoint" method="OnAreaCheckPointEntered"]

@@ -86,6 +86,3 @@ namespace Faeterna.scripts.Tools
         public static Task<GameData> LoadAsync(int slot) => Saves.LoadAsync(slot);
     }
 }
-
-
-
