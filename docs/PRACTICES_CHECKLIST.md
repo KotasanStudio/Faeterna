@@ -33,6 +33,26 @@ git status
 
 ---
 
+## 👤 **Identidad de Git (¡importante para las contribuciones!)**
+
+Asegúrate de que tus commits quedan atribuidos a **tu** cuenta de GitHub:
+
+```bash
+git config --global user.name   # debe ser tu usuario de GitHub
+git config --global user.email  # debe ser el email verificado en tu cuenta
+```
+
+Si ves `Faeterna Bot` o un email como `faeterna-bot@example.local`, corrígelo:
+
+```bash
+git config --global user.name  "TuUsuarioDeGitHub"
+git config --global user.email "TuUsuario@users.noreply.github.com"
+```
+
+> Consulta [`docs/GIT_AUTHOR_SETUP.md`](GIT_AUTHOR_SETUP.md) para instrucciones detalladas.
+
+---
+
 ## 🎯 **Antes de hacer Commit**
 
 - [ ] He compilado el proyecto exitosamente
@@ -40,6 +60,7 @@ git status
 - [ ] Ejecuté los tests (si hay)
 - [ ] Revisé con `git diff` mis cambios
 - [ ] No incluyo archivos de `.gitignore`
+- [ ] Verifiqué que `git config user.email` es mi email de GitHub
 
 ```bash
 # Verificar qué va a subirse

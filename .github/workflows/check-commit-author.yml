@@ -1,0 +1,65 @@
+name: Check Commit Author Identity
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  check-author:
+    name: Verify no Faeterna_Bot commits
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for Faeterna Bot commits
+        run: |
+          # For pull requests, check commits in the PR range
+          # For pushes, check the most recent commit(s) in the push
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+            RANGE="${BASE}..${HEAD}"
+          else
+            # On push, check commit(s) introduced by the push
+            BEFORE="${{ github.event.before }}"
+            AFTER="${{ github.event.after }}"
+            if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              # New branch – check only the latest commit
+              RANGE="${AFTER}~1..${AFTER}"
+            else
+              RANGE="${BEFORE}..${AFTER}"
+            fi
+          fi
+
+          BOT_COMMITS=$(git log "$RANGE" \
+            --format="%H %ae %an" \
+            2>/dev/null \
+            | grep -iE "faeterna.?bot|faeterna-bot@example\.local" || true)
+
+          if [ -n "$BOT_COMMITS" ]; then
+            echo "❌ ERROR: Commits atribuidos a 'Faeterna Bot' detectados:"
+            echo ""
+            echo "$BOT_COMMITS"
+            echo ""
+            echo "──────────────────────────────────────────────────────"
+            echo "  Estos commits deben atribuirse a HaolinZheng."
+            echo "  Configura tu identidad local con:"
+            echo ""
+            echo "    git config --global user.name  \"HaolinZheng\""
+            echo "    git config --global user.email \"HaolinZheng@users.noreply.github.com\""
+            echo ""
+            echo "  Asegúrate de que ese email esté añadido y verificado"
+            echo "  en tu cuenta de GitHub (Settings → Emails)."
+            echo "──────────────────────────────────────────────────────"
+            exit 1
+          else
+            echo "✅ Todos los commits tienen identidad correcta."
+          fi
