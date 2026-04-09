@@ -134,12 +134,12 @@ radius = 15.0
 radius = 16.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
-size = Vector2(145, 102)
+size = Vector2(282.5, 102)
 
-[node name="Slime2D" type="CharacterBody2D"]
+[node name="Slime2D" type="CharacterBody2D" node_paths=PackedStringArray("_detectionArea")]
 collision_layer = 4
-collision_mask = 3
 script = ExtResource("1_7waxi")
+_detectionArea = NodePath("DetectionArea/CollisionShape2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60w7s")
@@ -157,7 +157,7 @@ collision_layer = 16
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitBox"]
-position = Vector2(0, 24)
+position = Vector2(0, 25)
 shape = SubResource("CircleShape2D_16tdn")
 debug_color = Color(1, 1, 0, 0.14901961)
 
@@ -166,7 +166,7 @@ collision_layer = 32
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
-position = Vector2(72, -10)
+position = Vector2(140.75, -10)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 

@@ -59,6 +59,9 @@ namespace Faeterna.scripts.Player
         /// <summary><see cref="TextureRect"/> que representa la barra de maná en la interfaz.</summary>
         [Export] TextureRect _manaBar;
 
+        /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>   
+        [Export] private Timer _invencibilityTimer;
+
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>
@@ -86,14 +89,15 @@ namespace Faeterna.scripts.Player
         /// de flash en los corazones de la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de puntos de vida a restar.</param>
-        private bool _isInvincible = false;
-
         /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
         public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            if (_isInvincible || _currentHealth <= 0) return;
-
-            _isInvincible = true;
+            if (_invencibilityTimer.IsStopped() == false)
+            {
+                GD.Print("Invencibilidad activa, no se recibe daño.");
+                return; // Si el timer de invencibilidad está activo, no se puede recibir daño
+            }
+            if (_currentHealth <= 0) return;
 
             // Knockback: salto hacia arriba y hacia el lado contrario del atacante
             float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
@@ -123,8 +127,7 @@ namespace Faeterna.scripts.Player
                     mat.SetShaderParameter("fill_amount", 0.0f);
                 }
             }
-
-            _isInvincible = false;
+            _invencibilityTimer.Start();
         }
 
         /// <summary>

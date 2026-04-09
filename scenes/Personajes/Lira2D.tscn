@@ -289,11 +289,12 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts", "_manaBar") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_41i63")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
+_invencibilityTimer = NodePath("Invencibility_Timer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
@@ -342,7 +343,7 @@ one_shot = true
 script = ExtResource("14_8x1cb")
 
 [node name="KnockbackTimer" type="Timer" parent="MovementStateMachine/KnockbackMovementState"]
-wait_time = 0.5
+wait_time = 0.25
 one_shot = true
 
 [node name="Camera3D" type="Camera2D" parent="."]
@@ -396,3 +397,7 @@ texture = ExtResource("14_5f38a")
 material = SubResource("ShaderMaterial_tu3mt")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
+
+[node name="Invencibility_Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true

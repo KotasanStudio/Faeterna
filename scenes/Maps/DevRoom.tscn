@@ -202,7 +202,7 @@ tile_map_data = PackedByteArray("AAAAAA0AAAAGAAAAAAABAA0AAAAHAAAAAAACAA0AAAAHAAA
 tile_set = SubResource("TileSet_vw1q8")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_emu3q")]
-position = Vector2(138, 293)
+position = Vector2(1072, 584)
 
 [node name="Slime2D" parent="." instance=ExtResource("4_n25mx")]
-position = Vector2(681, 296)
+position = Vector2(793, 582)
