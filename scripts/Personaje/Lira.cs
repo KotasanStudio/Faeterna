@@ -111,7 +111,6 @@ namespace Faeterna.scripts.Player
 
             UpdateHearts();
             UpdateMana();
-            cameraInitPos = _camera.Position;
         }
 
         /// <summary>
@@ -242,7 +241,7 @@ namespace Faeterna.scripts.Player
                 if(camaraPos.Y != (cameraInitPos.Y + lookDirection * 50f))
                 {
                     camaraPos.Y += lookDirection * 1f; // Ajusta el valor para controlar la distancia de movimiento de la cámara
-                GD.Print($"Camera Y: {camaraPos.Y}, Look Direction: {lookDirection}");
+                    GD.Print($"Camera Y: {camaraPos.Y}, Look Direction: {lookDirection}");
                 }
 
                 _camera.Position = camaraPos;

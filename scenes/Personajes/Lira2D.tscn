@@ -17,7 +17,6 @@
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
-[ext_resource type="PackedScene" uid="uid://h12nrsoj3d6o" path="res://scenes/Menus/pause_menu.tscn" id="18_8x1cb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -289,11 +288,12 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=1465306425 node_paths=PackedStringArray("_hearts", "_manaBar") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=1465306425 node_paths=PackedStringArray("_hearts", "_manaBar", "_camera") groups=["Lira"]]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_41i63")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
+_camera = NodePath("Camera3D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=771704802]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
@@ -334,7 +334,7 @@ script = ExtResource("13_ivsq2")
 wait_time = 0.2
 one_shot = true
 
-[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=557562377]
 wait_time = 0.8
 one_shot = true
 
