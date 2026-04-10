@@ -79,7 +79,7 @@ namespace Faeterna.scripts.Slime
 
             // Voltear sprite según dirección
             _animatedSprite.FlipH = directionX < 0;
-            _detectionArea.Position = new Vector2(16 * directionX, 0); // Ajusta el área de detección
+            _detectionArea.Position = new Vector2(88.25f * directionX, 0); // Ajusta el área de detección
 
             Velocity = new Vector2(directionX * HorizontalSpeed, JumpForce);
             set_animation("jump");

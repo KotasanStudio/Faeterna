@@ -122,9 +122,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_83rml")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
-"speed": 5.0
+"speed": 4.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gaqf6"]
@@ -134,7 +134,7 @@ radius = 15.0
 radius = 16.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
-size = Vector2(282.5, 102)
+size = Vector2(177.5, 102)
 
 [node name="Slime2D" type="CharacterBody2D" node_paths=PackedStringArray("_detectionArea")]
 collision_layer = 4
@@ -143,9 +143,8 @@ _detectionArea = NodePath("DetectionArea/CollisionShape2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_60w7s")
-animation = &"idle"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.055706877
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 25)
@@ -166,7 +165,7 @@ collision_layer = 32
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
-position = Vector2(140.75, -10)
+position = Vector2(88.25, -10)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 

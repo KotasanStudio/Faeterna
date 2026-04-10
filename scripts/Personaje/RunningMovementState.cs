@@ -70,7 +70,11 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                 _player.animatedSprite.FlipH = true;
             else if (move > 0f)
                 _player.animatedSprite.FlipH = false;
-
+            if (move == 0f)
+            {
+                GD.Print("Transitioning to idle state from running due to zero horizontal velocity.");
+                stateMachine.TransitionTo("IdleMovementState");
+            }
             _player.MoveAndSlide();
         }
 
