@@ -33,6 +33,8 @@ namespace Faeterna.scripts.Player
         /// <summary>Maná actual del personaje.</summary>
         public float _currentMana = Mana;
 
+        public Vector2 cameraInitPos;
+
         /// <summary>Indica si el doble salto está disponible.</summary>
         public bool DoubleJumpAvailable = true;
 
@@ -51,12 +53,15 @@ namespace Faeterna.scripts.Player
         /// <summary><see cref="TextureRect"/> que representa la barra de maná en la interfaz.</summary>
         [Export] TextureRect _manaBar;
 
+        [Export] Camera2D _camera;
+
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>
         public override async void _Ready()
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+            cameraInitPos = _camera.Position;
             UpdateHearts();
             UpdateMana();
 
@@ -106,6 +111,7 @@ namespace Faeterna.scripts.Player
 
             UpdateHearts();
             UpdateMana();
+            cameraInitPos = _camera.Position;
         }
 
         /// <summary>
@@ -221,6 +227,29 @@ namespace Faeterna.scripts.Player
             }
 
             _manaBar.Visible = visible;
+        }
+
+        public override void _Input(InputEvent @event)
+        {
+
+            float lookDirection = Input.GetAxis("look_up", "look_down");
+            float moveDirection = Input.GetAxis("move_left", "move_right");
+            if (lookDirection != 0f&& moveDirection == 0f)
+            {
+
+                Vector2 camaraPos = _camera.Position;
+
+                if(camaraPos.Y != (cameraInitPos.Y + lookDirection * 50f))
+                {
+                    camaraPos.Y += lookDirection * 1f; // Ajusta el valor para controlar la distancia de movimiento de la cámara
+                GD.Print($"Camera Y: {camaraPos.Y}, Look Direction: {lookDirection}");
+                }
+
+                _camera.Position = camaraPos;
+            }else
+            {
+                _camera.Position = cameraInitPos;
+            }
         }
     }
 }

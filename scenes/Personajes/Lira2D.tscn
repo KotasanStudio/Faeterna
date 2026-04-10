@@ -330,66 +330,63 @@ script = ExtResource("12_mjvex")
 [node name="DashMovementState" type="Node" parent="MovementStateMachine" unique_id=194459165]
 script = ExtResource("13_ivsq2")
 
-[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=1469476793]
+[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=407920590]
 wait_time = 0.2
 one_shot = true
 
-[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=73408897]
+[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
 wait_time = 0.8
 one_shot = true
 
-[node name="Camera3D" type="Camera2D" parent="." unique_id=1987907694]
-position = Vector2(0, -0.146)
+[node name="Camera3D" type="Camera2D" parent="." unique_id=827319130 groups=["Lira"]]
+position = Vector2(0, -60)
 scale = Vector2(0.2, 0.2)
+zoom = Vector2(1.5, 1.5)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=408625876]
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=486226985]
 layer = 10
 
-[node name="PauseMenu" parent="Camera3D/CanvasLayer" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("18_8x1cb")]
-visible = false
-_player = NodePath("../../..")
-
-[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=1213165656]
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=386813406]
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=1868236217]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=709384888]
 layout_mode = 2
 
-[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=570589563]
+[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=1502824004]
 material = SubResource("ShaderMaterial_tghg6")
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=204433823]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=691374416]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=170679167]
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=2027369056]
 material = SubResource("ShaderMaterial_ove30")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=554824881]
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=59921122]
 material = SubResource("ShaderMaterial_mjvex")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=494801071]
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=608998443]
 material = SubResource("ShaderMaterial_ivsq2")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=792756664]
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1192064899]
 material = SubResource("ShaderMaterial_k88eo")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=598870262]
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1413696101]
 material = SubResource("ShaderMaterial_tu3mt")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
