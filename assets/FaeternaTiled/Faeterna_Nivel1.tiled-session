@@ -3,11 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
         "."
     ],
-    "file.lastUsedOpenFilter": "All Files (*)",
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
     "fileStates": {
         "": {
             "scaleInDock": 1
@@ -174,35 +174,29 @@
             }
         }
     },
-    "last.exportedFilePath": "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps",
+    "last.exportedFilePath": "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps",
     "last.externalTilesetPath": "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps",
     "last.imagePath": "/home/dev/Documents/TiledProject/Faeterna",
     "map.fixedSize": false,
     "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "FrontTree.tsx",
-        "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
-        "Arbustos.tsx",
-        "BackTree.tsx",
-        "BackTree3.tsx",
-        "BackTree2.tsx",
-        "FondoBosque.tsx"
     ],
     "project": "Faeterna_Nivel1.tiled-project",
+    "property.type": "float",
     "recentFiles": [
-        "FrontTree.tsx",
-        "FondoBosque.tsx",
-        "BackTree2.tsx",
+        "1.1Tileset.tsx",
         "BackTree3.tsx",
+        "BackTree2.tsx",
+        "Tileset5.tsx",
+        "Arboles.tsx",
+        "2nTileset.tsx",
         "BackTree.tsx",
         "Arbustos.tsx",
+        "FrontTree.tsx",
+        "FondoBosque.tsx",
         "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
-        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/SpriteTowerTile.tsx",
-        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/MAP.tmx",
-        "Nivel1.tmx",
-        "1rTileset.tsx",
-        "tileset4.tsx"
+        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/SpriteTowerTile.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
