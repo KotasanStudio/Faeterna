@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cwk8djg18iojj"]
+
+[ext_resource type="Script" uid="uid://cw5sxho1gcfbe" path="res://scripts/Tools/CheckPoint.cs" id="1_2d7i6"]
+[ext_resource type="Texture2D" uid="uid://tq87fxdtvhg2" path="res://assets/Liria/Lira Statue.png" id="2_eigfb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rf47w"]
+size = Vector2(176, 142)
+
+[node name="CheckPoint" type="Node2D" unique_id=472979019]
+script = ExtResource("1_2d7i6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=413205494]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1452409085]
+shape = SubResource("RectangleShape2D_rf47w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=65087731]
+texture_filter = 1
+position = Vector2(-1.7881393e-05, 0.99998486)
+scale = Vector2(1.8515615, 1.8020827)
+texture = ExtResource("2_eigfb")
+
+[connection signal="body_entered" from="Area2D" to="." method="OnAreaCheckPointEntered"]
