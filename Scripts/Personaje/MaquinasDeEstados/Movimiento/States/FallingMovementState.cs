@@ -1,10 +1,11 @@
 using Godot;
 using System;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados;
+using PlayerType = Faeterna.scripts.Personaje.Lira;
 
-namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
-    public partial class DoubleJumpMovementState : State
+    public partial class FallingMovementState : State
     {
         private PlayerType _player;
 
@@ -18,35 +19,19 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         public override void Enter()
         {
             if (_player == null) return;
-            _player.DoubleJumpAvailable = false;
-            _player.SetAnimation("double_jump");
-            GD.Print("Entered DoubleJumpMovementState (double jump)");
-            // En 2D, JumpVelocity es negativo (hacia arriba).
-            _player.Velocity = new Vector2(_player.Velocity.X, PlayerType.JumpVelocity);
-            _player.MoveAndSlide();
+            _player.SetAnimation("fall");
         }
 
-        public override void Update(double delta)
-        {
-            if (_player == null) return;
-            // En 2D, Y > 0 significa que estamos cayendo.
-            if (_player.Velocity.Y > 0)
-            {
-                stateMachine.TransitionTo("FallingMovementState");
-            }
-            // Cuando la animación de doble salto termina, pasar a la animación de salto normal.
-            if (_player.animatedSprite != null && _player.animatedSprite.Frame == 5)
-            {
-                _player.SetAnimation("jump");
-            }
-        }
+        public override void Update(double delta) { }
 
         public override void UpdatePhysics(double delta)
         {
             if (_player == null) return;
+
             if (!_player.IsOnFloor())
             {
                 Vector2 velocity = _player.Velocity;
+                // Aplicar gravedad: en 2D sumamos la gravedad positiva (hacia abajo).
                 velocity.Y += PlayerType.Gravity * (float)delta;
                 float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
                 velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
@@ -59,11 +44,22 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 
                 _player.MoveAndSlide();
             }
+
+            if (_player.IsOnFloor())
+            {
+                _player.DoubleJumpAvailable = true;
+                GD.Print("Transitioning to idle/running state from falling (landed).");
+                stateMachine.TransitionTo(Mathf.Abs(_player.Velocity.X) > 0.1f
+                    ? "RunningMovementState"
+                    : "IdleMovementState");
+            }
         }
 
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
+            if (ev.IsActionPressed("jump") && _player.DoubleJumpAvailable)
+                stateMachine.TransitionTo("DoubleJumpMovementState");
             if (ev.IsActionPressed("dash"))
                 stateMachine.TransitionTo("DashMovementState");
         }

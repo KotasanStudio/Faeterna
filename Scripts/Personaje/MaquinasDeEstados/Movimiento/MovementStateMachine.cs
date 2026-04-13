@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Godot;
-using Faeterna.scripts.Maquinas_de_estados;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 
-namespace Faeterna.scripts.Maquinas_de_estados.Movimiento
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento
 {
     public partial class MovementStateMachine : Node
     {

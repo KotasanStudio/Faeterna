@@ -1,8 +1,8 @@
 using Godot;
 using Godot.Collections;
-using Faeterna.scripts.Maquinas_de_estados.Movimiento;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
-namespace Faeterna.scripts.Player
+namespace Faeterna.scripts.Personaje
 {
     /// <summary>
     /// Personaje principal del juego (Lira).
@@ -59,7 +59,7 @@ namespace Faeterna.scripts.Player
         /// <summary><see cref="TextureRect"/> que representa la barra de maná en la interfaz.</summary>
         [Export] TextureRect _manaBar;
 
-        /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>   
+        /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>
         [Export] private Timer _invencibilityTimer;
 
         /// <summary>

@@ -1,8 +1,8 @@
 using System;
-using Faeterna.scripts.Player;
+using Faeterna.scripts.Personaje;
 using Godot;
 
-namespace Faeterna.scripts.Wolf
+namespace Faeterna.scripts.Enemigos.Wolf
 {
     public partial class Wolf : CharacterBody2D
     {

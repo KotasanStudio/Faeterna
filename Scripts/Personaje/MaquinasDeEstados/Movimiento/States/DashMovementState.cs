@@ -1,8 +1,9 @@
 using Godot;
 using System;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados;
+using PlayerType = Faeterna.scripts.Personaje.Lira;
 
-namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
     public partial class DashMovementState : State
     {
