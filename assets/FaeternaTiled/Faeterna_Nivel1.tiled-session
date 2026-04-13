@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps/Nivel1.tmx",
     "expandedProjectPaths": [
         "."
     ],
@@ -34,6 +34,14 @@
             "viewCenter": {
                 "x": 14731.32372214941,
                 "y": -377.2701741246958
+            }
+        },
+        "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps/Nivel1.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 26084,
+                "y": 228
             }
         },
         "1.1Tileset.tsx": {
@@ -67,12 +75,12 @@
         },
         "BackTree2.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 2.2749,
+            "scaleInDock": 0.33,
             "scaleInEditor": 1
         },
         "BackTree3.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 0.3033,
+            "scaleInDock": 0.33,
             "scaleInEditor": 1
         },
         "Cesped_1.tsx": {
@@ -88,7 +96,7 @@
             "scaleInEditor": 1
         },
         "FondoBosque.tsx": {
-            "scaleInDock": 0.1563,
+            "scaleInDock": 0.33,
             "scaleInEditor": 1
         },
         "FrontTree.tsx": {
@@ -127,7 +135,7 @@
             "scaleInEditor": 1
         },
         "Tileset5.tsx": {
-            "scaleInDock": 1,
+            "scaleInDock": 0.33,
             "scaleInEditor": 1
         },
         "TilesetsNivel1.tsx": {
@@ -152,6 +160,10 @@
             "scaleInDock": 1,
             "scaleInEditor": 1
         },
+        "arbolpocho.tsx": {
+            "scaleInDock": 0.25,
+            "scaleInEditor": 1
+        },
         "cesped.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 7.9573
@@ -162,7 +174,7 @@
         },
         "tileset4.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 1,
+            "scaleInDock": 0.33,
             "scaleInEditor": 1
         },
         "untitled.tmx": {
@@ -176,32 +188,36 @@
     },
     "last.exportedFilePath": "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps",
     "last.externalTilesetPath": "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps",
-    "last.imagePath": "/home/dev/Documents/TiledProject/Faeterna",
+    "last.imagePath": "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/assets/FaeternaTiled",
     "map.fixedSize": false,
     "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
+        "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps/Nivel1.tmx",
+        "BackTree2.tsx",
+        "arbolpocho.tsx"
     ],
     "project": "Faeterna_Nivel1.tiled-project",
     "property.type": "float",
     "recentFiles": [
+        "arbolpocho.tsx",
+        "BackTree2.tsx",
+        "/mnt/juegos/Proyectos/Projectos-Godot/Faeterna/scenes/Maps/Nivel1.tmx",
         "1.1Tileset.tsx",
         "BackTree3.tsx",
-        "BackTree2.tsx",
         "Tileset5.tsx",
         "Arboles.tsx",
         "2nTileset.tsx",
         "BackTree.tsx",
         "Arbustos.tsx",
         "FrontTree.tsx",
-        "FondoBosque.tsx",
-        "/home/dev/Documents/GodotProjects/ProyectoFinal/Faeterna/scenes/Maps/Nivel1.tmx",
-        "/home/dev/Documents/GodotProjects/GameJump-FallKnight/Assets/Maps/SpriteTowerTile.tsx"
+        "FondoBosque.tsx"
     ],
+    "resizeMap.removeObjects": false,
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 32,
-        "width": 32
+        "height": 640,
+        "width": 600
     },
     "tileset.type": 0
 }
