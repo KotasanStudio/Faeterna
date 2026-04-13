@@ -1,13 +1,16 @@
-[gd_scene load_steps=55 format=3 uid="uid://dfndf3mqrnif5"]
+[gd_scene load_steps=80 format=3 uid="uid://dfndf3mqrnif5"]
 
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://scripts/Personaje/Lira.cs" id="1_41i63"]
 [ext_resource type="Texture2D" uid="uid://c104b3b6vq1el" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
 [ext_resource type="Texture2D" uid="uid://bjnhrq3j6bx7o" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="Texture2D" uid="uid://bfcn10f5pc5wm" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://3ggfrlfuloa1" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
+[ext_resource type="Texture2D" uid="uid://buh0106mv8bgr" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
 [ext_resource type="Texture2D" uid="uid://dhwy2mjqjhjep" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
 [ext_resource type="Texture2D" uid="uid://dabq5jamxt8vv" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Maquinas de estados/Movimiento/MovementStateMachine.cs" id="7_5f38a"]
 [ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Personaje/IdleMovementState.cs" id="8_vryya"]
+[ext_resource type="Texture2D" uid="uid://ck4qji6duwprp" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
 [ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Personaje/RunningMovementState.cs" id="9_k88eo"]
 [ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://scripts/Personaje/JumpingMovementState.cs" id="10_tu3mt"]
 [ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://scripts/Personaje/FallingMovementState.cs" id="11_ove30"]
@@ -17,7 +20,61 @@
 [ext_resource type="Script" uid="uid://byy7ix4qp6rms" path="res://scripts/Personaje/KnockbackMovementState.cs" id="14_8x1cb"]
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://dyp1rgpluxitv" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
+[ext_resource type="Script" uid="uid://cav0gi1svla7s" path="res://scripts/Personaje/AttackMovementState.cs" id="15_akqtr"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
+[ext_resource type="Script" uid="uid://cqvplqe0xtj8" path="res://scripts/Personaje/MagicMovementState.cs" id="16_17myn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeb6i"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyc13"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4jf0"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slhl6"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo67c"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18h5y"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqquc"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kpwc"]
+atlas = ExtResource("2_v5fc5")
+region = Rect2(768, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atuup"]
+atlas = ExtResource("3_8gdnm")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6if6"]
+atlas = ExtResource("3_8gdnm")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq1aa"]
+atlas = ExtResource("3_8gdnm")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e80u2"]
+atlas = ExtResource("3_8gdnm")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lnvu"]
+atlas = ExtResource("3_8gdnm")
+region = Rect2(480, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -131,8 +188,77 @@ region = Rect2(576, 0, 96, 96)
 atlas = ExtResource("5_gg8xq")
 region = Rect2(672, 0, 96, 96)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0thm"]
+atlas = ExtResource("9_8j2b6")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tb3r6"]
+atlas = ExtResource("9_8j2b6")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhnoj"]
+atlas = ExtResource("9_8j2b6")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7o1k"]
+atlas = ExtResource("9_8j2b6")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3kni"]
+atlas = ExtResource("9_8j2b6")
+region = Rect2(480, 0, 96, 96)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_5rx2b"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeb6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyc13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4jf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slhl6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo67c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18h5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fqquc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kpwc")
+}],
+"loop": true,
+"name": &"aim",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atuup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6if6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq1aa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e80u2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lnvu")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5rx2b")
@@ -249,6 +375,26 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0thm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tb3r6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhnoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7o1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3kni")
+}],
+"loop": false,
+"name": &"shot",
+"speed": 20.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tu3mt"]
@@ -289,6 +435,10 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_7dora"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u31ip"]
+
 [node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_41i63")
@@ -298,8 +448,8 @@ _invencibilityTimer = NodePath("Invencibility_Timer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
-animation = &"run"
-frame_progress = 0.12365947
+animation = &"attack"
+frame = 1
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
@@ -345,6 +495,12 @@ script = ExtResource("14_8x1cb")
 [node name="KnockbackTimer" type="Timer" parent="MovementStateMachine/KnockbackMovementState"]
 wait_time = 0.25
 one_shot = true
+
+[node name="AttackMovementState" type="Node" parent="MovementStateMachine"]
+script = ExtResource("15_akqtr")
+
+[node name="MagicMovementState" type="Node" parent="MovementStateMachine"]
+script = ExtResource("16_17myn")
 
 [node name="Camera3D" type="Camera2D" parent="."]
 position = Vector2(0, -0.146)
@@ -401,3 +557,15 @@ texture = ExtResource("14_5f38a")
 [node name="Invencibility_Timer" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(19, 8.5)
+shape = SubResource("CircleShape2D_7dora")
+debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10, 21)
+shape = SubResource("CircleShape2D_u31ip")
+debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)
