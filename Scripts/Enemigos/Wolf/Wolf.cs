@@ -1,5 +1,5 @@
 using System;
-using Faeterna.scripts.Personaje;
+using Faeterna.Scripts.Personaje;
 using Godot;
 
 namespace Faeterna.scripts.Enemigos.Wolf

@@ -2,7 +2,7 @@ using Godot;
 using Godot.Collections;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
-namespace Faeterna.scripts.Personaje
+namespace Faeterna.Scripts.Personaje
 {
     /// <summary>
     /// Personaje principal del juego (Lira).

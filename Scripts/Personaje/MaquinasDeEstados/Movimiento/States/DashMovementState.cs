@@ -1,7 +1,7 @@
 using Godot;
 using System;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
-using PlayerType = Faeterna.scripts.Personaje.Lira;
+using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {

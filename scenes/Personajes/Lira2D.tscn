@@ -1,28 +1,28 @@
-[gd_scene load_steps=80 format=3 uid="uid://dfndf3mqrnif5"]
+[gd_scene format=3 uid="uid://dfndf3mqrnif5"]
 
-[ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://scripts/Personaje/Lira.cs" id="1_41i63"]
-[ext_resource type="Texture2D" uid="uid://c104b3b6vq1el" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
-[ext_resource type="Texture2D" uid="uid://bjnhrq3j6bx7o" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
-[ext_resource type="Texture2D" uid="uid://bfcn10f5pc5wm" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
-[ext_resource type="Texture2D" uid="uid://3ggfrlfuloa1" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
-[ext_resource type="Texture2D" uid="uid://buh0106mv8bgr" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
-[ext_resource type="Texture2D" uid="uid://dhwy2mjqjhjep" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
-[ext_resource type="Texture2D" uid="uid://dabq5jamxt8vv" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
-[ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Maquinas de estados/Movimiento/MovementStateMachine.cs" id="7_5f38a"]
-[ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Personaje/IdleMovementState.cs" id="8_vryya"]
-[ext_resource type="Texture2D" uid="uid://ck4qji6duwprp" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
-[ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Personaje/RunningMovementState.cs" id="9_k88eo"]
-[ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://scripts/Personaje/JumpingMovementState.cs" id="10_tu3mt"]
-[ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://scripts/Personaje/FallingMovementState.cs" id="11_ove30"]
-[ext_resource type="Script" uid="uid://d0c7idkcckr5" path="res://scripts/Personaje/DoubleJumpMovementState.cs" id="12_mjvex"]
-[ext_resource type="Script" uid="uid://crt53t7ym666q" path="res://scripts/Personaje/DashMovementState.cs" id="13_ivsq2"]
-[ext_resource type="Texture2D" uid="uid://juqfctkovlnw" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
-[ext_resource type="Script" uid="uid://byy7ix4qp6rms" path="res://scripts/Personaje/KnockbackMovementState.cs" id="14_8x1cb"]
-[ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
-[ext_resource type="Texture2D" uid="uid://dyp1rgpluxitv" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
-[ext_resource type="Script" uid="uid://cav0gi1svla7s" path="res://scripts/Personaje/AttackMovementState.cs" id="15_akqtr"]
-[ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
-[ext_resource type="Script" uid="uid://cqvplqe0xtj8" path="res://scripts/Personaje/MagicMovementState.cs" id="16_17myn"]
+[ext_resource type="Texture2D" uid="uid://vr51xe23nodk" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
+[ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://Scripts/Personaje/Lira.cs" id="1_v5fc5"]
+[ext_resource type="Texture2D" uid="uid://w7cxfj5fw1wm" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
+[ext_resource type="Texture2D" uid="uid://0tfafgnc08wy" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
+[ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
+[ext_resource type="Texture2D" uid="uid://dmjhdtddwkgjs" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
+[ext_resource type="Texture2D" uid="uid://jj7g4caf011g" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="Texture2D" uid="uid://duge2wg4u1nly" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
+[ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/IdleMovementState.cs" id="10_qnkxa"]
+[ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" id="10_v5fc5"]
+[ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/RunningMovementState.cs" id="11_v5fc5"]
+[ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" id="12_8gdnm"]
+[ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/FallingMovementState.cs" id="13_8j2b6"]
+[ext_resource type="Texture2D" uid="uid://dtox0u64185yd" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
+[ext_resource type="Script" uid="uid://d0c7idkcckr5" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" id="14_eeb6i"]
+[ext_resource type="Texture2D" uid="uid://bkk7vwch5jism" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
+[ext_resource type="Script" uid="uid://crt53t7ym666q" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" id="15_wyc13"]
+[ext_resource type="Script" uid="uid://byy7ix4qp6rms" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" id="16_e4jf0"]
+[ext_resource type="Script" uid="uid://cav0gi1svla7s" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" id="17_slhl6"]
+[ext_resource type="Script" uid="uid://cqvplqe0xtj8" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" id="18_vo67c"]
+[ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://Scripts/Shaders/GUI/Mana.gdshader" id="20_v5fc5"]
+[ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://Scripts/Shaders/GUI/Vida.gdshader" id="22_8gdnm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eeb6i"]
 atlas = ExtResource("2_v5fc5")
@@ -400,8 +400,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tu3mt"]
 size = Vector2(20, 70)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tghg6"]
-shader = ExtResource("14_tu3mt")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8j2b6"]
+shader = ExtResource("20_v5fc5")
 shader_parameter/fill_amount = 1.0
 shader_parameter/liquid_color = Color(0.5, 0.8, 1, 1)
 shader_parameter/empty_color = Color(0.1, 0.1, 0.15, 1)
@@ -410,28 +410,28 @@ shader_parameter/wave_strength = 0.015
 shader_parameter/wave_frequency = 12.0
 shader_parameter/highlight_strength = 0.4
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ove30"]
-shader = ExtResource("15_k88eo")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eeb6i"]
+shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_mjvex"]
-shader = ExtResource("15_k88eo")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wyc13"]
+shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ivsq2"]
-shader = ExtResource("15_k88eo")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e4jf0"]
+shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_k88eo"]
-shader = ExtResource("15_k88eo")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_slhl6"]
+shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tu3mt"]
-shader = ExtResource("15_k88eo")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vo67c"]
+shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
@@ -439,133 +439,133 @@ shader_parameter/damage_flash = 0.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u31ip"]
 
-[node name="CharacterBody3D" type="CharacterBody2D" node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer") groups=["Lira"]]
 collision_layer = 2
-script = ExtResource("1_41i63")
+script = ExtResource("1_v5fc5")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _invencibilityTimer = NodePath("Invencibility_Timer")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561076283]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"attack"
 frame = 1
 
-[node name="CollisionShape3D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_tu3mt")
 
-[node name="MovementStateMachine" type="Node" parent="."]
-script = ExtResource("7_5f38a")
+[node name="MovementStateMachine" type="Node" parent="." unique_id=1873000605]
+script = ExtResource("10_v5fc5")
 initialState = NodePath("IdleMovementState")
 
-[node name="IdleMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("8_vryya")
+[node name="IdleMovementState" type="Node" parent="MovementStateMachine" unique_id=1217506283]
+script = ExtResource("10_qnkxa")
 
-[node name="RunningMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("9_k88eo")
+[node name="RunningMovementState" type="Node" parent="MovementStateMachine" unique_id=315754379]
+script = ExtResource("11_v5fc5")
 
-[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState"]
+[node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState" unique_id=1497038380]
 wait_time = 0.1
 one_shot = true
 
-[node name="JumpingMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("10_tu3mt")
+[node name="JumpingMovementState" type="Node" parent="MovementStateMachine" unique_id=1080553881]
+script = ExtResource("12_8gdnm")
 
-[node name="FallingMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("11_ove30")
+[node name="FallingMovementState" type="Node" parent="MovementStateMachine" unique_id=723795693]
+script = ExtResource("13_8j2b6")
 
-[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("12_mjvex")
+[node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine" unique_id=1854694750]
+script = ExtResource("14_eeb6i")
 
-[node name="DashMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("13_ivsq2")
+[node name="DashMovementState" type="Node" parent="MovementStateMachine" unique_id=1069144901]
+script = ExtResource("15_wyc13")
 
-[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=76615380]
 wait_time = 0.2
 one_shot = true
 
-[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState"]
+[node name="DashCooldownTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=1793588466]
 wait_time = 0.8
 one_shot = true
 
-[node name="KnockbackMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("14_8x1cb")
+[node name="KnockbackMovementState" type="Node" parent="MovementStateMachine" unique_id=436833031]
+script = ExtResource("16_e4jf0")
 
-[node name="KnockbackTimer" type="Timer" parent="MovementStateMachine/KnockbackMovementState"]
+[node name="KnockbackTimer" type="Timer" parent="MovementStateMachine/KnockbackMovementState" unique_id=332854287]
 wait_time = 0.25
 one_shot = true
 
-[node name="AttackMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("15_akqtr")
+[node name="AttackMovementState" type="Node" parent="MovementStateMachine" unique_id=1302683105]
+script = ExtResource("17_slhl6")
 
-[node name="MagicMovementState" type="Node" parent="MovementStateMachine"]
-script = ExtResource("16_17myn")
+[node name="MagicMovementState" type="Node" parent="MovementStateMachine" unique_id=1689166817]
+script = ExtResource("18_vo67c")
 
-[node name="Camera3D" type="Camera2D" parent="."]
+[node name="Camera3D" type="Camera2D" parent="." unique_id=943068567]
 position = Vector2(0, -0.146)
 scale = Vector2(0.2, 0.2)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=890193285]
 layer = 10
 
-[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=495754987]
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=1189315622]
 layout_mode = 2
 
-[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_tghg6")
+[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=843940009]
+material = SubResource("ShaderMaterial_8j2b6")
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=764043705]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_ove30")
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1588080771]
+material = SubResource("ShaderMaterial_eeb6i")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_mjvex")
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1283593208]
+material = SubResource("ShaderMaterial_wyc13")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_ivsq2")
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=536646600]
+material = SubResource("ShaderMaterial_e4jf0")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_k88eo")
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=960238198]
+material = SubResource("ShaderMaterial_slhl6")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer"]
-material = SubResource("ShaderMaterial_tu3mt")
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=788420157]
+material = SubResource("ShaderMaterial_vo67c")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Invencibility_Timer" type="Timer" parent="."]
+[node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]
 wait_time = 0.5
 one_shot = true
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1932967445]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=507792715]
 position = Vector2(19, 8.5)
 shape = SubResource("CircleShape2D_7dora")
 debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=503128960]
 position = Vector2(10, 21)
 shape = SubResource("CircleShape2D_u31ip")
 debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)

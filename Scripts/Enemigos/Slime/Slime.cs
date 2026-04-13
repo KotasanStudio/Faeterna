@@ -1,7 +1,7 @@
-using Faeterna.scripts.Personaje;
+using Faeterna.Scripts.Personaje;
 using Godot;
 
-namespace Faeterna.scripts.Enemigos.Slime
+namespace Faeterna.Scripts.Enemigos.Slime
 {
     public partial class Slime : CharacterBody2D
     {
