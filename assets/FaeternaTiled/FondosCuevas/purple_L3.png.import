@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpakxy05edixq"
-path="res://.godot/imported/ArbustoFaeterna3.png-debd480f577cd65285881e132ba8327e.ctex"
+uid="uid://bqlrbj6hxmw8j"
+path="res://.godot/imported/purple_L3.png-5737a03074a8a3ea6d828035d8fa9759.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/FaeternaTiled/ArbustoFaeterna3.png"
-dest_files=["res://.godot/imported/ArbustoFaeterna3.png-debd480f577cd65285881e132ba8327e.ctex"]
+source_file="res://assets/FaeternaTiled/FondosCuevas/purple_L3.png"
+dest_files=["res://.godot/imported/purple_L3.png-5737a03074a8a3ea6d828035d8fa9759.ctex"]
 
 [params]
 

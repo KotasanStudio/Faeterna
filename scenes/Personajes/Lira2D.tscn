@@ -250,8 +250,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tu3mt"]
-size = Vector2(20, 70)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1alrg"]
+height = 68.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tghg6"]
 shader = ExtResource("14_tu3mt")
@@ -302,7 +302,7 @@ frame_progress = 0.12365947
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=733067001]
 position = Vector2(0, 4)
-shape = SubResource("RectangleShape2D_tu3mt")
+shape = SubResource("CapsuleShape2D_1alrg")
 
 [node name="MovementStateMachine" type="Node" parent="." unique_id=70773043]
 script = ExtResource("7_5f38a")
@@ -341,7 +341,6 @@ one_shot = true
 [node name="Camera3D" type="Camera2D" parent="." unique_id=827319130 groups=["Lira"]]
 position = Vector2(0, -60)
 scale = Vector2(0.2, 0.2)
-zoom = Vector2(0.4, 0.4)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=486226985]
 layer = 10
