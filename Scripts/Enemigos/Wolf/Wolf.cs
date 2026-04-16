@@ -8,26 +8,31 @@ namespace Faeterna.scripts.Enemigos.Wolf
     {
         public float DashSpeed = 300f;
         public float DashInterval = 2f;
+        // <summary>Duración del impulso de dash en segundos.</summary>
         public float DashDuration = 1f;
-
+        public int Health = 5;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
-
         private AnimatedSprite2D _animatedSprite;
+        // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private Timer _dashTimer;
         private bool _isDashing = false;
-        private float _dashTimer2 = 0f;
+        // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
+        private float _dashDuration = 0.5f;
         private int _dashDirection = 1;
         private Node2D _target = null;
         [Export] private CollisionShape2D _detectionArea;
         [Export] private RayCast2D _groundCheck;
+        [Export] private Area2D _hurtBox;
         private Random _rnd = new();
         public override void _Ready()
         {
             _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 
-            _dashTimer = new Timer();
-            _dashTimer.WaitTime = DashInterval;
-            _dashTimer.OneShot = false;
+            _dashTimer = new Timer
+            {
+                WaitTime = DashInterval,
+                OneShot = false
+            };
             _dashTimer.Timeout += OnDashTimerTimeout;
             AddChild(_dashTimer);
             _dashTimer.Start();
@@ -42,15 +47,16 @@ namespace Faeterna.scripts.Enemigos.Wolf
             if (!IsOnFloor())
                 velocity.Y += Gravity * (float)delta;
 
-            if (_isDashing && _target == null)
+            if (_isDashing)
             {
-                _dashTimer2 -= (float)delta;
+                // Durante el dash, mantenemos la velocidad constante en la dirección del dash.
+                _dashDuration -= (float)delta;
 
                 // Fuerza la actualización del raycast en cada frame
                 _groundCheck.ForceRaycastUpdate();
 
                 // Para el dash si no hay suelo delante o se acabó el tiempo límite
-                if (!_groundCheck.IsColliding() || _dashTimer2 <= 0f)
+                if ((!_groundCheck.IsColliding() && _target == null) || _dashTimer.WaitTime <= 0f)
                 {
                     _isDashing = false;
                     velocity.X = 0;
@@ -66,7 +72,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             if (!IsOnFloor()) return;
 
             _isDashing = true;
-            _dashTimer2 = DashDuration;
+            _dashDuration = _rnd.Next((int)(DashDuration * 0.75f), (int)(DashDuration * 1.25f)); // Añade algo de variación a la duración del dash
 
             float directionX;
 
@@ -95,6 +101,26 @@ namespace Faeterna.scripts.Enemigos.Wolf
             if (prota is Lira lira)
                 lira.TakeDamage(1, GlobalPosition);
         }
+        private void OnHurtBoxAreaEntered(Area2D area)
+        {
+            if (area.GetParent() is Lira lira)
+            TakeDamage(1, lira.GlobalPosition);
+        }
+        private void TakeDamage(int v, Vector2 globalPosition)
+        {
+            Health -= v;
+            if (Health <= 0)
+            {
+                QueueFree();
+                return;
+            }
+
+            float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
+            Velocity += new Vector2(directionX * 300f, 1000f); // Ajusta la fuerza del knockback según sea necesario
+            if (directionX < 0)
+                _animatedSprite.FlipH = true;
+            else if (directionX > 0)
+                _animatedSprite.FlipH = false;        }
 
         public void _on_detection_area_body_entered(Node2D prota)
         {
@@ -107,5 +133,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             if (prota is Lira)
                 _target = null;
         }
+
+
     }
 }

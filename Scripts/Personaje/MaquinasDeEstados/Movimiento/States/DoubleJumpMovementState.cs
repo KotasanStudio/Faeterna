@@ -20,7 +20,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             if (_player == null) return;
             _player.DoubleJumpAvailable = false;
-            _player.SetAnimation("double_jump");
+            _player.SetAnimation("jump");
             GD.Print("Entered DoubleJumpMovementState (double jump)");
             // En 2D, JumpVelocity es negativo (hacia arriba).
             _player.Velocity = new Vector2(_player.Velocity.X, PlayerType.JumpVelocity);
@@ -34,11 +34,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             if (_player.Velocity.Y > 0)
             {
                 stateMachine.TransitionTo("FallingMovementState");
-            }
-            // Cuando la animación de doble salto termina, pasar a la animación de salto normal.
-            if (_player.animatedSprite != null && _player.animatedSprite.Frame == 5)
-            {
-                _player.SetAnimation("jump");
             }
         }
 

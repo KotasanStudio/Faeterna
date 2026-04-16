@@ -66,6 +66,7 @@ namespace Faeterna.Scripts.Personaje
 
         [ExportGroup("Atacks")]
         [Export] private Area2D _shotArea;
+        [Export] private Area2D _kickArea;
 
         [Export] private PackedScene _bullet;
 
@@ -204,9 +205,19 @@ namespace Faeterna.Scripts.Personaje
             ItsFliped = value;
             animatedSprite.FlipH = value;
             if (value)
+            {
                 _shotArea.Position = new Vector2(-Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position = new Vector2(-Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").RotationDegrees = -45f;
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position = new Vector2(-Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.Y);
+            }
             else
+            {
                 _shotArea.Position = new Vector2(Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position = new Vector2(Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").RotationDegrees = 45f;
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position = new Vector2(Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.Y);
+            }
         }
 
         public void Shooting()

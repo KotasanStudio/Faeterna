@@ -94,6 +94,8 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             }
             if (ev.IsActionPressed("aim"))
                 stateMachine.TransitionTo("MagicMovementState");
+            if (ev.IsActionPressed("kick"))
+                stateMachine.TransitionTo("AttackMovementState");
         }
     }
 }
