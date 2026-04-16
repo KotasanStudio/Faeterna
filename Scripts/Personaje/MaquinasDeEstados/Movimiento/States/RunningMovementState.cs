@@ -68,9 +68,9 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             _player.Velocity = velocity;
 
             if (move < 0f)
-                _player.animatedSprite.FlipH = true;
+                _player.FlipH(true);
             else if (move > 0f)
-                _player.animatedSprite.FlipH = false;
+                _player.FlipH(false);
             if (move == 0f)
             {
                 GD.Print("Transitioning to idle state from running due to zero horizontal velocity.");
@@ -92,6 +92,8 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 GD.Print("Transitioning to dash state from running.");
                 stateMachine.TransitionTo("DashMovementState");
             }
+            if (ev.IsActionPressed("aim"))
+                stateMachine.TransitionTo("MagicMovementState");
         }
     }
 }

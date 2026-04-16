@@ -61,9 +61,9 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 _player.Velocity = velocity;
 
                 if (move < 0f)
-                    _player.animatedSprite.FlipH = true;
+                    _player.FlipH(true);
                 else if (move > 0f)
-                    _player.animatedSprite.FlipH = false;
+                    _player.FlipH(false);
 
                 _player.MoveAndSlide();
             }

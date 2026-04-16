@@ -2,7 +2,7 @@
   "profiles": {
     "Faeterna": {
       "commandName": "Executable",
-      "executablePath": "E:\\Godot_v4.5.1-stable_mono_win64\\Godot_v4.5.1-stable_mono_win64.exe",
+      "executablePath": "/usr/bin/godot-mono",
       "commandLineArgs": "--path .",
       "workingDirectory": "$(ProjectDir)",
       "authenticationMode": "Windows"

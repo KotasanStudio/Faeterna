@@ -45,6 +45,8 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 stateMachine.TransitionTo("JumpingMovementState");
             if (ev.IsActionPressed("dash"))
                 stateMachine.TransitionTo("DashMovementState");
+            if (ev.IsActionPressed("aim"))
+                stateMachine.TransitionTo("MagicMovementState");
         }
     }
 }

@@ -53,6 +53,8 @@ namespace Faeterna.Scripts.Personaje
         /// <summary>Referencia a la máquina de estados de movimiento.</summary>
         public MovementStateMachine MovementStateMachine;
 
+        public bool ItsFliped = false;
+
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] Array<TextureRect> _hearts;
 
@@ -61,6 +63,11 @@ namespace Faeterna.Scripts.Personaje
 
         /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>
         [Export] private Timer _invencibilityTimer;
+
+        [ExportGroup("Atacks")]
+        [Export] private Area2D _shotArea;
+
+        [Export] private PackedScene _bullet;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
@@ -190,6 +197,34 @@ namespace Faeterna.Scripts.Personaje
             _currentMana += amount;
             _currentMana = Mathf.Clamp(_currentMana, 0, Mana);
             UpdateMana();
+        }
+
+        public void FlipH(bool value)
+        {
+            ItsFliped = value;
+            animatedSprite.FlipH = value;
+            if (value)
+                _shotArea.Position = new Vector2(-Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+            else
+                _shotArea.Position = new Vector2(Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+        }
+
+        public void Shooting()
+        {
+            var InstanciaShot = (Shot)_bullet.Instantiate();
+
+            if ((_currentMana - InstanciaShot.ManaCost) >= 0)
+            {
+                SetAnimation("shot");
+                UseMana(InstanciaShot.ManaCost);
+                if (ItsFliped)
+                    InstanciaShot.Direction = new Vector2(-1, 0);
+                else
+                    InstanciaShot.Direction = new Vector2(1, 0);
+                InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
+                GetTree().CurrentScene?.AddChild(InstanciaShot);
+            }
+
         }
     }
 }

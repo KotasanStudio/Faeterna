@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://vr51xe23nodk" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://Scripts/Personaje/Lira.cs" id="1_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://w7cxfj5fw1wm" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="PackedScene" uid="uid://dmgpdhsve7wto" path="res://scenes/Personajes/Shot.tscn" id="2_8gdnm"]
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://0tfafgnc08wy" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
@@ -235,7 +236,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7kpwc")
 }],
-"loop": true,
+"loop": false,
 "name": &"aim",
 "speed": 15.0
 }, {
@@ -435,21 +436,23 @@ shader = ExtResource("22_8gdnm")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7dora"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_v5fc5"]
+radius = 2.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_u31ip"]
-
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_v5fc5")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _invencibilityTimer = NodePath("Invencibility_Timer")
+_shotArea = NodePath("ShotArea")
+_bullet = ExtResource("2_8gdnm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561076283]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
-animation = &"attack"
-frame = 1
+animation = &"aim"
+frame = 7
+frame_progress = 1.0
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
 position = Vector2(0, 4)
@@ -558,14 +561,9 @@ texture = ExtResource("14_5f38a")
 wait_time = 0.5
 one_shot = true
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1932967445]
+[node name="ShotArea" type="Area2D" parent="." unique_id=1269522836]
+position = Vector2(35, -3)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=507792715]
-position = Vector2(19, 8.5)
-shape = SubResource("CircleShape2D_7dora")
-debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=503128960]
-position = Vector2(10, 21)
-shape = SubResource("CircleShape2D_u31ip")
-debug_color = Color(0.98558336, 0, 0.3369638, 0.41960785)
+[node name="ShotCollision" type="CollisionShape2D" parent="ShotArea" unique_id=976699298]
+shape = SubResource("CircleShape2D_v5fc5")
+debug_color = Color(0.9547648, 2.7915835e-06, 0.5492559, 0.41960785)
