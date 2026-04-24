@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cw4m38uyic4kr"]
+
+[ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
+[ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
+
+[node name="Bosque" type="Node2D" unique_id=1361970253]
+
+[node name="Bosque" parent="." unique_id=1240700128 instance=ExtResource("1_xyya0")]
+scale = Vector2(2, 2)
+
+[node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
+position = Vector2(2172, 3454)
+platform_wall_layers = 1

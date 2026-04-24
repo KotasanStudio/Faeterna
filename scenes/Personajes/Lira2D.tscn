@@ -341,6 +341,7 @@ one_shot = true
 [node name="Camera3D" type="Camera2D" parent="." unique_id=827319130 groups=["Lira"]]
 position = Vector2(0, -60)
 scale = Vector2(0.2, 0.2)
+zoom = Vector2(1.5, 1.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=486226985]
 layer = 10
