@@ -12,15 +12,18 @@ namespace Faeterna.Scripts.Enemigos.Slime
         public float HorizontalSpeed = 120f;
 
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
-
+        public int Health = 6;
         private AnimatedSprite2D _animatedSprite;
         private Timer _jumpTimer;
         private bool _isJumping = false;
         private int _jumpDirection = 1; // Alterna entre -1 y 1
 
         private Node2D _target = null; // Si quieres perseguir al jugador
+        private float _knockbackTimer = 0f;
+        private const float KnockbackDuration = 0.2f;
 
         [Export] private CollisionShape2D _detectionArea;
+        [Export] private Area2D _hurtBox;
 
         public override void _Ready()
         {
@@ -51,6 +54,14 @@ namespace Faeterna.Scripts.Enemigos.Slime
                 velocity.X = 0;
                 velocity.Y = 0;
                 set_animation("idle");
+            }
+            if (_knockbackTimer > 0f)
+            {
+                _knockbackTimer -= (float)delta;
+                if (IsOnFloor())
+                {
+                    velocity.X = 0f;
+                }
             }
 
             Velocity = velocity;
@@ -106,6 +117,27 @@ namespace Faeterna.Scripts.Enemigos.Slime
         {
             if (prota is Lira)
                 _target = null; // Vuelve a alternar lados
+        }
+        private void OnHurtBoxAreaEntered(Area2D area)
+        {
+            if (area.GetParent() is Lira lira)
+            TakeDamage(1, lira.GlobalPosition);
+        }
+
+        private void TakeDamage(int v, Vector2 globalPosition)
+        {
+            Health -= v;
+            if (Health <= 0)
+            {
+                QueueFree();
+                return;
+            }
+            _isJumping = false;
+            _knockbackTimer = KnockbackDuration;
+
+            // Dirección opuesta al atacante + mini salto
+            float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
+            Velocity = new Vector2(directionX * 250f, -200f);
         }
     }
 }

@@ -450,7 +450,7 @@ height = 68.0
 [node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_v5fc5")
-_hearts = []
+_hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _invencibilityTimer = NodePath("Invencibility_Timer")
 _shotArea = NodePath("ShotArea")

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://v7xkrxjkaq8c"]
 
 [ext_resource type="Script" uid="uid://dfk525ytuarl1" path="res://Scripts/Enemigos/Slime/Slime.cs" id="1_7waxi"]
-[ext_resource type="Texture2D" uid="uid://cdtcc04o45706" path="res://assets/Slime/SlimeDeath.png" id="1_21x3n"]
-[ext_resource type="Texture2D" uid="uid://cqfly48otolru" path="res://assets/Slime/SlimeHit.png" id="2_7waxi"]
-[ext_resource type="Texture2D" uid="uid://rat8rky1o3wr" path="res://assets/Slime/SlimeIdle.png" id="3_cul3j"]
-[ext_resource type="Texture2D" uid="uid://vdha4wpomgd1" path="res://assets/Slime/SlimeJump.png" id="4_cky4s"]
+[ext_resource type="Texture2D" uid="uid://ca3mn7c6p4n0w" path="res://assets/Slime/SlimeDeath.png" id="1_21x3n"]
+[ext_resource type="Texture2D" uid="uid://b7po626kq0vto" path="res://assets/Slime/SlimeHit.png" id="2_7waxi"]
+[ext_resource type="Texture2D" uid="uid://dls302u46v6g7" path="res://assets/Slime/SlimeIdle.png" id="3_cul3j"]
+[ext_resource type="Texture2D" uid="uid://bibfo0tqihrb8" path="res://assets/Slime/SlimeJump.png" id="4_cky4s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7waxi"]
 atlas = ExtResource("1_21x3n")
@@ -157,10 +157,11 @@ radius = 16.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(177.5, 102)
 
-[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("_detectionArea")]
+[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("_detectionArea", "_hurtBox")]
 collision_layer = 4
 script = ExtResource("1_7waxi")
 _detectionArea = NodePath("DetectionArea/CollisionShape2D")
+_hurtBox = NodePath("HurtBox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1312586001]
 sprite_frames = SubResource("SpriteFrames_60w7s")
@@ -190,7 +191,17 @@ position = Vector2(88.25, -10)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 
+[node name="HurtBox" type="Area2D" parent="." unique_id=1855062866]
+collision_layer = 64
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1558737100]
+position = Vector2(0, 25)
+shape = SubResource("CircleShape2D_16tdn")
+debug_color = Color(0, 0.5058824, 0.09019608, 0.14901961)
+
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="area_entered" from="HurtBox" to="." method="OnHurtBoxAreaEntered"]

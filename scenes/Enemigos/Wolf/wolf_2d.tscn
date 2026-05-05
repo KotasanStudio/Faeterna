@@ -69,16 +69,6 @@ animations = [{
 "name": &"attack",
 "speed": 6.0
 }, {
-"frames": [],
-"loop": false,
-"name": &"dead",
-"speed": 11.0
-}, {
-"frames": [],
-"loop": false,
-"name": &"getHit",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ucxt5")
@@ -94,7 +84,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 6.0
+"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -126,17 +116,19 @@ size = Vector2(75, 37)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(313.5, 327)
 
-[node name="Wolf2D" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_groundCheck")]
+[node name="Wolf2D" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_groundCheck", "_hurtBox")]
 collision_layer = 4
 script = ExtResource("1_loqlb")
 _detectionArea = NodePath("DetectionArea/CollisionShape2D")
 _groundCheck = NodePath("RayCast2D")
+_hurtBox = NodePath("Hurtbox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.0044787526
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185611458]
 rotation = 1.5707964
@@ -174,3 +166,4 @@ position = Vector2(38, 0)
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="area_entered" from="Hurtbox" to="." method="OnHurtBoxAreaEntered"]

@@ -20,6 +20,8 @@ namespace Faeterna.scripts.Enemigos.Wolf
         private float _dashDuration = 0.5f;
         private int _dashDirection = 1;
         private Node2D _target = null;
+        private float _knockbackTimer = 0f;
+        private const float KnockbackDuration = 0.2f;
         [Export] private CollisionShape2D _detectionArea;
         [Export] private RayCast2D _groundCheck;
         [Export] private Area2D _hurtBox;
@@ -40,7 +42,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             SetAnimation("idle");
         }
 
-                public override void _PhysicsProcess(double delta)
+        public override void _PhysicsProcess(double delta)
         {
             Vector2 velocity = Velocity;
 
@@ -61,6 +63,15 @@ namespace Faeterna.scripts.Enemigos.Wolf
                     _isDashing = false;
                     velocity.X = 0;
                     SetAnimation("idle");
+                }
+            }
+
+        if (_knockbackTimer > 0f)
+            {
+                _knockbackTimer -= (float)delta;
+                if (IsOnFloor())
+                {
+                    velocity.X = 0f;
                 }
             }
 
@@ -114,13 +125,13 @@ namespace Faeterna.scripts.Enemigos.Wolf
                 QueueFree();
                 return;
             }
+            _isDashing = false;
+            _knockbackTimer = KnockbackDuration;
 
+            // Dirección opuesta al atacante + mini salto
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
-            Velocity += new Vector2(directionX * 300f, 1000f); // Ajusta la fuerza del knockback según sea necesario
-            if (directionX < 0)
-                _animatedSprite.FlipH = true;
-            else if (directionX > 0)
-                _animatedSprite.FlipH = false;        }
+            Velocity = new Vector2(directionX * 250f, -200f);
+        }
 
         public void _on_detection_area_body_entered(Node2D prota)
         {
