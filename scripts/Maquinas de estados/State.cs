@@ -33,8 +33,8 @@ namespace Faeterna.scripts.Maquinas_de_estados
         /// <param name="delta">Tiempo en segundos desde la última física.</param>
         public virtual void UpdatePhysics(double delta) { }
 
-    /// <summary>Procesa eventos de entrada no manejados (unhandled input).</summary>
-    /// <param name="ev">Evento de entrada recibido.</param>
-    public virtual void HandleInput(InputEvent ev) { }
+        /// <summary>Procesa eventos de entrada no manejados (unhandled input).</summary>
+        /// <param name="ev">Evento de entrada recibido.</param>
+        public virtual void HandleInput(InputEvent ev) { }
     }
 }

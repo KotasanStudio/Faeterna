@@ -7,12 +7,12 @@
 [ext_resource type="Texture2D" uid="uid://d0cpl0qv75ay" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
 [ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Maquinas de estados/Movimiento/MovementStateMachine.cs" id="7_5f38a"]
-[ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Personaje/IdleMovementState.cs" id="8_vryya"]
-[ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Personaje/RunningMovementState.cs" id="9_k88eo"]
-[ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://scripts/Personaje/JumpingMovementState.cs" id="10_tu3mt"]
-[ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://scripts/Personaje/FallingMovementState.cs" id="11_ove30"]
-[ext_resource type="Script" uid="uid://d0c7idkcckr5" path="res://scripts/Personaje/DoubleJumpMovementState.cs" id="12_mjvex"]
-[ext_resource type="Script" uid="uid://crt53t7ym666q" path="res://scripts/Personaje/DashMovementState.cs" id="13_ivsq2"]
+[ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Maquinas de estados/Movimiento/Estados/IdleMovementState.cs" id="8_1alrg"]
+[ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Maquinas de estados/Movimiento/Estados/RunningMovementState.cs" id="9_8x1cb"]
+[ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://scripts/Maquinas de estados/Movimiento/Estados/JumpingMovementState.cs" id="10_vjval"]
+[ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://scripts/Maquinas de estados/Movimiento/Estados/FallingMovementState.cs" id="11_akqtr"]
+[ext_resource type="Script" uid="uid://d0c7idkcckr5" path="res://scripts/Maquinas de estados/Movimiento/Estados/DoubleJumpMovementState.cs" id="12_17myn"]
+[ext_resource type="Script" uid="uid://crt53t7ym666q" path="res://scripts/Maquinas de estados/Movimiento/Estados/DashMovementState.cs" id="13_qnkxa"]
 [ext_resource type="Texture2D" uid="uid://diupbo7hjrfbm" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
@@ -309,26 +309,26 @@ script = ExtResource("7_5f38a")
 initialState = NodePath("IdleMovementState")
 
 [node name="IdleMovementState" type="Node" parent="MovementStateMachine" unique_id=2037528326]
-script = ExtResource("8_vryya")
+script = ExtResource("8_1alrg")
 
 [node name="RunningMovementState" type="Node" parent="MovementStateMachine" unique_id=817909268]
-script = ExtResource("9_k88eo")
+script = ExtResource("9_8x1cb")
 
 [node name="CoyoteTimer" type="Timer" parent="MovementStateMachine/RunningMovementState" unique_id=526764970]
 wait_time = 0.1
 one_shot = true
 
 [node name="JumpingMovementState" type="Node" parent="MovementStateMachine" unique_id=1922223228]
-script = ExtResource("10_tu3mt")
+script = ExtResource("10_vjval")
 
 [node name="FallingMovementState" type="Node" parent="MovementStateMachine" unique_id=1625921702]
-script = ExtResource("11_ove30")
+script = ExtResource("11_akqtr")
 
 [node name="DoubleJumpMovementState" type="Node" parent="MovementStateMachine" unique_id=697732566]
-script = ExtResource("12_mjvex")
+script = ExtResource("12_17myn")
 
 [node name="DashMovementState" type="Node" parent="MovementStateMachine" unique_id=194459165]
-script = ExtResource("13_ivsq2")
+script = ExtResource("13_qnkxa")
 
 [node name="DashDurationTimer" type="Timer" parent="MovementStateMachine/DashMovementState" unique_id=407920590]
 wait_time = 0.2

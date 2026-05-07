@@ -4,10 +4,19 @@ using PlayerType = Faeterna.scripts.Player.Lira;
 
 namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 {
+    /// <summary>
+    /// Estado que representa la caída de Lira. El jugador está en el aire cayendo hacia el suelo.
+    /// Gestiona la aplicación de gravedad continuada, permite aún el movimiento horizontal durante la caída,
+    /// y detecta el aterrizaje para transicionar a otros estados. También permite el doble salto durante la caída.
+    /// </summary>
     public partial class FallingMovementState : State
     {
+        /// <summary>Referencia al jugador (Lira) para acceder a su estado y controlar su movimiento durante la caída.</summary>
         private PlayerType _player;
 
+        /// <summary>
+        /// Se llama cuando el nodo entra en la escena. Obtiene referencias al jugador, esperando a que esté listo si es necesario.
+        /// </summary>
         public override async void Ready()
         {
             _player = (PlayerType)GetTree().GetFirstNodeInGroup("Lira");
@@ -15,14 +24,32 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                 await ToSignal(_player, "ready");
         }
 
+        /// <summary>
+        /// Se llama cuando se entra en este estado. Establece la animación de caída en el jugador.
+        /// </summary>
         public override void Enter()
         {
             if (_player == null) return;
             _player.SetAnimation("fall");
         }
 
+        /// <summary>
+        /// Se llama cada frame (non-physics). No realiza actualizaciones específicas en este estado,
+        /// las comprobaciones de aterrizaje y transición se hacen en UpdatePhysics.
+        /// </summary>
+        /// <param name="delta">
+        /// Tiempo en segundos desde el último frame.
+        /// </param>
         public override void Update(double delta) { }
 
+        /// <summary>
+        /// Se llama en el paso de física. Aplica gravedad continuada al jugador, permite movimiento horizontal durante la caída,
+        /// detecta el aterrizaje y transiciona a otros estados cuando toca el suelo.
+        /// También restaura la disponibilidad del doble salto cuando aterriza.
+        /// </summary>
+        /// <param name="delta">
+        /// Tiempo en segundos desde la última actualización de física.
+        /// </param>
         public override void UpdatePhysics(double delta)
         {
             if (_player == null) return;
@@ -54,6 +81,13 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             }
         }
 
+        /// <summary>
+        /// Se llama para procesar eventos de entrada no manejados. Permite realizar un doble salto durante la caída,
+        /// o activar el dash para cambiar de dirección o velocidad.
+        /// </summary>
+        /// <param name="ev">
+        /// Evento de entrada recibido. Se pasa al estado para que pueda procesar la entrada según su lógica específica.
+        /// </param>
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
