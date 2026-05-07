@@ -9,7 +9,7 @@ namespace Faeterna.Scripts.Personaje
 
         [Export] private AnimatedSprite2D _animatedSprite;
         public Vector2 Direction = Vector2.Zero;
-        public float ManaCost = 5f;
+        public float ManaCost = 20f;
 
         // Called when the node enters the scene tree for the first time.
         public override void _Ready()

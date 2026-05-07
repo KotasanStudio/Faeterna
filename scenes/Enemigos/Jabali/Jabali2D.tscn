@@ -317,22 +317,23 @@ size = Vector2(90, 37)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(409.83334, 60)
 
-[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_groundCheck", "_hurtBox", "_loadAttackTimer")]
+[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_attackHitBox", "_groundCheck", "_hurtBox", "_loadAttackTimer", "_deathAnimationTimer", "_dashTimer")]
 texture_filter = 1
 scale = Vector2(1.5, 1.5)
 collision_layer = 4
 script = ExtResource("1_y6bk4")
-_detectionArea = NodePath("DetectionArea/CollisionShape2D")
+_detectionArea = NodePath("DetectionArea")
+_attackHitBox = NodePath("AttackHitBox")
 _groundCheck = NodePath("RayCast2D")
 _hurtBox = NodePath("Hurtbox")
 _loadAttackTimer = NodePath("DetectionArea/LoadAttackTimer")
+_deathAnimationTimer = NodePath("DeathAnimationTimer")
+_dashTimer = NodePath("DashTimer")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
-animation = &"die"
-frame = 14
-frame_progress = 1.0
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185611458]
 position = Vector2(5.5199914, 2.4128647e-07)
@@ -359,7 +360,7 @@ shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 
 [node name="LoadAttackTimer" type="Timer" parent="DetectionArea" unique_id=55909832]
-wait_time = 4.0
+wait_time = 3.0
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=622358943]
 collision_layer = 64
@@ -373,9 +374,16 @@ debug_color = Color(1, 1, 0, 0.14901961)
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1803791051]
 position = Vector2(38, 0)
 
+[node name="DeathAnimationTimer" type="Timer" parent="." unique_id=1302539492]
+one_shot = true
+
+[node name="DashTimer" type="Timer" parent="." unique_id=2014169799]
+
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
 [connection signal="timeout" from="DetectionArea/LoadAttackTimer" to="." method="_on_load_attack_timer_timeout"]
 [connection signal="area_entered" from="Hurtbox" to="." method="OnHurtBoxAreaEntered"]
+[connection signal="timeout" from="DeathAnimationTimer" to="." method="OnDeathAnimationTimerTimeout"]
+[connection signal="timeout" from="DashTimer" to="." method="OnDashTimerTimeout"]

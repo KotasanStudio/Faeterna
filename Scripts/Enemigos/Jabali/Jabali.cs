@@ -15,7 +15,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
         private AnimatedSprite2D _animatedSprite;
         // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
-        private Timer _dashTimer;
         private bool _isDashing = false;
         private bool _isChargingAttack = false;
         // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
@@ -24,33 +23,20 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private Node2D _target = null;
         private float _knockbackTimer = 0f;
         private const float KnockbackDuration = 0.2f;
-        [Export] private CollisionShape2D _detectionArea;
+        [Export] private Area2D _detectionArea;
+        [Export] private Area2D _attackHitBox;
         [Export] private RayCast2D _groundCheck;
         [Export] private Area2D _hurtBox;
         [Export] private Timer _loadAttackTimer;
-        private Timer _deathAnimationTimer;
+        [Export] private Timer _deathAnimationTimer;
+        [Export] private Timer _dashTimer;
+
         private bool _isDead = false;
         private Random _rnd = new();
         public override void _Ready()
         {
             _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-             _dashTimer = new Timer
-            {
-                WaitTime = DashInterval,
-                OneShot = false
-            };
-            _dashTimer.Timeout += OnDashTimerTimeout;
-            AddChild(_dashTimer);
-
-            _dashTimer.Start();
-            
-            _deathAnimationTimer = new Timer
-            {
-                OneShot = true
-            };
-            _deathAnimationTimer.Timeout += OnDeathAnimationTimerTimeout;
-            AddChild(_deathAnimationTimer);
-            
+            _dashTimer.Start();  
             SetAnimation("idle");
         }
 
@@ -121,7 +107,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
             _animatedSprite.FlipH = directionX < 0;
             _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+            //_detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
             Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
             SetAnimation("run");
         }
@@ -143,7 +129,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             if (area.GetParent() is Lira lira)
                 TakeDamage(1, lira.GlobalPosition);
              if (area is Shot shot)
-                TakeDamage((int)shot.Scale.X, shot.GlobalPosition);
+                TakeDamage((int)(shot.Scale.X*1.5f), shot.GlobalPosition);
         }
         private void TakeDamage(int v, Vector2 globalPosition)
         {
@@ -157,6 +143,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             
             if (Health <= 0)
             {
+                desactiveCollision();
                 _isDead = true;
                 Velocity = Vector2.Zero;
                 _isDashing = false;
@@ -165,7 +152,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 _loadAttackTimer.Stop();
                 SetAnimation("die");
                 // Espera a que termine la animación de muerte antes de eliminar
-                _deathAnimationTimer.WaitTime = 1f; // Ajusta este valor al tiempo de tu animación de muerte
                 _deathAnimationTimer.Start();
                 return;
             }
@@ -179,15 +165,25 @@ namespace Faeterna.scripts.Enemigos.Jabali
             QueueFree();
         }
 
+        private void desactiveCollision()
+        {
+            _attackHitBox.CollisionLayer = 0;
+            _attackHitBox.CollisionMask = 0;
+            _detectionArea.CollisionLayer = 0;
+            _detectionArea.CollisionMask = 0;
+        }
+
         public void _on_detection_area_body_entered(Node2D prota)
         {
+
+            
             if (prota is Lira lira)
             {
                 _target = lira; // Empieza a perseguir al jugador
-                _isChargingAttack = true; // Comienza a cargar el ataque
-                _isDashing = false; // Detiene el dash actual si está en curso
                 _dashTimer.Stop(); // Detiene el timer de dash automático
-                Velocity = Godot.Vector2.Zero; // Detiene el movimiento
+                _isDashing = false; // Fuerza la salida del estado de dash
+                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
+                _isChargingAttack = true; // Asegura que no esté en estado de carga al detectar al jugador
                 SetAnimation("loadAttack"); // Comienza la animación de carga
                 _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque
             }
@@ -208,7 +204,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
                 _animatedSprite.FlipH = directionX < 0;
                 _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-                _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+              //  _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
                 Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
                 SetAnimation("run");
             }

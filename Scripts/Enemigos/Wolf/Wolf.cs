@@ -38,7 +38,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             _dashTimer.Timeout += OnDashTimerTimeout;
             AddChild(_dashTimer);
             _dashTimer.Start();
-
+            
             SetAnimation("idle");
         }
 
@@ -138,7 +138,10 @@ namespace Faeterna.scripts.Enemigos.Wolf
         public void _on_detection_area_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
+            {
+                
                 _target = lira;
+            }
         }
 
         public void _on_detection_area_body_exited(Node2D prota)

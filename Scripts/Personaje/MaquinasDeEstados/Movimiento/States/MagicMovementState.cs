@@ -8,8 +8,9 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 	{
         private PlayerType _player;
         private double _maxShotBallScale = 4f;
-        private double _defaultManaCost = 5f;
-        private double _manaCost = 5f;
+        private double _defaultManaCost = 20f;
+        private double _maxManaCost = 100f;
+        private double _manaCost = 20f;
         private bool _isShooted = false;
         private double _defaultShotBallScale = 1.5f;
                 private double _shotBallScale = 1.5f;
@@ -31,9 +32,9 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             if (_player == null) return;
             if (Input.IsActionPressed("shot"))
             {
-                if(_shotBallScale < _maxShotBallScale)
+                if(_shotBallScale < _maxShotBallScale && _manaCost < _maxManaCost)
                 {
-                    _manaCost += (_manaCost*2) * delta; // Ajusta el costo de mana por segundo
+                    _manaCost += _manaCost*delta; // Ajusta el costo de mana por segundo
                  _shotBallScale += _shotBallScale * delta;// Limita el tamaño máximo de la bola
                 } 
                 else
@@ -41,7 +42,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                     _player.Shooting(_manaCost, _shotBallScale);
                     resetShotParameters();
                     _isShooted = true;
-                    return;
                 }
                  
             }
