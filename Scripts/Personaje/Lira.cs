@@ -119,7 +119,6 @@ namespace Faeterna.Scripts.Personaje
                 if (_currentHealth <= 0) break;
 
                 _currentHealth--;
-
                 // Guardamos el índice ANTES del await para que no cambie después
                 int heartIndex = _currentHealth;
                 if (heartIndex < 0 || heartIndex >= _hearts.Count) break;
@@ -185,6 +184,7 @@ namespace Faeterna.Scripts.Personaje
         {
             _currentMana -= amount;
             _currentMana = Mathf.Clamp(_currentMana, 0, Mana);
+            GD.Print(_currentMana);
             UpdateMana();
         }
 
@@ -220,10 +220,11 @@ namespace Faeterna.Scripts.Personaje
             }
         }
 
-        public void Shooting()
-        {
+        public void Shooting(double manaCost, double shotBallScale)
+        {      
             var InstanciaShot = (Shot)_bullet.Instantiate();
-
+                InstanciaShot.ManaCost = (float)manaCost;
+                InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
             if ((_currentMana - InstanciaShot.ManaCost) >= 0)
             {
                 SetAnimation("shot");
@@ -235,7 +236,13 @@ namespace Faeterna.Scripts.Personaje
                 InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
                 GetTree().CurrentScene?.AddChild(InstanciaShot);
             }
+            
+        }
 
+       public void OnKickHitboxAreaEntered(Area2D area)
+        {
+            GD.Print("Kick hitbox activated");
+            RecoverMana(10f);
         }
     }
 }

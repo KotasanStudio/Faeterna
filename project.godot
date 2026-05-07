@@ -81,6 +81,7 @@ kick={
 3d_physics/layer_6="AreaDetection"
 2d_physics/layer_7="Hurtbox"
 3d_physics/layer_7="Items"
+2d_physics/layer_8="shot"
 
 [rendering]
 

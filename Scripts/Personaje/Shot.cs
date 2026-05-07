@@ -6,8 +6,10 @@ namespace Faeterna.Scripts.Personaje
     public partial class Shot : Area2D
     {
         [Export] private float Speed = 450f;
+
+        [Export] private AnimatedSprite2D _animatedSprite;
         public Vector2 Direction = Vector2.Zero;
-        public float ManaCost = 33f;
+        public float ManaCost = 5f;
 
         // Called when the node enters the scene tree for the first time.
         public override void _Ready()
@@ -17,10 +19,17 @@ namespace Faeterna.Scripts.Personaje
         // Called every frame. 'delta' is the elapsed time since the previous frame.
         public override void _Process(double delta)
         {
+            
+
             if (Direction == Vector2.Zero)
                 return;
 
             Translate(Direction * Speed * (float)delta);
+            if (Direction.X < 0f)
+                _animatedSprite.FlipH = true;
+            else if (Direction.X > 0f)
+                _animatedSprite.FlipH = false;
+
         }
 
         /// <summary>

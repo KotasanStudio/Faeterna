@@ -121,12 +121,16 @@ namespace Faeterna.Scripts.Enemigos.Slime
         private void OnHurtBoxAreaEntered(Area2D area)
         {
             if (area.GetParent() is Lira lira)
-            TakeDamage(1, lira.GlobalPosition);
+                TakeDamage(1, lira.GlobalPosition);
+
+            if (area is Shot shot)
+                TakeDamage((int)shot.Scale.X, shot.GlobalPosition);
         }
 
         private void TakeDamage(int v, Vector2 globalPosition)
         {
             Health -= v;
+            GD.Print("Slime take damage: " + v + ", remaining health: " + Health);
             if (Health <= 0)
             {
                 QueueFree();

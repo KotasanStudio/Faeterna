@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://dfndf3mqrnif5"]
 
-[ext_resource type="Texture2D" uid="uid://d4mlm443cbej4" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
+[ext_resource type="Texture2D" uid="uid://vr51xe23nodk" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://Scripts/Personaje/Lira.cs" id="1_v5fc5"]
-[ext_resource type="Texture2D" uid="uid://dmmjb3lqffebt" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="Texture2D" uid="uid://w7cxfj5fw1wm" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
 [ext_resource type="PackedScene" uid="uid://dmgpdhsve7wto" path="res://scenes/Personajes/Shot.tscn" id="2_8gdnm"]
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
-[ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
+[ext_resource type="Texture2D" uid="uid://0tfafgnc08wy" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
-[ext_resource type="Texture2D" uid="uid://d0cpl0qv75ay" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
-[ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="Texture2D" uid="uid://dmjhdtddwkgjs" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
+[ext_resource type="Texture2D" uid="uid://jj7g4caf011g" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="Texture2D" uid="uid://cnj1oxgj5nh8i" path="res://assets/Liria/Lira Hit.png" id="6_8j2b6"]
 [ext_resource type="Texture2D" uid="uid://duge2wg4u1nly" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
 [ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/IdleMovementState.cs" id="10_qnkxa"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" id="10_v5fc5"]
 [ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/RunningMovementState.cs" id="11_v5fc5"]
 [ext_resource type="Script" uid="uid://dct2alj221kbt" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" id="12_8gdnm"]
 [ext_resource type="Script" uid="uid://c5wlvicjh6uga" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/FallingMovementState.cs" id="13_8j2b6"]
-[ext_resource type="Texture2D" uid="uid://diupbo7hjrfbm" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
+[ext_resource type="Texture2D" uid="uid://dtox0u64185yd" path="res://assets/Liria/GUI/Vida.png" id="14_5f38a"]
 [ext_resource type="Script" uid="uid://d0c7idkcckr5" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" id="14_eeb6i"]
 [ext_resource type="Texture2D" uid="uid://bkk7vwch5jism" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Script" uid="uid://crt53t7ym666q" path="res://Scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" id="15_wyc13"]
@@ -281,6 +282,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("6_8j2b6")
+}],
+"loop": true,
+"name": &"getHit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_5ly1h")
 }, {
 "duration": 1.0,
@@ -450,7 +459,7 @@ height = 68.0
 [node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_v5fc5")
-_hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
+_hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _invencibilityTimer = NodePath("Invencibility_Timer")
 _shotArea = NodePath("ShotArea")
@@ -460,7 +469,7 @@ _bullet = ExtResource("2_8gdnm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561076283]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_5rx2b")
-animation = &"kick"
+animation = &"getHit"
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
 position = Vector2(0, 4)
@@ -535,32 +544,32 @@ layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=764043705]
+[node name="HboxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=764043705]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1588080771]
+[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1588080771]
 material = SubResource("ShaderMaterial_eeb6i")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1283593208]
+[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1283593208]
 material = SubResource("ShaderMaterial_wyc13")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=536646600]
+[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=536646600]
 material = SubResource("ShaderMaterial_e4jf0")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=960238198]
+[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=960238198]
 material = SubResource("ShaderMaterial_slhl6")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer" unique_id=788420157]
+[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=788420157]
 material = SubResource("ShaderMaterial_vo67c")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
@@ -593,3 +602,5 @@ position = Vector2(37, 8)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_8j2b6")
 debug_color = Color(0.9547648, 2.7915835e-06, 0.5492559, 0.41960785)
+
+[connection signal="area_entered" from="KickHitbox" to="." method="OnKickHitboxAreaEntered"]

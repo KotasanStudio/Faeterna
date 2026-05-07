@@ -115,7 +115,9 @@ namespace Faeterna.scripts.Enemigos.Wolf
         private void OnHurtBoxAreaEntered(Area2D area)
         {
             if (area.GetParent() is Lira lira)
-            TakeDamage(1, lira.GlobalPosition);
+                TakeDamage(1, lira.GlobalPosition);
+             if (area is Shot shot)
+                TakeDamage((int)shot.Scale.X, shot.GlobalPosition);
         }
         private void TakeDamage(int v, Vector2 globalPosition)
         {
