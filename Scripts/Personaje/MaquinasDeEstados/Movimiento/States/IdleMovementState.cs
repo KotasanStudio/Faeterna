@@ -34,13 +34,16 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                     ? "JumpingMovementState"
                     : "FallingMovementState");
             }
+            else
+            {
+                if (Input.GetAxis("move_left", "move_right") != 0f)
+                    stateMachine.TransitionTo("RunningMovementState");
+            }
         }
 
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
-            if (ev.IsActionPressed("move_left") || ev.IsActionPressed("move_right"))
-                stateMachine.TransitionTo("RunningMovementState");
             if (ev.IsActionPressed("jump") && _player.IsOnFloor())
                 stateMachine.TransitionTo("JumpingMovementState");
             if (ev.IsActionPressed("dash"))

@@ -46,10 +46,11 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 _coyoteTimer.Stop();
                 _player.CoyoteAvailable = true;
             }
+            float direction = Input.GetAxis("move_left", "move_right");
 
-            if (Mathf.Abs(_player.Velocity.X) < 0.1f)
+            if (direction == 0f)
             {
-                if (!Input.IsActionPressed("move_left") && !Input.IsActionPressed("move_right"))
+                if (_player.Velocity.X == 0f && _player.Velocity.Y == 0f)
                 {
                     GD.Print("Transitioning to idle state from running.");
                     stateMachine.TransitionTo("IdleMovementState");
@@ -61,21 +62,24 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             if (_player == null) return;
 
-            float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
+           Vector2 velocity = _player.Velocity;
+        
+        float direction = Input.GetAxis("move_left", "move_right");
+        if (direction != 0.0f)
+        {
+            velocity.X = direction * PlayerType.Speed;
+        }
+        else
+		{
+			velocity.X = Mathf.MoveToward(_player.Velocity.X, 0, PlayerType.Speed);
+		}
 
-            Vector2 velocity = _player.Velocity;
-            velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
-            _player.Velocity = velocity;
-
-            if (move < 0f)
+            if (direction < 0f)
                 _player.FlipH(true);
-            else if (move > 0f)
+            else if (direction > 0f)
                 _player.FlipH(false);
-            if (move == 0f)
-            {
-                GD.Print("Transitioning to idle state from running due to zero horizontal velocity.");
-                stateMachine.TransitionTo("IdleMovementState");
-            }
+
+            _player.Velocity = velocity;
             _player.MoveAndSlide();
         }
 
