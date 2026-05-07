@@ -165,7 +165,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 _loadAttackTimer.Stop();
                 SetAnimation("die");
                 // Espera a que termine la animación de muerte antes de eliminar
-                _deathAnimationTimer.WaitTime = 2.5f; // Ajusta este valor al tiempo de tu animación de muerte
+                _deathAnimationTimer.WaitTime = 1f; // Ajusta este valor al tiempo de tu animación de muerte
                 _deathAnimationTimer.Start();
                 return;
             }

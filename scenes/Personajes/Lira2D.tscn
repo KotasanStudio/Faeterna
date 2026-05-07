@@ -524,7 +524,6 @@ script = ExtResource("18_vo67c")
 
 [node name="Camera3D" type="Camera2D" parent="." unique_id=943068567]
 position = Vector2(0, -0.146)
-scale = Vector2(0.2, 0.2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=890193285]
 layer = 10

@@ -66,6 +66,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 stateMachine.TransitionTo("IdleMovementState");
             }
+            _isShooted = false;
         }
 
         public override async void HandleInput(InputEvent ev)

@@ -51,13 +51,13 @@ animations = [{
 [node name="Shot" type="Area2D" unique_id=1840606177 node_paths=PackedStringArray("_animatedSprite")]
 scale = Vector2(1.5, 1.5)
 collision_layer = 128
-collision_mask = 64
+collision_mask = 65
 script = ExtResource("1_vl1nb")
 _animatedSprite = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=888910008]
-position = Vector2(-1.75, 0)
-scale = Vector2(0.8703704, 1)
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(0.8395062, 1)
 sprite_frames = SubResource("SpriteFrames_7vqeu")
 autoplay = "default"
 
