@@ -49,7 +49,8 @@ namespace Faeterna.Scripts.Personaje
 
         private void HandleCollision(Node node)
         {
-            if (node.IsInGroup("Terreno"))
+            GD.Print($"Shot collided with: {node.GetGroups()}");
+            if (node.IsInGroup("Terreno") || node.Name == "Hurtbox")
             {
                 QueueFree();
                 return;

@@ -322,7 +322,8 @@ texture_filter = 1
 scale = Vector2(1.5, 1.5)
 collision_layer = 4
 script = ExtResource("1_y6bk4")
-_detectionArea = NodePath("DetectionArea")
+_currentDirection = -1
+_detectionArea = NodePath("DetectionArea/CollisionShape2D")
 _attackHitBox = NodePath("AttackHitBox")
 _groundCheck = NodePath("RayCast2D")
 _hurtBox = NodePath("Hurtbox")
@@ -360,7 +361,7 @@ shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 
 [node name="LoadAttackTimer" type="Timer" parent="DetectionArea" unique_id=55909832]
-wait_time = 3.0
+wait_time = 1.5
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=622358943]
 collision_layer = 64
@@ -378,6 +379,7 @@ position = Vector2(38, 0)
 one_shot = true
 
 [node name="DashTimer" type="Timer" parent="." unique_id=2014169799]
+wait_time = 3.0
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]

@@ -8,22 +8,28 @@ namespace Faeterna.scripts.Enemigos.Jabali
     public partial class Jabali : CharacterBody2D
     {
         public float DashSpeed = 300f;
-        public float DashInterval = 2f;
-        // <summary>Duración del impulso de dash en segundos.</summary>
-        public float DashDuration = 1f;
+        private float _dashDuration = 2f;
         public int Health = 8;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
         private AnimatedSprite2D _animatedSprite;
         // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private bool _isDashing = false;
         private bool _isChargingAttack = false;
+        private bool _isWall = true;
         // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
-        private float _dashDuration = 0.5f;
+
         private int _dashDirection = 1;
         private Node2D _target = null;
         private float _knockbackTimer = 0f;
         private const float KnockbackDuration = 0.2f;
-        [Export] private Area2D _detectionArea;
+
+        private enum enemyDirection
+        {
+            Left = -1,
+            Right = 1
+        }
+        [Export] private enemyDirection _currentDirection = enemyDirection.Right;
+        [Export] private CollisionShape2D _detectionArea;
         [Export] private Area2D _attackHitBox;
         [Export] private RayCast2D _groundCheck;
         [Export] private Area2D _hurtBox;
@@ -36,7 +42,8 @@ namespace Faeterna.scripts.Enemigos.Jabali
         public override void _Ready()
         {
             _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-            _dashTimer.Start();  
+            flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
+            _dashTimer.Start();
             SetAnimation("idle");
         }
 
@@ -51,42 +58,43 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 velocity.Y += Gravity * (float)delta;
             else
             {
-                if (_isChargingAttack)
-                {
-                    // Mientras carga el ataque, detiene completamente el movimiento
-                    velocity.X = 0;
-                }
-                else if (_isDashing)
-                {
-                    // Durante el dash, mantiene la velocidad hacia la dirección del ataque
-                    // Fuerza la actualización del raycast en cada frame
-                    _groundCheck.ForceRaycastUpdate();
 
-                    // Para el dash si choca con una pared o el objetivo se perdió
-                    if (!_groundCheck.IsColliding() && _target == null)
-                    {
-                        _isDashing = false;
-                        velocity.X = 0;
-                        SetAnimation("idle");
-                    }
-                }
 
-                if (velocity.X == 0f && !_isChargingAttack)
+                flipHJabali(_dashDirection);
+                            
+            if (_isChargingAttack)
+            {
+                velocity.X = 0;
+                SetAnimation("loadAttack");
+            }
+            else if (_isDashing)
+            {
+                velocity.X = _dashDirection * DashSpeed;
+
+                SetAnimation("run");
+
+                _groundCheck.ForceRaycastUpdate();
+
+                if (!_groundCheck.IsColliding())
                 {
-                    SetAnimation("idle");
+                    StopDash(ref velocity);
                 }
-                if (velocity.X == 0f && _isChargingAttack)
-                {
-                    SetAnimation("loadAttack");
-                }
+            }
+            else
+            {
+                velocity.X = 0;
+                SetAnimation("idle");
+            }
             }
 
             if (_knockbackTimer > 0f)
             {
                 _knockbackTimer -= (float)delta;
-                if (IsOnFloor())
+                if (_knockbackTimer <= 0f)
                 {
-                    velocity.X = 0f;
+                    // Termina el estado de knockback
+                    _knockbackTimer = 0f;
+                    velocity.X = 0f; // Detiene el movimiento horizontal después del knockback
                 }
             }
 
@@ -94,22 +102,70 @@ namespace Faeterna.scripts.Enemigos.Jabali
             MoveAndSlide();
         }
 
-        private void OnDashTimerTimeout()
+        private async void OnDashTimerTimeout()
         {
-            if (!IsOnFloor()) return;
+            if (!IsOnFloor())
+                return;
 
             _isDashing = true;
-            _dashDuration = _rnd.Next((int)(DashDuration * 0.75f), (int)(DashDuration * 1.25f)); // Añade algo de variación a la duración del dash
-            float directionX;
 
-                directionX = _dashDirection;
-                _dashDirection *= -1;
+            await ToSignal(
+                GetTree().CreateTimer(_dashDuration),
+                "timeout"
+            );
 
+            if(IsOnWall()){
+            float directionX = GlobalPosition.X * -1;
+            Velocity = new Vector2(directionX * 250f, -200f);
+                _dashDirection *=-1;
+                flipHJabali(_dashDirection);
+                
+            }else{
+                Random _rng = new Random(); 
+                _dashDirection = (int)(_rng.Next(0, 2) == 0
+                ? enemyDirection.Left
+                : enemyDirection.Right);
+            }
+            _isDashing = false;
+            
+                
+        }
+        public void _on_load_attack_timer_timeout()
+        {
+            if (_target == null || !IsOnFloor())
+                return;
+
+            _isChargingAttack = false;
+            _isDashing = true;
+
+            float directionX =
+                Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
+
+            if (directionX == 0)
+                directionX = 1;
+
+            _dashDirection = (int)directionX;
+
+            flipHJabali(directionX);
+        }
+
+        private void StopDash(ref Vector2 velocity)
+        {
+            _isDashing = false;
+
+            velocity.X = 0;
+
+            SetAnimation("idle");
+
+            _dashTimer.Start();
+        }
+
+
+        private void flipHJabali(float directionX)
+        {
             _animatedSprite.FlipH = directionX < 0;
             _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            //_detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
-            Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
-            SetAnimation("run");
+            _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
         }
 
 
@@ -136,7 +192,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
             SetAnimation("hit");
             Health -= v;
             // Dirección opuesta al atacante + mini salto
-            
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
             
@@ -169,8 +224,8 @@ namespace Faeterna.scripts.Enemigos.Jabali
         {
             _attackHitBox.CollisionLayer = 0;
             _attackHitBox.CollisionMask = 0;
-            _detectionArea.CollisionLayer = 0;
-            _detectionArea.CollisionMask = 0;
+            _detectionArea.GetParent<Area2D>().CollisionLayer = 0;
+            _detectionArea.GetParent<Area2D>().CollisionMask = 0;
         }
 
         public void _on_detection_area_body_entered(Node2D prota)
@@ -179,6 +234,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             
             if (prota is Lira lira)
             {
+                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
                 _target = lira; // Empieza a perseguir al jugador
                 _dashTimer.Stop(); // Detiene el timer de dash automático
                 _isDashing = false; // Fuerza la salida del estado de dash
@@ -190,32 +246,10 @@ namespace Faeterna.scripts.Enemigos.Jabali
             
         }
 
-        public void _on_load_attack_timer_timeout()
-        {
-            // Cuando el timer termina, ejecuta el ataque hacia el objetivo
-            if (_target != null && IsOnFloor())
-            {
-                _isChargingAttack = false;
-                _isDashing = true;
-                
-                // Calcula la dirección hacia el objetivo
-                float directionX = Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
-                _dashDirection = (int)directionX;
-
-                _animatedSprite.FlipH = directionX < 0;
-                _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-              //  _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
-                Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
-                SetAnimation("run");
-            }
-        }
-
         public void _on_detection_area_body_exited(Node2D prota)
         {
             if (prota is Lira)
             {
-                _target = null;
-                _isChargingAttack = false;
                 if (!_isDead) // Solo reanuda el timer si no está muerto
                     _dashTimer.Start(); // Reanuda el timer de dash automático
             }
