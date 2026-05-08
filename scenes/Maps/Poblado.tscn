@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://pcul87tmeir8"]
+
+[ext_resource type="PackedScene" uid="uid://bfmip8vxtep10" path="res://scenes/Maps/Poblado.tmx" id="1_khiku"]
+[ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_natxa"]
+
+[node name="Poblado" type="Node2D" unique_id=787324181]
+
+[node name="Poblado" parent="." unique_id=1235086971 instance=ExtResource("1_khiku")]
+scale = Vector2(2, 2)
+
+[node name="CharacterBody3D" parent="." unique_id=1465306425 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_natxa")]
+position = Vector2(884, 580)
+platform_wall_layers = 1
+_hearts = [null, null, null, null, null]
