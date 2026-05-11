@@ -70,7 +70,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 _player.MoveAndSlide();
             }
         }
-
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null)

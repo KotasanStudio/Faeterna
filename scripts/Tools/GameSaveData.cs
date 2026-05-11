@@ -1,7 +1,7 @@
 using Godot;
 using System.Text.Json.Serialization;
 
-namespace Faeterna.scripts.Tools
+namespace Faeterna.Scripts.Tools
 {
     public class GameData
     {

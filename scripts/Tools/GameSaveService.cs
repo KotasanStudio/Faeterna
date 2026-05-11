@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
 
-namespace Faeterna.scripts.Tools
+namespace Faeterna.Scripts.Tools
 {
     /// <summary>
     /// Fachada de compatibilidad. La lógica real de guardado está centralizada en <see cref="Saves"/>.

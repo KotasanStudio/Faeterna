@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://s8s5wjp1vkr7"]
 
-[ext_resource type="Script" uid="uid://f7dyr1bgkeai" path="res://Scripts/Enemigos/Jabali/Jabali.cs" id="1_y6bk4"]
+[ext_resource type="Script" uid="uid://f7dyr1bgkeai" path="res://scripts/Enemigos/Jabali/Jabali.cs" id="1_y6bk4"]
 [ext_resource type="Texture2D" uid="uid://dy7w1vp66vde2" path="res://assets/Jabali/JabaliDie.png" id="2_rosda"]
 [ext_resource type="Texture2D" uid="uid://deljkakd35uvk" path="res://assets/Jabali/JabaliLoadAttack.png" id="2_y6bk4"]
 [ext_resource type="Texture2D" uid="uid://bkdv57bxowtrm" path="res://assets/Jabali/JabaliHit.png" id="3_odc7f"]
-[ext_resource type="Texture2D" uid="uid://d4g7d1sdv3uwr" path="res://assets/Jabali/JabaliIdle.png" id="3_rosda"]
+[ext_resource type="Texture2D" uid="uid://cs8ngmuq35av0" path="res://assets/Jabali/JabaliIdle.png" id="3_rosda"]
 [ext_resource type="Texture2D" uid="uid://cykb6atjihloh" path="res://assets/Jabali/JabaliRun.png" id="4_odc7f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8v2o2"]

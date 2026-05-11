@@ -105,7 +105,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             else
             {
                 // En 2D, Y < 0 = subiendo (jumping), Y > 0 = bajando (falling).
-                stateMachine.TransitionTo(_player.Velocity.Y < 0f ? "JumpingMovementState" : "FallingMovementState");
+                stateMachine.TransitionTo("FallingMovementState");
             }
         }
     }

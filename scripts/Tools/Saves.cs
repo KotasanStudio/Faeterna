@@ -5,7 +5,7 @@ using System;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Faeterna.scripts.Tools
+namespace Faeterna.Scripts.Tools
 {
     public record OptionsData(
         int Antialiasing,

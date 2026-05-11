@@ -1,9 +1,9 @@
-using Faeterna.scripts.Tools;
+using Faeterna.Scripts.Tools;
 using Godot;
 using Godot.Collections;
 using System.Collections.Generic;
 
-namespace Faeterna.scripts.Menus
+namespace Faeterna.Scripts.Menus
 {
     public partial class PlayMenu : Control
     {

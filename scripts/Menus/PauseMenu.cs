@@ -1,8 +1,8 @@
 using Faeterna.Scripts.Personaje;
-using Faeterna.scripts.Tools;
+using Faeterna.Scripts.Tools;
 using Godot;
 
-namespace Faeterna.scripts.Menus
+namespace Faeterna.Scripts.Menus
 {
 	public partial class PauseMenu : Control
 	{

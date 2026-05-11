@@ -44,15 +44,22 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 Vector2 velocity = _player.Velocity;
                 velocity.Y += PlayerType.Gravity * (float)delta;
-                float move = Input.GetActionStrength("move_right") - Input.GetActionStrength("move_left");
-                velocity.X = Mathf.Abs(move) > 0f ? move * PlayerType.Speed : 0f;
+                float direction = Input.GetAxis("move_left", "move_right");
+            if (direction != 0.0f)
+            {
+                velocity.X = direction * PlayerType.Speed;
+            }
+            else
+            {
+                velocity.X = Mathf.MoveToward(_player.Velocity.X, 0, PlayerType.Speed);
+            }
+
+            if (direction < 0f)
+                _player.FlipH(true);
+            else if (direction > 0f)
+                _player.FlipH(false);
+
                 _player.Velocity = velocity;
-
-                if (move < 0f)
-                    _player.animatedSprite.FlipH = true;
-                else if (move > 0f)
-                    _player.animatedSprite.FlipH = false;
-
                 _player.MoveAndSlide();
             }
         }

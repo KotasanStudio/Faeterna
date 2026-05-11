@@ -3,7 +3,7 @@ using Faeterna.Scripts.Personaje;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
 
-namespace Faeterna.scripts.Tools
+namespace Faeterna.Scripts.Tools
 {
     public partial class CheckPoint : Node2D
     {

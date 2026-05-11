@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://csnmj3dpkpis4"]
 
-[ext_resource type="Script" uid="uid://g2trk2kg6pbc" path="res://Scripts/Enemigos/Wolf/Wolf.cs" id="1_loqlb"]
+[ext_resource type="Script" uid="uid://g2trk2kg6pbc" path="res://scripts/Enemigos/Wolf/Wolf.cs" id="1_loqlb"]
 [ext_resource type="Texture2D" uid="uid://o4bk4f31t7rk" path="res://assets/Wolf/Wolf Attack.png" id="2_ucxt5"]
 [ext_resource type="Texture2D" uid="uid://br60hepfjycfh" path="res://assets/Wolf/Wolf Idle.png" id="5_cbsxq"]
 [ext_resource type="Texture2D" uid="uid://bxktl1xtu5pxe" path="res://assets/Wolf/Wolf Run.png" id="6_texvx"]

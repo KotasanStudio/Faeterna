@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace Faeterna.scripts.Tools
+namespace Faeterna.Scripts.Tools
 {
     public static class ButtonTools
     {
