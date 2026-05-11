@@ -68,7 +68,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 if (child is CollisionShape2D shape)
                 {
-                    shape.Disabled = !active;
+                    shape.SetDeferred(CollisionShape2D.PropertyName.Disabled, !active);
                 }
             }
         }
