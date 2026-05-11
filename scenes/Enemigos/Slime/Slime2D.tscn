@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://v7xkrxjkaq8c"]
 
 [ext_resource type="Script" uid="uid://dfk525ytuarl1" path="res://scripts/Enemigos/Slime/Slime.cs" id="1_7waxi"]
-[ext_resource type="Texture2D" uid="uid://ca3mn7c6p4n0w" path="res://assets/Slime/SlimeDeath.png" id="1_21x3n"]
-[ext_resource type="Texture2D" uid="uid://b7po626kq0vto" path="res://assets/Slime/SlimeHit.png" id="2_7waxi"]
-[ext_resource type="Texture2D" uid="uid://dls302u46v6g7" path="res://assets/Slime/SlimeIdle.png" id="3_cul3j"]
-[ext_resource type="Texture2D" uid="uid://bibfo0tqihrb8" path="res://assets/Slime/SlimeJump.png" id="4_cky4s"]
+[ext_resource type="Texture2D" uid="uid://ca3mn7c6p4n0w" path="res://assets/Enemys/Slime/SlimeDeath.png" id="1_21x3n"]
+[ext_resource type="Texture2D" uid="uid://b7po626kq0vto" path="res://assets/Enemys/Slime/SlimeHit.png" id="2_7waxi"]
+[ext_resource type="Texture2D" uid="uid://dls302u46v6g7" path="res://assets/Enemys/Slime/SlimeIdle.png" id="3_cul3j"]
+[ext_resource type="Texture2D" uid="uid://bibfo0tqihrb8" path="res://assets/Enemys/Slime/SlimeJump.png" id="4_cky4s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7waxi"]
 atlas = ExtResource("1_21x3n")

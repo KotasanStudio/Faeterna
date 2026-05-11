@@ -1,10 +1,12 @@
 using System;
 using Faeterna.Scripts.Personaje;
+using EnemyClass = Faeterna.Scripts.Enemigos.Enemy.Enemy;
+using Faeterna.Scripts.Enemigos.Enemy;
 using Godot;
 
 namespace Faeterna.scripts.Enemigos.Wolf
 {
-    public partial class Wolf : CharacterBody2D
+    public partial class Wolf : EnemyClass
     {
         public float DashSpeed = 300f;
         public float DashInterval = 2f;
@@ -12,7 +14,6 @@ namespace Faeterna.scripts.Enemigos.Wolf
         public float DashDuration = 1f;
         public int Health = 5;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
-        private AnimatedSprite2D _animatedSprite;
         // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private Timer _dashTimer;
         private bool _isDashing = false;
@@ -22,14 +23,13 @@ namespace Faeterna.scripts.Enemigos.Wolf
         private Node2D _target = null;
         private float _knockbackTimer = 0f;
         private const float KnockbackDuration = 0.2f;
+        private ShaderMaterial _shaderMaterial;
         [Export] private CollisionShape2D _detectionArea;
         [Export] private RayCast2D _groundCheck;
         [Export] private Area2D _hurtBox;
         private Random _rnd = new();
         public override void _Ready()
         {
-            _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-
             _dashTimer = new Timer
             {
                 WaitTime = DashInterval,
@@ -38,7 +38,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             _dashTimer.Timeout += OnDashTimerTimeout;
             AddChild(_dashTimer);
             _dashTimer.Start();
-            
+            _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
             SetAnimation("idle");
         }
 
@@ -102,11 +102,6 @@ namespace Faeterna.scripts.Enemigos.Wolf
             SetAnimation("run");
         }
 
-        public void SetAnimation(string animationName)
-        {
-            _animatedSprite?.Play(animationName);
-        }
-
         public void _on_attack_hit_box_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
@@ -122,6 +117,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
         private void TakeDamage(int v, Vector2 globalPosition)
         {
             Health -= v;
+                hitShader(_shaderMaterial);
             if (Health <= 0)
             {
                 QueueFree();

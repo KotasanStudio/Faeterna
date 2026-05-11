@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7po626kq0vto"
-path="res://.godot/imported/SlimeHit.png-65c1d1c86f6b2f51c3a5a466540b02f9.ctex"
+uid="uid://conuxhewjl6lc"
+path="res://.godot/imported/BossJabaliHit.png-6b883ff9a4eee3af0a349222da7079ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Slime/SlimeHit.png"
-dest_files=["res://.godot/imported/SlimeHit.png-65c1d1c86f6b2f51c3a5a466540b02f9.ctex"]
+source_file="res://assets/Enemys/ReyJabali/BossJabaliHit.png"
+dest_files=["res://.godot/imported/BossJabaliHit.png-6b883ff9a4eee3af0a349222da7079ed.ctex"]
 
 [params]
 
