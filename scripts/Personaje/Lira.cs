@@ -1,7 +1,7 @@
 
 using Godot;
 using Godot.Collections;
-using Faeterna.scripts.Tools;
+using Faeterna.Scripts.Tools;
 using System.Threading.Tasks;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
