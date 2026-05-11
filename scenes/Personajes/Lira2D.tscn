@@ -17,6 +17,7 @@
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
+[ext_resource type="Texture2D" uid="uid://eb3chp0xeqm1" path="res://assets/Liria/2d_lights_and_shadows_neutral_point_light.webp" id="18_8x1cb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -289,13 +290,28 @@ shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
 [node name="CharacterBody3D" type="CharacterBody2D" unique_id=1465306425 node_paths=PackedStringArray("_hearts", "_manaBar", "_camera") groups=["Lira"]]
+light_mask = 4
+visibility_layer = 4
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_41i63")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _camera = NodePath("Camera3D")
 
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(0.19197592, -6.5163984)
+color = Color(0.4506483, 0.4506483, 0.45064825, 1)
+energy = 1.5
+range_item_cull_mask = 5
+shadow_enabled = true
+texture = ExtResource("18_8x1cb")
+texture_scale = 3.0
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=771704802]
+light_mask = 4
+visibility_layer = 4
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"run"
 frame_progress = 0.12365947
