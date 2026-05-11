@@ -1,6 +1,6 @@
 using System;
 using Godot;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using PlayerType = Faeterna.scripts.Personaje.Lira;
 
 namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 {
@@ -34,6 +34,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
             _player.SetAnimation("jump");
             // En 2D, JumpVelocity es negativo (hacia arriba).
             _player.Velocity = new Vector2(_player.Velocity.X, PlayerType.JumpVelocity);
+            _player.saltoParticulas.Emitting = true;
             _player.MoveAndSlide();
         }
 

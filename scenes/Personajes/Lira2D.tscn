@@ -17,6 +17,10 @@
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="14_tu3mt"]
 [ext_resource type="Texture2D" uid="uid://cp17qnvip8j0d" path="res://assets/Liria/GUI/Mana.png" id="14_vryya"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
+[ext_resource type="Texture2D" uid="uid://dhg0va7y7elos" path="res://assets/Liria/hiervaParticulas.png" id="18_vjval"]
+[ext_resource type="Script" uid="uid://b4a467a47h5xe" path="res://scripts/Personaje/TerrainParticles.cs" id="19_akqtr"]
+[ext_resource type="Texture2D" uid="uid://cly17ikbkuqlj" path="res://assets/Liria/tierraParticulas.png" id="20_17myn"]
+[ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="20_akqtr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
@@ -288,17 +292,47 @@ shader = ExtResource("15_k88eo")
 shader_parameter/fill_amount = 1.0
 shader_parameter/damage_flash = 0.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=1465306425 node_paths=PackedStringArray("_hearts", "_manaBar", "_camera") groups=["Lira"]]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1alrg"]
+lifetime_randomness = 0.5
+particle_flag_disable_z = true
+angle_min = 180.00002
+angle_max = 720.0
+spread = 180.0
+flatness = 1.0
+initial_velocity_min = 5.0
+initial_velocity_max = 20.0
+gravity = Vector3(0, 45, 0)
+scale_max = 1.5
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjval"]
+atlas = ExtResource("18_vjval")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnkxa"]
+atlas = ExtResource("20_17myn")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="Curve" id="Curve_akqtr"]
+_data = [Vector2(0.0212766, 1), 0.0, 0.0, 0, 0, Vector2(0.5053192, 0.49438208), -1.3378279, -1.3378279, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=1465306425 node_paths=PackedStringArray("_hearts", "_manaBar", "_camera", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas") groups=["Lira"]]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_41i63")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HBoxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _camera = NodePath("Camera3D")
+terrainParticles = NodePath("ParticulasTerreno")
+saltoParticulas = NodePath("SaltoParticulas")
+dobleSaltoParticulas = NodePath("DobleSaltoParticulas")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=771704802]
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"run"
-frame_progress = 0.12365947
+frame_progress = 0.14118874
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=733067001]
 position = Vector2(0, 4)
@@ -390,3 +424,57 @@ texture = ExtResource("14_5f38a")
 material = SubResource("ShaderMaterial_tu3mt")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
+
+[node name="ParticulasTerreno" type="GPUParticles2D" parent="." unique_id=281853338 node_paths=PackedStringArray("_rayCast")]
+texture_filter = 1
+position = Vector2(0, 39)
+emitting = false
+amount = 4
+lifetime = 0.7
+speed_scale = 2.0
+explosiveness = 1.0
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_1alrg")
+script = ExtResource("19_akqtr")
+_rayCast = NodePath("RayCast2D")
+_atlasTextureId1 = SubResource("AtlasTexture_vjval")
+_atlasTextureId2 = SubResource("AtlasTexture_qnkxa")
+
+[node name="RayCast2D" type="RayCast2D" parent="ParticulasTerreno" unique_id=1264308804]
+target_position = Vector2(0, 5.666668)
+
+[node name="SaltoParticulas" type="CPUParticles2D" parent="." unique_id=1020013203]
+position = Vector2(0, 39)
+emitting = false
+amount = 20
+texture = ExtResource("20_akqtr")
+lifetime = 1.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+draw_order = 1
+emission_shape = 1
+emission_sphere_radius = 10.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+angle_max = 360.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_akqtr")
+
+[node name="DobleSaltoParticulas" type="CPUParticles2D" parent="." unique_id=1888880746]
+position = Vector2(0, 39)
+emitting = false
+amount = 10
+texture = ExtResource("20_akqtr")
+lifetime = 1.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+fixed_fps = 60
+draw_order = 1
+direction = Vector2(0, 0)
+gravity = Vector2(-25, 0)
+initial_velocity_max = 20.0
+angle_max = 360.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_akqtr")

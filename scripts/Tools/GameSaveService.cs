@@ -1,4 +1,4 @@
-using Faeterna.scripts.Player;
+using Faeterna.scripts.Personaje;
 using Godot;
 using System.Threading.Tasks;
 

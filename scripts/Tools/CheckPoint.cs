@@ -1,5 +1,5 @@
 using Godot;
-using Faeterna.scripts.Player;
+using Faeterna.scripts.Personaje;
 
 namespace Faeterna.scripts.Tools
 {

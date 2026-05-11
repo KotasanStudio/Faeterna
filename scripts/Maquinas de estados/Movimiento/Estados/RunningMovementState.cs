@@ -1,6 +1,6 @@
 using Godot;
 using System;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using PlayerType = Faeterna.scripts.Personaje.Lira;
 
 namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 {
@@ -33,6 +33,12 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         {
             if (_player == null) return;
             _player.SetAnimation("run");
+            _player.terrainParticles.Emitting = true;
+        }
+
+        public override void Exit()
+        {
+            _player.terrainParticles.Emitting = false;
         }
 
         /// <summary>

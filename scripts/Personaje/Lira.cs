@@ -3,7 +3,7 @@ using Godot.Collections;
 using Faeterna.scripts.Tools;
 using System.Threading.Tasks;
 
-namespace Faeterna.scripts.Player
+namespace Faeterna.scripts.Personaje
 {
     /// <summary>
     /// Personaje principal del juego (Lira).
@@ -54,6 +54,14 @@ namespace Faeterna.scripts.Player
         [Export] TextureRect _manaBar;
 
         [Export] Camera2D _camera;
+
+
+        [ExportGroup("Particles")]
+        [Export] public TerrainParticles terrainParticles;
+
+        [Export] public CpuParticles2D  saltoParticulas;
+
+        [Export] public CpuParticles2D  dobleSaltoParticulas;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.

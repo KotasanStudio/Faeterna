@@ -1,6 +1,6 @@
 using Godot;
 using System;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using PlayerType = Faeterna.scripts.Personaje.Lira;
 
 namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
 {
@@ -31,6 +31,7 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
         public override void Enter()
         {
             if (_player == null) return;
+            _player.dobleSaltoParticulas.Emitting = true;
             _player.DoubleJumpAvailable = false;
             _player.SetAnimation("double_jump");
             GD.Print("Entered DoubleJumpMovementState (double jump)");
