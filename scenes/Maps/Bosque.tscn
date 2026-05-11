@@ -3,11 +3,37 @@
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xyya0"]
+polygon = PackedVector2Array(3831, 2100, 3829, 1505, 2564, 1546, 2535, 2154, 2564, 2545, 2557, 3053, 2422, 3844, 2742, 4256, 1869, 4309, 1606, 3936, 1828, 3625, 1408, 3264, 569, 3272, 529, 5870, 2905, 5865, 5103, 5911, 5064, 5577, 3061, 5562, 3432, 4658, 4411, 4620, 4797, 5157, 6818, 5260, 7021, 3458, 6060, 2837, 5349, 2965, 5507, 3586, 4922, 3590, 5073, 2897, 4004, 2415, 3946, 2610, 3141, 2610, 3509, 3271, 3769, 4435, 2958, 4418, 3132, 3180, 2866, 2688, 2872, 2433)
+
+[sub_resource type="Gradient" id="Gradient_xyya0"]
+offsets = PackedFloat32Array(0, 0.3493976, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.91566265, 0.91566265, 0.91566265, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mbhmg"]
+gradient = SubResource("Gradient_xyya0")
+
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
-[node name="Bosque" parent="." unique_id=1290042087 instance=ExtResource("1_xyya0")]
+[node name="Bosque" parent="." unique_id=1212657397 instance=ExtResource("1_xyya0")]
 scale = Vector2(2, 2)
 
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=559327556]
+visible = false
+color = Color(0.26657522, 0.2665752, 0.2665752, 1)
+
+[node name="Node" type="Node" parent="." unique_id=61488899]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Node" unique_id=767578271]
+visible = false
+occluder = SubResource("OccluderPolygon2D_xyya0")
+
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(3652.0005, 2274)
+position = Vector2(2168.0002, 4111)
 platform_wall_layers = 1
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=867000171]
+position = Vector2(2128.156, 3265.31)
+rotation = -1.5707964
+scale = Vector2(9.341329, 846.0843)
+texture = SubResource("GradientTexture1D_mbhmg")
