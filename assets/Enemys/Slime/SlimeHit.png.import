@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs8ngmuq35av0"
-path="res://.godot/imported/JabaliIdle.png-a783cad3f1c1953ef54a7545afcbc3c9.ctex"
+uid="uid://b7po626kq0vto"
+path="res://.godot/imported/SlimeHit.png-63071cfee9a945c8d2621f77c88add93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Jabali/JabaliIdle.png"
-dest_files=["res://.godot/imported/JabaliIdle.png-a783cad3f1c1953ef54a7545afcbc3c9.ctex"]
+source_file="res://assets/Enemys/Slime/SlimeHit.png"
+dest_files=["res://.godot/imported/SlimeHit.png-63071cfee9a945c8d2621f77c88add93.ctex"]
 
 [params]
 

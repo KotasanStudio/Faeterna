@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br60hepfjycfh"
-path="res://.godot/imported/Wolf Idle.png-dbc3a00964fff5840b3ac325e83f0aa0.ctex"
+uid="uid://ckafb4xbs3o5t"
+path="res://.godot/imported/JabaliFall.png-61d44ed03f3a837902f6671480ff1fac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Wolf/Wolf Idle.png"
-dest_files=["res://.godot/imported/Wolf Idle.png-dbc3a00964fff5840b3ac325e83f0aa0.ctex"]
+source_file="res://assets/Enemys/Jabali/JabaliFall.png"
+dest_files=["res://.godot/imported/JabaliFall.png-61d44ed03f3a837902f6671480ff1fac.ctex"]
 
 [params]
 

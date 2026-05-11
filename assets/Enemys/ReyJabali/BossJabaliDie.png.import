@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxktl1xtu5pxe"
-path="res://.godot/imported/Wolf Run.png-c0ad681e91f5a9b160daa6df00cb3c13.ctex"
+uid="uid://c45ps1ehnlc50"
+path="res://.godot/imported/BossJabaliDie.png-a27dcc6378d16fb9e621408843d1dc1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Wolf/Wolf Run.png"
-dest_files=["res://.godot/imported/Wolf Run.png-c0ad681e91f5a9b160daa6df00cb3c13.ctex"]
+source_file="res://assets/Enemys/ReyJabali/BossJabaliDie.png"
+dest_files=["res://.godot/imported/BossJabaliDie.png-a27dcc6378d16fb9e621408843d1dc1d.ctex"]
 
 [params]
 

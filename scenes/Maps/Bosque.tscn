@@ -2,12 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
+[ext_resource type="PackedScene" uid="uid://dwu0wm53g8n86" path="res://scenes/Enemigos/ReyJabali/ReyJabali2D.tscn" id="3_mbhmg"]
 
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
 [node name="Bosque" parent="." unique_id=1290042087 instance=ExtResource("1_xyya0")]
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(3652.0005, 2274)
+position = Vector2(784, 4019)
 platform_wall_layers = 1
+
+[node name="ReyJabali" parent="." unique_id=477752749 instance=ExtResource("3_mbhmg")]
+position = Vector2(2923, 3997)

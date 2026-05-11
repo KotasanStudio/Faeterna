@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o4bk4f31t7rk"
-path="res://.godot/imported/Wolf Attack.png-3d72f8684ebe7067b3c148f09739b6cf.ctex"
+uid="uid://bibfo0tqihrb8"
+path="res://.godot/imported/SlimeJump.png-98ee4514dbdb025227c851951d30e343.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Wolf/Wolf Attack.png"
-dest_files=["res://.godot/imported/Wolf Attack.png-3d72f8684ebe7067b3c148f09739b6cf.ctex"]
+source_file="res://assets/Enemys/Slime/SlimeJump.png"
+dest_files=["res://.godot/imported/SlimeJump.png-98ee4514dbdb025227c851951d30e343.ctex"]
 
 [params]
 

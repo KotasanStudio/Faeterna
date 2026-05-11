@@ -3,14 +3,16 @@ using Faeterna.Scripts.Enemigos.Enemy;
 using Faeterna.Scripts.Personaje;
 using Godot;
 
-namespace Faeterna.scripts.Enemigos.Jabali
+namespace Faeterna.scripts.Enemigos.ReyJabali
 {
-    public partial class Jabali : Enemy
+    public partial class ReyJabali : Enemy
     {
         public float DashSpeed = 300f;
         private float _dashDuration = 2f;
         public int Health = 8;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+        private ShaderMaterial _shaderMaterial;
+
         // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private bool _isDashing = false;
         private bool _isChargingAttack = false;
@@ -21,8 +23,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private Node2D _target = null;
         private float _knockbackTimer = 0f;
         private const float KnockbackDuration = 0.2f;
-         private ShaderMaterial _shaderMaterial;
-
 
         private enum enemyDirection
         {
@@ -43,9 +43,10 @@ namespace Faeterna.scripts.Enemigos.Jabali
         public override void _Ready()
         {
             flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
-            _dashTimer.Start();
+            //_dashTimer.Start();
             _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
             SetAnimation("idle");
+
         }
 
         public override void _PhysicsProcess(double delta)
@@ -128,8 +129,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 : enemyDirection.Right);
             }
             _isDashing = false;
-            
-                
+   
         }
         public void _on_load_attack_timer_timeout()
         {
@@ -184,14 +184,10 @@ namespace Faeterna.scripts.Enemigos.Jabali
         }
         private void TakeDamage(int v, Vector2 globalPosition)
         {
-            
             Health -= v;
             hitShader(_shaderMaterial);
-            // Dirección opuesta al atacante + mini salto
-            float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
-            Velocity = new Vector2(directionX * 250f, -200f);
-            
-            
+            if(_target != null)
+                flipHJabali(GlobalPosition.X * -1);
             if (Health <= 0)
             {
                 desactiveCollision();
@@ -210,7 +206,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
             _knockbackTimer = KnockbackDuration;
 
         }
-        
         private void OnDeathAnimationTimerTimeout()
         {
             QueueFree();

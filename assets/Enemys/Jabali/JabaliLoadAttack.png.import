@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cykb6atjihloh"
-path="res://.godot/imported/JabaliRun.png-cebbd93170238722e8d12b1fe07688ec.ctex"
+uid="uid://deljkakd35uvk"
+path="res://.godot/imported/JabaliLoadAttack.png-772026187b98b84a84f2143b7c5406b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Jabali/JabaliRun.png"
-dest_files=["res://.godot/imported/JabaliRun.png-cebbd93170238722e8d12b1fe07688ec.ctex"]
+source_file="res://assets/Enemys/Jabali/JabaliLoadAttack.png"
+dest_files=["res://.godot/imported/JabaliLoadAttack.png-772026187b98b84a84f2143b7c5406b3.ctex"]
 
 [params]
 

@@ -1,9 +1,10 @@
-using Faeterna.Scripts.Personaje;
 using Godot;
+using Faeterna.Scripts.Personaje;
+using EnemyClass = Faeterna.Scripts.Enemigos.Enemy.Enemy;
 
 namespace Faeterna.Scripts.Enemigos.Slime
 {
-    public partial class Slime : CharacterBody2D
+    public partial class Slime : EnemyClass
     {
         /// <summary>>Fuerza vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
         public float JumpForce = -380f;
@@ -13,7 +14,6 @@ namespace Faeterna.Scripts.Enemigos.Slime
 
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
         public int Health = 6;
-        private AnimatedSprite2D _animatedSprite;
         private Timer _jumpTimer;
         private bool _isJumping = false;
         private int _jumpDirection = 1; // Alterna entre -1 y 1
@@ -21,14 +21,15 @@ namespace Faeterna.Scripts.Enemigos.Slime
         private Node2D _target = null; // Si quieres perseguir al jugador
         private float _knockbackTimer = 0f;
         private const float KnockbackDuration = 0.2f;
+        private ShaderMaterial _shaderMaterial;
 
         [Export] private CollisionShape2D _detectionArea;
         [Export] private Area2D _hurtBox;
 
         public override void _Ready()
         {
-            _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 
+            
             _jumpTimer = new Timer
             {
                 WaitTime = JumpInterval,
@@ -37,8 +38,8 @@ namespace Faeterna.Scripts.Enemigos.Slime
             _jumpTimer.Timeout += OnJumpTimerTimeout;
             AddChild(_jumpTimer);
             _jumpTimer.Start();
-
-            set_animation("idle");
+            _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
+            SetAnimation("idle");
         }
 
         public override void _PhysicsProcess(double delta)
@@ -53,7 +54,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
                 _isJumping = false;
                 velocity.X = 0;
                 velocity.Y = 0;
-                set_animation("idle");
+                SetAnimation("idle");
             }
             if (_knockbackTimer > 0f)
             {
@@ -93,12 +94,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
             _detectionArea.Position = new Vector2(88.25f * directionX, 0); // Ajusta el área de detección
 
             Velocity = new Vector2(directionX * HorizontalSpeed, JumpForce);
-            set_animation("jump");
-        }
-
-        public void set_animation(string animation_name)
-        {
-            _animatedSprite?.Play(animation_name);
+            SetAnimation("jump");
         }
 
         public void _on_attack_hit_box_body_entered(Node2D prota)
@@ -130,6 +126,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
         private void TakeDamage(int v, Vector2 globalPosition)
         {
             Health -= v;
+            hitShader(_shaderMaterial);
             GD.Print("Slime take damage: " + v + ", remaining health: " + Health);
             if (Health <= 0)
             {
