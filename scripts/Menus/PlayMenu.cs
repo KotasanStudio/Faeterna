@@ -7,7 +7,7 @@ namespace Faeterna.scripts.Menus
 {
     public partial class PlayMenu : Control
     {
-        private const string DefaultGameScenePath = "res://scenes/Maps/DevRoom.tscn";
+        private const string DefaultGameScenePath = "res://scenes/Maps/Bosque.tscn";
         private const string ContinueTexturePath = "res://assets/Menu/SaveBottonContinue.png";
 
         [Export]
