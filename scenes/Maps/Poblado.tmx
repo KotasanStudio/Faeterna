@@ -4632,7 +4632,7 @@
    </data>
   </layer>
  </group>
- <layer id="105" name="Darkness" width="205" height="95" visible="0" opacity="0.3">
+ <layer id="105" name="Darkness" width="205" height="95" opacity="0.3">
   <properties>
    <property name="z_index" type="int" value="10"/>
   </properties>
@@ -5035,7 +5035,7 @@
 </chunk>
   </data>
  </layer>
- <layer id="106" name="Darkness" width="205" height="95" visible="0" opacity="0.2">
+ <layer id="106" name="Darkness" width="205" height="95" opacity="0.2">
   <properties>
    <property name="z_index" type="int" value="10"/>
   </properties>
