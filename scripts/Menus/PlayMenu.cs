@@ -61,7 +61,7 @@ namespace Faeterna.scripts.Menus
                             $"Save button {id} pressed. Transitioning to game scene with save slot {id}..."
                         );
                         if (id == 1)
-                            GetTree().ChangeSceneToFile("res://scenes/Maps/nivel_1.tscn");
+                            GetTree().ChangeSceneToFile("res://scenes/Maps/Bosque.tscn");
                         else
                             GetTree().ChangeSceneToFile(DefaultGameScenePath);
                     }

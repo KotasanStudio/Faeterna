@@ -1,5 +1,8 @@
+
 using Godot;
 using Godot.Collections;
+using Faeterna.scripts.Tools;
+using System.Threading.Tasks;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
 namespace Faeterna.Scripts.Personaje
@@ -79,7 +82,56 @@ namespace Faeterna.Scripts.Personaje
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
             MovementStateMachine = GetNode<MovementStateMachine>("MovementStateMachine");
+            UpdateHearts();
+            UpdateMana();
+            await TryLoadFromActiveSlotAsync();
+
         }
+          private async Task TryLoadFromActiveSlotAsync()
+        {
+            GameData gameData = await GameSaveService.LoadActiveSlotAsync();
+            if (gameData?.PlayerData == null)
+            {
+                return;
+            }
+
+            string currentScenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(gameData.ScenePath)
+                && !string.Equals(gameData.ScenePath, currentScenePath, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return;
+            }
+
+            ApplySaveData(gameData.PlayerData);
+        }
+           public PlayerSaveData BuildSaveData(Vector2 position)
+        {
+            return new PlayerSaveData
+            {
+                Position = position,
+                Health = _currentHealth,
+                Mana = _currentMana,
+                DoubleJumpAvailable = DoubleJumpAvailable,
+                DashAvailable = DashAvailable,
+                CoyoteAvailable = CoyoteAvailable
+            };
+        }
+        
+        public void ApplySaveData(PlayerSaveData saveData)
+        {
+            GlobalPosition = saveData.Position;
+
+            _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
+            _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
+            DoubleJumpAvailable = saveData.DoubleJumpAvailable;
+            DashAvailable = saveData.DashAvailable;
+            CoyoteAvailable = saveData.CoyoteAvailable;
+
+            UpdateHearts();
+            UpdateMana();
+        }
+
+
 
         /// <summary>
         /// Reproduce una animación en el <see cref="AnimatedSprite2D"/> hijo.
@@ -93,6 +145,8 @@ namespace Faeterna.Scripts.Personaje
                 GD.Print($"Setting animation to: {animationName}");
             }
         }
+        
+        
 
         /// <summary>
         /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto
