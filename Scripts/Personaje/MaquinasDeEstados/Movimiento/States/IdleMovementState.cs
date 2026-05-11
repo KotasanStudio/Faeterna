@@ -1,8 +1,9 @@
 using Godot;
 using System;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados;
+using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
-namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
     public partial class IdleMovementState : State
     {
@@ -33,17 +34,24 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                     ? "JumpingMovementState"
                     : "FallingMovementState");
             }
+            else
+            {
+                if (Input.GetAxis("move_left", "move_right") != 0f)
+                    stateMachine.TransitionTo("RunningMovementState");
+            }
         }
 
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
-            if (ev.IsActionPressed("move_left") || ev.IsActionPressed("move_right"))
-                stateMachine.TransitionTo("RunningMovementState");
             if (ev.IsActionPressed("jump") && _player.IsOnFloor())
                 stateMachine.TransitionTo("JumpingMovementState");
             if (ev.IsActionPressed("dash"))
                 stateMachine.TransitionTo("DashMovementState");
+            if (ev.IsActionPressed("aim"))
+                stateMachine.TransitionTo("MagicMovementState");
+            if (ev.IsActionPressed("kick"))
+                stateMachine.TransitionTo("AttackMovementState");
         }
     }
 }

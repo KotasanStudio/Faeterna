@@ -1,8 +1,9 @@
 using System;
 using Godot;
-using PlayerType = Faeterna.scripts.Player.Lira;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados;
+using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
-namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
     public partial class JumpingMovementState : State
     {
@@ -62,9 +63,9 @@ namespace Faeterna.scripts.Maquinas_de_estados.Movimiento.Estados
                 _player.Velocity = velocity;
 
                 if (move < 0f)
-                    _player.animatedSprite.FlipH = true;
+                    _player.FlipH(true);
                 else if (move > 0f)
-                    _player.animatedSprite.FlipH = false;
+                    _player.FlipH(false);
 
                 _player.MoveAndSlide();
             }

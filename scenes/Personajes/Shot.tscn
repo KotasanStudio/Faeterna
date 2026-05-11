@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dmgpdhsve7wto"]
+
+[ext_resource type="Script" uid="uid://uh4vch43plsf" path="res://Scripts/Personaje/Shot.cs" id="1_vl1nb"]
+[ext_resource type="Texture2D" uid="uid://0jv7rurun5m1" path="res://assets/Liria/Fireball Proyectile.png" id="2_vl1nb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3llgh"]
+atlas = ExtResource("2_vl1nb")
+region = Rect2(0, 0, 27, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbpij"]
+atlas = ExtResource("2_vl1nb")
+region = Rect2(27, 0, 27, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wttyq"]
+atlas = ExtResource("2_vl1nb")
+region = Rect2(54, 0, 27, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_th0y1"]
+atlas = ExtResource("2_vl1nb")
+region = Rect2(81, 0, 27, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0rmf"]
+atlas = ExtResource("2_vl1nb")
+region = Rect2(108, 0, 27, 13)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vqeu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3llgh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbpij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wttyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_th0y1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0rmf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vl1nb"]
+
+[node name="Shot" type="Area2D" unique_id=1840606177 node_paths=PackedStringArray("_animatedSprite")]
+scale = Vector2(1.5, 1.5)
+collision_layer = 128
+collision_mask = 65
+script = ExtResource("1_vl1nb")
+_animatedSprite = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=888910008]
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(0.8395062, 1)
+sprite_frames = SubResource("SpriteFrames_7vqeu")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=257564389]
+shape = SubResource("CircleShape2D_vl1nb")
+
+[connection signal="area_entered" from="." to="." method="OnAreaEntered"]
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

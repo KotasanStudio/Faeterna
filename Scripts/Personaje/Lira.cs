@@ -1,9 +1,8 @@
 using Godot;
 using Godot.Collections;
-using Faeterna.scripts.Tools;
-using System.Threading.Tasks;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
-namespace Faeterna.scripts.Player
+namespace Faeterna.Scripts.Personaje
 {
     /// <summary>
     /// Personaje principal del juego (Lira).
@@ -44,8 +43,19 @@ namespace Faeterna.scripts.Player
         /// <summary>Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo).</summary>
         public bool CoyoteAvailable = true;
 
+        /// <summary>Fuerza horizontal del knockback al recibir daño.</summary>
+        private const float KnockbackForceX = 300.0f;
+
+        /// <summary>Fuerza vertical del knockback al recibir daño (negativa = hacia arriba).</summary>
+        private const float KnockbackForceY = -250.0f;
+
         /// <summary>Referencia al nodo <see cref="AnimatedSprite2D"/> hijo que muestra las animaciones del personaje.</summary>
         public AnimatedSprite2D animatedSprite;
+
+        /// <summary>Referencia a la máquina de estados de movimiento.</summary>
+        public MovementStateMachine MovementStateMachine;
+
+        public bool ItsFliped = false;
 
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] Array<TextureRect> _hearts;
@@ -53,7 +63,14 @@ namespace Faeterna.scripts.Player
         /// <summary><see cref="TextureRect"/> que representa la barra de maná en la interfaz.</summary>
         [Export] TextureRect _manaBar;
 
-        [Export] Camera2D _camera;
+        /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>
+        [Export] private Timer _invencibilityTimer;
+
+        [ExportGroup("Atacks")]
+        [Export] private Area2D _shotArea;
+        [Export] private Area2D _kickArea;
+
+        [Export] private PackedScene _bullet;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
@@ -61,56 +78,7 @@ namespace Faeterna.scripts.Player
         public override async void _Ready()
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-            cameraInitPos = _camera.Position;
-            UpdateHearts();
-            UpdateMana();
-
-            await TryLoadFromActiveSlotAsync();
-        }
-
-        private async Task TryLoadFromActiveSlotAsync()
-        {
-            GameData gameData = await GameSaveService.LoadActiveSlotAsync();
-            if (gameData?.PlayerData == null)
-            {
-                return;
-            }
-
-            string currentScenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
-            if (!string.IsNullOrWhiteSpace(gameData.ScenePath)
-                && !string.Equals(gameData.ScenePath, currentScenePath, System.StringComparison.OrdinalIgnoreCase))
-            {
-                return;
-            }
-
-            ApplySaveData(gameData.PlayerData);
-        }
-
-        public PlayerSaveData BuildSaveData(Vector2 position)
-        {
-            return new PlayerSaveData
-            {
-                Position = position,
-                Health = _currentHealth,
-                Mana = _currentMana,
-                DoubleJumpAvailable = DoubleJumpAvailable,
-                DashAvailable = DashAvailable,
-                CoyoteAvailable = CoyoteAvailable
-            };
-        }
-
-        public void ApplySaveData(PlayerSaveData saveData)
-        {
-            GlobalPosition = saveData.Position;
-
-            _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
-            _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
-            DoubleJumpAvailable = saveData.DoubleJumpAvailable;
-            DashAvailable = saveData.DashAvailable;
-            CoyoteAvailable = saveData.CoyoteAvailable;
-
-            UpdateHearts();
-            UpdateMana();
+            MovementStateMachine = GetNode<MovementStateMachine>("MovementStateMachine");
         }
 
         /// <summary>
@@ -131,17 +99,32 @@ namespace Faeterna.scripts.Player
         /// de flash en los corazones de la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de puntos de vida a restar.</param>
-        public async void TakeDamage(int amount)
+        /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
+        public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            GD.Print($"Duele");
+            if (_invencibilityTimer.IsStopped() == false)
+            {
+                GD.Print("Invencibilidad activa, no se recibe daño.");
+                return; // Si el timer de invencibilidad está activo, no se puede recibir daño
+            }
+            if (_currentHealth <= 0) return;
+
+            // Knockback: salto hacia arriba y hacia el lado contrario del atacante
+            float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
+            Velocity = new Vector2(directionX * KnockbackForceX, KnockbackForceY);
+
+            // Ceder el control al estado de knockback (bloquea el input)
+            MovementStateMachine?.TransitionTo("KnockbackMovementState");
+
             for (int i = 0; i < amount; i++)
             {
-                if (_currentHealth <= 0)
-                    return;
+                if (_currentHealth <= 0) break;
 
                 _currentHealth--;
-
-                TextureRect heart = _hearts[_currentHealth];
+                // Guardamos el índice ANTES del await para que no cambie después
+                int heartIndex = _currentHealth;
+                if (heartIndex < 0 || heartIndex >= _hearts.Count) break;
+                TextureRect heart = _hearts[heartIndex];
 
                 if (heart.Material is ShaderMaterial mat)
                 {
@@ -150,10 +133,10 @@ namespace Faeterna.scripts.Player
                     await ToSignal(GetTree().CreateTimer(0.1f), "timeout");
 
                     mat.SetShaderParameter("damage_flash", 0.0f);
-
                     mat.SetShaderParameter("fill_amount", 0.0f);
                 }
             }
+            _invencibilityTimer.Start();
         }
 
         /// <summary>
@@ -203,6 +186,7 @@ namespace Faeterna.scripts.Player
         {
             _currentMana -= amount;
             _currentMana = Mathf.Clamp(_currentMana, 0, Mana);
+            GD.Print(_currentMana);
             UpdateMana();
         }
 
@@ -218,37 +202,49 @@ namespace Faeterna.scripts.Player
             UpdateMana();
         }
 
-        public void VisibleUI(bool visible)
+        public void FlipH(bool value)
         {
-            foreach (TextureRect heart in _hearts)
+            ItsFliped = value;
+            animatedSprite.FlipH = value;
+            if (value)
             {
-                heart.Visible = visible;
+                _shotArea.Position = new Vector2(-Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position = new Vector2(-Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").RotationDegrees = -45f;
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position = new Vector2(-Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.Y);
             }
-
-            _manaBar.Visible = visible;
+            else
+            {
+                _shotArea.Position = new Vector2(Mathf.Abs(_shotArea.Position.X), _shotArea.Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position = new Vector2(Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox1").Position.Y);
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox1").RotationDegrees = 45f;
+                _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position = new Vector2(Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.Y);
+            }
         }
 
-        public override void _Input(InputEvent @event)
-        {
-
-            float lookDirection = Input.GetAxis("look_up", "look_down");
-            float moveDirection = Input.GetAxis("move_left", "move_right");
-            if (lookDirection != 0f&& moveDirection == 0f)
+        public void Shooting(double manaCost, double shotBallScale)
+        {      
+            var InstanciaShot = (Shot)_bullet.Instantiate();
+                InstanciaShot.ManaCost = (float)manaCost;
+                InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
+            if ((_currentMana - InstanciaShot.ManaCost) >= 0)
             {
-
-                Vector2 camaraPos = _camera.Position;
-
-                if(camaraPos.Y != (cameraInitPos.Y + lookDirection * 50f))
-                {
-                    camaraPos.Y += lookDirection * 1f; // Ajusta el valor para controlar la distancia de movimiento de la cámara
-                    GD.Print($"Camera Y: {camaraPos.Y}, Look Direction: {lookDirection}");
-                }
-
-                _camera.Position = camaraPos;
-            }else
-            {
-                _camera.Position = cameraInitPos;
+                SetAnimation("shot");
+                UseMana(InstanciaShot.ManaCost);
+                if (ItsFliped)
+                    InstanciaShot.Direction = new Vector2(-1, 0);
+                else
+                    InstanciaShot.Direction = new Vector2(1, 0);
+                InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
+                GetTree().CurrentScene?.AddChild(InstanciaShot);
             }
+            
+        }
+
+       public void OnKickHitboxAreaEntered(Area2D area)
+        {
+            GD.Print("Kick hitbox activated");
+            RecoverMana(10f);
         }
     }
 }

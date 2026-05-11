@@ -1,8 +1,8 @@
 using Godot;
 using System;
-using Faeterna.scripts.Maquinas_de_estados.Movimiento;
+using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
-namespace Faeterna.scripts.Maquinas_de_estados
+namespace Faeterna.Scripts.Personaje.MaquinasDeEstados
 {
     /// <summary>
     /// Clase base para todos los estados de la máquina de movimiento.
