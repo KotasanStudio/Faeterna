@@ -2,6 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
+[ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="3_yw1vx"]
+[ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="4_273av"]
+[ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="5_30c5b"]
 
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
@@ -11,3 +14,12 @@ scale = Vector2(2, 2)
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
 position = Vector2(3652.0005, 2274)
 platform_wall_layers = 1
+
+[node name="Jabali" parent="." unique_id=477752749 instance=ExtResource("3_yw1vx")]
+position = Vector2(4556, 2246)
+
+[node name="Slime2D" parent="." unique_id=1506886063 instance=ExtResource("4_273av")]
+position = Vector2(5529, 2238)
+
+[node name="Wolf2D" parent="." unique_id=1296438213 instance=ExtResource("5_30c5b")]
+position = Vector2(6085, 2251)
