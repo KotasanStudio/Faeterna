@@ -107,7 +107,7 @@ namespace Faeterna.scripts.Menus
 			Visible = true;
 			GetTree().Paused = true;
 			Input.MouseMode = Input.MouseModeEnum.Visible;
-            _player.VisibleUI(false);
+            //_player.VisibleUI(false);
 		}
 
 		public void ResumeGame()
@@ -123,7 +123,7 @@ namespace Faeterna.scripts.Menus
 
                     GetTree().Paused = false;
                     Visible = false;
-                    _player.VisibleUI(true);
+                    //_player.VisibleUI(true);
                 });
         }
 

@@ -1,10 +1,13 @@
 using Godot;
-using Faeterna.scripts.Player;
+using Faeterna.Scripts.Personaje;
+using PlayerType = Faeterna.Scripts.Personaje.Lira;
+
 
 namespace Faeterna.scripts.Tools
 {
     public partial class CheckPoint : Node2D
     {
+        private Lira _player;
         [Export] private string _checkpointId = "checkpoint_01";
         [Export] private Node2D _spawnPoint;
 
@@ -20,10 +23,12 @@ namespace Faeterna.scripts.Tools
                 return;
             }
 
+            _player = player;
+
             string scenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
             Vector2 savePosition = _spawnPoint?.GlobalPosition ?? GlobalPosition;
 
-            await GameSaveService.SaveCheckpointAsync(player, _checkpointId, scenePath, savePosition);
+            await GameSaveService.SaveCheckpointAsync(_player, _checkpointId, scenePath, savePosition);
             GD.Print($"Checkpoint guardado ({_checkpointId}) en slot {GameSaveService.ActiveSlot + 1}.");
         }
     }

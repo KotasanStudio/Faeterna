@@ -1,6 +1,8 @@
-using Faeterna.scripts.Player;
+using Faeterna.Scripts.Personaje;
 using Godot;
 using System.Threading.Tasks;
+using PlayerType = Faeterna.Scripts.Personaje.Lira;
+
 
 namespace Faeterna.scripts.Tools
 {
@@ -61,7 +63,7 @@ namespace Faeterna.scripts.Tools
         /// <param name="checkpointPosition">Posicion de respawn a persistir.</param>
         /// <param name="viewport">Viewport fuente para la captura; si es <see langword="null"/>, usa el del jugador.</param>
         /// <returns>Tarea asincrona de guardado.</returns>
-        public static Task SaveCheckpointAsync(Lira player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport = null)
+        public static Task SaveCheckpointAsync(PlayerType player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport = null)
             => Saves.SaveCheckpointAsync(player, checkpointId, scenePath, checkpointPosition, viewport);
 
         /// <summary>
