@@ -5,9 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://dy7w1vp66vde2" path="res://assets/Enemys/Jabali/JabaliDie.png" id="3_w1nr2"]
 [ext_resource type="Texture2D" uid="uid://c45ps1ehnlc50" path="res://assets/Enemys/ReyJabali/BossJabaliDie.png" id="4_jpv6m"]
 [ext_resource type="Texture2D" uid="uid://c4ugfe7ri87yg" path="res://assets/Enemys/ReyJabali/JabaliFall.png" id="5_3o2so"]
-[ext_resource type="Texture2D" uid="uid://deljkakd35uvk" path="res://assets/Enemys/Jabali/JabaliLoadAttack.png" id="5_hwelp"]
 [ext_resource type="Texture2D" uid="uid://d0gcr76r6lx1p" path="res://assets/Enemys/ReyJabali/BossJabaliIdle.png" id="6_tgcqc"]
 [ext_resource type="Texture2D" uid="uid://dw1ci536hupfp" path="res://assets/Enemys/ReyJabali/JabaliJump.png" id="7_wgnt1"]
+[ext_resource type="Texture2D" uid="uid://bbyh5jx7oxhvx" path="res://assets/Enemys/ReyJabali/JabaliLoadAttack.png" id="8_ho0cm"]
 [ext_resource type="Texture2D" uid="uid://dl465vuebhhb4" path="res://assets/Enemys/ReyJabali/BossJabaliRun.png" id="9_wpj01"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tgcqc"]
@@ -106,32 +106,32 @@ region = Rect2(192, 0, 96, 96)
 atlas = ExtResource("7_wgnt1")
 region = Rect2(288, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y6bk4"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpv6m"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(0, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rosda"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o2so"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(96, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_odc7f"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgcqc"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(192, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o8saj"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgnt1"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(288, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_duxio"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpj01"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(384, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uvvk4"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_yugt7"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(480, 0, 96, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1u2b0"]
-atlas = ExtResource("5_hwelp")
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qlye"]
+atlas = ExtResource("8_ho0cm")
 region = Rect2(576, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_otfr1"]
@@ -255,25 +255,25 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y6bk4")
+"texture": SubResource("AtlasTexture_jpv6m")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rosda")
+"texture": SubResource("AtlasTexture_3o2so")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_odc7f")
+"texture": SubResource("AtlasTexture_tgcqc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o8saj")
+"texture": SubResource("AtlasTexture_wgnt1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_duxio")
+"texture": SubResource("AtlasTexture_wpj01")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uvvk4")
+"texture": SubResource("AtlasTexture_yugt7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1u2b0")
+"texture": SubResource("AtlasTexture_1qlye")
 }],
 "loop": true,
 "name": &"loadAttack",
@@ -334,7 +334,7 @@ _animatedSprite = NodePath("AnimatedSprite2D")
 material = SubResource("ShaderMaterial_tgcqc")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
-animation = &"die"
+animation = &"loadAttack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185611458]
 position = Vector2(5.5199914, 2.4128647e-07)
@@ -380,7 +380,6 @@ position = Vector2(38, 0)
 one_shot = true
 
 [node name="DashTimer" type="Timer" parent="." unique_id=2014169799]
-wait_time = 3.0
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]

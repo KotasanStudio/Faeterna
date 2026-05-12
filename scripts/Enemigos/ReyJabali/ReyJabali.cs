@@ -7,9 +7,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 {
     public partial class ReyJabali : Enemy
     {
-        public float DashSpeed = 300f;
+        public float DashSpeed = 400f;
         private float _dashDuration = 2f;
-        public int Health = 8;
+        public int Health = 80;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
         private ShaderMaterial _shaderMaterial;
 
@@ -21,15 +21,13 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private int _dashDirection = 1;
         private Node2D _target = null;
-        private float _knockbackTimer = 0f;
-        private const float KnockbackDuration = 0.2f;
 
         private enum enemyDirection
         {
             Left = -1,
             Right = 1
         }
-        [Export] private enemyDirection _currentDirection = enemyDirection.Right;
+        [Export] private enemyDirection _currentDirection;
         [Export] private CollisionShape2D _detectionArea;
         [Export] private Area2D _attackHitBox;
         [Export] private RayCast2D _groundCheck;
@@ -42,7 +40,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private Random _rnd = new();
         public override void _Ready()
         {
-            flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
+                flipHJabali((int)_currentDirection);  
             //_dashTimer.Start();
             _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
             SetAnimation("idle");
@@ -60,14 +58,13 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 velocity.Y += Gravity * (float)delta;
             else
             {
-
-
-                flipHJabali(_dashDirection);
                             
             if (_isChargingAttack)
             {
                 velocity.X = 0;
                 SetAnimation("loadAttack");
+
+
             }
             else if (_isDashing)
             {
@@ -75,10 +72,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
                 SetAnimation("run");
 
-                _groundCheck.ForceRaycastUpdate();
-
-                if (!_groundCheck.IsColliding())
+                if(Velocity.X == 0)
                 {
+                    flipHJabali(_dashDirection * -1);
                     StopDash(ref velocity);
                 }
             }
@@ -89,16 +85,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
             }
 
-            if (_knockbackTimer > 0f)
-            {
-                _knockbackTimer -= (float)delta;
-                if (_knockbackTimer <= 0f)
-                {
-                    // Termina el estado de knockback
-                    _knockbackTimer = 0f;
-                    velocity.X = 0f; // Detiene el movimiento horizontal después del knockback
-                }
-            }
 
             Velocity = velocity;
             MoveAndSlide();
@@ -141,13 +127,10 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
             float directionX =
                 Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
-
-            if (directionX == 0)
-                directionX = 1;
-
             _dashDirection = (int)directionX;
-
+            Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
             flipHJabali(directionX);
+            SetAnimation("run");
         }
 
         private void StopDash(ref Vector2 velocity)
@@ -164,6 +147,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private void flipHJabali(float directionX)
         {
+            GD.Print("Flipping Rey Jabali, directionX: ", directionX, " ", (directionX < 0));
             _animatedSprite.FlipH = directionX < 0;
             _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
             _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
@@ -186,8 +170,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         {
             Health -= v;
             hitShader(_shaderMaterial);
-            if(_target != null)
+            if(_target == null)
                 flipHJabali(GlobalPosition.X * -1);
+
             if (Health <= 0)
             {
                 desactiveCollision();
@@ -202,8 +187,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 _deathAnimationTimer.Start();
                 return;
             }
-            _isDashing = false;
-            _knockbackTimer = KnockbackDuration;
 
         }
         private void OnDeathAnimationTimerTimeout()
@@ -232,7 +215,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
                 _isChargingAttack = true; // Asegura que no esté en estado de carga al detectar al jugador
                 SetAnimation("loadAttack"); // Comienza la animación de carga
-                _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque
+                _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque 
             }
             
         }
