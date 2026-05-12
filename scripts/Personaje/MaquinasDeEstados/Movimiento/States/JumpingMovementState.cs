@@ -1,11 +1,7 @@
 using System;
 using Godot;
-<<<<<<<< HEAD:scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
-========
-using PlayerType = Faeterna.scripts.Personaje.Lira;
->>>>>>>> origin/Particulas:scripts/Maquinas de estados/Movimiento/Estados/JumpingMovementState.cs
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
@@ -99,8 +95,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 _player.MoveAndSlide();
             }
         }
-<<<<<<<< HEAD:scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs
-========
 
         /// <summary>
         /// Se llama para procesar eventos de entrada no manejados. Permite realizar un doble salto si está disponible, o activar el dash durante el salto.
@@ -108,7 +102,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         /// <param name="ev">
         /// Evento de entrada recibido. Se pasa al estado para que pueda procesar la entrada según su lógica específica.
         /// </param>
->>>>>>>> origin/Particulas:scripts/Maquinas de estados/Movimiento/Estados/JumpingMovementState.cs
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null)

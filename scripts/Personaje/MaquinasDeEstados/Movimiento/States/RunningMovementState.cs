@@ -1,11 +1,8 @@
 using Godot;
 using System;
-<<<<<<<< HEAD:scripts/Personaje/MaquinasDeEstados/Movimiento/States/RunningMovementState.cs
+
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
-========
-using PlayerType = Faeterna.scripts.Personaje.Lira;
->>>>>>>> origin/Particulas:scripts/Maquinas de estados/Movimiento/Estados/RunningMovementState.cs
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
@@ -38,12 +35,12 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             if (_player == null) return;
             _player.SetAnimation("run");
-            _player.terrainParticles.Emitting = true;
+            //_player.terrainParticles.Emitting = true;
         }
 
         public override void Exit()
         {
-            _player.terrainParticles.Emitting = false;
+            //_player.terrainParticles.Emitting = false;
         }
 
         /// <summary>

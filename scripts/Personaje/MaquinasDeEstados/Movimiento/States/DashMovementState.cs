@@ -1,11 +1,7 @@
 using Godot;
 using System;
-<<<<<<<< HEAD:scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
-========
-using PlayerType = Faeterna.scripts.Personaje.Lira;
->>>>>>>> origin/Particulas:scripts/Maquinas de estados/Movimiento/Estados/DashMovementState.cs
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {

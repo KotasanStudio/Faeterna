@@ -77,7 +77,7 @@ namespace Faeterna.Scripts.Personaje
 
 
         [ExportGroup("Particles")]
-        [Export] public TerrainParticles terrainParticles;
+        //[Export] public TerrainParticles terrainParticles;
 
         [Export] public CpuParticles2D  saltoParticulas;
 
