@@ -34,7 +34,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void Enter()
         {
             if (_player == null) return;
-            _player.dobleSaltoParticulas.Emitting = true;
+            //_player.dobleSaltoParticulas.Emitting = true;
             _player.DoubleJumpAvailable = false;
             _player.SetAnimation("jump");
             GD.Print("Entered DoubleJumpMovementState (double jump)");
