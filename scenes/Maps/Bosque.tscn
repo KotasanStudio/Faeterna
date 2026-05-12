@@ -9,9 +9,8 @@
 [node name="Bosque" parent="." unique_id=1290042087 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
-[node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(784, 4019)
-platform_wall_layers = 1
-
 [node name="ReyJabali" parent="." unique_id=477752749 instance=ExtResource("3_mbhmg")]
 position = Vector2(2923, 3997)
+
+[node name="CharacterBody3D" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
+position = Vector2(2396, 4038)
