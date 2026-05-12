@@ -57,12 +57,6 @@ region = Rect2(672, 0, 96, 96)
 [sub_resource type="AtlasTexture" id="AtlasTexture_7kpwc"]
 atlas = ExtResource("2_v5fc5")
 region = Rect2(768, 0, 96, 96)
-[ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="15_k88eo"]
-[ext_resource type="Texture2D" uid="uid://dhg0va7y7elos" path="res://assets/Liria/hiervaParticulas.png" id="18_vjval"]
-[ext_resource type="Script" uid="uid://b4a467a47h5xe" path="res://scripts/Personaje/TerrainParticles.cs" id="19_akqtr"]
-[ext_resource type="Texture2D" uid="uid://cly17ikbkuqlj" path="res://assets/Liria/tierraParticulas.png" id="20_17myn"]
-[ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="20_akqtr"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_5rx2b"]
 atlas = ExtResource("1_gsbsd")
 region = Rect2(96, 0, 96, 96)
@@ -470,7 +464,7 @@ _invencibilityTimer = NodePath("Invencibility_Timer")
 _shotArea = NodePath("ShotArea")
 _kickArea = NodePath("KickHitbox")
 _bullet = ExtResource("2_8gdnm")
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1alrg"]
+
 lifetime_randomness = 0.5
 particle_flag_disable_z = true
 angle_min = 180.00002
