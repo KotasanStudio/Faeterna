@@ -3,6 +3,7 @@ using Godot;
 using Godot.Collections;
 using Faeterna.Scripts.Tools;
 using System.Threading.Tasks;
+using Faeterna.scripts.Personaje;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
 namespace Faeterna.Scripts.Personaje
@@ -77,7 +78,7 @@ namespace Faeterna.Scripts.Personaje
 
 
         [ExportGroup("Particles")]
-        //[Export] public TerrainParticles terrainParticles;
+        [Export] public TerrainParticles terrainParticles;
 
         [Export] public CpuParticles2D  saltoParticulas;
 
@@ -124,7 +125,7 @@ namespace Faeterna.Scripts.Personaje
                 CoyoteAvailable = CoyoteAvailable
             };
         }
-        
+
         public void ApplySaveData(PlayerSaveData saveData)
         {
             GlobalPosition = saveData.Position;
@@ -153,8 +154,8 @@ namespace Faeterna.Scripts.Personaje
                 GD.Print($"Setting animation to: {animationName}");
             }
         }
-        
-        
+
+
 
         /// <summary>
         /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto
@@ -285,7 +286,7 @@ namespace Faeterna.Scripts.Personaje
         }
 
         public void Shooting(double manaCost, double shotBallScale)
-        {      
+        {
             var InstanciaShot = (Shot)_bullet.Instantiate();
                 InstanciaShot.ManaCost = (float)manaCost;
                 InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
@@ -300,7 +301,7 @@ namespace Faeterna.Scripts.Personaje
                 InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
                 GetTree().CurrentScene?.AddChild(InstanciaShot);
             }
-            
+
         }
 
        public void OnKickHitboxAreaEntered(Area2D area)

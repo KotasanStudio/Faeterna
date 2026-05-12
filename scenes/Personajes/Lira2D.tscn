@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d4mlm443cbej4" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://scripts/Personaje/Lira.cs" id="1_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dmmjb3lqffebt" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="PackedScene" uid="uid://dmgpdhsve7wto" path="res://scenes/Personajes/Shot.tscn" id="2_8gdnm"]
 [ext_resource type="Texture2D" uid="uid://bt1vc151wrnvc" path="res://assets/Liria/LiraLightPoint.png" id="2_8x1cb"]
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
@@ -28,6 +29,7 @@
 [ext_resource type="Script" uid="uid://b4a467a47h5xe" path="res://scripts/Personaje/TerrainParticles.cs" id="25_wyc13"]
 [ext_resource type="Texture2D" uid="uid://dhg0va7y7elos" path="res://assets/Liria/hiervaParticulas.png" id="26_e4jf0"]
 [ext_resource type="Texture2D" uid="uid://cly17ikbkuqlj" path="res://assets/Liria/tierraParticulas.png" id="27_slhl6"]
+[ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="30_vo67c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eeb6i"]
 atlas = ExtResource("2_v5fc5")
@@ -459,6 +461,21 @@ height = 45.254833
 radius = 5.6568546
 height = 68.0
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1alrg"]
+lifetime_randomness = 0.5
+particle_flag_disable_z = true
+angle_min = 180.00002
+angle_max = 720.0
+spread = 180.0
+flatness = 1.0
+initial_velocity_min = 5.0
+initial_velocity_max = 20.0
+gravity = Vector3(0, 45, 0)
+scale_max = 1.5
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_7dora"]
 atlas = ExtResource("26_e4jf0")
 region = Rect2(0, 0, 8, 8)
@@ -467,7 +484,11 @@ region = Rect2(0, 0, 8, 8)
 atlas = ExtResource("27_slhl6")
 region = Rect2(0, 0, 8, 8)
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar") groups=["Lira"]]
+[sub_resource type="Curve" id="Curve_akqtr"]
+_data = [Vector2(0.0212766, 1), 0.0, 0.0, 0, 0, Vector2(0.5053192, 0.49438208), -1.3378279, -1.3378279, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas") groups=["Lira"]]
 light_mask = 4
 visibility_layer = 4
 scale = Vector2(1.5, 1.5)
@@ -475,6 +496,13 @@ collision_layer = 2
 script = ExtResource("1_v5fc5")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
+_invencibilityTimer = NodePath("Invencibility_Timer")
+_shotArea = NodePath("ShotArea")
+_kickArea = NodePath("KickHitbox")
+_bullet = ExtResource("2_8gdnm")
+terrainParticles = NodePath("ParticulasTerreno")
+saltoParticulas = NodePath("ParticulasSalto")
+dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -641,14 +669,60 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_8j2b6")
 debug_color = Color(0.9547648, 2.7915835e-06, 0.5492559, 0.41960785)
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=984796458 node_paths=PackedStringArray("_rayCast")]
+[node name="ParticulasTerreno" type="GPUParticles2D" parent="." unique_id=984796458 node_paths=PackedStringArray("_rayCast")]
+texture_filter = 1
 position = Vector2(0, 38)
+emitting = false
+amount = 4
+lifetime = 0.7
+speed_scale = 2.0
+explosiveness = 1.0
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_1alrg")
 script = ExtResource("25_wyc13")
 _rayCast = NodePath("RayCast2D")
 _atlasTextureId1 = SubResource("AtlasTexture_7dora")
 _atlasTextureId2 = SubResource("AtlasTexture_u31ip")
 
-[node name="RayCast2D" type="RayCast2D" parent="GPUParticles2D" unique_id=791719243]
+[node name="RayCast2D" type="RayCast2D" parent="ParticulasTerreno" unique_id=791719243]
 target_position = Vector2(0, 5)
+
+[node name="ParticulasSalto" type="CPUParticles2D" parent="." unique_id=1349807552]
+texture_filter = 1
+position = Vector2(0, 38)
+emitting = false
+amount = 20
+texture = ExtResource("30_vo67c")
+lifetime = 1.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+draw_order = 1
+emission_shape = 1
+emission_sphere_radius = 10.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+angle_max = 360.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_akqtr")
+
+[node name="ParticulasDobleSalto" type="CPUParticles2D" parent="." unique_id=1776146536]
+texture_filter = 1
+position = Vector2(0, 38)
+emitting = false
+amount = 10
+texture = ExtResource("30_vo67c")
+lifetime = 1.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+fixed_fps = 60
+draw_order = 1
+direction = Vector2(0, 0)
+gravity = Vector2(-25, 0)
+initial_velocity_max = 20.0
+angle_max = 360.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_akqtr")
 
 [connection signal="area_entered" from="KickHitbox" to="." method="OnKickHitboxAreaEntered"]
