@@ -2,6 +2,9 @@
 <tileset version="1.10" tiledversion="1.12.0" name="Terrain" tilewidth="32" tileheight="32" tilecount="176" columns="16">
  <image source="../../assets/FaeternaTiled/TiledOptimizado/Terrain.png" width="512" height="352"/>
  <tile id="0">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="4.72727" y="0.0909091">
     <polygon points="-1.78261,-0.0869565 -1.62846,4.09486 -1.54545,11.4545 -1.72727,31.7273 27.2727,31.9091 27.2727,-0.0909091"/>
@@ -9,11 +12,17 @@
   </objectgroup>
  </tile>
  <tile id="1">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="2">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="27.7273" y="0">
     <polygon points="1.04348,0 1.13439,4.27668 1.09091,11.8182 1.18182,31.9091 -27.7273,32 -27.7273,0"/>
@@ -21,6 +30,9 @@
   </objectgroup>
  </tile>
  <tile id="3">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="4.82609" y="0.423913">
     <polygon points="-1.78261,-0.0869565 -1.62846,4.09486 -1.54545,11.4545 -1.72727,31.7273 27.2727,31.9091 27.2727,-0.0909091"/>
@@ -28,6 +40,9 @@
   </objectgroup>
  </tile>
  <tile id="4">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0">
     <polygon points="0,0 32,0 32.1818,28.8182 -0.181818,28.7273"/>
@@ -35,6 +50,9 @@
   </objectgroup>
  </tile>
  <tile id="5">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="28" y="0.125">
     <polygon points="1.04348,0 1.13439,4.27668 1.09091,11.8182 1.18182,31.9091 -27.7273,32 -27.7273,0"/>
@@ -61,6 +79,9 @@
   </objectgroup>
  </tile>
  <tile id="9">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0">
     <polygon points="0,0 0,32 32,32 32,9.63636 29.7273,9.67588 29.9921,0.0395257"/>
@@ -75,6 +96,9 @@
   </objectgroup>
  </tile>
  <tile id="12">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="32" y="1.125">
     <polygon points="0,0 -26,-0.0625 -29.0625,3.6875 -28.875,30.8125 0,30.875"/>
@@ -82,6 +106,9 @@
   </objectgroup>
  </tile>
  <tile id="13">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0.1875" y="1.125">
     <polygon points="0,0 25.8125,-0.1875 28.875,3.6875 28.75,30.8125 -0.1875,30.875"/>
@@ -183,6 +210,9 @@
   </objectgroup>
  </tile>
  <tile id="36">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0.272727" y="1.45455" width="31.6364" height="27.2727"/>
   </objectgroup>
@@ -200,6 +230,9 @@
   </objectgroup>
  </tile>
  <tile id="39">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="1.54545" width="32" height="30.4545"/>
   </objectgroup>
@@ -210,16 +243,25 @@
   </objectgroup>
  </tile>
  <tile id="42">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="43">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="44">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="32.0652" y="28.625">
     <polygon points="0,0 -25.5455,0.181818 -29.4545,-3.63636 -29.6847,-24.1818 -29.6107,-28.5739 0,-28.5455"/>
@@ -227,11 +269,17 @@
   </objectgroup>
  </tile>
  <tile id="45">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32.0625" height="28.9375"/>
   </objectgroup>
  </tile>
  <tile id="46">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="0" y="28.875">
     <polygon points="0,0 25.6364,-0.272727 29.5455,-4.81818 30.017,-24.4545 29.8665,-28.7557 0,-28.7273"/>
@@ -239,6 +287,9 @@
   </objectgroup>
  </tile>
  <tile id="49">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="4.72727" y="0.181818">
     <polygon points="-1.78261,-0.0869565 -1.62846,4.09486 -1.54545,11.4545 -1.72727,31.7273 27.2727,31.9091 27.2727,-0.0909091"/>
@@ -246,6 +297,9 @@
   </objectgroup>
  </tile>
  <tile id="50">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="2" x="27.875" y="0.25">
     <polygon points="1.04348,0 1.13439,4.27668 1.09091,11.8182 1.18182,31.9091 -27.7273,32 -27.7273,0"/>
@@ -253,6 +307,9 @@
   </objectgroup>
  </tile>
  <tile id="54">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="4.72727" y="0.272727">
     <polygon points="-2.08696,-0.217391 -2.05534,3.82213 -1.81818,11.1818 -1.45455,31.9091 24.1818,31.9091 23.9803,11.1423 24.0395,4.08696 24.0672,-0.173913"/>
@@ -260,6 +317,9 @@
   </objectgroup>
  </tile>
  <tile id="57">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
@@ -270,26 +330,41 @@
   </objectgroup>
  </tile>
  <tile id="59">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="60">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="61">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="62">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0" width="32" height="32"/>
   </objectgroup>
  </tile>
  <tile id="64">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="32" y="28.5455">
     <polygon points="0,0 -25.5455,0.181818 -29.4545,-3.63636 -29.6847,-24.1818 -29.6107,-28.5739 0,-28.5455"/>
@@ -311,6 +386,9 @@
   </objectgroup>
  </tile>
  <tile id="67">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="28.7273">
     <polygon points="0,0 25.6364,-0.272727 29.5455,-4.81818 30.017,-24.4545 29.8665,-28.7557 0,-28.7273"/>
@@ -353,6 +431,9 @@
   </objectgroup>
  </tile>
  <tile id="84">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0">
     <polyline points="0,0 32,0 32,32 0,32 0,0"/>
@@ -360,6 +441,9 @@
   </objectgroup>
  </tile>
  <tile id="85">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="1"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0">
     <polyline points="0,0 32,0 32,32 0,32 0,0"/>
@@ -395,6 +479,9 @@
   </objectgroup>
  </tile>
  <tile id="129">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="32" y="0.5625">
     <polyline points="0,0 -31.25,31.4375 0,31.4375 0,0"/>
@@ -402,6 +489,9 @@
   </objectgroup>
  </tile>
  <tile id="133">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="4">
    <object id="3" x="-0.1875" y="0.5">
     <polyline points="0,0 0,31.5625 31.3125,31.5625 0,0"/>
@@ -437,6 +527,9 @@
   </objectgroup>
  </tile>
  <tile id="147">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0" y="0.875">
     <polyline points="0,0 32,0 32,31.125 0,31.125 0,0"/>
@@ -451,6 +544,9 @@
   </objectgroup>
  </tile>
  <tile id="161">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="0.625" y="0">
     <polyline points="0,0 31.375,31.1875 31.375,0 0,0"/>
@@ -465,6 +561,9 @@
   </objectgroup>
  </tile>
  <tile id="165">
+  <properties>
+   <property name="data_RutaParticula" type="int" value="2"/>
+  </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="31.3125" y="0">
     <polyline points="0,0 -31.3125,31.4375 -31.3125,0 0,0"/>

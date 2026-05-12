@@ -15,7 +15,7 @@ namespace Faeterna.Scripts.Personaje
     public partial class Lira : CharacterBody2D
     {
         /// <summary>Velocidad horizontal configurada del jugador (px/s).</summary>
-        public const float Speed = 350.0f;
+        public const float Speed = 350.0f; //hola
 
         /// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
         public const float JumpVelocity = -500.0f;

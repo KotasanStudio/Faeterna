@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://d4mlm443cbej4" path="res://assets/Liria/Lira Dash.png" id="1_gsbsd"]
 [ext_resource type="Script" uid="uid://1qf34f4sfpvb" path="res://scripts/Personaje/Lira.cs" id="1_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dmmjb3lqffebt" path="res://assets/Liria/Lira Falling.png" id="1_yjqq3"]
+[ext_resource type="Texture2D" uid="uid://bt1vc151wrnvc" path="res://assets/Liria/LiraLightPoint.png" id="2_8x1cb"]
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
@@ -467,12 +468,40 @@ atlas = ExtResource("27_slhl6")
 region = Rect2(0, 0, 8, 8)
 
 [node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar") groups=["Lira"]]
+light_mask = 4
+visibility_layer = 4
+scale = Vector2(1.5, 1.5)
 collision_layer = 2
 script = ExtResource("1_v5fc5")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
 _manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561076283]
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(0.19197592, -6.5163984)
+color = Color(0.4506483, 0.4506483, 0.45064825, 1)
+energy = 1.5
+range_item_cull_mask = 0
+shadow_enabled = true
+shadow_item_cull_mask = 5
+texture = ExtResource("2_8x1cb")
+texture_scale = 2.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=651347568]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(0.19197592, -6.5163984)
+color = Color(0.4506483, 0.4506483, 0.45064825, 1)
+energy = 1.5
+range_item_cull_mask = 5
+shadow_enabled = true
+texture = ExtResource("2_8x1cb")
+texture_scale = 2.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=771704802]
+light_mask = 4
+visibility_layer = 4
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"getHit"
