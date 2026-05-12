@@ -407,8 +407,8 @@ animations = [{
 "speed": 20.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1alrg"]
-height = 68.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j2b6"]
+size = Vector2(20, 74)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8j2b6"]
 shader = ExtResource("20_v5fc5")
@@ -469,11 +469,11 @@ _bullet = ExtResource("2_8gdnm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561076283]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_5rx2b")
-animation = &"getHit"
+animation = &"idle"
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
-position = Vector2(0, 4)
-shape = SubResource("CapsuleShape2D_1alrg")
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_8j2b6")
 
 [node name="MovementStateMachine" type="Node" parent="." unique_id=1873000605]
 script = ExtResource("10_v5fc5")
