@@ -177,9 +177,18 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private void OnHurtBoxAreaEntered(Area2D area)
         {
             if (_isDead) return;
-            if (area.GetParent() is Lira lira)
+            if (area.GetParent() is Lira lira){
                 TakeDamage(1, lira.GlobalPosition);
-             if (area is Shot shot)
+                if (lira.GlobalPosition.X > GlobalPosition.X)
+            {
+                flipHJabali(1); // Voltea hacia la derecha
+            }
+                else
+                {
+                    // Lira está a la izquierda, aplica knockback hacia la derecha
+                    Velocity = new Vector2(250f, -200f);
+                }}
+            if (area is Shot shot)
                 TakeDamage((int)(shot.Scale.X*1.5f), shot.GlobalPosition);
         }
         private void TakeDamage(int v, Vector2 globalPosition)

@@ -39,12 +39,14 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             }
             if (_player.IsOnFloor())
             {
-                GD.Print("Transitioning to idle/running state from jumping (landed).");
-                stateMachine.TransitionTo(
-                    Mathf.Abs(_player.Velocity.X) > 0.1f
-                        ? "RunningMovementState"
-                        : "IdleMovementState"
-                );
+                if (_player.Velocity.X != 0)
+                {
+                    stateMachine.TransitionTo("RunningMovementState");  
+                }
+                else if (_player.Velocity.X == 0&&_player.Velocity.Y == 0)
+                {
+                    stateMachine.TransitionTo("IdleMovementState");
+                }
             }
         }
 

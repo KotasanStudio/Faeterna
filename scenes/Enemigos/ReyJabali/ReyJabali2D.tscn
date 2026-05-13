@@ -206,9 +206,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_pfhnc")
 }],
-"loop": true,
+"loop": false,
 "name": &"fall",
-"speed": 5.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -249,9 +249,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3xpxn")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
-"speed": 5.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -313,9 +313,9 @@ size = Vector2(40, 84.2222)
 size = Vector2(90, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
-size = Vector2(346.83334, 156.33334)
+size = Vector2(287, 333)
 
-[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_attackHitBox", "_groundCheck", "_hurtBox", "_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "_animatedSprite")]
+[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_attackHitBox", "_hurtBox", "_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "_animatedSprite")]
 texture_filter = 1
 scale = Vector2(3, 3)
 collision_layer = 4
@@ -323,7 +323,6 @@ script = ExtResource("1_ba876")
 _currentDirection = -1
 _detectionArea = NodePath("DetectionArea/CollisionShape2D")
 _attackHitBox = NodePath("AttackHitBox")
-_groundCheck = NodePath("RayCast2D")
 _hurtBox = NodePath("Hurtbox")
 _loadAttackTimer = NodePath("DetectionArea/LoadAttackTimer")
 _deathAnimationTimer = NodePath("DeathAnimationTimer")
@@ -334,7 +333,7 @@ _animatedSprite = NodePath("AnimatedSprite2D")
 material = SubResource("ShaderMaterial_tgcqc")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
-animation = &"loadAttack"
+animation = &"fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185611458]
 position = Vector2(5.5199914, 2.4128647e-07)
@@ -357,7 +356,7 @@ collision_layer = 32
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1887027826]
-position = Vector2(172.91667, -49.50001)
+position = Vector2(165.16672, 1.1666718)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 
@@ -372,9 +371,6 @@ collision_mask = 136
 position = Vector2(5, 0)
 shape = SubResource("RectangleShape2D_fgxyp")
 debug_color = Color(1, 1, 0, 0.14901961)
-
-[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1803791051]
-position = Vector2(38, 0)
 
 [node name="DeathAnimationTimer" type="Timer" parent="." unique_id=1302539492]
 one_shot = true

@@ -407,8 +407,8 @@ animations = [{
 "speed": 20.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j2b6"]
-size = Vector2(20, 74)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eeb6i"]
+height = 74.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8j2b6"]
 shader = ExtResource("20_v5fc5")
@@ -473,7 +473,7 @@ animation = &"idle"
 
 [node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
 position = Vector2(0, 1)
-shape = SubResource("RectangleShape2D_8j2b6")
+shape = SubResource("CapsuleShape2D_eeb6i")
 
 [node name="MovementStateMachine" type="Node" parent="." unique_id=1873000605]
 script = ExtResource("10_v5fc5")

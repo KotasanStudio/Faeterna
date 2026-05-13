@@ -6,12 +6,13 @@
 
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
-[node name="Bosque" parent="." unique_id=1290042087 instance=ExtResource("1_xyya0")]
+[node name="Bosque" parent="." unique_id=1657525548 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(3246, 1655)
+position = Vector2(3746, 3694)
 platform_wall_layers = 1
 
 [node name="ReyJabali" parent="." unique_id=477752749 instance=ExtResource("3_mbhmg")]
 position = Vector2(2923, 3997)
+_currentDirection = -1

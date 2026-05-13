@@ -8,6 +8,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
     public partial class ReyJabali : Enemy
     {
         public float DashSpeed = 400f;
+        private float _jumpVelocity = -800f; 
         private float _dashDuration = 2f;
         public int Health = 80;
         private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
@@ -20,6 +21,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
 
         private int _dashDirection = 1;
+        private int _dashCount = 0; // Contador de dashes en el ataque especial
+        private int _jumpCount = 0; // Contador de saltos para el ataque especial
+        private bool _specialAttackInProgress = false; // Indica si el ataque especial está en progreso
         private Node2D _target = null;
 
         private enum enemyDirection
@@ -30,7 +34,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         [Export] private enemyDirection _currentDirection;
         [Export] private CollisionShape2D _detectionArea;
         [Export] private Area2D _attackHitBox;
-        [Export] private RayCast2D _groundCheck;
         [Export] private Area2D _hurtBox;
         [Export] private Timer _loadAttackTimer;
         [Export] private Timer _deathAnimationTimer;
@@ -58,13 +61,26 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 velocity.Y += Gravity * (float)delta;
             else
             {
-                            
-            if (_isChargingAttack)
+            if(_dashCount==3 || _specialAttackInProgress)
+                {
+                    _isDashing = false;
+                    _isChargingAttack = false;
+                    _specialAttackInProgress = true; // Marca que el ataque especial está en progreso
+                    if(_target != null)
+                    velocity = specialAttack();
+                    if(velocity.Y > 0)
+                        SetAnimation("fall");
+                    else if(velocity.Y < 0)
+                        SetAnimation("jump");
+                    else
+                    {
+                        flipHJabali((int)_currentDirection * -1); // Voltea en la dirección opuesta si no hay objetivo
+                    }
+                }
+            else if (_isChargingAttack)
             {
                 velocity.X = 0;
                 SetAnimation("loadAttack");
-
-
             }
             else if (_isDashing)
             {
@@ -79,7 +95,8 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 }
             }
             else
-            {
+            {                    velocity = specialAttack();
+
                 velocity.X = 0;
                 SetAnimation("idle");
             }
@@ -92,6 +109,8 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private async void OnDashTimerTimeout()
         {
+            _dashCount++; // Incrementa el contador de dashes
+            GD.Print("Dash timer timeout, attempting to dash..." + _dashCount);
             if (!IsOnFloor())
                 return;
 
@@ -108,13 +127,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 _dashDirection *=-1;
                 flipHJabali(_dashDirection);
                 
-            }else{
-                Random _rng = new Random(); 
-                _dashDirection = (int)(_rng.Next(0, 2) == 0
-                ? enemyDirection.Left
-                : enemyDirection.Right);
             }
             _isDashing = false;
+            
    
         }
         public void _on_load_attack_timer_timeout()
@@ -125,12 +140,36 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             _isChargingAttack = false;
             _isDashing = true;
 
-            float directionX =
-                Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
-            _dashDirection = (int)directionX;
-            Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
-            flipHJabali(directionX);
-            SetAnimation("run");
+        }
+
+        private  Vector2 specialAttack()
+        {
+            SetAnimation("loadAttack");
+            // Ataque especial: 3 dashes consecutivos hacia el jugador
+            _isDashing = false;
+            _isChargingAttack = false;
+            _dashTimer.Stop(); // Detiene el timer de dash automático para evitar que interfiera con el ataque especial
+            _loadAttackTimer.Stop(); // Detiene el timer de carga para evitar que interfiera con el ataque especial
+            
+                float jumpDirectionX = Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X); 
+                GD.Print("Jump direction X: " + jumpDirectionX);               
+                flipHJabali(jumpDirectionX);
+                
+                Vector2 velocity = Velocity;
+                velocity.X = jumpDirectionX * DashSpeed;
+                velocity.Y = _jumpVelocity;
+            
+            _dashCount--; // Reinicia el contador después del ataque especial
+            _isDashing = false;
+            _jumpCount++;
+
+            if(_jumpCount == 3){
+                _specialAttackInProgress = false; // Marca que el ataque especial ha terminado
+                _jumpCount = 0; // Reinicia el contador de saltos para el próximo ataque especial
+                _dashCount = 0; // Reinicia el contador de dashes para el próximo ataque especial
+                }
+            return velocity;
+
         }
 
         private void StopDash(ref Vector2 velocity)
@@ -147,10 +186,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private void flipHJabali(float directionX)
         {
-            GD.Print("Flipping Rey Jabali, directionX: ", directionX, " ", (directionX < 0));
             _animatedSprite.FlipH = directionX < 0;
-            _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
             _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+
         }
 
         public void _on_attack_hit_box_body_entered(Node2D prota)
@@ -161,18 +199,25 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private void OnHurtBoxAreaEntered(Area2D area)
         {
             if (_isDead) return;
-            if (area.GetParent() is Lira lira)
+            if (area.GetParent() is Lira lira){
                 TakeDamage(1, lira.GlobalPosition);
-             if (area is Shot shot)
+                if (lira.GlobalPosition.X > GlobalPosition.X)
+                    flipHJabali(1); // Voltea hacia la derecha
+                else
+                    flipHJabali(-1); // Voltea hacia la izquierda
+                }
+            if (area is Shot shot){
                 TakeDamage((int)(shot.Scale.X*1.5f), shot.GlobalPosition);
+                if (shot.GlobalPosition.X > GlobalPosition.X)
+                    flipHJabali(1); // Voltea hacia la derecha
+                else
+                    flipHJabali(-1); // Voltea hacia la izquierda
+                    }
         }
         private void TakeDamage(int v, Vector2 globalPosition)
         {
             Health -= v;
             hitShader(_shaderMaterial);
-            if(_target == null)
-                flipHJabali(GlobalPosition.X * -1);
-
             if (Health <= 0)
             {
                 desactiveCollision();
@@ -204,7 +249,10 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         public void _on_detection_area_body_entered(Node2D prota)
         {
-
+            
+            if(_specialAttackInProgress) return; // Ignora nuevas detecciones si el ataque especial ya está  en progreso
+            if(_isDashing) return; // Ignora nuevas detecciones si ya está en estado de dash
+            if(_isChargingAttack) return; // Ignora nuevas detecciones si ya está cargando un ataque
             
             if (prota is Lira lira)
             {
@@ -213,7 +261,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 _dashTimer.Stop(); // Detiene el timer de dash automático
                 _isDashing = false; // Fuerza la salida del estado de dash
                 Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
-                _isChargingAttack = true; // Asegura que no esté en estado de carga al detectar al jugador
+                _isChargingAttack = true; // Solo carga si no ha hecho 3 dashes
                 SetAnimation("loadAttack"); // Comienza la animación de carga
                 _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque 
             }
@@ -224,6 +272,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         {
             if (prota is Lira)
             {
+                _isChargingAttack = false; // Detiene la carga si el jugador sale del área de detección
                 if (!_isDead) // Solo reanuda el timer si no está muerto
                     _dashTimer.Start(); // Reanuda el timer de dash automático
             }
