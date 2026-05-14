@@ -369,6 +369,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="LoadAttackTimer" type="Timer" parent="." unique_id=120044680]
+wait_time = 3.0
 one_shot = true
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]

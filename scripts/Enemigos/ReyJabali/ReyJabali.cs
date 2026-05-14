@@ -11,7 +11,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         public float DashSpeed = 400f;
         private float _jumpVelocity = -400f;
         private float _dashDuration = 2f;
-        public int Health = 80;
+        public int Health = 40;
 
         private static float Gravity =>
             ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
@@ -23,12 +23,12 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private bool _isChargingAttack = false;
         private bool _isDead = false;
 
-        private bool _jumped = false;// FIX: para marcar si ya se ha iniciado el salto en el ataque especial
+        private bool _jumped = false;
         private bool _falled = false;
 
         private int _dashCount = 0;
         private int _jumpCount = 0;
-        private int _actionsBeforeJump = 3;  // se randomiza al inicio de cada ciclo
+        private int _actionsBeforeJump = 3;  
         private bool _isReturningHome = false;
         public float WalkSpeed = 150f; // Más lento que el Dash
         private float _arrivalThreshold = 10f; // Distancia mínima para considerar que llegó
@@ -36,7 +36,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private Node2D _target = null;
 
         // ── Dirección ─────────────────────────────────────────────────────────
-        private int _currentDirection;     // FIX: valor inicial 1, nunca 0
+        private int _currentDirection; 
         private Vector2 _initPosition; // Guardamos la posición inicial para posibles resets
         [Export] private bool _startFacingLeft;
 
@@ -147,8 +147,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                         velocity.X = 0;
                         _isReturningHome = false;
                         SetAnimation("idle");
-
-                        // Opcional: Girar a la dirección inicial al llegar
                         int initialDir = _startFacingLeft ? -1 : 1;
                         if (_currentDirection != initialDir)
                             FlipHJabali();
@@ -186,7 +184,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
                 GD.Print($"Salto {_jumpCount} ejecutado");
 
-                // Si todavía faltan saltos
                 if (_jumpCount < 3)
                 {
                     _loadAttackTimer.Start(0.8f);
@@ -221,7 +218,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
             if (_target != null)
             {
-                // Corregido: Usar posición X en lugar de rotación
                 int directionToPlayer = _target.GlobalPosition.X > GlobalPosition.X ? 1 : -1;
                 if (directionToPlayer != _currentDirection)
                     FlipHJabali();
@@ -238,7 +234,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             {
                 _jumpCount = 0;
                 _dashCount = 0;
-                _actionsBeforeJump = _rnd.Next(2, 5);  // randomiza para el siguiente ciclo
+                _actionsBeforeJump = _rnd.Next(1, 3);  // randomiza para el siguiente ciclo
 
                 GD.Print("Ataque especial completado.");
                 return new Vector2(0, Velocity.Y);
@@ -366,9 +362,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         {
             if (_target != null || _isDead)
                 return; // No volver si el jugador regresó
-
-            // Si quereo que camine de vuelta, no uses GlobalPosition directamente.
-            // Pero si quieres que "aparezca" en el inicio:
             GlobalPosition = _initPosition;
             Velocity = Vector2.Zero;
 
