@@ -28,6 +28,7 @@
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="22_8gdnm"]
 [ext_resource type="Script" uid="uid://b4a467a47h5xe" path="res://scripts/Personaje/TerrainParticles.cs" id="25_wyc13"]
 [ext_resource type="Texture2D" uid="uid://dhg0va7y7elos" path="res://assets/Liria/hiervaParticulas.png" id="26_e4jf0"]
+[ext_resource type="PackedScene" uid="uid://h12nrsoj3d6o" path="res://scenes/Menus/pause_menu.tscn" id="27_18h5y"]
 [ext_resource type="Texture2D" uid="uid://cly17ikbkuqlj" path="res://assets/Liria/tierraParticulas.png" id="27_slhl6"]
 [ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="30_vo67c"]
 
@@ -639,6 +640,11 @@ texture = ExtResource("14_5f38a")
 material = SubResource("ShaderMaterial_vo67c")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="Camera3D" unique_id=1658811307]
+
+[node name="PauseMenu" parent="Camera3D/CanvasLayer2" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("27_18h5y")]
+_player = NodePath("../../..")
 
 [node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]
 wait_time = 0.5

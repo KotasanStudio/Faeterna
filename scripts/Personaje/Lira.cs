@@ -62,10 +62,10 @@ namespace Faeterna.Scripts.Personaje
         public bool ItsFliped = false;
 
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
-        [Export] Array<TextureRect> _hearts;
+        [Export] public Array<TextureRect> _hearts;
 
         /// <summary><see cref="TextureRect"/> que representa la barra de maná en la interfaz.</summary>
-        [Export] TextureRect _manaBar;
+        [Export] public TextureRect _manaBar;
 
         /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>
         [Export] private Timer _invencibilityTimer;
@@ -83,6 +83,8 @@ namespace Faeterna.Scripts.Personaje
         [Export] public CpuParticles2D  saltoParticulas;
 
         [Export] public CpuParticles2D  dobleSaltoParticulas;
+
+        private bool _tutorial = false;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.

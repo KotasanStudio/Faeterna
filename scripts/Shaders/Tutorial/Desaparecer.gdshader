@@ -13,22 +13,22 @@ uniform float grosor_borde : hint_range(0.0, 0.2) = 0.05;
 void fragment() {
     // Color y transparencia original del sprite
     vec4 color_original = texture(TEXTURE, UV);
-    
+
     // Lee el valor en escala de grises del ruido en este píxel
     float valor_ruido = texture(textura_ruido, UV).r;
-    
+
     // Si el valor del ruido es menor al progreso actual, el píxel se descarta
     if (valor_ruido < progreso) {
         discard;
     }
-    
+
     // Aplica el color del borde brillante justo antes de que el píxel se descarte
     if (valor_ruido < progreso + grosor_borde) {
         COLOR = color_borde;
     } else {
         COLOR = color_original;
     }
-    
+
     // Mantiene la transparencia original de los bordes del sprite
     COLOR.a *= color_original.a;
 }
