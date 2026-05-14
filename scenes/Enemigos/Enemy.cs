@@ -16,7 +16,7 @@ public partial class Enemy : CharacterBody2D
             
         }
 
-	        public async void hitShader(ShaderMaterial _shaderMaterial)
+	    public async void hitShader(ShaderMaterial _shaderMaterial)
         {
             _shaderMaterial.SetShaderParameter("white_amount", 1.0f);
 

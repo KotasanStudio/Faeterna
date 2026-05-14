@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
 [ext_resource type="PackedScene" uid="uid://dwu0wm53g8n86" path="res://scenes/Enemigos/ReyJabali/ReyJabali2D.tscn" id="3_mbhmg"]
+[ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="4_er2o2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mbhmg"]
 size = Vector2(1162, 605)
@@ -13,7 +14,7 @@ size = Vector2(1162, 605)
 scale = Vector2(1.5, 1.5)
 
 [node name="Lira" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(2289, 4038)
+position = Vector2(3353, 1654)
 platform_wall_layers = 1
 
 [node name="ReyJabali" parent="." unique_id=477752749 node_paths=PackedStringArray("_detectionArea") instance=ExtResource("3_mbhmg")]
@@ -29,6 +30,9 @@ collision_mask = 2
 position = Vector2(22, 0)
 shape = SubResource("RectangleShape2D_mbhmg")
 debug_color = Color(1, 0, 0, 0.13333334)
+
+[node name="Slime2D" parent="." unique_id=1506886063 instance=ExtResource("4_er2o2")]
+position = Vector2(3992, 1658)
 
 [connection signal="body_entered" from="DetectionArea" to="ReyJabali" method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="ReyJabali" method="_on_detection_area_body_exited"]

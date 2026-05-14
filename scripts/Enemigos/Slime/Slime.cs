@@ -29,7 +29,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
         public override void _Ready()
         {
 
-            
+
             _jumpTimer = new Timer
             {
                 WaitTime = JumpInterval,
@@ -56,13 +56,9 @@ namespace Faeterna.Scripts.Enemigos.Slime
                 velocity.Y = 0;
                 SetAnimation("idle");
             }
-            if (_knockbackTimer > 0f)
+            if (_knockbackTimer > 0f) 
             {
-                _knockbackTimer -= (float)delta;
-                if (IsOnFloor())
-                {
-                    velocity.X = 0f;
-                }
+                velocity = Vector2.Zero; // Detener el movimiento horizontal después del knockback
             }
 
             Velocity = velocity;
@@ -71,7 +67,8 @@ namespace Faeterna.Scripts.Enemigos.Slime
 
         private void OnJumpTimerTimeout()
         {
-            if (!IsOnFloor()) return;
+            if (!IsOnFloor())
+                return;
 
             _isJumping = true;
 
@@ -130,8 +127,23 @@ namespace Faeterna.Scripts.Enemigos.Slime
             GD.Print("Slime take damage: " + v + ", remaining health: " + Health);
             if (Health <= 0)
             {
-                QueueFree();
-                return;
+                Velocity = Vector2.Zero; // Detener cualquier movimiento
+
+                Timer timer = new Timer
+                {
+                    WaitTime = 0.5f,
+                    OneShot = true
+                };
+
+                AddChild(timer);
+
+                timer.Timeout += () =>
+                {
+                    QueueFree();
+                    timer.QueueFree();
+                };
+
+                timer.Start();
             }
             _isJumping = false;
             _knockbackTimer = KnockbackDuration;

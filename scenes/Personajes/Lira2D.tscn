@@ -592,7 +592,7 @@ debug_color = Color(0.9547648, 2.7915835e-06, 0.5492559, 0.41960785)
 
 [node name="KickHitbox" type="Area2D" parent="." unique_id=1530290686]
 collision_layer = 8
-collision_mask = 64
+collision_mask = 16
 
 [node name="KickHitbox1" type="CollisionShape2D" parent="KickHitbox" unique_id=528586924]
 position = Vector2(21, 20)
