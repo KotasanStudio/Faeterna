@@ -2,6 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
+[ext_resource type="PackedScene" uid="uid://cwk8djg18iojj" path="res://scenes/Maps/check_point.tscn" id="3_mbhmg"]
+[ext_resource type="Texture2D" uid="uid://bqlks5pinjpcm" path="res://assets/Tutoriales/w.png" id="4_reery"]
+[ext_resource type="Script" uid="uid://bsgdk06yx4kmc" path="res://scripts/Tutorial/TurotialMovimiento.cs" id="5_41jso"]
+[ext_resource type="Texture2D" uid="uid://bqjjd6bbael72" path="res://assets/Tutoriales/a.png" id="5_k3ts6"]
+[ext_resource type="Texture2D" uid="uid://cwor31ih4ftrv" path="res://assets/Tutoriales/s.png" id="6_6sflo"]
+[ext_resource type="Texture2D" uid="uid://cervg1edsa0jl" path="res://assets/Tutoriales/d.png" id="7_41jso"]
+[ext_resource type="Texture2D" uid="uid://ds01a2j13qelo" path="res://assets/Tutoriales/Space.png" id="8_mouv1"]
+[ext_resource type="Shader" uid="uid://dj4cnpp04qqcw" path="res://scripts/Shaders/Tutorial/BlancoYNegro.gdshader" id="9_xlibb"]
+[ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="10_la22m"]
+[ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="11_k3ts6"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xyya0"]
 polygon = PackedVector2Array(3831, 2100, 3829, 1505, 2564, 1546, 2535, 2154, 2564, 2545, 2557, 3053, 2422, 3844, 2742, 4256, 1869, 4309, 1606, 3936, 1828, 3625, 1408, 3264, 569, 3272, 529, 5870, 2905, 5865, 5103, 5911, 5064, 5577, 3061, 5562, 3432, 4658, 4411, 4620, 4797, 5157, 6818, 5260, 7021, 3458, 6060, 2837, 5349, 2965, 5507, 3586, 4922, 3590, 5073, 2897, 4004, 2415, 3946, 2610, 3141, 2610, 3509, 3271, 3769, 4435, 2958, 4418, 3132, 3180, 2866, 2688, 2872, 2433)
@@ -131,6 +141,87 @@ gradient = SubResource("Gradient_be71p")
 fill_from = Vector2(0.2347826, 0.28695652)
 fill_to = Vector2(0.79130435, 0.16086957)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_606l8"]
+shader = ExtResource("9_xlibb")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb5dx"]
+atlas = ExtResource("10_la22m")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bm6r"]
+atlas = ExtResource("10_la22m")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be71p"]
+atlas = ExtResource("10_la22m")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jxkj"]
+atlas = ExtResource("10_la22m")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clm75"]
+atlas = ExtResource("10_la22m")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta6li"]
+atlas = ExtResource("10_la22m")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hn01x"]
+atlas = ExtResource("10_la22m")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snqwn"]
+atlas = ExtResource("10_la22m")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lnic0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb5dx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bm6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be71p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jxkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clm75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta6li")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hn01x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snqwn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6sflo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_k3ts6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_q85yk"]
+b = Vector2(0, 213)
+
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
 [node name="Bosque" parent="." unique_id=1481396852 instance=ExtResource("1_xyya0")]
@@ -146,7 +237,7 @@ visible = false
 occluder = SubResource("OccluderPolygon2D_xyya0")
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(8213, 998)
+position = Vector2(1590, 1803)
 scale = Vector2(1, 1)
 platform_wall_layers = 1
 
@@ -365,3 +456,71 @@ scale = Vector2(4.359374, 2.984376)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_2jxkj")
+
+[node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
+
+[node name="CheckPoint" parent="CheckPoint\'s" unique_id=472979019 instance=ExtResource("3_mbhmg")]
+position = Vector2(3382, 1657)
+
+[node name="CheckPoint2" parent="CheckPoint\'s" unique_id=403108826 instance=ExtResource("3_mbhmg")]
+position = Vector2(8232, 1417)
+scale = Vector2(-1, 1)
+
+[node name="CheckPoint3" parent="CheckPoint\'s" unique_id=745009879 instance=ExtResource("3_mbhmg")]
+position = Vector2(4463, 3390)
+
+[node name="Tutorial" type="Node2D" parent="." unique_id=1865027506]
+
+[node name="Turotial Movimiento" type="Node2D" parent="Tutorial" unique_id=1342143399]
+position = Vector2(1840, 2915)
+script = ExtResource("5_41jso")
+
+[node name="Controles" type="Node2D" parent="Tutorial/Turotial Movimiento" unique_id=1809741447]
+texture_filter = 1
+position = Vector2(-245, -22)
+
+[node name="W" type="Sprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=1940068037]
+position = Vector2(21, 144)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_reery")
+
+[node name="A" type="Sprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=131319177]
+position = Vector2(41, 163)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_k3ts6")
+
+[node name="S" type="Sprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=1638162161]
+position = Vector2(21, 163)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_6sflo")
+
+[node name="D" type="Sprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=1666776120]
+position = Vector2(1, 163)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_41jso")
+
+[node name="Espacio" type="Sprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=313317319]
+position = Vector2(101, 163)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_mouv1")
+
+[node name="RunAnimation" type="AnimatedSprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=1627180091]
+material = SubResource("ShaderMaterial_606l8")
+position = Vector2(21, 116)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_lnic0")
+autoplay = "default"
+frame_progress = 0.30545402
+
+[node name="RunAnimation2" type="AnimatedSprite2D" parent="Tutorial/Turotial Movimiento/Controles" unique_id=624879618]
+material = SubResource("ShaderMaterial_606l8")
+position = Vector2(100, 116)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_6sflo")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="Tutorial/Turotial Movimiento" unique_id=637509457]
+position = Vector2(-3, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Turotial Movimiento/Area2D" unique_id=18081895]
+shape = SubResource("SegmentShape2D_q85yk")
