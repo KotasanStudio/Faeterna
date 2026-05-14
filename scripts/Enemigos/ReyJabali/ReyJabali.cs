@@ -83,7 +83,18 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             if (!IsOnFloor())
             {
                 velocity.Y += Gravity * (float)delta;
-                // ... (tus animaciones de salto/caída)
+                if (velocity.Y < 0 && !_jumped)
+                {
+                    SetAnimation("jump");
+                    _jumped = true;
+                    _falled = false;
+                }
+                else if (velocity.Y > 0 && !_falled)
+                {
+                    SetAnimation("fall");
+                    _falled = true;
+                    _jumped = false;
+                }
             }
             else
             {
@@ -100,6 +111,18 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                     {
                         velocity.X = _currentDirection * DashSpeed;
                         SetAnimation("run");
+                    }
+                    else if (!_isChargingAttack && !_isDashing)
+                    {
+                        bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                            (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+                        if (shouldFlip)
+                            FlipHJabali();
+
+
+                        _isChargingAttack = true;
+                        SetAnimation("idle");
+
                     }
                 }
                 // PRIORIDAD 2: Si el jugador se fue, caminar a casa
@@ -148,7 +171,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         // ─────────────────────────────────────────────────────────────────────
         public void _on_load_attack_timer_timeout()
         {
-            if (_target == null || !IsOnFloor() || _isDead)
+            if (_target == null || _isDead)
                 return;
 
             _isChargingAttack = false;
@@ -157,24 +180,28 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             if (shouldFlip)
                 FlipHJabali();
 
-            if (_dashCount >= _actionsBeforeJump && !_isDashing && !_isChargingAttack)
+            if (_dashCount >= _actionsBeforeJump)
             {
-                // EJECUTAR SALTO (Ahora sí asignamos la velocidad)
                 Velocity = DoNextJump();
 
-                if (_jumpCount >= 3) // Si terminó sus 3 saltos
+                GD.Print($"Salto {_jumpCount} ejecutado");
+
+                // Si todavía faltan saltos
+                if (_jumpCount < 3)
                 {
-                    _jumpCount = 0;
-                    _dashCount = 0;
-                    _actionsBeforeJump = _rnd.Next(2, 5);
-                    // Pausa breve antes de volver a empezar
-                    _isChargingAttack = true;
-                    _loadAttackTimer.Start(2.0f); // Espera 2 segundos para el siguiente ciclo
+                    _loadAttackTimer.Start(0.8f);
                 }
                 else
                 {
-                    // Re-lanzar el timer para el siguiente salto de la ráfaga
-                    _loadAttackTimer.Start(0.5f);
+                    // Reiniciar ciclo completo
+                    _jumpCount = 0;
+                    _dashCount = 0;
+                    _actionsBeforeJump = _rnd.Next(2, 5);
+
+                    _isChargingAttack = true;
+
+                    // Espera antes de volver al patrón normal
+                    _loadAttackTimer.Start(2f);
                 }
             }
             else
@@ -219,8 +246,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
 
             _jumpCount++;
-
-            SetAnimation("jump");
             return new Vector2(_currentDirection * DashSpeed, _jumpVelocity);
         }
 
