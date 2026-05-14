@@ -1409,7 +1409,7 @@ script = ExtResource("26_u6if6")
 
 [node name="Camera3D" type="Camera2D" parent="." unique_id=943068567]
 position = Vector2(0, -0.146)
-zoom = Vector2(1.2, 1.2)
+zoom = Vector2(2, 2)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=890193285]
 layer = 10

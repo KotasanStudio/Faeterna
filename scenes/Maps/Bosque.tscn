@@ -561,6 +561,20 @@ animations = [{
 [node name="Bosque" parent="." unique_id=1481396852 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
+[node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
+
+[node name="CheckPoint" parent="CheckPoint\'s" unique_id=472979019 instance=ExtResource("3_mbhmg")]
+position = Vector2(3382, 1657)
+
+[node name="CheckPoint2" parent="CheckPoint\'s" unique_id=403108826 instance=ExtResource("3_mbhmg")]
+position = Vector2(8232, 1417)
+scale = Vector2(-1, 1)
+_checkpointId = "checkpoint_02"
+
+[node name="CheckPoint3" parent="CheckPoint\'s" unique_id=745009879 instance=ExtResource("3_mbhmg")]
+position = Vector2(4468, 3386)
+_checkpointId = "checkpoint_03"
+
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=559327556]
 color = Color(0.26657522, 0.2665752, 0.2665752, 1)
 
@@ -569,11 +583,6 @@ color = Color(0.26657522, 0.2665752, 0.2665752, 1)
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Node" unique_id=767578271]
 visible = false
 occluder = SubResource("OccluderPolygon2D_xyya0")
-
-[node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(1590, 1803)
-scale = Vector2(1, 1)
-platform_wall_layers = 1
 
 [node name="Cueva" type="Node2D" parent="." unique_id=151732781]
 light_mask = 5
@@ -791,20 +800,6 @@ shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_2jxkj")
 
-[node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
-
-[node name="CheckPoint" parent="CheckPoint\'s" unique_id=472979019 instance=ExtResource("3_mbhmg")]
-position = Vector2(3382, 1657)
-
-[node name="CheckPoint2" parent="CheckPoint\'s" unique_id=403108826 instance=ExtResource("3_mbhmg")]
-position = Vector2(8232, 1417)
-scale = Vector2(-1, 1)
-_checkpointId = "checkpoint_02"
-
-[node name="CheckPoint3" parent="CheckPoint\'s" unique_id=745009879 instance=ExtResource("3_mbhmg")]
-position = Vector2(4463, 3390)
-_checkpointId = "checkpoint_03"
-
 [node name="Tutorial" type="Node2D" parent="." unique_id=1865027506]
 
 [node name="Turotial Movimiento" type="Node2D" parent="Tutorial" unique_id=1342143399 node_paths=PackedStringArray("_control")]
@@ -966,6 +961,10 @@ collision_mask = 255
 position = Vector2(0.5, 98.5)
 rotation = 0.7853982
 shape = SubResource("RectangleShape2D_6sflo")
+
+[node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
+position = Vector2(1590, 1803)
+platform_wall_layers = 1
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
