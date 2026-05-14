@@ -58,6 +58,17 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 stateMachine.TransitionTo("FallingMovementState");
             }
+             if (_player.IsOnFloor())
+            {
+                if (_player.Velocity.X != 0)
+                {
+                    stateMachine.TransitionTo("RunningMovementState");  
+                }
+                else if (_player.Velocity.X == 0&&_player.Velocity.Y == 0)
+                {
+                    stateMachine.TransitionTo("IdleMovementState");
+                }
+            }
         }
 
         /// <summary>

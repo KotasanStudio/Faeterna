@@ -7,245 +7,372 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 {
     public partial class ReyJabali : Enemy
     {
-        public float DashSpeed = 300f;
+        // ── Parámetros de movimiento ──────────────────────────────────────────
+        public float DashSpeed = 400f;
+        private float _jumpVelocity = -400f;
         private float _dashDuration = 2f;
-        public int Health = 8;
-        private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+        public int Health = 40;
+
+        private static float Gravity =>
+            ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
+
         private ShaderMaterial _shaderMaterial;
 
-        // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
+        // ── Estado ────────────────────────────────────────────────────────────
         private bool _isDashing = false;
         private bool _isChargingAttack = false;
-        private bool _isWall = true;
-        // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
-
-        private int _dashDirection = 1;
-        private Node2D _target = null;
-        private float _knockbackTimer = 0f;
-        private const float KnockbackDuration = 0.2f;
-
-        private enum enemyDirection
-        {
-            Left = -1,
-            Right = 1
-        }
-        [Export] private enemyDirection _currentDirection = enemyDirection.Right;
-        [Export] private CollisionShape2D _detectionArea;
-        [Export] private Area2D _attackHitBox;
-        [Export] private RayCast2D _groundCheck;
-        [Export] private Area2D _hurtBox;
-        [Export] private Timer _loadAttackTimer;
-        [Export] private Timer _deathAnimationTimer;
-        [Export] private Timer _dashTimer;
-
         private bool _isDead = false;
+
+        private bool _jumped = false;
+        private bool _falled = false;
+
+        private int _dashCount = 0;
+        private int _jumpCount = 0;
+        private int _actionsBeforeJump = 3;  
+        private bool _isReturningHome = false;
+        public float WalkSpeed = 150f; // Más lento que el Dash
+        private float _arrivalThreshold = 10f; // Distancia mínima para considerar que llegó
+
+        private Node2D _target = null;
+
+        // ── Dirección ─────────────────────────────────────────────────────────
+        private int _currentDirection; 
+        private Vector2 _initPosition; // Guardamos la posición inicial para posibles resets
+        [Export] private bool _startFacingLeft;
+
+        // ── Nodos exportados ──────────────────────────────────────────────────
+        [Export] private Area2D _detectionArea;
+        [Export] private Area2D _attackHitBox;
+        [Export] private Area2D _hurtBox;
+
+        [Export] private Timer _dashTimer; // Timer para controlar la duración del dash
+        [Export] private Timer _loadAttackTimer; // Timer para controlar la carga del ataque
+        [Export] private Timer _deathAnimationTimer; // Timer para controlar la duración de la animación de muerte
+
         private Random _rnd = new();
+
+
+        public override void _EnterTree()
+        {
+            _initPosition = GlobalPosition; // Guardamos la posición inicial para posibles resets
+        }
         public override void _Ready()
         {
-            flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
-            //_dashTimer.Start();
+            if (_startFacingLeft)
+            {
+                _currentDirection = 1;
+                FlipHJabali();
+            }
+            else
+                _currentDirection = -1;
             _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
             SetAnimation("idle");
 
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        // PHYSICS PROCESS
+        // ─────────────────────────────────────────────────────────────────────
         public override void _PhysicsProcess(double delta)
         {
             if (_isDead)
                 return;
-                
+
             Vector2 velocity = Velocity;
 
             if (!IsOnFloor())
+            {
                 velocity.Y += Gravity * (float)delta;
-            else
-            {
-
-
-                flipHJabali(_dashDirection);
-                            
-            if (_isChargingAttack)
-            {
-                velocity.X = 0;
-                SetAnimation("loadAttack");
-            }
-            else if (_isDashing)
-            {
-                velocity.X = _dashDirection * DashSpeed;
-
-                SetAnimation("run");
-
-                _groundCheck.ForceRaycastUpdate();
-
-                if (!_groundCheck.IsColliding())
+                if (velocity.Y < 0 && !_jumped)
                 {
-                    StopDash(ref velocity);
+                    SetAnimation("jump");
+                    _jumped = true;
+                    _falled = false;
+                }
+                else if (velocity.Y > 0 && !_falled)
+                {
+                    SetAnimation("fall");
+                    _falled = true;
+                    _jumped = false;
                 }
             }
             else
             {
-                velocity.X = 0;
-                SetAnimation("idle");
-            }
-            }
-
-            if (_knockbackTimer > 0f)
-            {
-                _knockbackTimer -= (float)delta;
-                if (_knockbackTimer <= 0f)
+                // PRIORIDAD 1: Si el jugador está cerca, atacar
+                if (_target != null)
                 {
-                    // Termina el estado de knockback
-                    _knockbackTimer = 0f;
-                    velocity.X = 0f; // Detiene el movimiento horizontal después del knockback
+                    _isReturningHome = false; // Cancelamos el regreso si el jugador vuelve
+                    if (_isChargingAttack)
+                    {
+                        _dashTimer.Stop(); // Asegura que el dash se detenga si estaba activo
+                        SetAnimation("loadAttack");
+                    }
+                    else if (_isDashing)
+                    {
+                        velocity.X = _currentDirection * DashSpeed;
+                        SetAnimation("run");
+                    }
+                    else if (!_isChargingAttack && !_isDashing)
+                    {
+                        bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                            (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+                        if (shouldFlip)
+                            FlipHJabali();
+
+
+                        _isChargingAttack = true;
+                        SetAnimation("idle");
+
+                    }
+                }
+                // PRIORIDAD 2: Si el jugador se fue, caminar a casa
+                else if (_isReturningHome)
+                {
+                    float distanceToStart = _initPosition.X - GlobalPosition.X;
+
+                    if (Mathf.Abs(distanceToStart) > _arrivalThreshold)
+                    {
+                        // Calcular dirección hacia el punto inicial
+                        int directionHome = distanceToStart > 0 ? 1 : -1;
+
+                        if (directionHome != _currentDirection)
+                            FlipHJabali();
+
+                        velocity.X = directionHome * WalkSpeed;
+                        SetAnimation("run");
+                    }
+                    else
+                    {
+                        // LLEGÓ A CASA
+                        velocity.X = 0;
+                        _isReturningHome = false;
+                        SetAnimation("idle");
+                        int initialDir = _startFacingLeft ? -1 : 1;
+                        if (_currentDirection != initialDir)
+                            FlipHJabali();
+                    }
+                }
+                // PRIORIDAD 3: Quieto
+                else
+                {
+                    velocity.X = Mathf.MoveToward(Velocity.X, 0, DashSpeed * (float)delta);
+                    if (velocity.X == 0)
+                        SetAnimation("idle");
                 }
             }
 
             Velocity = velocity;
             MoveAndSlide();
         }
-
-        private async void OnDashTimerTimeout()
-        {
-            if (!IsOnFloor())
-                return;
-
-            _isDashing = true;
-
-            await ToSignal(
-                GetTree().CreateTimer(_dashDuration),
-                "timeout"
-            );
-
-            if(IsOnWall()){
-            float directionX = GlobalPosition.X * -1;
-            Velocity = new Vector2(directionX * 250f, -200f);
-                _dashDirection *=-1;
-                flipHJabali(_dashDirection);
-                
-            }else{
-                Random _rng = new Random(); 
-                _dashDirection = (int)(_rng.Next(0, 2) == 0
-                ? enemyDirection.Left
-                : enemyDirection.Right);
-            }
-            _isDashing = false;
-   
-        }
+        // ─────────────────────────────────────────────────────────────────────
+        // CARGAR ATAQUE (Timer)
+        // ─────────────────────────────────────────────────────────────────────
         public void _on_load_attack_timer_timeout()
         {
-            if (_target == null || !IsOnFloor())
+            if (_target == null || _isDead)
                 return;
 
             _isChargingAttack = false;
-            _isDashing = true;
+            bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                              (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+            if (shouldFlip)
+                FlipHJabali();
 
-            float directionX =
-                Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
+            if (_dashCount >= _actionsBeforeJump)
+            {
+                Velocity = DoNextJump();
 
-            if (directionX == 0)
-                directionX = 1;
+                GD.Print($"Salto {_jumpCount} ejecutado");
 
-            _dashDirection = (int)directionX;
+                if (_jumpCount < 3)
+                {
+                    _loadAttackTimer.Start(0.8f);
+                }
+                else
+                {
+                    // Reiniciar ciclo completo
+                    _jumpCount = 0;
+                    _dashCount = 0;
+                    _actionsBeforeJump = _rnd.Next(2, 5);
 
-            flipHJabali(directionX);
+                    _isChargingAttack = true;
+
+                    // Espera antes de volver al patrón normal
+                    _loadAttackTimer.Start(2f);
+                }
+            }
+            else
+            {
+                // FASE DE CARRERA
+                _dashCount++;
+                _isDashing = true; // Activamos el estado de dash para que el _PhysicsProcess lo gestione
+                _dashTimer.Start(); // Inicia el timer para controlar la duración del dash
+
+            }
         }
 
-        private void StopDash(ref Vector2 velocity)
+        public void _on_dash_timer_timeout()
         {
             _isDashing = false;
+            _isChargingAttack = true;
 
-            velocity.X = 0;
+            if (_target != null)
+            {
+                int directionToPlayer = _target.GlobalPosition.X > GlobalPosition.X ? 1 : -1;
+                if (directionToPlayer != _currentDirection)
+                    FlipHJabali();
+            }
 
-            SetAnimation("idle");
-
-            _dashTimer.Start();
+            _loadAttackTimer.Start();
         }
-
-
-        private void flipHJabali(float directionX)
+        // ─────────────────────────────────────────────────────────────────────
+        // ATAQUE ESPECIAL — un salto a la vez
+        // ─────────────────────────────────────────────────────────────────────
+        private Vector2 DoNextJump()
         {
-            _animatedSprite.FlipH = directionX < 0;
-            _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+            if (_jumpCount >= 3)
+            {
+                _jumpCount = 0;
+                _dashCount = 0;
+                _actionsBeforeJump = _rnd.Next(1, 3);  // randomiza para el siguiente ciclo
+
+                GD.Print("Ataque especial completado.");
+                return new Vector2(0, Velocity.Y);
+                // El reinicio del ciclo lo maneja _on_load_attack_timer_timeout
+            }
+
+            _jumpCount++;
+            return new Vector2(_currentDirection * DashSpeed, _jumpVelocity);
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        // FLIP
+        // ─────────────────────────────────────────────────────────────────────
+        private void FlipHJabali()
+        {
+            _currentDirection *= -1;
+            _animatedSprite.FlipH = _currentDirection < 0;
+        }
+
+        // ─────────────────────────────────────────────────────────────────────
+        // DAÑO
+        // ─────────────────────────────────────────────────────────────────────
         public void _on_attack_hit_box_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
                 lira.TakeDamage(1, GlobalPosition);
         }
+
         private void OnHurtBoxAreaEntered(Area2D area)
         {
-            if (_isDead) return;
-            if (area.GetParent() is Lira lira)
-                TakeDamage(1, lira.GlobalPosition);
-             if (area is Shot shot)
-                TakeDamage((int)(shot.Scale.X*1.5f), shot.GlobalPosition);
-        }
-        private void TakeDamage(int v, Vector2 globalPosition)
-        {
-            Health -= v;
-            hitShader(_shaderMaterial);
-            if(_target != null)
-                flipHJabali(GlobalPosition.X * -1);
-            if (Health <= 0)
-            {
-                desactiveCollision();
-                _isDead = true;
-                Velocity = Vector2.Zero;
-                _isDashing = false;
-                _isChargingAttack = false;
-                _dashTimer.Stop();
-                _loadAttackTimer.Stop();
-                SetAnimation("die");
-                // Espera a que termine la animación de muerte antes de eliminar
-                _deathAnimationTimer.Start();
+            if (_isDead)
                 return;
+
+            if (area.GetParent() is Lira lira)
+            {
+                TakeDamage(1, lira.GlobalPosition);
+
             }
-            _isDashing = false;
-            _knockbackTimer = KnockbackDuration;
+            else if (area is Shot shot)
+            {
+                TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
 
+            }
+
+            bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                              (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+            if (shouldFlip)
+                FlipHJabali();
         }
-        private void OnDeathAnimationTimerTimeout()
+
+        private void TakeDamage(int amount, Vector2 sourcePosition)
         {
-            QueueFree();
+            Health -= amount;
+            hitShader(_shaderMaterial);
+
+            if (Health > 0)
+                return;
+
+            _isDead = true;
+            _isDashing = false;
+            _isChargingAttack = false;
+            Velocity = Vector2.Zero;
+
+            _loadAttackTimer.Stop();
+
+            DesactiveCollision();
+            SetAnimation("die");
+            _deathAnimationTimer.Start();
         }
 
-        private void desactiveCollision()
+        private void OnDeathAnimationTimerTimeout() => QueueFree();
+
+        // ─────────────────────────────────────────────────────────────────────
+        // COLISIONES
+        // ─────────────────────────────────────────────────────────────────────
+        private void DesactiveCollision()
         {
             _attackHitBox.CollisionLayer = 0;
             _attackHitBox.CollisionMask = 0;
-            _detectionArea.GetParent<Area2D>().CollisionLayer = 0;
-            _detectionArea.GetParent<Area2D>().CollisionMask = 0;
+
+            _detectionArea.CollisionLayer = 0;
+            _detectionArea.CollisionMask = 0;
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        // DETECCIÓN DEL JUGADOR
+        // ─────────────────────────────────────────────────────────────────────
         public void _on_detection_area_body_entered(Node2D prota)
         {
+            if (prota is not Lira lira)
+                return;
 
-            
-            if (prota is Lira lira)
-            {
-                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
-                _target = lira; // Empieza a perseguir al jugador
-                _dashTimer.Stop(); // Detiene el timer de dash automático
-                _isDashing = false; // Fuerza la salida del estado de dash
-                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
-                _isChargingAttack = true; // Asegura que no esté en estado de carga al detectar al jugador
-                SetAnimation("loadAttack"); // Comienza la animación de carga
-                _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque
-            }
-            
+            _target = lira;
+            _isReturningHome = false; // Deja de caminar a casa para pelear
+            _isChargingAttack = true;
+            _isDashing = false;
+
+            // Girar hacia el jugador al entrar
+            int newDir = lira.GlobalPosition.X > GlobalPosition.X ? 1 : -1;
+            if (newDir != _currentDirection)
+                FlipHJabali();
+
+            _loadAttackTimer.Start();
         }
 
         public void _on_detection_area_body_exited(Node2D prota)
         {
             if (prota is Lira)
             {
-                if (!_isDead) // Solo reanuda el timer si no está muerto
-                    _dashTimer.Start(); // Reanuda el timer de dash automático
+                _target = null;
+                _isDashing = false;
+                _isChargingAttack = false;
+                _loadAttackTimer.Stop();
+
+                // Esperar un segundo antes de decidir volver (por si el jugador entra de nuevo)
+                GetTree().CreateTimer(1.0f).Timeout += () =>
+                {
+                    if (_target == null)
+                        _isReturningHome = true;
+                };
             }
         }
 
+        private void moveToinitPosition()
+        {
+            if (_target != null || _isDead)
+                return; // No volver si el jugador regresó
+            GlobalPosition = _initPosition;
+            Velocity = Vector2.Zero;
 
+            // Ajustar dirección inicial
+            int initialDir = _startFacingLeft ? -1 : 1;
+            if (_currentDirection != initialDir)
+                FlipHJabali();
+
+            _isChargingAttack = false;
+            _isDashing = false;
+            SetAnimation("idle");
+        }
     }
 }
