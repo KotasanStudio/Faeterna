@@ -67,16 +67,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         private void OnKnockbackFinished()
         {
             _isKnockbackActive = false;
-            ReturnToMovementState();
-        }
-
-        private void ReturnToMovementState()
-        {
-            if (_player == null) return;
-            if (_player.IsOnFloor())
-                stateMachine.TransitionTo("IdleMovementState");
-            else
-                stateMachine.TransitionTo(_player.Velocity.Y < 0f ? "JumpingMovementState" : "FallingMovementState");
+            stateMachine.TransitionTo("FallingMovementState");
         }
     }
 }

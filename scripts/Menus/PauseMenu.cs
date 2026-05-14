@@ -131,9 +131,9 @@ namespace Faeterna.Scripts.Menus
 		private void PauseGame()
 		{
 			Visible = true;
+            VisibleUI(false);
 			GetTree().Paused = true;
 			Input.MouseMode = Input.MouseModeEnum.Visible;
-            //_player.VisibleUI(false);
 		}
 
         /// <summary>
@@ -148,9 +148,9 @@ namespace Faeterna.Scripts.Menus
                     if (_optionsMenu != null)
                         _optionsMenu.Visible = false;
 
+                    VisibleUI(true);
                     GetTree().Paused = false;
                     Visible = false;
-                    //_player.VisibleUI(true);
                 });
         }
 
@@ -179,6 +179,16 @@ namespace Faeterna.Scripts.Menus
                     GetTree().Paused = false;
                     GetTree().ChangeSceneToFile("res://scenes/Menus/MainMenu.tscn");
                 });
+        }
+
+        private void VisibleUI(bool visible)
+        {
+            foreach (TextureRect heart in _player._hearts)
+            {
+                heart.Visible = visible;
+            }
+
+            _player._manaBar.Visible = visible;
         }
 
         /// <summary>

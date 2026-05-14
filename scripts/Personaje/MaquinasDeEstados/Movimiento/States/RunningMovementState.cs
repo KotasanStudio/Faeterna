@@ -35,12 +35,12 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             if (_player == null) return;
             _player.SetAnimation("run");
-            //_player.terrainParticles.Emitting = true;
+            _player.terrainParticles.Emitting = true;
         }
 
         public override void Exit()
         {
-            //_player.terrainParticles.Emitting = false;
+            _player.terrainParticles.Emitting = false;
         }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             if (_player == null) return;
 
            Vector2 velocity = _player.Velocity;
-        
+
         float direction = Input.GetAxis("move_left", "move_right");
         if (direction != 0.0f)
         {

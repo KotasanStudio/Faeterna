@@ -44,7 +44,8 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 
             if (!_player.DashAvailable)
             {
-                ReturnToMovementState();
+                if (_player == null) return;
+                stateMachine.TransitionTo("IdleMovementState");
                 return;
             }
 
@@ -88,29 +89,15 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         private void OnDashFinished()
         {
             _isDashing = false;
-            ReturnToMovementState();
+            if (_player == null)
+                return;
+            stateMachine.TransitionTo("IdleMovementState");
         }
 
         private void OnCooldownFinished()
         {
             if (_player != null)
                 _player.DashAvailable = true;
-        }
-
-        private void ReturnToMovementState()
-        {
-            if (_player == null) return;
-            if (_player.IsOnFloor())
-            {
-                bool movingHorizontally = Mathf.Abs(_player.Velocity.X) > 0.1f
-                    && (Input.IsActionPressed("move_left") || Input.IsActionPressed("move_right"));
-                stateMachine.TransitionTo(movingHorizontally ? "RunningMovementState" : "IdleMovementState");
-            }
-            else
-            {
-                // En 2D, Y < 0 = subiendo (jumping), Y > 0 = bajando (falling).
-                stateMachine.TransitionTo("FallingMovementState");
-            }
         }
     }
 }
