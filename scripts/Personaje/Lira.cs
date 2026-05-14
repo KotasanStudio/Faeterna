@@ -75,6 +75,14 @@ namespace Faeterna.Scripts.Personaje
 
         [Export] private PackedScene _bullet;
 
+
+        [ExportGroup("Particles")]
+        //[Export] public TerrainParticles terrainParticles;
+
+        [Export] public CpuParticles2D  saltoParticulas;
+
+        [Export] public CpuParticles2D  dobleSaltoParticulas;
+
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>

@@ -5,8 +5,12 @@ using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
+    /// <summary>
+    /// Estado que representa el movimiento de dash (impulso rápido horizontal) de Lira.
+    /// </summary>
     public partial class DashMovementState : State
     {
+        /// <summary>Referencia al jugador (Lira) para acceder a su estado y controlar su movimiento durante el dash.</summary>
         private PlayerType _player;
 
         /// <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
