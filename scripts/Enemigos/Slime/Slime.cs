@@ -26,9 +26,6 @@ namespace Faeterna.Scripts.Enemigos.Slime
         [Export] private CollisionShape2D _detectionArea;
         [Export] private Area2D _hurtBox;
 
-        /// <summary>
-        /// Se llama cuando el nodo entra en la escena. Obtiene la referencia al nodo AnimatedSprite2D hijo para usar sus animaciones.
-        /// </summary>
         public override void _Ready()
         {
 
@@ -61,7 +58,11 @@ namespace Faeterna.Scripts.Enemigos.Slime
             }
             if (_knockbackTimer > 0f) 
             {
-                velocity = Vector2.Zero; // Detener el movimiento horizontal después del knockback
+                _knockbackTimer -= (float)delta;
+                if (IsOnFloor())
+                {
+                    velocity = Vector2.Zero; // Detener el movimiento horizontal después del knockback
+                }
             }
 
             Velocity = velocity;
@@ -97,33 +98,18 @@ namespace Faeterna.Scripts.Enemigos.Slime
             SetAnimation("jump");
         }
 
-        /// <summary>
-        /// Se llama cuando algo entra en el área de ataque del slime. Verifica si es el jugador (Lira) y le inflige daño
-        /// si entra en contacto con el slime detectando colisiones de física.
-        /// </summary>
-        /// <param name="prota">Nodo 2D que entró en el área de ataque.</param>
         public void _on_attack_hit_box_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
                 lira.TakeDamage(1, GlobalPosition);
         }
 
-        /// <summary>
-        /// Se llama cuando algo entra en el área de detección del slime. Verifica si es el jugador (Lira).
-        /// La lógica de respuesta a la detección está pendiente de implementar.
-        /// </summary>
-        /// <param name="prota">Nodo 2D que entró en el área de detección.</param>
         public void _on_detection_area_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
                 _target = lira; // Empieza a perseguir al jugador
         }
 
-        /// <summary>
-        /// Se llama cuando algo sale del área de detección del slime. Verifica si es el jugador (Lira).
-        /// La lógica de salida de detección está pendiente de implementar.
-        /// </summary>
-        /// <param name="prota">Nodo 2D que salió del área de detección.</param>
         public void _on_detection_area_body_exited(Node2D prota)
         {
             if (prota is Lira)
