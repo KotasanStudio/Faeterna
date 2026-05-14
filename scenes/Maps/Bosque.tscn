@@ -561,31 +561,6 @@ animations = [{
 [node name="Bosque" parent="." unique_id=1481396852 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
-<<<<<<< HEAD
-[node name="Lira" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(3353, 1654)
-platform_wall_layers = 1
-
-[node name="ReyJabali" parent="." unique_id=477752749 node_paths=PackedStringArray("_detectionArea") instance=ExtResource("3_mbhmg")]
-position = Vector2(2866, 4015)
-_detectionArea = NodePath("../DetectionArea")
-
-[node name="DetectionArea" type="Area2D" parent="." unique_id=1044476045]
-position = Vector2(2905, 3824)
-collision_layer = 32
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=2061838832]
-position = Vector2(22, 0)
-shape = SubResource("RectangleShape2D_mbhmg")
-debug_color = Color(1, 0, 0, 0.13333334)
-
-[node name="Slime2D" parent="." unique_id=1506886063 instance=ExtResource("4_er2o2")]
-position = Vector2(3992, 1658)
-
-[connection signal="body_entered" from="DetectionArea" to="ReyJabali" method="_on_detection_area_body_entered"]
-[connection signal="body_exited" from="DetectionArea" to="ReyJabali" method="_on_detection_area_body_exited"]
-=======
 [node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
 
 [node name="CheckPoint" parent="CheckPoint\'s" unique_id=472979019 instance=ExtResource("3_mbhmg")]
@@ -994,4 +969,3 @@ platform_wall_layers = 1
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Combate/Area2D" to="Tutorial/Turotial Combate" method="_on_area_2d_body_entered"]
->>>>>>> main

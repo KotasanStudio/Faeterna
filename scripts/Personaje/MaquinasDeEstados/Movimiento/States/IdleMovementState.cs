@@ -30,9 +30,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 GD.Print("Transitioning to falling or jumping state from idle.");
                 // En 2D, Y positivo = hacia abajo, negativo = hacia arriba (subiendo).
-                stateMachine.TransitionTo(_player.Velocity.Y < 0
-                    ? "JumpingMovementState"
-                    : "FallingMovementState");
+                stateMachine.TransitionTo("FallingMovementState");
             }
             else
             {
