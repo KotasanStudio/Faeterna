@@ -51,6 +51,9 @@ namespace Faeterna.Scripts.Menus
         /// <summary>Índice del espacio de guardado actualmente seleccionado el menú de selección de partidas.</summary>
         private int _selectedSlot;
 
+        /// <summary>Variable para tracking si estamos en modo de selección de deleteación.</summary>
+        private bool _deleteMode;
+
         /// <summary>Lista que cache las texturas predeterminadas de cada botón de espacio de guardado, para poder restaurarlas cuando se elimina una partida guardada.</summary>
         private readonly List<Texture2D> _defaultSlotTextures = new();
 
@@ -81,45 +84,80 @@ namespace Faeterna.Scripts.Menus
         }
 
         /// <summary>
-        /// Se llama cuando se presiona un botón de espacio de guardado. Reproduce la animación de presión y carga la escena del juego
-        /// con el espacio de guardado seleccionado. Establece el slot activo antes de cambiar de escena.
+        /// Se llama cuando se presiona un botón de espacio de guardado. Si NO estamos en modo delete, carga la partida.
+        /// Si estamos en modo delete, marca el slot con borde rojo para ser eliminado.
         /// </summary>
         /// <param name="id">Índice del botón de slot que fue presionado.</param>
         private void OnSavePressed(int id)
         {
-            // Reproducir la animación de press en el botón correspondiente
             if (id >= 0 && id < _saveButtons.Count)
             {
-                _selectedSlot = id;
-                ButtonTools.PlayPressAnimation(
-                    _saveButtons[id],
-                    () =>
+                // Si estamos en modo delete, marcar el slot para eliminar
+                if (_deleteMode)
+                {
+                    // Si había otro slot seleccionado, restaurar su borde
+                    if (_selectedSlot != id)
                     {
-                        GameSaveService.SetActiveSlot(id);
-                        GD.Print(
-                            $"Save button {id} pressed. Transitioning to game scene with save slot {id}..."
-                        );
-                        if (id == 1)
-                            GetTree().ChangeSceneToFile("res://scenes/Maps/Bosque.tscn");
-                        else
-                            GetTree().ChangeSceneToFile(DefaultGameScenePath);
+                        UpdateSlotBorder(_saveButtons[_selectedSlot], false);
                     }
-                );
+
+                    _selectedSlot = id;
+                    UpdateSlotBorder(_saveButtons[id], true);
+                    GD.Print($"Slot {id + 1} seleccionado para eliminar. Presiona Delete de nuevo para confirmar.");
+                }
+                // Si NO estamos en modo delete, cargar la partida
+                else
+                {
+                    _selectedSlot = id;
+                    ButtonTools.PlayPressAnimation(
+                        _saveButtons[id],
+                        () =>
+                        {
+                            GameSaveService.SetActiveSlot(id);
+                            GD.Print($"Save button {id} pressed. Transitioning to game scene with save slot {id}...");
+                            if (id == 1)
+                                GetTree().ChangeSceneToFile("res://scenes/Maps/Bosque.tscn");
+                            else
+                                GetTree().ChangeSceneToFile(DefaultGameScenePath);
+                        }
+                    );
+                }
             }
         }
 
         /// <summary>
-        /// Se llama cuando se presiona el botón de eliminar. Reproduce la animación de presión y luego elimina la partida guardada
-        /// en el espacio seleccionado, actualizando las visuales del menú para reflejar la eliminación.
+        /// Se llama cuando se presiona el botón de eliminar. Primer clic activa el modo delete para que selecciones un slot.
+        /// Segundo clic (después de seleccionar un slot) elimina la partida guardada.
         /// </summary>
         private void OnDeletePressed()
         {
+            // Si NO estamos en modo delete, activarlo con animación
+            if (!_deleteMode)
+            {
+                ButtonTools.PlayPressAnimation(
+                    _deleteButton,
+                    () =>
+                    {
+                        _deleteMode = true;
+                        GD.Print("Modo delete activado. Selecciona un slot para eliminar.");
+                    }
+                );
+                return;
+            }
+
+            // Si estamos en modo delete, eliminar el slot seleccionado
             ButtonTools.PlayPressAnimation(
                 _deleteButton,
                 () =>
                 {
                     GameSaveService.DeleteSlot(_selectedSlot);
                     GD.Print($"Delete button pressed. Slot {_selectedSlot + 1} eliminado.");
+
+                    // Resetear visuales
+                    UpdateSlotBorder(_saveButtons[_selectedSlot], false);
+                    _deleteMode = false;
+                    _selectedSlot = 0;
+
                     RefreshSlotVisuals();
                 }
             );
@@ -141,6 +179,17 @@ namespace Faeterna.Scripts.Menus
         }
 
         /// <summary>
+        /// Actualiza el color del botón de slot para indicar si está seleccionado para eliminación.
+        /// Si está seleccionado, el borde se tintará de rojo; si no, es blanco (normal).
+        /// </summary>
+        /// <param name="button">Botón de slot a actualizar.</param>
+        /// <param name="isSelected">Si true, se tinta de rojo; si false, de blanco.</param>
+        private void UpdateSlotBorder(TextureButton button, bool isSelected)
+        {
+            button.Modulate = isSelected ? Colors.Red : Colors.White;
+        }
+
+        /// <summary>
         /// Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache.
         /// Estas texturas se restauran cuando se elimina una partida guardada para mostrar nuevamente el estado "vacío" del slot.
         /// </summary>
@@ -157,7 +206,7 @@ namespace Faeterna.Scripts.Menus
         /// <summary>
         /// Actualiza las visuales de todos los espacios de guardado. Si existe una partida guardada en un slot,
         /// muestra la textura de "Continue"; si no, muestra la textura predeterminada del slot.
-        /// También actualiza el texto de etiqueta de cada botón para mostrar el número del slot.
+        /// También actualiza el texto de etiqueta de cada botón para mostrar el número del slot y resetea los bordes a color normal.
         /// </summary>
         private void RefreshSlotVisuals()
         {
@@ -170,6 +219,9 @@ namespace Faeterna.Scripts.Menus
                         ? _continueTexture
                         : _defaultSlotTextures[i];
 
+                // Resetear color
+                slotButton.Modulate = Colors.White;
+
                 Label label = slotButton.GetNodeOrNull<Label>("Label");
                 if (label != null)
                 {
@@ -177,6 +229,8 @@ namespace Faeterna.Scripts.Menus
                     label.Text = $"Save {i + 1}";
                 }
             }
+
+            _deleteMode = false;
         }
     }
 }
