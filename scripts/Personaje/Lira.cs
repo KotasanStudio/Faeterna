@@ -58,6 +58,9 @@ namespace Faeterna.Scripts.Personaje
 
         /// <summary>Referencia a la máquina de estados de movimiento.</summary>
         public MovementStateMachine MovementStateMachine;
+        
+        /// <summary>Controlador del AnimationTree — sincroniza animaciones con el estado de movimiento.</summary>
+        public LiraAnimationTree AnimTree;
 
         public bool ItsFliped = false;
 
@@ -93,10 +96,13 @@ namespace Faeterna.Scripts.Personaje
         {
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
             MovementStateMachine = GetNode<MovementStateMachine>("MovementStateMachine");
+            var animTreeNode = GetNodeOrNull<AnimationTree>("AnimationTree");
+            if (animTreeNode != null)
+                AnimTree = GetNodeOrNull<LiraAnimationTree>("AnimationTree/LiraAnimationTree");
             UpdateHearts();
             UpdateMana();
             await TryLoadFromActiveSlotAsync();
-
+            
         }
 
         private async Task TryLoadFromActiveSlotAsync()
@@ -165,40 +171,23 @@ namespace Faeterna.Scripts.Personaje
         /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
         public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            if (_invencibilityTimer.IsStopped() == false)
-            {
-                GD.Print("Invencibilidad activa, no se recibe daño.");
-                return; // Si el timer de invencibilidad está activo, no se puede recibir daño
-            }
-            if (_currentHealth <= 0) return;
+            if (!_invencibilityTimer.IsStopped() || _currentHealth <= 0) return;
 
-            // Knockback: salto hacia arriba y hacia el lado contrario del atacante
+            _currentHealth -= amount;
+            UpdateHearts();
+        
+            if (_currentHealth <= 0)
+            {
+                // El control se bloquea AQUÍ
+                MovementStateMachine?.TransitionTo("DeathMovementState");
+                return;
+            }
+
+            // Si no ha muerto, aplicamos el knockback normal
             float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * KnockbackForceX, KnockbackForceY);
-
-            // Ceder el control al estado de knockback (bloquea el input)
             MovementStateMachine?.TransitionTo("KnockbackMovementState");
 
-            for (int i = 0; i < amount; i++)
-            {
-                if (_currentHealth <= 0) break;
-
-                _currentHealth--;
-                // Guardamos el índice ANTES del await para que no cambie después
-                int heartIndex = _currentHealth;
-                if (heartIndex < 0 || heartIndex >= _hearts.Count) break;
-                TextureRect heart = _hearts[heartIndex];
-
-                if (heart.Material is ShaderMaterial mat)
-                {
-                    mat.SetShaderParameter("damage_flash", 1.0f);
-
-                    await ToSignal(GetTree().CreateTimer(0.1f), "timeout");
-
-                    mat.SetShaderParameter("damage_flash", 0.0f);
-                    mat.SetShaderParameter("fill_amount", 0.0f);
-                }
-            }
             _invencibilityTimer.Start();
         }
 
@@ -207,6 +196,11 @@ namespace Faeterna.Scripts.Personaje
         /// </summary>
         private void UpdateHearts()
         {
+            if (_currentHealth == 0)
+            {
+                AnimTree?.Travel("dead");
+                MovementStateMachine?.TransitionTo("DeadMovementState");
+            }
             for (int i = 0; i < _hearts.Count; i++)
             {
                 if (_hearts[i].Material is ShaderMaterial mat)
@@ -284,24 +278,24 @@ namespace Faeterna.Scripts.Personaje
                 _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position = new Vector2(Mathf.Abs(_kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.X), _kickArea.GetNode<CollisionShape2D>("KickHitbox2").Position.Y);
             }
         }
-
         public void Shooting(double manaCost, double shotBallScale)
         {
             var InstanciaShot = (Shot)_bullet.Instantiate();
-                InstanciaShot.ManaCost = (float)manaCost;
-                InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
+            InstanciaShot.ManaCost = (float)manaCost;
+            InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
+        
             if ((_currentMana - InstanciaShot.ManaCost) >= 0)
             {
-                SetAnimation("shot");
+                // CAMBIO AQUÍ: En lugar de SetAnimation, usa el AnimTree
+                AnimTree?.Travel("shot"); 
+                
                 UseMana(InstanciaShot.ManaCost);
                 if (ItsFliped)
                     InstanciaShot.Direction = new Vector2(-1, 0);
                 else
                     InstanciaShot.Direction = new Vector2(1, 0);
                 InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
-                GetTree().CurrentScene?.AddChild(InstanciaShot);
-            }
-
+                GetTree().CurrentScene?.AddChild(InstanciaShot);            }
         }
 
        public void OnKickHitboxAreaEntered(Area2D area)

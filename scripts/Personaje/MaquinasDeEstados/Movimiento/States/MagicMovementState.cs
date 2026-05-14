@@ -84,7 +84,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             _manaCost = _defaultManaCost;
             _shotBallScale = _defaultShotBallScale;
-
         }
     }
 }

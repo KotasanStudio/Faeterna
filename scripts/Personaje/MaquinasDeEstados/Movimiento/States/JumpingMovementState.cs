@@ -6,7 +6,8 @@ using PlayerType = Faeterna.Scripts.Personaje.Lira;
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
     /// <summary>
-    /// Estado que representa el movimiento de salto de Lira. El jugador está en el aire después de haber saltado desde el suelo.
+    /// Estado que representa el movimiento de salto de Lira. El jugador está en
+    /// el aire después de haber saltado desde el suelo.
     /// Gestiona la aplicación de gravedad y las transiciones a caída, doble salto o aterrizaje.
     /// </summary>
     public partial class JumpingMovementState : State
@@ -41,7 +42,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 
         /// <summary>
         /// Se llama cada frame (non-physics). Controla la transición a caída cuando la velocidad vertical se vuelve positiva (comienza a bajar),
-        /// y detecta si el jugador ha aterrizando al tocar el suelo.
+        /// y detecta si el jugador ha aterrizado al tocar el suelo.
         /// </summary>
         /// <param name="delta">
         /// Tiempo en segundos desde el último frame. Se pasa al estado para que pueda usarlo en su lógica de actualización, aunque en este caso no se utiliza directamente.
@@ -93,6 +94,14 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                     _player.FlipH(false);
 
                 _player.MoveAndSlide();
+            }
+            else // Si estamos en el suelo, aseguramos que la velocidad vertical se restablece a 0 para evitar problemas de física.
+            {
+                stateMachine.TransitionTo(
+                    Mathf.Abs(_player.Velocity.X) > 0.1f
+                        ? "RunningMovementState"
+                        : "IdleMovementState"
+                );
             }
         }
 

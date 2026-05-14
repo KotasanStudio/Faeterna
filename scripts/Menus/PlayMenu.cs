@@ -51,9 +51,6 @@ namespace Faeterna.Scripts.Menus
         /// <summary>Índice del espacio de guardado actualmente seleccionado el menú de selección de partidas.</summary>
         private int _selectedSlot;
 
-        /// <summary>Variable para tracking si estamos en modo de selección de deleteación.</summary>
-        private bool _deleteMode;
-
         /// <summary>Lista que cache las texturas predeterminadas de cada botón de espacio de guardado, para poder restaurarlas cuando se elimina una partida guardada.</summary>
         private readonly List<Texture2D> _defaultSlotTextures = new();
 
@@ -90,6 +87,8 @@ namespace Faeterna.Scripts.Menus
         /// <param name="id">Índice del botón de slot que fue presionado.</param>
         private void OnSavePressed(int id)
         {
+            Engine.TimeScale = 1f;
+            // Reproducir la animación de press en el botón correspondiente
             if (id >= 0 && id < _saveButtons.Count)
             {
                 // Si estamos en modo delete, marcar el slot para eliminar
