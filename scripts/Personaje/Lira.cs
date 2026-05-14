@@ -171,40 +171,23 @@ namespace Faeterna.Scripts.Personaje
         /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
         public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            if (_invencibilityTimer.IsStopped() == false)
-            {
-                GD.Print("Invencibilidad activa, no se recibe daño.");
-                return; // Si el timer de invencibilidad está activo, no se puede recibir daño
-            }
-            if (_currentHealth <= 0) return;
+            if (!_invencibilityTimer.IsStopped() || _currentHealth <= 0) return;
 
-            // Knockback: salto hacia arriba y hacia el lado contrario del atacante
+            _currentHealth -= amount;
+            UpdateHearts();
+        
+            if (_currentHealth <= 0)
+            {
+                // El control se bloquea AQUÍ
+                MovementStateMachine?.TransitionTo("DeathMovementState");
+                return;
+            }
+
+            // Si no ha muerto, aplicamos el knockback normal
             float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * KnockbackForceX, KnockbackForceY);
-
-            // Ceder el control al estado de knockback (bloquea el input)
             MovementStateMachine?.TransitionTo("KnockbackMovementState");
 
-            for (int i = 0; i < amount; i++)
-            {
-                if (_currentHealth <= 0) break;
-
-                _currentHealth--;
-                // Guardamos el índice ANTES del await para que no cambie después
-                int heartIndex = _currentHealth;
-                if (heartIndex < 0 || heartIndex >= _hearts.Count) break;
-                TextureRect heart = _hearts[heartIndex];
-
-                if (heart.Material is ShaderMaterial mat)
-                {
-                    mat.SetShaderParameter("damage_flash", 1.0f);
-
-                    await ToSignal(GetTree().CreateTimer(0.1f), "timeout");
-
-                    mat.SetShaderParameter("damage_flash", 0.0f);
-                    mat.SetShaderParameter("fill_amount", 0.0f);
-                }
-            }
             _invencibilityTimer.Start();
         }
 

@@ -148,9 +148,15 @@ namespace Faeterna.Scripts.Personaje
 
         public override void _Process(double delta)
         {
-            if (_lira == null || _stateMachine == null) return;
-
+        if (_lira == null || _stateMachine == null) return;
+        
             string movState = _lira.MovementStateMachine?.CurrentStateName ?? "";
+            
+            if (movState == "DeathMovementState")
+            {
+                if (CurrentState() != "dead") Travel("dead");
+                return; // Bloquea cualquier otra actualización (como el Idle)
+            }
 
             switch (movState)
             {
@@ -197,10 +203,20 @@ namespace Faeterna.Scripts.Personaje
                     }
                 break;
                 case "getHit":
-                    // getHit también lo gestiona su propio estado,
-                    // el AnimationTree vuelve solo por la flecha verde getHit → idle
                     break;
-                // kick NO se gestiona aquí — lo controla AttackMovementState
+                case "DeathMovementState":
+                // Si aún no ha tocado el suelo, que siga en animación de caída
+                // Una vez que el script de estado cambie a "die", el AnimTree lo mostrará
+                if (CurrentState() != "dead" && !_lira.IsOnFloor())
+                {
+                    PlayFall();
+                }
+                else if (CurrentState() != "dead" && _lira.IsOnFloor())
+                {
+                    // Esto es un respaldo por si el Start("die") del estado tarda un frame
+                    Start("dead");
+                }
+                break;
             }
         }
 

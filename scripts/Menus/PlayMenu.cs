@@ -87,6 +87,7 @@ namespace Faeterna.Scripts.Menus
         /// <param name="id">Índice del botón de slot que fue presionado.</param>
         private void OnSavePressed(int id)
         {
+            Engine.TimeScale = 1f;
             // Reproducir la animación de press en el botón correspondiente
             if (id >= 0 && id < _saveButtons.Count)
             {

@@ -13,4 +13,4 @@ scale = Vector2(1.5, 1.5)
 position = Vector2(2923, 3997)
 
 [node name="CharacterBody3D" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(3906, 2504)
+position = Vector2(3612, 3705)
