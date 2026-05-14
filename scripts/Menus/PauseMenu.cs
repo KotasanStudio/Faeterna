@@ -151,7 +151,6 @@ namespace Faeterna.Scripts.Menus
                     VisibleUI(true);
                     GetTree().Paused = false;
                     Visible = false;
-                    //_player.VisibleUI(true);
                 });
         }
 

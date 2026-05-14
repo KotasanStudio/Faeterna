@@ -98,7 +98,8 @@ namespace Faeterna.Scripts.Personaje
             await TryLoadFromActiveSlotAsync();
 
         }
-          private async Task TryLoadFromActiveSlotAsync()
+
+        private async Task TryLoadFromActiveSlotAsync()
         {
             GameData gameData = await GameSaveService.LoadActiveSlotAsync();
             if (gameData?.PlayerData == null)
@@ -115,7 +116,8 @@ namespace Faeterna.Scripts.Personaje
 
             ApplySaveData(gameData.PlayerData);
         }
-           public PlayerSaveData BuildSaveData(Vector2 position)
+
+        public PlayerSaveData BuildSaveData(Vector2 position)
         {
             return new PlayerSaveData
             {
@@ -142,8 +144,6 @@ namespace Faeterna.Scripts.Personaje
             UpdateMana();
         }
 
-
-
         /// <summary>
         /// Reproduce una animación en el <see cref="AnimatedSprite2D"/> hijo.
         /// Método auxiliar usado por los estados para cambiar la animación.
@@ -156,8 +156,6 @@ namespace Faeterna.Scripts.Personaje
                 GD.Print($"Setting animation to: {animationName}");
             }
         }
-
-
 
         /// <summary>
         /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto
