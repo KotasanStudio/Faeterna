@@ -456,7 +456,7 @@ height = 45.254833
 radius = 5.6568546
 height = 68.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea") groups=["Lira"]]
+[node name="Lira" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea") groups=["Lira"]]
 collision_layer = 2
 script = ExtResource("1_v5fc5")
 _hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
@@ -524,7 +524,7 @@ script = ExtResource("18_vo67c")
 
 [node name="Camera3D" type="Camera2D" parent="." unique_id=943068567]
 position = Vector2(0, -0.146)
-zoom = Vector2(1.2, 1.2)
+zoom = Vector2(0.5, 0.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=890193285]
 layer = 10
