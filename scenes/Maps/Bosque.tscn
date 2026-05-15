@@ -1022,8 +1022,8 @@ frame_progress = 0.7999782
 [node name="Area2D" type="Area2D" parent="Tutorial/Turotial Combate" unique_id=1044021214]
 position = Vector2(1313, 324)
 rotation = 0.7853982
-collision_layer = 255
-collision_mask = 255
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Turotial Combate/Area2D" unique_id=1652764419]
 position = Vector2(0.5, 98.5)

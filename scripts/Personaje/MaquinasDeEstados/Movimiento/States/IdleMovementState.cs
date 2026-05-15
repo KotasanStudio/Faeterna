@@ -2,6 +2,7 @@ using Godot;
 using System;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
+using Faeterna.Scripts.Tools;
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
@@ -50,6 +51,21 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 stateMachine.TransitionTo("MagicMovementState");
             if (ev.IsActionPressed("kick"))
                 stateMachine.TransitionTo("AttackMovementState");
+            if (ev.IsActionPressed("interact")) 
+            {
+                var areas = _player.GetNode<Area2D>("HurtBox").GetOverlappingAreas();
+                foreach (var area in areas)
+                {
+                    if (area.GetParent() is CheckPoint cp)
+                    {
+                        var prayState = stateMachine.GetNode<StartPrayMovementState>("StartPrayMovementState");
+                        prayState.TargetPosition = cp.GetPrayPosition();
+                        prayState.CurrentCheckPoint = cp;
+                        stateMachine.TransitionTo("StartPrayMovementState");
+                        return;
+                    }
+                }
+            }
         }
     }
 }
