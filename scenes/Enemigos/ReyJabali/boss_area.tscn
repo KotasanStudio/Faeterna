@@ -18,6 +18,7 @@ shape = SubResource("RectangleShape2D_kxrk6")
 
 [node name="ReyJabali" parent="." unique_id=477752749 node_paths=PackedStringArray("_bossArea") instance=ExtResource("1_frhbb")]
 _bossArea = NodePath("..")
+flipSprite = true
 
 [connection signal="body_entered" from="." to="ReyJabali" method="_on_boss_area_body_entered"]
 [connection signal="body_exited" from="." to="ReyJabali" method="_on_boss_area_body_exited"]

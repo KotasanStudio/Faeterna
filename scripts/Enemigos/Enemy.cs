@@ -17,6 +17,7 @@ namespace Faeterna.Scripts.Enemigos
         [Export] public Area2D hurtBox;
         [Export] public Area2D attackHitBox;
         [Export] public bool flipSprite; 
+        [Export] public AudioStreamPlayer2D audioPlayer;
         public int dashDirection = 1;
         public float knockbackTimer = 0f;
         public ShaderMaterial shaderMaterial;

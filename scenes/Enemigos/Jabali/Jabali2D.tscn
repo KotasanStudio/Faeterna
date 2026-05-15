@@ -326,7 +326,7 @@ size = Vector2(90, 37)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(409.83334, 60)
 
-[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox")]
+[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox", "audioPlayer")]
 texture_filter = 1
 material = SubResource("ShaderMaterial_oa5ie")
 scale = Vector2(1.5, 1.5)
@@ -344,6 +344,7 @@ detectionArea = NodePath("DetectionArea/CollisionShape2D")
 groundCheck = NodePath("RayCast2D")
 hurtBox = NodePath("Hurtbox")
 attackHitBox = NodePath("AttackHitBox")
+audioPlayer = NodePath("jabaliAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 material = SubResource("ShaderMaterial_bhf6x")
@@ -395,6 +396,8 @@ one_shot = true
 
 [node name="DashTimer" type="Timer" parent="." unique_id=2014169799]
 wait_time = 3.0
+
+[node name="jabaliAudio" type="AudioStreamPlayer2D" parent="." unique_id=1204025287]
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]

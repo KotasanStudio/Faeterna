@@ -193,7 +193,7 @@ size = Vector2(313.5, 327)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_loqlb"]
 size = Vector2(60, 37)
 
-[node name="Wolf2D" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox")]
+[node name="Wolf2D" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox", "audioPlayer")]
 collision_layer = 4
 script = ExtResource("1_loqlb")
 health = 3
@@ -206,6 +206,7 @@ groundCheck = NodePath("RayCast2D")
 hurtBox = NodePath("Hurtbox")
 attackHitBox = NodePath("AttackHitBox")
 flipSprite = true
+audioPlayer = NodePath("wolfAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 material = SubResource("ShaderMaterial_uh525")
@@ -246,6 +247,8 @@ debug_color = Color(1, 1, 0, 0.14901961)
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=1803791051]
 position = Vector2(38, 0)
+
+[node name="wolfAudio" type="AudioStreamPlayer2D" parent="." unique_id=1471866624]
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]

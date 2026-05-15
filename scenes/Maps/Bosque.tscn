@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cw4m38uyic4kr"]
 
+[ext_resource type="Script" uid="uid://bx4u5ad1j3k05" path="res://scripts/Mapa/Bosque.cs" id="1_lnic0"]
 [ext_resource type="PackedScene" uid="uid://ccjmj5b5tboqn" path="res://scenes/Maps/Bosque.tmx" id="1_xyya0"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mbhmg"]
 [ext_resource type="PackedScene" uid="uid://cwk8djg18iojj" path="res://scenes/Maps/check_point.tscn" id="3_mbhmg"]
@@ -588,7 +589,9 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Bosque" type="Node2D" unique_id=1361970253]
+[node name="Bosque" type="Node2D" unique_id=1361970253 node_paths=PackedStringArray("_backgroundMusic")]
+script = ExtResource("1_lnic0")
+_backgroundMusic = NodePath("bosqueBackGroundAudio")
 
 [node name="Bosque" parent="." unique_id=643411856 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
@@ -1106,6 +1109,8 @@ position = Vector2(9035, 2546)
 
 [node name="dash" parent="Objetos" unique_id=1697773906 instance=ExtResource("25_snqwn")]
 position = Vector2(2949, 4072)
+
+[node name="bosqueBackGroundAudio" type="AudioStreamPlayer2D" parent="." unique_id=810852558]
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]

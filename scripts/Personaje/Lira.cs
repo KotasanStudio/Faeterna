@@ -88,8 +88,9 @@ namespace Faeterna.Scripts.Personaje
         [Export] public CpuParticles2D  dobleSaltoParticulas;
 
         private bool _tutorial = false;
-
         [Export] public DeathScreen  _deathScreen;
+        [Export] public AudioStreamPlayer2D audioPlayer;
+
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.

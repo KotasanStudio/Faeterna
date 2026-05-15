@@ -169,7 +169,7 @@ size = Vector2(177.5, 102)
 [sub_resource type="CircleShape2D" id="CircleShape2D_16tdn"]
 radius = 16.0
 
-[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("animatedSprite", "detectionArea", "hurtBox", "attackHitBox")]
+[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("animatedSprite", "detectionArea", "hurtBox", "attackHitBox", "audioPlayer")]
 material = SubResource("ShaderMaterial_cul3j")
 collision_layer = 4
 script = ExtResource("1_7waxi")
@@ -180,6 +180,7 @@ knockbackDuration = 1.0
 detectionArea = NodePath("DetectionArea/CollisionShape2D")
 hurtBox = NodePath("HurtBox")
 attackHitBox = NodePath("AttackHitBox")
+audioPlayer = NodePath("slimeAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1312586001]
 material = SubResource("ShaderMaterial_cky4s")
@@ -221,6 +222,8 @@ collision_mask = 136
 position = Vector2(0, 25)
 shape = SubResource("CircleShape2D_16tdn")
 debug_color = Color(0, 0.5058824, 0.09019608, 0.14901961)
+
+[node name="slimeAudio" type="AudioStreamPlayer2D" parent="." unique_id=555767629]
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]
