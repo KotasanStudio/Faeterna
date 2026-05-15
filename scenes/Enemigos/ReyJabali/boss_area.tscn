@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://cxbgresi8kvbh"]
 
+[ext_resource type="Script" uid="uid://bxkluudo3veo1" path="res://scripts/Mapa/BossArea.cs" id="1_1tx7y"]
 [ext_resource type="PackedScene" uid="uid://dwu0wm53g8n86" path="res://scenes/Enemigos/ReyJabali/ReyJabali2D.tscn" id="1_frhbb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kxrk6"]
 size = Vector2(1179, 644)
 
-[node name="BossArea" type="Area2D" unique_id=494204519]
+[node name="BossArea" type="Area2D" unique_id=494204519 node_paths=PackedStringArray("_reyJabali")]
 collision_layer = 32
 collision_mask = 2
+script = ExtResource("1_1tx7y")
+_reyJabali = NodePath("ReyJabali")
 
 [node name="BossAreaCollision" type="CollisionShape2D" parent="." unique_id=168652867]
 position = Vector2(52.5, -145)

@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="22_clm75"]
 [ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="24_hn01x"]
+[ext_resource type="PackedScene" uid="uid://dxc8at77ej36c" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_be71p"]
 polygon = PackedVector2Array(1485, 3116, 1537, 3167, 1772, 3169, 1822, 3120, 2643, 3123, 2598, 3075, 2774, 3075, 2717, 3166, 3079, 3168, 3030, 3026, 3286, 3025, 3172, 2931, 3368, 2930, 3318, 2834, 3700, 2833, 3604, 2641, 3704, 2640, 3652, 2592, 4167, 2596, 4130, 2643, 4217, 2643, 4168, 2783, 4313, 2785, 4087, 2876, 4066, 3162, 4104, 3168, 4168, 3168, 4117, 3316, 4313, 3313, 4109, 3396, 2307, 3443, 912, 3957, 873, 3795, 1060, 3791, 1008, 3574, 874, 3508, 1184, 3503, 1121, 3222, 893, 3233, 870, 3170, 1006, 3173, 918, 3124, 1060, 3118, 970, 2964, 873, 2881, 1442, 2881, 1487, 2926, 1343, 3123)
@@ -1034,13 +1035,14 @@ rotation = 0.7853982
 shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(1618, 1714)
+position = Vector2(1614, 1724)
 platform_wall_layers = 1
 
 [node name="Enemys" type="Node2D" parent="." unique_id=1084485302]
 
-[node name="BossArea" parent="Enemys" unique_id=494204519 instance=ExtResource("23_ta6li")]
+[node name="BossArea" parent="Enemys" unique_id=494204519 node_paths=PackedStringArray("_dashItem") instance=ExtResource("23_ta6li")]
 position = Vector2(2875, 3950)
+_dashItem = NodePath("../../Objetos/dash")
 
 [node name="Slime2D2" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
 position = Vector2(5083, 1691)
@@ -1099,8 +1101,11 @@ flipSprite = true
 
 [node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
 
-[node name="Objeto" parent="Objetos" unique_id=577156713 instance=ExtResource("21_2jxkj")]
-position = Vector2(9005, 2583)
+[node name="doubleJump" parent="Objetos" unique_id=577156713 instance=ExtResource("25_snqwn")]
+position = Vector2(9035, 2546)
+
+[node name="dash" parent="Objetos" unique_id=1697773906 instance=ExtResource("25_snqwn")]
+position = Vector2(2949, 4072)
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]

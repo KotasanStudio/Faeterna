@@ -39,6 +39,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         [Export] private Timer _loadAttackTimer; // Timer para controlar la carga del ataque
         [Export] private Timer _deathAnimationTimer; // Timer para controlar la duración de la animación de muerte
 
+        [Signal] public delegate void jabaliBossdeathEventHandler();
         private Random _rnd = new();
 
 
@@ -296,6 +297,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
             DesactiveCollision();
             SetAnimation("die");
+            EmitSignal(nameof(jabaliBossdeath));
             _deathAnimationTimer.Start();
         }
 
