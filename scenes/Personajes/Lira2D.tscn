@@ -37,6 +37,7 @@
 [ext_resource type="Script" uid="uid://dlyn7jpyohkuk" path="res://scripts/Personaje/LiraAnimationTree.cs" id="31_18h5y"]
 [ext_resource type="PackedScene" uid="uid://h12nrsoj3d6o" path="res://scenes/Menus/pause_menu.tscn" id="31_xq1aa"]
 [ext_resource type="PackedScene" uid="uid://cjhvs50wouamw" path="res://scenes/Menus/death_screen.tscn" id="32_e80u2"]
+[ext_resource type="PackedScene" uid="uid://chac0s2mfxair" path="res://scenes/Maps/objeto_description.tscn" id="33_7lnvu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyc13"]
 atlas = ExtResource("2_v5fc5")
@@ -1469,6 +1470,9 @@ texture = ExtResource("14_5f38a")
 _player = NodePath("../../..")
 
 [node name="DeathScreen" parent="Camera3D/Pantallas" unique_id=333491521 instance=ExtResource("32_e80u2")]
+visible = false
+
+[node name="ObjetoDescription" parent="Camera3D/Pantallas" unique_id=1057756611 instance=ExtResource("33_7lnvu")]
 visible = false
 
 [node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]
