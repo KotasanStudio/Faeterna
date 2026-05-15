@@ -31,7 +31,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         {
             if (_player == null)
                 return;
-
+            _player.PlayAudio("jump");
             _player.SetAnimation("jump");
             // En 2D, JumpVelocity es negativo (hacia arriba).
             _player.Velocity = new Vector2(_player.Velocity.X, PlayerType.JumpVelocity);

@@ -8,11 +8,18 @@
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
+[ext_resource type="AudioStream" uid="uid://7akkp6d62eo6" path="res://assets/Audio/Lira/LiraHit.wav" id="3_jujei"]
 [ext_resource type="Texture2D" uid="uid://d0cpl0qv75ay" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
+[ext_resource type="AudioStream" uid="uid://c6q8fsrih22w6" path="res://assets/Audio/Lira/LiraGrass.wav" id="4_1e1de"]
 [ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="AudioStream" uid="uid://c27tqr337yew5" path="res://assets/Audio/Lira/LIraJump.wav" id="5_lr3db"]
 [ext_resource type="Texture2D" uid="uid://cnj1oxgj5nh8i" path="res://assets/Liria/Lira Hit.png" id="6_8j2b6"]
 [ext_resource type="Texture2D" uid="uid://bo5k8rqfcajfu" path="res://assets/Liria/Lira Death.png" id="6_atuup"]
+[ext_resource type="AudioStream" uid="uid://bb3lbnuk1y0i" path="res://assets/Audio/Lira/LiraFalling.wav" id="6_yx44d"]
+[ext_resource type="AudioStream" uid="uid://3qtsk70seoh4" path="res://assets/Audio/Lira/LiraAttack.wav" id="7_6vkvx"]
+[ext_resource type="AudioStream" uid="uid://dumt6oop1pmiq" path="res://assets/Audio/Lira/bolaDeFuego.mp3" id="8_voyht"]
 [ext_resource type="Texture2D" uid="uid://duge2wg4u1nly" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
+[ext_resource type="AudioStream" uid="uid://bxq3kse53w71r" path="res://assets/Audio/Lira/LiraDash.mp3" id="9_pm8op"]
 [ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/IdleMovementState.cs" id="10_qnkxa"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" id="10_v5fc5"]
 [ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/RunningMovementState.cs" id="11_v5fc5"]
@@ -1316,6 +1323,8 @@ graph_offset = Vector2(0, -60.611095)
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e80u2"]
 height = 68.0
 
+[sub_resource type="AudioStream" id="AudioStream_jujei"]
+
 [node name="Lira" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas", "_deathScreen", "_objectoDescription", "audioPlayer") groups=["Lira"]]
 light_mask = 4
 visibility_layer = 4
@@ -1333,6 +1342,13 @@ dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
 _deathScreen = NodePath("Camera3D/Pantallas/DeathScreen")
 _objectoDescription = NodePath("Camera3D/Pantallas/ObjetoDescription")
 audioPlayer = NodePath("liraAudio")
+_hitAudio = ExtResource("3_jujei")
+_runAudio = ExtResource("4_1e1de")
+_jumpAudio = ExtResource("5_lr3db")
+_fallAudio = ExtResource("6_yx44d")
+_attackAudio = ExtResource("7_6vkvx")
+_fireBallAudio = ExtResource("8_voyht")
+_dashAudio = ExtResource("9_pm8op")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1601,6 +1617,8 @@ position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_e80u2")
 debug_color = Color(0.81988335, 0.0018108714, 0.96790856, 0.41960785)
 
-[node name="liraAudio" type="AudioStreamPlayer2D" parent="." unique_id=908047475]
+[node name="liraAudio" type="AudioStreamPlayer2D" parent="." unique_id=555152339]
+stream = SubResource("AudioStream_jujei")
+bus = &"Sound FX"
 
 [connection signal="area_entered" from="KickHitbox" to="." method="OnKickHitboxAreaEntered"]

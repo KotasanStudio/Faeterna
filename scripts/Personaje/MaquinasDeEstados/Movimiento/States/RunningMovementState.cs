@@ -36,6 +36,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void Enter()
         {
             if (_player == null) return;
+                _player.PlayAudio("run");
             _player.SetAnimation("run");
             _player.terrainParticles.Emitting = true;
         }

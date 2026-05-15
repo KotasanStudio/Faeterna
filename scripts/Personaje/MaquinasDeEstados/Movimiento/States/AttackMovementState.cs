@@ -29,6 +29,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void Enter()
         {
             if (_player == null) return;
+            _player.PlayAudio("attack");
 
             _player.SetAnimation("kick");
 

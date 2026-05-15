@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://8gf5nfnp207n"]
+
+[ext_resource type="Texture2D" uid="uid://drc1jgcl48l3t" path="res://assets/Menu/PAntallaCarga.png" id="1_nmyk1"]
+[ext_resource type="Script" uid="uid://dl2kpn61veu2w" path="res://scripts/Menus/PantallaCarga.cs" id="1_vw1s1"]
+[ext_resource type="PackedScene" uid="uid://pcul87tmeir8" path="res://scenes/Maps/Poblado.tscn" id="2_x7fjg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw1s1"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7fjg"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyya2"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfoyn"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h36b2"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lj2fl"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jefjk"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7v5f"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdq4f"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(3072, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrv2b"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(3456, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cve1b"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(3840, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ykvqs"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(4224, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nmf3"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(4608, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8oq2h"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(4992, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5wd0"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(5376, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imypc"]
+atlas = ExtResource("1_nmyk1")
+region = Rect2(5760, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_icm18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw1s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7fjg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyya2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfoyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h36b2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lj2fl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jefjk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7v5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdq4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrv2b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cve1b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ykvqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nmf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8oq2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5wd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imypc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="PantallaCarga" type="Control" unique_id=1188077896]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+script = ExtResource("1_vw1s1")
+nextScene = ExtResource("2_x7fjg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=493094629]
+sprite_frames = SubResource("SpriteFrames_icm18")
+autoplay = "default"
+frame = 15
+frame_progress = 1.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1088707078]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="pantallaCargaCompletado"]

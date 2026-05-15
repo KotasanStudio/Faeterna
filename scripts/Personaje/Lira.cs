@@ -7,6 +7,7 @@ using Faeterna.Scripts.Menus;
 using Faeterna.scripts.Personaje;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 using System;
+using System.ComponentModel;
 
 namespace Faeterna.Scripts.Personaje
 {
@@ -93,8 +94,15 @@ namespace Faeterna.Scripts.Personaje
         private bool _haveDash { get; set;} = false;
         [Export] public DeathScreen  _deathScreen;
         [Export] public ObjetoDescription _objectoDescription;
+        [ExportGroup("Audios")]
         [Export] public AudioStreamPlayer2D audioPlayer;
-
+        [Export] public AudioStream _hitAudio;
+        [Export] public AudioStream _runAudio;
+        [Export] public AudioStream _jumpAudio;
+        [Export] public AudioStream _fallAudio;
+        [Export] public AudioStream _attackAudio;
+        [Export] public AudioStream _fireBallAudio;
+        [Export] public AudioStream _dashAudio;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
@@ -182,6 +190,47 @@ namespace Faeterna.Scripts.Personaje
                 GD.Print($"Setting animation to: {animationName}");
             }
         }
+        public void PlayAudio(string audioName)
+        {
+            if (audioPlayer == null)
+            {
+                GD.PrintErr("AudioStreamPlayer2D no asignado en Lira");
+                return;
+            }
+
+            switch (audioName)
+            {
+                case "run":
+                    audioPlayer.Stream = _runAudio;
+                    audioPlayer.VolumeDb = -10f; // Reducir volumen para el audio de correr
+                    break;
+                case "jump":
+                    audioPlayer.Stream = _jumpAudio;
+                    break;
+                case "fall":
+                    audioPlayer.Stream = _fallAudio;
+                    break;
+                case "attack":
+                    audioPlayer.Stream = _attackAudio;
+                    break;
+                case "fireball":
+                    audioPlayer.Stream = _fireBallAudio;
+                    break;
+                case "dash":
+                    audioPlayer.Stream = _dashAudio;
+                    break;
+                case "hit":
+                    audioPlayer.Stream = _hitAudio;
+                    break;
+                    case "idle":
+                    audioPlayer.Stream = null;
+                    break;
+                default:
+                    GD.PrintErr($"Nombre de audio desconocido: {audioName}");
+                    return;
+            }
+            audioPlayer.Play();
+        }
 
         /// <summary>
         /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto
@@ -197,15 +246,6 @@ namespace Faeterna.Scripts.Personaje
             }
             _currentHealth -= amount;
             UpdateHearts();
-            if (audioPlayer != null)
-            {
-                audioPlayer.Stream = GD.Load<AudioStream>("hitAudio");
-                audioPlayer.Play();
-            }
-            else
-            {
-                GD.PrintErr("AudioStreamPlayer2D no asignado en Lira");
-            }
             if (_currentHealth <= 0)
             {
                 // El control se bloquea AQUÍ

@@ -2,15 +2,23 @@ using Godot;
 using System;
 using Faeterna.Scripts.Personaje;
 using System.Runtime.CompilerServices;
+using System.ComponentModel;
 
 namespace Faeterna.Scripts.Mapa
 {
 	public partial class Portal : Area2D
 	{
-		private void OnBodyEnteredPortal(Node2D body)
+		public void onBodyEnteredPortal(Node2D body)
 		{
 			if (body is Lira lira)
-				GetTree().ChangeSceneToFile("res://scenes/Maps/Poblado.tscn");
+				CallDeferred(MethodName.ChangeScene);
+
+
+		}
+
+		private void ChangeScene()
+		{
+			GetTree().ChangeSceneToFile("res://scenes/Menus/pantalla_carga.tscn");
 		}
 	}
 }

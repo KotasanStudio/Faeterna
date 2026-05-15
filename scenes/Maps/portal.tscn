@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://d3kksdowwdkly"]
+[gd_scene format=3 uid="uid://b5dfghgf6tja0"]
 
 [ext_resource type="Script" uid="uid://dbgqctdfp7cuk" path="res://scripts/Mapa/Portal.cs" id="1_51m2i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k0l50"]
-size = Vector2(52.75, 328.875)
+size = Vector2(43.1875, 328.875)
 
 [node name="Portal" type="Area2D" unique_id=1535852739]
 collision_layer = 512
@@ -11,7 +11,13 @@ collision_mask = 2
 script = ExtResource("1_51m2i")
 
 [node name="PortalCollision" type="CollisionShape2D" parent="." unique_id=1169495757]
+position = Vector2(5, 0)
 shape = SubResource("RectangleShape2D_k0l50")
 debug_color = Color(0.77897066, 0.43854138, 1.92523e-07, 0.41960785)
 
+[node name="Timer" type="Timer" parent="." unique_id=503890695]
+wait_time = 2.0
+one_shot = true
+
 [connection signal="body_entered" from="." to="." method="onBodyEnteredPortal"]
+[connection signal="timeout" from="Timer" to="." method="completado"]

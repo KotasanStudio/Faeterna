@@ -153,11 +153,11 @@ namespace Faeterna.Scripts.Tools
                 (int)config.GetValue("Video", "fpslock", 0),
                 (int)config.GetValue("Video", "fps_value", 60),
                 (int)config.GetValue("Video", "shadows", 0),
-                (float)(double)config.GetValue("Sound", "master", 1.0),
-                (float)(double)config.GetValue("Sound", "music", 1.0),
-                (float)(double)config.GetValue("Sound", "soundfx", 1.0),
-                (float)(double)config.GetValue("Sound", "enviroment", 1.0),
-                (float)(double)config.GetValue("Sound", "uisound", 1.0)
+                (float)(double)config.GetValue("Sound", "master", 100.0),
+                (float)(double)config.GetValue("Sound", "music", 100.0),
+                (float)(double)config.GetValue("Sound", "soundfx", 100.0),
+                (float)(double)config.GetValue("Sound", "enviroment", 100.0),
+                (float)(double)config.GetValue("Sound", "uisound", 100.0)
             );
         }
 

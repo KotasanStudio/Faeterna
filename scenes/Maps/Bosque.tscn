@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="24_hn01x"]
 [ext_resource type="PackedScene" uid="uid://dxc8at77ej36c" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
-[ext_resource type="PackedScene" uid="uid://d3kksdowwdkly" path="res://scenes/Maps/portal.tscn" id="27_q85yk"]
+[ext_resource type="PackedScene" uid="uid://b5dfghgf6tja0" path="res://scenes/Maps/portal.tscn" id="27_q85yk"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_be71p"]
 polygon = PackedVector2Array(1485, 3116, 1537, 3167, 1772, 3169, 1822, 3120, 2643, 3123, 2598, 3075, 2774, 3075, 2717, 3166, 3079, 3168, 3030, 3026, 3286, 3025, 3172, 2931, 3368, 2930, 3318, 2834, 3700, 2833, 3604, 2641, 3704, 2640, 3652, 2592, 4167, 2596, 4130, 2643, 4217, 2643, 4168, 2783, 4313, 2785, 4087, 2876, 4066, 3162, 4104, 3168, 4168, 3168, 4117, 3316, 4313, 3313, 4109, 3396, 2307, 3443, 912, 3957, 873, 3795, 1060, 3791, 1008, 3574, 874, 3508, 1184, 3503, 1121, 3222, 893, 3233, 870, 3170, 1006, 3173, 918, 3124, 1060, 3118, 970, 2964, 873, 2881, 1442, 2881, 1487, 2926, 1343, 3123)
@@ -1098,7 +1098,7 @@ _itemId = 1
 position = Vector2(9117, 535)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
-position = Vector2(9908, 418)
+position = Vector2(9911, 413)
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
