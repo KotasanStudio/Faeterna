@@ -3,10 +3,117 @@
 [ext_resource type="PackedScene" uid="uid://bfmip8vxtep10" path="res://scenes/Maps/Poblado.tmx" id="1_khiku"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_natxa"]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_khiku"]
+polygon = PackedVector2Array(768, 769, 2895, 769, 2821, 703, 4474, 704, 4425, 769, 4536, 768, 4638, 897, 4793, 897, 4744, 1090, 4858, 1089, 4955, 1217, 5368, 1217, 5334, 1281, 9096, 1280, 9186, 1201, 9220, 1208, 9269, 1262, 9274, 1281, 9390, 1280, 9265, 1408, 941, 1414)
+
+[sub_resource type="Gradient" id="Gradient_khiku"]
+colors = PackedColorArray(0, 0, 0, 1, 0.73300546, 0.7330054, 0.7330054, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_natxa"]
+gradient = SubResource("Gradient_khiku")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_natxa"]
+colors = PackedColorArray(0, 0, 0, 1, 0.73300546, 0.7330054, 0.7330054, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a356h"]
+gradient = SubResource("Gradient_natxa")
+fill_from = Vector2(0.20434782, 0.17826086)
+fill_to = Vector2(0.47826087, 0.4478261)
+
+[sub_resource type="Gradient" id="Gradient_a356h"]
+colors = PackedColorArray(0, 0, 0, 1, 0.73300546, 0.7330054, 0.7330054, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tesvt"]
+gradient = SubResource("Gradient_a356h")
+fill_from = Vector2(0.5565217, 0.21304348)
+fill_to = Vector2(0.33043477, 0.3347826)
+
+[sub_resource type="Gradient" id="Gradient_tesvt"]
+colors = PackedColorArray(0, 0, 0, 1, 0.73300546, 0.7330054, 0.7330054, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cl58p"]
+gradient = SubResource("Gradient_tesvt")
+fill_from = Vector2(0.3, 0.57058823)
+fill_to = Vector2(0.89411765, 0.6)
+
+[sub_resource type="Gradient" id="Gradient_ok4dl"]
+colors = PackedColorArray(0, 0, 0, 1, 0.73300546, 0.7330054, 0.7330054, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kkjrb"]
+gradient = SubResource("Gradient_ok4dl")
+fill_from = Vector2(0.5, 0.029411765)
+fill_to = Vector2(0, 0.12352941)
+
 [node name="Poblado" type="Node2D" unique_id=787324181]
 
-[node name="Poblado" parent="." unique_id=1235086971 instance=ExtResource("1_khiku")]
-scale = Vector2(2, 2)
+[node name="Poblado" parent="." unique_id=1921998049 instance=ExtResource("1_khiku")]
+scale = Vector2(1.5, 1.5)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Poblado" unique_id=1048404799]
+scale = Vector2(0.5, 0.5)
+color = Color(0.26657522, 0.2665752, 0.2665752, 1)
+
+[node name="Node" type="Node" parent="Poblado" unique_id=567297692]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Poblado/Node" unique_id=1900464634]
+show_behind_parent = true
+occluder = SubResource("OccluderPolygon2D_khiku")
+occluder_light_mask = 0
+
+[node name="Forest 1" type="PointLight2D" parent="Poblado" unique_id=1382710453]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(938.625, 3)
+scale = Vector2(26.105467, 14.257811)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_natxa")
+
+[node name="Forest 2" type="PointLight2D" parent="Poblado" unique_id=1943158491]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(2116.25, 107.375)
+scale = Vector2(10.695313, 17.51953)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_a356h")
+
+[node name="Forest 3" type="PointLight2D" parent="Poblado" unique_id=1442702224]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(2732, 107.875)
+scale = Vector2(8.546874, 17.51953)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_tesvt")
+
+[node name="Forest 4" type="PointLight2D" parent="Poblado" unique_id=323472813]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(3466.75, 294.49997)
+scale = Vector2(12.414062, 11.1875)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_natxa")
+
+[node name="Forest 5" type="PointLight2D" parent="Poblado" unique_id=651324439]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(4033.6917, 294.5)
+scale = Vector2(5.301306, 11.1875)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_cl58p")
+
+[node name="Forest 6" type="PointLight2D" parent="Poblado" unique_id=711418066]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(4430.9414, 294.5)
+scale = Vector2(7.1127596, 11.1875)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_kkjrb")
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_natxa")]
 position = Vector2(884, 580)

@@ -24,6 +24,9 @@ namespace Faeterna.Scripts.Menus
         /// <summary>Referencia al jugador (Lira) para controlar la visibilidad de su interfaz de usuario (UI) al pausar y reanudar el juego. Al pausar, se oculta la UI del jugador para evitar superposiciones con el menú de pausa, y al reanudar se vuelve a mostrar. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el menú de pausa funcione correctamente en relación con la visibilidad de la UI del jugador.</summary>
         [Export] private Lira _player;
 
+        /// <summary>Referencia a la pantalla de muerte. Se utiliza para evitar que se pause el juego cuando el jugador está muerto.</summary>
+        private DeathScreen _deathScreen;
+
         /// <summary>
         /// Se llama cuando el nodo entra en la escena. Configura el menú de pausa para que procese durante la pausa, asigna las funciones de los botones y oculta el menú inicialmente. También configura el fondo oscuro para que no bloquee los clicks sobre los botones del menú.
         /// </summary>
@@ -54,6 +57,10 @@ namespace Faeterna.Scripts.Menus
 				_optionsMenu.ProcessMode = ProcessModeEnum.Always;
 			}
 
+			// Obtener referencia al DeathScreen desde el jugador
+			if (_player != null)
+				_deathScreen = _player._deathScreen;
+
 			Visible = false;
 		}
 
@@ -67,6 +74,13 @@ namespace Faeterna.Scripts.Menus
 		{
 			if (!IsPauseInput(@event))
 				return;
+
+			// No permitir pausar si la pantalla de muerte está visible
+			if (_deathScreen != null && _deathScreen.Visible)
+			{
+				GetViewport().SetInputAsHandled();
+				return;
+			}
 
 			if (GetTree().Paused && _optionsMenu != null && _optionsMenu.Visible)
 				_optionsMenu.Visible = false;
