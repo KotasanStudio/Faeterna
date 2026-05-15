@@ -205,6 +205,7 @@ detectionArea = NodePath("DetectionArea/CollisionShape2D")
 groundCheck = NodePath("RayCast2D")
 hurtBox = NodePath("Hurtbox")
 attackHitBox = NodePath("AttackHitBox")
+flipSprite = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 material = SubResource("ShaderMaterial_uh525")

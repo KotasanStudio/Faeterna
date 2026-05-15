@@ -401,7 +401,7 @@
   </properties>
   <objectgroup draworder="index" id="2">
    <object id="3" x="31.8239" y="0">
-    <polygon points="0.180842,0.0112853 -31.8051,32.0103 0.183722,31.992"/>
+    <polygon points="0.17303,0.0151915 -31.8051,32.0103 0.183722,31.992"/>
    </object>
   </objectgroup>
  </tile>
