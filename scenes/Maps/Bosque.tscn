@@ -609,33 +609,43 @@ color = Color(0.26657522, 0.2665752, 0.2665752, 1)
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Node" unique_id=767578271]
 occluder = SubResource("OccluderPolygon2D_be71p")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D2" type="LightOccluder2D" parent="Node" unique_id=126872874]
 occluder = SubResource("OccluderPolygon2D_2jxkj")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Node" unique_id=741949699]
 occluder = SubResource("OccluderPolygon2D_clm75")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Node" unique_id=884297316]
 occluder = SubResource("OccluderPolygon2D_ta6li")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Node" unique_id=351986985]
 occluder = SubResource("OccluderPolygon2D_hn01x")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Node" unique_id=171505537]
 occluder = SubResource("OccluderPolygon2D_snqwn")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D7" type="LightOccluder2D" parent="Node" unique_id=1258034664]
 occluder = SubResource("OccluderPolygon2D_lnic0")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D8" type="LightOccluder2D" parent="Node" unique_id=214184339]
 occluder = SubResource("OccluderPolygon2D_q85yk")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D9" type="LightOccluder2D" parent="Node" unique_id=832195210]
 occluder = SubResource("OccluderPolygon2D_tbcfi")
+occluder_light_mask = 0
 
 [node name="LightOccluder2D10" type="LightOccluder2D" parent="Node" unique_id=447582800]
 occluder = SubResource("OccluderPolygon2D_qdhim")
+occluder_light_mask = 0
 
 [node name="Cueva" type="Node2D" parent="." unique_id=151732781]
 light_mask = 5
