@@ -30,8 +30,8 @@
 [ext_resource type="Shader" uid="uid://qaoi0sj17ho3" path="res://scripts/Shaders/GUI/Mana.gdshader" id="20_v5fc5"]
 [ext_resource type="Shader" uid="uid://c2q6hkiajhw3b" path="res://scripts/Shaders/GUI/Vida.gdshader" id="22_8gdnm"]
 [ext_resource type="Script" uid="uid://b4a467a47h5xe" path="res://scripts/Personaje/TerrainParticles.cs" id="25_wyc13"]
+[ext_resource type="Script" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" id="26_7lnvu"]
 [ext_resource type="Texture2D" uid="uid://dhg0va7y7elos" path="res://assets/Liria/hiervaParticulas.png" id="26_e4jf0"]
-[ext_resource type="Script" uid="uid://cy5iqog1b5tak" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" id="26_u6if6"]
 [ext_resource type="Script" uid="uid://b8badhpbn1ugs" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/StartPrayMovementState.cs" id="27_e80u2"]
 [ext_resource type="Texture2D" uid="uid://cly17ikbkuqlj" path="res://assets/Liria/tierraParticulas.png" id="27_slhl6"]
 [ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="30_vo67c"]
@@ -1329,7 +1329,6 @@ _bullet = ExtResource("2_8gdnm")
 terrainParticles = NodePath("ParticulasTerreno")
 saltoParticulas = NodePath("ParticulasSalto")
 dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
-_deathScreen = NodePath("Camera3D/CanvasLayer2/DeathScreen")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1412,7 +1411,7 @@ script = ExtResource("17_slhl6")
 script = ExtResource("18_vo67c")
 
 [node name="DeadMovementState" type="Node" parent="MovementStateMachine" unique_id=727975769]
-script = ExtResource("26_u6if6")
+script = ExtResource("26_7lnvu")
 
 [node name="StartPrayMovementState" type="Node" parent="MovementStateMachine" unique_id=779431601]
 script = ExtResource("27_e80u2")
