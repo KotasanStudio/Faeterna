@@ -4,8 +4,8 @@
 [ext_resource type="Theme" uid="uid://cji55sgs7pti4" path="res://mainTeme.tres" id="1_pl1hl"]
 [ext_resource type="Texture2D" uid="uid://bvvppips6fc3j" path="res://assets/Menu/SelectBotton.png" id="2_5crfs"]
 [ext_resource type="PackedScene" uid="uid://bqxuwf8fsoi7h" path="res://scenes/Menus/OptionsMenu.tscn" id="2_faaac"]
-[ext_resource type="Texture2D" uid="uid://bfuqa6n0ry3gx" path="res://assets/Menu/PortadaFaeterna.png" id="3_a24ew"]
 [ext_resource type="Shader" uid="uid://f53icga1vdof" path="res://scripts/Shaders/Menu/Blur.gdshader" id="4_blur"]
+[ext_resource type="Texture2D" uid="uid://h46x6scbv4x8" path="res://assets/Menu/PortadaPixelArt.png" id="4_j8imo"]
 [ext_resource type="PackedScene" uid="uid://cw6eyewgcvqk4" path="res://scenes/Menus/PlayMenu.tscn" id="7_j08g8"]
 [ext_resource type="AudioStream" uid="uid://cfag0rv4aojkd" path="res://assets/Placeholder/lesiakower-stay-focused-383207.mp3" id="8_j8imo"]
 
@@ -39,7 +39,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_a24ew")
+texture = ExtResource("4_j8imo")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2123487203]
 texture_filter = 1
