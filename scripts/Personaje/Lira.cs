@@ -3,6 +3,7 @@ using Godot;
 using Godot.Collections;
 using Faeterna.Scripts.Tools;
 using System.Threading.Tasks;
+using Faeterna.Scripts.Menus;
 using Faeterna.scripts.Personaje;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
 
@@ -58,7 +59,7 @@ namespace Faeterna.Scripts.Personaje
 
         /// <summary>Referencia a la máquina de estados de movimiento.</summary>
         public MovementStateMachine MovementStateMachine;
-        
+
         /// <summary>Controlador del AnimationTree — sincroniza animaciones con el estado de movimiento.</summary>
         public LiraAnimationTree AnimTree;
 
@@ -89,6 +90,8 @@ namespace Faeterna.Scripts.Personaje
 
         private bool _tutorial = false;
 
+        [Export] public DeathScreen  _deathScreen;
+
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
         /// </summary>
@@ -102,7 +105,7 @@ namespace Faeterna.Scripts.Personaje
             UpdateHearts();
             UpdateMana();
             await TryLoadFromActiveSlotAsync();
-            
+
         }
 
         private async Task TryLoadFromActiveSlotAsync()
@@ -130,21 +133,34 @@ namespace Faeterna.Scripts.Personaje
                 Position = position,
                 Health = _currentHealth,
                 Mana = _currentMana,
-                DoubleJumpAvailable = DoubleJumpAvailable,
-                DashAvailable = DashAvailable,
-                CoyoteAvailable = CoyoteAvailable
+                // NO guardamos las flags de movimiento (DoubleJump, Dash, Coyote) porque
+                // son transitorias y se manejan exclusivamente por la máquina de estados.
+                // Guardarlas causaría inconsistencias cuando el jugador carga.
+                DoubleJumpAvailable = true,
+                DashAvailable = true,
+                CoyoteAvailable = true
             };
         }
 
         public void ApplySaveData(PlayerSaveData saveData)
         {
             GlobalPosition = saveData.Position;
+            Velocity = Vector2.Zero;
 
             _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
             _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
-            DoubleJumpAvailable = saveData.DoubleJumpAvailable;
-            DashAvailable = saveData.DashAvailable;
-            CoyoteAvailable = saveData.CoyoteAvailable;
+
+            // IMPORTANTE: Los flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable)
+            // SIEMPRE se resetean a true al cargar, independientemente del valor guardado.
+            // Razones:
+            // 1. Estos flags son transitorios y se manejan completamente por la máquina de estados
+            // 2. Guardarlos causaría comportamientos no deseados (triple saltos, saltos infinitos)
+            // 3. Cuando el jugador carga en un checkpoint, comienza con un estado limpio
+            // 4. El flag CoyoteAvailable será controlado por RunningMovementState (línea 72)
+            // 5. El flag DoubleJumpAvailable será restaurado por FallingMovementState (línea 79)
+            DoubleJumpAvailable = true;
+            DashAvailable = true;
+            CoyoteAvailable = true;
 
             UpdateHearts();
             UpdateMana();
@@ -175,7 +191,7 @@ namespace Faeterna.Scripts.Personaje
 
             _currentHealth -= amount;
             UpdateHearts();
-        
+
             if (_currentHealth <= 0)
             {
                 // El control se bloquea AQUÍ
@@ -283,12 +299,12 @@ namespace Faeterna.Scripts.Personaje
             var InstanciaShot = (Shot)_bullet.Instantiate();
             InstanciaShot.ManaCost = (float)manaCost;
             InstanciaShot.Scale = new Vector2((float)shotBallScale, (float)shotBallScale);
-        
+
             if ((_currentMana - InstanciaShot.ManaCost) >= 0)
             {
                 // CAMBIO AQUÍ: En lugar de SetAnimation, usa el AnimTree
-                AnimTree?.Travel("shot"); 
-                
+                AnimTree?.Travel("shot");
+
                 UseMana(InstanciaShot.ManaCost);
                 if (ItsFliped)
                     InstanciaShot.Direction = new Vector2(-1, 0);

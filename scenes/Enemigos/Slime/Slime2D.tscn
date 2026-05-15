@@ -157,11 +157,12 @@ radius = 16.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(177.5, 102)
 
-[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("_detectionArea", "_hurtBox")]
+[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("_detectionArea", "_hurtBox", "_animatedSprite")]
 collision_layer = 4
 script = ExtResource("1_7waxi")
 _detectionArea = NodePath("DetectionArea/CollisionShape2D")
 _hurtBox = NodePath("HurtBox")
+_animatedSprite = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1312586001]
 sprite_frames = SubResource("SpriteFrames_60w7s")

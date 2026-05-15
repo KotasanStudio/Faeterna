@@ -36,6 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://bbo3t7137mt3j" path="res://assets/Liria/SaltoParticulas.png" id="30_vo67c"]
 [ext_resource type="Script" uid="uid://dlyn7jpyohkuk" path="res://scripts/Personaje/LiraAnimationTree.cs" id="31_18h5y"]
 [ext_resource type="PackedScene" uid="uid://h12nrsoj3d6o" path="res://scenes/Menus/pause_menu.tscn" id="31_xq1aa"]
+[ext_resource type="PackedScene" uid="uid://cjhvs50wouamw" path="res://scenes/Menus/death_screen.tscn" id="32_e80u2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyc13"]
 atlas = ExtResource("2_v5fc5")
@@ -495,7 +496,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 8.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1308,7 +1309,7 @@ states/startPray/position = Vector2(622, 179.3889)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_18h5y"), "idle", "jump", SubResource("AnimationNodeStateMachineTransition_7kpwc"), "idle", "aim", SubResource("AnimationNodeStateMachineTransition_atuup"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_u6if6"), "idle", "fall", SubResource("AnimationNodeStateMachineTransition_xq1aa"), "getHit", "idle", SubResource("AnimationNodeStateMachineTransition_e80u2"), "aim", "shot", SubResource("AnimationNodeStateMachineTransition_7lnvu"), "aim", "idle", SubResource("AnimationNodeStateMachineTransition_h0thm"), "shot", "aim", SubResource("AnimationNodeStateMachineTransition_tb3r6"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_v7o1k"), "run", "jump", SubResource("AnimationNodeStateMachineTransition_u3kni"), "fall", "idle", SubResource("AnimationNodeStateMachineTransition_7dora"), "idle", "dash", SubResource("AnimationNodeStateMachineTransition_u31ip"), "run", "dash", SubResource("AnimationNodeStateMachineTransition_jujei"), "idle", "kick", SubResource("AnimationNodeStateMachineTransition_1e1de"), "run", "fall", SubResource("AnimationNodeStateMachineTransition_yx44d"), "dash", "fall", SubResource("AnimationNodeStateMachineTransition_6vkvx"), "jump", "run", SubResource("AnimationNodeStateMachineTransition_voyht"), "jump", "idle", SubResource("AnimationNodeStateMachineTransition_pm8op"), "idle", "startPray", SubResource("AnimationNodeStateMachineTransition_acq8h"), "run", "startPray", SubResource("AnimationNodeStateMachineTransition_gbpvv"), "startPray", "leavePray", SubResource("AnimationNodeStateMachineTransition_uwmry"), "leavePray", "idle", SubResource("AnimationNodeStateMachineTransition_o3lq2"), "leavePray", "run", SubResource("AnimationNodeStateMachineTransition_0ekvt"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_lr3db"), "dash", "idle", SubResource("AnimationNodeStateMachineTransition_yhnoj"), "dash", "run", SubResource("AnimationNodeStateMachineTransition_cj5pr"), "getHit", "dead", SubResource("AnimationNodeStateMachineTransition_4y7g3")]
 graph_offset = Vector2(0, -60.611095)
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas", "_deathScreen") groups=["Lira"]]
 light_mask = 4
 visibility_layer = 4
 collision_layer = 2
@@ -1322,6 +1323,7 @@ _bullet = ExtResource("2_8gdnm")
 terrainParticles = NodePath("ParticulasTerreno")
 saltoParticulas = NodePath("ParticulasSalto")
 dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
+_deathScreen = NodePath("Camera3D/CanvasLayer2/DeathScreen")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1338,7 +1340,6 @@ texture_scale = 2.0
 [node name="PointLight2D2" type="PointLight2D" parent="." unique_id=651347568]
 light_mask = 5
 visibility_layer = 5
-position = Vector2(-67, 166)
 color = Color(0.4506483, 0.4506483, 0.45064825, 1)
 energy = 1.5
 range_item_cull_mask = 5
@@ -1466,6 +1467,9 @@ texture = ExtResource("14_5f38a")
 
 [node name="PauseMenu" parent="Camera3D/CanvasLayer2" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
 _player = NodePath("../../..")
+
+[node name="DeathScreen" parent="Camera3D/CanvasLayer2" unique_id=333491521 instance=ExtResource("32_e80u2")]
+visible = false
 
 [node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]
 wait_time = 0.5

@@ -1,6 +1,5 @@
 using Godot;
 using Faeterna.Scripts.Personaje;
-using PlayerType = Faeterna.Scripts.Personaje.Lira;
 
 
 namespace Faeterna.Scripts.Tools
@@ -36,6 +35,16 @@ namespace Faeterna.Scripts.Tools
             }
 
             _player = player;
+
+            string currentState = _player.MovementStateMachine?.CurrentStateName ?? string.Empty;
+            if (currentState == "DashMovementState" ||
+                currentState == "DoubleJumpMovementState" ||
+                currentState == "JumpingMovementState" ||
+                currentState == "KnockbackMovementState")
+            {
+                GD.PushWarning($"Se ha ignorado el guardado en {_checkpointId} porque el jugador estaba en un estado transitory ({currentState}).");
+                return;
+            }
 
             string scenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
             Vector2 savePosition = _spawnPoint?.GlobalPosition ?? GlobalPosition;

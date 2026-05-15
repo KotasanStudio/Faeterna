@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://cjhvs50wouamw"]
+
+[ext_resource type="Theme" uid="uid://cji55sgs7pti4" path="res://mainTeme.tres" id="1_2atj1"]
+[ext_resource type="Script" uid="uid://bw1l3h81c5rr1" path="res://scripts/Menus/DeathScreen.cs" id="2_d0y25"]
+[ext_resource type="Texture2D" uid="uid://brgo3asf7p0it" path="res://assets/Menu/PantallaMuerte.png" id="3_yff6u"]
+[ext_resource type="Texture2D" uid="uid://bvvppips6fc3j" path="res://assets/Menu/SelectBotton.png" id="4_1cxn0"]
+
+[node name="DeathScreen" type="Control" unique_id=333491521 node_paths=PackedStringArray("_continueButton", "_returnButton")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_2atj1")
+script = ExtResource("2_d0y25")
+_continueButton = NodePath("VBoxContainer/Continuar")
+_returnButton = NodePath("VBoxContainer/Salir")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1450435571]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_yff6u")
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=480141726]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -70.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Continuar" type="TextureButton" parent="VBoxContainer" unique_id=966873046]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_1cxn0")
+texture_pressed = ExtResource("4_1cxn0")
+
+[node name="Label" type="Label" parent="VBoxContainer/Continuar" unique_id=1056590324]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Salir" type="TextureButton" parent="VBoxContainer" unique_id=1692856989]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("4_1cxn0")
+flip_h = true
+
+[node name="Label" type="Label" parent="VBoxContainer/Salir" unique_id=1765354786]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Botones" type="MarginContainer" parent="VBoxContainer" unique_id=125545732]
+layout_mode = 2
+theme_override_constants/margin_bottom = 80
