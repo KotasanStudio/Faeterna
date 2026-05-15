@@ -38,6 +38,8 @@ namespace Faeterna.Scripts.Menus
                 _continueButton,
                 () => _ = ContinueFromLastSaveAsync()
             );
+
+            Engine.TimeScale = 1f;
         }
 
         private async Task ContinueFromLastSaveAsync()
@@ -48,6 +50,7 @@ namespace Faeterna.Scripts.Menus
                 : DefaultGameScenePath;
 
             GetTree().ChangeSceneToFile(scenePath);
+            Engine.TimeScale = 1f;
         }
 
         public void OnReturnPressed()
