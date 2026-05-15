@@ -1323,7 +1323,7 @@ _bullet = ExtResource("2_8gdnm")
 terrainParticles = NodePath("ParticulasTerreno")
 saltoParticulas = NodePath("ParticulasSalto")
 dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
-_deathScreen = NodePath("Camera3D/CanvasLayer2/DeathScreen")
+_deathScreen = NodePath("Camera3D/Pantallas/DeathScreen")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1463,12 +1463,12 @@ material = SubResource("ShaderMaterial_vo67c")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="Camera3D" unique_id=1854116637]
+[node name="Pantallas" type="CanvasLayer" parent="Camera3D" unique_id=1854116637]
 
-[node name="PauseMenu" parent="Camera3D/CanvasLayer2" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
+[node name="PauseMenu" parent="Camera3D/Pantallas" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
 _player = NodePath("../../..")
 
-[node name="DeathScreen" parent="Camera3D/CanvasLayer2" unique_id=333491521 instance=ExtResource("32_e80u2")]
+[node name="DeathScreen" parent="Camera3D/Pantallas" unique_id=333491521 instance=ExtResource("32_e80u2")]
 visible = false
 
 [node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]
