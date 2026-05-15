@@ -61,9 +61,8 @@ namespace Faeterna.Scripts.Personaje
         
         /// <summary>Controlador del AnimationTree — sincroniza animaciones con el estado de movimiento.</summary>
         public LiraAnimationTree AnimTree;
-
         public bool ItsFliped = false;
-
+        public bool IsInvulnerableByState = false;
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] public Array<TextureRect> _hearts;
 
@@ -171,8 +170,10 @@ namespace Faeterna.Scripts.Personaje
         /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
         public async void TakeDamage(int amount, Vector2 attackerPosition)
         {
-            if (!_invencibilityTimer.IsStopped() || _currentHealth <= 0) return;
-
+            if (_invencibilityTimer.IsStopped() == false || IsInvulnerableByState || _currentHealth <= 0)
+            {
+                return;
+            }
             _currentHealth -= amount;
             UpdateHearts();
         

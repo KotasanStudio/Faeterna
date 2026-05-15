@@ -954,8 +954,8 @@ frame_progress = 0.7999782
 [node name="Area2D" type="Area2D" parent="Tutorial/Turotial Combate" unique_id=1044021214]
 position = Vector2(1313, 324)
 rotation = 0.7853982
-collision_layer = 255
-collision_mask = 255
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Turotial Combate/Area2D" unique_id=1652764419]
 position = Vector2(0.5, 98.5)
@@ -963,7 +963,7 @@ rotation = 0.7853982
 shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(1590, 1803)
+position = Vector2(3387, 1666)
 platform_wall_layers = 1
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
