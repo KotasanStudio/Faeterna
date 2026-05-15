@@ -1043,59 +1043,37 @@ shape = SubResource("RectangleShape2D_6sflo")
 position = Vector2(2875, 3950)
 _dashItem = NodePath("../../Objetos/dash")
 
-[node name="Slime2D2" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
-position = Vector2(5083, 1691)
-flipSprite = true
-
-[node name="Slime2D3" parent="Enemys" unique_id=1177666602 instance=ExtResource("21_2jxkj")]
-position = Vector2(6658, 1681)
+[node name="Slime2D" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
+position = Vector2(4681, 1680)
 flipSprite = true
 
 [node name="Wolf2D" parent="Enemys" unique_id=477752749 instance=ExtResource("22_clm75")]
-position = Vector2(4521, 1696)
+position = Vector2(6523, 1705)
 
-[node name="Wolf2D2" parent="Enemys" unique_id=1087343074 instance=ExtResource("22_clm75")]
-position = Vector2(8189, 1127)
+[node name="Slime2D2" parent="Enemys" unique_id=2025676785 instance=ExtResource("21_2jxkj")]
+position = Vector2(5237, 1677)
 
-[node name="Wolf2D3" parent="Enemys" unique_id=24406141 instance=ExtResource("22_clm75")]
-position = Vector2(7147, 2521)
+[node name="Slime2D3" parent="Enemys" unique_id=238747619 instance=ExtResource("21_2jxkj")]
+position = Vector2(6858, 1681)
 
-[node name="Jabali" parent="Enemys" unique_id=932476549 instance=ExtResource("24_hn01x")]
-position = Vector2(8367, 2578)
-
-[node name="Wolf2D4" parent="Enemys" unique_id=1906746379 instance=ExtResource("22_clm75")]
-position = Vector2(3868, 2562)
-
-[node name="Slime2D4" parent="Enemys" unique_id=419668153 instance=ExtResource("21_2jxkj")]
-position = Vector2(4364, 3789)
-
-[node name="Wolf2D5" parent="Enemys" unique_id=880890757 instance=ExtResource("22_clm75")]
-position = Vector2(3678, 3722)
-
-[node name="Jabali3" parent="Enemys" unique_id=1952072060 instance=ExtResource("24_hn01x")]
-position = Vector2(1655, 4044)
+[node name="Jabali" parent="Enemys" unique_id=315515234 instance=ExtResource("24_hn01x")]
+position = Vector2(8443, 2608)
 flipSprite = true
 
-[node name="Slime2D" parent="Enemys" unique_id=1262358691 instance=ExtResource("21_2jxkj")]
-position = Vector2(2158, 3076)
+[node name="Slime2D4" parent="Enemys" unique_id=957234937 instance=ExtResource("21_2jxkj")]
+position = Vector2(7090, 2504)
 
-[node name="Slime2D5" parent="Enemys" unique_id=1351861721 instance=ExtResource("21_2jxkj")]
-position = Vector2(2794, 2601)
+[node name="Wolf2D2" parent="Enemys" unique_id=758186489 instance=ExtResource("22_clm75")]
+position = Vector2(7737, 1505)
 
-[node name="Wolf2D6" parent="Enemys" unique_id=1800497016 instance=ExtResource("22_clm75")]
-position = Vector2(4009, 1690)
+[node name="Slime2D5" parent="Enemys" unique_id=1241965840 instance=ExtResource("21_2jxkj")]
+position = Vector2(8738, 1346)
 
-[node name="Wolf2D7" parent="Enemys" unique_id=283234056 instance=ExtResource("22_clm75")]
-position = Vector2(5387, 1690)
+[node name="Slime2D6" parent="Enemys" unique_id=1852253628 instance=ExtResource("21_2jxkj")]
+position = Vector2(8223, 1108)
 
-[node name="Slime2D6" parent="Enemys" unique_id=934595671 instance=ExtResource("21_2jxkj")]
-position = Vector2(2465, 3074)
-
-[node name="Wolf2D8" parent="Enemys" unique_id=1527565604 instance=ExtResource("22_clm75")]
-position = Vector2(7655, 1501)
-
-[node name="Jabali2" parent="Enemys" unique_id=1926065992 instance=ExtResource("24_hn01x")]
-position = Vector2(9621, 537)
+[node name="Jabali2" parent="Enemys" unique_id=534416355 instance=ExtResource("24_hn01x")]
+position = Vector2(9609, 538)
 flipSprite = true
 
 [node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
@@ -1108,8 +1086,9 @@ position = Vector2(2949, 4072)
 
 [node name="bosqueBackGroundAudio" type="AudioStreamPlayer" parent="." unique_id=1300738637]
 
-[node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
+[node name="Lira" parent="." unique_id=265467911 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_mbhmg")]
 position = Vector2(1612, 1705)
+_hearts = []
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
