@@ -3,6 +3,20 @@
 [ext_resource type="PackedScene" uid="uid://bfmip8vxtep10" path="res://scenes/Maps/Poblado.tmx" id="1_khiku"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_natxa"]
 
+[sub_resource type="Gradient" id="Gradient_khiku"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_natxa"]
+gradient = SubResource("Gradient_khiku")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(1, 0.2826087)
+
+[sub_resource type="Gradient" id="Gradient_natxa"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a356h"]
+gradient = SubResource("Gradient_natxa")
+fill_from = Vector2(0.20434782, 0.17826086)
+fill_to = Vector2(0.47826087, 0.4478261)
+
 [node name="Poblado" type="Node2D" unique_id=787324181]
 
 [node name="Poblado" parent="." unique_id=1235086971 instance=ExtResource("1_khiku")]
@@ -12,3 +26,28 @@ scale = Vector2(2, 2)
 position = Vector2(884, 580)
 platform_wall_layers = 1
 _hearts = [null, null, null, null, null]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1048404799]
+color = Color(0.26657522, 0.2665752, 0.2665752, 1)
+
+[node name="Node" type="Node" parent="." unique_id=567297692]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Node" unique_id=1900464634]
+
+[node name="Forest 1" type="PointLight2D" parent="." unique_id=1382710453]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(1855.7501, 6)
+scale = Vector2(51.539063, 28.515621)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_natxa")
+
+[node name="Forest 2" type="PointLight2D" parent="." unique_id=1943158491]
+light_mask = 5
+visibility_layer = 5
+position = Vector2(4211, 214.75)
+scale = Vector2(22.0625, 35.03906)
+shadow_enabled = true
+shadow_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_a356h")
