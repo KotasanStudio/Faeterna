@@ -1,4 +1,6 @@
+using Faeterna.Scripts.Personaje;
 using Godot;
+using System;
 using System.Collections.Generic;
 
 namespace Faeterna.scripts.Mapa
@@ -71,12 +73,12 @@ namespace Faeterna.scripts.Mapa
 
         private static void CargarItemsSiHaceFalta()
         {
-            if (_itemsCargados)
+            if (_itemsCargados && ItemsCache.Count > 0)
             {
                 return;
             }
 
-            _itemsCargados = true;
+            ItemsCache.Clear();
 
             var file = FileAccess.Open(ItemsCsvPath, FileAccess.ModeFlags.Read);
             if (file == null)
@@ -85,6 +87,8 @@ namespace Faeterna.scripts.Mapa
                 return;
             }
 
+            using (file)
+            {
             while (!file.EofReached())
             {
                         var row = file.GetCsvLine();
@@ -94,8 +98,8 @@ namespace Faeterna.scripts.Mapa
                     continue;
                 }
 
-                string idTexto = row[0].StripEdges();
-                if (string.IsNullOrEmpty(idTexto) || idTexto == "id")
+                string idTexto = row[0].StripEdges().TrimStart('\uFEFF');
+                if (string.IsNullOrEmpty(idTexto) || idTexto.Equals("id", StringComparison.OrdinalIgnoreCase))
                 {
                     continue;
                 }
@@ -119,8 +123,10 @@ namespace Faeterna.scripts.Mapa
                     row[4].StripEdges()
                 );
             }
-        }
+            }
 
+            _itemsCargados = ItemsCache.Count > 0;
+        }
         private sealed class ItemData
         {
             public string Name { get; }
@@ -136,5 +142,17 @@ namespace Faeterna.scripts.Mapa
                 History = history;
             }
         }
+        public void Recoger(Lira player)
+        {
+            if (_itemId == 0) player.GiveDoubleJump();
+            else if (_itemId == 1) player.GiveDash();
+            player._objectoDescription.ChangeVisibility(true, _itemId);
+            GetTree().Paused = true;
+            Visible = false;
+            CallDeferred(MethodName.QueueFree);
+        }
+        public int GetItemId() => _itemId;
+
+        public Vector2 GetPickUpPosition() => GlobalPosition;
     }
 }

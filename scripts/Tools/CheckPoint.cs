@@ -1,7 +1,8 @@
 using Godot;
 using Faeterna.Scripts.Personaje;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
-using System.Threading.Tasks; // Necesario para Task
+using System.Threading.Tasks;
+using System; // Necesario para Task
 
 namespace Faeterna.Scripts.Tools
 {
@@ -13,7 +14,8 @@ namespace Faeterna.Scripts.Tools
         public async Task ActionSaveProgress(Lira player)
         {
             if (GetTree().Paused) return;
-            GD.Print($"Checkpoint {Name} activado. Guardando progreso...");
+            player.Heal(5); // Curamos completamente al jugador
+            player.RecoverMana(100); // Recuperamos completamente el mana
             string scenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
             Vector2 savePosition = _spawnPoint?.GlobalPosition ?? GlobalPosition;
 
@@ -22,8 +24,8 @@ namespace Faeterna.Scripts.Tools
         }
 
         public Vector2 GetPrayPosition() => GlobalPosition;
-        
-        public void OnAreaCheckPointEntered(Node2D body) 
+
+        public void OnAreaCheckPointEntered(Node2D body)
         {
         }
     }

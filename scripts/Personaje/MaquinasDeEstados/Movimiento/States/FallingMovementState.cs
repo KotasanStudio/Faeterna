@@ -94,9 +94,9 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
-            if (ev.IsActionPressed("jump") && _player.DoubleJumpAvailable)
+            if (ev.IsActionPressed("jump") && _player.DoubleJumpAvailable && _player.HasDoubleJump())
                 stateMachine.TransitionTo("DoubleJumpMovementState");
-            if (ev.IsActionPressed("dash"))
+            if (ev.IsActionPressed("dash") && _player.HasDash())
                 stateMachine.TransitionTo("DashMovementState");
         }
     }
