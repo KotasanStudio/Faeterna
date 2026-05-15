@@ -97,7 +97,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
 
             Velocity = new Vector2(directionX * HorizontalSpeed, jumpVelocity);
             SetAnimation("jump");
-            playAudio("jumpSound");
+            //playAudio("jumpSound");
 
         }
 
@@ -131,7 +131,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
         {
             health -= v;
             hitShader(shaderMaterial);
-            playAudio("hitSound");
+            //playAudio("hitSound");
             GD.Print("Slime take damage: " + v + ", remaining health: " + health);
             if (health <= 0)
             {

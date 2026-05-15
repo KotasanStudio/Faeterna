@@ -131,7 +131,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
                         velocity.X = directionHome * WalkSpeed;
                         SetAnimation("run");
-                        playAudio("runSound");
+                        //playAudio("runSound");
 
                     }
                     else
@@ -235,7 +235,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
 
             _jumpCount++;
-            playAudio("jumpSound");
+            //playAudio("jumpSound");
             return new Vector2(_currentDirection * (dashSpeed/2), jumpVelocity);
         }
 
@@ -287,7 +287,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         {
             health -= amount;
             hitShader(_shaderMaterial);
-            playAudio("hitSound");
+            //playAudio("hitSound");
             if (health > 0)
                 return;
 

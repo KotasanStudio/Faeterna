@@ -83,12 +83,12 @@ namespace Faeterna.Scripts.Personaje
         [ExportGroup("Particles")]
         [Export] public TerrainParticles terrainParticles;
 
-        [Export] public CpuParticles2D  saltoParticulas;
+        [Export] public CpuParticles2D saltoParticulas;
 
-        [Export] public CpuParticles2D  dobleSaltoParticulas;
+        [Export] public CpuParticles2D dobleSaltoParticulas;
 
         private bool _tutorial = false;
-        [Export] public DeathScreen  _deathScreen;
+        [Export] public DeathScreen _deathScreen;
         [Export] public AudioStreamPlayer2D audioPlayer;
 
 
@@ -193,9 +193,15 @@ namespace Faeterna.Scripts.Personaje
             }
             _currentHealth -= amount;
             UpdateHearts();
-            audioPlayer.Stream = GD.Load<AudioStream>("hitAudio");
-            audioPlayer.Play();
-
+            if (audioPlayer != null)
+            {
+                audioPlayer.Stream = GD.Load<AudioStream>("hitAudio");
+                audioPlayer.Play();
+            }
+            else
+            {
+                GD.PrintErr("AudioStreamPlayer2D no asignado en Lira");
+            }
             if (_currentHealth <= 0)
             {
                 // El control se bloquea AQUÍ
@@ -315,10 +321,11 @@ namespace Faeterna.Scripts.Personaje
                 else
                     InstanciaShot.Direction = new Vector2(1, 0);
                 InstanciaShot.GlobalPosition = _shotArea.GlobalPosition;
-                GetTree().CurrentScene?.AddChild(InstanciaShot);            }
+                GetTree().CurrentScene?.AddChild(InstanciaShot);
+            }
         }
 
-       public void OnKickHitboxAreaEntered(Area2D area)
+        public void OnKickHitboxAreaEntered(Area2D area)
         {
             GD.Print("Kick hitbox activated");
             RecoverMana(10f);
