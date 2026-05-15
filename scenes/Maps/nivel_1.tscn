@@ -1,26 +1,23 @@
-[gd_scene format=3 uid="uid://13d2ye4hvyba"]
+[gd_scene format=3 uid="uid://bcsdqyopojnfv"]
 
-[ext_resource type="PackedScene" uid="uid://ceddkxekmbhd0" path="res://scenes/Maps/Nivel1.tmx" id="1_pmhet"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_mctkl"]
 
-[node name="Nivel1" unique_id=1476578571 instance=ExtResource("1_pmhet")]
+[node name="Nivel1" unique_id=1476578571]
 
-[node name="Fondo" parent="." index="0" unique_id=118315848]
+[node name="Fondo" parent="." index="0" unique_id=675989528]
 position = Vector2(11687, -120)
 scale = Vector2(-9.209317, 13.231709)
 
-[node name="Fondo_Motañas" parent="." index="1" unique_id=1648476876]
+[node name="Fondo_Motañas" parent="." index="1" unique_id=330853239]
 visible = false
 
-[node name="parallax" parent="." index="8" unique_id=22011345]
+[node name="parallax" parent="." index="8" unique_id=721010768]
 scroll_scale = Vector2(3, 1)
 
 [node name="Parallax2D" type="Parallax2D" parent="." index="13" unique_id=769684731]
 
-[node name="CharacterBody3D" parent="." index="15" unique_id=1465306425 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_mctkl")]
+[node name="CharacterBody3D" parent="." index="15" unique_id=1465306425 instance=ExtResource("2_mctkl")]
 position = Vector2(366, 1705)
-scale = Vector2(1, 1)
-_hearts = []
 
-[node name="Terrain" parent="." index="17" unique_id=1696406701]
+[node name="Terrain" parent="." index="17" unique_id=2137202240]
 position = Vector2(1, 0)
