@@ -94,6 +94,7 @@ pause={
 2d_physics/layer_7="Hurtbox"
 3d_physics/layer_7="Items"
 2d_physics/layer_8="shot"
+2d_physics/layer_9="checkPoints"
 
 [rendering]
 
