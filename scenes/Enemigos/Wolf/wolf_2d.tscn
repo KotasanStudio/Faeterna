@@ -209,6 +209,7 @@ flipSprite = true
 audioPlayer = NodePath("wolfAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
+light_mask = 4
 material = SubResource("ShaderMaterial_uh525")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")

@@ -2,6 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://bfmip8vxtep10" path="res://scenes/Maps/Poblado.tmx" id="1_khiku"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_natxa"]
+[ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="3_tesvt"]
+[ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="4_cl58p"]
+[ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="5_ok4dl"]
+[ext_resource type="Texture2D" uid="uid://cb7bwtk8alyy6" path="res://assets/NPCs/Arnau.png" id="6_y6sv7"]
+[ext_resource type="Texture2D" uid="uid://nvdbcynu1bjh" path="res://assets/NPCs/Sergi.png" id="7_5g7u1"]
+[ext_resource type="Texture2D" uid="uid://cms43pvsid0ll" path="res://assets/NPCs/Haolin.png" id="8_y5fif"]
+[ext_resource type="Texture2D" uid="uid://cp1w7juake3bs" path="res://assets/NPCs/Wenkai.png" id="9_ks3v5"]
+[ext_resource type="Texture2D" uid="uid://c7686eh4sbp86" path="res://assets/Menu/CARTEL.png" id="10_y6sv7"]
+[ext_resource type="Texture2D" uid="uid://bt1vc151wrnvc" path="res://assets/Liria/LiraLightPoint.png" id="12_5g7u1"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_khiku"]
 polygon = PackedVector2Array(768, 769, 2895, 769, 2821, 703, 4474, 704, 4425, 769, 4536, 768, 4638, 897, 4793, 897, 4744, 1090, 4858, 1089, 4955, 1217, 5368, 1217, 5334, 1281, 9096, 1280, 9186, 1201, 9220, 1208, 9269, 1262, 9274, 1281, 9390, 1280, 9265, 1408, 941, 1414)
@@ -47,7 +56,8 @@ fill_to = Vector2(0, 0.12352941)
 
 [node name="Poblado" type="Node2D" unique_id=787324181]
 
-[node name="Poblado" parent="." unique_id=1921998049 instance=ExtResource("1_khiku")]
+[node name="Poblado" parent="." unique_id=1416380427 instance=ExtResource("1_khiku")]
+z_index = -1
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="Poblado" unique_id=1048404799]
@@ -73,7 +83,7 @@ texture = SubResource("GradientTexture2D_natxa")
 [node name="Forest 2" type="PointLight2D" parent="Poblado" unique_id=1943158491]
 light_mask = 5
 visibility_layer = 5
-position = Vector2(2116.25, 107.375)
+position = Vector2(3698, 208.66669)
 scale = Vector2(10.695313, 17.51953)
 shadow_enabled = true
 shadow_item_cull_mask = 4
@@ -115,7 +125,62 @@ shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_kkjrb")
 
-[node name="CharacterBody3D" parent="." unique_id=1465306425 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_natxa")]
-position = Vector2(884, 580)
-platform_wall_layers = 1
-_hearts = [null, null, null, null, null]
+[node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_natxa")]
+position = Vector2(755, 538)
+
+[node name="Wolf2D" parent="." unique_id=477752749 instance=ExtResource("3_tesvt")]
+position = Vector2(1954, 545)
+
+[node name="Jabali" parent="." unique_id=2065870402 instance=ExtResource("4_cl58p")]
+position = Vector2(3061, 492)
+flipSprite = true
+
+[node name="Slime2D" parent="." unique_id=1506886063 instance=ExtResource("5_ok4dl")]
+position = Vector2(4598, 910)
+
+[node name="We" type="Node2D" parent="." unique_id=894672912]
+light_mask = 512
+visibility_layer = 16
+z_index = -1
+position = Vector2(-32, 3)
+
+[node name="Arnau" type="Sprite2D" parent="We" unique_id=424288348]
+light_mask = 4
+position = Vector2(6252, 918)
+texture = ExtResource("6_y6sv7")
+
+[node name="Sergi" type="Sprite2D" parent="We" unique_id=937928772]
+light_mask = 4
+position = Vector2(6298, 918)
+texture = ExtResource("7_5g7u1")
+
+[node name="Haolin" type="Sprite2D" parent="We" unique_id=1623371609]
+light_mask = 4
+position = Vector2(6338, 918)
+texture = ExtResource("8_y5fif")
+
+[node name="Wenkai" type="Sprite2D" parent="We" unique_id=1324408889]
+light_mask = 4
+position = Vector2(6376, 918)
+texture = ExtResource("9_ks3v5")
+
+[node name="TextureRect" type="TextureRect" parent="We" unique_id=295648283]
+light_mask = 2
+texture_filter = 1
+offset_left = 6209.0
+offset_top = 772.0
+offset_right = 7569.0
+offset_bottom = 1552.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_y6sv7")
+
+[node name="PointLight2D" type="PointLight2D" parent="We/TextureRect" unique_id=1484416391]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(669.9987, 400)
+scale = Vector2(32.749905, 17.278036)
+energy = 0.8
+range_item_cull_mask = 2
+shadow_enabled = true
+shadow_item_cull_mask = 2
+texture = ExtResource("12_5g7u1")
