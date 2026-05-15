@@ -1110,7 +1110,7 @@ position = Vector2(9035, 2546)
 [node name="dash" parent="Objetos" unique_id=1697773906 instance=ExtResource("25_snqwn")]
 position = Vector2(2949, 4072)
 
-[node name="bosqueBackGroundAudio" type="AudioStreamPlayer2D" parent="." unique_id=810852558]
+[node name="bosqueBackGroundAudio" type="AudioStreamPlayer" parent="." unique_id=1300738637]
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
