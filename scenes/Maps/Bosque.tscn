@@ -1076,6 +1076,12 @@ position = Vector2(8223, 1108)
 position = Vector2(9609, 538)
 flipSprite = true
 
+[node name="Slime2D7" parent="Enemys" unique_id=252558400 instance=ExtResource("21_2jxkj")]
+position = Vector2(969, 4040)
+
+[node name="Slime2D8" parent="Enemys" unique_id=1550917027 instance=ExtResource("21_2jxkj")]
+position = Vector2(1750, 4037)
+
 [node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
 
 [node name="doubleJump" parent="Objetos" unique_id=577156713 instance=ExtResource("25_snqwn")]
@@ -1083,12 +1089,12 @@ position = Vector2(9038, 2586)
 
 [node name="dash" parent="Objetos" unique_id=1697773906 instance=ExtResource("25_snqwn")]
 position = Vector2(2949, 4072)
+_itemId = 1
 
 [node name="bosqueBackGroundAudio" type="AudioStreamPlayer" parent="." unique_id=1300738637]
 
-[node name="Lira" parent="." unique_id=265467911 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_mbhmg")]
-position = Vector2(1612, 1705)
-_hearts = []
+[node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
+position = Vector2(1602, 1727)
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]

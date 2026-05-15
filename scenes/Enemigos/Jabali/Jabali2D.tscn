@@ -324,7 +324,7 @@ size = Vector2(40, 84.2222)
 size = Vector2(90, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
-size = Vector2(409.83334, 60)
+size = Vector2(409.83334, 103.333336)
 
 [node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox", "audioPlayer")]
 texture_filter = 1
@@ -372,7 +372,7 @@ collision_layer = 32
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1887027826]
-position = Vector2(204.41667, -1.3333385)
+position = Vector2(204.41667, 7.666668)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 
