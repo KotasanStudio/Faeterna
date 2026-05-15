@@ -21,8 +21,35 @@
 [ext_resource type="Texture2D" uid="uid://beqtl6y5i0flg" path="res://assets/Tutoriales/C.png" id="19_snqwn"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="20_lnic0"]
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xyya0"]
-polygon = PackedVector2Array(3831, 2100, 3829, 1505, 2564, 1546, 2535, 2154, 2564, 2545, 2557, 3053, 2422, 3844, 2742, 4256, 1869, 4309, 1606, 3936, 1828, 3625, 1408, 3264, 569, 3272, 529, 5870, 2905, 5865, 5103, 5911, 5064, 5577, 3061, 5562, 3432, 4658, 4411, 4620, 4797, 5157, 6818, 5260, 7021, 3458, 6060, 2837, 5349, 2965, 5507, 3586, 4922, 3590, 5073, 2897, 4004, 2415, 3946, 2610, 3141, 2610, 3509, 3271, 3769, 4435, 2958, 4418, 3132, 3180, 2866, 2688, 2872, 2433)
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_be71p"]
+polygon = PackedVector2Array(1485, 3116, 1537, 3167, 1772, 3169, 1822, 3120, 2643, 3123, 2598, 3075, 2774, 3075, 2717, 3166, 3079, 3168, 3030, 3026, 3286, 3025, 3172, 2931, 3368, 2930, 3318, 2834, 3700, 2833, 3604, 2641, 3704, 2640, 3652, 2592, 4167, 2596, 4130, 2643, 4217, 2643, 4168, 2783, 4313, 2785, 4087, 2876, 4066, 3162, 4104, 3168, 4168, 3168, 4117, 3316, 4313, 3313, 4109, 3396, 2307, 3443, 912, 3957, 873, 3795, 1060, 3791, 1008, 3574, 874, 3508, 1184, 3503, 1121, 3222, 893, 3233, 870, 3170, 1006, 3173, 918, 3124, 1060, 3118, 970, 2964, 873, 2881, 1442, 2881, 1487, 2926, 1343, 3123)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2jxkj"]
+polygon = PackedVector2Array(664, 2932, 583, 3026, 712, 3030, 562, 3155, 542, 3315, 664, 3315, 572, 3364, 712, 3363, 507, 3487, 567, 3604, 664, 3602, 621, 3647, 712, 3650, 496, 3734, 466, 3937, 712, 3937, 618, 4082, 3644, 4082, 3511, 3747, 4219, 3746, 4162, 3839, 4782, 3842, 4662, 3698, 4884, 3696, 4778, 3386, 4614, 3313, 4833, 3313, 4757, 3171, 4911, 3171, 4833, 2566, 4336, 2249, 3399, 2238, 2829, 2474, 2549, 2443, 2591, 2401, 2921, 2402, 2839, 2308, 3022, 2304, 2937, 2260, 3080, 2254, 3084, 1959, 2846, 1930, 2393, 1945, 2356, 1919, 2601, 1920, 2548, 1871, 2711, 1871, 2646, 1823, 2881, 1824, 2789, 1775, 2959, 1776, 2884, 1727, 5803, 1728, 5762, 1824, 5898, 1824, 5842, 1921, 5995, 1920, 5886, 2019, 6089, 2017, 6026, 2115, 6138, 2111, 6052, 2212, 6234, 2210, 6160, 2305, 6378, 2304, 6307, 2356, 6327, 2354, 6571, 2353, 6522, 2406, 6665, 2401, 6611, 2499, 6859, 2496, 6800, 2550, 7206, 2547, 7251, 2594, 7588, 2594, 7635, 2642, 8589, 2641, 8637, 2593, 9193, 2596, 9100, 2327, 8598, 2198, 7655, 2229, 7531, 1728, 7394, 1633, 7621, 1633, 7540, 1535, 8045, 1537, 7972, 1486, 8705, 1488, 8595, 1440, 8756, 1439, 8693, 1391, 9119, 1392, 8791, 962, 8944, 964, 8886, 912, 9008, 911, 8967, 781, 8788, 572, 10159, 577, 9835, 4534, -24, 4534, 1, 2510, 570, 2930)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_clm75"]
+polygon = PackedVector2Array(3258, 2690, 2962, 2690, 3019, 2647, 2550, 2642, 2962, 2747)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ta6li"]
+polygon = PackedVector2Array(2394, 2548, 2185, 2542, 2345, 2163, 2171, 2161, 2249, 2058, 2209, 2017, 2069, 2015, 2048, 2664)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_hn01x"]
+polygon = PackedVector2Array(6055, 1730, 6261, 1781, 6994, 1787, 7049, 1728)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_snqwn"]
+polygon = PackedVector2Array(8443, 1247, 8334, 1248, 8393, 1152, 8021, 1152, 8337, 1285)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_lnic0"]
+polygon = PackedVector2Array(7301, 1056, 7349, 1105, 7442, 1105, 7483, 1057)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_q85yk"]
+polygon = PackedVector2Array(7443, 865, 7492, 890, 7553, 890, 7579, 767, 7493, 768, 7517, 864)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_tbcfi"]
+polygon = PackedVector2Array(8067, 624, 8121, 788, 8441, 671, 8120, 673, 8153, 623)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qdhim"]
+polygon = PackedVector2Array(2549, 2164, 2776, 2164, 2741, 2204, 2588, 2202)
 
 [sub_resource type="Gradient" id="Gradient_xyya0"]
 
@@ -66,10 +93,10 @@ gradient = SubResource("Gradient_0a7ml")
 fill_from = Vector2(1, 1)
 fill_to = Vector2(0.8304348, 0.8086957)
 
-[sub_resource type="Gradient" id="Gradient_k3ts6"]
+[sub_resource type="Gradient" id="Gradient_2jxkj"]
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_6sflo"]
-gradient = SubResource("Gradient_k3ts6")
+gradient = SubResource("Gradient_2jxkj")
 fill_from = Vector2(1, 0)
 fill_to = Vector2(1, 0.069565214)
 
@@ -558,7 +585,7 @@ animations = [{
 
 [node name="Bosque" type="Node2D" unique_id=1361970253]
 
-[node name="Bosque" parent="." unique_id=1481396852 instance=ExtResource("1_xyya0")]
+[node name="Bosque" parent="." unique_id=643411856 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
 [node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
@@ -572,7 +599,7 @@ scale = Vector2(-1, 1)
 _checkpointId = "checkpoint_02"
 
 [node name="CheckPoint3" parent="CheckPoint\'s" unique_id=745009879 instance=ExtResource("3_mbhmg")]
-position = Vector2(4468, 3386)
+position = Vector2(4467, 3384)
 _checkpointId = "checkpoint_03"
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=559327556]
@@ -581,8 +608,44 @@ color = Color(0.26657522, 0.2665752, 0.2665752, 1)
 [node name="Node" type="Node" parent="." unique_id=61488899]
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Node" unique_id=767578271]
-visible = false
-occluder = SubResource("OccluderPolygon2D_xyya0")
+occluder = SubResource("OccluderPolygon2D_be71p")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Node" unique_id=126872874]
+occluder = SubResource("OccluderPolygon2D_2jxkj")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="Node" unique_id=741949699]
+occluder = SubResource("OccluderPolygon2D_clm75")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="Node" unique_id=884297316]
+occluder = SubResource("OccluderPolygon2D_ta6li")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D5" type="LightOccluder2D" parent="Node" unique_id=351986985]
+occluder = SubResource("OccluderPolygon2D_hn01x")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D6" type="LightOccluder2D" parent="Node" unique_id=171505537]
+occluder = SubResource("OccluderPolygon2D_snqwn")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D7" type="LightOccluder2D" parent="Node" unique_id=1258034664]
+occluder = SubResource("OccluderPolygon2D_lnic0")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D8" type="LightOccluder2D" parent="Node" unique_id=214184339]
+occluder = SubResource("OccluderPolygon2D_q85yk")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D9" type="LightOccluder2D" parent="Node" unique_id=832195210]
+occluder = SubResource("OccluderPolygon2D_tbcfi")
+occluder_light_mask = 0
+
+[node name="LightOccluder2D10" type="LightOccluder2D" parent="Node" unique_id=447582800]
+occluder = SubResource("OccluderPolygon2D_qdhim")
+occluder_light_mask = 0
 
 [node name="Cueva" type="Node2D" parent="." unique_id=151732781]
 light_mask = 5
@@ -692,110 +755,114 @@ shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_6sflo")
 
-[node name="PointLight2D8" type="PointLight2D" parent="." unique_id=719131988]
+[node name="Cueva 2" type="Node2D" parent="." unique_id=1759121441]
+position = Vector2(4709, 853.5001)
+scale = Vector2(64.40625, 28.515621)
+
+[node name="PointLight2D8" type="PointLight2D" parent="Cueva 2" unique_id=719131988]
 light_mask = 5
 visibility_layer = 5
-position = Vector2(6879.5, 1520.2041)
-scale = Vector2(3.4218693, 12.631374)
+position = Vector2(33.70015, 23.38031)
+scale = Vector2(0.05312946, 0.44296336)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_mouv1")
 
-[node name="PointLight2D9" type="PointLight2D" parent="." unique_id=1076105966]
+[node name="PointLight2D9" type="PointLight2D" parent="Cueva 2" unique_id=1076105966]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(5931, 2181.5)
-scale = Vector2(4.0937557, 12.984377)
+position = Vector2(18.97332, 46.57097)
+scale = Vector2(0.06356147, 0.45534262)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_30c5b")
 
-[node name="PointLight2D10" type="PointLight2D" parent="." unique_id=1144539711]
+[node name="PointLight2D10" type="PointLight2D" parent="Cueva 2" unique_id=1144539711]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(6549, 2206.102)
-scale = Vector2(15.218759, 13.753189)
+position = Vector2(28.568657, 47.433723)
+scale = Vector2(0.2362932, 0.4823037)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_0a7ml")
 
-[node name="PointLight2D11" type="PointLight2D" parent="." unique_id=708793293]
+[node name="PointLight2D11" type="PointLight2D" parent="Cueva 2" unique_id=708793293]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(8729, 58.999996)
-scale = Vector2(53.046875, 20.968748)
+position = Vector2(62.416313, -27.861927)
+scale = Vector2(0.8236293, 0.73534256)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_k3ts6")
 
-[node name="PointLight2D12" type="PointLight2D" parent="." unique_id=27321486]
+[node name="PointLight2D12" type="PointLight2D" parent="Cueva 2" unique_id=27321486]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(8523.5, 1130.6)
-scale = Vector2(3.2656283, 12.518812)
+position = Vector2(59.225624, 9.717476)
+scale = Vector2(0.050703596, 0.43901598)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_41jso")
 
-[node name="PointLight2D13" type="PointLight2D" parent="." unique_id=287552946]
+[node name="PointLight2D13" type="PointLight2D" parent="Cueva 2" unique_id=287552946]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(8814.5, 1130.6)
-scale = Vector2(5.8281245, 12.518812)
+position = Vector2(63.743813, 9.717476)
+scale = Vector2(0.09049005, 0.43901598)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_xlibb")
 
-[node name="PointLight2D14" type="PointLight2D" parent="." unique_id=918027048]
+[node name="PointLight2D14" type="PointLight2D" parent="Cueva 2" unique_id=918027048]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(8093, 1227.5)
-scale = Vector2(4.375004, 12.484375)
+position = Vector2(52.54149, 13.115616)
+scale = Vector2(0.06792825, 0.4378083)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_la22m")
 
-[node name="PointLight2D15" type="PointLight2D" parent="." unique_id=890207343]
+[node name="PointLight2D15" type="PointLight2D" parent="Cueva 2" unique_id=890207343]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(7650.25, 779)
-scale = Vector2(19.335936, -1.5312513)
+position = Vector2(45.667152, -2.612608)
+scale = Vector2(0.3002183, -0.05369869)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_606l8")
 
-[node name="PointLight2D16" type="PointLight2D" parent="." unique_id=975866219]
+[node name="PointLight2D16" type="PointLight2D" parent="Cueva 2" unique_id=975866219]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(7304.75, 874)
-scale = Vector2(8.539068, -1.4375012)
+position = Vector2(40.302765, 0.7189007)
+scale = Vector2(0.13258137, -0.050411012)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_606l8")
 
-[node name="PointLight2D17" type="PointLight2D" parent="." unique_id=300502713]
+[node name="PointLight2D17" type="PointLight2D" parent="Cueva 2" unique_id=300502713]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(7760, 1227.5)
-scale = Vector2(6.0312514, 12.484375)
+position = Vector2(47.371185, 13.115616)
+scale = Vector2(0.09364389, 0.4378083)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_gb5dx")
 
-[node name="PointLight2D18" type="PointLight2D" parent="." unique_id=1497599718]
+[node name="PointLight2D18" type="PointLight2D" parent="Cueva 2" unique_id=1497599718]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(7501.5, 1009)
-scale = Vector2(3.1718795, 2.7812512)
+position = Vector2(43.357597, 5.453148)
+scale = Vector2(0.04924801, 0.09753431)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_5bm6r")
 
-[node name="PointLight2D19" type="PointLight2D" parent="." unique_id=228389444]
+[node name="PointLight2D19" type="PointLight2D" parent="Cueva 2" unique_id=228389444]
 light_mask = 4
 visibility_layer = 4
-position = Vector2(7260.5, 1016.5)
-scale = Vector2(4.359374, 2.984376)
+position = Vector2(39.615723, 5.7161636)
+scale = Vector2(0.067685574, 0.10465759)
 shadow_enabled = true
 shadow_item_cull_mask = 4
 texture = SubResource("GradientTexture2D_2jxkj")
@@ -962,9 +1029,10 @@ position = Vector2(0.5, 98.5)
 rotation = 0.7853982
 shape = SubResource("RectangleShape2D_6sflo")
 
-[node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
+[node name="CharacterBody3D" parent="." unique_id=1465306425 node_paths=PackedStringArray("_hearts") instance=ExtResource("2_mbhmg")]
 position = Vector2(1590, 1803)
 platform_wall_layers = 1
+_hearts = []
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
