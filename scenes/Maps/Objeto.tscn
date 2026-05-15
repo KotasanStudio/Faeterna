@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c6c8qeq4bois2"]
+
+[ext_resource type="Texture2D" uid="uid://cv7ck77pcnet3" path="res://assets/Luz/Circulo.png" id="1_8wn4v"]
+[ext_resource type="Script" uid="uid://bddn4g6g10l0p" path="res://scripts/Mapa/Objeto.cs" id="1_wvuc2"]
+[ext_resource type="Texture2D" uid="uid://ccf11g8s01mgi" path="res://assets/Luz/Halo.png" id="2_pdlro"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_negcn"]
+radius = 46.043457
+
+[node name="Objeto" type="Node2D" unique_id=577156713 node_paths=PackedStringArray("_aroLuz")]
+script = ExtResource("1_wvuc2")
+_aroLuz = NodePath("AroLuz")
+
+[node name="BolaLuz" type="PointLight2D" parent="." unique_id=130839431]
+position = Vector2(0, 9.5)
+energy = 16.0
+texture = ExtResource("1_8wn4v")
+texture_scale = 0.1
+
+[node name="AroLuz" type="PointLight2D" parent="." unique_id=997978877]
+position = Vector2(0, 9.5)
+energy = 2.0
+texture = ExtResource("2_pdlro")
+texture_scale = 0.1
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1450803955]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1095098697]
+shape = SubResource("CircleShape2D_negcn")

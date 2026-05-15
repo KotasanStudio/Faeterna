@@ -1097,6 +1097,11 @@ position = Vector2(7655, 1501)
 position = Vector2(9621, 537)
 flipSprite = true
 
+[node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
+
+[node name="Objeto" parent="Objetos" unique_id=577156713 instance=ExtResource("21_2jxkj")]
+position = Vector2(9005, 2583)
+
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Combate/Area2D" to="Tutorial/Turotial Combate" method="_on_area_2d_body_entered"]
