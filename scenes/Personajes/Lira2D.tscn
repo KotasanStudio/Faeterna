@@ -1316,7 +1316,7 @@ graph_offset = Vector2(0, -60.611095)
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e80u2"]
 height = 68.0
 
-[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas", "_deathScreen") groups=["Lira"]]
+[node name="CharacterBody3D" type="CharacterBody2D" unique_id=265467911 node_paths=PackedStringArray("_hearts", "_manaBar", "_invencibilityTimer", "_shotArea", "_kickArea", "terrainParticles", "saltoParticulas", "dobleSaltoParticulas", "_deathScreen", "_objectoDescription") groups=["Lira"]]
 light_mask = 4
 visibility_layer = 4
 collision_layer = 2
@@ -1331,6 +1331,7 @@ terrainParticles = NodePath("ParticulasTerreno")
 saltoParticulas = NodePath("ParticulasSalto")
 dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
 _deathScreen = NodePath("Camera3D/Pantallas/DeathScreen")
+_objectoDescription = NodePath("Camera3D/Pantallas/ObjetoDescription")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1476,14 +1477,17 @@ layout_mode = 2
 texture = ExtResource("14_5f38a")
 
 [node name="Pantallas" type="CanvasLayer" parent="Camera3D" unique_id=1854116637]
+layer = 11
 
 [node name="PauseMenu" parent="Camera3D/Pantallas" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
+visible = false
 _player = NodePath("../../..")
 
 [node name="DeathScreen" parent="Camera3D/Pantallas" unique_id=333491521 instance=ExtResource("32_e80u2")]
 visible = false
 
 [node name="ObjetoDescription" parent="Camera3D/Pantallas" unique_id=1057756611 instance=ExtResource("33_7lnvu")]
+process_mode = 3
 visible = false
 
 [node name="Invencibility_Timer" type="Timer" parent="." unique_id=2877036]

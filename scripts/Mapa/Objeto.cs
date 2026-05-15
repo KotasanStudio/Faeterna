@@ -1,3 +1,4 @@
+using Faeterna.Scripts.Personaje;
 using Godot;
 using System.Collections.Generic;
 
@@ -120,7 +121,6 @@ namespace Faeterna.scripts.Mapa
                 );
             }
         }
-
         private sealed class ItemData
         {
             public string Name { get; }
@@ -136,5 +136,17 @@ namespace Faeterna.scripts.Mapa
                 History = history;
             }
         }
+        public void Recoger(Lira player)
+        {
+            if (_itemId == 0) player.GiveDoubleJump();
+            else if (_itemId == 1) player.GiveDash();
+            player._objectoDescription.ChangeVisibility(true, _itemId);
+            GetTree().Paused = true;
+            Visible = false;
+            CallDeferred(MethodName.QueueFree);
+        }
+        public int GetItemId() => _itemId;
+
+        public Vector2 GetPickUpPosition() => GlobalPosition;
     }
 }

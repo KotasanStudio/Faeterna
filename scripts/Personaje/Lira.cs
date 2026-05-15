@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Faeterna.Scripts.Menus;
 using Faeterna.scripts.Personaje;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento;
+using System;
 
 namespace Faeterna.Scripts.Personaje
 {
@@ -88,8 +89,10 @@ namespace Faeterna.Scripts.Personaje
         [Export] public CpuParticles2D  dobleSaltoParticulas;
 
         private bool _tutorial = false;
-
+        private bool _haveDobleJump { get; set;} = false;
+        private bool _haveDash { get; set;} = false;
         [Export] public DeathScreen  _deathScreen;
+        [Export] public ObjetoDescription _objectoDescription;
 
         /// <summary>
         /// Inicialización del nodo. Obtiene la referencia al <see cref="AnimatedSprite2D"/> hijo.
@@ -320,5 +323,16 @@ namespace Faeterna.Scripts.Personaje
             GD.Print("Kick hitbox activated");
             RecoverMana(10f);
         }
+
+        public void GiveDoubleJump()
+        {
+            _haveDobleJump = true;
+        }
+        public void GiveDash()
+        {
+            _haveDash = true;
+        }
+        public bool HasDoubleJump() => _haveDobleJump;
+        public bool HasDash() => _haveDash;
     }
 }

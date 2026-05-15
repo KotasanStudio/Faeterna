@@ -4,6 +4,7 @@ using System;
 using Faeterna.Scripts.Personaje.MaquinasDeEstados;
 using PlayerType = Faeterna.Scripts.Personaje.Lira;
 using Faeterna.Scripts.Tools;
+using Faeterna.scripts.Mapa;
 
 namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 {
@@ -129,7 +130,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 GD.Print("Transitioning to jumping state from running.");
                 stateMachine.TransitionTo("JumpingMovementState");
             }
-            if (ev.IsActionPressed("dash"))
+            if (ev.IsActionPressed("dash") && _player.HasDash())
             {
                 GD.Print("Transitioning to dash state from running.");
                 stateMachine.TransitionTo("DashMovementState");
@@ -138,20 +139,28 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 stateMachine.TransitionTo("MagicMovementState");
             if (ev.IsActionPressed("kick"))
                 stateMachine.TransitionTo("AttackMovementState");
-            if (ev.IsActionPressed("interact"))
+            if (ev.IsActionPressed("interact")) 
             {
                 var areas = _player.GetNode<Area2D>("HurtBox").GetOverlappingAreas();
+        
                 foreach (var area in areas)
                 {
-                    if (area.GetParent() is CheckPoint checkPoint)
+                    Node parent = area.GetParent();
+        
+                    // Verificamos si es algo interactuable
+                    if (parent is CheckPoint || parent is Objeto)
                     {
-                        var prayState = stateMachine.GetNode<StartPrayMovementState>("StartPrayMovementState");
-                        prayState.TargetPosition = checkPoint.GetPrayPosition();
+                        var interactState = stateMachine.GetNode<StartPrayMovementState>("StartPrayMovementState");
+                        // Configuramos los datos genéricos
+                        interactState.InteractorNode = parent;
+                        if (parent is CheckPoint cp) interactState.TargetPosition = cp.GetPrayPosition();
+                        else if (parent is Objeto obj) interactState.TargetPosition = obj.GetPickUpPosition();
                         stateMachine.TransitionTo("StartPrayMovementState");
-                        return; 
+                        return;
                     }
                 }
             }
+
         }
     }
 }

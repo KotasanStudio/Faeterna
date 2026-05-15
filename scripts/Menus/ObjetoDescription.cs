@@ -12,7 +12,7 @@ namespace Faeterna.Scripts.Menus
         [Export] private Label _nameAbility;
         [Export] private Label _descriptionAbility;
         [Export] private Label _historyAbility;
-
+        [Signal] public delegate void MenuClosedEventHandler();
         private static readonly Dictionary<int, ItemData> ItemsCache = new();
         private static bool _itemsCargados;
 
@@ -142,6 +142,26 @@ namespace Faeterna.Scripts.Menus
         History = history;
       }
     }
+    public void ChangeVisibility(bool visible, int itemId)
+    {
+        Visible = visible;
+        if (visible)
+        {
+            _itemId = itemId;
+            CargarDatosDelItem();
+        }
     }
+    public override void _Input(InputEvent ev)
+    {
+        // Solo si el menú es visible y presionan una tecla
+        if (Visible && ev is InputEventKey { Pressed: true })
+        {
+            ChangeVisibility(false, _itemId);
+            GetTree().Paused = false;
+            EmitSignal(SignalName.MenuClosed); // <--- Avisamos que terminamos
+        }
+    }
+  }
+    
 }
 
