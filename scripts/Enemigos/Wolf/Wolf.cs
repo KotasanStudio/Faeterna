@@ -1,33 +1,27 @@
 using System;
 using Faeterna.Scripts.Personaje;
-using EnemyClass = Faeterna.Scripts.Enemigos.Enemy.Enemy;
-using Faeterna.Scripts.Enemigos.Enemy;
+using Faeterna.Scripts.Enemigos;
 using Godot;
 
 namespace Faeterna.scripts.Enemigos.Wolf
 {
-    public partial class Wolf : EnemyClass
+    public partial class Wolf : Enemy
     {
-        public float DashSpeed = 300f;
         public float DashInterval = 2f;
-        // <summary>Duración del impulso de dash en segundos.</summary>
-        public float DashDuration = 1f;
-        public int Health = 5;
-        private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
-        // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private Timer _dashTimer;
         private bool _isDashing = false;
         // <summary>Timer que controla la duración del dash (cuánto tiempo dura el impulso).</summary>
-        private float _dashDuration = 0.5f;
-        private int _dashDirection = 1;
-        private Node2D _target = null;
-        private float _knockbackTimer = 0f;
-        private const float KnockbackDuration = 0.2f;
-        private ShaderMaterial _shaderMaterial;
-        [Export] private CollisionShape2D _detectionArea;
-        [Export] private RayCast2D _groundCheck;
-        [Export] private Area2D _hurtBox;
+
         private Random _rnd = new();
+
+        public override void _EnterTree()
+        {
+            if (flipSprite)
+            {
+                animatedSprite.FlipH = flipSprite;
+                detectionArea.Position = new Vector2(88.25f * dashDirection * -1, 0); // Ajusta el área de detección
+            }
+        }
         public override void _Ready()
         {
             _dashTimer = new Timer
@@ -38,7 +32,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             _dashTimer.Timeout += OnDashTimerTimeout;
             AddChild(_dashTimer);
             _dashTimer.Start();
-            _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
+            shaderMaterial = (ShaderMaterial)animatedSprite.Material;
             SetAnimation("idle");
         }
 
@@ -52,13 +46,13 @@ namespace Faeterna.scripts.Enemigos.Wolf
             if (_isDashing)
             {
                 // Durante el dash, mantenemos la velocidad constante en la dirección del dash.
-                _dashDuration -= (float)delta;
+                dashDuration -= (float)delta;
 
                 // Fuerza la actualización del raycast en cada frame
-                _groundCheck.ForceRaycastUpdate();
+                groundCheck.ForceRaycastUpdate();
 
                 // Para el dash si no hay suelo delante o se acabó el tiempo límite
-                if ((!_groundCheck.IsColliding() && _target == null) || _dashTimer.WaitTime <= 0f)
+                if ((!groundCheck.IsColliding() && target == null) || _dashTimer.WaitTime <= 0f)
                 {
                     _isDashing = false;
                     velocity.X = 0;
@@ -66,39 +60,41 @@ namespace Faeterna.scripts.Enemigos.Wolf
                 }
             }
 
-        if (_knockbackTimer > 0f)
+            if (knockbackTimer > 0f)
             {
-                _knockbackTimer -= (float)delta;
-                if (IsOnFloor())
+                knockbackTimer -= (float)delta;
+                if (IsOnFloor() && health > 0)
                 {
+                    SetAnimation("attack");
                     velocity.X = 0f;
                 }
             }
-
+            if(health>0)
+            {
             Velocity = velocity;
             MoveAndSlide();
+            }
         }
         private void OnDashTimerTimeout()
         {
-            if (!IsOnFloor()) return;
+            if (!IsOnFloor() || health <= 0)
+                return;
 
             _isDashing = true;
-            _dashDuration = _rnd.Next((int)(DashDuration * 0.75f), (int)(DashDuration * 1.25f)); // Añade algo de variación a la duración del dash
-
             float directionX;
 
-            if (_target != null)
-                directionX = Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
+            if (target != null)
+                directionX = Mathf.Sign(target.GlobalPosition.X - GlobalPosition.X);
             else
             {
-                directionX = _dashDirection;
-                _dashDirection *= -1;
+                directionX = dashDirection;
+                dashDirection *= -1;
             }
 
-            _animatedSprite.FlipH = directionX < 0;
-            _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
-            Velocity = new Vector2(directionX * DashSpeed, Velocity.Y);
+            animatedSprite.FlipH = directionX < 0;
+            groundCheck.Position = new Vector2(Mathf.Abs(groundCheck.Position.X) * directionX, groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
+            detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+            Velocity = new Vector2(directionX * dashSpeed, Velocity.Y);
             SetAnimation("run");
         }
 
@@ -109,41 +105,67 @@ namespace Faeterna.scripts.Enemigos.Wolf
         }
         private void OnHurtBoxAreaEntered(Area2D area)
         {
-            if (area.GetParent() is Lira lira)
+            if (area.Name == "KickHitbox" && area.GetParent() is Lira lira)
                 TakeDamage(1, lira.GlobalPosition);
-             if (area is Shot shot)
+            if (area is Shot shot)
                 TakeDamage((int)shot.Scale.X, shot.GlobalPosition);
         }
         private void TakeDamage(int v, Vector2 globalPosition)
         {
-            Health -= v;
-                hitShader(_shaderMaterial);
-            if (Health <= 0)
+            health -= v;
+            hitShader(shaderMaterial);
+            if (health <= 0)
             {
-                QueueFree();
-                return;
-            }
-            _isDashing = false;
-            _knockbackTimer = KnockbackDuration;
+                SetAnimation("dead");
+                _isDashing = false;
+                target = null; // Deja de perseguir al jugador
+                attackHitBox.SetDeferred("monitoring", false); // Desactivar el área de daño para evitar más colisiones
+                hurtBox.SetDeferred("monitoring", false); // Desactivar el área de daño para evitar más colisiones
+                detectionArea.GetParent<Area2D>().SetDeferred("monitoring", false); // Desactivar el área de detección para evitar más colisiones
+                Velocity = Vector2.Zero; // Detener cualquier movimiento
 
-            // Dirección opuesta al atacante + mini salto
-            float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
-            Velocity = new Vector2(directionX * 250f, -200f);
+                Timer timer = new Timer
+                {
+                    WaitTime = 1f,
+                    OneShot = true
+                };
+
+                AddChild(timer);
+
+                timer.Timeout += () =>
+                {
+                    QueueFree();
+                };
+
+                timer.Start();
+            }
+            else
+            {
+                _isDashing = false;
+                knockbackTimer = knockbackDuration;
+
+                // Dirección opuesta al atacante + mini salto
+                float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
+                Velocity = new Vector2(directionX * 250f, -200f);
+
+            }
+
+
         }
 
         public void _on_detection_area_body_entered(Node2D prota)
         {
             if (prota is Lira lira)
             {
-                
-                _target = lira;
+
+                target = lira;
             }
         }
 
         public void _on_detection_area_body_exited(Node2D prota)
         {
             if (prota is Lira)
-                _target = null;
+                target = null;
         }
 
 

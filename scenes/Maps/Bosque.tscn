@@ -20,6 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://duge2wg4u1nly" path="res://assets/Liria/Lira Shooting.png" id="18_hn01x"]
 [ext_resource type="Texture2D" uid="uid://beqtl6y5i0flg" path="res://assets/Tutoriales/C.png" id="19_snqwn"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="20_lnic0"]
+[ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="21_2jxkj"]
+[ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="22_clm75"]
+[ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xyya0"]
 polygon = PackedVector2Array(3831, 2100, 3829, 1505, 2564, 1546, 2535, 2154, 2564, 2545, 2557, 3053, 2422, 3844, 2742, 4256, 1869, 4309, 1606, 3936, 1828, 3625, 1408, 3264, 569, 3272, 529, 5870, 2905, 5865, 5103, 5911, 5064, 5577, 3061, 5562, 3432, 4658, 4411, 4620, 4797, 5157, 6818, 5260, 7021, 3458, 6060, 2837, 5349, 2965, 5507, 3586, 4922, 3590, 5073, 2897, 4004, 2415, 3946, 2610, 3141, 2610, 3509, 3271, 3769, 4435, 2958, 4418, 3132, 3180, 2866, 2688, 2872, 2433)
@@ -963,8 +966,18 @@ rotation = 0.7853982
 shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="CharacterBody3D" parent="." unique_id=1465306425 instance=ExtResource("2_mbhmg")]
-position = Vector2(1590, 1803)
+position = Vector2(3616, 1655)
 platform_wall_layers = 1
+
+[node name="Wolf2D" parent="." unique_id=477752749 instance=ExtResource("22_clm75")]
+position = Vector2(3949, 1705)
+
+[node name="BossArea" parent="." unique_id=494204519 instance=ExtResource("23_ta6li")]
+position = Vector2(2875, 3950)
+
+[node name="Slime2D" parent="." unique_id=1506886063 instance=ExtResource("21_2jxkj")]
+position = Vector2(4444, 1681)
+flipSprite = true
 
 [connection signal="body_entered" from="Tutorial/Turotial Movimiento/Area2D" to="Tutorial/Turotial Movimiento" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Tutorial/Turotial Guardar/Area2D" to="Tutorial/Turotial Guardar" method="_on_area_2d_body_entered"]

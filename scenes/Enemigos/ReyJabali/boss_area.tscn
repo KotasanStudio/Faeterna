@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cxbgresi8kvbh"]
+
+[ext_resource type="PackedScene" uid="uid://dwu0wm53g8n86" path="res://scenes/Enemigos/ReyJabali/ReyJabali2D.tscn" id="1_frhbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxrk6"]
+size = Vector2(1200, 644)
+
+[node name="BossArea" type="Area2D" unique_id=494204519]
+collision_layer = 32
+collision_mask = 2
+
+[node name="BossAreaCollision" type="CollisionShape2D" parent="." unique_id=168652867]
+position = Vector2(-1, -145)
+shape = SubResource("RectangleShape2D_kxrk6")
+
+[node name="ReyJabali" parent="." unique_id=477752749 node_paths=PackedStringArray("_detectionArea") instance=ExtResource("1_frhbb")]
+_detectionArea = NodePath("..")
+
+[connection signal="body_entered" from="." to="ReyJabali" method="_on_boss_area_body_entered"]
+[connection signal="body_exited" from="." to="ReyJabali" method="_on_boss_area_body_exited"]

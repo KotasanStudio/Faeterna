@@ -1,5 +1,5 @@
 using System;
-using Faeterna.Scripts.Enemigos.Enemy;
+using Faeterna.Scripts.Enemigos;
 using Faeterna.Scripts.Personaje;
 using Godot;
 
@@ -7,10 +7,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
 {
     public partial class Jabali : Enemy
     {
-        public float DashSpeed = 300f;
         private float _dashDuration = 2f;
-        public int Health = 8;
-        private static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
         // <summary>Indica si el enemigo está actualmente en estado de dash.</summary>
         private bool _isDashing = false;
         private bool _isChargingAttack = false;
@@ -30,10 +27,8 @@ namespace Faeterna.scripts.Enemigos.Jabali
             Right = 1
         }
         [Export] private enemyDirection _currentDirection = enemyDirection.Right;
-        [Export] private CollisionShape2D _detectionArea;
-        [Export] private Area2D _attackHitBox;
-        [Export] private RayCast2D _groundCheck;
-        [Export] private Area2D _hurtBox;
+
+        //Timers
         [Export] private Timer _loadAttackTimer;
         [Export] private Timer _deathAnimationTimer;
         [Export] private Timer _dashTimer;
@@ -44,7 +39,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
         {
             flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
             _dashTimer.Start();
-            _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
+            _shaderMaterial = (ShaderMaterial)animatedSprite.Material;
             SetAnimation("idle");
         }
 
@@ -70,13 +65,13 @@ namespace Faeterna.scripts.Enemigos.Jabali
             }
             else if (_isDashing)
             {
-                velocity.X = _dashDirection * DashSpeed;
+                velocity.X = _dashDirection * dashSpeed;
 
                 SetAnimation("run");
 
-                _groundCheck.ForceRaycastUpdate();
+                groundCheck.ForceRaycastUpdate();
 
-                if (!_groundCheck.IsColliding())
+                if (!groundCheck.IsColliding())
                 {
                     StopDash(ref velocity);
                 }
@@ -164,9 +159,9 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
         private void flipHJabali(float directionX)
         {
-            _animatedSprite.FlipH = directionX < 0;
-            _groundCheck.Position = new Vector2(Mathf.Abs(_groundCheck.Position.X) * directionX, _groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            _detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+            animatedSprite.FlipH = directionX < 0;
+            groundCheck.Position = new Vector2(Mathf.Abs(groundCheck.Position.X) * directionX, groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
+            detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
         }
 
         public void _on_attack_hit_box_body_entered(Node2D prota)
@@ -177,7 +172,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private void OnHurtBoxAreaEntered(Area2D area)
         {
             if (_isDead) return;
-            if (area.GetParent() is Lira lira){
+            if (area.Name == "KickHitbox" && area.GetParent() is Lira lira){
                 TakeDamage(1, lira.GlobalPosition);
                 if (lira.GlobalPosition.X > GlobalPosition.X)
             {
@@ -194,14 +189,14 @@ namespace Faeterna.scripts.Enemigos.Jabali
         private void TakeDamage(int v, Vector2 globalPosition)
         {
             
-            Health -= v;
+            health -= v;
             hitShader(_shaderMaterial);
             // Dirección opuesta al atacante + mini salto
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
             
             
-            if (Health <= 0)
+            if (health <= 0)
             {
                 desactiveCollision();
                 _isDead = true;
@@ -227,10 +222,10 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
         private void desactiveCollision()
         {
-            _attackHitBox.CollisionLayer = 0;
-            _attackHitBox.CollisionMask = 0;
-            _detectionArea.GetParent<Area2D>().CollisionLayer = 0;
-            _detectionArea.GetParent<Area2D>().CollisionMask = 0;
+            attackHitBox.CollisionLayer = 0;
+            attackHitBox.CollisionMask = 0;
+            detectionArea.GetParent<Area2D>().CollisionLayer = 0;
+            detectionArea.GetParent<Area2D>().CollisionMask = 0;
         }
 
         public void _on_detection_area_body_entered(Node2D prota)

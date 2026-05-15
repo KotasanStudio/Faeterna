@@ -1,5 +1,5 @@
 using System;
-using Faeterna.Scripts.Enemigos.Enemy;
+using Faeterna.Scripts.Enemigos;
 using Faeterna.Scripts.Personaje;
 using Godot;
 
@@ -8,14 +8,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
     public partial class ReyJabali : Enemy
     {
         // ── Parámetros de movimiento ──────────────────────────────────────────
-        public float DashSpeed = 400f;
-        private float _jumpVelocity = -400f;
-        private float _dashDuration = 2f;
-        public int Health = 40;
-
-        private static float Gravity =>
-            ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
-
         private ShaderMaterial _shaderMaterial;
 
         // ── Estado ────────────────────────────────────────────────────────────
@@ -28,15 +20,13 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private int _dashCount = 0;
         private int _jumpCount = 0;
-        private int _actionsBeforeJump = 3;  
+        private int _actionsBeforeJump = 3;
         private bool _isReturningHome = false;
         public float WalkSpeed = 150f; // Más lento que el Dash
         private float _arrivalThreshold = 10f; // Distancia mínima para considerar que llegó
 
-        private Node2D _target = null;
-
         // ── Dirección ─────────────────────────────────────────────────────────
-        private int _currentDirection; 
+        private int _currentDirection;
         private Vector2 _initPosition; // Guardamos la posición inicial para posibles resets
         [Export] private bool _startFacingLeft;
 
@@ -65,7 +55,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
             else
                 _currentDirection = -1;
-            _shaderMaterial = (ShaderMaterial)_animatedSprite.Material;
+            _shaderMaterial = (ShaderMaterial)animatedSprite.Material;
             SetAnimation("idle");
 
         }
@@ -99,7 +89,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             else
             {
                 // PRIORIDAD 1: Si el jugador está cerca, atacar
-                if (_target != null)
+                if (target != null)
                 {
                     _isReturningHome = false; // Cancelamos el regreso si el jugador vuelve
                     if (_isChargingAttack)
@@ -109,13 +99,13 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                     }
                     else if (_isDashing)
                     {
-                        velocity.X = _currentDirection * DashSpeed;
+                        velocity.X = _currentDirection * dashSpeed;
                         SetAnimation("run");
                     }
                     else if (!_isChargingAttack && !_isDashing)
                     {
-                        bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
-                            (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+                        bool shouldFlip = (target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                            (target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
                         if (shouldFlip)
                             FlipHJabali();
 
@@ -155,7 +145,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 // PRIORIDAD 3: Quieto
                 else
                 {
-                    velocity.X = Mathf.MoveToward(Velocity.X, 0, DashSpeed * (float)delta);
+                    velocity.X = Mathf.MoveToward(Velocity.X, 0, dashSpeed * (float)delta);
                     if (velocity.X == 0)
                         SetAnimation("idle");
                 }
@@ -169,12 +159,12 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         // ─────────────────────────────────────────────────────────────────────
         public void _on_load_attack_timer_timeout()
         {
-            if (_target == null || _isDead)
+            if (target == null || _isDead)
                 return;
 
             _isChargingAttack = false;
-            bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
-                              (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+            bool shouldFlip = (target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                              (target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
             if (shouldFlip)
                 FlipHJabali();
 
@@ -216,9 +206,9 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             _isDashing = false;
             _isChargingAttack = true;
 
-            if (_target != null)
+            if (target != null)
             {
-                int directionToPlayer = _target.GlobalPosition.X > GlobalPosition.X ? 1 : -1;
+                int directionToPlayer = target.GlobalPosition.X > GlobalPosition.X ? 1 : -1;
                 if (directionToPlayer != _currentDirection)
                     FlipHJabali();
             }
@@ -242,7 +232,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
 
             _jumpCount++;
-            return new Vector2(_currentDirection * DashSpeed, _jumpVelocity);
+            return new Vector2(_currentDirection * dashSpeed, jumpVelocity);
         }
 
         // ─────────────────────────────────────────────────────────────────────
@@ -251,7 +241,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private void FlipHJabali()
         {
             _currentDirection *= -1;
-            _animatedSprite.FlipH = _currentDirection < 0;
+            animatedSprite.FlipH = _currentDirection < 0;
         }
 
         // ─────────────────────────────────────────────────────────────────────
@@ -268,7 +258,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             if (_isDead)
                 return;
 
-            if (area.GetParent() is Lira lira)
+            if (area.Name == "KickHitbox" && area.GetParent() is Lira lira)
             {
                 TakeDamage(1, lira.GlobalPosition);
 
@@ -278,19 +268,23 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
 
             }
+            if (target != null)
+            {
+                bool shouldFlip = (target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
+                                  (target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
+                if (shouldFlip)
+                    FlipHJabali();
+            }
 
-            bool shouldFlip = (_target.GlobalPosition.X > GlobalPosition.X && _currentDirection < 0) ||
-                              (_target.GlobalPosition.X < GlobalPosition.X && _currentDirection > 0);
-            if (shouldFlip)
-                FlipHJabali();
+
         }
 
         private void TakeDamage(int amount, Vector2 sourcePosition)
         {
-            Health -= amount;
+            health -= amount;
             hitShader(_shaderMaterial);
 
-            if (Health > 0)
+            if (health > 0)
                 return;
 
             _isDead = true;
@@ -322,12 +316,13 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         // ─────────────────────────────────────────────────────────────────────
         // DETECCIÓN DEL JUGADOR
         // ─────────────────────────────────────────────────────────────────────
-        public void _on_detection_area_body_entered(Node2D prota)
+        public void _on_boss_area_body_entered(Node2D prota)
         {
+            GD.Print("Rey Jabali detecta algo entrando al área");
             if (prota is not Lira lira)
                 return;
 
-            _target = lira;
+            target = lira;
             _isReturningHome = false; // Deja de caminar a casa para pelear
             _isChargingAttack = true;
             _isDashing = false;
@@ -340,11 +335,11 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             _loadAttackTimer.Start();
         }
 
-        public void _on_detection_area_body_exited(Node2D prota)
+        public void _on_boss_area_body_exited(Node2D prota)
         {
             if (prota is Lira)
             {
-                _target = null;
+                target = null;
                 _isDashing = false;
                 _isChargingAttack = false;
                 _loadAttackTimer.Stop();
@@ -352,7 +347,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 // Esperar un segundo antes de decidir volver (por si el jugador entra de nuevo)
                 GetTree().CreateTimer(1.0f).Timeout += () =>
                 {
-                    if (_target == null)
+                    if (target == null)
                         _isReturningHome = true;
                 };
             }
@@ -360,7 +355,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
         private void moveToinitPosition()
         {
-            if (_target != null || _isDead)
+            if (target != null || _isDead)
                 return; // No volver si el jugador regresó
             GlobalPosition = _initPosition;
             Velocity = Vector2.Zero;

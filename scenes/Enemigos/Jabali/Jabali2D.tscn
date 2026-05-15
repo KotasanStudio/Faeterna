@@ -12,6 +12,10 @@
 shader = ExtResource("1_bhf6x")
 shader_parameter/white_amount = 0.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bhf6x"]
+shader = ExtResource("1_bhf6x")
+shader_parameter/white_amount = 0.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_8v2o2"]
 atlas = ExtResource("3_odc7f")
 region = Rect2(0, 0, 96, 96)
@@ -322,23 +326,27 @@ size = Vector2(90, 37)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
 size = Vector2(409.83334, 60)
 
-[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_detectionArea", "_attackHitBox", "_groundCheck", "_hurtBox", "_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "_animatedSprite")]
+[node name="Jabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_loadAttackTimer", "_deathAnimationTimer", "_dashTimer", "animatedSprite", "detectionArea", "groundCheck", "hurtBox", "attackHitBox")]
 texture_filter = 1
 material = SubResource("ShaderMaterial_oa5ie")
 scale = Vector2(1.5, 1.5)
 collision_layer = 4
 script = ExtResource("1_y6bk4")
 _currentDirection = -1
-_detectionArea = NodePath("DetectionArea/CollisionShape2D")
-_attackHitBox = NodePath("AttackHitBox")
-_groundCheck = NodePath("RayCast2D")
-_hurtBox = NodePath("Hurtbox")
 _loadAttackTimer = NodePath("DetectionArea/LoadAttackTimer")
 _deathAnimationTimer = NodePath("DeathAnimationTimer")
 _dashTimer = NodePath("DashTimer")
-_animatedSprite = NodePath("AnimatedSprite2D")
+health = 5
+dashSpeed = 300.0
+animatedSprite = NodePath("AnimatedSprite2D")
+dashDuration = 2.0
+detectionArea = NodePath("DetectionArea/CollisionShape2D")
+groundCheck = NodePath("RayCast2D")
+hurtBox = NodePath("Hurtbox")
+attackHitBox = NodePath("AttackHitBox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
+material = SubResource("ShaderMaterial_bhf6x")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
 animation = &"idle"
