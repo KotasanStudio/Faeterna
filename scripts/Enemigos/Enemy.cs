@@ -38,6 +38,12 @@ namespace Faeterna.Scripts.Enemigos
             shader.SetShaderParameter("white_amount", 0.0f);
         }
 
+        public void playAudio(string audioPath)
+        {
+            audioPlayer.Stream = GD.Load<AudioStream>(audioPath);
+            audioPlayer.Play();
+        }
+
         public void SetAnimation(string animationName)
         {
             animatedSprite?.Play(animationName);

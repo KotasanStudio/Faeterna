@@ -96,6 +96,8 @@ namespace Faeterna.scripts.Enemigos.Wolf
             detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
             Velocity = new Vector2(directionX * dashSpeed, Velocity.Y);
             SetAnimation("run");
+            playAudio("runSound");
+
         }
 
         public void _on_attack_hit_box_body_entered(Node2D prota)
@@ -114,6 +116,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
         {
             health -= v;
             hitShader(shaderMaterial);
+            playAudio("hitSound");
             if (health <= 0)
             {
                 SetAnimation("dead");

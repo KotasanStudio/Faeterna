@@ -193,6 +193,8 @@ namespace Faeterna.Scripts.Personaje
             }
             _currentHealth -= amount;
             UpdateHearts();
+            audioPlayer.Stream = GD.Load<AudioStream>("hitAudio");
+            audioPlayer.Play();
 
             if (_currentHealth <= 0)
             {

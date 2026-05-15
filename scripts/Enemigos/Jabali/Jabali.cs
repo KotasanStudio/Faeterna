@@ -68,7 +68,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 velocity.X = _dashDirection * dashSpeed;
 
                 SetAnimation("run");
-
+                playAudio("runSound");
                 groundCheck.ForceRaycastUpdate();
 
                 if (!groundCheck.IsColliding())
@@ -191,6 +191,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             
             health -= v;
             hitShader(_shaderMaterial);
+            playAudio("hitSound");
             // Dirección opuesta al atacante + mini salto
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
