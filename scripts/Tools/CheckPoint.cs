@@ -14,8 +14,8 @@ namespace Faeterna.Scripts.Tools
         public async Task ActionSaveProgress(Lira player)
         {
             if (GetTree().Paused) return;
-            player.Heal(9999); // Curamos completamente al jugador
-            player.RecoverMana(9999); // Recuperamos completamente el mana
+            player.Heal(5); // Curamos completamente al jugador
+            player.RecoverMana(100); // Recuperamos completamente el mana
             string scenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
             Vector2 savePosition = _spawnPoint?.GlobalPosition ?? GlobalPosition;
 
@@ -24,8 +24,8 @@ namespace Faeterna.Scripts.Tools
         }
 
         public Vector2 GetPrayPosition() => GlobalPosition;
-        
-        public void OnAreaCheckPointEntered(Node2D body) 
+
+        public void OnAreaCheckPointEntered(Node2D body)
         {
         }
     }

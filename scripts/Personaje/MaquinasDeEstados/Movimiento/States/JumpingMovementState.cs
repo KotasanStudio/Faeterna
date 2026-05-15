@@ -116,7 +116,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
                 return;
             if (ev.IsActionPressed("jump") && _player.DoubleJumpAvailable && _player.HasDoubleJump())
                 stateMachine.TransitionTo("DoubleJumpMovementState");
-            if (ev.IsActionPressed("dash"))
+            if (ev.IsActionPressed("dash") && _player.HasDash())
                 stateMachine.TransitionTo("DashMovementState");
         }
     }

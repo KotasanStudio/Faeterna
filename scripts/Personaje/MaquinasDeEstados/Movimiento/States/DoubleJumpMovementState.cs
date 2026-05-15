@@ -62,7 +62,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             {
                 if (_player.Velocity.X != 0)
                 {
-                    stateMachine.TransitionTo("RunningMovementState");  
+                    stateMachine.TransitionTo("RunningMovementState");
                 }
                 else if (_player.Velocity.X == 0&&_player.Velocity.Y == 0)
                 {
@@ -123,7 +123,7 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void HandleInput(InputEvent ev)
         {
             if (_player == null) return;
-            if (ev.IsActionPressed("dash"))
+            if (ev.IsActionPressed("dash") && _player.HasDash())
                 stateMachine.TransitionTo("DashMovementState");
         }
     }
