@@ -315,7 +315,7 @@ size = Vector2(78.82719, 35.00113)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgxyp"]
 size = Vector2(79.41347, 35.858284)
 
-[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_attackHitBox", "_hurtBox", "_dashTimer", "_loadAttackTimer", "_deathAnimationTimer", "animatedSprite")]
+[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_attackHitBox", "_hurtBox", "_dashTimer", "_loadAttackTimer", "_deathAnimationTimer", "animatedSprite", "hurtBox", "attackHitBox")]
 texture_filter = 1
 scale = Vector2(3, 3)
 collision_layer = 4
@@ -331,6 +331,8 @@ dashSpeed = 400.0
 jumpVelocity = -400.0
 animatedSprite = NodePath("AnimatedSprite2D")
 dashDuration = 2.0
+hurtBox = NodePath("Hurtbox")
+attackHitBox = NodePath("AttackHitBox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 material = SubResource("ShaderMaterial_tgcqc")

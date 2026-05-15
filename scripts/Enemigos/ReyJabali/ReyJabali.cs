@@ -31,7 +31,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         [Export] private bool _startFacingLeft;
 
         // ── Nodos exportados ──────────────────────────────────────────────────
-        [Export] private Area2D _detectionArea;
+        [Export] private Area2D _bossArea; // Área de detección del jugador;
         [Export] private Area2D _attackHitBox;
         [Export] private Area2D _hurtBox;
 
@@ -232,7 +232,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
 
             _jumpCount++;
-            return new Vector2(_currentDirection * dashSpeed, jumpVelocity);
+            return new Vector2(_currentDirection * (dashSpeed/2), jumpVelocity);
         }
 
         // ─────────────────────────────────────────────────────────────────────
@@ -309,8 +309,8 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             _attackHitBox.CollisionLayer = 0;
             _attackHitBox.CollisionMask = 0;
 
-            _detectionArea.CollisionLayer = 0;
-            _detectionArea.CollisionMask = 0;
+            _bossArea.CollisionLayer = 0;
+            _bossArea.CollisionMask = 0;
         }
 
         // ─────────────────────────────────────────────────────────────────────
