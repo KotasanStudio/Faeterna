@@ -22,7 +22,7 @@ namespace Faeterna.Scripts.Personaje
         public const float Speed = 350.0f;
 
         /// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
-        public const float JumpVelocity = -450.0f;
+        public const float JumpVelocity = -445.0f;
 
         /// <summary>Gravedad usada en los estados aéreos. Se obtiene del ProjectSettings.</summary>
         public static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
@@ -101,10 +101,10 @@ namespace Faeterna.Scripts.Personaje
         private bool _tutorial = false;
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        public bool _haveDobleJump { get; set;} = false;
+        public bool _haveDobleJump { get; set;} = true;
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        public bool _haveDash { get; set;} = false;
+        public bool _haveDash { get; set;} = true;
 
         /// <summary>Referencias a nodos de la interfaz y otros elementos relacionados con la salud, maná, muerte y descripción de objetos. Estos nodos se asignan desde el editor y se usan para actualizar visualmente la interfaz (corazones, barra de maná) y mostrar pantallas de muerte o descripciones de objetos cuando sea necesario. Aunque podrían estar gestionados por un sistema de UI separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos del personaje.</summary>
         [Export] public DeathScreen  _deathScreen;
@@ -155,6 +155,12 @@ namespace Faeterna.Scripts.Personaje
                 RemoveDefeatedBossesFromScene(pending.DefeatedBossTypes);
                 // Restaurar también el estado en memoria del GameSaveService
                 GameSaveService.SetDefeatedBosses(pending.DefeatedBossTypes);
+                return;
+            }
+
+            // Sólo cargar el guardado activo si la transición lo ha pedido explícitamente.
+            if (!GameSaveService.ConsumeLoadActiveSlotOnNextScene())
+            {
                 return;
             }
 

@@ -107,11 +107,11 @@ namespace Faeterna.Scripts.Menus
                         {
                             GameSaveService.DeleteSlot(_selectedSlot);
                             GD.Print($"Slot {_selectedSlot + 1} eliminado.");
-        
+
                             UpdateSlotBorder(_saveButtons[_selectedSlot], false);
                             _deleteMode = false;
                             _selectedSlot = -1;
-        
+
                             RefreshSlotVisuals();
                         }
                         // Clic en slot diferente → cambio de selección y actualización de bordes
@@ -119,7 +119,7 @@ namespace Faeterna.Scripts.Menus
                         {
                             if (_selectedSlot >= 0)
                                 UpdateSlotBorder(_saveButtons[_selectedSlot], false);
-        
+
                             _selectedSlot = id;
                             UpdateSlotBorder(_saveButtons[id], true);
                             GD.Print($"Slot {id + 1} seleccionado para eliminar. Pulsa de nuevo para confirmar.");
@@ -130,6 +130,7 @@ namespace Faeterna.Scripts.Menus
                     {
                         _selectedSlot = id;
                         GameSaveService.SetActiveSlot(id);
+                        GameSaveService.RequestLoadActiveSlotOnNextScene();
                         if (id == 1)
                             GetTree().ChangeSceneToFile("res://scenes/Maps/Bosque.tscn");
                         else

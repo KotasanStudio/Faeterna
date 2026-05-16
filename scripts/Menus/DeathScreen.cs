@@ -71,6 +71,7 @@ namespace Faeterna.Scripts.Menus
                 ? gameData.ScenePath
                 : DefaultGameScenePath;
 
+            GameSaveService.RequestLoadActiveSlotOnNextScene();
             GetTree().ChangeSceneToFile(scenePath);
             Engine.TimeScale = 1f;
         }

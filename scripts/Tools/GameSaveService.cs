@@ -20,10 +20,32 @@ namespace Faeterna.Scripts.Tools
         public static GameData PendingGameData { get; private set; }
 
         /// <summary>
+        /// Indica si la siguiente escena debe intentar cargar el guardado activo al instanciar a Lira.
+        /// Se usa sólo en entradas explícitas de partida guardada (continuar / cargar partida).
+        /// </summary>
+        private static bool _loadActiveSlotOnNextScene;
+
+        /// <summary>
         /// Establece datos pendientes que serán aplicados tras completar el cambio de escena.
         /// </summary>
         /// <param name="data">GameData a aplicar después de recargar la escena.</param>
         public static void SetPendingGameData(GameData data) => PendingGameData = data;
+
+        /// <summary>
+        /// Solicita que la siguiente escena cargue el guardado activo al aparecer el jugador.
+        /// </summary>
+        public static void RequestLoadActiveSlotOnNextScene() => _loadActiveSlotOnNextScene = true;
+
+        /// <summary>
+        /// Consume la solicitud de carga diferida del guardado activo.
+        /// </summary>
+        /// <returns><see langword="true"/> si se había solicitado cargar el slot activo; en caso contrario, <see langword="false"/>.</returns>
+        public static bool ConsumeLoadActiveSlotOnNextScene()
+        {
+            bool requested = _loadActiveSlotOnNextScene;
+            _loadActiveSlotOnNextScene = false;
+            return requested;
+        }
 
         /// <summary>
         /// Recupera y limpia los datos pendientes.
