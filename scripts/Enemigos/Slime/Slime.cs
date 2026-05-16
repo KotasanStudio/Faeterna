@@ -11,6 +11,9 @@ namespace Faeterna.Scripts.Enemigos.Slime
         private bool _isJumping = false;
         private int _jumpDirection = 1; // Alterna entre -1 y 1
 
+        [ExportGroup("Audio")]
+        [Export] private AudioStream _jumpAudio;
+        [Export] private AudioStream _hitAudio;
         public override void _EnterTree()
         {
             if (flipSprite)
@@ -97,7 +100,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
 
             Velocity = new Vector2(directionX * HorizontalSpeed, jumpVelocity);
             SetAnimation("jump");
-            //playAudio("jumpSound");
+            playAudio(_jumpAudio);
 
         }
 
@@ -131,7 +134,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
         {
             health -= v;
             hitShader(shaderMaterial);
-            //playAudio("hitSound");
+            playAudio(_hitAudio);
             GD.Print("Slime take damage: " + v + ", remaining health: " + health);
             if (health <= 0)
             {

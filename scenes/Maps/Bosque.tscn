@@ -23,9 +23,11 @@
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="20_lnic0"]
 [ext_resource type="PackedScene" uid="uid://v7xkrxjkaq8c" path="res://scenes/Enemigos/Slime/Slime2D.tscn" id="21_2jxkj"]
 [ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="22_clm75"]
+[ext_resource type="AudioStream" uid="uid://kih6tdn4erp1" path="res://assets/Audio/MiniBoss Music.mp3" id="22_qdhim"]
 [ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="24_hn01x"]
 [ext_resource type="PackedScene" uid="uid://dxc8at77ej36c" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
+[ext_resource type="AudioStream" uid="uid://ea51x71avsg4" path="res://assets/Audio/Background Music.mp3" id="26_tbcfi"]
 [ext_resource type="PackedScene" uid="uid://b5dfghgf6tja0" path="res://scenes/Maps/portal.tscn" id="27_q85yk"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_be71p"]
@@ -1040,9 +1042,11 @@ shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="Enemys" type="Node2D" parent="." unique_id=1084485302]
 
-[node name="BossArea" parent="Enemys" unique_id=494204519 node_paths=PackedStringArray("_dashItem") instance=ExtResource("23_ta6li")]
+[node name="BossArea" parent="Enemys" unique_id=494204519 node_paths=PackedStringArray("_dashItem", "_backgroundAudioPLayer") instance=ExtResource("23_ta6li")]
 position = Vector2(2875, 3950)
 _dashItem = NodePath("../../Objetos/dash")
+_backgroundAudioPLayer = NodePath("../../bosqueBackGroundAudio")
+_backgroundAudio = ExtResource("22_qdhim")
 
 [node name="Slime2D" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
 position = Vector2(4681, 1680)
@@ -1093,9 +1097,13 @@ position = Vector2(2949, 4072)
 _itemId = 1
 
 [node name="bosqueBackGroundAudio" type="AudioStreamPlayer" parent="." unique_id=1300738637]
+stream = ExtResource("26_tbcfi")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(9117, 535)
+position = Vector2(3790, 3713)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
 position = Vector2(9911, 413)

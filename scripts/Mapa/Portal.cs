@@ -8,6 +8,7 @@ namespace Faeterna.Scripts.Mapa
 {
 	public partial class Portal : Area2D
 	{
+
 		public void onBodyEnteredPortal(Node2D body)
 		{
 			if (body is Lira lira)

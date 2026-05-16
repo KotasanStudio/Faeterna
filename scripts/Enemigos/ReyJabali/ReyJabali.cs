@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using Faeterna.Scripts.Enemigos;
 using Faeterna.Scripts.Personaje;
 using Godot;
@@ -30,14 +31,21 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         private Vector2 _initPosition; // Guardamos la posición inicial para posibles resets
         [Export] private bool _startFacingLeft;
 
-        // ── Nodos exportados ──────────────────────────────────────────────────
+        [ExportGroup("Collisions and Areas")]
         [Export] private Area2D _bossArea; // Área de detección del jugador;
         [Export] private Area2D _attackHitBox;
         [Export] private Area2D _hurtBox;
-
+        
+        [ExportGroup("Timers")]
         [Export] private Timer _dashTimer; // Timer para controlar la duración del dash
         [Export] private Timer _loadAttackTimer; // Timer para controlar la carga del ataque
         [Export] private Timer _deathAnimationTimer; // Timer para controlar la duración de la animación de muerte
+
+        [ExportGroup("Audio")]
+        [Export] private AudioStream _jumpAudio;
+        [Export] private AudioStream _hitAudio;
+        [Export] private AudioStream _runAudio;
+
 
         [Signal] public delegate void jabaliBossdeathEventHandler();
         private Random _rnd = new();
@@ -77,6 +85,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
                 if (velocity.Y < 0 && !_jumped)
                 {
                     SetAnimation("jump");
+                    playAudio(_jumpAudio);
                     _jumped = true;
                     _falled = false;
                 }
@@ -113,6 +122,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
                         _isChargingAttack = true;
                         SetAnimation("idle");
+                        playAudio(null);
 
                     }
                 }
@@ -131,7 +141,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
 
                         velocity.X = directionHome * WalkSpeed;
                         SetAnimation("run");
-                        //playAudio("runSound");
 
                     }
                     else
@@ -198,6 +207,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             {
                 // FASE DE CARRERA
                 _dashCount++;
+                playAudio(_runAudio);
                 _isDashing = true; // Activamos el estado de dash para que el _PhysicsProcess lo gestione
                 _dashTimer.Start(); // Inicia el timer para controlar la duración del dash
 
@@ -235,7 +245,6 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
             }
 
             _jumpCount++;
-            //playAudio("jumpSound");
             return new Vector2(_currentDirection * (dashSpeed/2), jumpVelocity);
         }
 
@@ -287,7 +296,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
         {
             health -= amount;
             hitShader(_shaderMaterial);
-            //playAudio("hitSound");
+            playAudio(_hitAudio);
             if (health > 0)
                 return;
 

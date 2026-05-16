@@ -14,6 +14,11 @@ namespace Faeterna.scripts.Enemigos.Wolf
 
         private Random _rnd = new();
 
+        [ExportGroup("Audio")]
+        [Export] private AudioStream _runAudio;
+        [Export] private AudioStream _hitAudio;
+        [Export] private AudioStream _attackAudio;
+
         public override void _EnterTree()
         {
             if (flipSprite)
@@ -65,7 +70,9 @@ namespace Faeterna.scripts.Enemigos.Wolf
                 knockbackTimer -= (float)delta;
                 if (IsOnFloor() && health > 0)
                 {
+                    playAudio(_attackAudio);
                     SetAnimation("attack");
+
                     velocity.X = 0f;
                 }
             }
@@ -96,7 +103,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
             detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
             Velocity = new Vector2(directionX * dashSpeed, Velocity.Y);
             SetAnimation("run");
-            //playAudio("runSound");
+            playAudio(_runAudio);
 
         }
 
@@ -116,7 +123,7 @@ namespace Faeterna.scripts.Enemigos.Wolf
         {
             health -= v;
             hitShader(shaderMaterial);
-            //playAudio("hitSound");
+            playAudio(_hitAudio);
             if (health <= 0)
             {
                 SetAnimation("dead");

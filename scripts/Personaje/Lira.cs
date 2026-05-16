@@ -202,7 +202,7 @@ namespace Faeterna.Scripts.Personaje
             {
                 case "run":
                     audioPlayer.Stream = _runAudio;
-                    audioPlayer.VolumeDb = -10f; // Reducir volumen para el audio de correr
+                    
                     break;
                 case "jump":
                     audioPlayer.Stream = _jumpAudio;
@@ -229,6 +229,7 @@ namespace Faeterna.Scripts.Personaje
                     GD.PrintErr($"Nombre de audio desconocido: {audioName}");
                     return;
             }
+            audioPlayer.VolumeDb = +5f;
             audioPlayer.Play();
         }
 

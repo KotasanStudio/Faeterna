@@ -20,5 +20,6 @@ shape = SubResource("RectangleShape2D_kxrk6")
 _bossArea = NodePath("..")
 flipSprite = true
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="." to="ReyJabali" method="_on_boss_area_body_entered"]
 [connection signal="body_exited" from="." to="ReyJabali" method="_on_boss_area_body_exited"]

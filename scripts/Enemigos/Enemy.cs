@@ -12,12 +12,15 @@ namespace Faeterna.Scripts.Enemigos
         [Export] public AnimatedSprite2D animatedSprite;
         [Export] public float dashDuration;
         [Export]  public float knockbackDuration;
+        [Export] public bool flipSprite; 
+        [Export] public AudioStreamPlayer2D audioPlayer;
+
+        [ExportGroup("Collisions and Areas")]
         [Export] public CollisionShape2D detectionArea;
         [Export] public RayCast2D groundCheck;
         [Export] public Area2D hurtBox;
         [Export] public Area2D attackHitBox;
-        [Export] public bool flipSprite; 
-        [Export] public AudioStreamPlayer2D audioPlayer;
+
         public int dashDirection = 1;
         public float knockbackTimer = 0f;
         public ShaderMaterial shaderMaterial;
@@ -38,9 +41,9 @@ namespace Faeterna.Scripts.Enemigos
             shader.SetShaderParameter("white_amount", 0.0f);
         }
 
-        public void playAudio(string audioPath)
+        public void playAudio(AudioStream audio)
         {
-            audioPlayer.Stream = GD.Load<AudioStream>(audioPath);
+            audioPlayer.Stream = audio;
             audioPlayer.Play();
         }
 

@@ -29,14 +29,20 @@ namespace Faeterna.scripts.Enemigos.Jabali
         [Export] private enemyDirection _currentDirection = enemyDirection.Right;
 
         //Timers
+        [ExportGroup("Timers")]
         [Export] private Timer _loadAttackTimer;
         [Export] private Timer _deathAnimationTimer;
         [Export] private Timer _dashTimer;
+
+        [ExportGroup("Audio")]
+        [Export] private AudioStream _runAudio;
+        [Export] private AudioStream _hitAudio;
 
         private bool _isDead = false;
         private Random _rnd = new();
         public override void _Ready()
         {
+            
             flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);  
             _dashTimer.Start();
             _shaderMaterial = (ShaderMaterial)animatedSprite.Material;
@@ -68,10 +74,10 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 velocity.X = _dashDirection * dashSpeed;
 
                 SetAnimation("run");
-                //playAudio("runSound");
+                playAudio(_runAudio);
                 groundCheck.ForceRaycastUpdate();
 
-                if (!groundCheck.IsColliding())
+                if (!groundCheck.IsColliding() && target == null)
                 {
                     StopDash(ref velocity);
                 }
@@ -191,7 +197,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             
             health -= v;
             hitShader(_shaderMaterial);
-            //playAudio("hitSound");
+            playAudio(_hitAudio);
             // Dirección opuesta al atacante + mini salto
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);

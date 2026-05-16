@@ -5,6 +5,8 @@
 [ext_resource type="Shader" uid="uid://s2o12eed2hu0" path="res://scripts/Shaders/SecialEffects/hitEffect.gdshader" id="1_cul3j"]
 [ext_resource type="Texture2D" uid="uid://b7po626kq0vto" path="res://assets/Enemys/Slime/SlimeHit.png" id="2_7waxi"]
 [ext_resource type="Texture2D" uid="uid://dls302u46v6g7" path="res://assets/Enemys/Slime/SlimeIdle.png" id="3_cul3j"]
+[ext_resource type="AudioStream" uid="uid://it7rqdl4hitx" path="res://assets/Audio/Slime/SlimeJump.wav" id="3_gaqf6"]
+[ext_resource type="AudioStream" uid="uid://2h2yix5ur5eo" path="res://assets/Audio/Slime/SlimeHit.wav" id="4_16tdn"]
 [ext_resource type="Texture2D" uid="uid://bibfo0tqihrb8" path="res://assets/Enemys/Slime/SlimeJump.png" id="4_cky4s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cul3j"]
@@ -169,18 +171,20 @@ size = Vector2(177.5, 102)
 [sub_resource type="CircleShape2D" id="CircleShape2D_16tdn"]
 radius = 16.0
 
-[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("animatedSprite", "detectionArea", "hurtBox", "attackHitBox", "audioPlayer")]
+[node name="Slime2D" type="CharacterBody2D" unique_id=1506886063 node_paths=PackedStringArray("animatedSprite", "audioPlayer", "detectionArea", "hurtBox", "attackHitBox")]
 material = SubResource("ShaderMaterial_cul3j")
 collision_layer = 4
 script = ExtResource("1_7waxi")
+_jumpAudio = ExtResource("3_gaqf6")
+_hitAudio = ExtResource("4_16tdn")
 health = 2
 jumpVelocity = -380.0
 animatedSprite = NodePath("AnimatedSprite2D")
 knockbackDuration = 1.0
+audioPlayer = NodePath("slimeAudio")
 detectionArea = NodePath("DetectionArea/CollisionShape2D")
 hurtBox = NodePath("HurtBox")
 attackHitBox = NodePath("AttackHitBox")
-audioPlayer = NodePath("slimeAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1312586001]
 material = SubResource("ShaderMaterial_cky4s")
@@ -224,6 +228,7 @@ shape = SubResource("CircleShape2D_16tdn")
 debug_color = Color(0, 0.5058824, 0.09019608, 0.14901961)
 
 [node name="slimeAudio" type="AudioStreamPlayer2D" parent="." unique_id=555767629]
+bus = &"Sound FX"
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]

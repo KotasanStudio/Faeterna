@@ -32,7 +32,11 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             if (_player == null) return;
             if (Input.IsActionPressed("shot"))
             {
+                if(_player._currentMana < _manaCost)
+                    return; // No suficiente mana para cargar el disparo
+
                     _player.PlayAudio("fireball");
+
                 if(_shotBallScale < _maxShotBallScale && _manaCost < _maxManaCost)
                 {
                     _manaCost += _manaCost*delta; // Ajusta el costo de mana por segundo

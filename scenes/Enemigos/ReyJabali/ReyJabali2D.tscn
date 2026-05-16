@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bsebde8a8xvm" path="res://scripts/Enemigos/ReyJabali/ReyJabali.cs" id="1_ba876"]
 [ext_resource type="Shader" uid="uid://s2o12eed2hu0" path="res://scripts/Shaders/SecialEffects/hitEffect.gdshader" id="1_jpv6m"]
+[ext_resource type="AudioStream" uid="uid://dhun6q1drtuoh" path="res://assets/Audio/Jabali/BoarJump.wav" id="2_3o2so"]
+[ext_resource type="AudioStream" uid="uid://e0vpryxwn1ik" path="res://assets/Audio/Jabali/BoarAttack.wav" id="3_3o2so"]
 [ext_resource type="Texture2D" uid="uid://dy7w1vp66vde2" path="res://assets/Enemys/Jabali/JabaliDie.png" id="3_w1nr2"]
 [ext_resource type="Texture2D" uid="uid://c45ps1ehnlc50" path="res://assets/Enemys/ReyJabali/BossJabaliDie.png" id="4_jpv6m"]
 [ext_resource type="Texture2D" uid="uid://c4ugfe7ri87yg" path="res://assets/Enemys/ReyJabali/JabaliFall.png" id="5_3o2so"]
@@ -315,7 +317,7 @@ size = Vector2(78.82719, 35.00113)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgxyp"]
 size = Vector2(79.41347, 35.858284)
 
-[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_attackHitBox", "_hurtBox", "_dashTimer", "_loadAttackTimer", "_deathAnimationTimer", "animatedSprite", "hurtBox", "attackHitBox", "audioPlayer")]
+[node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_attackHitBox", "_hurtBox", "_dashTimer", "_loadAttackTimer", "_deathAnimationTimer", "animatedSprite", "audioPlayer", "hurtBox", "attackHitBox")]
 texture_filter = 1
 scale = Vector2(3, 3)
 collision_layer = 4
@@ -326,14 +328,17 @@ _hurtBox = NodePath("Hurtbox")
 _dashTimer = NodePath("DashTimer")
 _loadAttackTimer = NodePath("LoadAttackTimer")
 _deathAnimationTimer = NodePath("DeathAnimationTimer")
+_jumpAudio = ExtResource("2_3o2so")
+_hitAudio = ExtResource("2_3o2so")
+_runAudio = ExtResource("3_3o2so")
 health = 40
 dashSpeed = 400.0
 jumpVelocity = -400.0
 animatedSprite = NodePath("AnimatedSprite2D")
 dashDuration = 2.0
+audioPlayer = NodePath("reyJabaliAudio")
 hurtBox = NodePath("Hurtbox")
 attackHitBox = NodePath("AttackHitBox")
-audioPlayer = NodePath("reyJabaliAudio")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
 material = SubResource("ShaderMaterial_tgcqc")
@@ -380,6 +385,7 @@ wait_time = 3.0
 one_shot = true
 
 [node name="reyJabaliAudio" type="AudioStreamPlayer2D" parent="." unique_id=495968322]
+bus = &"Sound FX"
 
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]
 [connection signal="body_exited" from="AttackHitBox" to="." method="_on_attack_hit_box_body_exited"]
