@@ -108,6 +108,13 @@ Su capacidad aumenta con mejoras del Árbol.
 
 ---
 
+## 📘 Documentación API (Doxygen)
+
+- Sitio publicado con GitHub Pages: **https://kotasanstudio.github.io/Faeterna/**
+- Fuente generada desde `Doxyfile` y `documentation/html/`
+
+---
+
 ## 🤝 Contribuir
 
 1. Haz un fork del repositorio  
@@ -170,4 +177,3 @@ Puedes usarlo, modificarlo y compartirlo libremente con atribución.
 </table>
 
 </div>
-
