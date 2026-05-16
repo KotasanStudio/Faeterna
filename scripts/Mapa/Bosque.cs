@@ -25,6 +25,7 @@ public partial class Bosque : Node2D
         else
         {
             GD.PrintErr("AudioStreamPlayer2D para música de fondo no asignado en Bosque");
+            _backgroundMusic = GetNode<AudioStreamPlayer>("bosqueBackGroundAudio");
         }
     }
 

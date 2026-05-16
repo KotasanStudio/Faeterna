@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cp1w7juake3bs" path="res://assets/NPCs/Wenkai.png" id="9_ks3v5"]
 [ext_resource type="Texture2D" uid="uid://c7686eh4sbp86" path="res://assets/Menu/CARTEL.png" id="10_y6sv7"]
 [ext_resource type="Texture2D" uid="uid://bt1vc151wrnvc" path="res://assets/Liria/LiraLightPoint.png" id="12_5g7u1"]
+[ext_resource type="AudioStream" uid="uid://ea51x71avsg4" path="res://assets/Audio/Background Music.mp3" id="12_y5fif"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_khiku"]
 polygon = PackedVector2Array(768, 769, 2895, 769, 2821, 703, 4474, 704, 4425, 769, 4536, 768, 4638, 897, 4793, 897, 4744, 1090, 4858, 1089, 4955, 1217, 5368, 1217, 5334, 1281, 9096, 1280, 9186, 1201, 9220, 1208, 9269, 1262, 9274, 1281, 9390, 1280, 9265, 1408, 941, 1414)
@@ -184,3 +185,9 @@ range_item_cull_mask = 2
 shadow_enabled = true
 shadow_item_cull_mask = 2
 texture = ExtResource("12_5g7u1")
+
+[node name="bosqueBackGroundAudio" type="AudioStreamPlayer" parent="." unique_id=664388237]
+stream = ExtResource("12_y5fif")
+autoplay = true
+bus = &"Music"
+parameters/looping = true

@@ -52,6 +52,13 @@ namespace Faeterna.Scripts.Enemigos.Slime
         public override void _Ready()
         {
 
+            if(_jumpAudio==null)
+                _jumpAudio = GD.Load<AudioStream>("res://assets/Audio/Slime/SlimeJump.wav");
+
+            if(_hitAudio==null)
+                _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Slime/SlimeHit.wav");
+
+
             _jumpTimer = new Timer
             {
                 WaitTime = JumpInterval,

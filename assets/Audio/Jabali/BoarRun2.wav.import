@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cubonscvks77d"
-path="res://.godot/imported/LIraDirt.wav-4b5821c99b616091e78730a582ce1b5a.sample"
+uid="uid://b0logqir5qdu5"
+path="res://.godot/imported/BoarRun2.wav-abba3e20d15553142acbe402ecc63597.sample"
 
 [deps]
 
-source_file="res://assets/Audio/Lira/LIraDirt.wav"
-dest_files=["res://.godot/imported/LIraDirt.wav-4b5821c99b616091e78730a582ce1b5a.sample"]
+source_file="res://assets/Audio/Jabali/BoarRun2.wav"
+dest_files=["res://.godot/imported/BoarRun2.wav-abba3e20d15553142acbe402ecc63597.sample"]
 
 [params]
 

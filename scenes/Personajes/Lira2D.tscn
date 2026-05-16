@@ -8,11 +8,17 @@
 [ext_resource type="Texture2D" uid="uid://co4llhxq1boh7" path="res://assets/Liria/Lira Aiming.png" id="2_v5fc5"]
 [ext_resource type="Texture2D" uid="uid://dgatxaskl3emh" path="res://assets/Liria/Lira Jumping.png" id="2_vh8ty"]
 [ext_resource type="Texture2D" uid="uid://s6fohn3j5c6y" path="res://assets/Liria/Lira Kicking.png" id="3_8gdnm"]
+[ext_resource type="AudioStream" uid="uid://c37po164r73ef" path="res://assets/Audio/Lira/hit.mp3" id="3_jujei"]
 [ext_resource type="Texture2D" uid="uid://d0cpl0qv75ay" path="res://assets/Liria/Lira Idle.png" id="3_qkvvl"]
+[ext_resource type="AudioStream" uid="uid://c6q8fsrih22w6" path="res://assets/Audio/Lira/LiraRun.wav" id="4_1e1de"]
 [ext_resource type="Texture2D" uid="uid://dtvsloeceoli8" path="res://assets/Liria/Lira Running.png" id="5_gg8xq"]
+[ext_resource type="AudioStream" uid="uid://c27tqr337yew5" path="res://assets/Audio/Lira/LIraJump.wav" id="5_lr3db"]
 [ext_resource type="Texture2D" uid="uid://cnj1oxgj5nh8i" path="res://assets/Liria/Lira Hit.png" id="6_8j2b6"]
 [ext_resource type="Texture2D" uid="uid://bo5k8rqfcajfu" path="res://assets/Liria/Lira Death.png" id="6_atuup"]
+[ext_resource type="AudioStream" uid="uid://3qtsk70seoh4" path="res://assets/Audio/Lira/LiraAttack.wav" id="7_6vkvx"]
+[ext_resource type="AudioStream" uid="uid://dumt6oop1pmiq" path="res://assets/Audio/Lira/bolaDeFuego.mp3" id="8_voyht"]
 [ext_resource type="Texture2D" uid="uid://duge2wg4u1nly" path="res://assets/Liria/Lira Shooting.png" id="9_8j2b6"]
+[ext_resource type="AudioStream" uid="uid://bxq3kse53w71r" path="res://assets/Audio/Lira/LiraDash.mp3" id="9_pm8op"]
 [ext_resource type="Script" uid="uid://c7hbh5r8218kt" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/IdleMovementState.cs" id="10_qnkxa"]
 [ext_resource type="Script" uid="uid://cccgshgfhxtop" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" id="10_v5fc5"]
 [ext_resource type="Script" uid="uid://bydce6be28k1e" path="res://scripts/Personaje/MaquinasDeEstados/Movimiento/States/RunningMovementState.cs" id="11_v5fc5"]
@@ -1323,9 +1329,9 @@ light_mask = 4
 visibility_layer = 4
 collision_layer = 2
 script = ExtResource("1_v5fc5")
-_camera = NodePath("Camera3D")
-_hearts = [NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
-_manaBar = NodePath("Camera3D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
+_camera = NodePath("Camera2D")
+_hearts = [NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida1"), NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida2"), NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida3"), NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida4"), NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer/Vida5")]
+_manaBar = NodePath("Camera2D/CanvasLayer/MarginContainer/HBoxContainer/Mana")
 _invencibilityTimer = NodePath("Invencibility_Timer")
 _shotArea = NodePath("ShotArea")
 _kickArea = NodePath("KickHitbox")
@@ -1333,9 +1339,15 @@ _bullet = ExtResource("2_8gdnm")
 terrainParticles = NodePath("ParticulasTerreno")
 saltoParticulas = NodePath("ParticulasSalto")
 dobleSaltoParticulas = NodePath("ParticulasDobleSalto")
-_deathScreen = NodePath("Camera3D/Pantallas/DeathScreen")
-_objectoDescription = NodePath("Camera3D/Pantallas/ObjetoDescription")
+_deathScreen = NodePath("Camera2D/Pantallas/DeathScreen")
+_objectoDescription = NodePath("Camera2D/Pantallas/ObjetoDescription")
 audioPlayer = NodePath("liraAudio")
+_hitAudio = ExtResource("3_jujei")
+_runAudio = ExtResource("4_1e1de")
+_jumpAudio = ExtResource("5_lr3db")
+_attackAudio = ExtResource("7_6vkvx")
+_fireBallAudio = ExtResource("8_voyht")
+_dashAudio = ExtResource("9_pm8op")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1982246839]
 light_mask = 5
@@ -1365,7 +1377,7 @@ position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_5rx2b")
 animation = &"idle"
 
-[node name="CollisionShape3D" type="CollisionShape2D" parent="." unique_id=108505259]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=108505259]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_1alrg")
 
@@ -1424,72 +1436,72 @@ script = ExtResource("27_e80u2")
 
 [node name="LeavePrayMovementState" type="Node" parent="MovementStateMachine" unique_id=1573641821]
 
-[node name="Camera3D" type="Camera2D" parent="." unique_id=943068567]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=943068567]
 position = Vector2(0, -0.146)
 zoom = Vector2(2, 2)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D" unique_id=890193285]
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=890193285]
 layer = 10
 scale = Vector2(2, 2)
 transform = Transform2D(2, 0, 0, 2, 0, 0)
 
-[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer" unique_id=495754987]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/CanvasLayer" unique_id=495754987]
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.6, 0.6)
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer" unique_id=1189315622]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera2D/CanvasLayer/MarginContainer" unique_id=1189315622]
 layout_mode = 2
 
-[node name="Mana" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=843940009]
+[node name="Mana" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=843940009]
 material = SubResource("ShaderMaterial_8j2b6")
 layout_mode = 2
 size_flags_vertical = 0
 texture = ExtResource("14_vryya")
 
-[node name="HboxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=764043705]
+[node name="HboxContainer" type="HBoxContainer" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer" unique_id=764043705]
 texture_filter = 1
 layout_mode = 2
 theme_override_constants/separation = -26
 
-[node name="Vida1" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1588080771]
+[node name="Vida1" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1588080771]
 material = SubResource("ShaderMaterial_eeb6i")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida2" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1283593208]
+[node name="Vida2" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=1283593208]
 material = SubResource("ShaderMaterial_wyc13")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida3" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=536646600]
+[node name="Vida3" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=536646600]
 material = SubResource("ShaderMaterial_e4jf0")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida4" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=960238198]
+[node name="Vida4" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=960238198]
 material = SubResource("ShaderMaterial_slhl6")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Vida5" type="TextureRect" parent="Camera3D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=788420157]
+[node name="Vida5" type="TextureRect" parent="Camera2D/CanvasLayer/MarginContainer/HBoxContainer/HboxContainer" unique_id=788420157]
 material = SubResource("ShaderMaterial_vo67c")
 layout_mode = 2
 texture = ExtResource("14_5f38a")
 
-[node name="Pantallas" type="CanvasLayer" parent="Camera3D" unique_id=1854116637]
+[node name="Pantallas" type="CanvasLayer" parent="Camera2D" unique_id=1854116637]
 layer = 11
 
-[node name="PauseMenu" parent="Camera3D/Pantallas" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
+[node name="PauseMenu" parent="Camera2D/Pantallas" unique_id=1393028770 node_paths=PackedStringArray("_player") instance=ExtResource("31_xq1aa")]
 visible = false
 _player = NodePath("../../..")
 
-[node name="DeathScreen" parent="Camera3D/Pantallas" unique_id=333491521 instance=ExtResource("32_e80u2")]
+[node name="DeathScreen" parent="Camera2D/Pantallas" unique_id=333491521 instance=ExtResource("32_e80u2")]
 visible = false
 
-[node name="ObjetoDescription" parent="Camera3D/Pantallas" unique_id=1057756611 instance=ExtResource("33_7lnvu")]
+[node name="ObjetoDescription" parent="Camera2D/Pantallas" unique_id=1057756611 instance=ExtResource("33_7lnvu")]
 process_mode = 3
 visible = false
 

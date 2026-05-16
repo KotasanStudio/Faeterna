@@ -35,6 +35,10 @@ namespace Faeterna.scripts.Mapa
 		/// </summary>
 		public override void _Ready()
 		{
+
+			if(_backgroundAudio==null)
+				_backgroundAudio = GD.Load<AudioStream>("res://assets/Audio/MiniBoss Music.mp3");
+
 			_dashItem.Visible = false;
 
 			// Conectar la señal de muerte del boss

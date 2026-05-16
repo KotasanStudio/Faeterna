@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="22_clm75"]
 [ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="24_hn01x"]
-[ext_resource type="PackedScene" uid="uid://c6c8qeq4bois2" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
+[ext_resource type="PackedScene" uid="uid://dxc8at77ej36c" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
 [ext_resource type="AudioStream" uid="uid://ea51x71avsg4" path="res://assets/Audio/Background Music.mp3" id="26_tbcfi"]
 [ext_resource type="PackedScene" uid="uid://b5dfghgf6tja0" path="res://scenes/Maps/portal.tscn" id="27_q85yk"]
 
@@ -1041,80 +1041,54 @@ shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="Enemys" type="Node2D" parent="." unique_id=1084485302]
 
-[node name="BossArea" parent="Enemys" unique_id=494204519 node_paths=PackedStringArray("_dashItem") instance=ExtResource("23_ta6li")]
+[node name="BossArea" parent="Enemys" unique_id=494204519 node_paths=PackedStringArray("_dashItem", "_backgroundAudioPLayer") instance=ExtResource("23_ta6li")]
 position = Vector2(2875, 3950)
 _dashItem = NodePath("../../Objetos/dash")
+_backgroundAudioPLayer = NodePath("../../bosqueBackGroundAudio")
 
 [node name="Slime2D" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
 position = Vector2(4681, 1680)
-_jumpAudio = null
-_hitAudio = null
 flipSprite = true
 
 [node name="Wolf2D" parent="Enemys" unique_id=477752749 instance=ExtResource("22_clm75")]
 position = Vector2(6523, 1705)
-_runAudio = null
-_hitAudio = null
-_attackAudio = null
 
 [node name="Slime2D2" parent="Enemys" unique_id=2025676785 instance=ExtResource("21_2jxkj")]
 position = Vector2(5237, 1677)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Slime2D3" parent="Enemys" unique_id=238747619 instance=ExtResource("21_2jxkj")]
 position = Vector2(6858, 1681)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Jabali" parent="Enemys" unique_id=315515234 instance=ExtResource("24_hn01x")]
 position = Vector2(8443, 2608)
-_runAudio = null
-_hitAudio = null
 flipSprite = true
 
 [node name="Slime2D4" parent="Enemys" unique_id=957234937 instance=ExtResource("21_2jxkj")]
 position = Vector2(7090, 2504)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Wolf2D2" parent="Enemys" unique_id=758186489 instance=ExtResource("22_clm75")]
 position = Vector2(7737, 1505)
-_runAudio = null
-_hitAudio = null
-_attackAudio = null
 
 [node name="Slime2D5" parent="Enemys" unique_id=1241965840 instance=ExtResource("21_2jxkj")]
 position = Vector2(8738, 1346)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Slime2D6" parent="Enemys" unique_id=1852253628 instance=ExtResource("21_2jxkj")]
 position = Vector2(8223, 1108)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Jabali2" parent="Enemys" unique_id=534416355 instance=ExtResource("24_hn01x")]
 position = Vector2(9609, 538)
-_runAudio = null
-_hitAudio = null
 flipSprite = true
 
 [node name="Slime2D7" parent="Enemys" unique_id=252558400 instance=ExtResource("21_2jxkj")]
 position = Vector2(969, 4040)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Slime2D8" parent="Enemys" unique_id=1550917027 instance=ExtResource("21_2jxkj")]
 position = Vector2(1750, 4037)
-_jumpAudio = null
-_hitAudio = null
 
 [node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
 
 [node name="doubleJump" parent="Objetos" unique_id=577156713 instance=ExtResource("25_snqwn")]
 position = Vector2(9038, 2586)
-_isTutorialItem = true
 
 [node name="dash" parent="Objetos" unique_id=1697773906 instance=ExtResource("25_snqwn")]
 position = Vector2(2949, 4072)
@@ -1127,14 +1101,7 @@ bus = &"Music"
 parameters/looping = true
 
 [node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(1612, 1755)
-_hitAudio = null
-_runAudio = null
-_jumpAudio = null
-_fallAudio = null
-_attackAudio = null
-_fireBallAudio = null
-_dashAudio = null
+position = Vector2(7699, 2573)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
 position = Vector2(9911, 413)

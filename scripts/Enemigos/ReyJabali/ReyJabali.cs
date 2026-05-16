@@ -5,11 +5,11 @@ using Godot;
 
 namespace Faeterna.scripts.Enemigos.ReyJabali
 {
-    /// <summary>
-    /// Boss Rey Jabalí. Gestiona sus patrones de ataque, persecución, dash,
-    /// salto especial y la muerte con señal para desbloquear recompensas.
-    /// </summary>
-    public partial class ReyJabali : Enemy
+  /// <summary>
+  /// Boss Rey Jabalí. Gestiona sus patrones de ataque, persecución, dash,
+  /// salto especial y la muerte con señal para desbloquear recompensas.
+  /// </summary>
+  public partial class ReyJabali : Enemy
   {
     /// <summary>
     /// Material del shader usado para el efecto visual de daño.
@@ -157,6 +157,17 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
     /// </summary>
     public override void _Ready()
     {
+
+      if (_runAudio == null)
+        _runAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarRun.wav");
+
+      if (_hitAudio == null)
+        _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarJump.wav");
+
+      if (_jumpAudio == null)
+        _jumpAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarJump.wav");
+
+
       if (_startFacingLeft)
       {
         _currentDirection = 1;

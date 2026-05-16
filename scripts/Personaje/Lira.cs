@@ -120,7 +120,6 @@ namespace Faeterna.Scripts.Personaje
         [Export] public AudioStream _hitAudio;
         [Export] public AudioStream _runAudio;
         [Export] public AudioStream _jumpAudio;
-        [Export] public AudioStream _fallAudio;
         [Export] public AudioStream _attackAudio;
         [Export] public AudioStream _fireBallAudio;
         [Export] public AudioStream _dashAudio;
@@ -130,6 +129,25 @@ namespace Faeterna.Scripts.Personaje
         /// </summary>
         public override async void _Ready()
         {
+
+      if (_runAudio == null)
+        _runAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/LiraRun.wav");
+
+      if (_hitAudio == null)
+        _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/hit.mp3");
+
+      if (_jumpAudio == null)
+        _jumpAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/LIraJump.wav");
+
+      if (_attackAudio == null)
+        _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/LiraAttack.wav");
+
+      if (_fireBallAudio == null)
+        _jumpAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/bolaDeFuego.mp3");
+
+      if (_dashAudio == null)
+        _runAudio = GD.Load<AudioStream>("res://assets/Audio/Lira/LiraDash.mp3");
+
             animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
             MovementStateMachine = GetNode<MovementStateMachine>("MovementStateMachine");
             var animTreeNode = GetNodeOrNull<AnimationTree>("AnimationTree");
@@ -352,9 +370,6 @@ namespace Faeterna.Scripts.Personaje
                     break;
                 case "jump":
                     audioPlayer.Stream = _jumpAudio;
-                    break;
-                case "fall":
-                    audioPlayer.Stream = _fallAudio;
                     break;
                 case "attack":
                     audioPlayer.Stream = _attackAudio;

@@ -45,6 +45,15 @@ namespace Faeterna.scripts.Enemigos.Wolf
     /// </summary>
     public override void _Ready()
     {
+            if(_runAudio==null)
+                _runAudio = GD.Load<AudioStream>("res://assets/Audio/Wolf/WolfRun.wav");
+
+            if(_hitAudio==null)
+                _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Wolf/hit.mp3");
+
+            if(_attackAudio==null)
+                _attackAudio = GD.Load<AudioStream>("res://assets/Audio/Wolf/WolfAttack.wav");
+    
       _dashTimer = new Timer
       {
         WaitTime = DashInterval,

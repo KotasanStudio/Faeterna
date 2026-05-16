@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bsebde8a8xvm" path="res://scripts/Enemigos/ReyJabali/ReyJabali.cs" id="1_ba876"]
 [ext_resource type="Shader" uid="uid://s2o12eed2hu0" path="res://scripts/Shaders/SecialEffects/hitEffect.gdshader" id="1_jpv6m"]
 [ext_resource type="AudioStream" uid="uid://dhun6q1drtuoh" path="res://assets/Audio/Jabali/BoarJump.wav" id="2_3o2so"]
-[ext_resource type="AudioStream" uid="uid://e0vpryxwn1ik" path="res://assets/Audio/Jabali/BoarAttack.wav" id="3_3o2so"]
+[ext_resource type="AudioStream" uid="uid://e0vpryxwn1ik" path="res://assets/Audio/Jabali/BoarRun.wav" id="3_3o2so"]
 [ext_resource type="Texture2D" uid="uid://dy7w1vp66vde2" path="res://assets/Enemys/Jabali/JabaliDie.png" id="3_w1nr2"]
 [ext_resource type="Texture2D" uid="uid://c45ps1ehnlc50" path="res://assets/Enemys/ReyJabali/BossJabaliDie.png" id="4_jpv6m"]
 [ext_resource type="Texture2D" uid="uid://c4ugfe7ri87yg" path="res://assets/Enemys/ReyJabali/JabaliFall.png" id="5_3o2so"]

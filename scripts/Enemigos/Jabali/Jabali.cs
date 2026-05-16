@@ -78,6 +78,12 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// </summary>
         public override void _Ready()
         {
+            
+            if(_runAudio==null)
+                _runAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarRun.wav");
+
+            if(_hitAudio==null)
+                _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarJump.wav");
 
             flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);
             _dashTimer.Start();
@@ -114,7 +120,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
                     velocity.X = _dashDirection * dashSpeed;
 
                     SetAnimation("run");
-                    playAudio(_runAudio);
                     groundCheck.ForceRaycastUpdate();
 
                     if (!groundCheck.IsColliding() && target == null)
@@ -185,6 +190,8 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
             _isChargingAttack = false;
             _isDashing = true;
+            if(target!=null)playAudio(_runAudio);
+
 
             float directionX =
                 Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
