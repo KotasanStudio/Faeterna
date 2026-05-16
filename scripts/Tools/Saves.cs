@@ -251,7 +251,8 @@ namespace Faeterna.Scripts.Tools
                 ScenePath = scenePath,
                 LastCheckpointId = checkpointId,
                 PreviewImagePath = previewPath,
-                PlayerData = player.BuildSaveData(checkpointPosition)
+                PlayerData = player.BuildSaveData(checkpointPosition),
+                DefeatedBossTypes = GameSaveService.GetDefeatedBossList()
             };
 
             await SaveAsync(ActiveSlot, data);

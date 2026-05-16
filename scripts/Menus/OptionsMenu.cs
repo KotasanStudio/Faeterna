@@ -337,6 +337,15 @@ namespace Faeterna.Scripts.Menus
             }
         }
 
+        /// <summary>
+        /// Normaliza un valor de volumen dado en porcentaje (0-100) a decibelios (dB) para su uso con el sistema de audio del juego. El sistema de audio generalmente utiliza decibelios para representar los niveles de volumen, donde 0 dB es el nivel máximo y valores negativos representan niveles más bajos. Esta función convierte un valor de porcentaje a un valor de decibelios utilizando una fórmula que asegura que un valor de 0% corresponda a -80 dB (silencio) y un valor de 100% corresponda a 0 dB (volumen máximo). Es importante que esta función esté correctamente implementada para que los controles de volumen en el menú de opciones funcionen correctamente y para que los cambios en el volumen se apliquen
+        /// </summary>
+        /// <param name="percentValue">
+        /// Valor de volumen en porcentaje (0-100) que se desea convertir a decibelios. Este valor se utiliza para calcular el nivel de volumen en decibelios que se aplicará al sistema de audio del juego. Es importante que este valor esté dentro del rango de 0 a 100 para que la función funcione correctamente y para que los cambios en el volumen se apliquen de manera adecuada al juego.
+        /// </param>
+        /// <returns>
+        /// Valor de volumen en decibelios (dB) correspondiente al valor de porcentaje dado. Un valor de 0% corresponde a -80 dB (silencio) y un valor de 100% corresponde a 0 dB (volumen máximo). Este valor se utiliza para configurar el nivel de volumen en el sistema de audio del juego, permitiendo que los cambios realizados por el jugador en el menú de opciones se reflejen correctamente en el audio del juego. Es importante que este valor se calcule correctamente para que los controles de volumen funcionen adecuadamente en el menú de opciones.
+        /// </returns>
         private float NormalizeVolumeToDb(float percentValue)
         {
             float normalizedValue = Mathf.Clamp(percentValue / 100f, 0f, 1f);
@@ -347,6 +356,12 @@ namespace Faeterna.Scripts.Menus
             return Mathf.LinearToDb(normalizedValue);
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox). Aplica el nuevo valor de volumen maestro al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel general de volumen que afecta a todos los sonidos del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen maestro en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen maestro en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen general del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnHMasterSliderValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(0, NormalizeVolumeToDb(value));
@@ -354,6 +369,12 @@ namespace Faeterna.Scripts.Menus
             _master.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox). Aplica el nuevo valor de volumen de música al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de música en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de la música en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para las pistas musicales del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnHMusicSliderValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(1, NormalizeVolumeToDb(value));
@@ -361,6 +382,12 @@ namespace Faeterna.Scripts.Menus
             _music.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox). Aplica el nuevo valor de volumen de efectos de sonido al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de efectos de sonido en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los efectos de sonido en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con acciones, interacciones y eventos en el juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnHSoundFXSliderValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(2, NormalizeVolumeToDb(value));
@@ -368,6 +395,12 @@ namespace Faeterna.Scripts.Menus
             _soundfx.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox). Aplica el nuevo valor de volumen de ambiente al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos ambientales, lo que afecta a los sonidos relacionados con el entorno del juego, como el viento, la lluvia, los animales, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de ambiente
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de ambiente en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos ambientales en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con el entorno del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de ambiente funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnHEnviromentSliderValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(3, NormalizeVolumeToDb(value));
@@ -375,6 +408,12 @@ namespace Faeterna.Scripts.Menus
             _enviroment.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox). Aplica el nuevo valor de volumen de sonido de interfaz al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos relacionados con la interfaz del juego, como los clics, las notificaciones, los menús, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de sonido de interfaz en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos relacionados con la interfaz del juego en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos de la interfaz según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnHUISoundSliderValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(4, NormalizeVolumeToDb(value));
@@ -382,6 +421,12 @@ namespace Faeterna.Scripts.Menus
             _uisound.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox). Aplica el nuevo valor de volumen maestro al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel general de volumen que afecta a todos los sonidos del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen maestro en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen maestro en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen general del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnSpinBoxMasterValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(0, NormalizeVolumeToDb(value));
@@ -389,6 +434,12 @@ namespace Faeterna.Scripts.Menus
             _master.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox). Aplica el nuevo valor de volumen de música al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de música en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de la música en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para las pistas musicales del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnSpinBoxMusicValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(1, NormalizeVolumeToDb(value));
@@ -396,6 +447,12 @@ namespace Faeterna.Scripts.Menus
             _musicSpinBox.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox). Aplica el nuevo valor de volumen de efectos de sonido al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de efectos de sonido en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los efectos de sonido en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con acciones, interacciones y eventos en el juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnSpinBoxSoundFXValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(2, NormalizeVolumeToDb(value));
@@ -403,6 +460,12 @@ namespace Faeterna.Scripts.Menus
             _soundfxSpinBox.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox). Aplica el nuevo valor de volumen de ambiente al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos ambientales, lo que afecta a los sonidos relacionados con el entorno del juego, como el viento, la lluvia, los animales, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de ambiente
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de ambiente en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos ambientales en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con el entorno del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de ambiente funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnSpinBoxEnviromentValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(3, NormalizeVolumeToDb(value));
@@ -410,6 +473,12 @@ namespace Faeterna.Scripts.Menus
             _enviromentSpinBox.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox). Aplica el nuevo valor de volumen de sonido de interfaz al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos relacionados con la interfaz del juego, como los clics, las notificaciones, los menús, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </summary>
+        /// <param name="value">
+        /// Nuevo valor de volumen de sonido de interfaz en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos relacionados con la interfaz del juego en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos de la interfaz según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.
+        /// </param>
         public void OnSpinBoxUISoundValueChanged(float value)
         {
             AudioServer.SetBusVolumeDb(4, NormalizeVolumeToDb(value));
@@ -417,6 +486,9 @@ namespace Faeterna.Scripts.Menus
             _uisoundSpinBox.Value = value;
         }
 
+        /// <summary>
+        /// Se llama cuando se presiona el botón de guardar en el menú de opciones. Aplica todas las configuraciones seleccionadas por el jugador y las guarda utilizando la clase SaveSettings. Esto incluye configuraciones gráficas como antialiasing, VSync, resolución, bloqueo de FPS, calidad de sombras, así como configuraciones de audio como volumen maestro, música, efectos de sonido, ambiente y sonido de interfaz. Al presionar el botón de guardar, se reproduce una animación de presión para proporcionar retroalimentación visual al jugador, y luego se llama al método SaveOptions de la clase SaveSettings para almacenar todas las configuraciones seleccionadas. Es importante que esta función esté correctamente implementada para que las configuraciones seleccionadas por el jugador se apliquen correctamente al juego y se guarden para futuras sesiones.
+        /// </summary>
         public void OnSavePressed()
         {
             ButtonTools.PlayPressAnimation(
@@ -440,6 +512,9 @@ namespace Faeterna.Scripts.Menus
             );
         }
 
+        /// <summary>
+        /// Se llama cuando se presiona el botón de salir en el menú de opciones. Cierra el menú de opciones y vuelve al menú principal. Al presionar el botón de salir, se reproduce una animación de presión para proporcionar retroalimentación visual al jugador, y luego se establece la propiedad Visible del menú de opciones en false para ocultarlo. Es importante que esta función esté correctamente implementada para que el menú de opciones se cierre correctamente y para que el jugador pueda volver al menú principal sin problemas.
+        /// </summary>
         public void OnExitPressed()
         {
             ButtonTools.PlayPressAnimation(

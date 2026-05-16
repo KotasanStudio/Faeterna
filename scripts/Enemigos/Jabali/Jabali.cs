@@ -134,9 +134,8 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 _knockbackTimer -= (float)delta;
                 if (_knockbackTimer <= 0f)
                 {
-                    // Termina el estado de knockback
                     _knockbackTimer = 0f;
-                    velocity.X = 0f; // Detiene el movimiento horizontal después del knockback
+                    velocity.X = 0f;
                 }
             }
 
@@ -173,8 +172,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 : enemyDirection.Right);
             }
             _isDashing = false;
-
-
         }
 
         /// <summary>
@@ -266,7 +263,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="globalPosition">Posición del atacante, utilizada para determinar dirección del knockback.</param>
         private void TakeDamage(int v, Vector2 globalPosition)
         {
-
             health -= v;
             hitShader(_shaderMaterial);
             playAudio(_hitAudio);
@@ -291,7 +287,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
             }
             _isDashing = false;
             _knockbackTimer = KnockbackDuration;
-
         }
 
         /// <summary>
@@ -320,18 +315,16 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="prota">Nodo que entró en el área de detección.</param>
         public void _on_detection_area_body_entered(Node2D prota)
         {
-
-
             if (prota is Lira lira)
             {
-                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
-                _target = lira; // Empieza a perseguir al jugador
-                _dashTimer.Stop(); // Detiene el timer de dash automático
-                _isDashing = false; // Fuerza la salida del estado de dash
-                Velocity = Vector2.Zero; // Detiene el movimiento al detectar al jugador
-                _isChargingAttack = true; // Asegura que no esté en estado de carga al detectar al jugador
-                SetAnimation("loadAttack"); // Comienza la animación de carga
-                _loadAttackTimer.Start(); // Inicia el timer para cargar el ataque
+                Velocity = Vector2.Zero;
+                _target = lira;
+                _dashTimer.Stop();
+                _isDashing = false;
+                Velocity = Vector2.Zero;
+                _isChargingAttack = true;
+                SetAnimation("loadAttack");
+                _loadAttackTimer.Start();
             }
 
         }
@@ -345,10 +338,9 @@ namespace Faeterna.scripts.Enemigos.Jabali
         {
             if (prota is Lira)
             {
-                if (!_isDead) // Solo reanuda el timer si no está muerto
-                    _dashTimer.Start(); // Reanuda el timer de dash automático
+                if (!_isDead)
+                    _dashTimer.Start();
             }
         }
-
     }
 }

@@ -101,10 +101,10 @@ namespace Faeterna.Scripts.Personaje
         private bool _tutorial = false;
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        private bool _haveDobleJump { get; set;} = false;
+        public bool _haveDobleJump { get; set;} = false;
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        private bool _haveDash { get; set;} = false;
+        public bool _haveDash { get; set;} = false;
 
         /// <summary>Referencias a nodos de la interfaz y otros elementos relacionados con la salud, maná, muerte y descripción de objetos. Estos nodos se asignan desde el editor y se usan para actualizar visualmente la interfaz (corazones, barra de maná) y mostrar pantallas de muerte o descripciones de objetos cuando sea necesario. Aunque podrían estar gestionados por un sistema de UI separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos del personaje.</summary>
         [Export] public DeathScreen  _deathScreen;
@@ -146,6 +146,18 @@ namespace Faeterna.Scripts.Personaje
         /// </summary>
         private async Task TryLoadFromActiveSlotAsync()
         {
+            // Si hay datos pendientes fruto de una recarga de escena anterior, aplicarlos y limpiar el pending
+            var pending = GameSaveService.RetrieveAndClearPending();
+            if (pending?.PlayerData != null)
+            {
+                ApplySaveData(pending.PlayerData);
+                // Eliminar bosses derrotados según el guardado (persistencia de bosses)
+                RemoveDefeatedBossesFromScene(pending.DefeatedBossTypes);
+                // Restaurar también el estado en memoria del GameSaveService
+                GameSaveService.SetDefeatedBosses(pending.DefeatedBossTypes);
+                return;
+            }
+
             GameData gameData = await GameSaveService.LoadActiveSlotAsync();
             if (gameData?.PlayerData == null)
             {
@@ -153,23 +165,39 @@ namespace Faeterna.Scripts.Personaje
             }
 
             string currentScenePath = GetTree().CurrentScene?.SceneFilePath ?? string.Empty;
-            if (!string.IsNullOrWhiteSpace(gameData.ScenePath)
-                && !string.Equals(gameData.ScenePath, currentScenePath, System.StringComparison.OrdinalIgnoreCase))
-            {
-                return;
-            }
 
-            ApplySaveData(gameData.PlayerData);
+            // Queremos que, al cargar una partida desde un checkpoint, la escena se recargue
+            // para restaurar el estado por defecto de los enemigos (no-boss) y objetos.
+            // Para ello guardamos los datos pendientes y forzamos ChangeSceneToFile al mismo
+            // fichero de escena. Cuando la nueva escena termine de cargarse, su Lira
+            // recuperará los datos pendientes y los aplicará.
+            GameSaveService.SetPendingGameData(gameData);
+            try
+            {
+                // Si la ruta de escena está vacía, recargamos la escena actual para reiniciar entidades.
+                string sceneToLoad = string.IsNullOrWhiteSpace(gameData.ScenePath) ? currentScenePath : gameData.ScenePath;
+                if (!string.IsNullOrWhiteSpace(sceneToLoad))
+                {
+                    GetTree().ChangeSceneToFile(sceneToLoad);
+                }
+            }
+            catch (Exception ex)
+            {
+                GD.PushWarning($"No se pudo recargar la escena al aplicar guardado: {ex.Message}");
+                // Como fallback, aplicamos directamente los datos sin recargar la escena
+                GameSaveService.RetrieveAndClearPending();
+                ApplySaveData(gameData.PlayerData);
+            }
         }
 
         /// <summary>
-        /// Construye un objeto <see cref="PlayerSaveData"/> con el estado actual del personaje, incluyendo posición, salud, maná y flags de movimiento. Este método se usa para guardar el progreso del jugador en checkpoints o al salir del juego. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se guardan como true por defecto, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador guardó mientras tenía estas habilidades disponibles. Al restaurar el juego, estas flags se resetearán a true para garantizar un estado limpio y consistente al cargar desde cualquier punto del juego.
+        /// Construye un objeto <see cref="PlayerSaveData"/> con el estado actual del personaje, incluyendo posición, salud, maná, habilidades adquiridas y flags de movimiento. Este método se usa para guardar el progreso del jugador en checkpoints o al salir del juego. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se guardan como true por defecto, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Sin embargo, las habilidades adquiridas (HasDoubleJump, HasDash) se guardan con su valor actual para persistir el progreso del jugador en la adquisición de habilidades. Guardar las flags de movimiento con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador guardó mientras tenía estas habilidades disponibles.
         /// </summary>
         /// <param name="position">
         /// Posición mundial del personaje que se guardará en el progreso. Esta posición se usa para colocar al personaje correctamente al cargar el juego desde un checkpoint o al restaurar el progreso. Es importante que esta posición sea precisa y corresponda a un punto válido en la escena para evitar problemas de colisiones o ubicaciones no deseadas al cargar el juego. Generalmente, esta posición se obtiene del nodo del personaje (GlobalPosition) al momento de guardar el progreso.
         /// </param>
         /// <returns>
-        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información necesaria para restaurar el estado del personaje al cargar el juego. Este objeto incluye la posición, salud, maná y flags de movimiento (aunque estas últimas se guardan como true por defecto). El objeto resultante se serializa y se almacena en el sistema de guardado para su posterior recuperación. Al cargar el juego, se aplicará esta información al personaje para restaurar su estado de manera consistente con el momento en que se guardó.
+        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información necesaria para restaurar el estado del personaje al cargar el juego. Este objeto incluye la posición, salud, maná, habilidades adquiridas y flags de movimiento (aunque estas últimas se guardan como true por defecto). El objeto resultante se serializa y se almacena en el sistema de guardado para su posterior recuperación. Al cargar el juego, se aplicará esta información al personaje para restaurar su estado de manera consistente con el momento en que se guardó.
         /// </returns>
         public PlayerSaveData BuildSaveData(Vector2 position)
         {
@@ -178,6 +206,11 @@ namespace Faeterna.Scripts.Personaje
                 Position = position,
                 Health = _currentHealth,
                 Mana = _currentMana,
+                // Guardamos las habilidades adquiridas para persistir el progreso
+                HasDoubleJump = _haveDobleJump,
+                HasDash = _haveDash,
+                // Guardar si el jugador completó/avanzó en los tutoriales
+                HasCompletedTutorial = _tutorial,
                 // NO guardamos las flags de movimiento (DoubleJump, Dash, Coyote) porque
                 // son transitorias y se manejan exclusivamente por la máquina de estados.
                 // Guardarlas causa que el personaje vuele hasta el infinito y mas alla.
@@ -188,10 +221,10 @@ namespace Faeterna.Scripts.Personaje
         }
 
         /// <summary>
-        /// Aplica los datos de guardado al personaje, restaurando su posición, salud, maná y reseteando las flags de movimiento a true. Este método se usa al cargar el juego desde un checkpoint o al restaurar el progreso para colocar al personaje en el estado correcto. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador cargó mientras tenía estas habilidades disponibles. Al aplicar los datos de guardado, se garantiza un estado limpio y consistente para el personaje al cargar desde cualquier punto del juego.
+        /// Aplica los datos de guardado al personaje, restaurando su posición, salud, maná, habilidades adquiridas y reseteando las flags de movimiento a true. Este método se usa al cargar el juego desde un checkpoint o al restaurar el progreso para colocar al personaje en el estado correcto. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Sin embargo, las habilidades adquiridas (HasDoubleJump, HasDash) se restauran con su valor guardado para persistir el progreso del jugador en la adquisición de habilidades. Guardar las flags de movimiento con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador cargó mientras tenía estas habilidades disponibles. Al aplicar los datos de guardado, se garantiza un estado limpio y consistente para el personaje al cargar desde cualquier punto del juego.
         /// </summary>
         /// <param name="saveData">
-        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información guardada del personaje, incluyendo posición, salud, maná y flags de movimiento. Este objeto se obtiene al cargar el juego desde un checkpoint o al restaurar el progreso. Al aplicar esta información al personaje, se restaurará su estado de manera consistente con el momento en que se guardó, asegurando que la posición, salud y maná sean correctos. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado para evitar inconsistencias en la jugabilidad al cargar el juego.
+        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información guardada del personaje, incluyendo posición, salud, maná, habilidades adquiridas y flags de movimiento. Este objeto se obtiene al cargar el juego desde un checkpoint o al restaurar el progreso. Al aplicar esta información al personaje, se restaurará su estado de manera consistente con el momento en que se guardó, asegurando que la posición, salud, maná y habilidades sean correctos. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado para evitar inconsistencias en la jugabilidad al cargar el juego.
         /// </param>
         public void ApplySaveData(PlayerSaveData saveData)
         {
@@ -201,6 +234,12 @@ namespace Faeterna.Scripts.Personaje
             _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
             _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
 
+            // Restauramos las habilidades adquiridas para persistir el progreso del jugador
+            _haveDobleJump = saveData.HasDoubleJump;
+            _haveDash = saveData.HasDash;
+            // Restaurar estado de tutoriales
+            _tutorial = saveData.HasCompletedTutorial;
+
             // IMPORTANTE: Los flags de movimiento
             // SIEMPRE se resetean a true al cargar, independientemente del valor guardado.
             DoubleJumpAvailable = true;
@@ -209,6 +248,67 @@ namespace Faeterna.Scripts.Personaje
 
             UpdateHearts();
             UpdateMana();
+            // Tras aplicar los datos del jugador, eliminar objetos ya recogidos para
+            // evitar que reaparezcan en la escena recargada.
+            RemoveCollectedObjectsFromScene();
+        }
+
+        /// <summary>
+        /// Elimina de la escena los objetos que ya han sido recogidos por el jugador
+        /// para evitar que reaparezcan tras recargar la escena desde un guardado.
+        /// </summary>
+        private void RemoveCollectedObjectsFromScene()
+        {
+            var root = GetTree().CurrentScene;
+            if (root == null) return;
+            RemoveCollectedObjectsRecursive(root);
+        }
+
+        private void RemoveCollectedObjectsRecursive(Node node)
+        {
+            foreach (Node child in node.GetChildren())
+            {
+                // Comprueba si es un Objeto del mapa
+                if (child is Faeterna.scripts.Mapa.Objeto mapaObjeto)
+                {
+                    int id = mapaObjeto.GetItemId();
+                    if ((id == 0 && _haveDobleJump) || (id == 1 && _haveDash))
+                    {
+                        mapaObjeto.QueueFree();
+                        continue;
+                    }
+                }
+
+                RemoveCollectedObjectsRecursive(child);
+            }
+        }
+
+        /// <summary>
+        /// Elimina de la escena los bosses cuyos identificadores aparecen en la lista de derrotados
+        /// del guardado (para que no reaparezcan tras recargar la escena si han sido vencidos).
+        /// </summary>
+        /// <param name="defeatedTypes">Lista de nombres de tipos/identificadores de bosses derrotados.</param>
+        private void RemoveDefeatedBossesFromScene(System.Collections.Generic.List<string> defeatedTypes)
+        {
+            if (defeatedTypes == null || defeatedTypes.Count == 0) return;
+            var root = GetTree().CurrentScene;
+            if (root == null) return;
+            RemoveDefeatedBossesRecursive(root, defeatedTypes);
+        }
+
+        private void RemoveDefeatedBossesRecursive(Node node, System.Collections.Generic.List<string> defeatedTypes)
+        {
+            foreach (Node child in node.GetChildren())
+            {
+                var typeName = child.GetType().Name;
+                if (defeatedTypes.Contains(typeName) && child is Faeterna.Scripts.Enemigos.Enemy)
+                {
+                    child.QueueFree();
+                    continue;
+                }
+
+                RemoveDefeatedBossesRecursive(child, defeatedTypes);
+            }
         }
 
         /// <summary>

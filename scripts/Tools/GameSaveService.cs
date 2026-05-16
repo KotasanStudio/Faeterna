@@ -12,6 +12,60 @@ namespace Faeterna.Scripts.Tools
     public static class GameSaveService
     {
         public static int ActiveSlot => Saves.ActiveSlot;
+        /// <summary>
+        /// Datos de juego pendientes de aplicar tras cargar/recargar una escena.
+        /// Se usan para almacenar temporalmente el GameData mientras se realiza ChangeScene
+        /// y poder aplicarlo al nuevo nodo jugador cuando la escena se haya cargado.
+        /// </summary>
+        public static GameData PendingGameData { get; private set; }
+
+        /// <summary>
+        /// Establece datos pendientes que serán aplicados tras completar el cambio de escena.
+        /// </summary>
+        /// <param name="data">GameData a aplicar después de recargar la escena.</param>
+        public static void SetPendingGameData(GameData data) => PendingGameData = data;
+
+        /// <summary>
+        /// Recupera y limpia los datos pendientes.
+        /// </summary>
+        /// <returns>GameData previamente pendiente o null.</returns>
+        public static GameData RetrieveAndClearPending()
+        {
+            var tmp = PendingGameData;
+            PendingGameData = null;
+            return tmp;
+        }
+
+        // Conjunto de bosses derrotados durante la sesión; se persiste en los guardados.
+        private static readonly System.Collections.Generic.HashSet<string> _defeatedBosses = new();
+
+        /// <summary>
+        /// Marca un boss como derrotado (persistible en el siguiente guardado).
+        /// </summary>
+        /// <param name="bossType">Identificador del boss (por ejemplo el nombre de la clase).</param>
+        public static void MarkBossDefeated(string bossType)
+        {
+            if (string.IsNullOrWhiteSpace(bossType)) return;
+            _defeatedBosses.Add(bossType);
+        }
+
+        /// <summary>
+        /// Devuelve una lista copiada de los bosses derrotados actualmente registrados.
+        /// </summary>
+        /// <returns>Lista de identificadores de bosses derrotados.</returns>
+        public static System.Collections.Generic.List<string> GetDefeatedBossList()
+            => new System.Collections.Generic.List<string>(_defeatedBosses);
+
+        /// <summary>
+        /// Reemplaza la lista de bosses derrotados (usado al cargar un guardado).
+        /// </summary>
+        public static void SetDefeatedBosses(System.Collections.Generic.IEnumerable<string> list)
+        {
+            _defeatedBosses.Clear();
+            if (list == null) return;
+            foreach (var s in list)
+                if (!string.IsNullOrWhiteSpace(s)) _defeatedBosses.Add(s);
+        }
 
         /// <summary>
         /// Define el slot activo asegurando que no sea negativo.
@@ -70,7 +124,15 @@ namespace Faeterna.Scripts.Tools
         /// Carga los datos del slot activo.
         /// </summary>
         /// <returns>Datos cargados o <see langword="null"/> si el archivo no existe.</returns>
-        public static Task<GameData> LoadActiveSlotAsync() => Saves.LoadActiveSlotAsync();
+        public static async Task<GameData> LoadActiveSlotAsync()
+        {
+            var data = await Saves.LoadActiveSlotAsync();
+            if (data?.DefeatedBossTypes != null)
+            {
+                SetDefeatedBosses(data.DefeatedBossTypes);
+            }
+            return data;
+        }
 
         /// <summary>
         /// Guarda en disco los datos de un slot usando <see cref="SaveFile{TData}"/>.

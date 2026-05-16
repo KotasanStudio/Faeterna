@@ -42,7 +42,7 @@ namespace Faeterna.Scripts.Tools
 
             var tween = button.CreateTween();
 
-            // Paso 1: Encoger (irse para dentro)
+            // Paso 1: Encoger
             tween.TweenProperty(button, "scale", PressedScale, PressDuration)
                 .SetEase(Tween.EaseType.In)
                 .SetTrans(Tween.TransitionType.Cubic);

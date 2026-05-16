@@ -21,8 +21,17 @@ namespace Faeterna.Scripts.Tools
         /// <summary>Ruta del archivo de imagen de vista previa que representa el estado guardado en la interfaz de usuario.</summary>
         public string PreviewImagePath { get; set; } = string.Empty;
 
-        /// <summary>Datos específicos del jugador (posición, salud, maná, habilidades disponibles).</summary>
+        /// <summary>
+        /// Datos específicos del jugador (posición, salud, maná, habilidades adquiridas y estado de tutoriales).
+        /// Se serializan junto con la partida para restaurar correctamente a Lira al cargar el guardado.
+        /// </summary>
         public PlayerSaveData PlayerData { get; set; } = new();
+
+        /// <summary>
+        /// Lista de identificadores de bosses derrotados en esta partida.
+        /// Se usa para que esos bosses no reaparezcan al cargar el guardado.
+        /// </summary>
+        public System.Collections.Generic.List<string> DefeatedBossTypes { get; set; } = new();
     }
 
     /// <summary>
@@ -51,6 +60,18 @@ namespace Faeterna.Scripts.Tools
 
         /// <summary>Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo). El valor predeterminado es verdadero.</summary>
         public bool CoyoteAvailable { get; set; } = true;
+
+        /// <summary>Indica si el jugador ha adquirido el doble salto como habilidad permanente. El valor predeterminado es falso (no adquirido).</summary>
+        public bool HasDoubleJump { get; set; } = false;
+
+        /// <summary>Indica si el jugador ha adquirido el dash como habilidad permanente. El valor predeterminado es falso (no adquirido).</summary>
+        public bool HasDash { get; set; } = false;
+
+        /// <summary>
+        /// Indica si el jugador ya vio o completó los tutoriales relevantes.
+        /// Se usa para no volver a mostrar tutoriales tras cargar la partida.
+        /// </summary>
+        public bool HasCompletedTutorial { get; set; } = false;
 
         /// <summary>
         /// Posición del jugador como un <see cref="Vector2"/>. Esta propiedad convierte automáticamente entre componentes X,Y y Vector2 para facilitar el acceso a la posición completa del jugador.

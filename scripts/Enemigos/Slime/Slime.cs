@@ -223,7 +223,6 @@ namespace Faeterna.Scripts.Enemigos.Slime
             }
             else
             {
-
                 _isJumping = false;
                 knockbackTimer = knockbackDuration;
 

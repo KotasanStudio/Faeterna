@@ -195,6 +195,12 @@ namespace Faeterna.Scripts.Menus
                 });
         }
 
+        /// <summary>
+        /// Controla la visibilidad de la UI del jugador (corazones y barra de maná) al pausar y reanudar el juego. Al pausar, se oculta la UI del jugador para evitar superposiciones con el menú de pausa, y al reanudar se vuelve a mostrar. Este método se llama desde PauseGame para ocultar la UI del jugador al pausar, y desde ResumeGame para mostrarla al reanudar. Es importante que esta función controle correctamente la visibilidad de los elementos de la UI del jugador para garantizar una experiencia de usuario coherente durante la pausa y reanudación del juego.
+        /// </summary>
+        /// <param name="visible">
+        /// Indica si la UI del jugador debe ser visible o no. Si es verdadero, se muestra la UI del jugador; si es falso, se oculta. Este parámetro se utiliza para controlar la visibilidad de los coraz
+        /// </param>
         private void VisibleUI(bool visible)
         {
             foreach (TextureRect heart in _player._hearts)
