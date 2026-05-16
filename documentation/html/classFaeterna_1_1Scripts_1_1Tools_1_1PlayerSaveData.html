@@ -120,6 +120,14 @@ bool&#160;</td><td class="memItemRight"><b>DashAvailable</b> = true<code> [get, 
 <tr class="memitem:a908ffad42edf60f4a57e6ed3d1f86616" id="r_a908ffad42edf60f4a57e6ed3d1f86616"><td class="memItemLeft"><a id="a908ffad42edf60f4a57e6ed3d1f86616" name="a908ffad42edf60f4a57e6ed3d1f86616"></a>
 bool&#160;</td><td class="memItemRight"><b>CoyoteAvailable</b> = true<code> [get, set]</code></td></tr>
 <tr class="memdesc:a908ffad42edf60f4a57e6ed3d1f86616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo). El valor predeterminado es verdadero. <br /></td></tr>
+<tr class="memitem:a4bb1f2bffd8020b518b6ec4e616bc83d" id="r_a4bb1f2bffd8020b518b6ec4e616bc83d"><td class="memItemLeft"><a id="a4bb1f2bffd8020b518b6ec4e616bc83d" name="a4bb1f2bffd8020b518b6ec4e616bc83d"></a>
+bool&#160;</td><td class="memItemRight"><b>HasDoubleJump</b> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:a4bb1f2bffd8020b518b6ec4e616bc83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jugador ha adquirido el doble salto como habilidad permanente. El valor predeterminado es falso (no adquirido). <br /></td></tr>
+<tr class="memitem:a982d0b465ebb9d1d38d71498642613a9" id="r_a982d0b465ebb9d1d38d71498642613a9"><td class="memItemLeft"><a id="a982d0b465ebb9d1d38d71498642613a9" name="a982d0b465ebb9d1d38d71498642613a9"></a>
+bool&#160;</td><td class="memItemRight"><b>HasDash</b> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:a982d0b465ebb9d1d38d71498642613a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jugador ha adquirido el dash como habilidad permanente. El valor predeterminado es falso (no adquirido). <br /></td></tr>
+<tr class="memitem:aca6fbc5c4b1e20ab0b56fc949355a055" id="r_aca6fbc5c4b1e20ab0b56fc949355a055"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aca6fbc5c4b1e20ab0b56fc949355a055">HasCompletedTutorial</a> = false<code> [get, set]</code></td></tr>
+<tr class="memdesc:aca6fbc5c4b1e20ab0b56fc949355a055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jugador ya vio o completó los tutoriales relevantes.  <br /></td></tr>
 <tr class="memitem:aabe9bb96353d7d5fb7616941c96a3840" id="r_aabe9bb96353d7d5fb7616941c96a3840"><td class="memItemLeft">Vector2&#160;</td><td class="memItemRight"><a class="el" href="#aabe9bb96353d7d5fb7616941c96a3840">Position</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aabe9bb96353d7d5fb7616941c96a3840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posición del jugador como un Vector2.  <br /></td></tr>
 </table>
@@ -127,6 +135,31 @@ bool&#160;</td><td class="memItemRight"><b>CoyoteAvailable</b> = true<code> [get
 <div class="textblock"><p>Clase que contiene los datos específicos del jugador (Lira) que se guardan en una partida. </p>
 <p>Incluye información sobre la posición, salud, maná y disponibilidad de habilidades especiales como el doble salto, dash y coyote time. </p>
 </div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="aca6fbc5c4b1e20ab0b56fc949355a055" name="aca6fbc5c4b1e20ab0b56fc949355a055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6fbc5c4b1e20ab0b56fc949355a055">&#9670;&#160;</a></span>HasCompletedTutorial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Faeterna.Scripts.Tools.PlayerSaveData.HasCompletedTutorial = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indica si el jugador ya vio o completó los tutoriales relevantes. </p>
+<p>Se usa para no volver a mostrar tutoriales tras cargar la partida. </p>
+
+</div>
+</div>
 <a id="aabe9bb96353d7d5fb7616941c96a3840" name="aabe9bb96353d7d5fb7616941c96a3840"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabe9bb96353d7d5fb7616941c96a3840">&#9670;&#160;</a></span>Position</h2>
 

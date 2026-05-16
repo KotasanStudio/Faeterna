@@ -116,9 +116,77 @@ Collaboration diagram for Faeterna.Scripts.Mapa.Portal:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02551bafcb0b75aa32f5d60df84b97a5" id="r_a02551bafcb0b75aa32f5d60df84b97a5"><td class="memItemLeft"><a id="a02551bafcb0b75aa32f5d60df84b97a5" name="a02551bafcb0b75aa32f5d60df84b97a5"></a>
-void&#160;</td><td class="memItemRight"><b>onBodyEnteredPortal</b> (Node2D body)</td></tr>
+<tr class="memitem:a02551bafcb0b75aa32f5d60df84b97a5" id="r_a02551bafcb0b75aa32f5d60df84b97a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a02551bafcb0b75aa32f5d60df84b97a5">onBodyEnteredPortal</a> (Node2D body)</td></tr>
+<tr class="memdesc:a02551bafcb0b75aa32f5d60df84b97a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que se llama cuando un cuerpo entra en el área del portal.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afb5ba0d1d34b28a726ca1fd63de3685c" id="r_afb5ba0d1d34b28a726ca1fd63de3685c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb5ba0d1d34b28a726ca1fd63de3685c">ChangeScene</a> ()</td></tr>
+<tr class="memdesc:afb5ba0d1d34b28a726ca1fd63de3685c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que se encarga de cambiar a la escena de carga.  <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="afb5ba0d1d34b28a726ca1fd63de3685c" name="afb5ba0d1d34b28a726ca1fd63de3685c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5ba0d1d34b28a726ca1fd63de3685c">&#9670;&#160;</a></span>ChangeScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Mapa.Portal.ChangeScene </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método que se encarga de cambiar a la escena de carga. </p>
+<p>Se llama de forma diferida desde el método onBodyEnteredPortal para garantizar que el cambio de escena se realice después de que se hayan procesado todas las señales y eventos actuales. Este método utiliza el método ChangeSceneToFile del nodo raíz del árbol de escenas para cambiar a la escena de carga ubicada en "res://scenes/Menus/pantalla_carga.tscn". Es importante asegurarse de que la ruta a la escena de carga sea correcta para evitar errores al intentar cambiar a esa escena. </p>
+
+</div>
+</div>
+<a id="a02551bafcb0b75aa32f5d60df84b97a5" name="a02551bafcb0b75aa32f5d60df84b97a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02551bafcb0b75aa32f5d60df84b97a5">&#9670;&#160;</a></span>onBodyEnteredPortal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Mapa.Portal.onBodyEnteredPortal </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>body</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método que se llama cuando un cuerpo entra en el área del portal. </p>
+<p>Si el cuerpo es una instancia de <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>, se llama al método ChangeScene de forma diferida para cambiar a la escena de carga. Es importante usar CallDeferred para asegurarse de que el cambio de escena se realice después de que se hayan procesado todas las señales y eventos actuales, evitando posibles conflictos o errores durante la transición entre escenas.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>El cuerpo que ha entrado en el área del portal. Este parámetro se espera que sea una instancia de <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>, que es el personaje principal del juego. Si el cuerpo no es una instancia de <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>, no se realizará ningún cambio de escena. Es importante asegurarse de que el cuerpo que entra en el portal sea el personaje correcto para evitar cambios de escena no deseados. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Mapa/<b>Portal.cs</b></li>
 </ul>

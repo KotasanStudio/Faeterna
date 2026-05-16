@@ -1,6 +1,14 @@
 var searchData=
 [
   ['idlemovementstate_0',['IdleMovementState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState.html',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States']]],
-  ['initialstate_1',['initialState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html#a882113387a2feb2e87392991d99c1833',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine']]],
-  ['iskicking_2',['IsKicking',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#a9d46b55a3865a5c0fffdae7dd1e0fbd2',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]]
+  ['imagenodepath_1',['ImageNodePath',['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a0fcfe2d7274855427604c18336cd1cf8',1,'Faeterna::Scripts::Menus::ObjetoDescription']]],
+  ['initialstate_2',['initialState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html#a882113387a2feb2e87392991d99c1833',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine']]],
+  ['iskicking_3',['IsKicking',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#a9d46b55a3865a5c0fffdae7dd1e0fbd2',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]],
+  ['ispauseinput_4',['IsPauseInput',['../classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2a5f47b2e06e1aefbea434c75fbf275',1,'Faeterna::Scripts::Menus::PauseMenu']]],
+  ['itemdata_5',['ItemData',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData.html',1,'Faeterna.scripts.Mapa.Objeto.ItemData'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html',1,'Faeterna.Scripts.Menus.ObjetoDescription.ItemData'],['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData.html#a25927a2192dc4842f6742d3de727d8ce',1,'Faeterna.scripts.Mapa.Objeto.ItemData.ItemData()'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html#acbf40d33ecffe2137263c6e51aa55fff',1,'Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData()']]],
+  ['itemdescription_6',['ItemDescription',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a41563158c4f5a9de3866d2c556922b14',1,'Faeterna::scripts::Mapa::Objeto']]],
+  ['itemhistory_7',['ItemHistory',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a12d9f4e8fba70b6bd22257cbd0a18663',1,'Faeterna::scripts::Mapa::Objeto']]],
+  ['itemname_8',['ItemName',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a39f404890a71ac97aa8a753b47b75487',1,'Faeterna::scripts::Mapa::Objeto']]],
+  ['itemscache_9',['ItemsCache',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a1976d4007dcb66ee5e9d73c3ed6ff0a5',1,'Faeterna.scripts.Mapa.Objeto.ItemsCache'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a93fa64f6f9448793393051514e8d4528',1,'Faeterna.Scripts.Menus.ObjetoDescription.ItemsCache']]],
+  ['itemscsvpath_10',['ItemsCsvPath',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a3b7a3354759bd8f8780611bfb11110b2',1,'Faeterna.scripts.Mapa.Objeto.ItemsCsvPath'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a7bcd7b790d2f3846da21d3a7ae01631f',1,'Faeterna.Scripts.Menus.ObjetoDescription.ItemsCsvPath']]]
 ];

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.DeleteFileIfExists" name="Faeterna.Scripts.Tools.Saves.DeleteFileIfExists">
+<area shape="rect" id="Node000001" title="Intenta eliminar un archivo del almacenamiento persistente." alt="" coords="264,5,474,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="5,5,216,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>

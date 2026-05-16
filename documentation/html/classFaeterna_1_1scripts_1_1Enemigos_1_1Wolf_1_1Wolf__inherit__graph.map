@@ -1,5 +1,5 @@
 <map id="Faeterna.scripts.Enemigos.Wolf.Wolf" name="Faeterna.scripts.Enemigos.Wolf.Wolf">
-<area shape="rect" id="Node000001" title=" " alt="" coords="6,174,203,218"/>
+<area shape="rect" id="Node000001" title="Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño." alt="" coords="6,174,203,218"/>
 <area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="37,5,172,33"/>

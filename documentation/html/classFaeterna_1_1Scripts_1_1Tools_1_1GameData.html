@@ -111,14 +111,66 @@ string&#160;</td><td class="memItemRight"><b>LastCheckpointId</b> = string.Empty
 <tr class="memitem:a7ab5f9e8837102e9132d29df34348d2e" id="r_a7ab5f9e8837102e9132d29df34348d2e"><td class="memItemLeft"><a id="a7ab5f9e8837102e9132d29df34348d2e" name="a7ab5f9e8837102e9132d29df34348d2e"></a>
 string&#160;</td><td class="memItemRight"><b>PreviewImagePath</b> = string.Empty<code> [get, set]</code></td></tr>
 <tr class="memdesc:a7ab5f9e8837102e9132d29df34348d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta del archivo de imagen de vista previa que representa el estado guardado en la interfaz de usuario. <br /></td></tr>
-<tr class="memitem:a5bd32cfb137d089ff5b7a67dc6858d56" id="r_a5bd32cfb137d089ff5b7a67dc6858d56"><td class="memItemLeft"><a id="a5bd32cfb137d089ff5b7a67dc6858d56" name="a5bd32cfb137d089ff5b7a67dc6858d56"></a>
-<a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html">PlayerSaveData</a>&#160;</td><td class="memItemRight"><b>PlayerData</b> = new()<code> [get, set]</code></td></tr>
-<tr class="memdesc:a5bd32cfb137d089ff5b7a67dc6858d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datos específicos del jugador (posición, salud, maná, habilidades disponibles). <br /></td></tr>
+<tr class="memitem:a5bd32cfb137d089ff5b7a67dc6858d56" id="r_a5bd32cfb137d089ff5b7a67dc6858d56"><td class="memItemLeft"><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html">PlayerSaveData</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5bd32cfb137d089ff5b7a67dc6858d56">PlayerData</a> = new()<code> [get, set]</code></td></tr>
+<tr class="memdesc:a5bd32cfb137d089ff5b7a67dc6858d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datos específicos del jugador (posición, salud, maná, habilidades adquiridas y estado de tutoriales).  <br /></td></tr>
+<tr class="memitem:ac647e0406fe81a55c260d048f6ca601c" id="r_ac647e0406fe81a55c260d048f6ca601c"><td class="memItemLeft">System.Collections.Generic.List&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac647e0406fe81a55c260d048f6ca601c">DefeatedBossTypes</a> = new()<code> [get, set]</code></td></tr>
+<tr class="memdesc:ac647e0406fe81a55c260d048f6ca601c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista de identificadores de bosses derrotados en esta partida.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena actual, datos del jugador y puntos de control. </p>
 <p>Se utiliza para serializar y deserializar el estado del juego desde el almacenamiento persistente. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="ac647e0406fe81a55c260d048f6ca601c" name="ac647e0406fe81a55c260d048f6ca601c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac647e0406fe81a55c260d048f6ca601c">&#9670;&#160;</a></span>DefeatedBossTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Collections.Generic.List&lt;string&gt; Faeterna.Scripts.Tools.GameData.DefeatedBossTypes = new()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista de identificadores de bosses derrotados en esta partida. </p>
+<p>Se usa para que esos bosses no reaparezcan al cargar el guardado. </p>
+
+</div>
+</div>
+<a id="a5bd32cfb137d089ff5b7a67dc6858d56" name="a5bd32cfb137d089ff5b7a67dc6858d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd32cfb137d089ff5b7a67dc6858d56">&#9670;&#160;</a></span>PlayerData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html">PlayerSaveData</a> Faeterna.Scripts.Tools.GameData.PlayerData = new()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span><span class="mlabel set">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Datos específicos del jugador (posición, salud, maná, habilidades adquiridas y estado de tutoriales). </p>
+<p>Se serializan junto con la partida para restaurar correctamente a Lira al cargar el guardado. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Tools/<b>GameSaveData.cs</b></li>
 </ul>
 </div><!-- contents -->

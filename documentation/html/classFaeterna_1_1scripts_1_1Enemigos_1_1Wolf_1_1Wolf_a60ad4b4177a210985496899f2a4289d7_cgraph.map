@@ -1,0 +1,9 @@
+<map id="Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage" name="Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage">
+<area shape="rect" id="Node000001" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="5,75,203,119"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="251,5,449,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,72,256,53,251,56,187,77"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="251,75,449,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,94,237,96,232,98,204,100"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,144,449,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,117,256,139,251,140,186,123"/>
+</map>

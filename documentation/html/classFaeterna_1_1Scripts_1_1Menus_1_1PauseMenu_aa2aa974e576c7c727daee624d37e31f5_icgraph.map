@@ -1,5 +1,9 @@
 <map id="Faeterna.Scripts.Menus.PauseMenu.ResumeGame" name="Faeterna.Scripts.Menus.PauseMenu.ResumeGame">
-<area shape="rect" id="Node000001" title="Reanuda el juego desde el estado de pausa." alt="" coords="270,5,486,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a41ff58792592912e721a89bd8267737d" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,222,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,28,222,30,222,25,257,28"/>
+<area shape="rect" id="Node000001" title="Reanuda el juego desde el estado de pausa." alt="" coords="534,40,750,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a41ff58792592912e721a89bd8267737d" title="Se llama cuando el nodo entra en la escena." alt="" coords="270,5,486,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="516,46,487,45,487,39,521,46"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#adf324fb51bb87444403130f13ceb2a0a" title="Alterna el estado de pausa del juego." alt="" coords="270,75,486,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="521,78,487,85,486,80,516,79"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a3f5447704b025fb30ce5ad4c98e1b0a5" title="Se llama para procesar eventos de entrada no manejados." alt="" coords="5,75,222,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,97,222,100,222,94,257,97"/>
 </map>

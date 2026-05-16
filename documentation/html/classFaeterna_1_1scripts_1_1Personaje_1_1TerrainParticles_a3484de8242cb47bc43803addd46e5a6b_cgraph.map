@@ -1,0 +1,7 @@
+<map id="Faeterna.scripts.Personaje.TerrainParticles._Ready" name="Faeterna.scripts.Personaje.TerrainParticles._Ready">
+<area shape="rect" id="Node000001" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,56,203,101"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a675f84a0e52b92df028ee9484946a21d" title="Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas segú..." alt="" coords="251,5,488,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,60,238,57,233,58,204,66"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a27ecb434a700bdb725d65a32eb111c20" title="Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer." alt="" coords="251,91,489,152"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,92,238,100,233,100,203,97"/>
+</map>

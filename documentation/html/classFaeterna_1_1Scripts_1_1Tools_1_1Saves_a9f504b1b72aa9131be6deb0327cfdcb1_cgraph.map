@@ -1,5 +1,8 @@
 <map id="Faeterna.Scripts.Tools.Saves.LoadPreviewTexture" name="Faeterna.Scripts.Tools.Saves.LoadPreviewTexture">
 <area shape="rect" id="Node000001" title="Carga la textura de vista previa del slot desde el almacenamiento persistente." alt="" coords="5,5,216,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,5,474,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="522,5,732,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,21,264,20,474,20,509,23,504,23,474,25,264,25,216,26"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,35,474,79"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,37,251,43,245,43,216,42"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="474,42,504,42,509,41,475,48"/>
 </map>

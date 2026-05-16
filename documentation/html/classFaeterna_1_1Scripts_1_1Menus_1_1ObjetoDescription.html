@@ -93,12 +93,15 @@ $(function(){initNavTree('classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription
   <div class="headertitle"><div class="title">Faeterna.Scripts.Menus.ObjetoDescription Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ventana de descripción de objetos y habilidades.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Faeterna.Scripts.Menus.ObjetoDescription:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription__inherit__graph.png" border="0" usemap="#aFaeterna_8Scripts_8Menus_8ObjetoDescription_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="aFaeterna_8Scripts_8Menus_8ObjetoDescription_inherit__map" id="aFaeterna_8Scripts_8Menus_8ObjetoDescription_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,81,226,126"/>
+<area shape="rect" title="Ventana de descripción de objetos y habilidades." alt="" coords="5,81,226,126"/>
 <area shape="rect" title=" " alt="" coords="81,5,150,33"/>
 <area shape="poly" title=" " alt="" coords="117,47,118,81,113,79,114,51"/>
 </map>
@@ -108,23 +111,317 @@ Collaboration diagram for Faeterna.Scripts.Menus.ObjetoDescription:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription__coll__graph.png" border="0" usemap="#aFaeterna_8Scripts_8Menus_8ObjetoDescription_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8Scripts_8Menus_8ObjetoDescription_coll__map" id="aFaeterna_8Scripts_8Menus_8ObjetoDescription_coll__map">
-<area shape="rect" title=" " alt="" coords="5,81,226,126"/>
+<area shape="rect" title="Ventana de descripción de objetos y habilidades." alt="" coords="5,81,226,126"/>
 <area shape="rect" title=" " alt="" coords="81,5,150,33"/>
 <area shape="poly" title=" " alt="" coords="117,47,118,81,113,79,114,51"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:ItemData" id="r_ItemData"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html">ItemData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura interna con los datos cargados de cada item del CSV.  <a href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae584aca6a932a5132ad0ff49dcb75b3c" id="r_ae584aca6a932a5132ad0ff49dcb75b3c"><td class="memItemLeft"><a id="ae584aca6a932a5132ad0ff49dcb75b3c" name="ae584aca6a932a5132ad0ff49dcb75b3c"></a>
 delegate void&#160;</td><td class="memItemRight"><b>MenuClosedEventHandler</b> ()</td></tr>
+<tr class="memdesc:ae584aca6a932a5132ad0ff49dcb75b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Señal emitida cuando el menú de descripción se cierra. <br /></td></tr>
 <tr class="memitem:ab3288ce976aea6d87e2cbda99d0745ed" id="r_ab3288ce976aea6d87e2cbda99d0745ed"><td class="memItemLeft"><a id="ab3288ce976aea6d87e2cbda99d0745ed" name="ab3288ce976aea6d87e2cbda99d0745ed"></a>
 override void&#160;</td><td class="memItemRight"><b>_Ready</b> ()</td></tr>
-<tr class="memitem:acb90cb6b586aad8e2846f504c5a7920b" id="r_acb90cb6b586aad8e2846f504c5a7920b"><td class="memItemLeft"><a id="acb90cb6b586aad8e2846f504c5a7920b" name="acb90cb6b586aad8e2846f504c5a7920b"></a>
-void&#160;</td><td class="memItemRight"><b>ChangeVisibility</b> (bool visible, int itemId)</td></tr>
-<tr class="memitem:ad05a2ce6bae20d9ef7c35a1ad55de9c6" id="r_ad05a2ce6bae20d9ef7c35a1ad55de9c6"><td class="memItemLeft"><a id="ad05a2ce6bae20d9ef7c35a1ad55de9c6" name="ad05a2ce6bae20d9ef7c35a1ad55de9c6"></a>
-override void&#160;</td><td class="memItemRight"><b>_Input</b> (InputEvent ev)</td></tr>
+<tr class="memdesc:ab3288ce976aea6d87e2cbda99d0745ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el nodo, enlaza referencias si faltan y carga el item correspondiente. <br /></td></tr>
+<tr class="memitem:acb90cb6b586aad8e2846f504c5a7920b" id="r_acb90cb6b586aad8e2846f504c5a7920b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acb90cb6b586aad8e2846f504c5a7920b">ChangeVisibility</a> (bool visible, int itemId)</td></tr>
+<tr class="memdesc:acb90cb6b586aad8e2846f504c5a7920b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado.  <br /></td></tr>
+<tr class="memitem:ad05a2ce6bae20d9ef7c35a1ad55de9c6" id="r_ad05a2ce6bae20d9ef7c35a1ad55de9c6"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ad05a2ce6bae20d9ef7c35a1ad55de9c6">_Input</a> (InputEvent ev)</td></tr>
+<tr class="memdesc:ad05a2ce6bae20d9ef7c35a1ad55de9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cierra la ventana cuando el jugador pulsa una tecla mientras está visible.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3770b2fbbf7ee24c3e6c021601852d34" id="r_a3770b2fbbf7ee24c3e6c021601852d34"><td class="memItemLeft"><a id="a3770b2fbbf7ee24c3e6c021601852d34" name="a3770b2fbbf7ee24c3e6c021601852d34"></a>
+void&#160;</td><td class="memItemRight"><b>EnlazarNodosSiHaceFalta</b> ()</td></tr>
+<tr class="memdesc:a3770b2fbbf7ee24c3e6c021601852d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intenta enlazar los nodos de interfaz si no están asignados desde el inspector. <br /></td></tr>
+<tr class="memitem:adcd45792ec173ad0a64840fc307eed6f" id="r_adcd45792ec173ad0a64840fc307eed6f"><td class="memItemLeft"><a id="adcd45792ec173ad0a64840fc307eed6f" name="adcd45792ec173ad0a64840fc307eed6f"></a>
+void&#160;</td><td class="memItemRight"><b>CargarDatosDelItem</b> ()</td></tr>
+<tr class="memdesc:adcd45792ec173ad0a64840fc307eed6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga y muestra los datos del item actual. <br /></td></tr>
+<tr class="memitem:a45cbb30884c3d267ad137d91e54f4151" id="r_a45cbb30884c3d267ad137d91e54f4151"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a45cbb30884c3d267ad137d91e54f4151">AplicarImagen</a> (string resourcePath)</td></tr>
+<tr class="memdesc:a45cbb30884c3d267ad137d91e54f4151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica al control de imagen el recurso indicado si es una textura válida.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3f2b86ff4cd0724cb4b46c2c29f2b867" id="r_a3f2b86ff4cd0724cb4b46c2c29f2b867"><td class="memItemLeft"><a id="a3f2b86ff4cd0724cb4b46c2c29f2b867" name="a3f2b86ff4cd0724cb4b46c2c29f2b867"></a>
+static void&#160;</td><td class="memItemRight"><b>CargarItemsSiHaceFalta</b> ()</td></tr>
+<tr class="memdesc:a3f2b86ff4cd0724cb4b46c2c29f2b867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga los items desde el CSV si todavía no están en memoria. <br /></td></tr>
+<tr class="memitem:a3134a642742d8a85e9b80726f4c8ac0a" id="r_a3134a642742d8a85e9b80726f4c8ac0a"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3134a642742d8a85e9b80726f4c8ac0a">_textSet</a> (Label label, string value)</td></tr>
+<tr class="memdesc:a3134a642742d8a85e9b80726f4c8ac0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna el texto de un Label de forma centralizada.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a422fd19bb65d0d91ca32f4d30de69c69" id="r_a422fd19bb65d0d91ca32f4d30de69c69"><td class="memItemLeft"><a id="a422fd19bb65d0d91ca32f4d30de69c69" name="a422fd19bb65d0d91ca32f4d30de69c69"></a>
+int&#160;</td><td class="memItemRight"><b>_itemId</b></td></tr>
+<tr class="memdesc:a422fd19bb65d0d91ca32f4d30de69c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificador del item que se mostrará en el menú. <br /></td></tr>
+<tr class="memitem:ad3de828d3ed71904f9f5514073e2ac89" id="r_ad3de828d3ed71904f9f5514073e2ac89"><td class="memItemLeft"><a id="ad3de828d3ed71904f9f5514073e2ac89" name="ad3de828d3ed71904f9f5514073e2ac89"></a>
+TextureRect&#160;</td><td class="memItemRight"><b>_imageAbility</b></td></tr>
+<tr class="memdesc:ad3de828d3ed71904f9f5514073e2ac89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imagen asociada al item seleccionado. <br /></td></tr>
+<tr class="memitem:a9334fced79cdcf033143dc181060e139" id="r_a9334fced79cdcf033143dc181060e139"><td class="memItemLeft"><a id="a9334fced79cdcf033143dc181060e139" name="a9334fced79cdcf033143dc181060e139"></a>
+Label&#160;</td><td class="memItemRight"><b>_nameAbility</b></td></tr>
+<tr class="memdesc:a9334fced79cdcf033143dc181060e139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label donde se muestra el nombre del item. <br /></td></tr>
+<tr class="memitem:a23f49e190dea860bca38a9e67f24492c" id="r_a23f49e190dea860bca38a9e67f24492c"><td class="memItemLeft"><a id="a23f49e190dea860bca38a9e67f24492c" name="a23f49e190dea860bca38a9e67f24492c"></a>
+Label&#160;</td><td class="memItemRight"><b>_descriptionAbility</b></td></tr>
+<tr class="memdesc:a23f49e190dea860bca38a9e67f24492c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label donde se muestra la descripción del item. <br /></td></tr>
+<tr class="memitem:aee51d80a0fdc119684ef8c255706e5eb" id="r_aee51d80a0fdc119684ef8c255706e5eb"><td class="memItemLeft"><a id="aee51d80a0fdc119684ef8c255706e5eb" name="aee51d80a0fdc119684ef8c255706e5eb"></a>
+Label&#160;</td><td class="memItemRight"><b>_historyAbility</b></td></tr>
+<tr class="memdesc:aee51d80a0fdc119684ef8c255706e5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label donde se muestra la historia del item. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7bcd7b790d2f3846da21d3a7ae01631f" id="r_a7bcd7b790d2f3846da21d3a7ae01631f"><td class="memItemLeft"><a id="a7bcd7b790d2f3846da21d3a7ae01631f" name="a7bcd7b790d2f3846da21d3a7ae01631f"></a>
+const string&#160;</td><td class="memItemRight"><b>ItemsCsvPath</b> = &quot;res://data/items.csv&quot;</td></tr>
+<tr class="memdesc:a7bcd7b790d2f3846da21d3a7ae01631f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta al archivo CSV con los datos de los items. <br /></td></tr>
+<tr class="memitem:a0fcfe2d7274855427604c18336cd1cf8" id="r_a0fcfe2d7274855427604c18336cd1cf8"><td class="memItemLeft"><a id="a0fcfe2d7274855427604c18336cd1cf8" name="a0fcfe2d7274855427604c18336cd1cf8"></a>
+const string&#160;</td><td class="memItemRight"><b>ImageNodePath</b> = &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/TextureRect&quot;</td></tr>
+<tr class="memdesc:a0fcfe2d7274855427604c18336cd1cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta del nodo de la imagen del item dentro de la escena. <br /></td></tr>
+<tr class="memitem:a2914c031623ee0e0602552db7aa0a902" id="r_a2914c031623ee0e0602552db7aa0a902"><td class="memItemLeft"><a id="a2914c031623ee0e0602552db7aa0a902" name="a2914c031623ee0e0602552db7aa0a902"></a>
+const string&#160;</td><td class="memItemRight"><b>NameNodePath</b> = &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Name&quot;</td></tr>
+<tr class="memdesc:a2914c031623ee0e0602552db7aa0a902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta del nodo que muestra el nombre del item. <br /></td></tr>
+<tr class="memitem:a37542b23b6955c306e93450b4adb9ea1" id="r_a37542b23b6955c306e93450b4adb9ea1"><td class="memItemLeft"><a id="a37542b23b6955c306e93450b4adb9ea1" name="a37542b23b6955c306e93450b4adb9ea1"></a>
+const string&#160;</td><td class="memItemRight"><b>DescriptionNodePath</b> = &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Description&quot;</td></tr>
+<tr class="memdesc:a37542b23b6955c306e93450b4adb9ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta del nodo que muestra la descripción del item. <br /></td></tr>
+<tr class="memitem:a3380a25931445eb7256f260d9f102251" id="r_a3380a25931445eb7256f260d9f102251"><td class="memItemLeft"><a id="a3380a25931445eb7256f260d9f102251" name="a3380a25931445eb7256f260d9f102251"></a>
+const string&#160;</td><td class="memItemRight"><b>HistoryNodePath</b> = &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Lore&quot;</td></tr>
+<tr class="memdesc:a3380a25931445eb7256f260d9f102251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta del nodo que muestra la historia o lore del item. <br /></td></tr>
+<tr class="memitem:a93fa64f6f9448793393051514e8d4528" id="r_a93fa64f6f9448793393051514e8d4528"><td class="memItemLeft"><a id="a93fa64f6f9448793393051514e8d4528" name="a93fa64f6f9448793393051514e8d4528"></a>
+static readonly Dictionary&lt; int, <a class="el" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html">ItemData</a> &gt;&#160;</td><td class="memItemRight"><b>ItemsCache</b> = new()</td></tr>
+<tr class="memdesc:a93fa64f6f9448793393051514e8d4528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caché estática con los datos de items cargados desde el CSV. <br /></td></tr>
+<tr class="memitem:a9775eb59f5f6330c97ddc116f9acdafc" id="r_a9775eb59f5f6330c97ddc116f9acdafc"><td class="memItemLeft"><a id="a9775eb59f5f6330c97ddc116f9acdafc" name="a9775eb59f5f6330c97ddc116f9acdafc"></a>
+static bool&#160;</td><td class="memItemRight"><b>_itemsCargados</b></td></tr>
+<tr class="memdesc:a9775eb59f5f6330c97ddc116f9acdafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si la caché ya fue cargada al menos una vez. <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ventana de descripción de objetos y habilidades. </p>
+<p>Carga la información desde un CSV y muestra nombre, descripción, historia e imagen del item seleccionado. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ad05a2ce6bae20d9ef7c35a1ad55de9c6" name="ad05a2ce6bae20d9ef7c35a1ad55de9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05a2ce6bae20d9ef7c35a1ad55de9c6">&#9670;&#160;</a></span>_Input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.Scripts.Menus.ObjetoDescription._Input </td>
+          <td>(</td>
+          <td class="paramtype">InputEvent</td>          <td class="paramname"><span class="paramname"><em>ev</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cierra la ventana cuando el jugador pulsa una tecla mientras está visible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ev</td><td>Evento de entrada recibido por el nodo.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_ad05a2ce6bae20d9ef7c35a1ad55de9c6_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_ad05a2ce6bae20d9ef7c35a1ad55de9c6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_ad05a2ce6bae20d9ef7c35a1ad55de9c6_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_ad05a2ce6bae20d9ef7c35a1ad55de9c6_cgraph">
+<area shape="rect" title="Cierra la ventana cuando el jugador pulsa una tecla mientras está visible." alt="" coords="5,109,226,154"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#acb90cb6b586aad8e2846f504c5a7920b" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="274,109,494,154"/>
+<area shape="poly" title=" " alt="" coords="226,129,261,131,256,132,226,134"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f" title="Carga y muestra los datos del item actual." alt="" coords="558,75,791,119"/>
+<area shape="poly" title=" " alt="" coords="494,116,546,112,541,113,495,121"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3770b2fbbf7ee24c3e6c021601852d34" title="Intenta enlazar los nodos de interfaz si no están asignados desde el inspector." alt="" coords="542,144,807,189"/>
+<area shape="poly" title=" " alt="" coords="495,142,529,149,524,149,494,147"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3134a642742d8a85e9b80726f4c8ac0a" title="Asigna el texto de un Label de forma centralizada." alt="" coords="873,5,1094,50"/>
+<area shape="poly" title=" " alt="" coords="777,71,864,54,869,53,778,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a45cbb30884c3d267ad137d91e54f4151" title="Aplica al control de imagen el recurso indicado si es una textura válida." alt="" coords="873,75,1094,119"/>
+<area shape="poly" title=" " alt="" coords="791,94,861,97,855,97,791,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3f2b86ff4cd0724cb4b46c2c29f2b867" title="Carga los items desde el CSV si todavía no están en memoria." alt="" coords="855,144,1112,189"/>
+<area shape="poly" title=" " alt="" coords="778,117,869,140,864,140,777,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3134a642742d8a85e9b80726f4c8ac0a" name="a3134a642742d8a85e9b80726f4c8ac0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3134a642742d8a85e9b80726f4c8ac0a">&#9670;&#160;</a></span>_textSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.ObjetoDescription._textSet </td>
+          <td>(</td>
+          <td class="paramtype">Label</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Asigna el texto de un Label de forma centralizada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Label a modificar.</td></tr>
+    <tr><td class="paramname">value</td><td>Texto que se quiere mostrar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a3134a642742d8a85e9b80726f4c8ac0a_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a3134a642742d8a85e9b80726f4c8ac0a_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a3134a642742d8a85e9b80726f4c8ac0a_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a3134a642742d8a85e9b80726f4c8ac0a_icgraph">
+<area shape="rect" title="Asigna el texto de un Label de forma centralizada." alt="" coords="822,40,1043,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f" title="Carga y muestra los datos del item actual." alt="" coords="542,40,774,85"/>
+<area shape="poly" title=" " alt="" coords="804,62,775,65,775,60,810,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ab3288ce976aea6d87e2cbda99d0745ed" title="Inicializa el nodo, enlaza referencias si faltan y carga el item correspondiente." alt="" coords="274,5,494,50"/>
+<area shape="poly" title=" " alt="" coords="524,46,494,44,495,39,529,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#acb90cb6b586aad8e2846f504c5a7920b" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="274,75,494,119"/>
+<area shape="poly" title=" " alt="" coords="529,79,495,86,494,80,524,79"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ad05a2ce6bae20d9ef7c35a1ad55de9c6" title="Cierra la ventana cuando el jugador pulsa una tecla mientras está visible." alt="" coords="5,75,226,119"/>
+<area shape="poly" title=" " alt="" coords="256,97,226,100,226,94,261,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45cbb30884c3d267ad137d91e54f4151" name="a45cbb30884c3d267ad137d91e54f4151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45cbb30884c3d267ad137d91e54f4151">&#9670;&#160;</a></span>AplicarImagen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.ObjetoDescription.AplicarImagen </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>resourcePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aplica al control de imagen el recurso indicado si es una textura válida. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourcePath</td><td>Ruta del recurso a cargar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a45cbb30884c3d267ad137d91e54f4151_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a45cbb30884c3d267ad137d91e54f4151_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a45cbb30884c3d267ad137d91e54f4151_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_a45cbb30884c3d267ad137d91e54f4151_icgraph">
+<area shape="rect" title="Aplica al control de imagen el recurso indicado si es una textura válida." alt="" coords="822,40,1043,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f" title="Carga y muestra los datos del item actual." alt="" coords="542,40,774,85"/>
+<area shape="poly" title=" " alt="" coords="804,62,775,65,775,60,810,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ab3288ce976aea6d87e2cbda99d0745ed" title="Inicializa el nodo, enlaza referencias si faltan y carga el item correspondiente." alt="" coords="274,5,494,50"/>
+<area shape="poly" title=" " alt="" coords="524,46,494,44,495,39,529,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#acb90cb6b586aad8e2846f504c5a7920b" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="274,75,494,119"/>
+<area shape="poly" title=" " alt="" coords="529,79,495,86,494,80,524,79"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ad05a2ce6bae20d9ef7c35a1ad55de9c6" title="Cierra la ventana cuando el jugador pulsa una tecla mientras está visible." alt="" coords="5,75,226,119"/>
+<area shape="poly" title=" " alt="" coords="256,97,226,100,226,94,261,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb90cb6b586aad8e2846f504c5a7920b" name="acb90cb6b586aad8e2846f504c5a7920b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb90cb6b586aad8e2846f504c5a7920b">&#9670;&#160;</a></span>ChangeVisibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>itemId</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visible</td><td>Indica si la ventana debe mostrarse.</td></tr>
+    <tr><td class="paramname">itemId</td><td>Identificador del item a visualizar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_cgraph">
+<area shape="rect" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="5,109,226,154"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f" title="Carga y muestra los datos del item actual." alt="" coords="290,75,522,119"/>
+<area shape="poly" title=" " alt="" coords="226,116,278,112,272,113,227,121"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3770b2fbbf7ee24c3e6c021601852d34" title="Intenta enlazar los nodos de interfaz si no están asignados desde el inspector." alt="" coords="274,144,539,189"/>
+<area shape="poly" title=" " alt="" coords="226,142,261,149,256,149,226,147"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3134a642742d8a85e9b80726f4c8ac0a" title="Asigna el texto de un Label de forma centralizada." alt="" coords="605,5,825,50"/>
+<area shape="poly" title=" " alt="" coords="509,71,601,53,595,54,510,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a45cbb30884c3d267ad137d91e54f4151" title="Aplica al control de imagen el recurso indicado si es una textura válida." alt="" coords="605,75,825,119"/>
+<area shape="poly" title=" " alt="" coords="523,94,592,97,587,97,523,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3f2b86ff4cd0724cb4b46c2c29f2b867" title="Carga los items desde el CSV si todavía no están en memoria." alt="" coords="587,144,843,189"/>
+<area shape="poly" title=" " alt="" coords="509,117,601,140,595,140,509,123"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_acb90cb6b586aad8e2846f504c5a7920b_icgraph">
+<area shape="rect" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="274,5,494,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ad05a2ce6bae20d9ef7c35a1ad55de9c6" title="Cierra la ventana cuando el jugador pulsa una tecla mientras está visible." alt="" coords="5,5,226,50"/>
+<area shape="poly" title=" " alt="" coords="256,28,226,30,226,25,261,28"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Menus/<b>ObjetoDescription.cs</b></li>
 </ul>

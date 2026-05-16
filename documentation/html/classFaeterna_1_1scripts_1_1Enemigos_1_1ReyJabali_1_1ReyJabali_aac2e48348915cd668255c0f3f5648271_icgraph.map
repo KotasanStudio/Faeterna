@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage" name="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage">
+<area shape="rect" id="Node000001" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="306,14,541,58"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#a907191ed3862a391ca40894c0916c6bf" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="5,5,258,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,36,258,39,258,34,293,36"/>
+</map>

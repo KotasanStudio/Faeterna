@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected" name="Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected">
+<area shape="rect" id="Node000001" title="Se llama cuando se selecciona una opción en el control de calidad de sombras." alt="" coords="5,5,308,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a483a48df78744459138ab078a4ac1ac9" title="Aplica la configuración de calidad de sombras seleccionada al juego en tiempo real." alt="" coords="356,5,583,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,25,343,28,337,28,308,30"/>
+</map>

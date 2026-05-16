@@ -1,7 +1,11 @@
 var classFaeterna_1_1Scripts_1_1Tools_1_1Saves =
 [
     [ "Saves", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a190b25c1de00c230de0e56d261803aab", null ],
+    [ "DeleteFileIfExists", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a3163852a2ec83567dc5a8b0b6c72792c", null ],
     [ "DeleteSlot", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5", null ],
+    [ "EnsurePreviewDirectory", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aebd232191c24102320ca3776b726321f", null ],
+    [ "GetSlotPath", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643", null ],
+    [ "GetSlotPreviewPath", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc", null ],
     [ "HasPreview", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d", null ],
     [ "HasSave", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ac738ffb0de07521042ddc21daa91410a", null ],
     [ "HasSaveInActiveSlot", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a544a7bd20bbcbcf9f0b585cc655601fd", null ],
@@ -13,6 +17,12 @@ var classFaeterna_1_1Scripts_1_1Tools_1_1Saves =
     [ "SaveAsync", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb", null ],
     [ "SaveCheckpointAsync", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9", null ],
     [ "SaveOptions", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2671c9086b903044eba3d906436c6bb3", null ],
+    [ "SavePreview", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a871993a93093821284cf9076f7803a1d", null ],
     [ "SetActiveSlot", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a4fa7347b0fea6b2d1dc9ab1e4a4628", null ],
+    [ "config", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a32a4d441e455a0d8cefdf0c545cebdb4", null ],
+    [ "JsonOptions", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a40a8a32b25408d6cde398923fb03dd0b", null ],
+    [ "PreviewDirectory", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a12752701f75a27349cd52b924c82bd86", null ],
+    [ "PreviewHeight", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a6578d83a26189b6d7c489600d9c3e755", null ],
+    [ "PreviewWidth", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aa2b14abf061c0bb2f6d32d2a1892867c", null ],
     [ "ActiveSlot", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ad3fcd44b5f9bf6076e8ce2494721cef0", null ]
 ];

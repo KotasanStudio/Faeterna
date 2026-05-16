@@ -1,0 +1,6 @@
+<map id="Faeterna.Scripts.Menus.PauseMenu.ApplyAlwaysProcessRecursive" name="Faeterna.Scripts.Menus.PauseMenu.ApplyAlwaysProcessRecursive">
+<area shape="rect" id="Node000001" title="Aplica el modo de proceso &quot;Always&quot; de forma recursiva a un nodo y todos sus hijos." alt="" coords="270,29,529,74"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="444,14,429,10,399,8,372,10,356,15,349,21,350,30,346,27,344,19,353,10,371,5,399,3,430,5,450,14"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a41ff58792592912e721a89bd8267737d" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,29,222,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,52,222,54,222,49,257,52"/>
+</map>

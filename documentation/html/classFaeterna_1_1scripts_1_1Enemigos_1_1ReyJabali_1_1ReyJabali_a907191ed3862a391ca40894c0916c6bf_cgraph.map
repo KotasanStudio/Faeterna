@@ -1,0 +1,17 @@
+<map id="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered" name="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered">
+<area shape="rect" id="Node000001" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="5,101,258,162"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac906f0782347307c5528372a5e1b3188" title="Voltea el sprite del boss y actualiza su dirección horizontal." alt="" coords="313,75,534,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,114,299,111,295,113,259,119"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aac2e48348915cd668255c0f3f5648271" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="306,144,541,189"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,144,293,150,288,151,258,149"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac1b029d0f060e1e571d782e99aebfb92" title="Desactiva las colisiones del boss para que no interactúe tras morir." alt="" coords="589,5,861,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,141,539,130,555,113,562,96,571,78,587,60,594,59,599,56,591,64,575,81,567,98,559,116,543,134,522,146"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="626,75,824,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="523,141,613,122,608,124,525,146"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a369b1e5ebfc6cf172daa9384b40b4fee" title="Marca un boss como derrotado (persistible en el siguiente guardado)." alt="" coords="610,144,840,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="541,164,597,166,592,167,542,169"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="626,213,824,258"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="524,187,613,209,608,210,524,192"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="626,283,824,327"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="455,187,516,228,590,268,614,279,608,278,588,273,513,233,454,192"/>
+</map>

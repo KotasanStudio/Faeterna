@@ -10,12 +10,14 @@
         <name>Name</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.Name</qualifiedname>
         <briefdescription>
+<para>Nombre del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="136" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="136" bodyend="136"/>
+        <location file="scripts/Mapa/Objeto.cs" line="231" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="231" bodyend="231"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" compoundref="Objeto_8cs" startline="249" endline="255">Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -24,12 +26,14 @@
         <name>AnimationPath</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.AnimationPath</qualifiedname>
         <briefdescription>
+<para>Ruta del recurso visual del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="137" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="137" bodyend="137"/>
+        <location file="scripts/Mapa/Objeto.cs" line="234" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="234" bodyend="234"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" compoundref="Objeto_8cs" startline="249" endline="255">Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -38,12 +42,14 @@
         <name>Description</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.Description</qualifiedname>
         <briefdescription>
+<para>Descripción del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="138" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="138" bodyend="138"/>
+        <location file="scripts/Mapa/Objeto.cs" line="237" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="237" bodyend="237"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" compoundref="Objeto_8cs" startline="249" endline="255">Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1af0be4fff3b7f775863cace7b7498104e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -52,12 +58,14 @@
         <name>History</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.History</qualifiedname>
         <briefdescription>
+<para>Historia o lore del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="139" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="139" bodyend="139"/>
+        <location file="scripts/Mapa/Objeto.cs" line="240" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="240" bodyend="240"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" compoundref="Objeto_8cs" startline="249" endline="255">Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -84,19 +92,59 @@
           <declname>history</declname>
         </param>
         <briefdescription>
+<para>Crea una nueva instancia con los datos del item. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animationPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta del recurso visual del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descripción del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>history</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Historia del item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="141" column="20" bodyfile="scripts/Mapa/Objeto.cs" bodystart="141" bodyend="147"/>
+        <location file="scripts/Mapa/Objeto.cs" line="249" column="20" bodyfile="scripts/Mapa/Objeto.cs" bodystart="249" bodyend="255"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" compoundref="Objeto_8cs" startline="234" endline="234">Faeterna.scripts.Mapa.Objeto.ItemData.AnimationPath</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" compoundref="Objeto_8cs" startline="237" endline="237">Faeterna.scripts.Mapa.Objeto.ItemData.Description</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1af0be4fff3b7f775863cace7b7498104e" compoundref="Objeto_8cs" startline="240" endline="240">Faeterna.scripts.Mapa.Objeto.ItemData.History</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a3ab2608193698b951eb61f5270ce00e2" compoundref="Objeto_8cs" startline="231" endline="231">Faeterna.scripts.Mapa.Objeto.ItemData.Name</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Representa los datos de un item cargados desde el CSV. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="scripts/Mapa/Objeto.cs" line="134" column="16" bodyfile="scripts/Mapa/Objeto.cs" bodystart="135" bodyend="148"/>
+    <location file="scripts/Mapa/Objeto.cs" line="228" column="16" bodyfile="scripts/Mapa/Objeto.cs" bodystart="229" bodyend="256"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>AnimationPath</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>Description</name></member>

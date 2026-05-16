@@ -51,6 +51,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="25" column="23" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a14e8a09d64763144a9f43f94cd655e9f" compoundref="PlayMenu_8cs" startline="200" endline="208">Faeterna.Scripts.Menus.PlayMenu.CacheDefaultSlotTextures</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" compoundref="PlayMenu_8cs" startline="146" endline="168">Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" compoundref="PlayMenu_8cs" startline="92" endline="140">Faeterna.Scripts.Menus.PlayMenu.OnSavePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af6594f3162bfb089bf394efdeff91b35" prot="private" static="no" mutable="no">
         <type>TextureButton</type>
@@ -67,6 +71,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="33" column="31" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" compoundref="PlayMenu_8cs" startline="146" endline="168">Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af7bbbed54f23adf59f5be5dcb69716be" prot="private" static="no" mutable="no">
         <type>TextureButton</type>
@@ -83,6 +88,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="41" column="31" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ace2770fcd956eb08c6ded266dc6eb419" compoundref="PlayMenu_8cs" startline="174" endline="183">Faeterna.Scripts.Menus.PlayMenu.OnBackPressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a3518ace563eabd0d1c070c5682c0285a" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -99,6 +105,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="49" column="27" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" compoundref="PlayMenu_8cs" startline="65" endline="85">Faeterna.Scripts.Menus.PlayMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -114,6 +122,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="52" column="21" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" compoundref="PlayMenu_8cs" startline="65" endline="85">Faeterna.Scripts.Menus.PlayMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" compoundref="PlayMenu_8cs" startline="146" endline="168">Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" compoundref="PlayMenu_8cs" startline="92" endline="140">Faeterna.Scripts.Menus.PlayMenu.OnSavePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -129,6 +141,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="55" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" compoundref="PlayMenu_8cs" startline="65" endline="85">Faeterna.Scripts.Menus.PlayMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" compoundref="PlayMenu_8cs" startline="146" endline="168">Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" compoundref="PlayMenu_8cs" startline="92" endline="140">Faeterna.Scripts.Menus.PlayMenu.OnSavePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a6ff711fa53709ada4cb97f19402c3b28" prot="private" static="no" mutable="no">
         <type>readonly List&lt; Texture2D &gt;</type>
@@ -145,6 +161,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="58" column="31" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a14e8a09d64763144a9f43f94cd655e9f" compoundref="PlayMenu_8cs" startline="200" endline="208">Faeterna.Scripts.Menus.PlayMenu.CacheDefaultSlotTextures</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -163,6 +181,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="65" column="30" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="65" bodyend="85"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a3518ace563eabd0d1c070c5682c0285a" compoundref="PlayMenu_8cs" startline="49">Faeterna.Scripts.Menus.PlayMenu._continueTexture</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" compoundref="PlayMenu_8cs" startline="55">Faeterna.Scripts.Menus.PlayMenu._deleteMode</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" compoundref="PlayMenu_8cs" startline="52">Faeterna.Scripts.Menus.PlayMenu._selectedSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a14e8a09d64763144a9f43f94cd655e9f" compoundref="PlayMenu_8cs" startline="200" endline="208">Faeterna.Scripts.Menus.PlayMenu.CacheDefaultSlotTextures</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -195,6 +218,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="92" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="92" bodyend="140"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" compoundref="PlayMenu_8cs" startline="55">Faeterna.Scripts.Menus.PlayMenu._deleteMode</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a7d26593e4e118ba826501ce50b1d6507" compoundref="PlayMenu_8cs" startline="25">Faeterna.Scripts.Menus.PlayMenu._saveButtons</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" compoundref="PlayMenu_8cs" startline="52">Faeterna.Scripts.Menus.PlayMenu._selectedSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a2e5ed6e85b985710587dc4c8c95d0f4c" compoundref="GameSaveService_8cs" startline="109" endline="109">Faeterna.Scripts.Tools.GameSaveService.DeleteSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" compoundref="PlayMenu_8cs" startline="215" endline="239">Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1accce028fb622f5fe038081c325db5886" compoundref="GameSaveService_8cs" startline="74" endline="74">Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a34ef422a87a7e8520bb144e555482753" compoundref="PlayMenu_8cs" startline="191" endline="194">Faeterna.Scripts.Menus.PlayMenu.UpdateSlotBorder</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -211,6 +242,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="146" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="146" bodyend="168"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af6594f3162bfb089bf394efdeff91b35" compoundref="PlayMenu_8cs" startline="33">Faeterna.Scripts.Menus.PlayMenu._deleteButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" compoundref="PlayMenu_8cs" startline="55">Faeterna.Scripts.Menus.PlayMenu._deleteMode</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a7d26593e4e118ba826501ce50b1d6507" compoundref="PlayMenu_8cs" startline="25">Faeterna.Scripts.Menus.PlayMenu._saveButtons</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" compoundref="PlayMenu_8cs" startline="52">Faeterna.Scripts.Menus.PlayMenu._selectedSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a34ef422a87a7e8520bb144e555482753" compoundref="PlayMenu_8cs" startline="191" endline="194">Faeterna.Scripts.Menus.PlayMenu.UpdateSlotBorder</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ace2770fcd956eb08c6ded266dc6eb419" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -227,6 +264,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="174" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="174" bodyend="183"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af7bbbed54f23adf59f5be5dcb69716be" compoundref="PlayMenu_8cs" startline="41">Faeterna.Scripts.Menus.PlayMenu._backButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a34ef422a87a7e8520bb144e555482753" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -269,6 +308,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="191" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="191" bodyend="194"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" compoundref="PlayMenu_8cs" startline="146" endline="168">Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" compoundref="PlayMenu_8cs" startline="92" endline="140">Faeterna.Scripts.Menus.PlayMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a14e8a09d64763144a9f43f94cd655e9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -285,6 +326,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="200" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="200" bodyend="208"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a6ff711fa53709ada4cb97f19402c3b28" compoundref="PlayMenu_8cs" startline="58">Faeterna.Scripts.Menus.PlayMenu._defaultSlotTextures</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a7d26593e4e118ba826501ce50b1d6507" compoundref="PlayMenu_8cs" startline="25">Faeterna.Scripts.Menus.PlayMenu._saveButtons</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" compoundref="PlayMenu_8cs" startline="65" endline="85">Faeterna.Scripts.Menus.PlayMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -301,6 +345,14 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/PlayMenu.cs" line="215" column="22" bodyfile="scripts/Menus/PlayMenu.cs" bodystart="215" bodyend="239"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a3518ace563eabd0d1c070c5682c0285a" compoundref="PlayMenu_8cs" startline="49">Faeterna.Scripts.Menus.PlayMenu._continueTexture</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a6ff711fa53709ada4cb97f19402c3b28" compoundref="PlayMenu_8cs" startline="58">Faeterna.Scripts.Menus.PlayMenu._defaultSlotTextures</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" compoundref="PlayMenu_8cs" startline="55">Faeterna.Scripts.Menus.PlayMenu._deleteMode</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a7d26593e4e118ba826501ce50b1d6507" compoundref="PlayMenu_8cs" startline="25">Faeterna.Scripts.Menus.PlayMenu._saveButtons</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" compoundref="PlayMenu_8cs" startline="52">Faeterna.Scripts.Menus.PlayMenu._selectedSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a02db5fdff64edd5da075a059a185b5bc" compoundref="GameSaveService_8cs" startline="81" endline="81">Faeterna.Scripts.Tools.GameSaveService.HasSave</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" compoundref="PlayMenu_8cs" startline="65" endline="85">Faeterna.Scripts.Menus.PlayMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" compoundref="PlayMenu_8cs" startline="92" endline="140">Faeterna.Scripts.Menus.PlayMenu.OnSavePressed</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>

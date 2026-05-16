@@ -123,6 +123,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3463aa5f619ca9684ee6bf429c2780b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando el nodo entra en la escena.  <br /></td></tr>
 <tr class="memitem:aeedcd5f8ec076b70e4df3fd90f813c1d" id="r_aeedcd5f8ec076b70e4df3fd90f813c1d"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#aeedcd5f8ec076b70e4df3fd90f813c1d">_ExitTree</a> ()</td></tr>
 <tr class="memdesc:aeedcd5f8ec076b70e4df3fd90f813c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando el nodo sale de la escena.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a80e502c98b82f75ca6d620575a626aa7" id="r_a80e502c98b82f75ca6d620575a626aa7"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a80e502c98b82f75ca6d620575a626aa7">ApplyCustomCursor</a> ()</td></tr>
+<tr class="memdesc:a80e502c98b82f75ca6d620575a626aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la aplica como el cursor del mouse del juego.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aca0ed5bbe09daebb3af3cb71651e489d" id="r_aca0ed5bbe09daebb3af3cb71651e489d"><td class="memItemLeft"><a id="aca0ed5bbe09daebb3af3cb71651e489d" name="aca0ed5bbe09daebb3af3cb71651e489d"></a>
+const string&#160;</td><td class="memItemRight"><b>CursorPath</b> = &quot;res://assets/Icono y Cursor/Cursor.svg&quot;</td></tr>
+<tr class="memdesc:aca0ed5bbe09daebb3af3cb71651e489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruta a la textura del cursor personalizado en los assets del proyecto. <br /></td></tr>
+<tr class="memitem:ac8583a7ec5282ef4bc937eed6968e583" id="r_ac8583a7ec5282ef4bc937eed6968e583"><td class="memItemLeft"><a id="ac8583a7ec5282ef4bc937eed6968e583" name="ac8583a7ec5282ef4bc937eed6968e583"></a>
+static readonly Vector2I&#160;</td><td class="memItemRight"><b>CursorSize</b> = new(32, 32)</td></tr>
+<tr class="memdesc:ac8583a7ec5282ef4bc937eed6968e583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamaño en píxeles al que se redimensionará el cursor (ancho x alto). <br /></td></tr>
+<tr class="memitem:ab09261f0b994635e98e302ce49776718" id="r_ab09261f0b994635e98e302ce49776718"><td class="memItemLeft"><a id="ab09261f0b994635e98e302ce49776718" name="ab09261f0b994635e98e302ce49776718"></a>
+static readonly Vector2&#160;</td><td class="memItemRight"><b>CursorHotspot</b> = new(2, 2)</td></tr>
+<tr class="memdesc:ab09261f0b994635e98e302ce49776718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punto de anclaje (hotspot) del cursor respecto a la textura (esquina superior izquierda). <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Gestor del cursor personalizado del juego. </p>
@@ -181,6 +198,54 @@ Public Member Functions</h2></td></tr>
 
 <p>Se llama cuando el nodo entra en la escena. </p>
 <p>Carga y aplica el cursor personalizado. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a3463aa5f619ca9684ee6bf429c2780b3_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a3463aa5f619ca9684ee6bf429c2780b3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a3463aa5f619ca9684ee6bf429c2780b3_cgraph" id="aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a3463aa5f619ca9684ee6bf429c2780b3_cgraph">
+<area shape="rect" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,214,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#a80e502c98b82f75ca6d620575a626aa7" title="Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la..." alt="" coords="262,5,473,50"/>
+<area shape="poly" title=" " alt="" coords="214,25,249,27,244,28,214,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80e502c98b82f75ca6d620575a626aa7" name="a80e502c98b82f75ca6d620575a626aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e502c98b82f75ca6d620575a626aa7">&#9670;&#160;</a></span>ApplyCustomCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Tools.CursorManager.ApplyCustomCursor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la aplica como el cursor del mouse del juego. </p>
+<p>Si la textura no se puede cargar o procesar, imprime un aviso. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a80e502c98b82f75ca6d620575a626aa7_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a80e502c98b82f75ca6d620575a626aa7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a80e502c98b82f75ca6d620575a626aa7_icgraph" id="aclassFaeterna_1_1scripts_1_1Tools_1_1CursorManager_a80e502c98b82f75ca6d620575a626aa7_icgraph">
+<area shape="rect" title="Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la..." alt="" coords="262,5,473,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#a3463aa5f619ca9684ee6bf429c2780b3" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,214,50"/>
+<area shape="poly" title=" " alt="" coords="243,28,214,30,214,25,249,27"/>
+</map>
+</div>
 
 </div>
 </div>

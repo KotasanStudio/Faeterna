@@ -1,0 +1,32 @@
+<map id="Faeterna.Scripts.Personaje.Lira._Ready" name="Faeterna.Scripts.Personaje.Lira._Ready">
+<area shape="rect" id="Node000001" title="Inicialización del nodo." alt="" coords="5,45,204,90"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="252,244,490,289"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,88,329,233,325,236,135,93"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a628c266a9fcb4bd6e0e6f0d6c4b2f928" title="Actualiza visualmente los corazones de la interfaz según la salud actual." alt="" coords="911,5,1109,50"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="203,51,251,46,427,36,603,29,898,26,893,29,603,34,428,41,252,52,205,56"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a39c9cbf69eaee2fb7a16a1fd532cf958" title="Actualiza visualmente la barra de maná de la interfaz según el maná actual." alt="" coords="911,85,1109,130"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="203,67,481,75,819,90,898,98,893,99,819,96,481,81,205,72"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a57bcd5b2fd4fefab657ca0c69004707e" title="Aplica los datos de guardado al personaje, restaurando su posición, salud, maná, habilidades adquirid..." alt="" coords="580,175,778,219"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,241,567,222,562,224,474,246"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a9e47db3cdaf412b366d9dcc745da21a6" title="Carga los datos del slot activo." alt="" coords="558,244,799,289"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="490,264,545,266,540,267,491,269"/>
+<area shape="rect" id="Node000011" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a7b6e132b72b76191edc5c96fc993c51c" title="Reemplaza la lista de bosses derrotados (usado al cargar un guardado)." alt="" coords="894,377,1126,422"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="386,286,411,323,445,366,488,406,513,424,539,437,589,454,642,463,695,466,748,463,849,447,931,428,936,427,850,452,749,468,695,471,641,468,588,459,537,442,510,428,485,411,441,369,407,326,384,291"/>
+<area shape="rect" id="Node000012" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#af95a8f6413192644b0ab4fe8fa2f9962" title="Elimina de la escena los bosses cuyos identificadores aparecen en la lista de derrotados del guardado..." alt="" coords="538,313,819,358"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="473,287,564,309,559,310,473,292"/>
+<area shape="rect" id="Node000013" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a86e3f14aed078dc112a89c95a4f4678f" title="Recupera y limpia los datos pendientes." alt="" coords="543,383,814,427"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="402,286,464,328,539,368,559,378,553,377,537,373,461,333,401,292"/>
+<area shape="rect" id="Node000014" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#ad28ca534626417d328af082c39e24dbe" title="Establece datos pendientes que serán aplicados tras completar el cambio de escena." alt="" coords="554,105,803,150"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="400,241,461,200,537,160,558,154,554,157,539,165,464,205,403,246"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#ac850d0a7461be6dedd6530632490be92" title="Elimina de la escena los objetos que ya han sido recogidos por el jugador para evitar que reaparezcan..." alt="" coords="867,175,1153,219"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="778,194,855,197,849,197,779,200"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="777,181,799,172,818,160,835,140,841,117,848,94,866,71,894,56,899,53,869,75,853,96,846,119,839,142,821,164,801,177,779,186"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="773,172,819,160,920,134,915,136,820,165,775,177"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="905,244,1115,289"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="799,264,892,266,887,267,800,269"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="784,287,820,299,894,332,961,369,955,369,892,336,818,303,784,292"/>
+<area shape="rect" id="Node000009" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#af41c20346b77a4fac76819fcd9943a78" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="1201,244,1411,289"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1115,264,1188,266,1182,267,1116,269"/>
+<area shape="rect" id="Node000010" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="1459,244,1669,289"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1411,264,1446,266,1440,267,1412,269"/>
+</map>

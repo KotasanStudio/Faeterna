@@ -11,12 +11,14 @@
         <name>_control</name>
         <qualifiedname>Faeterna.Scripts.Tutorial.Turotial._control</qualifiedname>
         <briefdescription>
+<para>Nodo de control que se desvanece o desaparece al entrar <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref> en el área. Se espera que este nodo sea un hijo directo de este nodo y se use para mostrar información o guías durante el tutorial. Al detectar la colisión con <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, se llama al método DesvanecerNodo para eliminar o ocultar este nodo de control, permitiendo que el jugador avance en el tutorial sin distracciones. Es importante asegurarse de que este nodo esté correctamente asignado en el editor para evitar errores al intentar acceder a él desde el código. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tutorial/Turotial.cs" line="8" column="25" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="8" bodyend="-1"/>
+        <location file="scripts/Tutorial/Turotial.cs" line="9" column="25" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1aa7d3e920f01d9e201df7e89612fd3c9e" compoundref="Turotial_8cs" startline="30" endline="38">Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -31,12 +33,25 @@
           <declname>body</declname>
         </param>
         <briefdescription>
+<para>Método que se llama cuando un cuerpo entra en el área 2D del tutorial. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si el cuerpo es una instancia de CharacterBody2D (lo que indica que es <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>), se imprime un mensaje en la consola y se llama al método DesvanecerNodo para eliminar o ocultar el nodo de control asociado al tutorial. Este método es esencial para detectar la interacción del jugador con el área del tutorial y permitir que el juego responda adecuadamente a esa interacción, proporcionando una experiencia de aprendizaje fluida para el jugador. Es importante asegurarse de que este método esté conectado correctamente a la señal de entrada de cuerpo del área 2D para que funcione como se espera.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El cuerpo que ha entrado en el área 2D del tutorial. Este parámetro se espera que sea una instancia de CharacterBody2D, lo que indica que es <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, el personaje principal del juego. Si el cuerpo no es una instancia de CharacterBody2D, no se realizará ninguna acción adicional. Es importante asegurarse de que el área 2D esté configurada correctamente para detectar la entrada de cuerpos y que este método esté conectado a la señal correspondiente para garantizar su funcionamiento adecuado. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tutorial/Turotial.cs" line="10" column="21" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="10" bodyend="18"/>
+        <location file="scripts/Tutorial/Turotial.cs" line="17" column="21" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="17" bodyend="25"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1aa7d3e920f01d9e201df7e89612fd3c9e" compoundref="Turotial_8cs" startline="30" endline="38">Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1aa7d3e920f01d9e201df7e89612fd3c9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -45,12 +60,16 @@
         <name>DesvanecerNodo</name>
         <qualifiedname>Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo</qualifiedname>
         <briefdescription>
+<para>Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si el nodo de control es null, se imprime un mensaje de error en la consola. De lo contrario, se llama al método QueueFree para eliminar el nodo de control del árbol de escenas, lo que hace que desaparezca visualmente del juego. Este método es esencial para proporcionar una experiencia de tutorial fluida, permitiendo que el jugador avance sin distracciones una vez que haya interactuado con el área del tutorial. Es importante asegurarse de que este método esté implementado correctamente para evitar errores al intentar acceder o eliminar el nodo de control. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tutorial/Turotial.cs" line="20" column="21" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="20" bodyend="28"/>
+        <location file="scripts/Tutorial/Turotial.cs" line="30" column="21" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="30" bodyend="38"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ac447f70f82759cf75967bb0150ec72f5" compoundref="Turotial_8cs" startline="9">Faeterna.Scripts.Tutorial.Turotial._control</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ae35f50d0e18a9abb02cc924ff0b4881f" compoundref="Turotial_8cs" startline="17" endline="25">Faeterna.Scripts.Tutorial.Turotial._on_area_2d_body_entered</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +98,7 @@
         <label>Node2D</label>
       </node>
     </collaborationgraph>
-    <location file="scripts/Tutorial/Turotial.cs" line="6" column="19" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="7" bodyend="29"/>
+    <location file="scripts/Tutorial/Turotial.cs" line="6" column="19" bodyfile="scripts/Tutorial/Turotial.cs" bodystart="7" bodyend="39"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ac447f70f82759cf75967bb0150ec72f5" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tutorial::Turotial</scope><name>_control</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ae35f50d0e18a9abb02cc924ff0b4881f" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tutorial::Turotial</scope><name>_on_area_2d_body_entered</name></member>

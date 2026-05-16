@@ -11,12 +11,14 @@
         <name>logoTimer</name>
         <qualifiedname>LogoAnimationScene.logoTimer</qualifiedname>
         <briefdescription>
+<para>Control que representa la escena de animación del logo al iniciar el juego. Esta escena se muestra al cargar el juego y reproduce una animación del logo durante un tiempo determinado. Después de que la animación termine, se cambia automáticamente a la escena del menú principal. Además, si el jugador presiona la tecla de pausa durante la animación, se detiene el temporizador y se cambia inmediatamente a la escena del menú principal. Es importante que el temporizador esté configurado correctamente para que la transición entre escenas funcione sin problemas y que el jugador tenga la opción de omitir la animación si lo desea. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/LogoAnimationScene.cs" line="6" column="16" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="6" bodyend="-1"/>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="7" column="16" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classLogoAnimationScene_1add348c7a8fa3932cd77f09b86f9a7e1c" compoundref="LogoAnimationScene_8cs" startline="15" endline="22">_Input</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -31,12 +33,25 @@
           <declname>event</declname>
         </param>
         <briefdescription>
+<para>En el método _Input se verifica si el jugador ha presionado la tecla de pausa. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si es así, se detiene el temporizador de la animación del logo y se cambia inmediatamente a la escena del menú principal. Esto permite que los jugadores puedan omitir la animación si lo desean, proporcionando una experiencia de usuario más flexible. Es importante que esta función esté implementada correctamente para garantizar que el juego responda a la entrada del jugador durante la animación del logo y permita una transición suave al menú principal cuando se presione la tecla de pausa.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El evento de entrada que se está procesando. Este parámetro contiene información sobre la acción que se ha realizado, como qué tecla se ha presionado. En este caso, se verifica si la acción &quot;pause&quot; ha sido activada para determinar si se debe omitir la animación del logo y cambiar al menú principal. Es importante que el evento de entrada esté configurado correctamente en el proyecto para que esta función funcione como se espera. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/LogoAnimationScene.cs" line="7" column="26" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="7" bodyend="14"/>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="15" column="26" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="15" bodyend="22"/>
+        <references refid="classLogoAnimationScene_1aaa1a71c946272c45fa1fabdb76251696" compoundref="LogoAnimationScene_8cs" startline="7">logoTimer</references>
       </memberdef>
       <memberdef kind="function" id="classLogoAnimationScene_1a297264d9677cf9fc2118a9550e1d5991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -45,12 +60,14 @@
         <name>_on_logo_timer_timeout</name>
         <qualifiedname>LogoAnimationScene._on_logo_timer_timeout</qualifiedname>
         <briefdescription>
+<para>Este método se llama cuando el temporizador de la animación del logo alcanza su tiempo límite. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se encarga de cambiar a la escena del menú principal utilizando el método ChangeSceneToFile del nodo raíz del árbol de escenas. Es importante que este método esté configurado para ser llamado al final de la animación del logo para garantizar una transición suave al menú principal una vez que la animación haya terminado. Asegúrate de que el temporizador esté configurado correctamente para llamar a este método en el momento adecuado durante la animación. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/LogoAnimationScene.cs" line="15" column="13" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="15" bodyend="18"/>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="27" column="13" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="27" bodyend="30"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +96,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Menus/LogoAnimationScene.cs" line="4" column="15" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="5" bodyend="19"/>
+    <location file="scripts/Menus/LogoAnimationScene.cs" line="4" column="15" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="5" bodyend="31"/>
     <listofallmembers>
       <member refid="classLogoAnimationScene_1add348c7a8fa3932cd77f09b86f9a7e1c" prot="public" virt="non-virtual"><scope>LogoAnimationScene</scope><name>_Input</name></member>
       <member refid="classLogoAnimationScene_1a297264d9677cf9fc2118a9550e1d5991" prot="public" virt="non-virtual"><scope>LogoAnimationScene</scope><name>_on_logo_timer_timeout</name></member>

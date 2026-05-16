@@ -11,12 +11,14 @@
         <name>_rayCast</name>
         <qualifiedname>Faeterna.scripts.Personaje.TerrainParticles._rayCast</qualifiedname>
         <briefdescription>
+<para>RayCast2D que se usará para detectar el tile debajo del personaje y cambiar el atlas de partículas según la &quot;RutaParticula&quot; definida en el TileData. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="9" column="24" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="9" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="10" column="24" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" compoundref="TerrainParticles_8cs" startline="85" endline="119">Faeterna.scripts.Personaje.TerrainParticles._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1aabf72af6db5bba005cd2cc47d33fba4b" prot="private" static="no" mutable="no">
         <type>AtlasTexture</type>
@@ -31,7 +33,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="12" column="31" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="12" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="13" column="31" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a2256e03d809d8b987252744467a04d7d" prot="private" static="no" mutable="no">
         <type>AtlasTexture</type>
@@ -46,7 +49,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="15" column="31" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="15" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="16" column="31" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a33a5423c5f2934b3248f1966ad2befa4" prot="private" static="no" mutable="no">
         <type>Vector2I</type>
@@ -59,11 +63,11 @@
 <para>Tamaño en pixeles de cada frame del spritesheet. </para>
         </briefdescription>
         <detaileddescription>
-<para>En tu caso: 8x8. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="21" column="27" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="21" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="19" column="27" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a675f84a0e52b92df028ee9484946a21d" compoundref="TerrainParticles_8cs" startline="127" endline="146">Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a9ef325bde85bbbafda65460d9d7a6f5a" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -79,7 +83,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="26" column="23" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="26" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="22" column="23" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a27ecb434a700bdb725d65a32eb111c20" compoundref="TerrainParticles_8cs" startline="151" endline="167">Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a063967edab342595f0be47bdf201175f" prot="private" static="no" mutable="no">
         <type>readonly Dictionary&lt; int, AtlasTexture &gt;</type>
@@ -95,7 +100,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="31" column="37" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="31" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="25" column="37" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a5c45fdb3426479902f2ebecea863e7da" prot="private" static="no" mutable="no">
         <type>readonly Dictionary&lt; int, AtlasTexture &gt;</type>
@@ -111,7 +117,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="36" column="37" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="36" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="28" column="37" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" compoundref="TerrainParticles_8cs" startline="85" endline="119">Faeterna.scripts.Personaje.TerrainParticles._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a96ffbe3ae8b8cb1f1a2ba80c1abb4954" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -121,12 +129,15 @@
         <qualifiedname>Faeterna.scripts.Personaje.TerrainParticles._currentTextureId</qualifiedname>
         <initializer>= -1</initializer>
         <briefdescription>
+<para>Id del atlas actualmente asignado a la propiedad Texture. Se usa para evitar reasignar el mismo atlas y resetear la animación de partículas innecesariamente. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="38" column="21" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="38" bodyend="-1"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="31" column="21" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" compoundref="TerrainParticles_8cs" startline="85" endline="119">Faeterna.scripts.Personaje.TerrainParticles._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -137,12 +148,21 @@
         <name>_Ready</name>
         <qualifiedname>Faeterna.scripts.Personaje.TerrainParticles._Ready</qualifiedname>
         <briefdescription>
+<para>En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen copias para modificar en runtime sin afectar los recursos originales. </para>
         </briefdescription>
         <detaileddescription>
+<para>También se configura el material de proceso para que cada partícula elija un frame aleatorio al nacer, y se asigna el atlas inicial (id 1) a la propiedad Texture. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="40" column="30" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="40" bodyend="82"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="36" column="30" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="36" bodyend="77"/>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1aabf72af6db5bba005cd2cc47d33fba4b" compoundref="TerrainParticles_8cs" startline="13">Faeterna.scripts.Personaje.TerrainParticles._atlasTextureId1</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a2256e03d809d8b987252744467a04d7d" compoundref="TerrainParticles_8cs" startline="16">Faeterna.scripts.Personaje.TerrainParticles._atlasTextureId2</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a96ffbe3ae8b8cb1f1a2ba80c1abb4954" compoundref="TerrainParticles_8cs" startline="31">Faeterna.scripts.Personaje.TerrainParticles._currentTextureId</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a5c45fdb3426479902f2ebecea863e7da" compoundref="TerrainParticles_8cs" startline="28">Faeterna.scripts.Personaje.TerrainParticles._runtimeAtlases</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a063967edab342595f0be47bdf201175f" compoundref="TerrainParticles_8cs" startline="25">Faeterna.scripts.Personaje.TerrainParticles._sourceAtlases</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a675f84a0e52b92df028ee9484946a21d" compoundref="TerrainParticles_8cs" startline="127" endline="146">Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a27ecb434a700bdb725d65a32eb111c20" compoundref="TerrainParticles_8cs" startline="151" endline="167">Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -155,12 +175,28 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si es así, obtiene las coordenadas del tile debajo del personaje y revisa si tiene datos personalizados para &quot;RutaParticula&quot;. Si encuentra una ruta válida, cambia el atlas de partículas a la correspondiente a esa ruta. Si la ruta no es válida o no hay colisión, mantiene el atlas actual.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame. No se usa directamente en este método, pero es parte de la firma requerida por Godot para el método _Process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="84" column="30" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="84" bodyend="118"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="85" column="30" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="85" bodyend="119"/>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a96ffbe3ae8b8cb1f1a2ba80c1abb4954" compoundref="TerrainParticles_8cs" startline="31">Faeterna.scripts.Personaje.TerrainParticles._currentTextureId</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a531a9d33d91a2618f7cc7c921154f08d" compoundref="TerrainParticles_8cs" startline="10">Faeterna.scripts.Personaje.TerrainParticles._rayCast</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a5c45fdb3426479902f2ebecea863e7da" compoundref="TerrainParticles_8cs" startline="28">Faeterna.scripts.Personaje.TerrainParticles._runtimeAtlases</references>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a675f84a0e52b92df028ee9484946a21d" compoundref="TerrainParticles_8cs" startline="127" endline="146">Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -175,12 +211,27 @@
           <declname>atlasTexture</declname>
         </param>
         <briefdescription>
+<para>Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas según el tamaño del frame definido y el tamaño del atlas. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si el atlas no es válido o el tamaño del frame no es positivo, se asigna 1 frame en ambas direcciones para evitar divisiones por cero o comportamientos inesperados.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>atlasTexture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El AtlasTexture del cual se quiere calcular el layout de frames. Se espera que este atlas ya tenga asignada la región correcta si es que se usan regiones dentro de un atlas más grande. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="120" column="22" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="120" bodyend="139"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="127" column="22" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="127" bodyend="146"/>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a33a5423c5f2934b3248f1966ad2befa4" compoundref="TerrainParticles_8cs" startline="19">Faeterna.scripts.Personaje.TerrainParticles._frameSize</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" compoundref="TerrainParticles_8cs" startline="85" endline="119">Faeterna.scripts.Personaje.TerrainParticles._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a27ecb434a700bdb725d65a32eb111c20" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -189,12 +240,16 @@
         <name>ConfigureProcessMaterialRandomFrame</name>
         <qualifiedname>Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame</qualifiedname>
         <briefdescription>
+<para>Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer. </para>
         </briefdescription>
         <detaileddescription>
+<para>Esto se logra asignando un rango de offset de animación entre 0 y 1, lo que hace que el shader escoja un punto aleatorio en la animación para cada partícula. Si la opción _freezeRandomFrameOnSpawn está activada, también se establece la velocidad de animación a 0 para que las partículas no cambien de frame después de nacer. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/TerrainParticles.cs" line="141" column="22" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="141" bodyend="157"/>
+        <location file="scripts/Personaje/TerrainParticles.cs" line="151" column="22" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="151" bodyend="167"/>
+        <references refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a9ef325bde85bbbafda65460d9d7a6f5a" compoundref="TerrainParticles_8cs" startline="22">Faeterna.scripts.Personaje.TerrainParticles._freezeRandomFrameOnSpawn</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" compoundref="TerrainParticles_8cs" startline="36" endline="77">Faeterna.scripts.Personaje.TerrainParticles._Ready</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -223,7 +278,7 @@
         <label>GpuParticles2D</label>
       </node>
     </collaborationgraph>
-    <location file="scripts/Personaje/TerrainParticles.cs" line="7" column="19" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="8" bodyend="158"/>
+    <location file="scripts/Personaje/TerrainParticles.cs" line="7" column="19" bodyfile="scripts/Personaje/TerrainParticles.cs" bodystart="8" bodyend="168"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1aabf72af6db5bba005cd2cc47d33fba4b" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Personaje::TerrainParticles</scope><name>_atlasTextureId1</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a2256e03d809d8b987252744467a04d7d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Personaje::TerrainParticles</scope><name>_atlasTextureId2</name></member>

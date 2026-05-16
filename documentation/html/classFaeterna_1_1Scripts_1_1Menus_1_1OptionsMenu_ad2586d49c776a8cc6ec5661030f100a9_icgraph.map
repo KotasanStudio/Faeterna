@@ -1,0 +1,29 @@
+<map id="Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb" name="Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb">
+<area shape="rect" id="Node000001" title="Normaliza un valor de volumen dado en porcentaje (0&#45;100) a decibelios (dB) para su uso con el sistema..." alt="" coords="630,317,857,362"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a565df7a03d280a75b55ae3d9563fbca6" title="Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox)." alt="" coords="284,5,579,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="729,302,709,249,678,184,636,119,610,90,580,64,563,53,562,48,584,60,613,86,640,116,683,182,714,247,734,303"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#aa12e69d376780b99f73c69789bddf87e" title="Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox)." alt="" coords="299,75,564,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="722,303,699,264,667,218,627,172,581,134,560,123,560,117,583,129,631,168,671,214,703,261,727,304"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a5b149fcaee778a0271d6d18d9fe6b7e8" title="Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox)." alt="" coords="302,144,560,189"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="710,306,654,254,619,226,581,203,555,192,554,187,583,199,622,222,658,250,716,306"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a9073c5a14b39c826ba3a144de8e42417" title="Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox)." alt="" coords="293,213,570,258"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="679,311,581,273,542,261,541,256,583,268,684,310"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a2a8ae5fd3e24537a66232394e3251625" title="Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox)." alt="" coords="294,283,568,327"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="612,326,569,323,568,318,617,325"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a9c304bdc6d4a584f2ca06fb08bd6a953" title="Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox)." alt="" coords="281,352,582,397"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="612,355,583,360,582,355,617,353"/>
+<area shape="rect" id="Node000009" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a68cd4704536b66f6ab371e4dbf0c0e73" title="Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox)." alt="" coords="296,421,567,466"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="679,370,583,412,543,423,541,418,581,406,684,368"/>
+<area shape="rect" id="Node000010" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a871f2266e757373f1786715420a55134" title="Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox)." alt="" coords="299,491,564,535"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="715,372,658,430,622,457,583,481,555,493,553,488,581,476,619,453,654,426,711,375"/>
+<area shape="rect" id="Node000011" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a76468231753a43706928fddc9dcd6b7c" title="Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox)." alt="" coords="290,560,573,605"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="727,374,703,418,671,465,631,511,583,550,561,562,559,557,581,545,627,507,667,462,699,415,722,378"/>
+<area shape="rect" id="Node000012" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a9e514d1d9dc4ceb9015e9fd8636d494a" title="Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox)." alt="" coords="291,629,572,674"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="733,375,714,432,683,498,640,564,613,593,584,619,564,631,562,626,580,615,610,590,636,560,678,495,709,430,730,379"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a165aa18dea58ae2a848beba7608b4a9e" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,144,233,189"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,57,282,65,209,104,151,145,147,142,206,100,280,60,301,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="311,125,224,146,221,141,314,121"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="285,168,234,169,232,164,289,165"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="310,211,224,192,222,187,315,208"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="297,278,280,273,206,233,149,192,148,187,209,228,282,268,302,277"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali._on_load_attack_timer_timeout" name="Faeterna.scripts.Enemigos.Jabali.Jabali._on_load_attack_timer_timeout">
+<area shape="rect" id="Node000001" title="Maneja el timeout del timer de carga de ataque." alt="" coords="5,5,203,67"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="251,14,448,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,34,238,36,232,36,203,39"/>
+</map>

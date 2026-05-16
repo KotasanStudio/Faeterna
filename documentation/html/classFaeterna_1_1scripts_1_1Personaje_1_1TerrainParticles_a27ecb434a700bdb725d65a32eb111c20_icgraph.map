@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame" name="Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame">
+<area shape="rect" id="Node000001" title="Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer." alt="" coords="251,5,489,67"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a3484de8242cb47bc43803addd46e5a6b" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,14,203,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,36,203,39,203,34,238,36"/>
+</map>

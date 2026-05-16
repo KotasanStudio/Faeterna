@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout" name="Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout">
+<area shape="rect" id="Node000001" title="Maneja el timeout del timer de saltos." alt="" coords="252,5,496,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#af93780d4cfb7086dcabfc853370a19a8" title="Inicialización del slime." alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+</map>

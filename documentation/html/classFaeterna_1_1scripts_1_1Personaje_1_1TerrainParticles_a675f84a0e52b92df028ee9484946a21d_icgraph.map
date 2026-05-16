@@ -1,0 +1,7 @@
+<map id="Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout" name="Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout">
+<area shape="rect" id="Node000001" title="Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas segú..." alt="" coords="251,32,488,93"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#ae8babb429451ef260c68bd8da9bd6335" title="En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer." alt="" coords="5,5,203,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,45,203,43,203,38,238,44"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a3484de8242cb47bc43803addd46e5a6b" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,75,203,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,80,204,87,203,81,238,79"/>
+</map>

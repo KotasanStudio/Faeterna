@@ -1,7 +1,7 @@
 var namespaceFaeterna_1_1Scripts_1_1Tools =
 [
     [ "ButtonTools", "classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html", "classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" ],
-    [ "CheckPoint", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html", null ],
+    [ "CheckPoint", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint" ],
     [ "GameData", "classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html", "classFaeterna_1_1Scripts_1_1Tools_1_1GameData" ],
     [ "PlayerSaveData", "classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html", "classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" ],
     [ "GameSaveService", "classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html", "classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" ],

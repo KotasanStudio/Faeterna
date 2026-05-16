@@ -35,6 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" line="13" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1ae6759b9e2ab0b799b460bf68e8289a91" compoundref="MovementStateMachine_8cs" startline="60" endline="71">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine.TransitionTo</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a5ba36d11fff7f792448cd1c6e642df98" prot="private" static="no" mutable="no">
         <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" kindref="compound">State</ref></type>
@@ -50,6 +51,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" line="16" column="23" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1ae6759b9e2ab0b799b460bf68e8289a91" compoundref="MovementStateMachine_8cs" startline="60" endline="71">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine.TransitionTo</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -167,6 +169,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" line="60" column="21" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" bodystart="60" bodyend="71"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a5ba36d11fff7f792448cd1c6e642df98" compoundref="MovementStateMachine_8cs" startline="16">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine._current_state</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a31641c21ffa06139fe84a32f295acf07" compoundref="MovementStateMachine_8cs" startline="13">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine._states</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -189,6 +193,27 @@
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_current_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_current_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
         </childnode>
       </node>
       <node id="2">

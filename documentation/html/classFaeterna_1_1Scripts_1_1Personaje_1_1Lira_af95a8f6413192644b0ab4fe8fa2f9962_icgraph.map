@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Personaje.Lira.RemoveDefeatedBossesFromScene" name="Faeterna.Scripts.Personaje.Lira.RemoveDefeatedBossesFromScene">
+<area shape="rect" id="Node000001" title="Elimina de la escena los bosses cuyos identificadores aparecen en la lista de derrotados del guardado..." alt="" coords="538,5,819,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="252,5,490,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,28,490,30,490,25,525,28"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+</map>

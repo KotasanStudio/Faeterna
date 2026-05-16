@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Tools.CursorManager.ApplyCustomCursor" name="Faeterna.scripts.Tools.CursorManager.ApplyCustomCursor">
+<area shape="rect" id="Node000001" title="Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la..." alt="" coords="262,5,473,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#a3463aa5f619ca9684ee6bf429c2780b3" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,214,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,28,214,30,214,25,249,27"/>
+</map>

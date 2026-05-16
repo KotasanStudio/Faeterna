@@ -33,6 +33,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/GameSaveData.cs" line="16" column="23" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="16" bodyend="16"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" compoundref="Lira_8cs" startline="147" endline="191">Faeterna.Scripts.Personaje.Lira.TryLoadFromActiveSlotAsync</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -74,13 +75,32 @@
         <qualifiedname>Faeterna.Scripts.Tools.GameData.PlayerData</qualifiedname>
         <initializer>= new()</initializer>
         <briefdescription>
-<para>Datos específicos del jugador (posición, salud, maná, habilidades disponibles). </para>
+<para>Datos específicos del jugador (posición, salud, maná, habilidades adquiridas y estado de tutoriales). </para>
         </briefdescription>
         <detaileddescription>
+<para>Se serializan junto con la partida para restaurar correctamente a Lira al cargar el guardado. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="25" column="31" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="25" bodyend="25"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="28" column="31" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="28" bodyend="28"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" compoundref="Lira_8cs" startline="147" endline="191">Faeterna.Scripts.Personaje.Lira.TryLoadFromActiveSlotAsync</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1ac647e0406fe81a55c260d048f6ca601c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>System.Collections.Generic.List&lt; string &gt;</type>
+        <definition>System.Collections.Generic.List&lt;string&gt; Faeterna.Scripts.Tools.GameData.DefeatedBossTypes</definition>
+        <argsstring></argsstring>
+        <name>DefeatedBossTypes</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.DefeatedBossTypes</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Lista de identificadores de bosses derrotados en esta partida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se usa para que esos bosses no reaparezcan al cargar el guardado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="34" column="45" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="34" bodyend="34"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -89,8 +109,9 @@
     <detaileddescription>
 <para>Se utiliza para serializar y deserializar el estado del juego desde el almacenamiento persistente. </para>
     </detaileddescription>
-    <location file="scripts/Tools/GameSaveData.cs" line="10" column="11" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="11" bodyend="26"/>
+    <location file="scripts/Tools/GameSaveData.cs" line="10" column="11" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="11" bodyend="35"/>
     <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1ac647e0406fe81a55c260d048f6ca601c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>DefeatedBossTypes</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>LastCheckpointId</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a5bd32cfb137d089ff5b7a67dc6858d56" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>PlayerData</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a7ab5f9e8837102e9132d29df34348d2e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>PreviewImagePath</name></member>

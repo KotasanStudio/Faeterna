@@ -1,0 +1,9 @@
+<map id="Faeterna.Scripts.Tools.Saves.DeleteSlot" name="Faeterna.Scripts.Tools.Saves.DeleteSlot">
+<area shape="rect" id="Node000001" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="5,75,216,119"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a3163852a2ec83567dc5a8b0b6c72792c" title="Intenta eliminar un archivo del almacenamiento persistente." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,72,271,53,266,56,198,77"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="264,75,474,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,94,250,96,245,98,217,100"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="264,144,474,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,117,271,139,266,140,196,123"/>
+</map>

@@ -32,6 +32,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="17" column="23" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" compoundref="KnockbackMovementState_8cs" startline="32" endline="39">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.Enter</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09" compoundref="KnockbackMovementState_8cs" startline="60" endline="65">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.Exit</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa7f852ecdac4f6ac0fc5f6ea433e7422" compoundref="KnockbackMovementState_8cs" startline="22" endline="30">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1ae1e9323123002e91e9290364b0455c31" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -47,6 +50,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="20" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" compoundref="KnockbackMovementState_8cs" startline="32" endline="39">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.Enter</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09" compoundref="KnockbackMovementState_8cs" startline="60" endline="65">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.Exit</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128" compoundref="KnockbackMovementState_8cs" startline="41" endline="55">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState.UpdatePhysics</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -65,6 +71,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="22" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="22" bodyend="30"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5973bce36a4ec2a708c67e20c4cf31df" compoundref="KnockbackMovementState_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._knockbackTimer</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -81,6 +88,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="32" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="32" bodyend="39"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1ae1e9323123002e91e9290364b0455c31" compoundref="KnockbackMovementState_8cs" startline="20">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._isKnockbackActive</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5973bce36a4ec2a708c67e20c4cf31df" compoundref="KnockbackMovementState_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._knockbackTimer</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -111,6 +120,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="41" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="41" bodyend="55"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1ae1e9323123002e91e9290364b0455c31" compoundref="KnockbackMovementState_8cs" startline="20">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._isKnockbackActive</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa6996062dd76283625bcc115615485c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -147,6 +157,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" line="60" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs" bodystart="60" bodyend="65"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1ae1e9323123002e91e9290364b0455c31" compoundref="KnockbackMovementState_8cs" startline="20">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._isKnockbackActive</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5973bce36a4ec2a708c67e20c4cf31df" compoundref="KnockbackMovementState_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState._knockbackTimer</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -189,16 +201,70 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="11">
+        <label>Control</label>
+      </node>
       <node id="1">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_player</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Faeterna.Scripts.Menus.DeathScreen</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Personaje.Lira</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>MovementStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>AnimTree</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>terrainParticles</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_deathScreen</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_objectoDescription</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_lira</edgelabel>
         </childnode>
       </node>
       <node id="4">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
         <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_current_state</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -209,6 +275,15 @@
         <childnode refid="4" relation="usage">
           <edgelabel>stateMachine</edgelabel>
         </childnode>
+      </node>
+      <node id="8">
+        <label>Faeterna.scripts.Personaje.TerrainParticles</label>
+        <link refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GpuParticles2D</label>
       </node>
       <node id="3">
         <label>Node</label>

@@ -116,13 +116,138 @@ Collaboration diagram for Faeterna.Scripts.Tools.CheckPoint:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a12e3ffb6fb60459cbfa58ced85113663" id="r_a12e3ffb6fb60459cbfa58ced85113663"><td class="memItemLeft"><a id="a12e3ffb6fb60459cbfa58ced85113663" name="a12e3ffb6fb60459cbfa58ced85113663"></a>
-async Task&#160;</td><td class="memItemRight"><b>ActionSaveProgress</b> (<a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html">Lira</a> player)</td></tr>
-<tr class="memitem:a7964230fab106746b818fc38ff60dc72" id="r_a7964230fab106746b818fc38ff60dc72"><td class="memItemLeft"><a id="a7964230fab106746b818fc38ff60dc72" name="a7964230fab106746b818fc38ff60dc72"></a>
-Vector2&#160;</td><td class="memItemRight"><b>GetPrayPosition</b> ()</td></tr>
-<tr class="memitem:af7d9244c606aee374a4e361ceb8b869b" id="r_af7d9244c606aee374a4e361ceb8b869b"><td class="memItemLeft"><a id="af7d9244c606aee374a4e361ceb8b869b" name="af7d9244c606aee374a4e361ceb8b869b"></a>
-void&#160;</td><td class="memItemRight"><b>OnAreaCheckPointEntered</b> (Node2D body)</td></tr>
+<tr class="memitem:a12e3ffb6fb60459cbfa58ced85113663" id="r_a12e3ffb6fb60459cbfa58ced85113663"><td class="memItemLeft">async Task&#160;</td><td class="memItemRight"><a class="el" href="#a12e3ffb6fb60459cbfa58ced85113663">ActionSaveProgress</a> (<a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html">Lira</a> player)</td></tr>
+<tr class="memdesc:a12e3ffb6fb60459cbfa58ced85113663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acción que se ejecuta al interactuar con el checkpoint.  <br /></td></tr>
+<tr class="memitem:a7964230fab106746b818fc38ff60dc72" id="r_a7964230fab106746b818fc38ff60dc72"><td class="memItemLeft">Vector2&#160;</td><td class="memItemRight"><a class="el" href="#a7964230fab106746b818fc38ff60dc72">GetPrayPosition</a> ()</td></tr>
+<tr class="memdesc:a7964230fab106746b818fc38ff60dc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve la posición global del punto de aparición asociado a este checkpoint.  <br /></td></tr>
+<tr class="memitem:af7d9244c606aee374a4e361ceb8b869b" id="r_af7d9244c606aee374a4e361ceb8b869b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af7d9244c606aee374a4e361ceb8b869b">OnAreaCheckPointEntered</a> (Node2D body)</td></tr>
+<tr class="memdesc:af7d9244c606aee374a4e361ceb8b869b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que se llama cuando un cuerpo (body) entra en el área de detección del checkpoint.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a440fb1125b6f8b5d9df9864845a78959" id="r_a440fb1125b6f8b5d9df9864845a78959"><td class="memItemLeft"><a id="a440fb1125b6f8b5d9df9864845a78959" name="a440fb1125b6f8b5d9df9864845a78959"></a>
+string&#160;</td><td class="memItemRight"><b>_checkpointId</b> = &quot;checkpoint_01&quot;</td></tr>
+<tr class="memdesc:a440fb1125b6f8b5d9df9864845a78959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificador único del checkpoint. Se utiliza para diferenciar este checkpoint de otros en el sistema de guardado. <br /></td></tr>
+<tr class="memitem:ae9a0ec5b475fb9e7ce07b81903137657" id="r_ae9a0ec5b475fb9e7ce07b81903137657"><td class="memItemLeft"><a id="ae9a0ec5b475fb9e7ce07b81903137657" name="ae9a0ec5b475fb9e7ce07b81903137657"></a>
+Node2D&#160;</td><td class="memItemRight"><b>_spawnPoint</b></td></tr>
+<tr class="memdesc:ae9a0ec5b475fb9e7ce07b81903137657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo que representa el punto de aparición (spawn point) asociado a este checkpoint. Se asigna desde el editor. Al interactuar con el checkpoint, el jugador se teletransportará a la posición global de este nodo al cargar el progreso guardado. Si no se asigna un spawn point específico, se usará la posición del nodo del checkpoint como punto de aparición por defecto. <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a12e3ffb6fb60459cbfa58ced85113663" name="a12e3ffb6fb60459cbfa58ced85113663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e3ffb6fb60459cbfa58ced85113663">&#9670;&#160;</a></span>ActionSaveProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task Faeterna.Scripts.Tools.CheckPoint.ActionSaveProgress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html">Lira</a></td>          <td class="paramname"><span class="paramname"><em>player</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Acción que se ejecuta al interactuar con el checkpoint. </p>
+<p>Restaura algo de salud y mana al jugador, y guarda el progreso actual (escena, posición, checkpoint) en el sistema de guardado. Se llama desde el método de interacción del jugador al detectar que se encuentra dentro del área del checkpoint y se presiona la tecla de interacción. Si el juego está pausado, no realiza ninguna acción.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>El nodo del jugador (<a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>) que interactúa con el checkpoint. Se espera que este nodo tenga métodos para curar salud y recuperar mana, así como para obtener su posición actual. Este parámetro se utiliza para aplicar los efectos de curación y recuperación, y para obtener la posición del jugador al guardar el progreso. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_a12e3ffb6fb60459cbfa58ced85113663_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_a12e3ffb6fb60459cbfa58ced85113663_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_a12e3ffb6fb60459cbfa58ced85113663_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_a12e3ffb6fb60459cbfa58ced85113663_cgraph">
+<area shape="rect" title="Acción que se ejecuta al interactuar con el checkpoint." alt="" coords="5,75,213,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a71b5a5639661f4fcb0a64ee71a8a24f0" title="Cura al personaje, aumentando su salud hasta el máximo permitido y actualizando la interfaz." alt="" coords="286,5,484,50"/>
+<area shape="poly" title=" " alt="" coords="200,71,281,53,276,56,202,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a11d993a2339b30e612daa6d6dc6fe527" title="Recupera maná del personaje hasta el máximo permitido y actualiza la barra de la interfaz." alt="" coords="286,75,484,119"/>
+<area shape="poly" title=" " alt="" coords="213,94,273,96,268,98,213,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#af0bd60dc6943073598f37cac04d6f6f9" title="Guarda el progreso al tocar un checkpoint y genera la imagen preview del slot activo." alt="" coords="261,144,510,189"/>
+<area shape="poly" title=" " alt="" coords="201,117,281,139,276,140,201,123"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a628c266a9fcb4bd6e0e6f0d6c4b2f928" title="Actualiza visualmente los corazones de la interfaz según la salud actual." alt="" coords="558,5,756,50"/>
+<area shape="poly" title=" " alt="" coords="485,25,545,27,540,28,485,30"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a39c9cbf69eaee2fb7a16a1fd532cf958" title="Actualiza visualmente la barra de maná de la interfaz según el maná actual." alt="" coords="558,75,756,119"/>
+<area shape="poly" title=" " alt="" coords="485,94,545,97,540,97,485,100"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7964230fab106746b818fc38ff60dc72" name="a7964230fab106746b818fc38ff60dc72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7964230fab106746b818fc38ff60dc72">&#9670;&#160;</a></span>GetPrayPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 Faeterna.Scripts.Tools.CheckPoint.GetPrayPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Devuelve la posición global del punto de aparición asociado a este checkpoint. </p>
+<p>Si se ha asignado un nodo de spawn point específico, devuelve su posición global; de lo contrario, devuelve la posición global del nodo del checkpoint. Esta posición se utiliza como punto de aparición para el jugador al cargar el progreso guardado desde este checkpoint.</p>
+<dl class="section return"><dt>Returns</dt><dd>La posición global del spawn point asociado a este checkpoint, o la posición global del nodo del checkpoint si no se ha asignado un spawn point específico. Esta posición se utiliza para teletransportar al jugador al cargar el progreso guardado desde este checkpoint. </dd></dl>
+
+</div>
+</div>
+<a id="af7d9244c606aee374a4e361ceb8b869b" name="af7d9244c606aee374a4e361ceb8b869b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d9244c606aee374a4e361ceb8b869b">&#9670;&#160;</a></span>OnAreaCheckPointEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.CheckPoint.OnAreaCheckPointEntered </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>body</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método que se llama cuando un cuerpo (body) entra en el área de detección del checkpoint. </p>
+<p>Actualmente no implementa lógica adicional, pero puede ser utilizado en el futuro para detectar la presencia del jugador u otros eventos relacionados con el checkpoint. Se espera que este método sea conectado a la señal "body_entered" del nodo Area2D que representa el área de detección del checkpoint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>El nodo del cuerpo que ha entrado en el área de detección del checkpoint. Este parámetro puede ser utilizado para verificar si el cuerpo es el jugador (<a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>) y realizar acciones específicas en respuesta a su presencia, como mostrar un mensaje de interacción o activar efectos visuales. Actualmente no se implementa ninguna lógica dentro de este método, pero se deja preparado para futuras funcionalidades relacionadas con la detección de cuerpos en el área del checkpoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Tools/<b>CheckPoint.cs</b></li>
 </ul>

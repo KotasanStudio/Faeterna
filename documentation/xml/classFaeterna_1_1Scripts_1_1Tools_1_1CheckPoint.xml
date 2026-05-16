@@ -12,12 +12,14 @@
         <qualifiedname>Faeterna.Scripts.Tools.CheckPoint._checkpointId</qualifiedname>
         <initializer>= &quot;checkpoint_01&quot;</initializer>
         <briefdescription>
+<para>Identificador único del checkpoint. Se utiliza para diferenciar este checkpoint de otros en el sistema de guardado. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/CheckPoint.cs" line="11" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="11" bodyend="-1"/>
+        <location file="scripts/Tools/CheckPoint.cs" line="12" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a12e3ffb6fb60459cbfa58ced85113663" compoundref="CheckPoint_8cs" startline="24" endline="34">Faeterna.Scripts.Tools.CheckPoint.ActionSaveProgress</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" prot="private" static="no" mutable="no">
         <type>Node2D</type>
@@ -26,12 +28,14 @@
         <name>_spawnPoint</name>
         <qualifiedname>Faeterna.Scripts.Tools.CheckPoint._spawnPoint</qualifiedname>
         <briefdescription>
+<para>Nodo que representa el punto de aparición (spawn point) asociado a este checkpoint. Se asigna desde el editor. Al interactuar con el checkpoint, el jugador se teletransportará a la posición global de este nodo al cargar el progreso guardado. Si no se asigna un spawn point específico, se usará la posición del nodo del checkpoint como punto de aparición por defecto. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/CheckPoint.cs" line="12" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="12" bodyend="-1"/>
+        <location file="scripts/Tools/CheckPoint.cs" line="15" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a12e3ffb6fb60459cbfa58ced85113663" compoundref="CheckPoint_8cs" startline="24" endline="34">Faeterna.Scripts.Tools.CheckPoint.ActionSaveProgress</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -46,12 +50,29 @@
           <declname>player</declname>
         </param>
         <briefdescription>
+<para>Acción que se ejecuta al interactuar con el checkpoint. </para>
         </briefdescription>
         <detaileddescription>
+<para>Restaura algo de salud y mana al jugador, y guarda el progreso actual (escena, posición, checkpoint) en el sistema de guardado. Se llama desde el método de interacción del jugador al detectar que se encuentra dentro del área del checkpoint y se presiona la tecla de interacción. Si el juego está pausado, no realiza ninguna acción.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nodo del jugador (<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>) que interactúa con el checkpoint. Se espera que este nodo tenga métodos para curar salud y recuperar mana, así como para obtener su posición actual. Este parámetro se utiliza para aplicar los efectos de curación y recuperación, y para obtener la posición del jugador al guardar el progreso. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/CheckPoint.cs" line="14" column="27" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="14" bodyend="24"/>
+        <location file="scripts/Tools/CheckPoint.cs" line="24" column="27" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="24" bodyend="34"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a440fb1125b6f8b5d9df9864845a78959" compoundref="CheckPoint_8cs" startline="12">Faeterna.Scripts.Tools.CheckPoint._checkpointId</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" compoundref="CheckPoint_8cs" startline="15">Faeterna.Scripts.Tools.CheckPoint._spawnPoint</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71b5a5639661f4fcb0a64ee71a8a24f0" compoundref="Lira_8cs" startline="429" endline="434">Faeterna.Scripts.Personaje.Lira.Heal</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a11d993a2339b30e612daa6d6dc6fe527" compoundref="Lira_8cs" startline="462" endline="467">Faeterna.Scripts.Personaje.Lira.RecoverMana</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1af0bd60dc6943073598f37cac04d6f6f9" compoundref="GameSaveService_8cs" startline="120" endline="121">Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a7964230fab106746b818fc38ff60dc72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector2</type>
@@ -60,12 +81,17 @@
         <name>GetPrayPosition</name>
         <qualifiedname>Faeterna.Scripts.Tools.CheckPoint.GetPrayPosition</qualifiedname>
         <briefdescription>
+<para>Devuelve la posición global del punto de aparición asociado a este checkpoint. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si se ha asignado un nodo de spawn point específico, devuelve su posición global; de lo contrario, devuelve la posición global del nodo del checkpoint. Esta posición se utiliza como punto de aparición para el jugador al cargar el progreso guardado desde este checkpoint.</para>
+<para><simplesect kind="return"><para>La posición global del spawn point asociado a este checkpoint, o la posición global del nodo del checkpoint si no se ha asignado un spawn point específico. Esta posición se utiliza para teletransportar al jugador al cargar el progreso guardado desde este checkpoint. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/CheckPoint.cs" line="26" column="24" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="26" bodyend="26"/>
+        <location file="scripts/Tools/CheckPoint.cs" line="42" column="24" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="42" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1af7d9244c606aee374a4e361ceb8b869b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,12 +104,24 @@
           <declname>body</declname>
         </param>
         <briefdescription>
+<para>Método que se llama cuando un cuerpo (body) entra en el área de detección del checkpoint. </para>
         </briefdescription>
         <detaileddescription>
+<para>Actualmente no implementa lógica adicional, pero puede ser utilizado en el futuro para detectar la presencia del jugador u otros eventos relacionados con el checkpoint. Se espera que este método sea conectado a la señal &quot;body_entered&quot; del nodo Area2D que representa el área de detección del checkpoint.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El nodo del cuerpo que ha entrado en el área de detección del checkpoint. Este parámetro puede ser utilizado para verificar si el cuerpo es el jugador (<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>) y realizar acciones específicas en respuesta a su presencia, como mostrar un mensaje de interacción o activar efectos visuales. Actualmente no se implementa ninguna lógica dentro de este método, pero se deja preparado para futuras funcionalidades relacionadas con la detección de cuerpos en el área del checkpoint. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/CheckPoint.cs" line="28" column="21" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="28" bodyend="30"/>
+        <location file="scripts/Tools/CheckPoint.cs" line="50" column="21" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="50" bodyend="52"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -112,7 +150,7 @@
         <label>Node2D</label>
       </node>
     </collaborationgraph>
-    <location file="scripts/Tools/CheckPoint.cs" line="9" column="19" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="10" bodyend="31"/>
+    <location file="scripts/Tools/CheckPoint.cs" line="9" column="19" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="10" bodyend="53"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a440fb1125b6f8b5d9df9864845a78959" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>_checkpointId</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>_spawnPoint</name></member>

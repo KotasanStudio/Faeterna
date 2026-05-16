@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['takedamage_0',['TakeDamage',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#aa1858e5c34c53eae5846ae08c51f3c4c',1,'Faeterna::Scripts::Personaje::Lira']]],
-  ['target_1',['target',['../classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a8558163363dba83e93edcf096a6d2f7d',1,'Faeterna::Scripts::Enemigos::Enemy']]],
-  ['terrainparticles_2',['TerrainParticles',['../classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html',1,'Faeterna::scripts::Personaje']]],
-  ['terrainparticles_3',['terrainParticles',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#ae27974ec747eab514d16dfd9f0940f94',1,'Faeterna::Scripts::Personaje::Lira']]],
-  ['transitionto_4',['TransitionTo',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html#ae6759b9e2ab0b799b460bf68e8289a91',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine']]],
-  ['travel_5',['Travel',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#ac1fe66510df1f9ad9904dbdaf893e0ec',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]],
-  ['turotial_6',['Turotial',['../classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html',1,'Faeterna::Scripts::Tutorial']]]
+  ['saveasync_0',['SaveAsync',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a86e0695c860b020965ad0943e91045a7',1,'Faeterna.Scripts.Tools.GameSaveService.SaveAsync()'],['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb',1,'Faeterna.Scripts.Tools.Saves.SaveAsync()']]],
+  ['savecheckpointasync_1',['SaveCheckpointAsync',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#af0bd60dc6943073598f37cac04d6f6f9',1,'Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync()'],['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9',1,'Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync(Lira player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport=null)']]],
+  ['saveoptions_2',['SaveOptions',['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2671c9086b903044eba3d906436c6bb3',1,'Faeterna::Scripts::Tools::Saves']]],
+  ['savepreview_3',['SavePreview',['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a871993a93093821284cf9076f7803a1d',1,'Faeterna::Scripts::Tools::Saves']]],
+  ['saves_4',['Saves',['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html',1,'Faeterna.Scripts.Tools.Saves'],['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a190b25c1de00c230de0e56d261803aab',1,'Faeterna.Scripts.Tools.Saves.Saves()']]],
+  ['saveslot_5',['SaveSlot',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html#af120d09e56fc31c95022551d04879f78',1,'Faeterna::Scripts::Tools::GameData']]],
+  ['scenepath_6',['ScenePath',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html#aed4025a397c67155480422c9a2d66530',1,'Faeterna::Scripts::Tools::GameData']]],
+  ['setactiveslot_7',['SetActiveSlot',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#accce028fb622f5fe038081c325db5886',1,'Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot()'],['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a4fa7347b0fea6b2d1dc9ab1e4a4628',1,'Faeterna.Scripts.Tools.Saves.SetActiveSlot()']]],
+  ['setanimation_8',['SetAnimation',['../classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3',1,'Faeterna.Scripts.Enemigos.Enemy.SetAnimation()'],['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a473349739f5bbff8a5a67d5107ea7dfa',1,'Faeterna.Scripts.Personaje.Lira.SetAnimation()']]],
+  ['setblur_9',['SetBlur',['../classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90',1,'Faeterna::Scripts::Menus::MainMenu']]],
+  ['setdefeatedbosses_10',['SetDefeatedBosses',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a7b6e132b72b76191edc5c96fc993c51c',1,'Faeterna::Scripts::Tools::GameSaveService']]],
+  ['setpendinggamedata_11',['SetPendingGameData',['../classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#ad28ca534626417d328af082c39e24dbe',1,'Faeterna::Scripts::Tools::GameSaveService']]],
+  ['settleduration_12',['SettleDuration',['../classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#aabb236c3922354af7812294acd68de42',1,'Faeterna::Scripts::Tools::ButtonTools']]],
+  ['shadermaterial_13',['shaderMaterial',['../classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a92004c0a6b8bdebd62dd0fd787d4707f',1,'Faeterna::Scripts::Enemigos::Enemy']]],
+  ['shot_14',['Shot',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html',1,'Faeterna::Scripts::Personaje']]],
+  ['slime_15',['Slime',['../classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html',1,'Faeterna::Scripts::Enemigos::Slime']]],
+  ['speed_16',['Speed',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a71764f040a67eb9871c61aa91f908635',1,'Faeterna.Scripts.Personaje.Lira.Speed'],['../classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#a47dbbe76320c78394ae566719b6c9974',1,'Faeterna.Scripts.Personaje.Shot.Speed']]],
+  ['start_17',['Start',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#a0bbca040f989c388797134172636a9a7',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]],
+  ['startpraymovementstate_18',['StartPrayMovementState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState.html',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States']]],
+  ['state_19',['State',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados']]],
+  ['statemachine_20',['stateMachine',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html#aba815a9ea10fdc53db6e843b685599fb',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::State']]],
+  ['stopdash_21',['StopDash',['../classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#acd2f16ad872491cff430703eb9b3033d',1,'Faeterna::scripts::Enemigos::Jabali::Jabali']]]
 ];

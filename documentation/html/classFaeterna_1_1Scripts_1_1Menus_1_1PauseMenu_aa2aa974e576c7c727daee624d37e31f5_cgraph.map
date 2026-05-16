@@ -1,5 +1,7 @@
 <map id="Faeterna.Scripts.Menus.PauseMenu.ResumeGame" name="Faeterna.Scripts.Menus.PauseMenu.ResumeGame">
-<area shape="rect" id="Node000001" title="Reanuda el juego desde el estado de pausa." alt="" coords="5,5,222,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="270,5,480,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,25,257,28,252,28,222,30"/>
+<area shape="rect" id="Node000001" title="Reanuda el juego desde el estado de pausa." alt="" coords="5,40,222,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="273,5,483,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,46,259,43,254,44,223,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#ad618f504cc88bb82da4a09a925bd5506" title="Controla la visibilidad de la UI del jugador (corazones y barra de maná) al pausar y reanudar el jueg..." alt="" coords="270,75,486,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,74,257,81,251,81,222,79"/>
 </map>

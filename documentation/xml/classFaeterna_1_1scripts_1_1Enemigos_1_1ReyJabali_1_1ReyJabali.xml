@@ -11,12 +11,15 @@
         <name>_shaderMaterial</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._shaderMaterial</qualifiedname>
         <briefdescription>
+<para>Material del shader usado para el efecto visual de daño. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="12" column="32" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="12" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="17" column="28" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" compoundref="ReyJabali_8cs" startline="158" endline="172">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -24,14 +27,21 @@
         <argsstring></argsstring>
         <name>_isDashing</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si el boss está actualmente dashing. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="15" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="15" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="22" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" compoundref="ReyJabali_8cs" startline="465" endline="480">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" compoundref="ReyJabali_8cs" startline="313" endline="326">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -39,14 +49,21 @@
         <argsstring></argsstring>
         <name>_isChargingAttack</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si el boss está cargando un ataque. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="16" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="16" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="27" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" compoundref="ReyJabali_8cs" startline="465" endline="480">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" compoundref="ReyJabali_8cs" startline="313" endline="326">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -54,14 +71,19 @@
         <argsstring></argsstring>
         <name>_isDead</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si el boss ya murió. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="17" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="17" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="32" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" compoundref="ReyJabali_8cs" startline="371" endline="392">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a4372500ccef2b256aaad36a044b27e15" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -69,14 +91,15 @@
         <argsstring></argsstring>
         <name>_jumped</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumped</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Estado auxiliar para detectar si el boss venía subiendo en el salto. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="19" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="19" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="37" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab55a963f20549e9e71fb85b5dab4d3a0" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -84,14 +107,15 @@
         <argsstring></argsstring>
         <name>_falled</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._falled</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Estado auxiliar para detectar si el boss ya entró en fase de caída. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="20" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="20" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="42" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -99,14 +123,16 @@
         <argsstring></argsstring>
         <name>_dashCount</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashCount</qualifiedname>
-        <initializer>= 0</initializer>
         <briefdescription>
+<para>Número de dashes realizados antes de entrar en la fase de salto especial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="22" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="22" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="47" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -114,14 +140,16 @@
         <argsstring></argsstring>
         <name>_jumpCount</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpCount</qualifiedname>
-        <initializer>= 0</initializer>
         <briefdescription>
+<para>Número de saltos ejecutados dentro de la secuencia especial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="23" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="23" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="52" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -131,12 +159,15 @@
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._actionsBeforeJump</qualifiedname>
         <initializer>= 3</initializer>
         <briefdescription>
+<para>Cantidad de acciones antes de pasar al salto especial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="24" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="24" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="57" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -144,14 +175,17 @@
         <argsstring></argsstring>
         <name>_isReturningHome</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si el boss está volviendo a su posición inicial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="25" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="25" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="62" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" compoundref="ReyJabali_8cs" startline="465" endline="480">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -161,12 +195,14 @@
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._arrivalThreshold</qualifiedname>
         <initializer>= 10f</initializer>
         <briefdescription>
+<para>Distancia mínima para considerar que el boss llegó a casa. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="27" column="23" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="27" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="72" column="19" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -175,12 +211,22 @@
         <name>_currentDirection</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</qualifiedname>
         <briefdescription>
+<para>Dirección horizontal actual del boss. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="30" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="30" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="77" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" compoundref="ReyJabali_8cs" startline="313" endline="326">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" compoundref="ReyJabali_8cs" startline="158" endline="172">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" compoundref="ReyJabali_8cs" startline="371" endline="392">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" prot="private" static="no" mutable="no">
         <type>Vector2</type>
@@ -189,12 +235,15 @@
         <name>_initPosition</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._initPosition</qualifiedname>
         <briefdescription>
+<para>Posición inicial usada para volver a casa cuando el jugador se aleja. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="31" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="31" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="82" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac083cbcf481cd1a97598198ecc46785e" compoundref="ReyJabali_8cs" startline="150" endline="153">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._EnterTree</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -203,12 +252,16 @@
         <name>_startFacingLeft</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</qualifiedname>
         <briefdescription>
+<para>Indica si el boss empieza mirando hacia la izquierda. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="32" column="23" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="32" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="87" column="19" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" compoundref="ReyJabali_8cs" startline="158" endline="172">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adb9b6fe52eb4b7f213b3a9ef726855f8" prot="private" static="no" mutable="no">
         <type>Area2D</type>
@@ -217,12 +270,13 @@
         <name>_bossArea</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._bossArea</qualifiedname>
         <briefdescription>
+<para>Área de detección del jugador. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="35" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="35" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="93" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1af3e847b5f6ad2e22bb0d880e0860f871" prot="private" static="no" mutable="no">
         <type>Area2D</type>
@@ -231,12 +285,13 @@
         <name>_attackHitBox</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._attackHitBox</qualifiedname>
         <briefdescription>
+<para>Área de ataque del boss. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="36" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="36" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="98" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a047ded04396b988e6dca4e96ae36fb83" prot="private" static="no" mutable="no">
         <type>Area2D</type>
@@ -245,12 +300,13 @@
         <name>_hurtBox</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hurtBox</qualifiedname>
         <briefdescription>
+<para>Área que recibe daño. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="37" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="37" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="103" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" prot="private" static="no" mutable="no">
         <type>Timer</type>
@@ -259,12 +315,15 @@
         <name>_dashTimer</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashTimer</qualifiedname>
         <briefdescription>
+<para>Timer que controla la duración del dash. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="40" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="40" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="109" column="20" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" prot="private" static="no" mutable="no">
         <type>Timer</type>
@@ -273,12 +332,18 @@
         <name>_loadAttackTimer</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</qualifiedname>
         <briefdescription>
+<para>Timer que controla la carga del ataque. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="41" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="41" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="114" column="20" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" compoundref="ReyJabali_8cs" startline="465" endline="480">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" compoundref="ReyJabali_8cs" startline="313" endline="326">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a089ae431c3830502f05a8455bf548117" prot="private" static="no" mutable="no">
         <type>Timer</type>
@@ -287,12 +352,14 @@
         <name>_deathAnimationTimer</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._deathAnimationTimer</qualifiedname>
         <briefdescription>
+<para>Timer que espera a que termine la animación de muerte. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="42" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="42" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="119" column="20" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a55a79f9b9ee07f9e186fe72bc5f2a0e2" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -301,12 +368,14 @@
         <name>_jumpAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpAudio</qualifiedname>
         <briefdescription>
+<para>Sonido del salto. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="45" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="45" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="125" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a20b303eb3f8fee04c7c76f1f102b7e16" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -315,12 +384,14 @@
         <name>_hitAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hitAudio</qualifiedname>
         <briefdescription>
+<para>Sonido de daño recibido. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="46" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="46" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="130" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab915363e66a06b17d85c6ea7359f2218" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -329,12 +400,14 @@
         <name>_runAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._runAudio</qualifiedname>
         <briefdescription>
+<para>Sonido de carrera. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="47" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="47" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="135" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="135" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" prot="private" static="no" mutable="no">
         <type>Random</type>
@@ -344,12 +417,15 @@
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._rnd</qualifiedname>
         <initializer>= new()</initializer>
         <briefdescription>
+<para>Generador aleatorio usado para variar la secuencia de ataques. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="51" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="51" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="145" column="20" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -361,12 +437,14 @@
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.WalkSpeed</qualifiedname>
         <initializer>= 150f</initializer>
         <briefdescription>
+<para>Velocidad de caminata normal del boss. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="26" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="26" bodyend="-1"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="67" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -377,12 +455,13 @@
         <name>jabaliBossdeathEventHandler</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.jabaliBossdeathEventHandler</qualifiedname>
         <briefdescription>
+<para>Señal emitida cuando el boss muere. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="50" column="31"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="140" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac083cbcf481cd1a97598198ecc46785e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -391,12 +470,14 @@
         <name>_EnterTree</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._EnterTree</qualifiedname>
         <briefdescription>
+<para>Captura la posición inicial al entrar en el árbol de escenas. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="54" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="54" bodyend="57"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="150" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="150" bodyend="153"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" compoundref="ReyJabali_8cs" startline="82">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._initPosition</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -405,12 +486,19 @@
         <name>_Ready</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</qualifiedname>
         <briefdescription>
+<para>Inicializa la dirección del boss, prepara el shader y fija la animación inicial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="58" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="58" bodyend="70"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="158" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="158" bodyend="172"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2baa3957f830ef113eb9a5280009756a" compoundref="ReyJabali_8cs" startline="17">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._shaderMaterial</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" compoundref="ReyJabali_8cs" startline="87">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -423,12 +511,41 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>Control principal de física del boss: gravedad, persecución, regreso a casa y knockback. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo transcurrido desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="75" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="75" bodyend="168"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="178" column="26" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="178" bodyend="266"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" compoundref="ReyJabali_8cs" startline="72">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._arrivalThreshold</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" compoundref="ReyJabali_8cs" startline="109">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab55a963f20549e9e71fb85b5dab4d3a0" compoundref="ReyJabali_8cs" startline="42">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._falled</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" compoundref="ReyJabali_8cs" startline="32">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" compoundref="ReyJabali_8cs" startline="62">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a55a79f9b9ee07f9e186fe72bc5f2a0e2" compoundref="ReyJabali_8cs" startline="125">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a4372500ccef2b256aaad36a044b27e15" compoundref="ReyJabali_8cs" startline="37">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumped</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" compoundref="ReyJabali_8cs" startline="87">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" compoundref="Enemy_8cs" startline="18">Faeterna.Scripts.Enemigos.Enemy.dashSpeed</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" compoundref="Enemy_8cs" startline="64">Faeterna.Scripts.Enemigos.Enemy.Gravity</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0c0d4e771a38f8d837e00a622a0411cf" compoundref="ReyJabali_8cs" startline="67">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.WalkSpeed</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -437,12 +554,28 @@
         <name>_on_load_attack_timer_timeout</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</qualifiedname>
         <briefdescription>
+<para>Se llama cuando termina el tiempo de carga del ataque y decide si el boss corre o salta. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="172" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="172" bodyend="215"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="271" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="271" bodyend="308"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" compoundref="ReyJabali_8cs" startline="57">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._actionsBeforeJump</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" compoundref="ReyJabali_8cs" startline="47">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashCount</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" compoundref="ReyJabali_8cs" startline="109">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" compoundref="ReyJabali_8cs" startline="32">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" compoundref="ReyJabali_8cs" startline="52">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpCount</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" compoundref="ReyJabali_8cs" startline="114">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" compoundref="ReyJabali_8cs" startline="145">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._rnd</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab915363e66a06b17d85c6ea7359f2218" compoundref="ReyJabali_8cs" startline="135">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._runAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" compoundref="ReyJabali_8cs" startline="332" endline="346">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -451,12 +584,19 @@
         <name>_on_dash_timer_timeout</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</qualifiedname>
         <briefdescription>
+<para>Finaliza la fase de dash y prepara la siguiente carga del ataque. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="217" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="217" bodyend="230"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="313" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="313" bodyend="326"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" compoundref="ReyJabali_8cs" startline="114">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a43995674c4503e2486553fb6675d6685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -469,12 +609,23 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Aplica daño al jugador cuando entra en el hitbox de ataque del boss. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que entró en el hitbox.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="263" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="263" bodyend="267"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="361" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="361" bodyend="365"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -487,12 +638,30 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Detecta la entrada del jugador en el área del boss y activa el combate. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cuerpo que entró en el área del boss.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="333" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="333" bodyend="350"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="443" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="443" bodyend="459"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" compoundref="ReyJabali_8cs" startline="62">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" compoundref="ReyJabali_8cs" startline="114">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -505,12 +674,28 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Detecta la salida del jugador y prepara el regreso del boss a su posición inicial. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cuerpo que salió del área del boss.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="352" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="352" bodyend="368"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="465" column="17" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="465" bodyend="480"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" compoundref="ReyJabali_8cs" startline="62">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" compoundref="ReyJabali_8cs" startline="114">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -521,12 +706,24 @@
         <name>DoNextJump</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</qualifiedname>
         <briefdescription>
+<para>Calcula el siguiente salto de la secuencia especial del boss. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Vector de velocidad a aplicar al boss.</para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="234" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="234" bodyend="249"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="332" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="332" bodyend="346"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" compoundref="ReyJabali_8cs" startline="57">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._actionsBeforeJump</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" compoundref="ReyJabali_8cs" startline="47">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashCount</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" compoundref="ReyJabali_8cs" startline="52">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpCount</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" compoundref="ReyJabali_8cs" startline="145">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._rnd</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" compoundref="Enemy_8cs" startline="18">Faeterna.Scripts.Enemigos.Enemy.dashSpeed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" compoundref="Enemy_8cs" startline="21">Faeterna.Scripts.Enemigos.Enemy.jumpVelocity</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -535,12 +732,21 @@
         <name>FlipHJabali</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</qualifiedname>
         <briefdescription>
+<para>Voltea el sprite del boss y actualiza su dirección horizontal. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="254" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="254" bodyend="258"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="351" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="351" bodyend="355"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" compoundref="ReyJabali_8cs" startline="443" endline="459">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" compoundref="ReyJabali_8cs" startline="313" endline="326">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" compoundref="ReyJabali_8cs" startline="271" endline="308">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" compoundref="ReyJabali_8cs" startline="178" endline="266">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" compoundref="ReyJabali_8cs" startline="158" endline="172">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" compoundref="ReyJabali_8cs" startline="485" endline="500">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" compoundref="ReyJabali_8cs" startline="371" endline="392">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -553,12 +759,28 @@
           <declname>area</declname>
         </param>
         <briefdescription>
+<para>Procesa el daño recibido por el boss desde su hurtbox. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Área que colisionó con el boss.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="269" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="269" bodyend="293"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="371" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="371" bodyend="392"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" compoundref="ReyJabali_8cs" startline="32">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -575,12 +797,45 @@
           <declname>sourcePosition</declname>
         </param>
         <briefdescription>
+<para>Aplica daño al boss y controla la transición a muerte o al knockback. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de daño recibida.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourcePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición del atacante para calcular la dirección del knockback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="295" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="295" bodyend="314"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="399" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="399" bodyend="420"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a089ae431c3830502f05a8455bf548117" compoundref="ReyJabali_8cs" startline="119">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._deathAnimationTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a20b303eb3f8fee04c7c76f1f102b7e16" compoundref="ReyJabali_8cs" startline="130">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hitAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" compoundref="ReyJabali_8cs" startline="32">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" compoundref="ReyJabali_8cs" startline="114">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2baa3957f830ef113eb9a5280009756a" compoundref="ReyJabali_8cs" startline="17">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._shaderMaterial</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac1b029d0f060e1e571d782e99aebfb92" compoundref="ReyJabali_8cs" startline="430" endline="437">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DesactiveCollision</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" compoundref="Enemy_8cs" startline="80" endline="87">Faeterna.Scripts.Enemigos.Enemy.hitShader</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a369b1e5ebfc6cf172daa9384b40b4fee" compoundref="GameSaveService_8cs" startline="46" endline="50">Faeterna.Scripts.Tools.GameSaveService.MarkBossDefeated</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" compoundref="ReyJabali_8cs" startline="371" endline="392">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae7fa933dbe29355fba9e6bd2712c335e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -589,12 +844,13 @@
         <name>OnDeathAnimationTimerTimeout</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnDeathAnimationTimerTimeout</qualifiedname>
         <briefdescription>
+<para>Elimina el nodo del boss cuando termina la animación de muerte. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="316" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="316" bodyend="316"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="425" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="425" bodyend="425"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac1b029d0f060e1e571d782e99aebfb92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -603,12 +859,14 @@
         <name>DesactiveCollision</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DesactiveCollision</qualifiedname>
         <briefdescription>
+<para>Desactiva las colisiones del boss para que no interactúe tras morir. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="321" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="321" bodyend="328"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="430" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="430" bodyend="437"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" compoundref="ReyJabali_8cs" startline="399" endline="420">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -617,17 +875,29 @@
         <name>moveToinitPosition</name>
         <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</qualifiedname>
         <briefdescription>
+<para>Devuelve al boss a su posición inicial si el jugador se aleja. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="370" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="370" bodyend="385"/>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="485" column="18" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="485" bodyend="500"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" compoundref="ReyJabali_8cs" startline="77">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" compoundref="ReyJabali_8cs" startline="82">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._initPosition</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" compoundref="ReyJabali_8cs" startline="27">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" compoundref="ReyJabali_8cs" startline="22">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" compoundref="ReyJabali_8cs" startline="32">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" compoundref="ReyJabali_8cs" startline="87">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" compoundref="ReyJabali_8cs" startline="351" endline="355">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Boss Rey Jabalí. </para>
     </briefdescription>
     <detaileddescription>
+<para>Gestiona sus patrones de ataque, persecución, dash, salto especial y la muerte con señal para desbloquear recompensas. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="3">
@@ -663,7 +933,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="9" column="19" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="10" bodyend="386"/>
+    <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="12" column="19" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="13" bodyend="501"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_actionsBeforeJump</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_arrivalThreshold</name></member>

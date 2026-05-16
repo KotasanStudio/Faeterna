@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.GameSaveService.GetDefeatedBossList" name="Faeterna.Scripts.Tools.GameSaveService.GetDefeatedBossList">
+<area shape="rect" id="Node000001" title="Devuelve una lista copiada de los bosses derrotados actualmente registrados." alt="" coords="264,5,506,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,5,216,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,28,216,30,216,25,251,28"/>
+</map>

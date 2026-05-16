@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed" name="Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed">
+<area shape="rect" id="Node000001" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="5,40,215,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="263,5,473,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,46,250,43,245,45,216,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="263,75,472,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,74,251,81,245,81,215,79"/>
+</map>

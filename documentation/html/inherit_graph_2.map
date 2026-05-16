@@ -1,10 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,220,74,248"/>
-<area shape="rect" id="Node000001" href="$classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title=" " alt="" coords="145,5,362,50"/>
+<area shape="rect" id="Node000001" href="$classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title="Pantalla de muerte del juego." alt="" coords="145,5,362,50"/>
 <area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="44,205,53,171,68,132,90,93,120,60,147,45,143,50,123,64,95,97,73,134,58,173,49,206"/>
 <area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html" title="Control que representa el menú principal del juego." alt="" coords="131,74,376,102"/>
 <area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="49,205,77,156,96,131,120,111,144,100,141,104,123,115,100,135,81,159,54,207"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title=" " alt="" coords="143,125,364,170"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title="Ventana de descripción de objetos y habilidades." alt="" coords="143,125,364,170"/>
 <area shape="poly" id="edge12_Node000000_Node000003" title=" " alt="" coords="70,209,121,180,155,169,151,172,123,185,73,213"/>
 <area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html" title="Control que representa el menú de opciones del juego." alt="" coords="122,194,385,222"/>
 <area shape="poly" id="edge13_Node000000_Node000004" title=" " alt="" coords="88,226,139,220,135,224,90,231"/>

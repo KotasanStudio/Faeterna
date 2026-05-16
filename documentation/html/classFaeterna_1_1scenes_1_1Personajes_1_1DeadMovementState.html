@@ -110,14 +110,15 @@ Collaboration diagram for Faeterna.scenes.Personajes.DeadMovementState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState__coll__graph.png" border="0" usemap="#aFaeterna_8scenes_8Personajes_8DeadMovementState_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8scenes_8Personajes_8DeadMovementState_coll__map" id="aFaeterna_8scenes_8Personajes_8DeadMovementState_coll__map">
-<area shape="rect" title=" " alt="" coords="5,311,212,356"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="9,217,208,262"/>
-<area shape="poly" title=" " alt="" coords="110,275,111,311,106,310,107,279"/>
-<area shape="rect" title=" " alt="" coords="76,5,131,33"/>
-<area shape="poly" title=" " alt="" coords="106,47,111,217,105,216,102,50"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="124,82,434,144"/>
-<area shape="poly" title=" " alt="" coords="142,38,224,81,219,83,142,43"/>
-<area shape="poly" title=" " alt="" coords="224,155,140,219,137,214,227,151"/>
+<area shape="rect" title=" " alt="" coords="5,208,212,253"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="161,82,360,127"/>
+<area shape="poly" title=" " alt="" coords="216,134,196,153,132,210,129,206,192,149,212,137"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="235,200,544,262"/>
+<area shape="poly" title=" " alt="" coords="215,136,203,157,202,166,206,174,221,186,248,199,242,199,218,191,201,178,197,167,198,155,211,139"/>
+<area shape="rect" title=" " alt="" coords="357,5,412,33"/>
+<area shape="poly" title=" " alt="" coords="355,40,294,84,291,80,350,43"/>
+<area shape="poly" title=" " alt="" coords="404,44,421,72,435,105,441,141,436,177,422,202,419,197,431,175,436,141,429,106,416,74,402,49"/>
+<area shape="poly" title=" " alt="" coords="345,189,282,130,284,125,350,189"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -136,6 +137,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afb1cff1c39771de8e16126cd4f10f31e inherit pub_methods_classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se invoca cuando el estado termina (se sale de él).  <br /></td></tr>
 <tr class="memitem:a18c32aba3d168feed8574938ca126c6e inherit pub_methods_classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" id="r_a18c32aba3d168feed8574938ca126c6e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html#a18c32aba3d168feed8574938ca126c6e">UpdatePhysics</a> (double delta)</td></tr>
 <tr class="memdesc:a18c32aba3d168feed8574938ca126c6e inherit pub_methods_classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualización en el paso de física (_PhysicsProcess).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afd8a1d53644a79af709e7a13e35819f9" id="r_afd8a1d53644a79af709e7a13e35819f9"><td class="memItemLeft"><a id="afd8a1d53644a79af709e7a13e35819f9" name="afd8a1d53644a79af709e7a13e35819f9"></a>
+void&#160;</td><td class="memItemRight"><b>TriggerDeathOnGround</b> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6562641188059a85f08d6a121aec9075" id="r_a6562641188059a85f08d6a121aec9075"><td class="memItemLeft"><a id="a6562641188059a85f08d6a121aec9075" name="a6562641188059a85f08d6a121aec9075"></a>
+PlayerType&#160;</td><td class="memItemRight"><b>_player</b></td></tr>
+<tr class="memitem:a71b3103a45679d4dd7c459240f31e961" id="r_a71b3103a45679d4dd7c459240f31e961"><td class="memItemLeft"><a id="a71b3103a45679d4dd7c459240f31e961" name="a71b3103a45679d4dd7c459240f31e961"></a>
+bool&#160;</td><td class="memItemRight"><b>_hasLanded</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

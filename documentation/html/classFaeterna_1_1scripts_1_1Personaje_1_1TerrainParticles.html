@@ -116,11 +116,214 @@ Collaboration diagram for Faeterna.scripts.Personaje.TerrainParticles:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3484de8242cb47bc43803addd46e5a6b" id="r_a3484de8242cb47bc43803addd46e5a6b"><td class="memItemLeft"><a id="a3484de8242cb47bc43803addd46e5a6b" name="a3484de8242cb47bc43803addd46e5a6b"></a>
-override void&#160;</td><td class="memItemRight"><b>_Ready</b> ()</td></tr>
-<tr class="memitem:ae8babb429451ef260c68bd8da9bd6335" id="r_ae8babb429451ef260c68bd8da9bd6335"><td class="memItemLeft"><a id="ae8babb429451ef260c68bd8da9bd6335" name="ae8babb429451ef260c68bd8da9bd6335"></a>
-override void&#160;</td><td class="memItemRight"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a3484de8242cb47bc43803addd46e5a6b" id="r_a3484de8242cb47bc43803addd46e5a6b"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a3484de8242cb47bc43803addd46e5a6b">_Ready</a> ()</td></tr>
+<tr class="memdesc:a3484de8242cb47bc43803addd46e5a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen copias para modificar en runtime sin afectar los recursos originales.  <br /></td></tr>
+<tr class="memitem:ae8babb429451ef260c68bd8da9bd6335" id="r_ae8babb429451ef260c68bd8da9bd6335"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ae8babb429451ef260c68bd8da9bd6335">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:ae8babb429451ef260c68bd8da9bd6335"><td class="mdescLeft">&#160;</td><td class="mdescRight">En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a675f84a0e52b92df028ee9484946a21d" id="r_a675f84a0e52b92df028ee9484946a21d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a675f84a0e52b92df028ee9484946a21d">ApplySpriteSheetLayout</a> (AtlasTexture atlasTexture)</td></tr>
+<tr class="memdesc:a675f84a0e52b92df028ee9484946a21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas según el tamaño del frame definido y el tamaño del atlas.  <br /></td></tr>
+<tr class="memitem:a27ecb434a700bdb725d65a32eb111c20" id="r_a27ecb434a700bdb725d65a32eb111c20"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27ecb434a700bdb725d65a32eb111c20">ConfigureProcessMaterialRandomFrame</a> ()</td></tr>
+<tr class="memdesc:a27ecb434a700bdb725d65a32eb111c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a531a9d33d91a2618f7cc7c921154f08d" id="r_a531a9d33d91a2618f7cc7c921154f08d"><td class="memItemLeft"><a id="a531a9d33d91a2618f7cc7c921154f08d" name="a531a9d33d91a2618f7cc7c921154f08d"></a>
+RayCast2D&#160;</td><td class="memItemRight"><b>_rayCast</b></td></tr>
+<tr class="memdesc:a531a9d33d91a2618f7cc7c921154f08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">RayCast2D que se usará para detectar el tile debajo del personaje y cambiar el atlas de partículas según la "RutaParticula" definida en el TileData. <br /></td></tr>
+<tr class="memitem:aabf72af6db5bba005cd2cc47d33fba4b" id="r_aabf72af6db5bba005cd2cc47d33fba4b"><td class="memItemLeft"><a id="aabf72af6db5bba005cd2cc47d33fba4b" name="aabf72af6db5bba005cd2cc47d33fba4b"></a>
+AtlasTexture&#160;</td><td class="memItemRight"><b>_atlasTextureId1</b></td></tr>
+<tr class="memdesc:aabf72af6db5bba005cd2cc47d33fba4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atlas de partículas para la id 1 (por ejemplo: hierba). <br /></td></tr>
+<tr class="memitem:a2256e03d809d8b987252744467a04d7d" id="r_a2256e03d809d8b987252744467a04d7d"><td class="memItemLeft"><a id="a2256e03d809d8b987252744467a04d7d" name="a2256e03d809d8b987252744467a04d7d"></a>
+AtlasTexture&#160;</td><td class="memItemRight"><b>_atlasTextureId2</b></td></tr>
+<tr class="memdesc:a2256e03d809d8b987252744467a04d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atlas de partículas para la id 2 (otra ruta/sprites distintos). <br /></td></tr>
+<tr class="memitem:a33a5423c5f2934b3248f1966ad2befa4" id="r_a33a5423c5f2934b3248f1966ad2befa4"><td class="memItemLeft"><a id="a33a5423c5f2934b3248f1966ad2befa4" name="a33a5423c5f2934b3248f1966ad2befa4"></a>
+Vector2I&#160;</td><td class="memItemRight"><b>_frameSize</b> = new(8, 8)</td></tr>
+<tr class="memdesc:a33a5423c5f2934b3248f1966ad2befa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tamaño en pixeles de cada frame del spritesheet. <br /></td></tr>
+<tr class="memitem:a9ef325bde85bbbafda65460d9d7a6f5a" id="r_a9ef325bde85bbbafda65460d9d7a6f5a"><td class="memItemLeft"><a id="a9ef325bde85bbbafda65460d9d7a6f5a" name="a9ef325bde85bbbafda65460d9d7a6f5a"></a>
+bool&#160;</td><td class="memItemRight"><b>_freezeRandomFrameOnSpawn</b> = true</td></tr>
+<tr class="memdesc:a9ef325bde85bbbafda65460d9d7a6f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si es true, cada partícula se queda en el frame aleatorio con el que nace. <br /></td></tr>
+<tr class="memitem:a063967edab342595f0be47bdf201175f" id="r_a063967edab342595f0be47bdf201175f"><td class="memItemLeft"><a id="a063967edab342595f0be47bdf201175f" name="a063967edab342595f0be47bdf201175f"></a>
+readonly Dictionary&lt; int, AtlasTexture &gt;&#160;</td><td class="memItemRight"><b>_sourceAtlases</b> = new()</td></tr>
+<tr class="memdesc:a063967edab342595f0be47bdf201175f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceFaeterna_1_1scripts_1_1Mapa.html">Mapa</a> de RutaParticula -&gt; atlas que se debe usar. <br /></td></tr>
+<tr class="memitem:a5c45fdb3426479902f2ebecea863e7da" id="r_a5c45fdb3426479902f2ebecea863e7da"><td class="memItemLeft"><a id="a5c45fdb3426479902f2ebecea863e7da" name="a5c45fdb3426479902f2ebecea863e7da"></a>
+readonly Dictionary&lt; int, AtlasTexture &gt;&#160;</td><td class="memItemRight"><b>_runtimeAtlases</b> = new()</td></tr>
+<tr class="memdesc:a5c45fdb3426479902f2ebecea863e7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copias en runtime para poder cambiar la región sin alterar el recurso compartido. <br /></td></tr>
+<tr class="memitem:a96ffbe3ae8b8cb1f1a2ba80c1abb4954" id="r_a96ffbe3ae8b8cb1f1a2ba80c1abb4954"><td class="memItemLeft"><a id="a96ffbe3ae8b8cb1f1a2ba80c1abb4954" name="a96ffbe3ae8b8cb1f1a2ba80c1abb4954"></a>
+int&#160;</td><td class="memItemRight"><b>_currentTextureId</b> = -1</td></tr>
+<tr class="memdesc:a96ffbe3ae8b8cb1f1a2ba80c1abb4954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id del atlas actualmente asignado a la propiedad Texture. Se usa para evitar reasignar el mismo atlas y resetear la animación de partículas innecesariamente. <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ae8babb429451ef260c68bd8da9bd6335" name="ae8babb429451ef260c68bd8da9bd6335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8babb429451ef260c68bd8da9bd6335">&#9670;&#160;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.scripts.Personaje.TerrainParticles._Process </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer. </p>
+<p>Si es así, obtiene las coordenadas del tile debajo del personaje y revisa si tiene datos personalizados para "RutaParticula". Si encuentra una ruta válida, cambia el atlas de partículas a la correspondiente a esa ruta. Si la ruta no es válida o no hay colisión, mantiene el atlas actual.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Tiempo en segundos desde el último frame. No se usa directamente en este método, pero es parte de la firma requerida por Godot para el método _Process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_ae8babb429451ef260c68bd8da9bd6335_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_ae8babb429451ef260c68bd8da9bd6335_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_ae8babb429451ef260c68bd8da9bd6335_cgraph" id="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_ae8babb429451ef260c68bd8da9bd6335_cgraph">
+<area shape="rect" title="En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer." alt="" coords="5,14,203,58"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a675f84a0e52b92df028ee9484946a21d" title="Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas segú..." alt="" coords="251,5,488,67"/>
+<area shape="poly" title=" " alt="" coords="203,34,238,36,232,36,203,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3484de8242cb47bc43803addd46e5a6b" name="a3484de8242cb47bc43803addd46e5a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3484de8242cb47bc43803addd46e5a6b">&#9670;&#160;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.scripts.Personaje.TerrainParticles._Ready </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen copias para modificar en runtime sin afectar los recursos originales. </p>
+<p>También se configura el material de proceso para que cada partícula elija un frame aleatorio al nacer, y se asigna el atlas inicial (id 1) a la propiedad Texture. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a3484de8242cb47bc43803addd46e5a6b_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a3484de8242cb47bc43803addd46e5a6b_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a3484de8242cb47bc43803addd46e5a6b_cgraph" id="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a3484de8242cb47bc43803addd46e5a6b_cgraph">
+<area shape="rect" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,56,203,101"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a675f84a0e52b92df028ee9484946a21d" title="Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas segú..." alt="" coords="251,5,488,67"/>
+<area shape="poly" title=" " alt="" coords="203,60,238,57,233,58,204,66"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a27ecb434a700bdb725d65a32eb111c20" title="Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer." alt="" coords="251,91,489,152"/>
+<area shape="poly" title=" " alt="" coords="203,92,238,100,233,100,203,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a675f84a0e52b92df028ee9484946a21d" name="a675f84a0e52b92df028ee9484946a21d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675f84a0e52b92df028ee9484946a21d">&#9670;&#160;</a></span>ApplySpriteSheetLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Personaje.TerrainParticles.ApplySpriteSheetLayout </td>
+          <td>(</td>
+          <td class="paramtype">AtlasTexture</td>          <td class="paramname"><span class="paramname"><em>atlasTexture</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas según el tamaño del frame definido y el tamaño del atlas. </p>
+<p>Si el atlas no es válido o el tamaño del frame no es positivo, se asigna 1 frame en ambas direcciones para evitar divisiones por cero o comportamientos inesperados.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">atlasTexture</td><td>El AtlasTexture del cual se quiere calcular el layout de frames. Se espera que este atlas ya tenga asignada la región correcta si es que se usan regiones dentro de un atlas más grande. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a675f84a0e52b92df028ee9484946a21d_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a675f84a0e52b92df028ee9484946a21d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a675f84a0e52b92df028ee9484946a21d_icgraph" id="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a675f84a0e52b92df028ee9484946a21d_icgraph">
+<area shape="rect" title="Calcula y aplica el número de frames horizontales y verticales a usar en el shader de partículas segú..." alt="" coords="251,32,488,93"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#ae8babb429451ef260c68bd8da9bd6335" title="En cada frame, el método verifica si el RayCast2D está colisionando con un TileMapLayer." alt="" coords="5,5,203,50"/>
+<area shape="poly" title=" " alt="" coords="232,45,203,43,203,38,238,44"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a3484de8242cb47bc43803addd46e5a6b" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,75,203,119"/>
+<area shape="poly" title=" " alt="" coords="232,80,204,87,203,81,238,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27ecb434a700bdb725d65a32eb111c20" name="a27ecb434a700bdb725d65a32eb111c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ecb434a700bdb725d65a32eb111c20">&#9670;&#160;</a></span>ConfigureProcessMaterialRandomFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Personaje.TerrainParticles.ConfigureProcessMaterialRandomFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer. </p>
+<p>Esto se logra asignando un rango de offset de animación entre 0 y 1, lo que hace que el shader escoja un punto aleatorio en la animación para cada partícula. Si la opción _freezeRandomFrameOnSpawn está activada, también se establece la velocidad de animación a 0 para que las partículas no cambien de frame después de nacer. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a27ecb434a700bdb725d65a32eb111c20_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a27ecb434a700bdb725d65a32eb111c20_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a27ecb434a700bdb725d65a32eb111c20_icgraph" id="aclassFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_a27ecb434a700bdb725d65a32eb111c20_icgraph">
+<area shape="rect" title="Configura el material de proceso para que cada partícula elija un frame aleatorio al nacer." alt="" coords="251,5,489,67"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a3484de8242cb47bc43803addd46e5a6b" title="En _Ready se configuran los atlas de partículas a usar según lo asignado en el inspector y se hacen c..." alt="" coords="5,14,203,58"/>
+<area shape="poly" title=" " alt="" coords="232,36,203,39,203,34,238,36"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Personaje/<b>TerrainParticles.cs</b></li>
 </ul>

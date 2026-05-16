@@ -137,16 +137,70 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="11">
+        <label>Control</label>
+      </node>
       <node id="1">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.IdleMovementState</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_player</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Faeterna.Scripts.Menus.DeathScreen</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Personaje.Lira</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>MovementStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>AnimTree</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>terrainParticles</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_deathScreen</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_objectoDescription</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_lira</edgelabel>
         </childnode>
       </node>
       <node id="4">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
         <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_current_state</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -157,6 +211,15 @@
         <childnode refid="4" relation="usage">
           <edgelabel>stateMachine</edgelabel>
         </childnode>
+      </node>
+      <node id="8">
+        <label>Faeterna.scripts.Personaje.TerrainParticles</label>
+        <link refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GpuParticles2D</label>
       </node>
       <node id="3">
         <label>Node</label>

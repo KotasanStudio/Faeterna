@@ -1,0 +1,11 @@
+<map id="Faeterna.scripts.Mapa.BossArea" name="Faeterna.scripts.Mapa.BossArea">
+<area shape="rect" id="Node000001" title="Área de combate del boss." alt="" coords="5,294,236,322"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="36,185,106,212"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,225,117,293,112,294,82,229"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html" title="Boss Rey Jabalí." alt="" coords="130,176,327,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,231,135,296,132,292,194,232"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="129,82,328,127"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="230,140,231,177,226,175,227,145"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="161,5,296,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="230,46,231,83,226,81,227,51"/>
+</map>

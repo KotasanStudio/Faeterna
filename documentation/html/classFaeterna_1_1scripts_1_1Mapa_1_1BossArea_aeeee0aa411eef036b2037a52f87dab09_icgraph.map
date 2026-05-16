@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Mapa.BossArea.OnJabaliBossDeath" name="Faeterna.scripts.Mapa.BossArea.OnJabaliBossDeath">
+<area shape="rect" id="Node000001" title="Se ejecuta cuando ReyJabali muere." alt="" coords="254,5,454,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Mapa_1_1BossArea.html#a6c53ef1df2af33ae4f06e87f8d64d2a6" title="Inicializa el área del boss, oculta el objeto de dash y conecta la señal de muerte del boss." alt="" coords="5,5,206,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,28,206,30,206,25,241,27"/>
+</map>

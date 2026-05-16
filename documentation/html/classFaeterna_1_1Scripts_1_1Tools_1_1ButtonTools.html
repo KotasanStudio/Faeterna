@@ -101,6 +101,27 @@ $(function(){initNavTree('classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html'
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fa2d12ffaa71962de597446ba451f54" id="r_a8fa2d12ffaa71962de597446ba451f54"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a8fa2d12ffaa71962de597446ba451f54">PlayPressAnimation</a> (Control button, Action onFinished=null)</td></tr>
 <tr class="memdesc:a8fa2d12ffaa71962de597446ba451f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reproduce una animación de "press" en el botón: se encoge, luego rebota más grande de lo normal y vuelve a su tamaño original.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a2d4824c47801bd92f0733b49500e4310" id="r_a2d4824c47801bd92f0733b49500e4310"><td class="memItemLeft"><a id="a2d4824c47801bd92f0733b49500e4310" name="a2d4824c47801bd92f0733b49500e4310"></a>
+static readonly Vector2&#160;</td><td class="memItemRight"><b>PressedScale</b> = new(0.85f, 0.85f)</td></tr>
+<tr class="memdesc:a2d4824c47801bd92f0733b49500e4310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escala a la que se reduce el botón cuando se presiona (enciogimiento). <br /></td></tr>
+<tr class="memitem:aed31a4efd8d140c0085468764f8a2021" id="r_aed31a4efd8d140c0085468764f8a2021"><td class="memItemLeft"><a id="aed31a4efd8d140c0085468764f8a2021" name="aed31a4efd8d140c0085468764f8a2021"></a>
+static readonly Vector2&#160;</td><td class="memItemRight"><b>BounceScale</b> = new(1.1f, 1.1f)</td></tr>
+<tr class="memdesc:aed31a4efd8d140c0085468764f8a2021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escala a la que rebota el botón después de presionarse (mayor que normal). <br /></td></tr>
+<tr class="memitem:a7797be1694f3f16d6b57b26533990aa5" id="r_a7797be1694f3f16d6b57b26533990aa5"><td class="memItemLeft"><a id="a7797be1694f3f16d6b57b26533990aa5" name="a7797be1694f3f16d6b57b26533990aa5"></a>
+static readonly Vector2&#160;</td><td class="memItemRight"><b>NormalScale</b> = Vector2.One</td></tr>
+<tr class="memdesc:a7797be1694f3f16d6b57b26533990aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escala normal del botón (sin transformar). <br /></td></tr>
+<tr class="memitem:a050b0f3a56aaa687503c1fcc10ef8f94" id="r_a050b0f3a56aaa687503c1fcc10ef8f94"><td class="memItemLeft"><a id="a050b0f3a56aaa687503c1fcc10ef8f94" name="a050b0f3a56aaa687503c1fcc10ef8f94"></a>
+const float&#160;</td><td class="memItemRight"><b>PressDuration</b> = 0.1f</td></tr>
+<tr class="memdesc:a050b0f3a56aaa687503c1fcc10ef8f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración en segundos de la fase de presión (enciogimiento) del botón. <br /></td></tr>
+<tr class="memitem:a77a6e098d8bbc8d1cfd1bbbaa0399bdc" id="r_a77a6e098d8bbc8d1cfd1bbbaa0399bdc"><td class="memItemLeft"><a id="a77a6e098d8bbc8d1cfd1bbbaa0399bdc" name="a77a6e098d8bbc8d1cfd1bbbaa0399bdc"></a>
+const float&#160;</td><td class="memItemRight"><b>BounceDuration</b> = 0.12f</td></tr>
+<tr class="memdesc:a77a6e098d8bbc8d1cfd1bbbaa0399bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración en segundos de la fase de rebote del botón. <br /></td></tr>
+<tr class="memitem:aabb236c3922354af7812294acd68de42" id="r_aabb236c3922354af7812294acd68de42"><td class="memItemLeft"><a id="aabb236c3922354af7812294acd68de42" name="aabb236c3922354af7812294acd68de42"></a>
+const float&#160;</td><td class="memItemRight"><b>SettleDuration</b> = 0.08f</td></tr>
+<tr class="memdesc:aabb236c3922354af7812294acd68de42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración en segundos de la fase de asentamiento en la escala normal. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utilidad estática que proporciona funcionalidades comunes para animaciones y efectos visuales en botones. </p>
@@ -147,11 +168,48 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_a8fa2d12ffaa71962de597446ba451f54_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_a8fa2d12ffaa71962de597446ba451f54_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_a8fa2d12ffaa71962de597446ba451f54_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_a8fa2d12ffaa71962de597446ba451f54_icgraph">
-<area shape="rect" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="534,5,744,50"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2aa974e576c7c727daee624d37e31f5" title="Reanuda el juego desde el estado de pausa." alt="" coords="270,5,486,50"/>
-<area shape="poly" title=" " alt="" coords="515,28,487,30,486,25,521,28"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a41ff58792592912e721a89bd8267737d" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,222,50"/>
-<area shape="poly" title=" " alt="" coords="252,28,222,30,222,25,257,28"/>
+<area shape="rect" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="809,421,1020,466"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a89164e3b7f3c3d72e9a845c8bdd288d1" title="Sale al menú principal desde el estado de pausa." alt="" coords="540,699,756,743"/>
+<area shape="poly" title=" " alt="" coords="902,479,882,529,851,584,812,640,789,666,763,688,743,701,741,696,760,684,785,662,808,637,847,582,877,526,898,482"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#ace2770fcd956eb08c6ded266dc6eb419" title="Se llama cuando se presiona el botón de retroceso." alt="" coords="545,75,750,119"/>
+<area shape="poly" title=" " alt="" coords="903,405,886,347,857,273,816,198,790,164,760,134,744,122,744,117,763,130,794,160,820,195,862,271,891,345,908,407"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ae5f66d3b04dbaed20aa04ff18aedcca6" title="Reanuda la partida desde el último guardado del slot activo." alt="" coords="540,144,756,189"/>
+<area shape="poly" title=" " alt="" coords="897,406,877,361,847,306,808,250,785,225,760,203,743,192,742,187,763,199,789,221,812,247,851,303,882,359,902,407"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a9a578ebda018ec5ed93872ad30adfcb3" title="Se llama cuando se presiona el botón de eliminar." alt="" coords="545,213,750,258"/>
+<area shape="poly" title=" " alt="" coords="888,408,835,340,800,304,760,273,740,261,739,256,763,268,803,300,839,336,894,408"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#ae5b4952d833ee5881f7c2155e29db51d" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="543,283,752,327"/>
+<area shape="poly" title=" " alt="" coords="871,412,820,377,760,342,733,330,733,325,763,337,823,372,876,412"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#ace4c492cab9c8dc693ea337aa94af90e" title="Se llama cuando se presiona el botón de salir en el menú de opciones." alt="" coords="534,352,761,397"/>
+<area shape="poly" title=" " alt="" coords="808,417,737,400,736,395,813,416"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a2bcec9275f7a36e007450fa88f636acf" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="543,491,752,535"/>
+<area shape="poly" title=" " alt="" coords="808,472,737,493,735,488,813,470"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#afd6348f86db947f44ab9b5b659658724" title="Devuelve al jugador al menú principal." alt="" coords="540,5,756,50"/>
+<area shape="poly" title=" " alt="" coords="906,405,893,334,867,242,848,194,824,147,795,103,760,64,745,53,745,48,763,60,799,99,828,144,853,191,872,240,898,333,911,407"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a754cd1bc2f43832eb7fa737ceb330af2" title="Se llama cuando se presiona el botón de guardar en el menú de opciones." alt="" coords="534,560,761,605"/>
+<area shape="poly" title=" " alt="" coords="876,474,823,515,763,550,734,562,732,557,760,545,820,510,871,477"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="545,629,750,674"/>
+<area shape="poly" title=" " alt="" coords="893,478,839,551,803,588,763,619,740,631,738,626,760,615,800,584,835,547,889,481"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a5d7b2b04a3d704b0e9d3670147061a4d" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="543,421,752,466"/>
+<area shape="poly" title=" " alt="" coords="791,444,753,446,752,441,796,443"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#ae35a2929f144c500e6d316ac5d24cf09" title="Abre el menú de opciones dentro del menú de pausa." alt="" coords="540,768,756,813"/>
+<area shape="poly" title=" " alt="" coords="907,479,891,542,862,616,820,692,794,727,763,758,745,770,743,765,760,754,790,723,816,689,857,614,886,540,903,483"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2aa974e576c7c727daee624d37e31f5" title="Reanuda el juego desde el estado de pausa." alt="" coords="540,837,756,882"/>
+<area shape="poly" title=" " alt="" coords="911,480,898,555,872,647,853,696,828,743,799,788,763,827,746,839,744,834,760,823,795,785,824,741,848,694,867,645,893,553,907,483"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a41ff58792592912e721a89bd8267737d" title="Se llama cuando el nodo entra en la escena." alt="" coords="270,768,486,813"/>
+<area shape="poly" title=" " alt="" coords="546,747,468,770,467,765,541,748"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a4ea0d120b2c73373cbc72aaa8ac44259" title="Inicializa la pantalla de muerte." alt="" coords="270,75,486,119"/>
+<area shape="poly" title=" " alt="" coords="541,141,468,122,467,117,546,138"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="273,421,482,466"/>
+<area shape="poly" title=" " alt="" coords="546,335,535,342,466,382,409,423,406,419,463,378,533,337,551,332"/>
+<area shape="poly" title=" " alt="" coords="541,487,468,469,467,464,546,485"/>
+<area shape="poly" title=" " alt="" coords="541,56,469,76,466,72,545,53"/>
+<area shape="poly" title=" " alt="" coords="525,445,484,446,482,441,530,443"/>
+<area shape="poly" title=" " alt="" coords="521,791,487,793,486,788,527,790"/>
+<area shape="poly" title=" " alt="" coords="541,833,467,816,468,811,546,833"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#adf324fb51bb87444403130f13ceb2a0a" title="Alterna el estado de pausa del juego." alt="" coords="270,837,486,882"/>
+<area shape="poly" title=" " alt="" coords="521,860,486,862,486,857,527,860"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a3f5447704b025fb30ce5ad4c98e1b0a5" title="Se llama para procesar eventos de entrada no manejados." alt="" coords="5,837,222,882"/>
+<area shape="poly" title=" " alt="" coords="252,860,222,862,222,857,257,860"/>
 </map>
 </div>
 

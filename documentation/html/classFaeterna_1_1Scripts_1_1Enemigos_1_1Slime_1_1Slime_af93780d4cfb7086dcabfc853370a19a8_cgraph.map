@@ -1,5 +1,10 @@
 <map id="Faeterna.Scripts.Enemigos.Slime.Slime._Ready" name="Faeterna.Scripts.Enemigos.Slime.Slime._Ready">
-<area shape="rect" id="Node000001" title="Inicialización del slime." alt="" coords="5,5,204,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="252,5,450,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+<area shape="rect" id="Node000001" title="Inicialización del slime." alt="" coords="5,45,204,90"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#afc1107145a1b311236ec40487d74a6c8" title="Maneja el timeout del timer de saltos." alt="" coords="252,15,496,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,54,239,52,234,53,204,59"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="544,75,742,119"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="204,70,529,88,528,93,204,76"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="544,5,742,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="496,30,531,31,526,32,497,35"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="477,57,531,72,526,71,477,63"/>
 </map>

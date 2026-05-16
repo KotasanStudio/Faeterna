@@ -1,5 +1,5 @@
 <map id="Faeterna.Scripts.Menus.ObjetoDescription" name="Faeterna.Scripts.Menus.ObjetoDescription">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,226,126"/>
+<area shape="rect" id="Node000001" title="Ventana de descripción de objetos y habilidades." alt="" coords="5,81,226,126"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="81,5,150,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,47,118,81,113,79,114,51"/>
 </map>

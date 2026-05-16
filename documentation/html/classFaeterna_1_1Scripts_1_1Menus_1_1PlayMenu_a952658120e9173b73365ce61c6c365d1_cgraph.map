@@ -1,0 +1,15 @@
+<map id="Faeterna.Scripts.Menus.PlayMenu.OnSavePressed" name="Faeterna.Scripts.Menus.PlayMenu.OnSavePressed">
+<area shape="rect" id="Node000001" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,144,211,189"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a2e5ed6e85b985710587dc4c8c95d0f4c" title="Elimina el guardado completo de un slot (datos JSON + preview PNG)." alt="" coords="261,5,467,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,141,190,101,257,60,274,55,269,58,260,65,193,105,139,145"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="259,75,469,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,141,267,122,262,125,194,146"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a27553e6b6323d56dd4722b7514c84bf5" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="261,144,466,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,164,248,165,243,167,212,169"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#accce028fb622f5fe038081c325db5886" title="Define el slot activo asegurando que no sea negativo." alt="" coords="261,213,467,258"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="193,187,267,208,262,210,193,192"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a34ef422a87a7e8520bb144e555482753" title="Actualiza el color del botón de slot para indicar si está seleccionado para eliminación." alt="" coords="261,283,466,327"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="138,187,193,228,260,268,274,277,269,276,257,273,190,232,136,192"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="517,144,723,189"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="466,164,504,166,499,167,467,169"/>
+</map>

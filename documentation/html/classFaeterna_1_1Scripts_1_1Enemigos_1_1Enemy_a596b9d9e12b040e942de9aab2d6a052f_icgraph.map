@@ -1,5 +1,35 @@
 <map id="Faeterna.Scripts.Enemigos.Enemy.playAudio" name="Faeterna.Scripts.Enemigos.Enemy.playAudio">
-<area shape="rect" id="Node000001" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,5,459,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="5,5,213,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,28,213,30,213,25,247,27"/>
+<area shape="rect" id="Node000001" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="613,334,811,378"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aceb4eb400836b10f4f71a76c717191a6" title="Se llama cuando termina el tiempo de carga del ataque y decide si el boss corre o salta." alt="" coords="334,5,538,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="699,318,681,267,653,202,614,137,590,107,563,81,539,64,539,59,567,77,594,104,618,134,658,200,686,265,704,320"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="333,91,540,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="693,320,672,281,643,235,607,189,563,150,541,137,540,132,567,146,611,185,648,232,677,278,698,321"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#a30081eb34facf9757a4f0d8cb41e35f6" title="Control principal de física del boss: gravedad, persecución, regreso a casa y knockback." alt="" coords="308,160,565,205"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="681,321,630,270,598,243,564,220,540,208,539,203,566,215,601,238,634,266,686,322"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#a7b88e060288811fd55ac82a17304992e" title="Lógica de física: gravedad, dash, knockback y movimiento principal." alt="" coords="338,230,535,274"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="652,327,564,289,530,278,529,272,566,284,658,326"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#a97068afa2887a0685ad87ca307fa9f46" title="Llamado cuando el timer de dash expira; decide nueva dirección y arranca el dash." alt="" coords="322,299,550,344"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="595,342,551,338,550,333,600,341"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#afc1107145a1b311236ec40487d74a6c8" title="Maneja el timeout del timer de saltos." alt="" coords="314,368,558,413"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="595,371,560,378,558,373,600,370"/>
+<area shape="rect" id="Node000010" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a7f33c738c66b4294cc9357db01c0e44e" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="338,438,535,482"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="653,387,566,428,531,440,529,435,564,423,657,384"/>
+<area shape="rect" id="Node000012" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aac2e48348915cd668255c0f3f5648271" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="319,511,554,556"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="685,389,633,446,601,473,566,497,532,513,530,508,564,493,598,469,630,442,681,392"/>
+<area shape="rect" id="Node000014" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#ab3ca6e40133dbe96f57af363080fc6e6" title="Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="337,586,536,630"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="697,391,677,435,647,482,611,530,567,570,536,588,534,583,563,566,607,526,643,479,672,432,693,394"/>
+<area shape="rect" id="Node000016" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#a60ad4b4177a210985496899f2a4289d7" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="338,655,535,700"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="704,392,688,450,660,518,620,586,595,618,567,645,536,663,534,658,563,641,591,614,616,583,655,516,683,449,700,396"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#a832693efeefdb30b092ac45c363c49ee" title="Inicializa el timer de dash, enlaza eventos y prepara la animación inicial." alt="" coords="34,296,231,341"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="304,322,232,322,230,317,309,319"/>
+<area shape="rect" id="Node000009" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#af93780d4cfb7086dcabfc853370a19a8" title="Inicialización del slime." alt="" coords="33,366,232,410"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="297,391,233,392,231,387,301,388"/>
+<area shape="rect" id="Node000011" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ae1ce58f7efdccb48575f47aaa3d66c6d" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="6,435,259,480"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="320,460,260,461,258,456,325,458"/>
+<area shape="rect" id="Node000013" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#a907191ed3862a391ca40894c0916c6bf" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="6,504,259,566"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="301,535,260,537,258,532,306,533"/>
+<area shape="rect" id="Node000015" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#ae53963ac3e315f582b63477a32fc8fa4" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,590,260,634"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="319,610,260,613,260,608,324,609"/>
+<area shape="rect" id="Node000017" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#ae25f2c7e50a69ce47b8df59343452934" title="Procesa daño recibido por el lobo desde el hurtbox." alt="" coords="13,659,252,704"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="320,679,252,683,252,677,325,679"/>
 </map>

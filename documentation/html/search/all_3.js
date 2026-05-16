@@ -1,8 +1,19 @@
 var searchData=
 [
-  ['checkpoint_0',['CheckPoint',['../classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html',1,'Faeterna::Scripts::Tools']]],
-  ['coyoteavailable_1',['CoyoteAvailable',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#ab6f5a70191a5de80730b38f3d9afccd8',1,'Faeterna.Scripts.Personaje.Lira.CoyoteAvailable'],['../classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html#a908ffad42edf60f4a57e6ed3d1f86616',1,'Faeterna.Scripts.Tools.PlayerSaveData.CoyoteAvailable']]],
-  ['currentstate_2',['CurrentState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#ac93e0c98c6be60e491b2fd974d140434',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]],
-  ['currentstatename_3',['CurrentStateName',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html#aac6df2a379e694bf862497ef4a47b9e3',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine']]],
-  ['cursormanager_4',['CursorManager',['../classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html',1,'Faeterna::scripts::Tools']]]
+  ['cachedefaultslottextures_0',['CacheDefaultSlotTextures',['../classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a14e8a09d64763144a9f43f94cd655e9f',1,'Faeterna::Scripts::Menus::PlayMenu']]],
+  ['cargardatosdelitem_1',['CargarDatosDelItem',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#af99a594329315ecbde3045e792b4a4a4',1,'Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem()'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f',1,'Faeterna.Scripts.Menus.ObjetoDescription.CargarDatosDelItem()']]],
+  ['cargaritemssihacefalta_2',['CargarItemsSiHaceFalta',['../classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html#a7191480afbb91f12f03a5fe0d8cbaae0',1,'Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta()'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3f2b86ff4cd0724cb4b46c2c29f2b867',1,'Faeterna.Scripts.Menus.ObjetoDescription.CargarItemsSiHaceFalta()']]],
+  ['changescene_3',['ChangeScene',['../classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html#afb5ba0d1d34b28a726ca1fd63de3685c',1,'Faeterna::Scripts::Mapa::Portal']]],
+  ['changevisibility_4',['ChangeVisibility',['../classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ab7b14417a4206f691f51987fe4ee2b55',1,'Faeterna.Scripts.Menus.DeathScreen.ChangeVisibility()'],['../classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#acb90cb6b586aad8e2846f504c5a7920b',1,'Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility()']]],
+  ['checkpoint_5',['CheckPoint',['../classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html',1,'Faeterna::Scripts::Tools']]],
+  ['config_6',['config',['../classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a32a4d441e455a0d8cefdf0c545cebdb4',1,'Faeterna::Scripts::Tools::Saves']]],
+  ['configureprocessmaterialrandomframe_7',['ConfigureProcessMaterialRandomFrame',['../classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html#a27ecb434a700bdb725d65a32eb111c20',1,'Faeterna::scripts::Personaje::TerrainParticles']]],
+  ['continuefromlastsaveasync_8',['ContinueFromLastSaveAsync',['../classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a5392cac035746352fd9f1fca9ee3e600',1,'Faeterna::Scripts::Menus::DeathScreen']]],
+  ['coyoteavailable_9',['CoyoteAvailable',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#ab6f5a70191a5de80730b38f3d9afccd8',1,'Faeterna.Scripts.Personaje.Lira.CoyoteAvailable'],['../classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html#a908ffad42edf60f4a57e6ed3d1f86616',1,'Faeterna.Scripts.Tools.PlayerSaveData.CoyoteAvailable']]],
+  ['currentstate_10',['CurrentState',['../classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#ac93e0c98c6be60e491b2fd974d140434',1,'Faeterna::Scripts::Personaje::LiraAnimationTree']]],
+  ['currentstatename_11',['CurrentStateName',['../classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html#aac6df2a379e694bf862497ef4a47b9e3',1,'Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine']]],
+  ['cursorhotspot_12',['CursorHotspot',['../classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#ab09261f0b994635e98e302ce49776718',1,'Faeterna::scripts::Tools::CursorManager']]],
+  ['cursormanager_13',['CursorManager',['../classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html',1,'Faeterna::scripts::Tools']]],
+  ['cursorpath_14',['CursorPath',['../classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#aca0ed5bbe09daebb3af3cb71651e489d',1,'Faeterna::scripts::Tools::CursorManager']]],
+  ['cursorsize_15',['CursorSize',['../classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html#ac8583a7ec5282ef4bc937eed6968e583',1,'Faeterna::scripts::Tools::CursorManager']]]
 ];

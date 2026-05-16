@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.SavePreview" name="Faeterna.Scripts.Tools.Saves.SavePreview">
+<area shape="rect" id="Node000001" title="Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion ..." alt="" coords="5,5,216,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aebd232191c24102320ca3776b726321f" title="Crea el directorio de previsualizaciones si no existe." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>

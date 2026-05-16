@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="35" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="35" bodyend="35"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="44" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a938a52755908d60c87426953d76a8881" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>float</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="38" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="38" bodyend="38"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="47" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="47" bodyend="47"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1ab949359b03caef04e37650f26e536138" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -47,8 +47,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="41" column="20" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="41" bodyend="41"/>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <location file="scripts/Tools/GameSaveData.cs" line="50" column="20" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="50" bodyend="50"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a0f927b15478d4ad612d4a30678c39ac7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>float</type>
@@ -64,8 +64,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="44" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="44" bodyend="44"/>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <location file="scripts/Tools/GameSaveData.cs" line="53" column="22" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="53" bodyend="53"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a9073898f9dbebcfd6108a039babf9053" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="47" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="47" bodyend="47"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="56" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a95dd3a66fc38dcc743adbdbd15fab6a5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="50" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="50" bodyend="50"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="59" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a908ffad42edf60f4a57e6ed3d1f86616" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -113,7 +113,59 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="53" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="53" bodyend="53"/>
+        <location file="scripts/Tools/GameSaveData.cs" line="62" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a4bb1f2bffd8020b518b6ec4e616bc83d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Tools.PlayerSaveData.HasDoubleJump</definition>
+        <argsstring></argsstring>
+        <name>HasDoubleJump</name>
+        <qualifiedname>Faeterna.Scripts.Tools.PlayerSaveData.HasDoubleJump</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jugador ha adquirido el doble salto como habilidad permanente. El valor predeterminado es falso (no adquirido). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="65" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="65" bodyend="65"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a982d0b465ebb9d1d38d71498642613a9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Tools.PlayerSaveData.HasDash</definition>
+        <argsstring></argsstring>
+        <name>HasDash</name>
+        <qualifiedname>Faeterna.Scripts.Tools.PlayerSaveData.HasDash</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jugador ha adquirido el dash como habilidad permanente. El valor predeterminado es falso (no adquirido). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="68" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="68" bodyend="68"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aca6fbc5c4b1e20ab0b56fc949355a055" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Tools.PlayerSaveData.HasCompletedTutorial</definition>
+        <argsstring></argsstring>
+        <name>HasCompletedTutorial</name>
+        <qualifiedname>Faeterna.Scripts.Tools.PlayerSaveData.HasCompletedTutorial</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jugador ya vio o completó los tutoriales relevantes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se usa para no volver a mostrar tutoriales tras cargar la partida. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="74" column="21" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="74" bodyend="74"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aabe9bb96353d7d5fb7616941c96a3840" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>Vector2</type>
@@ -129,8 +181,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/GameSaveData.cs" line="60" column="24" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="61" bodyend="68"/>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <location file="scripts/Tools/GameSaveData.cs" line="81" column="24" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="82" bodyend="89"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="229" endline="254">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -139,11 +191,14 @@
     <detaileddescription>
 <para>Incluye información sobre la posición, salud, maná y disponibilidad de habilidades especiales como el doble salto, dash y coyote time. </para>
     </detaileddescription>
-    <location file="scripts/Tools/GameSaveData.cs" line="32" column="11" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="33" bodyend="69"/>
+    <location file="scripts/Tools/GameSaveData.cs" line="41" column="11" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="42" bodyend="90"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a908ffad42edf60f4a57e6ed3d1f86616" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>CoyoteAvailable</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a95dd3a66fc38dcc743adbdbd15fab6a5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>DashAvailable</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a9073898f9dbebcfd6108a039babf9053" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>DoubleJumpAvailable</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aca6fbc5c4b1e20ab0b56fc949355a055" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>HasCompletedTutorial</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a982d0b465ebb9d1d38d71498642613a9" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>HasDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a4bb1f2bffd8020b518b6ec4e616bc83d" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>HasDoubleJump</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1ab949359b03caef04e37650f26e536138" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>Health</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a0f927b15478d4ad612d4a30678c39ac7" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>Mana</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aabe9bb96353d7d5fb7616941c96a3840" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::PlayerSaveData</scope><name>Position</name></member>

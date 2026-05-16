@@ -116,14 +116,44 @@ Collaboration diagram for PantallaCarga:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad91a999a895f2e158a8ba23cd44cdbfd" id="r_ad91a999a895f2e158a8ba23cd44cdbfd"><td class="memItemLeft"><a id="ad91a999a895f2e158a8ba23cd44cdbfd" name="ad91a999a895f2e158a8ba23cd44cdbfd"></a>
-void&#160;</td><td class="memItemRight"><b>pantallaCargaCompletado</b> ()</td></tr>
+<tr class="memitem:ad91a999a895f2e158a8ba23cd44cdbfd" id="r_ad91a999a895f2e158a8ba23cd44cdbfd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad91a999a895f2e158a8ba23cd44cdbfd">pantallaCargaCompletado</a> ()</td></tr>
+<tr class="memdesc:ad91a999a895f2e158a8ba23cd44cdbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Este método se llama al final de la animación de la pantalla de carga.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6a8b55a9420797fc8df5b2b8c7f8295f" id="r_a6a8b55a9420797fc8df5b2b8c7f8295f"><td class="memItemLeft"><a id="a6a8b55a9420797fc8df5b2b8c7f8295f" name="a6a8b55a9420797fc8df5b2b8c7f8295f"></a>
 PackedScene&#160;</td><td class="memItemRight"><b>nextScene</b></td></tr>
+<tr class="memdesc:a6a8b55a9420797fc8df5b2b8c7f8295f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escena que se cargará después de que la pantalla de carga haya terminado su animación. Se asigna en el editor y debe ser un PackedScene válido para que el cambio de escena funcione correctamente. Es importante asegurarse de que esta propiedad esté configurada correctamente para evitar errores al intentar cambiar a la siguiente escena después de la pantalla de carga. <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ad91a999a895f2e158a8ba23cd44cdbfd" name="ad91a999a895f2e158a8ba23cd44cdbfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91a999a895f2e158a8ba23cd44cdbfd">&#9670;&#160;</a></span>pantallaCargaCompletado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PantallaCarga.pantallaCargaCompletado </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Este método se llama al final de la animación de la pantalla de carga. </p>
+<p>Se encarga de cambiar a la siguiente escena utilizando el método ChangeSceneToPacked del nodo raíz del árbol de escenas. Es importante que este método se llame al final de la animación para garantizar que la transición a la siguiente escena sea suave y sin interrupciones. Asegúrate de que la animación de la pantalla de carga esté configurada para llamar a este método en el momento adecuado para lograr el efecto deseado. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Menus/<b>PantallaCarga.cs</b></li>
 </ul>

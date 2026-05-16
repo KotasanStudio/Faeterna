@@ -1,0 +1,7 @@
+<map id="Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess" name="Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess">
+<area shape="rect" id="Node000001" title="Lógica de física: gravedad, dash, knockback y movimiento principal." alt="" coords="5,40,203,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="251,5,449,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,46,238,43,233,45,204,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,75,449,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,74,238,81,232,81,203,79"/>
+</map>

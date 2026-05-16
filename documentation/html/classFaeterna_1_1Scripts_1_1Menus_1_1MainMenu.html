@@ -111,9 +111,17 @@ Collaboration diagram for Faeterna.Scripts.Menus.MainMenu:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu__coll__graph.png" border="0" usemap="#aFaeterna_8Scripts_8Menus_8MainMenu_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8Scripts_8Menus_8MainMenu_coll__map" id="aFaeterna_8Scripts_8Menus_8MainMenu_coll__map">
-<area shape="rect" title="Control que representa el menú principal del juego." alt="" coords="5,81,251,109"/>
-<area shape="rect" title=" " alt="" coords="94,5,162,33"/>
-<area shape="poly" title=" " alt="" coords="130,47,130,82,126,79,126,51"/>
+<area shape="rect" title="Control que representa el menú principal del juego." alt="" coords="290,207,536,234"/>
+<area shape="rect" title=" " alt="" coords="379,5,447,33"/>
+<area shape="poly" title=" " alt="" coords="462,34,498,51,530,73,542,86,550,101,553,117,549,135,532,161,510,181,484,197,458,209,456,203,481,192,506,177,528,157,544,133,547,117,545,103,538,90,526,77,495,56,462,40"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html" title="Control que representa el menú de opciones del juego." alt="" coords="5,106,269,134"/>
+<area shape="poly" title=" " alt="" coords="362,39,242,85,176,108,173,103,240,79,367,37"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html" title="Control que representa el menú de selección de partidas guardadas del juego." alt="" coords="292,106,534,134"/>
+<area shape="poly" title=" " alt="" coords="415,47,415,107,411,104,411,51"/>
+<area shape="poly" title=" " alt="" coords="188,137,310,180,378,206,373,206,308,185,187,142"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html" title="Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardad..." alt="" coords="34,5,240,33"/>
+<area shape="poly" title=" " alt="" coords="138,46,140,106,134,105,136,51"/>
+<area shape="poly" title=" " alt="" coords="415,147,415,208,411,204,411,151"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -123,6 +131,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a582139ae269e4774d75c9c8655c2c450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando el nodo entra en la escena.  <br /></td></tr>
 <tr class="memitem:a05b220c7e49abd42f5dd02853ef2a30c" id="r_a05b220c7e49abd42f5dd02853ef2a30c"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a05b220c7e49abd42f5dd02853ef2a30c">_Process</a> (double delta)</td></tr>
 <tr class="memdesc:a05b220c7e49abd42f5dd02853ef2a30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cada frame (non-physics).  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2bcec9275f7a36e007450fa88f636acf" id="r_a2bcec9275f7a36e007450fa88f636acf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2bcec9275f7a36e007450fa88f636acf">OnPlayPressed</a> ()</td></tr>
+<tr class="memdesc:a2bcec9275f7a36e007450fa88f636acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función que se llama cuando se presiona el botón de inicio.  <br /></td></tr>
+<tr class="memitem:a5d7b2b04a3d704b0e9d3670147061a4d" id="r_a5d7b2b04a3d704b0e9d3670147061a4d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5d7b2b04a3d704b0e9d3670147061a4d">OnSettingsPressed</a> ()</td></tr>
+<tr class="memdesc:a5d7b2b04a3d704b0e9d3670147061a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función que se llama cuando se presiona el botón de ajustes.  <br /></td></tr>
+<tr class="memitem:ae5b4952d833ee5881f7c2155e29db51d" id="r_ae5b4952d833ee5881f7c2155e29db51d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae5b4952d833ee5881f7c2155e29db51d">OnExitPressed</a> ()</td></tr>
+<tr class="memdesc:ae5b4952d833ee5881f7c2155e29db51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función que se llama cuando se presiona el botón de salir.  <br /></td></tr>
+<tr class="memitem:a7b47576d35d460a83fcab585445fce90" id="r_a7b47576d35d460a83fcab585445fce90"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b47576d35d460a83fcab585445fce90">SetBlur</a> (float intensidad)</td></tr>
+<tr class="memdesc:a7b47576d35d460a83fcab585445fce90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función que establece el nivel de desenfoque del fondo del menú principal.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5f5c7a215a36c98224c1dfaf7aa4f555" id="r_a5f5c7a215a36c98224c1dfaf7aa4f555"><td class="memItemLeft"><a id="a5f5c7a215a36c98224c1dfaf7aa4f555" name="a5f5c7a215a36c98224c1dfaf7aa4f555"></a>
+TextureButton&#160;</td><td class="memItemRight"><b>_startButton</b></td></tr>
+<tr class="memdesc:a5f5c7a215a36c98224c1dfaf7aa4f555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botones del menú principal. Se asignan desde el editor a través de export variables. El botón de inicio inicia el juego y muestra el menú de selección de nivel, el botón de ajustes muestra el menú de opciones, y el botón de salir cierra el juego. Es importante que estas referencias estén correctamente asignadas para que los botones funcionen correctamente en el menú principal. <br /></td></tr>
+<tr class="memitem:ab5b838454e4ff9d51108a181cdccc10f" id="r_ab5b838454e4ff9d51108a181cdccc10f"><td class="memItemLeft"><a id="ab5b838454e4ff9d51108a181cdccc10f" name="ab5b838454e4ff9d51108a181cdccc10f"></a>
+TextureButton&#160;</td><td class="memItemRight"><b>_settingsButton</b></td></tr>
+<tr class="memdesc:ab5b838454e4ff9d51108a181cdccc10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón para acceder a las opciones del juego. Al hacer clic, muestra el menú de opciones dentro del menú principal. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de ajustes funcione correctamente en el menú principal. <br /></td></tr>
+<tr class="memitem:a0c7e0314dbacba8ef6605246714d2a92" id="r_a0c7e0314dbacba8ef6605246714d2a92"><td class="memItemLeft"><a id="a0c7e0314dbacba8ef6605246714d2a92" name="a0c7e0314dbacba8ef6605246714d2a92"></a>
+TextureButton&#160;</td><td class="memItemRight"><b>_exitButton</b></td></tr>
+<tr class="memdesc:a0c7e0314dbacba8ef6605246714d2a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón para salir del juego. Al hacer clic, cierra el juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de salir funcione correctamente en el menú principal. <br /></td></tr>
+<tr class="memitem:a24b9d53712eefaef7095653d3fa99a02" id="r_a24b9d53712eefaef7095653d3fa99a02"><td class="memItemLeft"><a id="a24b9d53712eefaef7095653d3fa99a02" name="a24b9d53712eefaef7095653d3fa99a02"></a>
+<a class="el" href="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html">OptionsMenu</a>&#160;</td><td class="memItemRight"><b>_optionsMenu</b></td></tr>
+<tr class="memdesc:a24b9d53712eefaef7095653d3fa99a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contenedor de controles para las opciones del juego (ajustes de audio, video, controles, etc.). Se muestra u oculta al interactuar con el botón de ajustes. Al mostrar el menú de opciones, se desenfoca el fondo para mejorar la legibilidad. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el menú de opciones funcione correctamente en el menú principal. <br /></td></tr>
+<tr class="memitem:a3ea1996fec7f6b9c73aa139cdfd00d6c" id="r_a3ea1996fec7f6b9c73aa139cdfd00d6c"><td class="memItemLeft"><a id="a3ea1996fec7f6b9c73aa139cdfd00d6c" name="a3ea1996fec7f6b9c73aa139cdfd00d6c"></a>
+<a class="el" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html">PlayMenu</a>&#160;</td><td class="memItemRight"><b>_playMenu</b></td></tr>
+<tr class="memdesc:a3ea1996fec7f6b9c73aa139cdfd00d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contenedor de controles para la selección de nivel o inicio del juego. Se muestra al hacer clic en el botón de inicio. Al mostrar este menú, se desenfoca el fondo para mejorar la legibilidad. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el menú de selección de nivel funcione correctamente en el menú principal. <br /></td></tr>
+<tr class="memitem:aa9b3676cd70e439c8385803d89ea4934" id="r_aa9b3676cd70e439c8385803d89ea4934"><td class="memItemLeft"><a id="aa9b3676cd70e439c8385803d89ea4934" name="aa9b3676cd70e439c8385803d89ea4934"></a>
+TextureRect&#160;</td><td class="memItemRight"><b>_background</b></td></tr>
+<tr class="memdesc:aa9b3676cd70e439c8385803d89ea4934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control que representa el fondo del menú principal. Se desenfoca al mostrar los submenús (opciones o selección de nivel) para mejorar la legibilidad. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el desenfoque del fondo funcione correctamente en el menú principal. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control que representa el menú principal del juego. </p>
@@ -159,6 +199,16 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a05b220c7e49abd42f5dd02853ef2a30c_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a05b220c7e49abd42f5dd02853ef2a30c_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a05b220c7e49abd42f5dd02853ef2a30c_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a05b220c7e49abd42f5dd02853ef2a30c_cgraph">
+<area shape="rect" title="Se llama cada frame (non&#45;physics)." alt="" coords="5,5,215,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="263,5,472,50"/>
+<area shape="poly" title=" " alt="" coords="215,25,250,28,245,28,215,30"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -187,6 +237,226 @@ Public Member Functions</h2></td></tr>
 
 <p>Se llama cuando el nodo entra en la escena. </p>
 <p>Configura el menú principal, asigna las funciones de los botones y oculta los submenús inicialmente. También configura el fondo para que no bloquee los clicks sobre los botones del menú. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a582139ae269e4774d75c9c8655c2c450_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a582139ae269e4774d75c9c8655c2c450_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a582139ae269e4774d75c9c8655c2c450_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a582139ae269e4774d75c9c8655c2c450_cgraph">
+<area shape="rect" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,75,215,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#ae5b4952d833ee5881f7c2155e29db51d" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="263,5,472,50"/>
+<area shape="poly" title=" " alt="" coords="195,72,270,53,265,56,197,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a2bcec9275f7a36e007450fa88f636acf" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="263,144,472,189"/>
+<area shape="poly" title=" " alt="" coords="196,117,270,139,265,140,196,123"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a5d7b2b04a3d704b0e9d3670147061a4d" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="263,75,472,119"/>
+<area shape="poly" title=" " alt="" coords="215,94,250,96,245,98,216,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="520,75,730,119"/>
+<area shape="poly" title=" " alt="" coords="453,48,528,70,522,70,453,53"/>
+<area shape="poly" title=" " alt="" coords="453,141,522,124,528,123,454,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="520,144,730,189"/>
+<area shape="poly" title=" " alt="" coords="472,164,508,166,502,166,473,169"/>
+<area shape="poly" title=" " alt="" coords="472,94,507,97,502,97,473,100"/>
+<area shape="poly" title=" " alt="" coords="454,117,528,140,522,139,453,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae5b4952d833ee5881f7c2155e29db51d" name="ae5b4952d833ee5881f7c2155e29db51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b4952d833ee5881f7c2155e29db51d">&#9670;&#160;</a></span>OnExitPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.MainMenu.OnExitPressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función que se llama cuando se presiona el botón de salir. </p>
+<p>Reproduce una animación de presión en el botón y luego cierra el juego. Es importante que esta función esté correctamente implementada para que el botón de salir funcione correctamente en el menú principal y permita cerrar el juego al hacer clic en él. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_cgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="5,5,215,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="263,5,473,50"/>
+<area shape="poly" title=" " alt="" coords="215,25,250,28,245,28,215,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_ae5b4952d833ee5881f7c2155e29db51d_icgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="263,5,472,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,215,50"/>
+<area shape="poly" title=" " alt="" coords="244,28,215,30,215,25,250,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bcec9275f7a36e007450fa88f636acf" name="a2bcec9275f7a36e007450fa88f636acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcec9275f7a36e007450fa88f636acf">&#9670;&#160;</a></span>OnPlayPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.MainMenu.OnPlayPressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función que se llama cuando se presiona el botón de inicio. </p>
+<p>Reproduce una animación de presión en el botón y luego muestra el menú de selección de nivel, ocultando los botones principales y aplicando un desenfoque al fondo para mejorar la legibilidad del submenú. Es importante que esta función esté correctamente implementada para que el botón de inicio funcione correctamente en el menú principal. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_cgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="5,40,215,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="263,5,473,50"/>
+<area shape="poly" title=" " alt="" coords="215,46,250,43,245,45,216,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="263,75,472,119"/>
+<area shape="poly" title=" " alt="" coords="215,74,251,81,245,81,215,79"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a2bcec9275f7a36e007450fa88f636acf_icgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="263,5,472,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,215,50"/>
+<area shape="poly" title=" " alt="" coords="244,28,215,30,215,25,250,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d7b2b04a3d704b0e9d3670147061a4d" name="a5d7b2b04a3d704b0e9d3670147061a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7b2b04a3d704b0e9d3670147061a4d">&#9670;&#160;</a></span>OnSettingsPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función que se llama cuando se presiona el botón de ajustes. </p>
+<p>Reproduce una animación de presión en el botón y luego muestra el menú de opciones, ocultando los botones principales y aplicando un desenfoque al fondo para mejorar la legibilidad del submenú. Es importante que esta función esté correctamente implementada para que el botón de ajustes funcione correctamente en el menú principal. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_cgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="5,40,215,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="263,5,473,50"/>
+<area shape="poly" title=" " alt="" coords="215,46,250,43,245,45,216,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="263,75,472,119"/>
+<area shape="poly" title=" " alt="" coords="215,74,251,81,245,81,215,79"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a5d7b2b04a3d704b0e9d3670147061a4d_icgraph">
+<area shape="rect" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="263,5,472,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,215,50"/>
+<area shape="poly" title=" " alt="" coords="244,28,215,30,215,25,250,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b47576d35d460a83fcab585445fce90" name="a7b47576d35d460a83fcab585445fce90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b47576d35d460a83fcab585445fce90">&#9670;&#160;</a></span>SetBlur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.MainMenu.SetBlur </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensidad</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función que establece el nivel de desenfoque del fondo del menú principal. </p>
+<p>Al mostrar los submenús (opciones o selección de nivel), se aplica un desenfoque al fondo para mejorar la legibilidad de los submenús. Al ocultar los submenús, se quita el desenfoque para mostrar el fondo con claridad. Esta función se llama desde las funciones de los botones para aplicar o quitar el desenfoque según sea necesario. Es importante que esta función esté correctamente implementada para que el desenfoque del fondo funcione correctamente en el menú principal y mejore la apariencia de los submenús cuando están activos.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">intensidad</td><td>Nivel de desenfoque a aplicar al fondo. Un valor de 0 significa sin desenfoque, mientras que valores mayores aplican un desenfoque más fuerte. Este parámetro se utiliza para controlar la apariencia del fondo del menú principal cuando se muestran los submenús, mejorando la legibilidad de los mismos. Es importante que este parámetro se ajuste adecuadamente para lograr el efecto visual deseado en el menú principal. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a7b47576d35d460a83fcab585445fce90_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a7b47576d35d460a83fcab585445fce90_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a7b47576d35d460a83fcab585445fce90_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_a7b47576d35d460a83fcab585445fce90_icgraph">
+<area shape="rect" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="520,75,729,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a05b220c7e49abd42f5dd02853ef2a30c" title="Se llama cada frame (non&#45;physics)." alt="" coords="263,5,472,50"/>
+<area shape="poly" title=" " alt="" coords="522,70,453,53,453,48,527,70"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a2bcec9275f7a36e007450fa88f636acf" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="263,75,472,119"/>
+<area shape="poly" title=" " alt="" coords="502,97,473,100,472,94,507,97"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a5d7b2b04a3d704b0e9d3670147061a4d" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="263,144,472,189"/>
+<area shape="poly" title=" " alt="" coords="527,123,453,146,452,141,522,124"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,109,215,154"/>
+<area shape="poly" title=" " alt="" coords="244,114,216,120,214,115,250,113"/>
+<area shape="poly" title=" " alt="" coords="244,150,215,148,215,143,250,150"/>
+</map>
+</div>
 
 </div>
 </div>

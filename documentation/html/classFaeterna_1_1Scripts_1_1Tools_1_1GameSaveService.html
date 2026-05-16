@@ -99,6 +99,17 @@ $(function(){initNavTree('classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad28ca534626417d328af082c39e24dbe" id="r_ad28ca534626417d328af082c39e24dbe"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad28ca534626417d328af082c39e24dbe">SetPendingGameData</a> (<a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> data)</td></tr>
+<tr class="memdesc:ad28ca534626417d328af082c39e24dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece datos pendientes que serán aplicados tras completar el cambio de escena.  <br /></td></tr>
+<tr class="memitem:a86e3f14aed078dc112a89c95a4f4678f" id="r_a86e3f14aed078dc112a89c95a4f4678f"><td class="memItemLeft">static <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a>&#160;</td><td class="memItemRight"><a class="el" href="#a86e3f14aed078dc112a89c95a4f4678f">RetrieveAndClearPending</a> ()</td></tr>
+<tr class="memdesc:a86e3f14aed078dc112a89c95a4f4678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupera y limpia los datos pendientes.  <br /></td></tr>
+<tr class="memitem:a369b1e5ebfc6cf172daa9384b40b4fee" id="r_a369b1e5ebfc6cf172daa9384b40b4fee"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a369b1e5ebfc6cf172daa9384b40b4fee">MarkBossDefeated</a> (string bossType)</td></tr>
+<tr class="memdesc:a369b1e5ebfc6cf172daa9384b40b4fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marca un boss como derrotado (persistible en el siguiente guardado).  <br /></td></tr>
+<tr class="memitem:acb34a4445d3d96e2498217b3f6aaf2b3" id="r_acb34a4445d3d96e2498217b3f6aaf2b3"><td class="memItemLeft">static System.Collections.Generic.List&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acb34a4445d3d96e2498217b3f6aaf2b3">GetDefeatedBossList</a> ()</td></tr>
+<tr class="memdesc:acb34a4445d3d96e2498217b3f6aaf2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve una lista copiada de los bosses derrotados actualmente registrados.  <br /></td></tr>
+<tr class="memitem:a7b6e132b72b76191edc5c96fc993c51c" id="r_a7b6e132b72b76191edc5c96fc993c51c"><td class="memItemLeft"><a id="a7b6e132b72b76191edc5c96fc993c51c" name="a7b6e132b72b76191edc5c96fc993c51c"></a>
+static void&#160;</td><td class="memItemRight"><b>SetDefeatedBosses</b> (System.Collections.Generic.IEnumerable&lt; string &gt; list)</td></tr>
+<tr class="memdesc:a7b6e132b72b76191edc5c96fc993c51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reemplaza la lista de bosses derrotados (usado al cargar un guardado). <br /></td></tr>
 <tr class="memitem:accce028fb622f5fe038081c325db5886" id="r_accce028fb622f5fe038081c325db5886"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#accce028fb622f5fe038081c325db5886">SetActiveSlot</a> (int slot)</td></tr>
 <tr class="memdesc:accce028fb622f5fe038081c325db5886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define el slot activo asegurando que no sea negativo.  <br /></td></tr>
 <tr class="memitem:a02db5fdff64edd5da075a059a185b5bc" id="r_a02db5fdff64edd5da075a059a185b5bc"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a02db5fdff64edd5da075a059a185b5bc">HasSave</a> (int slot)</td></tr>
@@ -113,8 +124,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2e5ed6e85b985710587dc4c8c95d0f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina el guardado completo de un slot (datos JSON + preview PNG).  <br /></td></tr>
 <tr class="memitem:af0bd60dc6943073598f37cac04d6f6f9" id="r_af0bd60dc6943073598f37cac04d6f6f9"><td class="memItemLeft">static Task&#160;</td><td class="memItemRight"><a class="el" href="#af0bd60dc6943073598f37cac04d6f6f9">SaveCheckpointAsync</a> (PlayerType player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport=null)</td></tr>
 <tr class="memdesc:af0bd60dc6943073598f37cac04d6f6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda el progreso al tocar un checkpoint y genera la imagen preview del slot activo.  <br /></td></tr>
-<tr class="memitem:aaa9a185acc9c3da515401db4f3bcc1ef" id="r_aaa9a185acc9c3da515401db4f3bcc1ef"><td class="memItemLeft">static Task&lt; <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aaa9a185acc9c3da515401db4f3bcc1ef">LoadActiveSlotAsync</a> ()</td></tr>
-<tr class="memdesc:aaa9a185acc9c3da515401db4f3bcc1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga los datos del slot activo.  <br /></td></tr>
+<tr class="memitem:a9e47db3cdaf412b366d9dcc745da21a6" id="r_a9e47db3cdaf412b366d9dcc745da21a6"><td class="memItemLeft">static async Task&lt; <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9e47db3cdaf412b366d9dcc745da21a6">LoadActiveSlotAsync</a> ()</td></tr>
+<tr class="memdesc:a9e47db3cdaf412b366d9dcc745da21a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga los datos del slot activo.  <br /></td></tr>
 <tr class="memitem:a86e0695c860b020965ad0943e91045a7" id="r_a86e0695c860b020965ad0943e91045a7"><td class="memItemLeft">static Task&#160;</td><td class="memItemRight"><a class="el" href="#a86e0695c860b020965ad0943e91045a7">SaveAsync</a> (int slot, <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> data)</td></tr>
 <tr class="memdesc:a86e0695c860b020965ad0943e91045a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda en disco los datos de un slot usando SaveFile&lt;TData&gt;.  <br /></td></tr>
 <tr class="memitem:a0b80d74d77222774ed30d9a52165adef" id="r_a0b80d74d77222774ed30d9a52165adef"><td class="memItemLeft">static Task&lt; <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0b80d74d77222774ed30d9a52165adef">LoadAsync</a> (int slot)</td></tr>
@@ -124,6 +135,13 @@ Static Public Member Functions</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a9d7a0f1a592fdfaae72991c24c7d9639" id="r_a9d7a0f1a592fdfaae72991c24c7d9639"><td class="memItemLeft"><a id="a9d7a0f1a592fdfaae72991c24c7d9639" name="a9d7a0f1a592fdfaae72991c24c7d9639"></a>
 static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</code></td></tr>
+<tr class="memitem:ab8d920dad8e6e7519d6bd5e1f8713c08" id="r_ab8d920dad8e6e7519d6bd5e1f8713c08"><td class="memItemLeft">static <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab8d920dad8e6e7519d6bd5e1f8713c08">PendingGameData</a><code> [get, private set]</code></td></tr>
+<tr class="memdesc:ab8d920dad8e6e7519d6bd5e1f8713c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Datos de juego pendientes de aplicar tras cargar/recargar una escena.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a4c9720103d4f0f9783e270d58db2d2f8" id="r_a4c9720103d4f0f9783e270d58db2d2f8"><td class="memItemLeft"><a id="a4c9720103d4f0f9783e270d58db2d2f8" name="a4c9720103d4f0f9783e270d58db2d2f8"></a>
+static readonly System.Collections.Generic.HashSet&lt; string &gt;&#160;</td><td class="memItemRight"><b>_defeatedBosses</b> = new()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fachada de compatibilidad. </p>
@@ -159,6 +177,54 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a2e5ed6e85b985710587dc4c8c95d0f4c_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a2e5ed6e85b985710587dc4c8c95d0f4c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a2e5ed6e85b985710587dc4c8c95d0f4c_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a2e5ed6e85b985710587dc4c8c95d0f4c_icgraph">
+<area shape="rect" title="Elimina el guardado completo de un slot (datos JSON + preview PNG)." alt="" coords="259,5,465,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="241,28,211,30,211,25,246,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb34a4445d3d96e2498217b3f6aaf2b3" name="acb34a4445d3d96e2498217b3f6aaf2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb34a4445d3d96e2498217b3f6aaf2b3">&#9670;&#160;</a></span>GetDefeatedBossList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Collections.Generic.List&lt; string &gt; Faeterna.Scripts.Tools.GameSaveService.GetDefeatedBossList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Devuelve una lista copiada de los bosses derrotados actualmente registrados. </p>
+<dl class="section return"><dt>Returns</dt><dd>Lista de identificadores de bosses derrotados.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_acb34a4445d3d96e2498217b3f6aaf2b3_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_acb34a4445d3d96e2498217b3f6aaf2b3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_acb34a4445d3d96e2498217b3f6aaf2b3_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_acb34a4445d3d96e2498217b3f6aaf2b3_icgraph">
+<area shape="rect" title="Devuelve una lista copiada de los bosses derrotados actualmente registrados." alt="" coords="264,5,506,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,5,216,50"/>
+<area shape="poly" title=" " alt="" coords="245,28,216,30,216,25,251,28"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -227,6 +293,20 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> si existe el JSON del slot; en caso contrario, <code>false</code>.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a02db5fdff64edd5da075a059a185b5bc_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a02db5fdff64edd5da075a059a185b5bc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a02db5fdff64edd5da075a059a185b5bc_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a02db5fdff64edd5da075a059a185b5bc_icgraph">
+<area shape="rect" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="512,40,718,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a27553e6b6323d56dd4722b7514c84bf5" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="259,40,464,85"/>
+<area shape="poly" title=" " alt="" coords="494,63,464,65,464,60,499,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#aef4463301d7250b44474391e56bed064" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="240,47,211,44,211,39,246,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,75,211,119"/>
+<area shape="poly" title=" " alt="" coords="240,79,212,86,211,80,246,78"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -258,8 +338,8 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
 
 </div>
 </div>
-<a id="aaa9a185acc9c3da515401db4f3bcc1ef" name="aaa9a185acc9c3da515401db4f3bcc1ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa9a185acc9c3da515401db4f3bcc1ef">&#9670;&#160;</a></span>LoadActiveSlotAsync()</h2>
+<a id="a9e47db3cdaf412b366d9dcc745da21a6" name="a9e47db3cdaf412b366d9dcc745da21a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e47db3cdaf412b366d9dcc745da21a6">&#9670;&#160;</a></span>LoadActiveSlotAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +348,7 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Task&lt; <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> &gt; Faeterna.Scripts.Tools.GameSaveService.LoadActiveSlotAsync </td>
+          <td class="memname">async Task&lt; <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> &gt; Faeterna.Scripts.Tools.GameSaveService.LoadActiveSlotAsync </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -283,6 +363,40 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
 
 <p>Carga los datos del slot activo. </p>
 <dl class="section return"><dt>Returns</dt><dd>Datos cargados o <code>null</code> si el archivo no existe.</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_cgraph">
+<area shape="rect" title="Carga los datos del slot activo." alt="" coords="5,40,247,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="306,5,516,50"/>
+<area shape="poly" title=" " alt="" coords="247,45,293,42,288,43,247,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a7b6e132b72b76191edc5c96fc993c51c" title="Reemplaza la lista de bosses derrotados (usado al cargar un guardado)." alt="" coords="295,75,527,119"/>
+<area shape="poly" title=" " alt="" coords="247,74,282,81,276,81,247,80"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#af41c20346b77a4fac76819fcd9943a78" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="575,5,785,50"/>
+<area shape="poly" title=" " alt="" coords="516,25,562,27,557,28,517,30"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="833,5,1044,50"/>
+<area shape="poly" title=" " alt="" coords="786,25,820,28,815,28,786,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a9e47db3cdaf412b366d9dcc745da21a6_icgraph">
+<area shape="rect" title="Carga los datos del slot activo." alt="" coords="840,40,1082,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a5392cac035746352fd9f1fca9ee3e600" title="Carga la partida guardada más reciente del slot activo y vuelve a la escena asociada." alt="" coords="534,5,792,50"/>
+<area shape="poly" title=" " alt="" coords="822,47,793,45,793,40,828,47"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="544,75,782,119"/>
+<area shape="poly" title=" " alt="" coords="828,78,783,86,783,80,822,78"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ae5f66d3b04dbaed20aa04ff18aedcca6" title="Reanuda la partida desde el último guardado del slot activo." alt="" coords="270,5,486,50"/>
+<area shape="poly" title=" " alt="" coords="516,28,487,30,486,25,521,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a4ea0d120b2c73373cbc72aaa8ac44259" title="Inicializa la pantalla de muerte." alt="" coords="5,5,222,50"/>
+<area shape="poly" title=" " alt="" coords="252,28,223,30,222,25,257,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="279,75,477,119"/>
+<area shape="poly" title=" " alt="" coords="526,97,477,100,477,94,531,97"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -351,6 +465,91 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Una Texture2D lista para usar en UI, o <code>null</code> si no existe/esta corrupta. </dd></dl>
+
+</div>
+</div>
+<a id="a369b1e5ebfc6cf172daa9384b40b4fee" name="a369b1e5ebfc6cf172daa9384b40b4fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369b1e5ebfc6cf172daa9384b40b4fee">&#9670;&#160;</a></span>MarkBossDefeated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.GameSaveService.MarkBossDefeated </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>bossType</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Marca un boss como derrotado (persistible en el siguiente guardado). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bossType</td><td>Identificador del boss (por ejemplo el nombre de la clase).</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a369b1e5ebfc6cf172daa9384b40b4fee_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a369b1e5ebfc6cf172daa9384b40b4fee_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a369b1e5ebfc6cf172daa9384b40b4fee_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a369b1e5ebfc6cf172daa9384b40b4fee_icgraph">
+<area shape="rect" title="Marca un boss como derrotado (persistible en el siguiente guardado)." alt="" coords="589,14,818,58"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aac2e48348915cd668255c0f3f5648271" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="306,14,541,58"/>
+<area shape="poly" title=" " alt="" coords="571,36,541,39,541,34,576,36"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#a907191ed3862a391ca40894c0916c6bf" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="5,5,258,67"/>
+<area shape="poly" title=" " alt="" coords="288,36,258,39,258,34,293,36"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86e3f14aed078dc112a89c95a4f4678f" name="a86e3f14aed078dc112a89c95a4f4678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e3f14aed078dc112a89c95a4f4678f">&#9670;&#160;</a></span>RetrieveAndClearPending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> Faeterna.Scripts.Tools.GameSaveService.RetrieveAndClearPending </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recupera y limpia los datos pendientes. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html" title="Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena a...">GameData</a> previamente pendiente o null.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a86e3f14aed078dc112a89c95a4f4678f_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a86e3f14aed078dc112a89c95a4f4678f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a86e3f14aed078dc112a89c95a4f4678f_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_a86e3f14aed078dc112a89c95a4f4678f_icgraph">
+<area shape="rect" title="Recupera y limpia los datos pendientes." alt="" coords="538,5,809,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="252,5,490,50"/>
+<area shape="poly" title=" " alt="" coords="520,28,490,30,490,25,525,28"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="5,5,204,50"/>
+<area shape="poly" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -447,6 +646,16 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Tarea asincrona de guardado.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_af0bd60dc6943073598f37cac04d6f6f9_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_af0bd60dc6943073598f37cac04d6f6f9_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_af0bd60dc6943073598f37cac04d6f6f9_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_af0bd60dc6943073598f37cac04d6f6f9_icgraph">
+<area shape="rect" title="Guarda el progreso al tocar un checkpoint y genera la imagen preview del slot activo." alt="" coords="261,5,510,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html#a12e3ffb6fb60459cbfa58ced85113663" title="Acción que se ejecuta al interactuar con el checkpoint." alt="" coords="5,5,213,50"/>
+<area shape="poly" title=" " alt="" coords="242,28,213,30,213,25,248,27"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -480,6 +689,87 @@ static int&#160;</td><td class="memItemRight"><b>ActiveSlot</b><code> [get]</cod
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_accce028fb622f5fe038081c325db5886_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_accce028fb622f5fe038081c325db5886_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_accce028fb622f5fe038081c325db5886_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_accce028fb622f5fe038081c325db5886_icgraph">
+<area shape="rect" title="Define el slot activo asegurando que no sea negativo." alt="" coords="259,5,465,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="241,28,211,30,211,25,246,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad28ca534626417d328af082c39e24dbe" name="ad28ca534626417d328af082c39e24dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28ca534626417d328af082c39e24dbe">&#9670;&#160;</a></span>SetPendingGameData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.GameSaveService.SetPendingGameData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Establece datos pendientes que serán aplicados tras completar el cambio de escena. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html" title="Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena a...">GameData</a> a aplicar después de recargar la escena.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_ad28ca534626417d328af082c39e24dbe_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_ad28ca534626417d328af082c39e24dbe_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_ad28ca534626417d328af082c39e24dbe_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_ad28ca534626417d328af082c39e24dbe_icgraph">
+<area shape="rect" title="Establece datos pendientes que serán aplicados tras completar el cambio de escena." alt="" coords="538,5,786,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="252,5,490,50"/>
+<area shape="poly" title=" " alt="" coords="520,28,490,30,490,25,525,28"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="5,5,204,50"/>
+<area shape="poly" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="ab8d920dad8e6e7519d6bd5e1f8713c08" name="ab8d920dad8e6e7519d6bd5e1f8713c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d920dad8e6e7519d6bd5e1f8713c08">&#9670;&#160;</a></span>PendingGameData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html">GameData</a> Faeterna.Scripts.Tools.GameSaveService.PendingGameData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Datos de juego pendientes de aplicar tras cargar/recargar una escena. </p>
+<p>Se usan para almacenar temporalmente el <a class="el" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html" title="Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena a...">GameData</a> mientras se realiza ChangeScene y poder aplicarlo al nuevo nodo jugador cuando la escena se haya cargado. </p>
 
 </div>
 </div>

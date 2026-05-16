@@ -1,0 +1,13 @@
+<map id="Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility" name="Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility">
+<area shape="rect" id="Node000001" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="5,109,226,154"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#adcd45792ec173ad0a64840fc307eed6f" title="Carga y muestra los datos del item actual." alt="" coords="290,75,522,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,116,278,112,272,113,227,121"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3770b2fbbf7ee24c3e6c021601852d34" title="Intenta enlazar los nodos de interfaz si no están asignados desde el inspector." alt="" coords="274,144,539,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="226,142,261,149,256,149,226,147"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3134a642742d8a85e9b80726f4c8ac0a" title="Asigna el texto de un Label de forma centralizada." alt="" coords="605,5,825,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="509,71,601,53,595,54,510,77"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a45cbb30884c3d267ad137d91e54f4151" title="Aplica al control de imagen el recurso indicado si es una textura válida." alt="" coords="605,75,825,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="523,94,592,97,587,97,523,100"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#a3f2b86ff4cd0724cb4b46c2c29f2b867" title="Carga los items desde el CSV si todavía no están en memoria." alt="" coords="587,144,843,189"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="509,117,601,140,595,140,509,123"/>
+</map>

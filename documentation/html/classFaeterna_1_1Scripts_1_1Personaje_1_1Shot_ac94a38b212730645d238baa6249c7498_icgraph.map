@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Personaje.Shot.HandleCollision" name="Faeterna.Scripts.Personaje.Shot.HandleCollision">
+<area shape="rect" id="Node000001" title="Handles collision logic for both Area2D and PhysicsBody2D nodes." alt="" coords="252,40,450,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#a7c292ad729364fba8adb7bba2d421966" title="Handles logic when another Area2D enters the monitored area." alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,47,204,44,204,39,239,46"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#a8babf0dada168b0bb193214a3833d277" title="Elimina la bala al chocar con el terreno." alt="" coords="5,75,204,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,79,205,86,204,80,239,78"/>
+</map>

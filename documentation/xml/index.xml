@@ -21,14 +21,14 @@
     <member refid="classBosque_1ab6e359d6e12809544102c4f01fb855bf" kind="function"><name>_Ready</name></member>
     <member refid="classBosque_1aef71764a5395088b86c28be18f7b2d30" kind="function"><name>_Process</name></member>
   </compound>
-  <compound refid="classBossArea" kind="class"><name>BossArea</name>
-    <member refid="classBossArea_1a811c3a4a5b929a07107b4c5894eaf755" kind="variable"><name>_dashItem</name></member>
-    <member refid="classBossArea_1a3e1f0fd59bbe6ca447f24c81b8f1ee2e" kind="variable"><name>_reyJabali</name></member>
-    <member refid="classBossArea_1ab6a80cc076175815dc28d15e57adf5de" kind="variable"><name>_backgroundAudioPLayer</name></member>
-    <member refid="classBossArea_1a782bf8e018726eb0849eb0bd518991dc" kind="variable"><name>_backgroundAudio</name></member>
-    <member refid="classBossArea_1a34d92b412ede87afc050d63a063ccd6b" kind="function"><name>_Ready</name></member>
-    <member refid="classBossArea_1a805137b34f0cd3f8f8d4051a1fe4bab3" kind="function"><name>_on_body_entered</name></member>
-    <member refid="classBossArea_1ab9e8bac9f4d3d727c355a3672f24e136" kind="function"><name>onJabaliBossDeath</name></member>
+  <compound refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea" kind="class"><name>Faeterna::scripts::Mapa::BossArea</name>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a3512dbb1a87fc6d23a271860623c5e8a" kind="variable"><name>_dashItem</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ab605cf59cd4eb73d3dad283ce4fb6691" kind="variable"><name>_reyJabali</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a1ffe285d37292ebcc033be2b6fb5f2d3" kind="variable"><name>_backgroundAudioPLayer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ae58074b525ef5d96aeaf8a6cd93c450e" kind="variable"><name>_backgroundAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a6c53ef1df2af33ae4f06e87f8d64d2a6" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a546582073a5f5a67d3d180e3a10c2eec" kind="function"><name>_on_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1aeeee0aa411eef036b2037a52f87dab09" kind="function"><name>OnJabaliBossDeath</name></member>
   </compound>
   <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" kind="class"><name>Faeterna::Scripts::Tools::ButtonTools</name>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a2d4824c47801bd92f0733b49500e4310" kind="variable"><name>PressedScale</name></member>
@@ -133,9 +133,17 @@
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" kind="property"><name>LastCheckpointId</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a7ab5f9e8837102e9132d29df34348d2e" kind="property"><name>PreviewImagePath</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a5bd32cfb137d089ff5b7a67dc6858d56" kind="property"><name>PlayerData</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1ac647e0406fe81a55c260d048f6ca601c" kind="property"><name>DefeatedBossTypes</name></member>
   </compound>
   <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" kind="class"><name>Faeterna::Scripts::Tools::GameSaveService</name>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9d7a0f1a592fdfaae72991c24c7d9639" kind="property"><name>ActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1ab8d920dad8e6e7519d6bd5e1f8713c08" kind="property"><name>PendingGameData</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a4c9720103d4f0f9783e270d58db2d2f8" kind="variable"><name>_defeatedBosses</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1ad28ca534626417d328af082c39e24dbe" kind="function"><name>SetPendingGameData</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a86e3f14aed078dc112a89c95a4f4678f" kind="function"><name>RetrieveAndClearPending</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a369b1e5ebfc6cf172daa9384b40b4fee" kind="function"><name>MarkBossDefeated</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1acb34a4445d3d96e2498217b3f6aaf2b3" kind="function"><name>GetDefeatedBossList</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a7b6e132b72b76191edc5c96fc993c51c" kind="function"><name>SetDefeatedBosses</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1accce028fb622f5fe038081c325db5886" kind="function"><name>SetActiveSlot</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a02db5fdff64edd5da075a059a185b5bc" kind="function"><name>HasSave</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aa0e314f60869606ba6b0a0c83def7285" kind="function"><name>HasSaveInActiveSlot</name></member>
@@ -143,7 +151,7 @@
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a82418b51f04d9b946331535b145aa183" kind="function"><name>LoadPreviewTexture</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a2e5ed6e85b985710587dc4c8c95d0f4c" kind="function"><name>DeleteSlot</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1af0bd60dc6943073598f37cac04d6f6f9" kind="function"><name>SaveCheckpointAsync</name></member>
-    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aaa9a185acc9c3da515401db4f3bcc1ef" kind="function"><name>LoadActiveSlotAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9e47db3cdaf412b366d9dcc745da21a6" kind="function"><name>LoadActiveSlotAsync</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a86e0695c860b020965ad0943e91045a7" kind="function"><name>SaveAsync</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a0b80d74d77222774ed30d9a52165adef" kind="function"><name>LoadAsync</name></member>
   </compound>
@@ -281,6 +289,10 @@
     <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a27ef457db4a4d31b9235c232cc1a0379" kind="function"><name>HasDoubleJump</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a5b1901460c6675c142add9d9c799a140" kind="function"><name>HasDash</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" kind="function"><name>TryLoadFromActiveSlotAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac850d0a7461be6dedd6530632490be92" kind="function"><name>RemoveCollectedObjectsFromScene</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a5789320182a2dec37e900eaf6ae28164" kind="function"><name>RemoveCollectedObjectsRecursive</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af95a8f6413192644b0ab4fe8fa2f9962" kind="function"><name>RemoveDefeatedBossesFromScene</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac3149daf6f258ab6d94a9e9bcf02c318" kind="function"><name>RemoveDefeatedBossesRecursive</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a628c266a9fcb4bd6e0e6f0d6c4b2f928" kind="function"><name>UpdateHearts</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a39c9cbf69eaee2fb7a16a1fd532cf958" kind="function"><name>UpdateMana</name></member>
   </compound>
@@ -491,6 +503,9 @@
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a9073898f9dbebcfd6108a039babf9053" kind="property"><name>DoubleJumpAvailable</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a95dd3a66fc38dcc743adbdbd15fab6a5" kind="property"><name>DashAvailable</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a908ffad42edf60f4a57e6ed3d1f86616" kind="property"><name>CoyoteAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a4bb1f2bffd8020b518b6ec4e616bc83d" kind="property"><name>HasDoubleJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a982d0b465ebb9d1d38d71498642613a9" kind="property"><name>HasDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aca6fbc5c4b1e20ab0b56fc949355a055" kind="property"><name>HasCompletedTutorial</name></member>
     <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aabe9bb96353d7d5fb7616941c96a3840" kind="property"><name>Position</name></member>
   </compound>
   <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu" kind="class"><name>Faeterna::Scripts::Menus::PlayMenu</name>
@@ -668,7 +683,6 @@
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a2d0a3d949d85c328f7d8d7cf6a2b3ede" kind="variable"><name>DashInterval</name></member>
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a6b885e45be8d9c3b2c6d888a032f4851" kind="variable"><name>_dashTimer</name></member>
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" kind="variable"><name>_isDashing</name></member>
-    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a91a15a87eeddb4bc7269b1fdeb7266ab" kind="variable"><name>_rnd</name></member>
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a485f9479e396ceb4a024a8e8009c402e" kind="variable"><name>_runAudio</name></member>
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae9ce7028138fb1394fa87a660f78566f" kind="variable"><name>_hitAudio</name></member>
     <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a74f496d6acc21571fd4494eceb6107de" kind="variable"><name>_attackAudio</name></member>

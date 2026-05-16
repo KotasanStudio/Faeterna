@@ -116,11 +116,100 @@ Collaboration diagram for Faeterna.Scripts.Tutorial.Turotial:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae35f50d0e18a9abb02cc924ff0b4881f" id="r_ae35f50d0e18a9abb02cc924ff0b4881f"><td class="memItemLeft"><a id="ae35f50d0e18a9abb02cc924ff0b4881f" name="ae35f50d0e18a9abb02cc924ff0b4881f"></a>
-void&#160;</td><td class="memItemRight"><b>_on_area_2d_body_entered</b> (Node body)</td></tr>
-<tr class="memitem:aa7d3e920f01d9e201df7e89612fd3c9e" id="r_aa7d3e920f01d9e201df7e89612fd3c9e"><td class="memItemLeft"><a id="aa7d3e920f01d9e201df7e89612fd3c9e" name="aa7d3e920f01d9e201df7e89612fd3c9e"></a>
-void&#160;</td><td class="memItemRight"><b>DesvanecerNodo</b> ()</td></tr>
+<tr class="memitem:ae35f50d0e18a9abb02cc924ff0b4881f" id="r_ae35f50d0e18a9abb02cc924ff0b4881f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae35f50d0e18a9abb02cc924ff0b4881f">_on_area_2d_body_entered</a> (Node body)</td></tr>
+<tr class="memdesc:ae35f50d0e18a9abb02cc924ff0b4881f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que se llama cuando un cuerpo entra en el área 2D del tutorial.  <br /></td></tr>
+<tr class="memitem:aa7d3e920f01d9e201df7e89612fd3c9e" id="r_aa7d3e920f01d9e201df7e89612fd3c9e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa7d3e920f01d9e201df7e89612fd3c9e">DesvanecerNodo</a> ()</td></tr>
+<tr class="memdesc:aa7d3e920f01d9e201df7e89612fd3c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac447f70f82759cf75967bb0150ec72f5" id="r_ac447f70f82759cf75967bb0150ec72f5"><td class="memItemLeft"><a id="ac447f70f82759cf75967bb0150ec72f5" name="ac447f70f82759cf75967bb0150ec72f5"></a>
+Node2D&#160;</td><td class="memItemRight"><b>_control</b></td></tr>
+<tr class="memdesc:ac447f70f82759cf75967bb0150ec72f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodo de control que se desvanece o desaparece al entrar <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a> en el área. Se espera que este nodo sea un hijo directo de este nodo y se use para mostrar información o guías durante el tutorial. Al detectar la colisión con <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>, se llama al método DesvanecerNodo para eliminar o ocultar este nodo de control, permitiendo que el jugador avance en el tutorial sin distracciones. Es importante asegurarse de que este nodo esté correctamente asignado en el editor para evitar errores al intentar acceder a él desde el código. <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ae35f50d0e18a9abb02cc924ff0b4881f" name="ae35f50d0e18a9abb02cc924ff0b4881f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35f50d0e18a9abb02cc924ff0b4881f">&#9670;&#160;</a></span>_on_area_2d_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tutorial.Turotial._on_area_2d_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node</td>          <td class="paramname"><span class="paramname"><em>body</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método que se llama cuando un cuerpo entra en el área 2D del tutorial. </p>
+<p>Si el cuerpo es una instancia de CharacterBody2D (lo que indica que es <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>), se imprime un mensaje en la consola y se llama al método DesvanecerNodo para eliminar o ocultar el nodo de control asociado al tutorial. Este método es esencial para detectar la interacción del jugador con el área del tutorial y permitir que el juego responda adecuadamente a esa interacción, proporcionando una experiencia de aprendizaje fluida para el jugador. Es importante asegurarse de que este método esté conectado correctamente a la señal de entrada de cuerpo del área 2D para que funcione como se espera.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>El cuerpo que ha entrado en el área 2D del tutorial. Este parámetro se espera que sea una instancia de CharacterBody2D, lo que indica que es <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira).">Lira</a>, el personaje principal del juego. Si el cuerpo no es una instancia de CharacterBody2D, no se realizará ninguna acción adicional. Es importante asegurarse de que el área 2D esté configurada correctamente para detectar la entrada de cuerpos y que este método esté conectado a la señal correspondiente para garantizar su funcionamiento adecuado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_ae35f50d0e18a9abb02cc924ff0b4881f_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_ae35f50d0e18a9abb02cc924ff0b4881f_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_ae35f50d0e18a9abb02cc924ff0b4881f_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_ae35f50d0e18a9abb02cc924ff0b4881f_cgraph">
+<area shape="rect" title="Método que se llama cuando un cuerpo entra en el área 2D del tutorial." alt="" coords="5,5,200,67"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html#aa7d3e920f01d9e201df7e89612fd3c9e" title="Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial." alt="" coords="248,14,432,58"/>
+<area shape="poly" title=" " alt="" coords="200,34,235,36,229,36,200,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa7d3e920f01d9e201df7e89612fd3c9e" name="aa7d3e920f01d9e201df7e89612fd3c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d3e920f01d9e201df7e89612fd3c9e">&#9670;&#160;</a></span>DesvanecerNodo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial. </p>
+<p>Si el nodo de control es null, se imprime un mensaje de error en la consola. De lo contrario, se llama al método QueueFree para eliminar el nodo de control del árbol de escenas, lo que hace que desaparezca visualmente del juego. Este método es esencial para proporcionar una experiencia de tutorial fluida, permitiendo que el jugador avance sin distracciones una vez que haya interactuado con el área del tutorial. Es importante asegurarse de que este método esté implementado correctamente para evitar errores al intentar acceder o eliminar el nodo de control. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_aa7d3e920f01d9e201df7e89612fd3c9e_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_aa7d3e920f01d9e201df7e89612fd3c9e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_aa7d3e920f01d9e201df7e89612fd3c9e_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_aa7d3e920f01d9e201df7e89612fd3c9e_icgraph">
+<area shape="rect" title="Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial." alt="" coords="248,14,432,58"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html#ae35f50d0e18a9abb02cc924ff0b4881f" title="Método que se llama cuando un cuerpo entra en el área 2D del tutorial." alt="" coords="5,5,200,67"/>
+<area shape="poly" title=" " alt="" coords="229,36,200,39,200,34,235,36"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Tutorial/<b>Turotial.cs</b></li>
 </ul>

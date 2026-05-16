@@ -12,12 +12,14 @@
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf.DashInterval</qualifiedname>
         <initializer>= 2f</initializer>
         <briefdescription>
+<para>Intervalo entre dashes automáticos. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="10" column="22" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="10" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="13" column="18" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" compoundref="Wolf_8cs" startline="46" endline="58">Faeterna.scripts.Enemigos.Wolf.Wolf._Ready</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -28,12 +30,15 @@
         <name>_dashTimer</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._dashTimer</qualifiedname>
         <briefdescription>
+<para>Timer que dispara el dash automático. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="11" column="23" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="11" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="16" column="19" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" compoundref="Wolf_8cs" startline="64" endline="105">Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" compoundref="Wolf_8cs" startline="46" endline="58">Faeterna.scripts.Enemigos.Wolf.Wolf._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -41,29 +46,17 @@
         <argsstring></argsstring>
         <name>_isDashing</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._isDashing</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si el lobo está actualmente en dash. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="12" column="22" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="12" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a91a15a87eeddb4bc7269b1fdeb7266ab" prot="private" static="no" mutable="no">
-        <type>Random</type>
-        <definition>Random Faeterna.scripts.Enemigos.Wolf.Wolf._rnd</definition>
-        <argsstring></argsstring>
-        <name>_rnd</name>
-        <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._rnd</qualifiedname>
-        <initializer>= new()</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="15" column="24" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="15" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="19" column="18" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" compoundref="Wolf_8cs" startline="64" endline="105">Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a97068afa2887a0685ad87ca307fa9f46" compoundref="Wolf_8cs" startline="110" endline="132">Faeterna.scripts.Enemigos.Wolf.Wolf.OnDashTimerTimeout</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a60ad4b4177a210985496899f2a4289d7" compoundref="Wolf_8cs" startline="161" endline="200">Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a485f9479e396ceb4a024a8e8009c402e" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -72,12 +65,14 @@
         <name>_runAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._runAudio</qualifiedname>
         <briefdescription>
+<para>Audio de carrera del lobo. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="18" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="18" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="23" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a97068afa2887a0685ad87ca307fa9f46" compoundref="Wolf_8cs" startline="110" endline="132">Faeterna.scripts.Enemigos.Wolf.Wolf.OnDashTimerTimeout</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae9ce7028138fb1394fa87a660f78566f" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -86,12 +81,14 @@
         <name>_hitAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._hitAudio</qualifiedname>
         <briefdescription>
+<para>Audio de impacto al recibir daño. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="19" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="19" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="26" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a60ad4b4177a210985496899f2a4289d7" compoundref="Wolf_8cs" startline="161" endline="200">Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a74f496d6acc21571fd4494eceb6107de" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -100,12 +97,14 @@
         <name>_attackAudio</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._attackAudio</qualifiedname>
         <briefdescription>
+<para>Audio de ataque usado en reacciones especiales. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="20" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="20" bodyend="-1"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="29" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" compoundref="Wolf_8cs" startline="64" endline="105">Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -116,12 +115,15 @@
         <name>_EnterTree</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._EnterTree</qualifiedname>
         <briefdescription>
+<para>Ajusta la orientación inicial del sprite y del área de detección antes de entrar en escena. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="22" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="22" bodyend="29"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="34" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="34" bodyend="41"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" compoundref="Enemy_8cs" startline="52">Faeterna.Scripts.Enemigos.Enemy.dashDirection</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" compoundref="Enemy_8cs" startline="33">Faeterna.Scripts.Enemigos.Enemy.flipSprite</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -130,12 +132,19 @@
         <name>_Ready</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf._Ready</qualifiedname>
         <briefdescription>
+<para>Inicializa el timer de dash, enlaza eventos y prepara la animación inicial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="30" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="30" bodyend="42"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="46" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="46" bodyend="58"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a6b885e45be8d9c3b2c6d888a032f4851" compoundref="Wolf_8cs" startline="16">Faeterna.scripts.Enemigos.Wolf.Wolf._dashTimer</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a2d0a3d949d85c328f7d8d7cf6a2b3ede" compoundref="Wolf_8cs" startline="13">Faeterna.scripts.Enemigos.Wolf.Wolf.DashInterval</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a97068afa2887a0685ad87ca307fa9f46" compoundref="Wolf_8cs" startline="110" endline="132">Faeterna.scripts.Enemigos.Wolf.Wolf.OnDashTimerTimeout</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" compoundref="Enemy_8cs" startline="58">Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -148,12 +157,34 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>Lógica de física: gravedad, dash, knockback y movimiento principal. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo transcurrido desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="44" column="30" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="44" bodyend="84"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="64" column="26" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="64" bodyend="105"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a74f496d6acc21571fd4494eceb6107de" compoundref="Wolf_8cs" startline="29">Faeterna.scripts.Enemigos.Wolf.Wolf._attackAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a6b885e45be8d9c3b2c6d888a032f4851" compoundref="Wolf_8cs" startline="16">Faeterna.scripts.Enemigos.Wolf.Wolf._dashTimer</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" compoundref="Wolf_8cs" startline="19">Faeterna.scripts.Enemigos.Wolf.Wolf._isDashing</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" compoundref="Enemy_8cs" startline="27">Faeterna.Scripts.Enemigos.Enemy.dashDuration</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" compoundref="Enemy_8cs" startline="64">Faeterna.Scripts.Enemigos.Enemy.Gravity</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" compoundref="Enemy_8cs" startline="43">Faeterna.Scripts.Enemigos.Enemy.groundCheck</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" compoundref="Enemy_8cs" startline="55">Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a789b08da78ffc2505773fb2c41844904" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -166,12 +197,23 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Maneja el golpe del jugador sobre el hitbox de ataque del lobo. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que entró en el hitbox.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="110" column="21" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="110" bodyend="114"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="138" column="17" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="138" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a1663cb0e3c0a0773a79e8a45f02977c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -184,12 +226,24 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Registra al jugador como objetivo cuando entra en el área de detección. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cuerpo que entró en el área.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="166" column="21" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="166" bodyend="173"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="206" column="17" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="206" bodyend="212"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ab428edf6f3bffecaacc4b920cea6c72a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -202,12 +256,24 @@
           <declname>prota</declname>
         </param>
         <briefdescription>
+<para>Limpia el objetivo cuando el jugador sale del área de detección. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cuerpo que salió del área.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="175" column="21" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="175" bodyend="179"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="218" column="17" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="218" bodyend="222"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -218,12 +284,23 @@
         <name>OnDashTimerTimeout</name>
         <qualifiedname>Faeterna.scripts.Enemigos.Wolf.Wolf.OnDashTimerTimeout</qualifiedname>
         <briefdescription>
+<para>Llamado cuando el timer de dash expira; decide nueva dirección y arranca el dash. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="85" column="22" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="85" bodyend="108"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="110" column="18" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="110" bodyend="132"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" compoundref="Wolf_8cs" startline="19">Faeterna.scripts.Enemigos.Wolf.Wolf._isDashing</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a485f9479e396ceb4a024a8e8009c402e" compoundref="Wolf_8cs" startline="23">Faeterna.scripts.Enemigos.Wolf.Wolf._runAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" compoundref="Enemy_8cs" startline="52">Faeterna.Scripts.Enemigos.Enemy.dashDirection</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" compoundref="Enemy_8cs" startline="18">Faeterna.Scripts.Enemigos.Enemy.dashSpeed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" compoundref="Enemy_8cs" startline="43">Faeterna.Scripts.Enemigos.Enemy.groundCheck</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" compoundref="Wolf_8cs" startline="46" endline="58">Faeterna.scripts.Enemigos.Wolf.Wolf._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae25f2c7e50a69ce47b8df59343452934" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -236,12 +313,24 @@
           <declname>area</declname>
         </param>
         <briefdescription>
+<para>Procesa daño recibido por el lobo desde el hurtbox. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Área que colisionó con el hurtbox.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="115" column="22" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="115" bodyend="121"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="148" column="18" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="148" bodyend="154"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a60ad4b4177a210985496899f2a4289d7" compoundref="Wolf_8cs" startline="161" endline="200">Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a60ad4b4177a210985496899f2a4289d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -258,15 +347,49 @@
           <declname>globalPosition</declname>
         </param>
         <briefdescription>
+<para>Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de daño a aplicar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>globalPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición del atacante para calcular el knockback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="122" column="22" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="122" bodyend="164"/>
+        <location file="scripts/Enemigos/Wolf/Wolf.cs" line="161" column="18" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="161" bodyend="200"/>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae9ce7028138fb1394fa87a660f78566f" compoundref="Wolf_8cs" startline="26">Faeterna.scripts.Enemigos.Wolf.Wolf._hitAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" compoundref="Wolf_8cs" startline="19">Faeterna.scripts.Enemigos.Wolf.Wolf._isDashing</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" compoundref="Enemy_8cs" startline="49">Faeterna.Scripts.Enemigos.Enemy.attackHitBox</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" compoundref="Enemy_8cs" startline="40">Faeterna.Scripts.Enemigos.Enemy.detectionArea</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" compoundref="Enemy_8cs" startline="80" endline="87">Faeterna.Scripts.Enemigos.Enemy.hitShader</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" compoundref="Enemy_8cs" startline="46">Faeterna.Scripts.Enemigos.Enemy.hurtBox</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" compoundref="Enemy_8cs" startline="30">Faeterna.Scripts.Enemigos.Enemy.knockbackDuration</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" compoundref="Enemy_8cs" startline="55">Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" compoundref="Enemy_8cs" startline="58">Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae25f2c7e50a69ce47b8df59343452934" compoundref="Wolf_8cs" startline="148" endline="154">Faeterna.scripts.Enemigos.Wolf.Wolf.OnHurtBoxAreaEntered</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -304,7 +427,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Enemigos/Wolf/Wolf.cs" line="8" column="19" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="9" bodyend="182"/>
+    <location file="scripts/Enemigos/Wolf/Wolf.cs" line="10" column="17" bodyfile="scripts/Enemigos/Wolf/Wolf.cs" bodystart="11" bodyend="223"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a74f496d6acc21571fd4494eceb6107de" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_attackAudio</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a6b885e45be8d9c3b2c6d888a032f4851" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_dashTimer</name></member>
@@ -316,7 +439,6 @@
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ab428edf6f3bffecaacc4b920cea6c72a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_on_detection_area_body_exited</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_PhysicsProcess</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_Ready</name></member>
-      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a91a15a87eeddb4bc7269b1fdeb7266ab" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_rnd</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a485f9479e396ceb4a024a8e8009c402e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>_runAudio</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>animatedSprite</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Wolf::Wolf</scope><name>attackHitBox</name></member>

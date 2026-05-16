@@ -1,0 +1,13 @@
+<map id="Faeterna.Scripts.Menus.DeathScreen.ContinueFromLastSaveAsync" name="Faeterna.Scripts.Menus.DeathScreen.ContinueFromLastSaveAsync">
+<area shape="rect" id="Node000001" title="Carga la partida guardada más reciente del slot activo y vuelve a la escena asociada." alt="" coords="5,40,264,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a9e47db3cdaf412b366d9dcc745da21a6" title="Carga los datos del slot activo." alt="" coords="312,40,553,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,60,299,62,294,63,264,65"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="612,5,822,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,45,599,42,594,43,554,50"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a7b6e132b72b76191edc5c96fc993c51c" title="Reemplaza la lista de bosses derrotados (usado al cargar un guardado)." alt="" coords="601,75,833,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="553,74,588,81,583,81,553,80"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#af41c20346b77a4fac76819fcd9943a78" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="881,5,1092,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="823,25,869,28,863,28,823,30"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="1140,5,1350,50"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1092,25,1126,28,1121,28,1092,30"/>
+</map>

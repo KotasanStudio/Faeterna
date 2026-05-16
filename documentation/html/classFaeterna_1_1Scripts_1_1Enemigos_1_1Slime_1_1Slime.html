@@ -203,6 +203,33 @@ ShaderMaterial&#160;</td><td class="memItemRight"><b>shaderMaterial</b></td></tr
 Node2D&#160;</td><td class="memItemRight"><b>target</b> = null</td></tr>
 <tr class="memdesc:a8558163363dba83e93edcf096a6d2f7d inherit pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al objetivo actual del enemigo (generalmente el jugador). Es null si no hay objetivo. <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afc1107145a1b311236ec40487d74a6c8" id="r_afc1107145a1b311236ec40487d74a6c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc1107145a1b311236ec40487d74a6c8">OnJumpTimerTimeout</a> ()</td></tr>
+<tr class="memdesc:afc1107145a1b311236ec40487d74a6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el timeout del timer de saltos.  <br /></td></tr>
+<tr class="memitem:ae53963ac3e315f582b63477a32fc8fa4" id="r_ae53963ac3e315f582b63477a32fc8fa4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae53963ac3e315f582b63477a32fc8fa4">OnHurtBoxAreaEntered</a> (Area2D area)</td></tr>
+<tr class="memdesc:ae53963ac3e315f582b63477a32fc8fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque.  <br /></td></tr>
+<tr class="memitem:ab3ca6e40133dbe96f57af363080fc6e6" id="r_ab3ca6e40133dbe96f57af363080fc6e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab3ca6e40133dbe96f57af363080fc6e6">TakeDamage</a> (int v, Vector2 globalPosition)</td></tr>
+<tr class="memdesc:ab3ca6e40133dbe96f57af363080fc6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5b277ad160c4b56dd67cb8fad8727abd" id="r_a5b277ad160c4b56dd67cb8fad8727abd"><td class="memItemLeft"><a id="a5b277ad160c4b56dd67cb8fad8727abd" name="a5b277ad160c4b56dd67cb8fad8727abd"></a>
+Timer&#160;</td><td class="memItemRight"><b>_jumpTimer</b></td></tr>
+<tr class="memdesc:a5b277ad160c4b56dd67cb8fad8727abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que controla los saltos periódicos del slime. <br /></td></tr>
+<tr class="memitem:a7eace498406eb91a402bf3a700e6ea3b" id="r_a7eace498406eb91a402bf3a700e6ea3b"><td class="memItemLeft"><a id="a7eace498406eb91a402bf3a700e6ea3b" name="a7eace498406eb91a402bf3a700e6ea3b"></a>
+bool&#160;</td><td class="memItemRight"><b>_isJumping</b> = false</td></tr>
+<tr class="memdesc:a7eace498406eb91a402bf3a700e6ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el slime está actualmente en el aire saltando. <br /></td></tr>
+<tr class="memitem:a81a7603c8084dee81c4e196e99235215" id="r_a81a7603c8084dee81c4e196e99235215"><td class="memItemLeft"><a id="a81a7603c8084dee81c4e196e99235215" name="a81a7603c8084dee81c4e196e99235215"></a>
+int&#160;</td><td class="memItemRight"><b>_jumpDirection</b> = 1</td></tr>
+<tr class="memdesc:a81a7603c8084dee81c4e196e99235215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección del siguiente salto (alterna entre -1 y 1 cuando no hay objetivo). <br /></td></tr>
+<tr class="memitem:a8ea65977a05b1d19e936fa952262521d" id="r_a8ea65977a05b1d19e936fa952262521d"><td class="memItemLeft"><a id="a8ea65977a05b1d19e936fa952262521d" name="a8ea65977a05b1d19e936fa952262521d"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_jumpAudio</b></td></tr>
+<tr class="memdesc:a8ea65977a05b1d19e936fa952262521d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de salto del slime. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:ae4c57ee715b977a1c8b7111896184281" id="r_ae4c57ee715b977a1c8b7111896184281"><td class="memItemLeft"><a id="ae4c57ee715b977a1c8b7111896184281" name="ae4c57ee715b977a1c8b7111896184281"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_hitAudio</b></td></tr>
+<tr class="memdesc:ae4c57ee715b977a1c8b7111896184281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de daño del slime. Se asigna desde el editor. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
@@ -418,9 +445,176 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_af93780d4cfb7086dcabfc853370a19a8_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_af93780d4cfb7086dcabfc853370a19a8_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_af93780d4cfb7086dcabfc853370a19a8_cgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_af93780d4cfb7086dcabfc853370a19a8_cgraph">
-<area shape="rect" title="Inicialización del slime." alt="" coords="5,5,204,50"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="252,5,450,50"/>
-<area shape="poly" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+<area shape="rect" title="Inicialización del slime." alt="" coords="5,45,204,90"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#afc1107145a1b311236ec40487d74a6c8" title="Maneja el timeout del timer de saltos." alt="" coords="252,15,496,59"/>
+<area shape="poly" title=" " alt="" coords="203,54,239,52,234,53,204,59"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="544,75,742,119"/>
+<area shape="poly" title=" " alt="" coords="204,70,529,88,528,93,204,76"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="544,5,742,50"/>
+<area shape="poly" title=" " alt="" coords="496,30,531,31,526,32,497,35"/>
+<area shape="poly" title=" " alt="" coords="477,57,531,72,526,71,477,63"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae53963ac3e315f582b63477a32fc8fa4" name="ae53963ac3e315f582b63477a32fc8fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53963ac3e315f582b63477a32fc8fa4">&#9670;&#160;</a></span>OnHurtBoxAreaEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Enemigos.Slime.Slime.OnHurtBoxAreaEntered </td>
+          <td>(</td>
+          <td class="paramtype">Area2D</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque. </p>
+<p>Aplica daño al slime si es golpeado por el jugador o un proyectil.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Área que colisionó con el hurtbox.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ae53963ac3e315f582b63477a32fc8fa4_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ae53963ac3e315f582b63477a32fc8fa4_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ae53963ac3e315f582b63477a32fc8fa4_cgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ae53963ac3e315f582b63477a32fc8fa4_cgraph">
+<area shape="rect" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,75,260,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#ab3ca6e40133dbe96f57af363080fc6e6" title="Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="308,75,506,119"/>
+<area shape="poly" title=" " alt="" coords="260,94,295,96,289,98,260,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="554,5,752,50"/>
+<area shape="poly" title=" " alt="" coords="488,71,554,55,559,54,490,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="554,75,752,119"/>
+<area shape="poly" title=" " alt="" coords="506,94,541,97,535,97,507,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="554,144,752,189"/>
+<area shape="poly" title=" " alt="" coords="489,117,559,139,554,139,489,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc1107145a1b311236ec40487d74a6c8" name="afc1107145a1b311236ec40487d74a6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1107145a1b311236ec40487d74a6c8">&#9670;&#160;</a></span>OnJumpTimerTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el timeout del timer de saltos. </p>
+<p>Si el jugador fue detectado, el slime salta hacia él. Si no, alterna saltando de lado a lado. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_cgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_cgraph">
+<area shape="rect" title="Maneja el timeout del timer de saltos." alt="" coords="5,40,250,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="298,5,496,50"/>
+<area shape="poly" title=" " alt="" coords="250,44,285,42,280,43,251,49"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="298,75,496,119"/>
+<area shape="poly" title=" " alt="" coords="250,75,285,82,280,82,250,81"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_icgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_afc1107145a1b311236ec40487d74a6c8_icgraph">
+<area shape="rect" title="Maneja el timeout del timer de saltos." alt="" coords="252,5,496,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#af93780d4cfb7086dcabfc853370a19a8" title="Inicialización del slime." alt="" coords="5,5,204,50"/>
+<area shape="poly" title=" " alt="" coords="233,28,204,30,204,25,239,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab3ca6e40133dbe96f57af363080fc6e6" name="ab3ca6e40133dbe96f57af363080fc6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ca6e40133dbe96f57af363080fc6e6">&#9670;&#160;</a></span>TakeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>globalPosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Cantidad de daño a aplicar.</td></tr>
+    <tr><td class="paramname">globalPosition</td><td>Posición del atacante, utilizada para determinar dirección del knockback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_cgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_cgraph">
+<area shape="rect" title="Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="5,75,204,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="252,5,450,50"/>
+<area shape="poly" title=" " alt="" coords="186,72,257,53,252,56,188,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="252,75,450,119"/>
+<area shape="poly" title=" " alt="" coords="204,94,238,96,233,98,205,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="252,144,450,189"/>
+<area shape="poly" title=" " alt="" coords="187,117,257,139,252,140,186,123"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_icgraph" id="aclassFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_ab3ca6e40133dbe96f57af363080fc6e6_icgraph">
+<area shape="rect" title="Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="308,5,506,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#ae53963ac3e315f582b63477a32fc8fa4" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,5,260,50"/>
+<area shape="poly" title=" " alt="" coords="289,28,260,30,260,25,295,28"/>
 </map>
 </div>
 

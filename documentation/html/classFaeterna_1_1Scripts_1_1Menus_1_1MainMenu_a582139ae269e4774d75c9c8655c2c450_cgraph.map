@@ -1,0 +1,16 @@
+<map id="Faeterna.Scripts.Menus.MainMenu._Ready" name="Faeterna.Scripts.Menus.MainMenu._Ready">
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,75,215,119"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#ae5b4952d833ee5881f7c2155e29db51d" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="263,5,472,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,72,270,53,265,56,197,77"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a2bcec9275f7a36e007450fa88f636acf" title="Función que se llama cuando se presiona el botón de inicio." alt="" coords="263,144,472,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,117,270,139,265,140,196,123"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a5d7b2b04a3d704b0e9d3670147061a4d" title="Función que se llama cuando se presiona el botón de ajustes." alt="" coords="263,75,472,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="215,94,250,96,245,98,216,100"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="520,75,730,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,48,528,70,522,70,453,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="453,141,522,124,528,123,454,146"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a7b47576d35d460a83fcab585445fce90" title="Función que establece el nivel de desenfoque del fondo del menú principal." alt="" coords="520,144,730,189"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="472,164,508,166,502,166,473,169"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="472,94,507,97,502,97,473,100"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="454,117,528,140,522,139,453,123"/>
+</map>

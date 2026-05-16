@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals" name="Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals">
+<area shape="rect" id="Node000001" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="5,5,211,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="259,5,465,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,25,246,27,240,28,211,30"/>
+</map>

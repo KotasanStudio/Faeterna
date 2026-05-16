@@ -10,12 +10,14 @@
         <name>Name</name>
         <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Name</qualifiedname>
         <briefdescription>
+<para>Nombre visible del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/ObjetoDescription.cs" line="153" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="153" bodyend="153"/>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="232" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="232" bodyend="232"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" compoundref="ObjetoDescription_8cs" startline="250" endline="256">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -24,12 +26,14 @@
         <name>AnimationPath</name>
         <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.AnimationPath</qualifiedname>
         <briefdescription>
+<para>Ruta del recurso gráfico/animación del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/ObjetoDescription.cs" line="154" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="154" bodyend="154"/>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="235" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="235" bodyend="235"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" compoundref="ObjetoDescription_8cs" startline="250" endline="256">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -38,12 +42,14 @@
         <name>Description</name>
         <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Description</qualifiedname>
         <briefdescription>
+<para>Descripción funcional del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/ObjetoDescription.cs" line="155" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="155" bodyend="155"/>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="238" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="238" bodyend="238"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" compoundref="ObjetoDescription_8cs" startline="250" endline="256">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</referencedby>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a56b83cb09889e7556b3fdd7bc140127d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -52,12 +58,14 @@
         <name>History</name>
         <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.History</qualifiedname>
         <briefdescription>
+<para>Lore o historia del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/ObjetoDescription.cs" line="156" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="156" bodyend="156"/>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="241" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="241" bodyend="241"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" compoundref="ObjetoDescription_8cs" startline="250" endline="256">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -84,19 +92,59 @@
           <declname>history</declname>
         </param>
         <briefdescription>
+<para>Crea una nueva entrada de item con sus textos y recurso asociado. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>animationPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta del recurso visual del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descripción del item.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>history</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Historia o lore del item.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/ObjetoDescription.cs" line="158" column="14" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="158" bodyend="164"/>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="250" column="14" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="250" bodyend="256"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" compoundref="ObjetoDescription_8cs" startline="235" endline="235">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.AnimationPath</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" compoundref="ObjetoDescription_8cs" startline="238" endline="238">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Description</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a56b83cb09889e7556b3fdd7bc140127d" compoundref="ObjetoDescription_8cs" startline="241" endline="241">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.History</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1ad26bd945aee4401413f5029050a09a12" compoundref="ObjetoDescription_8cs" startline="232" endline="232">Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Name</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Estructura interna con los datos cargados de cada item del CSV. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="scripts/Menus/ObjetoDescription.cs" line="151" column="12" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="152" bodyend="165"/>
+    <location file="scripts/Menus/ObjetoDescription.cs" line="229" column="12" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="230" bodyend="257"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>AnimationPath</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>Description</name></member>

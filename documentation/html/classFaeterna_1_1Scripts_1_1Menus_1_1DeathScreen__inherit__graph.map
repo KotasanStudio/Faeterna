@@ -1,5 +1,5 @@
 <map id="Faeterna.Scripts.Menus.DeathScreen" name="Faeterna.Scripts.Menus.DeathScreen">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,222,126"/>
+<area shape="rect" id="Node000001" title="Pantalla de muerte del juego." alt="" coords="5,81,222,126"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="79,5,148,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,47,116,81,111,79,112,51"/>
 </map>

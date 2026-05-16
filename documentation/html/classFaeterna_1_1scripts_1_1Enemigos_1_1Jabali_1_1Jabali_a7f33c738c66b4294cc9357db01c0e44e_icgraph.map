@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali.TakeDamage" name="Faeterna.scripts.Enemigos.Jabali.Jabali.TakeDamage">
+<area shape="rect" id="Node000001" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="306,5,503,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ae1ce58f7efdccb48575f47aaa3d66c6d" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,5,258,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,28,258,30,258,25,293,28"/>
+</map>

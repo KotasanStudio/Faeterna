@@ -116,18 +116,256 @@ Collaboration diagram for Faeterna.Scripts.Personaje.Shot:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98b95ad862c80e8e526b93ec24ec27e4" id="r_a98b95ad862c80e8e526b93ec24ec27e4"><td class="memItemLeft"><a id="a98b95ad862c80e8e526b93ec24ec27e4" name="a98b95ad862c80e8e526b93ec24ec27e4"></a>
-override void&#160;</td><td class="memItemRight"><b>_Ready</b> ()</td></tr>
-<tr class="memitem:ad1b39982e500a3646c78fba6a0396697" id="r_ad1b39982e500a3646c78fba6a0396697"><td class="memItemLeft"><a id="ad1b39982e500a3646c78fba6a0396697" name="ad1b39982e500a3646c78fba6a0396697"></a>
-override void&#160;</td><td class="memItemRight"><b>_Process</b> (double delta)</td></tr>
+<tr class="memitem:a98b95ad862c80e8e526b93ec24ec27e4" id="r_a98b95ad862c80e8e526b93ec24ec27e4"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a98b95ad862c80e8e526b93ec24ec27e4">_Ready</a> ()</td></tr>
+<tr class="memdesc:a98b95ad862c80e8e526b93ec24ec27e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">En el método _Ready se pueden realizar configuraciones iniciales para la bala, como asegurarse de que el nodo AnimatedSprite2D esté asignado correctamente y configurar cualquier animación o efecto visual necesario.  <br /></td></tr>
+<tr class="memitem:ad1b39982e500a3646c78fba6a0396697" id="r_ad1b39982e500a3646c78fba6a0396697"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#ad1b39982e500a3646c78fba6a0396697">_Process</a> (double delta)</td></tr>
+<tr class="memdesc:ad1b39982e500a3646c78fba6a0396697"><td class="mdescLeft">&#160;</td><td class="mdescRight">En el método _Process se maneja el movimiento de la bala.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2bdddfea2e2a8d9dd8265c80ff5d7303" id="r_a2bdddfea2e2a8d9dd8265c80ff5d7303"><td class="memItemLeft"><a id="a2bdddfea2e2a8d9dd8265c80ff5d7303" name="a2bdddfea2e2a8d9dd8265c80ff5d7303"></a>
-Vector2&#160;</td><td class="memItemRight"><b>Direction</b> = Vector2.Zero</td></tr>
+<tr class="memitem:a2bdddfea2e2a8d9dd8265c80ff5d7303" id="r_a2bdddfea2e2a8d9dd8265c80ff5d7303"><td class="memItemLeft">Vector2&#160;</td><td class="memItemRight"><a class="el" href="#a2bdddfea2e2a8d9dd8265c80ff5d7303">Direction</a> = Vector2.Zero</td></tr>
+<tr class="memdesc:a2bdddfea2e2a8d9dd8265c80ff5d7303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección en la que se mueve la bala.  <br /></td></tr>
 <tr class="memitem:a249a64cc206d50465270a5478e13c329" id="r_a249a64cc206d50465270a5478e13c329"><td class="memItemLeft"><a id="a249a64cc206d50465270a5478e13c329" name="a249a64cc206d50465270a5478e13c329"></a>
 float&#160;</td><td class="memItemRight"><b>ManaCost</b> = 20f</td></tr>
+<tr class="memdesc:a249a64cc206d50465270a5478e13c329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Costo de mana para disparar esta bala. Este valor se puede ajustar en el editor para equilibrar el juego. Un valor típico podría ser 20, pero se recomienda probar diferentes costos para encontrar el equilibrio adecuado entre el uso de habilidades y la gestión de recursos del jugador. Es importante que este costo sea lo suficientemente alto como para hacer que el jugador piense estratégicamente sobre cuándo usar su habilidad de disparo, pero no tan alto como para desincentivar su uso por completo. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7c292ad729364fba8adb7bba2d421966" id="r_a7c292ad729364fba8adb7bba2d421966"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c292ad729364fba8adb7bba2d421966">OnAreaEntered</a> (Area2D area)</td></tr>
+<tr class="memdesc:a7c292ad729364fba8adb7bba2d421966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles logic when another Area2D enters the monitored area.  <br /></td></tr>
+<tr class="memitem:a8babf0dada168b0bb193214a3833d277" id="r_a8babf0dada168b0bb193214a3833d277"><td class="memItemLeft"><a id="a8babf0dada168b0bb193214a3833d277" name="a8babf0dada168b0bb193214a3833d277"></a>
+void&#160;</td><td class="memItemRight"><b>OnBodyEntered</b> (Node body)</td></tr>
+<tr class="memdesc:a8babf0dada168b0bb193214a3833d277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina la bala al chocar con el terreno. <br /></td></tr>
+<tr class="memitem:ac94a38b212730645d238baa6249c7498" id="r_ac94a38b212730645d238baa6249c7498"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac94a38b212730645d238baa6249c7498">HandleCollision</a> (Node node)</td></tr>
+<tr class="memdesc:ac94a38b212730645d238baa6249c7498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles collision logic for both Area2D and PhysicsBody2D nodes.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a47dbbe76320c78394ae566719b6c9974" id="r_a47dbbe76320c78394ae566719b6c9974"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a47dbbe76320c78394ae566719b6c9974">Speed</a> = 450f</td></tr>
+<tr class="memdesc:a47dbbe76320c78394ae566719b6c9974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidad a la que se mueve la bala.  <br /></td></tr>
+<tr class="memitem:ab6068d84b5e8614d5901a8bdeacca465" id="r_ab6068d84b5e8614d5901a8bdeacca465"><td class="memItemLeft">AnimatedSprite2D&#160;</td><td class="memItemRight"><a class="el" href="#ab6068d84b5e8614d5901a8bdeacca465">_animatedSprite</a></td></tr>
+<tr class="memdesc:ab6068d84b5e8614d5901a8bdeacca465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al nodo AnimatedSprite2D que se usará para mostrar la animación de la bala.  <br /></td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ad1b39982e500a3646c78fba6a0396697" name="ad1b39982e500a3646c78fba6a0396697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b39982e500a3646c78fba6a0396697">&#9670;&#160;</a></span>_Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.Scripts.Personaje.Shot._Process </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>En el método _Process se maneja el movimiento de la bala. </p>
+<p>Se verifica si la dirección es diferente de cero para evitar movimientos innecesarios. Luego, se traduce la posición de la bala en función de su dirección, velocidad y el tiempo delta para asegurar un movimiento suave y consistente. Además, se ajusta la orientación del sprite de la bala según la dirección del disparo, volteándolo horizontalmente si se dispara hacia la izquierda. Es importante que este método esté bien implementado para garantizar que la bala se mueva correctamente y tenga una apariencia adecuada durante su trayectoria.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Tiempo en segundos desde el último frame. Este valor se utiliza para calcular el movimiento de la bala de manera independiente de la tasa de frames, asegurando que la velocidad de la bala sea consistente sin importar el rendimiento del juego. Es importante usar este valor para multiplicar la velocidad de la bala, ya que esto permitirá que el movimiento sea suave y fluido incluso en situaciones donde la tasa de frames pueda variar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98b95ad862c80e8e526b93ec24ec27e4" name="a98b95ad862c80e8e526b93ec24ec27e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b95ad862c80e8e526b93ec24ec27e4">&#9670;&#160;</a></span>_Ready()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.Scripts.Personaje.Shot._Ready </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>En el método _Ready se pueden realizar configuraciones iniciales para la bala, como asegurarse de que el nodo AnimatedSprite2D esté asignado correctamente y configurar cualquier animación o efecto visual necesario. </p>
+<p>También se pueden conectar señales para detectar colisiones con otros objetos, como el terreno o enemigos, lo que permitirá manejar la lógica de impacto y destrucción de la bala de manera adecuada. Es importante que este método esté bien implementado para garantizar que la bala funcione correctamente desde el momento en que es creada en el juego. </p>
+
+</div>
+</div>
+<a id="ac94a38b212730645d238baa6249c7498" name="ac94a38b212730645d238baa6249c7498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94a38b212730645d238baa6249c7498">&#9670;&#160;</a></span>HandleCollision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Personaje.Shot.HandleCollision </td>
+          <td>(</td>
+          <td class="paramtype">Node</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles collision logic for both Area2D and PhysicsBody2D nodes. </p>
+<p>If the collided node is part of the "Terreno" group or is named "Hurtbox", the bullet will be removed from the scene. This method centralizes collision handling to avoid code duplication between area and body collisions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The Node instance that has collided with the bullet. This can be either an Area2D or a PhysicsBody2D, depending on the type of collision detected. The method checks the groups and name of the node to determine if it should trigger the destruction of the bullet. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_ac94a38b212730645d238baa6249c7498_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_ac94a38b212730645d238baa6249c7498_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_ac94a38b212730645d238baa6249c7498_icgraph" id="aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_ac94a38b212730645d238baa6249c7498_icgraph">
+<area shape="rect" title="Handles collision logic for both Area2D and PhysicsBody2D nodes." alt="" coords="252,40,450,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#a7c292ad729364fba8adb7bba2d421966" title="Handles logic when another Area2D enters the monitored area." alt="" coords="5,5,204,50"/>
+<area shape="poly" title=" " alt="" coords="233,47,204,44,204,39,239,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#a8babf0dada168b0bb193214a3833d277" title="Elimina la bala al chocar con el terreno." alt="" coords="5,75,204,119"/>
+<area shape="poly" title=" " alt="" coords="233,79,205,86,204,80,239,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c292ad729364fba8adb7bba2d421966" name="a7c292ad729364fba8adb7bba2d421966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c292ad729364fba8adb7bba2d421966">&#9670;&#160;</a></span>OnAreaEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Personaje.Shot.OnAreaEntered </td>
+          <td>(</td>
+          <td class="paramtype">Area2D</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles logic when another Area2D enters the monitored area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>The Area2D instance that has entered the area. Cannot be null.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_a7c292ad729364fba8adb7bba2d421966_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_a7c292ad729364fba8adb7bba2d421966_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_a7c292ad729364fba8adb7bba2d421966_cgraph" id="aclassFaeterna_1_1Scripts_1_1Personaje_1_1Shot_a7c292ad729364fba8adb7bba2d421966_cgraph">
+<area shape="rect" title="Handles logic when another Area2D enters the monitored area." alt="" coords="5,5,204,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#ac94a38b212730645d238baa6249c7498" title="Handles collision logic for both Area2D and PhysicsBody2D nodes." alt="" coords="252,5,450,50"/>
+<area shape="poly" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="ab6068d84b5e8614d5901a8bdeacca465" name="ab6068d84b5e8614d5901a8bdeacca465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6068d84b5e8614d5901a8bdeacca465">&#9670;&#160;</a></span>_animatedSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimatedSprite2D Faeterna.Scripts.Personaje.Shot._animatedSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referencia al nodo AnimatedSprite2D que se usará para mostrar la animación de la bala. </p>
+<p>Se asigna en el editor y se utiliza para cambiar la orientación de la animación según la dirección del disparo. Es importante asegurarse de que el nodo AnimatedSprite2D esté correctamente configurado con las animaciones necesarias para que la bala se vea bien en movimiento. </p>
+
+</div>
+</div>
+<a id="a2bdddfea2e2a8d9dd8265c80ff5d7303" name="a2bdddfea2e2a8d9dd8265c80ff5d7303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bdddfea2e2a8d9dd8265c80ff5d7303">&#9670;&#160;</a></span>Direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 Faeterna.Scripts.Personaje.Shot.Direction = Vector2.Zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dirección en la que se mueve la bala. </p>
+<p>Se establece al crear la instancia de <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html">Shot</a> y determina hacia dónde se desplazará. Es importante normalizar este vector para asegurar que la velocidad de la bala sea consistente sin importar la dirección. Por ejemplo, si el jugador dispara hacia arriba, la dirección podría ser (0, -1), mientras que si dispara hacia abajo, sería (0, 1). Para disparar hacia la derecha, sería (1, 0) y hacia la izquierda (-1, 0). Si se desea permitir disparos en ángulos diagonales, se pueden usar valores como (0.707f, -0.707f) para un disparo hacia arriba a la derecha. </p>
+
+</div>
+</div>
+<a id="a47dbbe76320c78394ae566719b6c9974" name="a47dbbe76320c78394ae566719b6c9974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47dbbe76320c78394ae566719b6c9974">&#9670;&#160;</a></span>Speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Faeterna.Scripts.Personaje.Shot.Speed = 450f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Velocidad a la que se mueve la bala. </p>
+<p>Se puede ajustar en el editor para equilibrar el juego. Un valor típico podría ser 450, pero se recomienda probar diferentes velocidades para encontrar la que mejor se adapte al diseño del juego y a la sensación de disparo deseada. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Personaje/<b>Shot.cs</b></li>
 </ul>

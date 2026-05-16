@@ -1,7 +1,12 @@
 <map id="Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess" name="Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess">
-<area shape="rect" id="Node000001" title="Procesamiento de física cada frame." alt="" coords="5,40,213,85"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,5,459,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,45,248,43,243,44,214,51"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="261,75,459,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,74,248,81,243,81,213,79"/>
+<area shape="rect" id="Node000001" title="Procesamiento de física cada frame." alt="" coords="5,105,213,150"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="261,5,458,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,102,260,60,280,55,275,57,262,65,162,107"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,75,459,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,112,248,110,243,112,214,118"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="507,165,705,210"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,137,493,172,490,176,213,143"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#acd2f16ad872491cff430703eb9b3033d" title="Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático." alt="" coords="261,195,458,239"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="174,148,283,188,278,190,173,153"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="459,203,489,202,494,201,459,208"/>
 </map>

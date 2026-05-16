@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Personaje.Lira.RecoverMana" name="Faeterna.Scripts.Personaje.Lira.RecoverMana">
+<area shape="rect" id="Node000001" title="Recupera maná del personaje hasta el máximo permitido y actualiza la barra de la interfaz." alt="" coords="5,5,204,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a39c9cbf69eaee2fb7a16a1fd532cf958" title="Actualiza visualmente la barra de maná de la interfaz según el maná actual." alt="" coords="252,5,450,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility" name="Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility">
+<area shape="rect" id="Node000001" title="Muestra u oculta la ventana de descripción y, si se abre, carga el item indicado." alt="" coords="274,5,494,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html#ad05a2ce6bae20d9ef7c35a1ad55de9c6" title="Cierra la ventana cuando el jugador pulsa una tecla mientras está visible." alt="" coords="5,5,226,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,28,226,30,226,25,261,28"/>
+</map>

@@ -1,7 +1,18 @@
 <map id="Faeterna.Scripts.Menus.PauseMenu._Ready" name="Faeterna.Scripts.Menus.PauseMenu._Ready">
-<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,222,50"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2aa974e576c7c727daee624d37e31f5" title="Reanuda el juego desde el estado de pausa." alt="" coords="270,5,486,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,25,257,28,251,28,222,30"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="534,5,744,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,25,521,28,516,28,487,30"/>
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,133,222,178"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a8a13b30cf3c26b27265a10cdf1901c6a" title="Aplica el modo de proceso &quot;Always&quot; de forma recursiva a un nodo y todos sus hijos." alt="" coords="270,29,529,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,130,269,84,294,78,289,80,271,89,162,135"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a89164e3b7f3c3d72e9a845c8bdd288d1" title="Sale al menú principal desde el estado de pausa." alt="" coords="291,99,508,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="222,140,278,135,273,137,223,145"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#ae35a2929f144c500e6d316ac5d24cf09" title="Abre el menú de opciones dentro del menú de pausa." alt="" coords="291,168,508,213"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="222,166,278,175,273,176,223,171"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2aa974e576c7c727daee624d37e31f5" title="Reanuda el juego desde el estado de pausa." alt="" coords="291,237,508,282"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="161,176,271,223,294,232,289,232,269,227,160,181"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="345,28,344,19,353,10,371,5,399,3,430,5,450,14,444,14,429,10,399,8,372,10,356,15,349,21,350,30"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="580,168,790,213"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="495,141,578,164,573,164,494,147"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="508,188,567,190,562,191,508,193"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="494,234,573,217,578,216,495,239"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#ad618f504cc88bb82da4a09a925bd5506" title="Controla la visibilidad de la UI del jugador (corazones y barra de maná) al pausar y reanudar el jueg..." alt="" coords="577,237,793,282"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="508,257,564,260,559,260,508,262"/>
 </map>

@@ -145,6 +145,88 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3bb76d736ca9e636de7dda814e0c17e3 inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" id="r_a3bb76d736ca9e636de7dda814e0c17e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3">SetAnimation</a> (string animationName)</td></tr>
 <tr class="memdesc:a3bb76d736ca9e636de7dda814e0c17e3 inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reproduce una animación en el sprite del enemigo.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a424e40bdfff5b50b1297b75b3f1cc76d" id="r_a424e40bdfff5b50b1297b75b3f1cc76d"><td class="memItemLeft"><a id="a424e40bdfff5b50b1297b75b3f1cc76d" name="a424e40bdfff5b50b1297b75b3f1cc76d"></a>enum &#160;</td><td class="memItemRight"><a class="el" href="#a424e40bdfff5b50b1297b75b3f1cc76d">enemyDirection</a> { <b>Left</b> = -1
+, <b>Right</b> = 1
+ }</td></tr>
+<tr class="memdesc:a424e40bdfff5b50b1297b75b3f1cc76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeración para las direcciones del jabalí. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad2c27a413f5675e0f85f34813c888f0e" id="r_ad2c27a413f5675e0f85f34813c888f0e"><td class="memItemLeft">async void&#160;</td><td class="memItemRight"><a class="el" href="#ad2c27a413f5675e0f85f34813c888f0e">OnDashTimerTimeout</a> ()</td></tr>
+<tr class="memdesc:ad2c27a413f5675e0f85f34813c888f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el timeout del timer de dash automático.  <br /></td></tr>
+<tr class="memitem:acd2f16ad872491cff430703eb9b3033d" id="r_acd2f16ad872491cff430703eb9b3033d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd2f16ad872491cff430703eb9b3033d">StopDash</a> (ref Vector2 velocity)</td></tr>
+<tr class="memdesc:acd2f16ad872491cff430703eb9b3033d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático.  <br /></td></tr>
+<tr class="memitem:a9dffec2396c9e97ca2275969c9460a26" id="r_a9dffec2396c9e97ca2275969c9460a26"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9dffec2396c9e97ca2275969c9460a26">flipHJabali</a> (float directionX)</td></tr>
+<tr class="memdesc:a9dffec2396c9e97ca2275969c9460a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección.  <br /></td></tr>
+<tr class="memitem:ae1ce58f7efdccb48575f47aaa3d66c6d" id="r_ae1ce58f7efdccb48575f47aaa3d66c6d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae1ce58f7efdccb48575f47aaa3d66c6d">OnHurtBoxAreaEntered</a> (Area2D area)</td></tr>
+<tr class="memdesc:ae1ce58f7efdccb48575f47aaa3d66c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque.  <br /></td></tr>
+<tr class="memitem:a7f33c738c66b4294cc9357db01c0e44e" id="r_a7f33c738c66b4294cc9357db01c0e44e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f33c738c66b4294cc9357db01c0e44e">TakeDamage</a> (int v, Vector2 globalPosition)</td></tr>
+<tr class="memdesc:a7f33c738c66b4294cc9357db01c0e44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte.  <br /></td></tr>
+<tr class="memitem:a0029f0b5479b9223437b9ea7fdc3d698" id="r_a0029f0b5479b9223437b9ea7fdc3d698"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0029f0b5479b9223437b9ea7fdc3d698">OnDeathAnimationTimerTimeout</a> ()</td></tr>
+<tr class="memdesc:a0029f0b5479b9223437b9ea7fdc3d698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el timeout del timer de animación de muerte.  <br /></td></tr>
+<tr class="memitem:ad558297e0c21824865059793a4f33bc8" id="r_ad558297e0c21824865059793a4f33bc8"><td class="memItemLeft"><a id="ad558297e0c21824865059793a4f33bc8" name="ad558297e0c21824865059793a4f33bc8"></a>
+void&#160;</td><td class="memItemRight"><b>desactiveCollision</b> ()</td></tr>
+<tr class="memdesc:ad558297e0c21824865059793a4f33bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desactiva las colisiones del jabalí para que no pueda golpear ni recibir daño después de muerto. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a84de247f0973206d8d5ca4a51d035ac2" id="r_a84de247f0973206d8d5ca4a51d035ac2"><td class="memItemLeft"><a id="a84de247f0973206d8d5ca4a51d035ac2" name="a84de247f0973206d8d5ca4a51d035ac2"></a>
+float&#160;</td><td class="memItemRight"><b>_dashDuration</b> = 2f</td></tr>
+<tr class="memdesc:a84de247f0973206d8d5ca4a51d035ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración del dash del jabalí en segundos. <br /></td></tr>
+<tr class="memitem:a0dbfb473416bd64e637beaeebc7e25db" id="r_a0dbfb473416bd64e637beaeebc7e25db"><td class="memItemLeft"><a id="a0dbfb473416bd64e637beaeebc7e25db" name="a0dbfb473416bd64e637beaeebc7e25db"></a>
+bool&#160;</td><td class="memItemRight"><b>_isDashing</b> = false</td></tr>
+<tr class="memdesc:a0dbfb473416bd64e637beaeebc7e25db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jabalí está actualmente en estado de dash/carrera. <br /></td></tr>
+<tr class="memitem:a9619b3b0c83b3bca1a4f43289e6f9d05" id="r_a9619b3b0c83b3bca1a4f43289e6f9d05"><td class="memItemLeft"><a id="a9619b3b0c83b3bca1a4f43289e6f9d05" name="a9619b3b0c83b3bca1a4f43289e6f9d05"></a>
+bool&#160;</td><td class="memItemRight"><b>_isChargingAttack</b> = false</td></tr>
+<tr class="memdesc:a9619b3b0c83b3bca1a4f43289e6f9d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jabalí está cargando su ataque especial. <br /></td></tr>
+<tr class="memitem:ade1a94977301c6ee487d9200961aef7c" id="r_ade1a94977301c6ee487d9200961aef7c"><td class="memItemLeft"><a id="ade1a94977301c6ee487d9200961aef7c" name="ade1a94977301c6ee487d9200961aef7c"></a>
+bool&#160;</td><td class="memItemRight"><b>_isWall</b> = true</td></tr>
+<tr class="memdesc:ade1a94977301c6ee487d9200961aef7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jabalí está contra una pared. <br /></td></tr>
+<tr class="memitem:aa67078eda6ad04ad01dd7de7d693029a" id="r_aa67078eda6ad04ad01dd7de7d693029a"><td class="memItemLeft"><a id="aa67078eda6ad04ad01dd7de7d693029a" name="aa67078eda6ad04ad01dd7de7d693029a"></a>
+int&#160;</td><td class="memItemRight"><b>_dashDirection</b> = 1</td></tr>
+<tr class="memdesc:aa67078eda6ad04ad01dd7de7d693029a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección actual del movimiento del jabalí (1 = derecha, -1 = izquierda). <br /></td></tr>
+<tr class="memitem:a69edd41f838f716c98d5d9ddb6ab85af" id="r_a69edd41f838f716c98d5d9ddb6ab85af"><td class="memItemLeft"><a id="a69edd41f838f716c98d5d9ddb6ab85af" name="a69edd41f838f716c98d5d9ddb6ab85af"></a>
+Node2D&#160;</td><td class="memItemRight"><b>_target</b> = null</td></tr>
+<tr class="memdesc:a69edd41f838f716c98d5d9ddb6ab85af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al objetivo actual del jabalí (el jugador si está detectado). <br /></td></tr>
+<tr class="memitem:a19099056adfd1a6d3b11e81fb4f961bc" id="r_a19099056adfd1a6d3b11e81fb4f961bc"><td class="memItemLeft"><a id="a19099056adfd1a6d3b11e81fb4f961bc" name="a19099056adfd1a6d3b11e81fb4f961bc"></a>
+float&#160;</td><td class="memItemRight"><b>_knockbackTimer</b> = 0f</td></tr>
+<tr class="memdesc:a19099056adfd1a6d3b11e81fb4f961bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporizador para controlar la duración del knockback. <br /></td></tr>
+<tr class="memitem:a736b63452228689f39ec9e4da0c06211" id="r_a736b63452228689f39ec9e4da0c06211"><td class="memItemLeft"><a id="a736b63452228689f39ec9e4da0c06211" name="a736b63452228689f39ec9e4da0c06211"></a>
+ShaderMaterial&#160;</td><td class="memItemRight"><b>_shaderMaterial</b></td></tr>
+<tr class="memdesc:a736b63452228689f39ec9e4da0c06211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material de shader utilizado para efectos visuales de daño. <br /></td></tr>
+<tr class="memitem:ac6a544662d0d90f936b26e0f94c6815c" id="r_ac6a544662d0d90f936b26e0f94c6815c"><td class="memItemLeft"><a id="ac6a544662d0d90f936b26e0f94c6815c" name="ac6a544662d0d90f936b26e0f94c6815c"></a>
+<a class="el" href="#a424e40bdfff5b50b1297b75b3f1cc76d">enemyDirection</a>&#160;</td><td class="memItemRight"><b>_currentDirection</b> = enemyDirection.Right</td></tr>
+<tr class="memdesc:ac6a544662d0d90f936b26e0f94c6815c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección inicial del jabalí. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:a372baaf3038a55d19b4f5ae81f342ef8" id="r_a372baaf3038a55d19b4f5ae81f342ef8"><td class="memItemLeft"><a id="a372baaf3038a55d19b4f5ae81f342ef8" name="a372baaf3038a55d19b4f5ae81f342ef8"></a>
+Timer&#160;</td><td class="memItemRight"><b>_loadAttackTimer</b></td></tr>
+<tr class="memdesc:a372baaf3038a55d19b4f5ae81f342ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que controla la duración de la carga de ataque antes del dash. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:a39549c5627b3705ad663b74d965b0550" id="r_a39549c5627b3705ad663b74d965b0550"><td class="memItemLeft"><a id="a39549c5627b3705ad663b74d965b0550" name="a39549c5627b3705ad663b74d965b0550"></a>
+Timer&#160;</td><td class="memItemRight"><b>_deathAnimationTimer</b></td></tr>
+<tr class="memdesc:a39549c5627b3705ad663b74d965b0550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que espera a que la animación de muerte termine antes de eliminar el nodo. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:aefa2fa3561b0c5328aa2e8da3333f72b" id="r_aefa2fa3561b0c5328aa2e8da3333f72b"><td class="memItemLeft"><a id="aefa2fa3561b0c5328aa2e8da3333f72b" name="aefa2fa3561b0c5328aa2e8da3333f72b"></a>
+Timer&#160;</td><td class="memItemRight"><b>_dashTimer</b></td></tr>
+<tr class="memdesc:aefa2fa3561b0c5328aa2e8da3333f72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que controla el intervalo de dashes automáticos cuando no hay objetivo. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:a0225e5fe03d89aa0fba9951619b22f83" id="r_a0225e5fe03d89aa0fba9951619b22f83"><td class="memItemLeft"><a id="a0225e5fe03d89aa0fba9951619b22f83" name="a0225e5fe03d89aa0fba9951619b22f83"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_runAudio</b></td></tr>
+<tr class="memdesc:a0225e5fe03d89aa0fba9951619b22f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de carrera del jabalí. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:a09643684ae9d06df5752d2f60075ea24" id="r_a09643684ae9d06df5752d2f60075ea24"><td class="memItemLeft"><a id="a09643684ae9d06df5752d2f60075ea24" name="a09643684ae9d06df5752d2f60075ea24"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_hitAudio</b></td></tr>
+<tr class="memdesc:a09643684ae9d06df5752d2f60075ea24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de impacto cuando el jabalí recibe daño. Se asigna desde el editor. <br /></td></tr>
+<tr class="memitem:ad1112c0ee212cc61bb7e4abaa7506d2a" id="r_ad1112c0ee212cc61bb7e4abaa7506d2a"><td class="memItemLeft"><a id="ad1112c0ee212cc61bb7e4abaa7506d2a" name="ad1112c0ee212cc61bb7e4abaa7506d2a"></a>
+bool&#160;</td><td class="memItemRight"><b>_isDead</b> = false</td></tr>
+<tr class="memdesc:ad1112c0ee212cc61bb7e4abaa7506d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el jabalí está muerto. <br /></td></tr>
+<tr class="memitem:a4d2d4e32a76abdab136ef42cf463974b" id="r_a4d2d4e32a76abdab136ef42cf463974b"><td class="memItemLeft"><a id="a4d2d4e32a76abdab136ef42cf463974b" name="a4d2d4e32a76abdab136ef42cf463974b"></a>
+Random&#160;</td><td class="memItemRight"><b>_rnd</b> = new()</td></tr>
+<tr class="memdesc:a4d2d4e32a76abdab136ef42cf463974b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador de números aleatorios utilizado para determinar dirección aleatoria. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ac8aca40e6195aaeeade9487610b2e8b1" id="r_ac8aca40e6195aaeeade9487610b2e8b1"><td class="memItemLeft"><a id="ac8aca40e6195aaeeade9487610b2e8b1" name="ac8aca40e6195aaeeade9487610b2e8b1"></a>
+const float&#160;</td><td class="memItemRight"><b>KnockbackDuration</b> = 0.2f</td></tr>
+<tr class="memdesc:ac8aca40e6195aaeeade9487610b2e8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duración fija del knockback en segundos. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
@@ -341,6 +423,16 @@ Here is the call graph for this function:</div>
 
 <p>Maneja el timeout del timer de carga de ataque. </p>
 <p>Detiene la carga y comienza el dash hacia el objetivo detectado (jugador). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_aa2fc026612e595fd81b9e51c5e584da3_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_aa2fc026612e595fd81b9e51c5e584da3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_aa2fc026612e595fd81b9e51c5e584da3_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_aa2fc026612e595fd81b9e51c5e584da3_cgraph">
+<area shape="rect" title="Maneja el timeout del timer de carga de ataque." alt="" coords="5,5,203,67"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="251,14,448,58"/>
+<area shape="poly" title=" " alt="" coords="203,34,238,36,232,36,203,39"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -380,11 +472,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a1ddcf17193f82ce7aa02f6f8ac2656b9_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a1ddcf17193f82ce7aa02f6f8ac2656b9_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a1ddcf17193f82ce7aa02f6f8ac2656b9_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a1ddcf17193f82ce7aa02f6f8ac2656b9_cgraph">
-<area shape="rect" title="Procesamiento de física cada frame." alt="" coords="5,40,213,85"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,5,459,50"/>
-<area shape="poly" title=" " alt="" coords="212,45,248,43,243,44,214,51"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="261,75,459,119"/>
-<area shape="poly" title=" " alt="" coords="213,74,248,81,243,81,213,79"/>
+<area shape="rect" title="Procesamiento de física cada frame." alt="" coords="5,105,213,150"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="261,5,458,50"/>
+<area shape="poly" title=" " alt="" coords="160,102,260,60,280,55,275,57,262,65,162,107"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,75,459,119"/>
+<area shape="poly" title=" " alt="" coords="212,112,248,110,243,112,214,118"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="507,165,705,210"/>
+<area shape="poly" title=" " alt="" coords="213,137,493,172,490,176,213,143"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#acd2f16ad872491cff430703eb9b3033d" title="Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático." alt="" coords="261,195,458,239"/>
+<area shape="poly" title=" " alt="" coords="174,148,283,188,278,190,173,153"/>
+<area shape="poly" title=" " alt="" coords="459,203,489,202,494,201,459,208"/>
 </map>
 </div>
 
@@ -420,9 +517,299 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a051125c655bc29fd13c010ae4e4adac8_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a051125c655bc29fd13c010ae4e4adac8_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a051125c655bc29fd13c010ae4e4adac8_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a051125c655bc29fd13c010ae4e4adac8_cgraph">
-<area shape="rect" title="Inicialización del jabalí." alt="" coords="5,5,203,50"/>
+<area shape="rect" title="Inicialización del jabalí." alt="" coords="5,40,203,85"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="251,5,448,50"/>
+<area shape="poly" title=" " alt="" coords="203,46,239,43,233,44,204,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,75,449,119"/>
+<area shape="poly" title=" " alt="" coords="203,74,238,81,232,81,203,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9dffec2396c9e97ca2275969c9460a26" name="a9dffec2396c9e97ca2275969c9460a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dffec2396c9e97ca2275969c9460a26">&#9670;&#160;</a></span>flipHJabali()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Jabali.Jabali.flipHJabali </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>directionX</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">directionX</td><td>Dirección horizontal (positiva = derecha, negativa = izquierda).</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a9dffec2396c9e97ca2275969c9460a26_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a9dffec2396c9e97ca2275969c9460a26_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a9dffec2396c9e97ca2275969c9460a26_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a9dffec2396c9e97ca2275969c9460a26_icgraph">
+<area shape="rect" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="306,160,503,205"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#aa2fc026612e595fd81b9e51c5e584da3" title="Maneja el timeout del timer de carga de ataque." alt="" coords="33,5,230,67"/>
+<area shape="poly" title=" " alt="" coords="362,151,314,116,256,81,231,69,230,64,259,76,316,112,367,150"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="28,91,235,136"/>
+<area shape="poly" title=" " alt="" coords="296,157,222,139,222,134,301,155"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a051125c655bc29fd13c010ae4e4adac8" title="Inicialización del jabalí." alt="" coords="33,160,230,205"/>
+<area shape="poly" title=" " alt="" coords="288,184,231,185,230,180,293,182"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ad2c27a413f5675e0f85f34813c888f0e" title="Maneja el timeout del timer de dash automático." alt="" coords="10,230,253,274"/>
+<area shape="poly" title=" " alt="" coords="296,211,223,232,221,227,301,208"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ae1ce58f7efdccb48575f47aaa3d66c6d" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,299,258,344"/>
+<area shape="poly" title=" " alt="" coords="368,214,317,255,259,289,230,301,228,296,256,284,314,250,363,217"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2c27a413f5675e0f85f34813c888f0e" name="ad2c27a413f5675e0f85f34813c888f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c27a413f5675e0f85f34813c888f0e">&#9670;&#160;</a></span>OnDashTimerTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">async void Faeterna.scripts.Enemigos.Jabali.Jabali.OnDashTimerTimeout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el timeout del timer de dash automático. </p>
+<p>Inicia el dash, espera su duración, y luego determina la siguiente dirección (aleatorio o rebote en pared). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ad2c27a413f5675e0f85f34813c888f0e_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ad2c27a413f5675e0f85f34813c888f0e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ad2c27a413f5675e0f85f34813c888f0e_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ad2c27a413f5675e0f85f34813c888f0e_cgraph">
+<area shape="rect" title="Maneja el timeout del timer de dash automático." alt="" coords="5,5,248,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="296,5,493,50"/>
+<area shape="poly" title=" " alt="" coords="248,25,282,28,277,28,248,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0029f0b5479b9223437b9ea7fdc3d698" name="a0029f0b5479b9223437b9ea7fdc3d698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0029f0b5479b9223437b9ea7fdc3d698">&#9670;&#160;</a></span>OnDeathAnimationTimerTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Jabali.Jabali.OnDeathAnimationTimerTimeout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el timeout del timer de animación de muerte. </p>
+<p>Elimina el nodo del jabalí. </p>
+
+</div>
+</div>
+<a id="ae1ce58f7efdccb48575f47aaa3d66c6d" name="ae1ce58f7efdccb48575f47aaa3d66c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ce58f7efdccb48575f47aaa3d66c6d">&#9670;&#160;</a></span>OnHurtBoxAreaEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Jabali.Jabali.OnHurtBoxAreaEntered </td>
+          <td>(</td>
+          <td class="paramtype">Area2D</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque. </p>
+<p>Aplica knockback y daño al jabalí si es golpeado por el jugador o un proyectil.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Área que colisionó con el hurtbox.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ae1ce58f7efdccb48575f47aaa3d66c6d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ae1ce58f7efdccb48575f47aaa3d66c6d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ae1ce58f7efdccb48575f47aaa3d66c6d_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_ae1ce58f7efdccb48575f47aaa3d66c6d_cgraph">
+<area shape="rect" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,75,258,119"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="306,40,503,85"/>
+<area shape="poly" title=" " alt="" coords="257,78,293,76,288,78,259,83"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a7f33c738c66b4294cc9357db01c0e44e" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="306,109,503,154"/>
+<area shape="poly" title=" " alt="" coords="258,110,293,117,288,118,258,116"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ad558297e0c21824865059793a4f33bc8" title="Desactiva las colisiones del jabalí para que no pueda golpear ni recibir daño después de muerto." alt="" coords="551,5,771,50"/>
+<area shape="poly" title=" " alt="" coords="476,106,502,95,525,77,550,60,561,57,566,55,552,65,528,82,504,99,478,111"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="562,75,760,119"/>
+<area shape="poly" title=" " alt="" coords="503,116,549,112,544,113,504,121"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="562,144,760,189"/>
+<area shape="poly" title=" " alt="" coords="504,142,549,151,544,151,504,148"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="562,213,760,258"/>
+<area shape="poly" title=" " alt="" coords="450,152,552,199,572,208,566,207,550,203,449,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd2f16ad872491cff430703eb9b3033d" name="acd2f16ad872491cff430703eb9b3033d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2f16ad872491cff430703eb9b3033d">&#9670;&#160;</a></span>StopDash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Jabali.Jabali.StopDash </td>
+          <td>(</td>
+          <td class="paramtype">ref Vector2</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>Velocidad actual del jabalí (se modifica por referencia).</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_cgraph">
+<area shape="rect" title="Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático." alt="" coords="5,5,203,50"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,5,449,50"/>
 <area shape="poly" title=" " alt="" coords="203,25,237,27,232,28,203,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_acd2f16ad872491cff430703eb9b3033d_icgraph">
+<area shape="rect" title="Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático." alt="" coords="261,5,458,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="5,5,213,50"/>
+<area shape="poly" title=" " alt="" coords="242,28,213,30,213,25,247,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f33c738c66b4294cc9357db01c0e44e" name="a7f33c738c66b4294cc9357db01c0e44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f33c738c66b4294cc9357db01c0e44e">&#9670;&#160;</a></span>TakeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Jabali.Jabali.TakeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>globalPosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Cantidad de daño a aplicar.</td></tr>
+    <tr><td class="paramname">globalPosition</td><td>Posición del atacante, utilizada para determinar dirección del knockback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_cgraph">
+<area shape="rect" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="5,109,203,154"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ad558297e0c21824865059793a4f33bc8" title="Desactiva las colisiones del jabalí para que no pueda golpear ni recibir daño después de muerto." alt="" coords="251,5,471,50"/>
+<area shape="poly" title=" " alt="" coords="148,107,250,60,271,54,266,57,252,65,150,111"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="262,75,460,119"/>
+<area shape="poly" title=" " alt="" coords="202,116,249,111,244,114,204,121"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="262,144,460,189"/>
+<area shape="poly" title=" " alt="" coords="203,142,249,150,244,152,204,148"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="262,213,460,258"/>
+<area shape="poly" title=" " alt="" coords="150,152,252,199,271,208,266,208,250,203,149,157"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_a7f33c738c66b4294cc9357db01c0e44e_icgraph">
+<area shape="rect" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="306,5,503,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ae1ce58f7efdccb48575f47aaa3d66c6d" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,5,258,50"/>
+<area shape="poly" title=" " alt="" coords="287,28,258,30,258,25,293,28"/>
 </map>
 </div>
 

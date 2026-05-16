@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Personaje.Shot.OnAreaEntered" name="Faeterna.Scripts.Personaje.Shot.OnAreaEntered">
+<area shape="rect" id="Node000001" title="Handles logic when another Area2D enters the monitored area." alt="" coords="5,5,204,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html#ac94a38b212730645d238baa6249c7498" title="Handles collision logic for both Area2D and PhysicsBody2D nodes." alt="" coords="252,5,450,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+</map>

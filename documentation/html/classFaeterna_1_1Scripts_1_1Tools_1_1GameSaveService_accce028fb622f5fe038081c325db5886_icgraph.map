@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot" name="Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot">
+<area shape="rect" id="Node000001" title="Define el slot activo asegurando que no sea negativo." alt="" coords="259,5,465,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,5,211,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,28,211,30,211,25,246,27"/>
+</map>

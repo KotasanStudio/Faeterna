@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage" name="Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage">
+<area shape="rect" id="Node000001" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="292,5,489,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#ae25f2c7e50a69ce47b8df59343452934" title="Procesa daño recibido por el lobo desde el hurtbox." alt="" coords="5,5,244,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,28,244,30,244,25,278,28"/>
+</map>

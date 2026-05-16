@@ -9,12 +9,12 @@ var annotated_dup =
           [ "Enemy", "classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html", "classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" ]
         ] ],
         [ "Mapa", "namespaceFaeterna_1_1Scripts_1_1Mapa.html", [
-          [ "Portal", "classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html", null ]
+          [ "Portal", "classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html", "classFaeterna_1_1Scripts_1_1Mapa_1_1Portal" ]
         ] ],
         [ "Menus", "namespaceFaeterna_1_1Scripts_1_1Menus.html", [
-          [ "DeathScreen", "classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html", null ],
+          [ "DeathScreen", "classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html", "classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen" ],
           [ "MainMenu", "classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html", "classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu" ],
-          [ "ObjetoDescription", "classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html", null ],
+          [ "ObjetoDescription", "classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html", "classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription" ],
           [ "OptionsMenu", "classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html", "classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu" ],
           [ "PauseMenu", "classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html", "classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu" ],
           [ "PlayMenu", "classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html", "classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu" ]
@@ -40,18 +40,18 @@ var annotated_dup =
           ] ],
           [ "Lira", "classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html", "classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" ],
           [ "LiraAnimationTree", "classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html", "classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree" ],
-          [ "Shot", "classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html", null ]
+          [ "Shot", "classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html", "classFaeterna_1_1Scripts_1_1Personaje_1_1Shot" ]
         ] ],
         [ "Tools", "namespaceFaeterna_1_1Scripts_1_1Tools.html", [
           [ "ButtonTools", "classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html", "classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" ],
-          [ "CheckPoint", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html", null ],
+          [ "CheckPoint", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html", "classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint" ],
           [ "GameData", "classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html", "classFaeterna_1_1Scripts_1_1Tools_1_1GameData" ],
           [ "PlayerSaveData", "classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html", "classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" ],
           [ "GameSaveService", "classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html", "classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" ],
           [ "Saves", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html", "classFaeterna_1_1Scripts_1_1Tools_1_1Saves" ]
         ] ],
         [ "Tutorial", "namespaceFaeterna_1_1Scripts_1_1Tutorial.html", [
-          [ "Turotial", "classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html", null ]
+          [ "Turotial", "classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html", "classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial" ]
         ] ]
       ] ],
       [ "scripts", "namespaceFaeterna_1_1scripts.html", [
@@ -60,17 +60,18 @@ var annotated_dup =
             [ "Jabali", "classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html", "classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali" ]
           ] ],
           [ "ReyJabali", "namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali.html", [
-            [ "ReyJabali", "classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html", null ]
+            [ "ReyJabali", "classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html", "classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali" ]
           ] ],
           [ "Wolf", "namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Wolf.html", [
-            [ "Wolf", "classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html", null ]
+            [ "Wolf", "classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html", "classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf" ]
           ] ]
         ] ],
         [ "Mapa", "namespaceFaeterna_1_1scripts_1_1Mapa.html", [
-          [ "Objeto", "classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html", null ]
+          [ "BossArea", "classFaeterna_1_1scripts_1_1Mapa_1_1BossArea.html", "classFaeterna_1_1scripts_1_1Mapa_1_1BossArea" ],
+          [ "Objeto", "classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html", "classFaeterna_1_1scripts_1_1Mapa_1_1Objeto" ]
         ] ],
         [ "Personaje", "namespaceFaeterna_1_1scripts_1_1Personaje.html", [
-          [ "TerrainParticles", "classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html", null ]
+          [ "TerrainParticles", "classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html", "classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles" ]
         ] ],
         [ "Tools", "namespaceFaeterna_1_1scripts_1_1Tools.html", [
           [ "CursorManager", "classFaeterna_1_1scripts_1_1Tools_1_1CursorManager.html", "classFaeterna_1_1scripts_1_1Tools_1_1CursorManager" ]
@@ -83,7 +84,6 @@ var annotated_dup =
       ] ]
     ] ],
     [ "Bosque", "classBosque.html", "classBosque" ],
-    [ "BossArea", "classBossArea.html", null ],
-    [ "LogoAnimationScene", "classLogoAnimationScene.html", null ],
-    [ "PantallaCarga", "classPantallaCarga.html", null ]
+    [ "LogoAnimationScene", "classLogoAnimationScene.html", "classLogoAnimationScene" ],
+    [ "PantallaCarga", "classPantallaCarga.html", "classPantallaCarga" ]
 ];

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.MainMenu.OnExitPressed" name="Faeterna.Scripts.Menus.MainMenu.OnExitPressed">
+<area shape="rect" id="Node000001" title="Función que se llama cuando se presiona el botón de salir." alt="" coords="263,5,472,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html#a582139ae269e4774d75c9c8655c2c450" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,215,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,28,215,30,215,25,250,27"/>
+</map>

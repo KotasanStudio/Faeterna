@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxSoundFXValueChanged" name="Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxSoundFXValueChanged">
+<area shape="rect" id="Node000001" title="Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox)." alt="" coords="5,5,289,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#ad2586d49c776a8cc6ec5661030f100a9" title="Normaliza un valor de volumen dado en porcentaje (0&#45;100) a decibelios (dB) para su uso con el sistema..." alt="" coords="337,5,564,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,25,324,28,319,28,289,30"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath" name="Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath">
+<area shape="rect" id="Node000001" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="522,105,732,150"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,99,473,65,441,53,441,48,475,60,564,98"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,75,474,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="504,114,475,112,474,107,509,113"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a9f504b1b72aa9131be6deb0327cfdcb1" title="Carga la textura de vista previa del slot desde el almacenamiento persistente." alt="" coords="5,105,216,150"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="504,131,474,134,264,134,216,133,216,128,264,129,474,129,509,131"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="264,195,474,239"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="549,155,436,197,435,192,544,156"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="246,112,217,118,216,113,251,110"/>
+</map>

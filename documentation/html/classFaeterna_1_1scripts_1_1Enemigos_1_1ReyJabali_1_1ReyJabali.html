@@ -93,12 +93,15 @@ $(function(){initNavTree('classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1R
   <div class="headertitle"><div class="title">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Boss Rey Jabalí.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Faeterna.scripts.Enemigos.ReyJabali.ReyJabali:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali__inherit__graph.png" border="0" usemap="#aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_inherit__map" id="aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_inherit__map">
-<area shape="rect" title=" " alt="" coords="6,174,203,218"/>
+<area shape="rect" title="Boss Rey Jabalí." alt="" coords="6,174,203,218"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
 <area shape="poly" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
 <area shape="rect" title=" " alt="" coords="37,5,172,33"/>
@@ -110,7 +113,7 @@ Collaboration diagram for Faeterna.scripts.Enemigos.ReyJabali.ReyJabali:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali__coll__graph.png" border="0" usemap="#aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_coll__map" id="aFaeterna_8scripts_8Enemigos_8ReyJabali_8ReyJabali_coll__map">
-<area shape="rect" title=" " alt="" coords="6,174,203,218"/>
+<area shape="rect" title="Boss Rey Jabalí." alt="" coords="6,174,203,218"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
 <area shape="poly" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
 <area shape="rect" title=" " alt="" coords="37,5,172,33"/>
@@ -122,22 +125,27 @@ Collaboration diagram for Faeterna.scripts.Enemigos.ReyJabali.ReyJabali:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adc7fad3f9485dfd1bdb700d34b484764" id="r_adc7fad3f9485dfd1bdb700d34b484764"><td class="memItemLeft"><a id="adc7fad3f9485dfd1bdb700d34b484764" name="adc7fad3f9485dfd1bdb700d34b484764"></a>
 delegate void&#160;</td><td class="memItemRight"><b>jabaliBossdeathEventHandler</b> ()</td></tr>
+<tr class="memdesc:adc7fad3f9485dfd1bdb700d34b484764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Señal emitida cuando el boss muere. <br /></td></tr>
 <tr class="memitem:ac083cbcf481cd1a97598198ecc46785e" id="r_ac083cbcf481cd1a97598198ecc46785e"><td class="memItemLeft"><a id="ac083cbcf481cd1a97598198ecc46785e" name="ac083cbcf481cd1a97598198ecc46785e"></a>
 override void&#160;</td><td class="memItemRight"><b>_EnterTree</b> ()</td></tr>
+<tr class="memdesc:ac083cbcf481cd1a97598198ecc46785e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captura la posición inicial al entrar en el árbol de escenas. <br /></td></tr>
 <tr class="memitem:adc469a70d453ae222683065680db364a" id="r_adc469a70d453ae222683065680db364a"><td class="memItemLeft"><a id="adc469a70d453ae222683065680db364a" name="adc469a70d453ae222683065680db364a"></a>
 override void&#160;</td><td class="memItemRight"><b>_Ready</b> ()</td></tr>
-<tr class="memitem:a30081eb34facf9757a4f0d8cb41e35f6" id="r_a30081eb34facf9757a4f0d8cb41e35f6"><td class="memItemLeft"><a id="a30081eb34facf9757a4f0d8cb41e35f6" name="a30081eb34facf9757a4f0d8cb41e35f6"></a>
-override void&#160;</td><td class="memItemRight"><b>_PhysicsProcess</b> (double delta)</td></tr>
+<tr class="memdesc:adc469a70d453ae222683065680db364a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa la dirección del boss, prepara el shader y fija la animación inicial. <br /></td></tr>
+<tr class="memitem:a30081eb34facf9757a4f0d8cb41e35f6" id="r_a30081eb34facf9757a4f0d8cb41e35f6"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a30081eb34facf9757a4f0d8cb41e35f6">_PhysicsProcess</a> (double delta)</td></tr>
+<tr class="memdesc:a30081eb34facf9757a4f0d8cb41e35f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control principal de física del boss: gravedad, persecución, regreso a casa y knockback.  <br /></td></tr>
 <tr class="memitem:aceb4eb400836b10f4f71a76c717191a6" id="r_aceb4eb400836b10f4f71a76c717191a6"><td class="memItemLeft"><a id="aceb4eb400836b10f4f71a76c717191a6" name="aceb4eb400836b10f4f71a76c717191a6"></a>
 void&#160;</td><td class="memItemRight"><b>_on_load_attack_timer_timeout</b> ()</td></tr>
+<tr class="memdesc:aceb4eb400836b10f4f71a76c717191a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando termina el tiempo de carga del ataque y decide si el boss corre o salta. <br /></td></tr>
 <tr class="memitem:a7984f5320c61b7798497c1b9f871f974" id="r_a7984f5320c61b7798497c1b9f871f974"><td class="memItemLeft"><a id="a7984f5320c61b7798497c1b9f871f974" name="a7984f5320c61b7798497c1b9f871f974"></a>
 void&#160;</td><td class="memItemRight"><b>_on_dash_timer_timeout</b> ()</td></tr>
-<tr class="memitem:a43995674c4503e2486553fb6675d6685" id="r_a43995674c4503e2486553fb6675d6685"><td class="memItemLeft"><a id="a43995674c4503e2486553fb6675d6685" name="a43995674c4503e2486553fb6675d6685"></a>
-void&#160;</td><td class="memItemRight"><b>_on_attack_hit_box_body_entered</b> (Node2D prota)</td></tr>
-<tr class="memitem:abd1d7e47cae1c289dbcaf152a410a451" id="r_abd1d7e47cae1c289dbcaf152a410a451"><td class="memItemLeft"><a id="abd1d7e47cae1c289dbcaf152a410a451" name="abd1d7e47cae1c289dbcaf152a410a451"></a>
-void&#160;</td><td class="memItemRight"><b>_on_boss_area_body_entered</b> (Node2D prota)</td></tr>
-<tr class="memitem:a2cd99703683d89950cd70f04e767504a" id="r_a2cd99703683d89950cd70f04e767504a"><td class="memItemLeft"><a id="a2cd99703683d89950cd70f04e767504a" name="a2cd99703683d89950cd70f04e767504a"></a>
-void&#160;</td><td class="memItemRight"><b>_on_boss_area_body_exited</b> (Node2D prota)</td></tr>
+<tr class="memdesc:a7984f5320c61b7798497c1b9f871f974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finaliza la fase de dash y prepara la siguiente carga del ataque. <br /></td></tr>
+<tr class="memitem:a43995674c4503e2486553fb6675d6685" id="r_a43995674c4503e2486553fb6675d6685"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a43995674c4503e2486553fb6675d6685">_on_attack_hit_box_body_entered</a> (Node2D prota)</td></tr>
+<tr class="memdesc:a43995674c4503e2486553fb6675d6685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica daño al jugador cuando entra en el hitbox de ataque del boss.  <br /></td></tr>
+<tr class="memitem:abd1d7e47cae1c289dbcaf152a410a451" id="r_abd1d7e47cae1c289dbcaf152a410a451"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd1d7e47cae1c289dbcaf152a410a451">_on_boss_area_body_entered</a> (Node2D prota)</td></tr>
+<tr class="memdesc:abd1d7e47cae1c289dbcaf152a410a451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la entrada del jugador en el área del boss y activa el combate.  <br /></td></tr>
+<tr class="memitem:a2cd99703683d89950cd70f04e767504a" id="r_a2cd99703683d89950cd70f04e767504a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2cd99703683d89950cd70f04e767504a">_on_boss_area_body_exited</a> (Node2D prota)</td></tr>
+<tr class="memdesc:a2cd99703683d89950cd70f04e767504a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecta la salida del jugador y prepara el regreso del boss a su posición inicial.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
 <tr class="memitem:a1cc6281dc7a2e398d1574ead8cf03f0a inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" id="r_a1cc6281dc7a2e398d1574ead8cf03f0a"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a1cc6281dc7a2e398d1574ead8cf03f0a">_Ready</a> ()</td></tr>
 <tr class="memdesc:a1cc6281dc7a2e398d1574ead8cf03f0a inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialización del nodo.  <br /></td></tr>
@@ -152,6 +160,7 @@ void&#160;</td><td class="memItemRight"><b>_on_boss_area_body_exited</b> (Node2D
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0c0d4e771a38f8d837e00a622a0411cf" id="r_a0c0d4e771a38f8d837e00a622a0411cf"><td class="memItemLeft"><a id="a0c0d4e771a38f8d837e00a622a0411cf" name="a0c0d4e771a38f8d837e00a622a0411cf"></a>
 float&#160;</td><td class="memItemRight"><b>WalkSpeed</b> = 150f</td></tr>
+<tr class="memdesc:a0c0d4e771a38f8d837e00a622a0411cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidad de caminata normal del boss. <br /></td></tr>
 <tr class="inherit_header pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
 <tr class="memitem:a090cb12274bfe5ea5c62af09240851f2 inherit pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" id="r_a090cb12274bfe5ea5c62af09240851f2"><td class="memItemLeft">
 int&#160;</td><td class="memItemRight"><b>health</b></td></tr>
@@ -202,6 +211,102 @@ ShaderMaterial&#160;</td><td class="memItemRight"><b>shaderMaterial</b></td></tr
 Node2D&#160;</td><td class="memItemRight"><b>target</b> = null</td></tr>
 <tr class="memdesc:a8558163363dba83e93edcf096a6d2f7d inherit pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al objetivo actual del enemigo (generalmente el jugador). Es null si no hay objetivo. <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a76dae4068f15654fdbfa1b3dbc465994" id="r_a76dae4068f15654fdbfa1b3dbc465994"><td class="memItemLeft">Vector2&#160;</td><td class="memItemRight"><a class="el" href="#a76dae4068f15654fdbfa1b3dbc465994">DoNextJump</a> ()</td></tr>
+<tr class="memdesc:a76dae4068f15654fdbfa1b3dbc465994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula el siguiente salto de la secuencia especial del boss.  <br /></td></tr>
+<tr class="memitem:ac906f0782347307c5528372a5e1b3188" id="r_ac906f0782347307c5528372a5e1b3188"><td class="memItemLeft"><a id="ac906f0782347307c5528372a5e1b3188" name="ac906f0782347307c5528372a5e1b3188"></a>
+void&#160;</td><td class="memItemRight"><b>FlipHJabali</b> ()</td></tr>
+<tr class="memdesc:ac906f0782347307c5528372a5e1b3188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltea el sprite del boss y actualiza su dirección horizontal. <br /></td></tr>
+<tr class="memitem:a907191ed3862a391ca40894c0916c6bf" id="r_a907191ed3862a391ca40894c0916c6bf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a907191ed3862a391ca40894c0916c6bf">OnHurtBoxAreaEntered</a> (Area2D area)</td></tr>
+<tr class="memdesc:a907191ed3862a391ca40894c0916c6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa el daño recibido por el boss desde su hurtbox.  <br /></td></tr>
+<tr class="memitem:aac2e48348915cd668255c0f3f5648271" id="r_aac2e48348915cd668255c0f3f5648271"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac2e48348915cd668255c0f3f5648271">TakeDamage</a> (int amount, Vector2 sourcePosition)</td></tr>
+<tr class="memdesc:aac2e48348915cd668255c0f3f5648271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica daño al boss y controla la transición a muerte o al knockback.  <br /></td></tr>
+<tr class="memitem:ae7fa933dbe29355fba9e6bd2712c335e" id="r_ae7fa933dbe29355fba9e6bd2712c335e"><td class="memItemLeft"><a id="ae7fa933dbe29355fba9e6bd2712c335e" name="ae7fa933dbe29355fba9e6bd2712c335e"></a>
+void&#160;</td><td class="memItemRight"><b>OnDeathAnimationTimerTimeout</b> ()</td></tr>
+<tr class="memdesc:ae7fa933dbe29355fba9e6bd2712c335e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina el nodo del boss cuando termina la animación de muerte. <br /></td></tr>
+<tr class="memitem:ac1b029d0f060e1e571d782e99aebfb92" id="r_ac1b029d0f060e1e571d782e99aebfb92"><td class="memItemLeft"><a id="ac1b029d0f060e1e571d782e99aebfb92" name="ac1b029d0f060e1e571d782e99aebfb92"></a>
+void&#160;</td><td class="memItemRight"><b>DesactiveCollision</b> ()</td></tr>
+<tr class="memdesc:ac1b029d0f060e1e571d782e99aebfb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desactiva las colisiones del boss para que no interactúe tras morir. <br /></td></tr>
+<tr class="memitem:a94fe431e6eb2d891d31cb502caf46c35" id="r_a94fe431e6eb2d891d31cb502caf46c35"><td class="memItemLeft"><a id="a94fe431e6eb2d891d31cb502caf46c35" name="a94fe431e6eb2d891d31cb502caf46c35"></a>
+void&#160;</td><td class="memItemRight"><b>moveToinitPosition</b> ()</td></tr>
+<tr class="memdesc:a94fe431e6eb2d891d31cb502caf46c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve al boss a su posición inicial si el jugador se aleja. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2baa3957f830ef113eb9a5280009756a" id="r_a2baa3957f830ef113eb9a5280009756a"><td class="memItemLeft"><a id="a2baa3957f830ef113eb9a5280009756a" name="a2baa3957f830ef113eb9a5280009756a"></a>
+ShaderMaterial&#160;</td><td class="memItemRight"><b>_shaderMaterial</b></td></tr>
+<tr class="memdesc:a2baa3957f830ef113eb9a5280009756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material del shader usado para el efecto visual de daño. <br /></td></tr>
+<tr class="memitem:abf215deb7f8ea8aa794980432f9e6637" id="r_abf215deb7f8ea8aa794980432f9e6637"><td class="memItemLeft"><a id="abf215deb7f8ea8aa794980432f9e6637" name="abf215deb7f8ea8aa794980432f9e6637"></a>
+bool&#160;</td><td class="memItemRight"><b>_isDashing</b></td></tr>
+<tr class="memdesc:abf215deb7f8ea8aa794980432f9e6637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el boss está actualmente dashing. <br /></td></tr>
+<tr class="memitem:ae17fc8bc739b4e1449a53dd464065649" id="r_ae17fc8bc739b4e1449a53dd464065649"><td class="memItemLeft"><a id="ae17fc8bc739b4e1449a53dd464065649" name="ae17fc8bc739b4e1449a53dd464065649"></a>
+bool&#160;</td><td class="memItemRight"><b>_isChargingAttack</b></td></tr>
+<tr class="memdesc:ae17fc8bc739b4e1449a53dd464065649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el boss está cargando un ataque. <br /></td></tr>
+<tr class="memitem:a2a4419eb87c10e376ae071aae31e9867" id="r_a2a4419eb87c10e376ae071aae31e9867"><td class="memItemLeft"><a id="a2a4419eb87c10e376ae071aae31e9867" name="a2a4419eb87c10e376ae071aae31e9867"></a>
+bool&#160;</td><td class="memItemRight"><b>_isDead</b></td></tr>
+<tr class="memdesc:a2a4419eb87c10e376ae071aae31e9867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el boss ya murió. <br /></td></tr>
+<tr class="memitem:a4372500ccef2b256aaad36a044b27e15" id="r_a4372500ccef2b256aaad36a044b27e15"><td class="memItemLeft"><a id="a4372500ccef2b256aaad36a044b27e15" name="a4372500ccef2b256aaad36a044b27e15"></a>
+bool&#160;</td><td class="memItemRight"><b>_jumped</b></td></tr>
+<tr class="memdesc:a4372500ccef2b256aaad36a044b27e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado auxiliar para detectar si el boss venía subiendo en el salto. <br /></td></tr>
+<tr class="memitem:ab55a963f20549e9e71fb85b5dab4d3a0" id="r_ab55a963f20549e9e71fb85b5dab4d3a0"><td class="memItemLeft"><a id="ab55a963f20549e9e71fb85b5dab4d3a0" name="ab55a963f20549e9e71fb85b5dab4d3a0"></a>
+bool&#160;</td><td class="memItemRight"><b>_falled</b></td></tr>
+<tr class="memdesc:ab55a963f20549e9e71fb85b5dab4d3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado auxiliar para detectar si el boss ya entró en fase de caída. <br /></td></tr>
+<tr class="memitem:a5b947bb724eb22bdbaba1643d6202520" id="r_a5b947bb724eb22bdbaba1643d6202520"><td class="memItemLeft"><a id="a5b947bb724eb22bdbaba1643d6202520" name="a5b947bb724eb22bdbaba1643d6202520"></a>
+int&#160;</td><td class="memItemRight"><b>_dashCount</b></td></tr>
+<tr class="memdesc:a5b947bb724eb22bdbaba1643d6202520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de dashes realizados antes de entrar en la fase de salto especial. <br /></td></tr>
+<tr class="memitem:aff0448fcc969f7e5b43fc362a056236b" id="r_aff0448fcc969f7e5b43fc362a056236b"><td class="memItemLeft"><a id="aff0448fcc969f7e5b43fc362a056236b" name="aff0448fcc969f7e5b43fc362a056236b"></a>
+int&#160;</td><td class="memItemRight"><b>_jumpCount</b></td></tr>
+<tr class="memdesc:aff0448fcc969f7e5b43fc362a056236b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de saltos ejecutados dentro de la secuencia especial. <br /></td></tr>
+<tr class="memitem:aa33e666b43c703aeb02960303d4aed43" id="r_aa33e666b43c703aeb02960303d4aed43"><td class="memItemLeft"><a id="aa33e666b43c703aeb02960303d4aed43" name="aa33e666b43c703aeb02960303d4aed43"></a>
+int&#160;</td><td class="memItemRight"><b>_actionsBeforeJump</b> = 3</td></tr>
+<tr class="memdesc:aa33e666b43c703aeb02960303d4aed43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cantidad de acciones antes de pasar al salto especial. <br /></td></tr>
+<tr class="memitem:a196df23836c1b1b3ffeb83ffc6cec444" id="r_a196df23836c1b1b3ffeb83ffc6cec444"><td class="memItemLeft"><a id="a196df23836c1b1b3ffeb83ffc6cec444" name="a196df23836c1b1b3ffeb83ffc6cec444"></a>
+bool&#160;</td><td class="memItemRight"><b>_isReturningHome</b></td></tr>
+<tr class="memdesc:a196df23836c1b1b3ffeb83ffc6cec444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el boss está volviendo a su posición inicial. <br /></td></tr>
+<tr class="memitem:aea9fe46fddc54246c61e2976f4fc2e57" id="r_aea9fe46fddc54246c61e2976f4fc2e57"><td class="memItemLeft"><a id="aea9fe46fddc54246c61e2976f4fc2e57" name="aea9fe46fddc54246c61e2976f4fc2e57"></a>
+float&#160;</td><td class="memItemRight"><b>_arrivalThreshold</b> = 10f</td></tr>
+<tr class="memdesc:aea9fe46fddc54246c61e2976f4fc2e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distancia mínima para considerar que el boss llegó a casa. <br /></td></tr>
+<tr class="memitem:a0ce343834131cd42f1f5e49086026a67" id="r_a0ce343834131cd42f1f5e49086026a67"><td class="memItemLeft"><a id="a0ce343834131cd42f1f5e49086026a67" name="a0ce343834131cd42f1f5e49086026a67"></a>
+int&#160;</td><td class="memItemRight"><b>_currentDirection</b></td></tr>
+<tr class="memdesc:a0ce343834131cd42f1f5e49086026a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirección horizontal actual del boss. <br /></td></tr>
+<tr class="memitem:acb6c7de4b492a3d2eda9de86c25f8734" id="r_acb6c7de4b492a3d2eda9de86c25f8734"><td class="memItemLeft"><a id="acb6c7de4b492a3d2eda9de86c25f8734" name="acb6c7de4b492a3d2eda9de86c25f8734"></a>
+Vector2&#160;</td><td class="memItemRight"><b>_initPosition</b></td></tr>
+<tr class="memdesc:acb6c7de4b492a3d2eda9de86c25f8734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posición inicial usada para volver a casa cuando el jugador se aleja. <br /></td></tr>
+<tr class="memitem:a64e53677b34d416da78f401ff46d0ad2" id="r_a64e53677b34d416da78f401ff46d0ad2"><td class="memItemLeft"><a id="a64e53677b34d416da78f401ff46d0ad2" name="a64e53677b34d416da78f401ff46d0ad2"></a>
+bool&#160;</td><td class="memItemRight"><b>_startFacingLeft</b></td></tr>
+<tr class="memdesc:a64e53677b34d416da78f401ff46d0ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el boss empieza mirando hacia la izquierda. <br /></td></tr>
+<tr class="memitem:adb9b6fe52eb4b7f213b3a9ef726855f8" id="r_adb9b6fe52eb4b7f213b3a9ef726855f8"><td class="memItemLeft"><a id="adb9b6fe52eb4b7f213b3a9ef726855f8" name="adb9b6fe52eb4b7f213b3a9ef726855f8"></a>
+Area2D&#160;</td><td class="memItemRight"><b>_bossArea</b></td></tr>
+<tr class="memdesc:adb9b6fe52eb4b7f213b3a9ef726855f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Área de detección del jugador. <br /></td></tr>
+<tr class="memitem:af3e847b5f6ad2e22bb0d880e0860f871" id="r_af3e847b5f6ad2e22bb0d880e0860f871"><td class="memItemLeft"><a id="af3e847b5f6ad2e22bb0d880e0860f871" name="af3e847b5f6ad2e22bb0d880e0860f871"></a>
+Area2D&#160;</td><td class="memItemRight"><b>_attackHitBox</b></td></tr>
+<tr class="memdesc:af3e847b5f6ad2e22bb0d880e0860f871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Área de ataque del boss. <br /></td></tr>
+<tr class="memitem:a047ded04396b988e6dca4e96ae36fb83" id="r_a047ded04396b988e6dca4e96ae36fb83"><td class="memItemLeft"><a id="a047ded04396b988e6dca4e96ae36fb83" name="a047ded04396b988e6dca4e96ae36fb83"></a>
+Area2D&#160;</td><td class="memItemRight"><b>_hurtBox</b></td></tr>
+<tr class="memdesc:a047ded04396b988e6dca4e96ae36fb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Área que recibe daño. <br /></td></tr>
+<tr class="memitem:a37b78081692d508a8c777c0a0f679f0e" id="r_a37b78081692d508a8c777c0a0f679f0e"><td class="memItemLeft"><a id="a37b78081692d508a8c777c0a0f679f0e" name="a37b78081692d508a8c777c0a0f679f0e"></a>
+Timer&#160;</td><td class="memItemRight"><b>_dashTimer</b></td></tr>
+<tr class="memdesc:a37b78081692d508a8c777c0a0f679f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que controla la duración del dash. <br /></td></tr>
+<tr class="memitem:aa42551f871183e0289f06865cee0916c" id="r_aa42551f871183e0289f06865cee0916c"><td class="memItemLeft"><a id="aa42551f871183e0289f06865cee0916c" name="aa42551f871183e0289f06865cee0916c"></a>
+Timer&#160;</td><td class="memItemRight"><b>_loadAttackTimer</b></td></tr>
+<tr class="memdesc:aa42551f871183e0289f06865cee0916c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que controla la carga del ataque. <br /></td></tr>
+<tr class="memitem:a089ae431c3830502f05a8455bf548117" id="r_a089ae431c3830502f05a8455bf548117"><td class="memItemLeft"><a id="a089ae431c3830502f05a8455bf548117" name="a089ae431c3830502f05a8455bf548117"></a>
+Timer&#160;</td><td class="memItemRight"><b>_deathAnimationTimer</b></td></tr>
+<tr class="memdesc:a089ae431c3830502f05a8455bf548117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que espera a que termine la animación de muerte. <br /></td></tr>
+<tr class="memitem:a55a79f9b9ee07f9e186fe72bc5f2a0e2" id="r_a55a79f9b9ee07f9e186fe72bc5f2a0e2"><td class="memItemLeft"><a id="a55a79f9b9ee07f9e186fe72bc5f2a0e2" name="a55a79f9b9ee07f9e186fe72bc5f2a0e2"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_jumpAudio</b></td></tr>
+<tr class="memdesc:a55a79f9b9ee07f9e186fe72bc5f2a0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido del salto. <br /></td></tr>
+<tr class="memitem:a20b303eb3f8fee04c7c76f1f102b7e16" id="r_a20b303eb3f8fee04c7c76f1f102b7e16"><td class="memItemLeft"><a id="a20b303eb3f8fee04c7c76f1f102b7e16" name="a20b303eb3f8fee04c7c76f1f102b7e16"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_hitAudio</b></td></tr>
+<tr class="memdesc:a20b303eb3f8fee04c7c76f1f102b7e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de daño recibido. <br /></td></tr>
+<tr class="memitem:ab915363e66a06b17d85c6ea7359f2218" id="r_ab915363e66a06b17d85c6ea7359f2218"><td class="memItemLeft"><a id="ab915363e66a06b17d85c6ea7359f2218" name="ab915363e66a06b17d85c6ea7359f2218"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_runAudio</b></td></tr>
+<tr class="memdesc:ab915363e66a06b17d85c6ea7359f2218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sonido de carrera. <br /></td></tr>
+<tr class="memitem:aeb1d2ad9761795ed7365271b74520430" id="r_aeb1d2ad9761795ed7365271b74520430"><td class="memItemLeft"><a id="aeb1d2ad9761795ed7365271b74520430" name="aeb1d2ad9761795ed7365271b74520430"></a>
+Random&#160;</td><td class="memItemRight"><b>_rnd</b> = new()</td></tr>
+<tr class="memdesc:aeb1d2ad9761795ed7365271b74520430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generador aleatorio usado para variar la secuencia de ataques. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
@@ -209,6 +314,325 @@ Additional Inherited Members</h2></td></tr>
 static float&#160;</td><td class="memItemRight"><b>Gravity</b><code> [get]</code></td></tr>
 <tr class="memdesc:aeac804e672801257ac64aa5bb21e8af2 inherit properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravedad obtenida del ProjectSettings, utilizada para la física del enemigo. <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Boss Rey Jabalí. </p>
+<p>Gestiona sus patrones de ataque, persecución, dash, salto especial y la muerte con señal para desbloquear recompensas. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a43995674c4503e2486553fb6675d6685" name="a43995674c4503e2486553fb6675d6685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43995674c4503e2486553fb6675d6685">&#9670;&#160;</a></span>_on_attack_hit_box_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_attack_hit_box_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aplica daño al jugador cuando entra en el hitbox de ataque del boss. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Nodo que entró en el hitbox.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd1d7e47cae1c289dbcaf152a410a451" name="abd1d7e47cae1c289dbcaf152a410a451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1d7e47cae1c289dbcaf152a410a451">&#9670;&#160;</a></span>_on_boss_area_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detecta la entrada del jugador en el área del boss y activa el combate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Cuerpo que entró en el área del boss.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_abd1d7e47cae1c289dbcaf152a410a451_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_abd1d7e47cae1c289dbcaf152a410a451_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_abd1d7e47cae1c289dbcaf152a410a451_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_abd1d7e47cae1c289dbcaf152a410a451_cgraph">
+<area shape="rect" title="Detecta la entrada del jugador en el área del boss y activa el combate." alt="" coords="5,5,203,67"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac906f0782347307c5528372a5e1b3188" title="Voltea el sprite del boss y actualiza su dirección horizontal." alt="" coords="251,14,472,58"/>
+<area shape="poly" title=" " alt="" coords="203,34,238,36,232,36,203,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2cd99703683d89950cd70f04e767504a" name="a2cd99703683d89950cd70f04e767504a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd99703683d89950cd70f04e767504a">&#9670;&#160;</a></span>_on_boss_area_body_exited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detecta la salida del jugador y prepara el regreso del boss a su posición inicial. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Cuerpo que salió del área del boss.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30081eb34facf9757a4f0d8cb41e35f6" name="a30081eb34facf9757a4f0d8cb41e35f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30081eb34facf9757a4f0d8cb41e35f6">&#9670;&#160;</a></span>_PhysicsProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Control principal de física del boss: gravedad, persecución, regreso a casa y knockback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Tiempo transcurrido desde el último frame.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a30081eb34facf9757a4f0d8cb41e35f6_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a30081eb34facf9757a4f0d8cb41e35f6_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a30081eb34facf9757a4f0d8cb41e35f6_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a30081eb34facf9757a4f0d8cb41e35f6_cgraph">
+<area shape="rect" title="Control principal de física del boss: gravedad, persecución, regreso a casa y knockback." alt="" coords="5,75,263,119"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac906f0782347307c5528372a5e1b3188" title="Voltea el sprite del boss y actualiza su dirección horizontal." alt="" coords="311,5,532,50"/>
+<area shape="poly" title=" " alt="" coords="229,71,314,53,309,55,231,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="322,75,520,119"/>
+<area shape="poly" title=" " alt="" coords="263,94,309,96,304,98,263,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="322,144,520,189"/>
+<area shape="poly" title=" " alt="" coords="230,117,314,139,309,140,230,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a76dae4068f15654fdbfa1b3dbc465994" name="a76dae4068f15654fdbfa1b3dbc465994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76dae4068f15654fdbfa1b3dbc465994">&#9670;&#160;</a></span>DoNextJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcula el siguiente salto de la secuencia especial del boss. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector de velocidad a aplicar al boss.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a76dae4068f15654fdbfa1b3dbc465994_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a76dae4068f15654fdbfa1b3dbc465994_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a76dae4068f15654fdbfa1b3dbc465994_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a76dae4068f15654fdbfa1b3dbc465994_icgraph">
+<area shape="rect" title="Calcula el siguiente salto de la secuencia especial del boss." alt="" coords="258,14,491,58"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aceb4eb400836b10f4f71a76c717191a6" title="Se llama cuando termina el tiempo de carga del ataque y decide si el boss corre o salta." alt="" coords="5,5,210,67"/>
+<area shape="poly" title=" " alt="" coords="239,36,210,39,210,34,245,36"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a907191ed3862a391ca40894c0916c6bf" name="a907191ed3862a391ca40894c0916c6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907191ed3862a391ca40894c0916c6bf">&#9670;&#160;</a></span>OnHurtBoxAreaEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered </td>
+          <td>(</td>
+          <td class="paramtype">Area2D</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Procesa el daño recibido por el boss desde su hurtbox. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Área que colisionó con el boss.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a907191ed3862a391ca40894c0916c6bf_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a907191ed3862a391ca40894c0916c6bf_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a907191ed3862a391ca40894c0916c6bf_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_a907191ed3862a391ca40894c0916c6bf_cgraph">
+<area shape="rect" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="5,101,258,162"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac906f0782347307c5528372a5e1b3188" title="Voltea el sprite del boss y actualiza su dirección horizontal." alt="" coords="313,75,534,119"/>
+<area shape="poly" title=" " alt="" coords="257,114,299,111,295,113,259,119"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aac2e48348915cd668255c0f3f5648271" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="306,144,541,189"/>
+<area shape="poly" title=" " alt="" coords="257,144,293,150,288,151,258,149"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac1b029d0f060e1e571d782e99aebfb92" title="Desactiva las colisiones del boss para que no interactúe tras morir." alt="" coords="589,5,861,50"/>
+<area shape="poly" title=" " alt="" coords="520,141,539,130,555,113,562,96,571,78,587,60,594,59,599,56,591,64,575,81,567,98,559,116,543,134,522,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="626,75,824,119"/>
+<area shape="poly" title=" " alt="" coords="523,141,613,122,608,124,525,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a369b1e5ebfc6cf172daa9384b40b4fee" title="Marca un boss como derrotado (persistible en el siguiente guardado)." alt="" coords="610,144,840,189"/>
+<area shape="poly" title=" " alt="" coords="541,164,597,166,592,167,542,169"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="626,213,824,258"/>
+<area shape="poly" title=" " alt="" coords="524,187,613,209,608,210,524,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="626,283,824,327"/>
+<area shape="poly" title=" " alt="" coords="455,187,516,228,590,268,614,279,608,278,588,273,513,233,454,192"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aac2e48348915cd668255c0f3f5648271" name="aac2e48348915cd668255c0f3f5648271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2e48348915cd668255c0f3f5648271">&#9670;&#160;</a></span>TakeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>sourcePosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aplica daño al boss y controla la transición a muerte o al knockback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>Cantidad de daño recibida.</td></tr>
+    <tr><td class="paramname">sourcePosition</td><td>Posición del atacante para calcular la dirección del knockback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_cgraph">
+<area shape="rect" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="5,144,241,189"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac1b029d0f060e1e571d782e99aebfb92" title="Desactiva las colisiones del boss para que no interactúe tras morir." alt="" coords="289,5,561,50"/>
+<area shape="poly" title=" " alt="" coords="153,141,213,100,288,60,308,54,304,57,290,65,216,104,156,145"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="326,75,524,119"/>
+<area shape="poly" title=" " alt="" coords="223,141,313,122,308,125,225,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a369b1e5ebfc6cf172daa9384b40b4fee" title="Marca un boss como derrotado (persistible en el siguiente guardado)." alt="" coords="310,144,540,189"/>
+<area shape="poly" title=" " alt="" coords="241,164,297,165,292,167,242,169"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="326,213,524,258"/>
+<area shape="poly" title=" " alt="" coords="224,187,313,209,308,210,224,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="326,283,524,327"/>
+<area shape="poly" title=" " alt="" coords="155,187,216,228,290,268,313,279,308,279,288,273,213,233,154,192"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_aac2e48348915cd668255c0f3f5648271_icgraph">
+<area shape="rect" title="Aplica daño al boss y controla la transición a muerte o al knockback." alt="" coords="306,14,541,58"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#a907191ed3862a391ca40894c0916c6bf" title="Procesa el daño recibido por el boss desde su hurtbox." alt="" coords="5,5,258,67"/>
+<area shape="poly" title=" " alt="" coords="288,36,258,39,258,34,293,36"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Enemigos/ReyJabali/<b>ReyJabali.cs</b></li>
 </ul>

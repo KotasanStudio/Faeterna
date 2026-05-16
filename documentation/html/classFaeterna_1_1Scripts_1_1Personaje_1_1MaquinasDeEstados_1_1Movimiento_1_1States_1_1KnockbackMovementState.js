@@ -4,5 +4,7 @@ var classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1
     [ "Exit", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#a5dc9e7c33d02fbb3662f051b662e2f09", null ],
     [ "HandleInput", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#aa6996062dd76283625bcc115615485c6", null ],
     [ "Ready", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#aa7f852ecdac4f6ac0fc5f6ea433e7422", null ],
-    [ "UpdatePhysics", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#a83a26784ffb24ee0c767ac45fe51b128", null ]
+    [ "UpdatePhysics", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#a83a26784ffb24ee0c767ac45fe51b128", null ],
+    [ "_isKnockbackActive", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#ae1e9323123002e91e9290364b0455c31", null ],
+    [ "_knockbackTimer", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState.html#a5973bce36a4ec2a708c67e20c4cf31df", null ]
 ];

@@ -1,23 +1,35 @@
 <map id="Faeterna.Scripts.Personaje.Lira" name="Faeterna.Scripts.Personaje.Lira">
-<area shape="rect" id="Node000001" title="Personaje principal del juego (Lira)." alt="" coords="700,188,923,216"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="263,5,398,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,20,474,26,541,37,611,56,678,82,716,106,751,134,801,188,796,187,747,138,713,110,675,87,609,61,540,43,473,31,414,25"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="176,58,485,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="501,109,589,126,677,147,732,166,781,187,776,187,730,171,676,152,588,131,501,115"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="38,125,94,153"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="107,129,177,116,174,120,110,133"/>
-<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html" title="Controlador del AnimationTree de Lira." alt="" coords="232,144,430,188"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="108,141,233,154,229,158,109,146"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="445,172,702,192,697,195,446,177"/>
-<area shape="rect" id="Node000006" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html" title=" " alt="" coords="232,213,429,258"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="444,234,557,232,676,224,747,216,742,217,677,229,557,238,445,240"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="5,221,127,249"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="141,233,234,234,229,237,142,238"/>
-<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title=" " alt="" coords="222,282,439,327"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="454,299,563,288,620,278,676,264,736,240,784,217,789,215,738,245,677,269,621,283,564,293,455,304"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="32,329,100,357"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="115,333,224,318,220,322,116,339"/>
-<area shape="rect" id="Node000010" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title=" " alt="" coords="220,352,441,396"/>
-<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="116,346,222,359,218,363,116,352"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="456,372,509,368,566,359,622,345,675,324,715,300,749,270,798,217,802,215,753,273,718,304,678,329,623,350,567,364,510,373,456,378"/>
+<area shape="rect" id="Node000001" title="Personaje principal del juego (Lira)." alt="" coords="1453,335,1675,363"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="263,210,398,238"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,216,547,210,722,208,917,212,1114,227,1204,239,1274,253,1430,297,1530,335,1525,335,1428,303,1273,258,1203,244,1113,232,917,217,722,213,548,216,414,221"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html" title="Personaje principal del juego (Lira)." alt="" coords="700,321,923,348"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="409,239,750,319,745,322,409,244"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="176,42,485,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="418,34,463,20,509,9,556,4,593,3,676,9,801,14,855,20,923,36,1005,60,1073,84,1184,135,1292,194,1430,270,1542,335,1537,335,1428,274,1289,199,1182,140,1071,89,1003,65,922,41,854,26,801,19,676,15,592,9,556,9,510,15,464,25,421,39"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="712,51,911,96"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="500,45,509,44,593,39,677,44,714,51,709,52,676,49,593,44,510,49,502,50"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="403,109,786,319,782,322,402,114"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="38,159,94,187"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,156,249,102,246,107,110,160"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="108,177,211,187,353,192,433,190,515,183,597,171,676,152,705,141,733,126,780,97,785,95,736,131,707,146,677,157,598,176,515,189,433,195,353,197,211,192,110,182"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html" title="Controlador del AnimationTree de Lira." alt="" coords="1138,296,1336,341"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="92,195,132,224,177,247,248,269,313,284,374,295,431,301,537,302,638,294,740,282,848,273,971,272,1114,285,1157,296,1151,296,1113,291,971,277,849,278,740,287,638,299,538,307,431,306,374,300,312,289,246,274,175,252,129,228,93,200"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="694,75,487,76,485,71,699,72"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="1352,327,1455,339,1450,339,1352,332"/>
+<area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="1155,345,1114,356,1059,360,1003,360,901,352,901,346,1003,355,1059,355,1113,350,1149,346"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="938,320,947,320,1140,318,1135,319,947,325,939,326"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html" title=" " alt="" coords="232,328,429,373"/>
+<area shape="poly" id="edge19_Node000001_Node000008" title=" " alt="" coords="444,360,580,372,747,383,930,389,1114,386,1292,374,1455,361,1450,362,1293,380,1114,392,930,394,747,388,580,377,445,365"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="445,344,702,337,697,339,445,350"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,337,127,364"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="141,348,234,349,229,352,143,353"/>
+<area shape="rect" id="Node000010" href="$classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title="Pantalla de muerte del juego." alt="" coords="222,503,439,548"/>
+<area shape="poly" id="edge20_Node000001_Node000010" title=" " alt="" coords="454,522,629,516,850,501,971,488,1094,471,1216,449,1335,423,1439,392,1523,364,1528,363,1440,397,1337,428,1217,455,1094,476,971,493,851,506,629,521,455,527"/>
+<area shape="poly" id="edge15_Node000007_Node000010" title=" " alt="" coords="454,508,564,484,621,466,675,443,712,421,746,394,795,350,800,348,749,398,715,425,678,447,623,471,566,489,455,514"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="32,481,100,508"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="116,498,224,511,220,514,116,503"/>
+<area shape="rect" id="Node000012" href="$classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title="Ventana de descripción de objetos y habilidades." alt="" coords="220,434,441,478"/>
+<area shape="poly" id="edge18_Node000012_Node000011" title=" " alt="" coords="115,485,222,470,218,474,116,490"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="456,451,756,442,935,433,1113,420,1225,408,1336,391,1492,364,1498,363,1336,396,1225,413,1114,425,935,438,756,447,456,457"/>
+<area shape="poly" id="edge17_Node000007_Node000012" title=" " alt="" coords="450,427,676,372,761,350,766,348,677,377,451,432"/>
 </map>

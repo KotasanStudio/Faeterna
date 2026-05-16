@@ -99,12 +99,12 @@ $(function(){initNavTree('hierarchy.html','',''); });
 <tr><td><img src="inherit_graph_0.png" border="0" usemap="#aArea2D" loading="lazy" alt=""/>
 <map name="aArea2D" id="aArea2D">
 <area shape="rect" title=" " alt="" coords="5,57,75,85"/>
-<area shape="rect" href="classBossArea.html" title=" " alt="" coords="195,5,278,33"/>
-<area shape="poly" title=" " alt="" coords="88,53,122,43,197,26,193,30,123,48,91,58"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html" title=" " alt="" coords="132,57,340,85"/>
-<area shape="poly" title=" " alt="" coords="90,69,134,70,129,72,91,74"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html" title=" " alt="" coords="123,109,350,137"/>
-<area shape="poly" title=" " alt="" coords="90,84,123,94,173,108,168,109,122,99,89,89"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html" title=" " alt="" coords="134,5,342,33"/>
+<area shape="poly" title=" " alt="" coords="88,53,122,43,174,32,169,35,123,48,91,58"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html" title=" " alt="" coords="124,57,352,85"/>
+<area shape="poly" title=" " alt="" coords="90,69,126,70,121,72,91,74"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea.html" title="Área de combate del boss." alt="" coords="123,109,353,137"/>
+<area shape="poly" title=" " alt="" coords="90,84,123,94,174,108,169,109,122,99,89,89"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" usemap="#aCharacterBody2D" loading="lazy" alt=""/>
@@ -118,20 +118,20 @@ $(function(){initNavTree('hierarchy.html','',''); });
 <area shape="poly" title=" " alt="" coords="364,100,458,60,493,50,488,52,460,65,366,105"/>
 <area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html" title="Jabalí enemigo con capacidad de ataque acelerado." alt="" coords="460,75,657,119"/>
 <area shape="poly" title=" " alt="" coords="414,114,462,110,457,111,415,119"/>
-<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html" title=" " alt="" coords="460,144,657,189"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html" title="Boss Rey Jabalí." alt="" coords="460,144,657,189"/>
 <area shape="poly" title=" " alt="" coords="414,144,462,153,457,153,415,150"/>
-<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html" title=" " alt="" coords="460,213,657,258"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html" title="Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño." alt="" coords="460,213,657,258"/>
 <area shape="poly" title=" " alt="" coords="398,158,412,164,437,181,460,199,487,213,482,212,458,203,434,186,410,169,397,163"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_2.png" border="0" usemap="#aControl" loading="lazy" alt=""/>
 <map name="aControl" id="aControl">
 <area shape="rect" title=" " alt="" coords="5,220,74,248"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title=" " alt="" coords="145,5,362,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html" title="Pantalla de muerte del juego." alt="" coords="145,5,362,50"/>
 <area shape="poly" title=" " alt="" coords="44,205,53,171,68,132,90,93,120,60,147,45,143,50,123,64,95,97,73,134,58,173,49,206"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu.html" title="Control que representa el menú principal del juego." alt="" coords="131,74,376,102"/>
 <area shape="poly" title=" " alt="" coords="49,205,77,156,96,131,120,111,144,100,141,104,123,115,100,135,81,159,54,207"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title=" " alt="" coords="143,125,364,170"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription.html" title="Ventana de descripción de objetos y habilidades." alt="" coords="143,125,364,170"/>
 <area shape="poly" title=" " alt="" coords="70,209,121,180,155,169,151,172,123,185,73,213"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html" title="Control que representa el menú de opciones del juego." alt="" coords="122,194,385,222"/>
 <area shape="poly" title=" " alt="" coords="88,226,139,220,135,224,90,231"/>
@@ -145,39 +145,49 @@ $(function(){initNavTree('hierarchy.html','',''); });
 <area shape="poly" title=" " alt="" coords="48,261,60,293,75,326,96,359,123,387,159,404,200,415,194,415,157,409,120,391,92,363,71,329,55,294,48,266"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8ButtonTools" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#aFaeterna_8scripts_8Mapa_8Objeto_8ItemData" loading="lazy" alt=""/>
+<map name="aFaeterna_8scripts_8Mapa_8Objeto_8ItemData" id="aFaeterna_8scripts_8Mapa_8Objeto_8ItemData">
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData.html" title="Representa los datos de un item cargados desde el CSV." alt="" coords="5,5,222,50"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#aFaeterna_8Scripts_8Menus_8ObjetoDescription_8ItemData" loading="lazy" alt=""/>
+<map name="aFaeterna_8Scripts_8Menus_8ObjetoDescription_8ItemData" id="aFaeterna_8Scripts_8Menus_8ObjetoDescription_8ItemData">
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html" title="Estructura interna con los datos cargados de cada item del CSV." alt="" coords="5,5,226,50"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8ButtonTools" loading="lazy" alt=""/>
 <map name="aFaeterna_8Scripts_8Tools_8ButtonTools" id="aFaeterna_8Scripts_8Tools_8ButtonTools">
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html" title="Utilidad estática que proporciona funcionalidades comunes para animaciones y efectos visuales en boto..." alt="" coords="5,5,216,50"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8GameData" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8GameData" loading="lazy" alt=""/>
 <map name="aFaeterna_8Scripts_8Tools_8GameData" id="aFaeterna_8Scripts_8Tools_8GameData">
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameData.html" title="Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena a..." alt="" coords="5,5,243,33"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8GameSaveService" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8GameSaveService" loading="lazy" alt=""/>
 <map name="aFaeterna_8Scripts_8Tools_8GameSaveService" id="aFaeterna_8Scripts_8Tools_8GameSaveService">
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html" title="Fachada de compatibilidad." alt="" coords="5,5,212,50"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8PlayerSaveData" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8PlayerSaveData" loading="lazy" alt=""/>
 <map name="aFaeterna_8Scripts_8Tools_8PlayerSaveData" id="aFaeterna_8Scripts_8Tools_8PlayerSaveData">
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData.html" title="Clase que contiene los datos específicos del jugador (Lira) que se guardan en una partida." alt="" coords="5,5,214,50"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8Saves" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#aFaeterna_8Scripts_8Tools_8Saves" loading="lazy" alt=""/>
 <map name="aFaeterna_8Scripts_8Tools_8Saves" id="aFaeterna_8Scripts_8Tools_8Saves">
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html" title="Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardad..." alt="" coords="5,5,212,33"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#aGpuParticles2D" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#aGpuParticles2D" loading="lazy" alt=""/>
 <map name="aGpuParticles2D" id="aGpuParticles2D">
 <area shape="rect" title=" " alt="" coords="5,14,127,42"/>
 <area shape="rect" href="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html" title=" " alt="" coords="175,5,372,50"/>
 <area shape="poly" title=" " alt="" coords="142,25,177,27,171,28,143,30"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#aNode" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#aNode" loading="lazy" alt=""/>
 <map name="aNode" id="aNode">
 <area shape="rect" title=" " alt="" coords="5,410,61,438"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html" title="Controlador del AnimationTree de Lira." alt="" coords="164,286,362,330"/>
@@ -212,7 +222,7 @@ $(function(){initNavTree('hierarchy.html','',''); });
 <area shape="poly" title=" " alt="" coords="377,469,401,480,420,496,437,518,449,540,455,562,458,584,455,628,445,672,435,716,432,759,434,781,441,802,452,824,468,845,485,859,507,872,502,871,482,864,464,849,447,826,436,804,429,782,426,759,430,715,440,671,449,628,453,584,450,563,444,542,433,521,416,499,398,484,378,474"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#aNode2D" loading="lazy" alt=""/>
+<tr><td><img src="inherit_graph_12.png" border="0" usemap="#aNode2D" loading="lazy" alt=""/>
 <map name="aNode2D" id="aNode2D">
 <area shape="rect" title=" " alt="" coords="5,100,79,128"/>
 <area shape="rect" href="classBosque.html" title="Escena del bosque del juego." alt="" coords="198,5,268,33"/>
@@ -221,7 +231,7 @@ $(function(){initNavTree('hierarchy.html','',''); });
 <area shape="poly" title=" " alt="" coords="93,102,131,96,127,100,95,107"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html" title=" " alt="" coords="142,126,324,171"/>
 <area shape="poly" title=" " alt="" coords="94,121,143,131,139,133,94,126"/>
-<area shape="rect" href="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html" title=" " alt="" coords="127,195,339,222"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto.html" title="Objeto coleccionable del mapa." alt="" coords="127,195,339,222"/>
 <area shape="poly" title=" " alt="" coords="68,136,96,160,128,181,157,194,151,194,125,186,93,165,67,142"/>
 </map>
 </td></tr>

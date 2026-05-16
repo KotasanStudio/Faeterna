@@ -133,8 +133,41 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ad3fcd44b5f9bf6076e8ce2494721cef0" id="r_ad3fcd44b5f9bf6076e8ce2494721cef0"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ad3fcd44b5f9bf6076e8ce2494721cef0">ActiveSlot</a><code> [get]</code></td></tr>
+<tr class="memitem:ad3fcd44b5f9bf6076e8ce2494721cef0" id="r_ad3fcd44b5f9bf6076e8ce2494721cef0"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ad3fcd44b5f9bf6076e8ce2494721cef0">ActiveSlot</a><code> [get, private set]</code></td></tr>
 <tr class="memdesc:ad3fcd44b5f9bf6076e8ce2494721cef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot activo global para las operaciones de guardado/carga de partida.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a725486c243fb16815658c098b8492643" id="r_a725486c243fb16815658c098b8492643"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#a725486c243fb16815658c098b8492643">GetSlotPath</a> (int slot)</td></tr>
+<tr class="memdesc:a725486c243fb16815658c098b8492643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera la ruta del archivo JSON para un slot específico.  <br /></td></tr>
+<tr class="memitem:ae19c38df8d82c9bcad7ff5b52e2b76bc" id="r_ae19c38df8d82c9bcad7ff5b52e2b76bc"><td class="memItemLeft">static string&#160;</td><td class="memItemRight"><a class="el" href="#ae19c38df8d82c9bcad7ff5b52e2b76bc">GetSlotPreviewPath</a> (int slot)</td></tr>
+<tr class="memdesc:ae19c38df8d82c9bcad7ff5b52e2b76bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera la ruta del archivo PNG de vista previa para un slot específico.  <br /></td></tr>
+<tr class="memitem:a871993a93093821284cf9076f7803a1d" id="r_a871993a93093821284cf9076f7803a1d"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a871993a93093821284cf9076f7803a1d">SavePreview</a> (Viewport viewport, string previewPath)</td></tr>
+<tr class="memdesc:a871993a93093821284cf9076f7803a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion y la guarda como archivo PNG en la ruta especificada.  <br /></td></tr>
+<tr class="memitem:aebd232191c24102320ca3776b726321f" id="r_aebd232191c24102320ca3776b726321f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aebd232191c24102320ca3776b726321f">EnsurePreviewDirectory</a> ()</td></tr>
+<tr class="memdesc:aebd232191c24102320ca3776b726321f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea el directorio de previsualizaciones si no existe.  <br /></td></tr>
+<tr class="memitem:a3163852a2ec83567dc5a8b0b6c72792c" id="r_a3163852a2ec83567dc5a8b0b6c72792c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3163852a2ec83567dc5a8b0b6c72792c">DeleteFileIfExists</a> (string userPath, string fileDescription)</td></tr>
+<tr class="memdesc:a3163852a2ec83567dc5a8b0b6c72792c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intenta eliminar un archivo del almacenamiento persistente.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a32a4d441e455a0d8cefdf0c545cebdb4" id="r_a32a4d441e455a0d8cefdf0c545cebdb4"><td class="memItemLeft"><a id="a32a4d441e455a0d8cefdf0c545cebdb4" name="a32a4d441e455a0d8cefdf0c545cebdb4"></a>
+readonly ConfigFile&#160;</td><td class="memItemRight"><b>config</b> = new ConfigFile()</td></tr>
+<tr class="memdesc:a32a4d441e455a0d8cefdf0c545cebdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archivo de configuración usado para almacenar opciones de usuario (audio, video, etc.). <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a12752701f75a27349cd52b924c82bd86" id="r_a12752701f75a27349cd52b924c82bd86"><td class="memItemLeft"><a id="a12752701f75a27349cd52b924c82bd86" name="a12752701f75a27349cd52b924c82bd86"></a>
+const string&#160;</td><td class="memItemRight"><b>PreviewDirectory</b> = &quot;user://save_previews&quot;</td></tr>
+<tr class="memdesc:a12752701f75a27349cd52b924c82bd86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directorio donde se almacenan las imágenes de vista previa de las partidas guardadas. <br /></td></tr>
+<tr class="memitem:aa2b14abf061c0bb2f6d32d2a1892867c" id="r_aa2b14abf061c0bb2f6d32d2a1892867c"><td class="memItemLeft"><a id="aa2b14abf061c0bb2f6d32d2a1892867c" name="aa2b14abf061c0bb2f6d32d2a1892867c"></a>
+const int&#160;</td><td class="memItemRight"><b>PreviewWidth</b> = 512</td></tr>
+<tr class="memdesc:aa2b14abf061c0bb2f6d32d2a1892867c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ancho (en píxeles) de las imágenes de vista previa generadas de las partidas. <br /></td></tr>
+<tr class="memitem:a6578d83a26189b6d7c489600d9c3e755" id="r_a6578d83a26189b6d7c489600d9c3e755"><td class="memItemLeft"><a id="a6578d83a26189b6d7c489600d9c3e755" name="a6578d83a26189b6d7c489600d9c3e755"></a>
+const int&#160;</td><td class="memItemRight"><b>PreviewHeight</b> = 288</td></tr>
+<tr class="memdesc:a6578d83a26189b6d7c489600d9c3e755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alto (en píxeles) de las imágenes de vista previa generadas de las partidas. <br /></td></tr>
+<tr class="memitem:a40a8a32b25408d6cde398923fb03dd0b" id="r_a40a8a32b25408d6cde398923fb03dd0b"><td class="memItemLeft">static readonly JsonSerializerOptions&#160;</td><td class="memItemRight"><a class="el" href="#a40a8a32b25408d6cde398923fb03dd0b">JsonOptions</a></td></tr>
+<tr class="memdesc:a40a8a32b25408d6cde398923fb03dd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opciones de formato JSON para la serialización de datos de partida (indentado para legibilidad).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardadas (slots) e imágenes de vista previa. </p>
@@ -185,6 +218,55 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a3163852a2ec83567dc5a8b0b6c72792c" name="a3163852a2ec83567dc5a8b0b6c72792c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3163852a2ec83567dc5a8b0b6c72792c">&#9670;&#160;</a></span>DeleteFileIfExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.Saves.DeleteFileIfExists </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileDescription</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Intenta eliminar un archivo del almacenamiento persistente. </p>
+<p>Imprime un aviso si la eliminación falla.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userPath</td><td>Ruta del archivo a eliminar.</td></tr>
+    <tr><td class="paramname">fileDescription</td><td>Descripción del archivo para mensajes de log (ej: "save slot 1").</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a3163852a2ec83567dc5a8b0b6c72792c_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a3163852a2ec83567dc5a8b0b6c72792c_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a3163852a2ec83567dc5a8b0b6c72792c_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a3163852a2ec83567dc5a8b0b6c72792c_icgraph">
+<area shape="rect" title="Intenta eliminar un archivo del almacenamiento persistente." alt="" coords="264,5,474,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="5,5,216,50"/>
+<area shape="poly" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4a99b3f00dd34d59334680c4621facf5" name="a4a99b3f00dd34d59334680c4621facf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a99b3f00dd34d59334680c4621facf5">&#9670;&#160;</a></span>DeleteSlot()</h2>
 
@@ -215,6 +297,179 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4a99b3f00dd34d59334680c4621facf5_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4a99b3f00dd34d59334680c4621facf5_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4a99b3f00dd34d59334680c4621facf5_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4a99b3f00dd34d59334680c4621facf5_cgraph">
+<area shape="rect" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="5,75,216,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a3163852a2ec83567dc5a8b0b6c72792c" title="Intenta eliminar un archivo del almacenamiento persistente." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="196,72,271,53,266,56,198,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="264,75,474,119"/>
+<area shape="poly" title=" " alt="" coords="216,94,250,96,245,98,217,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="264,144,474,189"/>
+<area shape="poly" title=" " alt="" coords="197,117,271,139,266,140,196,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aebd232191c24102320ca3776b726321f" name="aebd232191c24102320ca3776b726321f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd232191c24102320ca3776b726321f">&#9670;&#160;</a></span>EnsurePreviewDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.Saves.EnsurePreviewDirectory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Crea el directorio de previsualizaciones si no existe. </p>
+<p>Necesario antes de guardar imágenes de vista previa. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_aebd232191c24102320ca3776b726321f_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aebd232191c24102320ca3776b726321f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aebd232191c24102320ca3776b726321f_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aebd232191c24102320ca3776b726321f_icgraph">
+<area shape="rect" title="Crea el directorio de previsualizaciones si no existe." alt="" coords="522,5,732,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a871993a93093821284cf9076f7803a1d" title="Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion ..." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="503,28,475,30,475,25,509,28"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,5,216,50"/>
+<area shape="poly" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a725486c243fb16815658c098b8492643" name="a725486c243fb16815658c098b8492643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725486c243fb16815658c098b8492643">&#9670;&#160;</a></span>GetSlotPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Faeterna.Scripts.Tools.Saves.GetSlotPath </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Genera la ruta del archivo JSON para un slot específico. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>Índice del slot (base 0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ruta del archivo JSON del slot.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a725486c243fb16815658c098b8492643_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a725486c243fb16815658c098b8492643_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a725486c243fb16815658c098b8492643_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a725486c243fb16815658c098b8492643_icgraph">
+<area shape="rect" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="1646,109,1857,154"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="1388,5,1598,50"/>
+<area shape="poly" title=" " alt="" coords="1687,102,1597,65,1566,53,1567,48,1599,60,1692,103"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ac738ffb0de07521042ddc21daa91410a" title="Verifica si existe un archivo de guardado para el slot especificado." alt="" coords="1388,75,1598,119"/>
+<area shape="poly" title=" " alt="" coords="1628,115,1599,114,1599,108,1633,116"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#af41c20346b77a4fac76819fcd9943a78" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="1388,144,1598,189"/>
+<area shape="poly" title=" " alt="" coords="1633,148,1599,155,1599,150,1628,148"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb" title="Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente." alt="" coords="1388,213,1598,258"/>
+<area shape="poly" title=" " alt="" coords="1692,161,1599,203,1567,215,1566,210,1597,199,1687,162"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a544a7bd20bbcbcf9f0b585cc655601fd" title="Verifica si el slot activo tiene un archivo de guardado." alt="" coords="1130,75,1340,119"/>
+<area shape="poly" title=" " alt="" coords="1369,97,1341,100,1340,94,1375,97"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="1130,144,1340,189"/>
+<area shape="poly" title=" " alt="" coords="1369,166,1341,169,1341,164,1375,166"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a9e47db3cdaf412b366d9dcc745da21a6" title="Carga los datos del slot activo." alt="" coords="840,144,1082,189"/>
+<area shape="poly" title=" " alt="" coords="1111,166,1082,169,1082,164,1116,166"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a5392cac035746352fd9f1fca9ee3e600" title="Carga la partida guardada más reciente del slot activo y vuelve a la escena asociada." alt="" coords="534,109,792,154"/>
+<area shape="poly" title=" " alt="" coords="822,151,793,149,793,144,828,150"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="544,179,782,223"/>
+<area shape="poly" title=" " alt="" coords="828,182,783,190,783,184,822,182"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ae5f66d3b04dbaed20aa04ff18aedcca6" title="Reanuda la partida desde el último guardado del slot activo." alt="" coords="270,109,486,154"/>
+<area shape="poly" title=" " alt="" coords="516,132,487,134,486,129,521,131"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a4ea0d120b2c73373cbc72aaa8ac44259" title="Inicializa la pantalla de muerte." alt="" coords="5,109,222,154"/>
+<area shape="poly" title=" " alt="" coords="252,132,223,134,222,129,257,131"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="279,179,477,223"/>
+<area shape="poly" title=" " alt="" coords="526,201,477,204,477,198,531,201"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="1130,213,1340,258"/>
+<area shape="poly" title=" " alt="" coords="1369,236,1341,238,1341,233,1375,236"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae19c38df8d82c9bcad7ff5b52e2b76bc" name="ae19c38df8d82c9bcad7ff5b52e2b76bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19c38df8d82c9bcad7ff5b52e2b76bc">&#9670;&#160;</a></span>GetSlotPreviewPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Genera la ruta del archivo PNG de vista previa para un slot específico. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">slot</td><td>Índice del slot (base 0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ruta del archivo PNG de previsualizacion del slot.</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_ae19c38df8d82c9bcad7ff5b52e2b76bc_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ae19c38df8d82c9bcad7ff5b52e2b76bc_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ae19c38df8d82c9bcad7ff5b52e2b76bc_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ae19c38df8d82c9bcad7ff5b52e2b76bc_icgraph">
+<area shape="rect" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="522,105,732,150"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4a99b3f00dd34d59334680c4621facf5" title="Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="559,99,473,65,441,53,441,48,475,60,564,98"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,75,474,119"/>
+<area shape="poly" title=" " alt="" coords="504,114,475,112,474,107,509,113"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a9f504b1b72aa9131be6deb0327cfdcb1" title="Carga la textura de vista previa del slot desde el almacenamiento persistente." alt="" coords="5,105,216,150"/>
+<area shape="poly" title=" " alt="" coords="504,131,474,134,264,134,216,133,216,128,264,129,474,129,509,131"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="264,195,474,239"/>
+<area shape="poly" title=" " alt="" coords="549,155,436,197,435,192,544,156"/>
+<area shape="poly" title=" " alt="" coords="246,112,217,118,216,113,251,110"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -249,6 +504,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Verdadero si existe la imagen PNG del slot; falso en caso contrario.</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4f68b8e0bfeb2fc9c92a81048c34c39d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4f68b8e0bfeb2fc9c92a81048c34c39d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4f68b8e0bfeb2fc9c92a81048c34c39d_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a4f68b8e0bfeb2fc9c92a81048c34c39d_cgraph">
+<area shape="rect" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="5,5,216,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -293,6 +558,16 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Verdadero si existe el archivo JSON del slot; falso en caso contrario.</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_ac738ffb0de07521042ddc21daa91410a_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ac738ffb0de07521042ddc21daa91410a_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ac738ffb0de07521042ddc21daa91410a_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_ac738ffb0de07521042ddc21daa91410a_cgraph">
+<area shape="rect" title="Verifica si existe un archivo de guardado para el slot especificado." alt="" coords="5,5,216,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -339,6 +614,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Verifica si el slot activo tiene un archivo de guardado." alt="" coords="5,5,216,50"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ac738ffb0de07521042ddc21daa91410a" title="Verifica si existe un archivo de guardado para el slot especificado." alt="" coords="264,5,474,50"/>
 <area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="522,5,732,50"/>
+<area shape="poly" title=" " alt="" coords="474,25,509,28,503,28,475,30"/>
 </map>
 </div>
 
@@ -421,6 +698,28 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="5,5,216,50"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#af41c20346b77a4fac76819fcd9943a78" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="264,5,474,50"/>
 <area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="522,5,732,50"/>
+<area shape="poly" title=" " alt="" coords="474,25,509,28,503,28,475,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_aaa8ef2500d1a69f77d611335995b2ef3_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aaa8ef2500d1a69f77d611335995b2ef3_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aaa8ef2500d1a69f77d611335995b2ef3_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_aaa8ef2500d1a69f77d611335995b2ef3_icgraph">
+<area shape="rect" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="1130,40,1340,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a9e47db3cdaf412b366d9dcc745da21a6" title="Carga los datos del slot activo." alt="" coords="840,40,1082,85"/>
+<area shape="poly" title=" " alt="" coords="1111,62,1082,65,1082,60,1116,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a5392cac035746352fd9f1fca9ee3e600" title="Carga la partida guardada más reciente del slot activo y vuelve a la escena asociada." alt="" coords="534,5,792,50"/>
+<area shape="poly" title=" " alt="" coords="822,47,793,45,793,40,828,47"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="544,75,782,119"/>
+<area shape="poly" title=" " alt="" coords="828,78,783,86,783,80,822,78"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ae5f66d3b04dbaed20aa04ff18aedcca6" title="Reanuda la partida desde el último guardado del slot activo." alt="" coords="270,5,486,50"/>
+<area shape="poly" title=" " alt="" coords="516,28,487,30,486,25,521,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a4ea0d120b2c73373cbc72aaa8ac44259" title="Inicializa la pantalla de muerte." alt="" coords="5,5,222,50"/>
+<area shape="poly" title=" " alt="" coords="252,28,223,30,222,25,257,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="279,75,477,119"/>
+<area shape="poly" title=" " alt="" coords="526,97,477,100,477,94,531,97"/>
 </map>
 </div>
 
@@ -458,13 +757,35 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Datos de la partida cargados, o nulo si el archivo del slot no existe.</dd></dl>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_cgraph">
+<area shape="rect" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="5,5,216,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_af41c20346b77a4fac76819fcd9943a78_icgraph">
-<area shape="rect" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="264,5,474,50"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="5,5,216,50"/>
-<area shape="poly" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+<area shape="rect" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="1388,40,1598,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="1130,40,1340,85"/>
+<area shape="poly" title=" " alt="" coords="1369,62,1341,65,1341,60,1375,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a9e47db3cdaf412b366d9dcc745da21a6" title="Carga los datos del slot activo." alt="" coords="840,40,1082,85"/>
+<area shape="poly" title=" " alt="" coords="1111,62,1082,65,1082,60,1116,62"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a5392cac035746352fd9f1fca9ee3e600" title="Carga la partida guardada más reciente del slot activo y vuelve a la escena asociada." alt="" coords="534,5,792,50"/>
+<area shape="poly" title=" " alt="" coords="822,47,793,45,793,40,828,47"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a8f79c9b0bff8aa8f66354c8eb6af4a71" title="Intenta cargar el progreso guardado desde la ranura activa." alt="" coords="544,75,782,119"/>
+<area shape="poly" title=" " alt="" coords="828,78,783,86,783,80,822,78"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#ae5f66d3b04dbaed20aa04ff18aedcca6" title="Reanuda la partida desde el último guardado del slot activo." alt="" coords="270,5,486,50"/>
+<area shape="poly" title=" " alt="" coords="516,28,487,30,486,25,521,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen.html#a4ea0d120b2c73373cbc72aaa8ac44259" title="Inicializa la pantalla de muerte." alt="" coords="5,5,222,50"/>
+<area shape="poly" title=" " alt="" coords="252,28,223,30,222,25,257,27"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a0f91dd5dfad3358ab45f745e50192990" title="Inicialización del nodo." alt="" coords="279,75,477,119"/>
+<area shape="poly" title=" " alt="" coords="526,97,477,100,477,94,531,97"/>
 </map>
 </div>
 
@@ -546,8 +867,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a9f504b1b72aa9131be6deb0327cfdcb1_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a9f504b1b72aa9131be6deb0327cfdcb1_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a9f504b1b72aa9131be6deb0327cfdcb1_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a9f504b1b72aa9131be6deb0327cfdcb1_cgraph">
 <area shape="rect" title="Carga la textura de vista previa del slot desde el almacenamiento persistente." alt="" coords="5,5,216,50"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,5,474,50"/>
-<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="522,5,732,50"/>
+<area shape="poly" title=" " alt="" coords="216,21,264,20,474,20,509,23,504,23,474,25,264,25,216,26"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a4f68b8e0bfeb2fc9c92a81048c34c39d" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,35,474,79"/>
+<area shape="poly" title=" " alt="" coords="216,37,251,43,245,43,216,42"/>
+<area shape="poly" title=" " alt="" coords="474,42,504,42,509,41,475,48"/>
 </map>
 </div>
 
@@ -590,6 +914,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Tarea asincrónica que completa cuando se escriben los datos en disco.</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a007c22a5b366ccbdadb3a52c8ab15ccb_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a007c22a5b366ccbdadb3a52c8ab15ccb_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a007c22a5b366ccbdadb3a52c8ab15ccb_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a007c22a5b366ccbdadb3a52c8ab15ccb_cgraph">
+<area shape="rect" title="Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente." alt="" coords="5,5,216,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -662,11 +996,21 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a2f5fde47bb2faccc4651ef37a6ef82a9_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a2f5fde47bb2faccc4651ef37a6ef82a9_cgraph" loading="lazy" alt=""/></div>
 <map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a2f5fde47bb2faccc4651ef37a6ef82a9_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a2f5fde47bb2faccc4651ef37a6ef82a9_cgraph">
-<area shape="rect" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,40,216,85"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a4ea24d2a414993531c604ab71de8edf1" title="Construye un objeto PlayerSaveData con el estado actual del personaje, incluyendo posición,..." alt="" coords="270,5,468,50"/>
-<area shape="poly" title=" " alt="" coords="216,46,257,42,252,44,217,51"/>
-<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb" title="Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente." alt="" coords="264,75,474,119"/>
-<area shape="poly" title=" " alt="" coords="216,74,251,81,245,81,216,79"/>
+<area shape="rect" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,144,216,189"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a4ea24d2a414993531c604ab71de8edf1" title="Construye un objeto PlayerSaveData con el estado actual del personaje, incluyendo posición,..." alt="" coords="286,5,484,50"/>
+<area shape="poly" title=" " alt="" coords="138,142,193,100,262,60,281,54,276,57,265,65,196,105,141,145"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#acb34a4445d3d96e2498217b3f6aaf2b3" title="Devuelve una lista copiada de los bosses derrotados actualmente registrados." alt="" coords="264,75,506,119"/>
+<area shape="poly" title=" " alt="" coords="201,141,281,122,277,125,203,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="280,144,490,189"/>
+<area shape="poly" title=" " alt="" coords="215,164,266,165,261,167,217,169"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb" title="Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente." alt="" coords="280,213,490,258"/>
+<area shape="poly" title=" " alt="" coords="202,187,281,208,276,210,202,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a871993a93093821284cf9076f7803a1d" title="Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion ..." alt="" coords="280,283,490,327"/>
+<area shape="poly" title=" " alt="" coords="140,187,196,228,265,268,281,277,276,277,262,273,193,232,139,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a725486c243fb16815658c098b8492643" title="Genera la ruta del archivo JSON para un slot específico." alt="" coords="554,213,764,258"/>
+<area shape="poly" title=" " alt="" coords="490,233,541,235,536,236,491,238"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aebd232191c24102320ca3776b726321f" title="Crea el directorio de previsualizaciones si no existe." alt="" coords="554,283,764,327"/>
+<area shape="poly" title=" " alt="" coords="490,302,541,305,536,305,490,308"/>
 </map>
 </div>
 
@@ -764,6 +1108,64 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a871993a93093821284cf9076f7803a1d" name="a871993a93093821284cf9076f7803a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871993a93093821284cf9076f7803a1d">&#9670;&#160;</a></span>SavePreview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Tools.Saves.SavePreview </td>
+          <td>(</td>
+          <td class="paramtype">Viewport</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>previewPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion y la guarda como archivo PNG en la ruta especificada. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewport</td><td>Viewport de cuya textura se capturará la image.</td></tr>
+    <tr><td class="paramname">previewPath</td><td>Ruta donde se guardará la imagen PNG.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_cgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_cgraph">
+<area shape="rect" title="Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion ..." alt="" coords="5,5,216,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aebd232191c24102320ca3776b726321f" title="Crea el directorio de previsualizaciones si no existe." alt="" coords="264,5,474,50"/>
+<area shape="poly" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_icgraph" id="aclassFaeterna_1_1Scripts_1_1Tools_1_1Saves_a871993a93093821284cf9076f7803a1d_icgraph">
+<area shape="rect" title="Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion ..." alt="" coords="264,5,474,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a2f5fde47bb2faccc4651ef37a6ef82a9" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,5,216,50"/>
+<area shape="poly" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a4a4fa7347b0fea6b2d1dc9ab1e4a4628" name="a4a4fa7347b0fea6b2d1dc9ab1e4a4628"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a4fa7347b0fea6b2d1dc9ab1e4a4628">&#9670;&#160;</a></span>SetActiveSlot()</h2>
 
@@ -798,6 +1200,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a40a8a32b25408d6cde398923fb03dd0b" name="a40a8a32b25408d6cde398923fb03dd0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a8a32b25408d6cde398923fb03dd0b">&#9670;&#160;</a></span>JsonOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly JsonSerializerOptions Faeterna.Scripts.Tools.Saves.JsonOptions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                                                          = <span class="keyword">new</span>()</div>
+<div class="line">{</div>
+<div class="line">    WriteIndented = <span class="keyword">true</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Opciones de formato JSON para la serialización de datos de partida (indentado para legibilidad). </p>
+
+</div>
+</div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
 <a id="ad3fcd44b5f9bf6076e8ce2494721cef0" name="ad3fcd44b5f9bf6076e8ce2494721cef0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3fcd44b5f9bf6076e8ce2494721cef0">&#9670;&#160;</a></span>ActiveSlot</h2>
@@ -814,7 +1245,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span><span class="mlabel private-set">private set</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

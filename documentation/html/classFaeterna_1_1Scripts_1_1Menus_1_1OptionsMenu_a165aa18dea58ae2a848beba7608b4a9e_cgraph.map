@@ -1,13 +1,31 @@
 <map id="Faeterna.Scripts.Menus.OptionsMenu._Ready" name="Faeterna.Scripts.Menus.OptionsMenu._Ready">
-<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,144,233,189"/>
-<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#af9b5437ca00a28b6f8ccf35e4ff6108e" title="Se llama cuando se selecciona una opción en el control de antialiasing." alt="" coords="306,5,558,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,141,206,100,280,60,301,54,296,57,282,65,209,104,150,146"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a2dc72bd618d1e945014ceae47128583c" title="Se llama cuando se selecciona una opción en el control de bloqueo de FPS." alt="" coords="294,75,570,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,141,315,122,311,125,224,146"/>
-<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#aaf6b80473620b8a0b61705283dcb418c" title="Se llama cuando se selecciona una opción en el control de calidad de sombras." alt="" coords="281,144,583,189"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,164,267,165,262,167,234,169"/>
-<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a076c40873c3270c3306d95c18b1f85d6" title="Se llama cuando se selecciona una opción en el control de VSync." alt="" coords="308,213,556,258"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="223,187,316,209,311,210,223,192"/>
-<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#adada22c3dd410baa252e1267cc255f81" title="Se llama cuando se selecciona una opción en el control de modo de pantalla." alt="" coords="302,283,562,327"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,187,209,228,282,268,301,277,296,277,280,273,206,233,148,192"/>
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,317,233,362"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a565df7a03d280a75b55ae3d9563fbca6" title="Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox)." alt="" coords="284,5,580,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,316,142,263,173,193,219,121,247,88,279,60,289,56,285,60,282,64,251,92,223,124,178,196,147,265,129,318"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#aa12e69d376780b99f73c69789bddf87e" title="Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox)." alt="" coords="299,75,564,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,316,151,275,184,224,227,173,252,149,279,129,291,125,288,128,282,134,256,154,231,176,189,227,156,278,134,318"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a5b149fcaee778a0271d6d18d9fe6b7e8" title="Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox)." alt="" coords="303,144,561,189"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="138,316,197,257,236,225,279,199,296,193,292,197,282,203,239,229,201,261,142,319"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a9073c5a14b39c826ba3a144de8e42417" title="Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox)." alt="" coords="293,213,570,258"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="165,315,220,290,280,268,308,261,304,264,282,273,222,295,169,319"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a2a8ae5fd3e24537a66232394e3251625" title="Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox)." alt="" coords="295,283,569,327"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="232,325,282,320,277,323,234,329"/>
+<area shape="rect" id="Node000008" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#af9b5437ca00a28b6f8ccf35e4ff6108e" title="Se llama cuando se selecciona una opción en el control de antialiasing." alt="" coords="306,352,558,397"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="232,350,293,357,289,360,234,355"/>
+<area shape="rect" id="Node000009" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a2dc72bd618d1e945014ceae47128583c" title="Se llama cuando se selecciona una opción en el control de bloqueo de FPS." alt="" coords="294,421,570,466"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="167,360,222,384,282,406,309,416,304,417,280,412,220,389,168,365"/>
+<area shape="rect" id="Node000010" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#aaf6b80473620b8a0b61705283dcb418c" title="Se llama cuando se selecciona una opción en el control de calidad de sombras." alt="" coords="281,491,583,535"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="140,360,201,419,239,450,282,476,297,484,292,485,279,481,236,454,197,423,139,365"/>
+<area shape="rect" id="Node000012" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a076c40873c3270c3306d95c18b1f85d6" title="Se llama cuando se selecciona una opción en el control de VSync." alt="" coords="308,560,556,605"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="131,360,156,402,189,452,231,503,256,526,282,545,296,555,291,555,279,550,252,530,227,507,184,455,151,405,131,365"/>
+<area shape="rect" id="Node000013" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#adada22c3dd410baa252e1267cc255f81" title="Se llama cuando se selecciona una opción en el control de modo de pantalla." alt="" coords="302,629,562,674"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="127,360,147,415,178,484,223,555,251,587,282,615,291,623,285,622,279,619,247,591,219,558,173,486,142,417,126,365"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#ad2586d49c776a8cc6ec5661030f100a9" title="Normaliza un valor de volumen dado en porcentaje (0&#45;100) a decibelios (dB) para su uso con el sistema..." alt="" coords="631,144,858,189"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,48,584,60,649,94,706,134,700,135,646,99,582,65,551,53"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="535,117,628,139,623,141,537,123"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="561,164,618,165,613,167,562,169"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="535,210,628,191,624,194,537,215"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="549,280,582,268,646,234,701,200,705,197,649,238,584,273,552,284"/>
+<area shape="rect" id="Node000011" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a483a48df78744459138ab078a4ac1ac9" title="Aplica la configuración de calidad de sombras seleccionada al juego en tiempo real." alt="" coords="631,491,858,535"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="583,510,618,513,613,513,584,516"/>
 </map>

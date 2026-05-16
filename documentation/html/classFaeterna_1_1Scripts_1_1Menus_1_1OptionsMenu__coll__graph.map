@@ -1,5 +1,7 @@
 <map id="Faeterna.Scripts.Menus.OptionsMenu" name="Faeterna.Scripts.Menus.OptionsMenu">
-<area shape="rect" id="Node000001" title="Control que representa el menú de opciones del juego." alt="" coords="5,81,269,109"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="103,5,171,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,47,139,82,135,79,135,51"/>
+<area shape="rect" id="Node000001" title="Control que representa el menú de opciones del juego." alt="" coords="5,106,269,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,5,91,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,42,129,105,124,106,75,47"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html" title="Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardad..." alt="" coords="115,5,322,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,44,150,107,146,103,196,45"/>
 </map>

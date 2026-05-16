@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.HasPreview" name="Faeterna.Scripts.Tools.Saves.HasPreview">
+<area shape="rect" id="Node000001" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="5,5,216,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ae19c38df8d82c9bcad7ff5b52e2b76bc" title="Genera la ruta del archivo PNG de vista previa para un slot específico." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>

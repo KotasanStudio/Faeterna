@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::scripts::Mapa::BossArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a3512dbb1a87fc6d23a271860623c5e8a" prot="private" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Faeterna.scripts.Mapa.BossArea._dashItem</definition>
+        <argsstring></argsstring>
+        <name>_dashItem</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._dashItem</qualifiedname>
+        <briefdescription>
+<para>Nodo del objeto dash que se desbloquea cuando el boss muere. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="16" column="17" bodyfile="scripts/Mapa/BossArea.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ab605cf59cd4eb73d3dad283ce4fb6691" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kindref="compound">ReyJabali</ref></type>
+        <definition>ReyJabali Faeterna.scripts.Mapa.BossArea._reyJabali</definition>
+        <argsstring></argsstring>
+        <name>_reyJabali</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._reyJabali</qualifiedname>
+        <briefdescription>
+<para>Referencia al boss <ref refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kindref="compound">ReyJabali</ref> para escuchar su señal de muerte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="21" column="20" bodyfile="scripts/Mapa/BossArea.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a6c53ef1df2af33ae4f06e87f8d64d2a6" compoundref="BossArea_8cs" startline="36" endline="49">Faeterna.scripts.Mapa.BossArea._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a1ffe285d37292ebcc033be2b6fb5f2d3" prot="private" static="no" mutable="no">
+        <type>AudioStreamPlayer</type>
+        <definition>AudioStreamPlayer Faeterna.scripts.Mapa.BossArea._backgroundAudioPLayer</definition>
+        <argsstring></argsstring>
+        <name>_backgroundAudioPLayer</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._backgroundAudioPLayer</qualifiedname>
+        <briefdescription>
+<para>Reproductor de audio que se usa para iniciar la música del combate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="26" column="28" bodyfile="scripts/Mapa/BossArea.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a546582073a5f5a67d3d180e3a10c2eec" compoundref="BossArea_8cs" startline="55" endline="64">Faeterna.scripts.Mapa.BossArea._on_body_entered</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ae58074b525ef5d96aeaf8a6cd93c450e" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Mapa.BossArea._backgroundAudio</definition>
+        <argsstring></argsstring>
+        <name>_backgroundAudio</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._backgroundAudio</qualifiedname>
+        <briefdescription>
+<para>Audio de fondo que se reproduce al entrar el jugador al área. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="31" column="22" bodyfile="scripts/Mapa/BossArea.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a546582073a5f5a67d3d180e3a10c2eec" compoundref="BossArea_8cs" startline="55" endline="64">Faeterna.scripts.Mapa.BossArea._on_body_entered</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a6c53ef1df2af33ae4f06e87f8d64d2a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Mapa.BossArea._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._Ready</qualifiedname>
+        <briefdescription>
+<para>Inicializa el área del boss, oculta el objeto de dash y conecta la señal de muerte del boss. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="36" column="22" bodyfile="scripts/Mapa/BossArea.cs" bodystart="36" bodyend="49"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ab605cf59cd4eb73d3dad283ce4fb6691" compoundref="BossArea_8cs" startline="21">Faeterna.scripts.Mapa.BossArea._reyJabali</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1aeeee0aa411eef036b2037a52f87dab09" compoundref="BossArea_8cs" startline="69" endline="73">Faeterna.scripts.Mapa.BossArea.OnJabaliBossDeath</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a546582073a5f5a67d3d180e3a10c2eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Mapa.BossArea._on_body_entered</definition>
+        <argsstring>(Node2D body)</argsstring>
+        <name>_on_body_entered</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea._on_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando un cuerpo entra en el área. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si es <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, reproduce la música del combate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cuerpo que entró en el área.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="55" column="13" bodyfile="scripts/Mapa/BossArea.cs" bodystart="55" bodyend="64"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ae58074b525ef5d96aeaf8a6cd93c450e" compoundref="BossArea_8cs" startline="31">Faeterna.scripts.Mapa.BossArea._backgroundAudio</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a1ffe285d37292ebcc033be2b6fb5f2d3" compoundref="BossArea_8cs" startline="26">Faeterna.scripts.Mapa.BossArea._backgroundAudioPLayer</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1aeeee0aa411eef036b2037a52f87dab09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Mapa.BossArea.OnJabaliBossDeath</definition>
+        <argsstring>()</argsstring>
+        <name>OnJabaliBossDeath</name>
+        <qualifiedname>Faeterna.scripts.Mapa.BossArea.OnJabaliBossDeath</qualifiedname>
+        <briefdescription>
+<para>Se ejecuta cuando <ref refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kindref="compound">ReyJabali</ref> muere. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Muestra el objeto de dash. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="69" column="13" bodyfile="scripts/Mapa/BossArea.cs" bodystart="69" bodyend="73"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a6c53ef1df2af33ae4f06e87f8d64d2a6" compoundref="BossArea_8cs" startline="36" endline="49">Faeterna.scripts.Mapa.BossArea._Ready</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Área de combate del boss. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Controla la aparición del objeto de dash, la música de fondo del combate y reacciona a la muerte de <ref refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kindref="compound">ReyJabali</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Mapa.BossArea</label>
+        <link refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="5">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Mapa.BossArea</label>
+        <link refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_reyJabali</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Mapa/BossArea.cs" line="11" column="15" bodyfile="scripts/Mapa/BossArea.cs" bodystart="12" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ae58074b525ef5d96aeaf8a6cd93c450e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_backgroundAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a1ffe285d37292ebcc033be2b6fb5f2d3" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_backgroundAudioPLayer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a3512dbb1a87fc6d23a271860623c5e8a" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_dashItem</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a546582073a5f5a67d3d180e3a10c2eec" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_on_body_entered</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1a6c53ef1df2af33ae4f06e87f8d64d2a6" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1ab605cf59cd4eb73d3dad283ce4fb6691" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>_reyJabali</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea_1aeeee0aa411eef036b2037a52f87dab09" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::BossArea</scope><name>OnJabaliBossDeath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

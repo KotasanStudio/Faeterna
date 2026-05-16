@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump" name="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump">
+<area shape="rect" id="Node000001" title="Calcula el siguiente salto de la secuencia especial del boss." alt="" coords="258,14,491,58"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#aceb4eb400836b10f4f71a76c717191a6" title="Se llama cuando termina el tiempo de carga del ataque y decide si el boss corre o salta." alt="" coords="5,5,210,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,36,210,39,210,34,245,36"/>
+</map>

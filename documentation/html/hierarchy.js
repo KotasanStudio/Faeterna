@@ -1,9 +1,9 @@
 var hierarchy =
 [
     [ "Area2D", null, [
-      [ "BossArea", "classBossArea.html", null ],
       [ "Faeterna.Scripts.Mapa.Portal", "classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html", null ],
-      [ "Faeterna.Scripts.Personaje.Shot", "classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html", null ]
+      [ "Faeterna.Scripts.Personaje.Shot", "classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html", null ],
+      [ "Faeterna.scripts.Mapa.BossArea", "classFaeterna_1_1scripts_1_1Mapa_1_1BossArea.html", null ]
     ] ],
     [ "Faeterna.Scripts.Tools.ButtonTools", "classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html", null ],
     [ "CharacterBody2D", null, [
@@ -30,6 +30,8 @@ var hierarchy =
     [ "GpuParticles2D", null, [
       [ "Faeterna.scripts.Personaje.TerrainParticles", "classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles.html", null ]
     ] ],
+    [ "Faeterna.scripts.Mapa.Objeto.ItemData", "classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData.html", null ],
+    [ "Faeterna.Scripts.Menus.ObjetoDescription.ItemData", "classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData.html", null ],
     [ "Node", null, [
       [ "Faeterna.Scripts.Personaje.LiraAnimationTree", "classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html", null ],
       [ "Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine", "classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html", null ],

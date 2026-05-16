@@ -93,12 +93,15 @@ $(function(){initNavTree('classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.h
   <div class="headertitle"><div class="title">Faeterna.scripts.Enemigos.Wolf.Wolf Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Faeterna.scripts.Enemigos.Wolf.Wolf:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf__inherit__graph.png" border="0" usemap="#aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_inherit__map" id="aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_inherit__map">
-<area shape="rect" title=" " alt="" coords="6,174,203,218"/>
+<area shape="rect" title="Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño." alt="" coords="6,174,203,218"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
 <area shape="poly" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
 <area shape="rect" title=" " alt="" coords="37,5,172,33"/>
@@ -110,7 +113,7 @@ Collaboration diagram for Faeterna.scripts.Enemigos.Wolf.Wolf:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf__coll__graph.png" border="0" usemap="#aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_coll__map" id="aFaeterna_8scripts_8Enemigos_8Wolf_8Wolf_coll__map">
-<area shape="rect" title=" " alt="" coords="6,174,203,218"/>
+<area shape="rect" title="Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño." alt="" coords="6,174,203,218"/>
 <area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
 <area shape="poly" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
 <area shape="rect" title=" " alt="" coords="37,5,172,33"/>
@@ -122,16 +125,18 @@ Collaboration diagram for Faeterna.scripts.Enemigos.Wolf.Wolf:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f006c44c277c8f781bc584a6ec8c1e6" id="r_a5f006c44c277c8f781bc584a6ec8c1e6"><td class="memItemLeft"><a id="a5f006c44c277c8f781bc584a6ec8c1e6" name="a5f006c44c277c8f781bc584a6ec8c1e6"></a>
 override void&#160;</td><td class="memItemRight"><b>_EnterTree</b> ()</td></tr>
+<tr class="memdesc:a5f006c44c277c8f781bc584a6ec8c1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajusta la orientación inicial del sprite y del área de detección antes de entrar en escena. <br /></td></tr>
 <tr class="memitem:a832693efeefdb30b092ac45c363c49ee" id="r_a832693efeefdb30b092ac45c363c49ee"><td class="memItemLeft"><a id="a832693efeefdb30b092ac45c363c49ee" name="a832693efeefdb30b092ac45c363c49ee"></a>
 override void&#160;</td><td class="memItemRight"><b>_Ready</b> ()</td></tr>
-<tr class="memitem:a7b88e060288811fd55ac82a17304992e" id="r_a7b88e060288811fd55ac82a17304992e"><td class="memItemLeft"><a id="a7b88e060288811fd55ac82a17304992e" name="a7b88e060288811fd55ac82a17304992e"></a>
-override void&#160;</td><td class="memItemRight"><b>_PhysicsProcess</b> (double delta)</td></tr>
-<tr class="memitem:a789b08da78ffc2505773fb2c41844904" id="r_a789b08da78ffc2505773fb2c41844904"><td class="memItemLeft"><a id="a789b08da78ffc2505773fb2c41844904" name="a789b08da78ffc2505773fb2c41844904"></a>
-void&#160;</td><td class="memItemRight"><b>_on_attack_hit_box_body_entered</b> (Node2D prota)</td></tr>
-<tr class="memitem:a1663cb0e3c0a0773a79e8a45f02977c1" id="r_a1663cb0e3c0a0773a79e8a45f02977c1"><td class="memItemLeft"><a id="a1663cb0e3c0a0773a79e8a45f02977c1" name="a1663cb0e3c0a0773a79e8a45f02977c1"></a>
-void&#160;</td><td class="memItemRight"><b>_on_detection_area_body_entered</b> (Node2D prota)</td></tr>
-<tr class="memitem:ab428edf6f3bffecaacc4b920cea6c72a" id="r_ab428edf6f3bffecaacc4b920cea6c72a"><td class="memItemLeft"><a id="ab428edf6f3bffecaacc4b920cea6c72a" name="ab428edf6f3bffecaacc4b920cea6c72a"></a>
-void&#160;</td><td class="memItemRight"><b>_on_detection_area_body_exited</b> (Node2D prota)</td></tr>
+<tr class="memdesc:a832693efeefdb30b092ac45c363c49ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el timer de dash, enlaza eventos y prepara la animación inicial. <br /></td></tr>
+<tr class="memitem:a7b88e060288811fd55ac82a17304992e" id="r_a7b88e060288811fd55ac82a17304992e"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#a7b88e060288811fd55ac82a17304992e">_PhysicsProcess</a> (double delta)</td></tr>
+<tr class="memdesc:a7b88e060288811fd55ac82a17304992e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lógica de física: gravedad, dash, knockback y movimiento principal.  <br /></td></tr>
+<tr class="memitem:a789b08da78ffc2505773fb2c41844904" id="r_a789b08da78ffc2505773fb2c41844904"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a789b08da78ffc2505773fb2c41844904">_on_attack_hit_box_body_entered</a> (Node2D prota)</td></tr>
+<tr class="memdesc:a789b08da78ffc2505773fb2c41844904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el golpe del jugador sobre el hitbox de ataque del lobo.  <br /></td></tr>
+<tr class="memitem:a1663cb0e3c0a0773a79e8a45f02977c1" id="r_a1663cb0e3c0a0773a79e8a45f02977c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1663cb0e3c0a0773a79e8a45f02977c1">_on_detection_area_body_entered</a> (Node2D prota)</td></tr>
+<tr class="memdesc:a1663cb0e3c0a0773a79e8a45f02977c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra al jugador como objetivo cuando entra en el área de detección.  <br /></td></tr>
+<tr class="memitem:ab428edf6f3bffecaacc4b920cea6c72a" id="r_ab428edf6f3bffecaacc4b920cea6c72a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab428edf6f3bffecaacc4b920cea6c72a">_on_detection_area_body_exited</a> (Node2D prota)</td></tr>
+<tr class="memdesc:ab428edf6f3bffecaacc4b920cea6c72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpia el objetivo cuando el jugador sale del área de detección.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
 <tr class="memitem:a1cc6281dc7a2e398d1574ead8cf03f0a inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" id="r_a1cc6281dc7a2e398d1574ead8cf03f0a"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a1cc6281dc7a2e398d1574ead8cf03f0a">_Ready</a> ()</td></tr>
 <tr class="memdesc:a1cc6281dc7a2e398d1574ead8cf03f0a inherit pub_methods_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicialización del nodo.  <br /></td></tr>
@@ -146,6 +151,7 @@ void&#160;</td><td class="memItemRight"><b>_on_detection_area_body_exited</b> (N
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2d0a3d949d85c328f7d8d7cf6a2b3ede" id="r_a2d0a3d949d85c328f7d8d7cf6a2b3ede"><td class="memItemLeft"><a id="a2d0a3d949d85c328f7d8d7cf6a2b3ede" name="a2d0a3d949d85c328f7d8d7cf6a2b3ede"></a>
 float&#160;</td><td class="memItemRight"><b>DashInterval</b> = 2f</td></tr>
+<tr class="memdesc:a2d0a3d949d85c328f7d8d7cf6a2b3ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intervalo entre dashes automáticos. <br /></td></tr>
 <tr class="inherit_header pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
 <tr class="memitem:a090cb12274bfe5ea5c62af09240851f2 inherit pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" id="r_a090cb12274bfe5ea5c62af09240851f2"><td class="memItemLeft">
 int&#160;</td><td class="memItemRight"><b>health</b></td></tr>
@@ -196,6 +202,34 @@ ShaderMaterial&#160;</td><td class="memItemRight"><b>shaderMaterial</b></td></tr
 Node2D&#160;</td><td class="memItemRight"><b>target</b> = null</td></tr>
 <tr class="memdesc:a8558163363dba83e93edcf096a6d2f7d inherit pub_attribs_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia al objetivo actual del enemigo (generalmente el jugador). Es null si no hay objetivo. <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a97068afa2887a0685ad87ca307fa9f46" id="r_a97068afa2887a0685ad87ca307fa9f46"><td class="memItemLeft"><a id="a97068afa2887a0685ad87ca307fa9f46" name="a97068afa2887a0685ad87ca307fa9f46"></a>
+void&#160;</td><td class="memItemRight"><b>OnDashTimerTimeout</b> ()</td></tr>
+<tr class="memdesc:a97068afa2887a0685ad87ca307fa9f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Llamado cuando el timer de dash expira; decide nueva dirección y arranca el dash. <br /></td></tr>
+<tr class="memitem:ae25f2c7e50a69ce47b8df59343452934" id="r_ae25f2c7e50a69ce47b8df59343452934"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae25f2c7e50a69ce47b8df59343452934">OnHurtBoxAreaEntered</a> (Area2D area)</td></tr>
+<tr class="memdesc:ae25f2c7e50a69ce47b8df59343452934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa daño recibido por el lobo desde el hurtbox.  <br /></td></tr>
+<tr class="memitem:a60ad4b4177a210985496899f2a4289d7" id="r_a60ad4b4177a210985496899f2a4289d7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a60ad4b4177a210985496899f2a4289d7">TakeDamage</a> (int v, Vector2 globalPosition)</td></tr>
+<tr class="memdesc:a60ad4b4177a210985496899f2a4289d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6b885e45be8d9c3b2c6d888a032f4851" id="r_a6b885e45be8d9c3b2c6d888a032f4851"><td class="memItemLeft"><a id="a6b885e45be8d9c3b2c6d888a032f4851" name="a6b885e45be8d9c3b2c6d888a032f4851"></a>
+Timer&#160;</td><td class="memItemRight"><b>_dashTimer</b></td></tr>
+<tr class="memdesc:a6b885e45be8d9c3b2c6d888a032f4851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer que dispara el dash automático. <br /></td></tr>
+<tr class="memitem:afe99cbf9006353cefd4f0308117204dc" id="r_afe99cbf9006353cefd4f0308117204dc"><td class="memItemLeft"><a id="afe99cbf9006353cefd4f0308117204dc" name="afe99cbf9006353cefd4f0308117204dc"></a>
+bool&#160;</td><td class="memItemRight"><b>_isDashing</b></td></tr>
+<tr class="memdesc:afe99cbf9006353cefd4f0308117204dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el lobo está actualmente en dash. <br /></td></tr>
+<tr class="memitem:a485f9479e396ceb4a024a8e8009c402e" id="r_a485f9479e396ceb4a024a8e8009c402e"><td class="memItemLeft"><a id="a485f9479e396ceb4a024a8e8009c402e" name="a485f9479e396ceb4a024a8e8009c402e"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_runAudio</b></td></tr>
+<tr class="memdesc:a485f9479e396ceb4a024a8e8009c402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio de carrera del lobo. <br /></td></tr>
+<tr class="memitem:ae9ce7028138fb1394fa87a660f78566f" id="r_ae9ce7028138fb1394fa87a660f78566f"><td class="memItemLeft"><a id="ae9ce7028138fb1394fa87a660f78566f" name="ae9ce7028138fb1394fa87a660f78566f"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_hitAudio</b></td></tr>
+<tr class="memdesc:ae9ce7028138fb1394fa87a660f78566f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio de impacto al recibir daño. <br /></td></tr>
+<tr class="memitem:a74f496d6acc21571fd4494eceb6107de" id="r_a74f496d6acc21571fd4494eceb6107de"><td class="memItemLeft"><a id="a74f496d6acc21571fd4494eceb6107de" name="a74f496d6acc21571fd4494eceb6107de"></a>
+AudioStream&#160;</td><td class="memItemRight"><b>_attackAudio</b></td></tr>
+<tr class="memdesc:a74f496d6acc21571fd4494eceb6107de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio de ataque usado en reacciones especiales. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Properties inherited from <a class="el" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html">Faeterna.Scripts.Enemigos.Enemy</a></td></tr>
@@ -203,6 +237,264 @@ Additional Inherited Members</h2></td></tr>
 static float&#160;</td><td class="memItemRight"><b>Gravity</b><code> [get]</code></td></tr>
 <tr class="memdesc:aeac804e672801257ac64aa5bb21e8af2 inherit properties_classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravedad obtenida del ProjectSettings, utilizada para la física del enemigo. <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a789b08da78ffc2505773fb2c41844904" name="a789b08da78ffc2505773fb2c41844904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789b08da78ffc2505773fb2c41844904">&#9670;&#160;</a></span>_on_attack_hit_box_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Wolf.Wolf._on_attack_hit_box_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maneja el golpe del jugador sobre el hitbox de ataque del lobo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Nodo que entró en el hitbox.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1663cb0e3c0a0773a79e8a45f02977c1" name="a1663cb0e3c0a0773a79e8a45f02977c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1663cb0e3c0a0773a79e8a45f02977c1">&#9670;&#160;</a></span>_on_detection_area_body_entered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Wolf.Wolf._on_detection_area_body_entered </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registra al jugador como objetivo cuando entra en el área de detección. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Cuerpo que entró en el área.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab428edf6f3bffecaacc4b920cea6c72a" name="ab428edf6f3bffecaacc4b920cea6c72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab428edf6f3bffecaacc4b920cea6c72a">&#9670;&#160;</a></span>_on_detection_area_body_exited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Wolf.Wolf._on_detection_area_body_exited </td>
+          <td>(</td>
+          <td class="paramtype">Node2D</td>          <td class="paramname"><span class="paramname"><em>prota</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Limpia el objetivo cuando el jugador sale del área de detección. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prota</td><td>Cuerpo que salió del área.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b88e060288811fd55ac82a17304992e" name="a7b88e060288811fd55ac82a17304992e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b88e060288811fd55ac82a17304992e">&#9670;&#160;</a></span>_PhysicsProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Faeterna.scripts.Enemigos.Wolf.Wolf._PhysicsProcess </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lógica de física: gravedad, dash, knockback y movimiento principal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Tiempo transcurrido desde el último frame.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a7b88e060288811fd55ac82a17304992e_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a7b88e060288811fd55ac82a17304992e_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a7b88e060288811fd55ac82a17304992e_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a7b88e060288811fd55ac82a17304992e_cgraph">
+<area shape="rect" title="Lógica de física: gravedad, dash, knockback y movimiento principal." alt="" coords="5,40,203,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="251,5,449,50"/>
+<area shape="poly" title=" " alt="" coords="203,46,238,43,233,45,204,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,75,449,119"/>
+<area shape="poly" title=" " alt="" coords="203,74,238,81,232,81,203,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae25f2c7e50a69ce47b8df59343452934" name="ae25f2c7e50a69ce47b8df59343452934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25f2c7e50a69ce47b8df59343452934">&#9670;&#160;</a></span>OnHurtBoxAreaEntered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Wolf.Wolf.OnHurtBoxAreaEntered </td>
+          <td>(</td>
+          <td class="paramtype">Area2D</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Procesa daño recibido por el lobo desde el hurtbox. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>Área que colisionó con el hurtbox.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_ae25f2c7e50a69ce47b8df59343452934_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_ae25f2c7e50a69ce47b8df59343452934_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_ae25f2c7e50a69ce47b8df59343452934_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_ae25f2c7e50a69ce47b8df59343452934_cgraph">
+<area shape="rect" title="Procesa daño recibido por el lobo desde el hurtbox." alt="" coords="5,75,244,119"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#a60ad4b4177a210985496899f2a4289d7" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="292,75,489,119"/>
+<area shape="poly" title=" " alt="" coords="244,94,279,96,273,98,245,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="537,5,735,50"/>
+<area shape="poly" title=" " alt="" coords="472,71,537,55,543,54,473,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="537,75,735,119"/>
+<area shape="poly" title=" " alt="" coords="489,94,524,97,518,97,490,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="537,144,735,189"/>
+<area shape="poly" title=" " alt="" coords="473,117,543,139,537,139,472,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60ad4b4177a210985496899f2a4289d7" name="a60ad4b4177a210985496899f2a4289d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ad4b4177a210985496899f2a4289d7">&#9670;&#160;</a></span>TakeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.scripts.Enemigos.Wolf.Wolf.TakeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>globalPosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Cantidad de daño a aplicar.</td></tr>
+    <tr><td class="paramname">globalPosition</td><td>Posición del atacante para calcular el knockback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_cgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_cgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_cgraph">
+<area shape="rect" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="5,75,203,119"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="251,5,449,50"/>
+<area shape="poly" title=" " alt="" coords="185,72,256,53,251,56,187,77"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="251,75,449,119"/>
+<area shape="poly" title=" " alt="" coords="203,94,237,96,232,98,204,100"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,144,449,189"/>
+<area shape="poly" title=" " alt="" coords="186,117,256,139,251,140,186,123"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_icgraph.png" border="0" usemap="#aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_icgraph" id="aclassFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_a60ad4b4177a210985496899f2a4289d7_icgraph">
+<area shape="rect" title="Aplica daño al lobo, reproduce efectos y gestiona la muerte o el knockback." alt="" coords="292,5,489,50"/>
+<area shape="rect" href="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html#ae25f2c7e50a69ce47b8df59343452934" title="Procesa daño recibido por el lobo desde el hurtbox." alt="" coords="5,5,244,50"/>
+<area shape="poly" title=" " alt="" coords="273,28,244,30,244,25,278,28"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Enemigos/Wolf/<b>Wolf.cs</b></li>
 </ul>

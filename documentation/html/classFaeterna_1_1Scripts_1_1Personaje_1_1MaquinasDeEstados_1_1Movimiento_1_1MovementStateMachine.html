@@ -108,9 +108,16 @@ Collaboration diagram for Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimient
 <div class="dyncontent">
 <div class="center"><img src="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine__coll__graph.png" border="0" usemap="#aFaeterna_8Scripts_8Personaje_8MaquinasDeEstados_8Movimiento_8MovementStateMachine_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aFaeterna_8Scripts_8Personaje_8MaquinasDeEstados_8Movimiento_8MovementStateMachine_coll__map" id="aFaeterna_8Scripts_8Personaje_8MaquinasDeEstados_8Movimiento_8MovementStateMachine_coll__map">
-<area shape="rect" title=" " alt="" coords="5,81,315,143"/>
-<area shape="rect" title=" " alt="" coords="132,5,188,33"/>
-<area shape="poly" title=" " alt="" coords="162,47,162,82,158,79,158,51"/>
+<area shape="rect" title=" " alt="" coords="5,200,315,262"/>
+<area shape="rect" title=" " alt="" coords="308,5,364,33"/>
+<area shape="poly" title=" " alt="" coords="292,38,260,58,227,84,206,111,190,142,169,201,164,198,185,140,202,109,223,80,257,54,296,35"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="237,82,435,127"/>
+<area shape="poly" title=" " alt="" coords="337,46,338,83,334,81,335,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="339,200,648,262"/>
+<area shape="poly" title=" " alt="" coords="379,28,426,44,478,69,527,103,548,125,565,150,569,164,566,178,546,202,543,197,561,175,564,164,560,152,544,128,523,107,475,73,424,49,379,34"/>
+<area shape="poly" title=" " alt="" coords="250,132,221,153,197,176,179,201,175,197,193,172,217,149,245,135"/>
+<area shape="poly" title=" " alt="" coords="327,141,329,160,335,175,360,200,354,199,330,177,323,161,324,145"/>
+<area shape="poly" title=" " alt="" coords="467,186,437,153,399,130,400,125,440,149,472,187"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -138,6 +145,15 @@ Properties</h2></td></tr>
 <tr class="memitem:aac6df2a379e694bf862497ef4a47b9e3" id="r_aac6df2a379e694bf862497ef4a47b9e3"><td class="memItemLeft"><a id="aac6df2a379e694bf862497ef4a47b9e3" name="aac6df2a379e694bf862497ef4a47b9e3"></a>
 string&#160;</td><td class="memItemRight"><b>CurrentStateName</b><code> [get]</code></td></tr>
 <tr class="memdesc:aac6df2a379e694bf862497ef4a47b9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre del nodo-estado actualmente activo (útil para AnimationTree). <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a31641c21ffa06139fe84a32f295acf07" id="r_a31641c21ffa06139fe84a32f295acf07"><td class="memItemLeft"><a id="a31641c21ffa06139fe84a32f295acf07" name="a31641c21ffa06139fe84a32f295acf07"></a>
+Dictionary&lt; string, <a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html">State</a> &gt;&#160;</td><td class="memItemRight"><b>_states</b></td></tr>
+<tr class="memdesc:a31641c21ffa06139fe84a32f295acf07"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespaceFaeterna_1_1Scripts_1_1Mapa.html">Mapa</a> de estados indexado por el <code>Node.Name</code> de cada estado. <br /></td></tr>
+<tr class="memitem:a5ba36d11fff7f792448cd1c6e642df98" id="r_a5ba36d11fff7f792448cd1c6e642df98"><td class="memItemLeft"><a id="a5ba36d11fff7f792448cd1c6e642df98" name="a5ba36d11fff7f792448cd1c6e642df98"></a>
+<a class="el" href="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html">State</a>&#160;</td><td class="memItemRight"><b>_current_state</b></td></tr>
+<tr class="memdesc:a5ba36d11fff7f792448cd1c6e642df98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado actualmente activo en la máquina. <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae6759b9e2ab0b799b460bf68e8289a91" name="ae6759b9e2ab0b799b460bf68e8289a91"></a>

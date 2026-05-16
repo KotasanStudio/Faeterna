@@ -1,5 +1,13 @@
 <map id="Faeterna.Scripts.Menus.MainMenu" name="Faeterna.Scripts.Menus.MainMenu">
-<area shape="rect" id="Node000001" title="Control que representa el menú principal del juego." alt="" coords="5,81,251,109"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="94,5,162,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,47,130,82,126,79,126,51"/>
+<area shape="rect" id="Node000001" title="Control que representa el menú principal del juego." alt="" coords="290,207,536,234"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="379,5,447,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,34,498,51,530,73,542,86,550,101,553,117,549,135,532,161,510,181,484,197,458,209,456,203,481,192,506,177,528,157,544,133,547,117,545,103,538,90,526,77,495,56,462,40"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html" title="Control que representa el menú de opciones del juego." alt="" coords="5,106,269,134"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="362,39,242,85,176,108,173,103,240,79,367,37"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html" title="Control que representa el menú de selección de partidas guardadas del juego." alt="" coords="292,106,534,134"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="415,47,415,107,411,104,411,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,137,310,180,378,206,373,206,308,185,187,142"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html" title="Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardad..." alt="" coords="34,5,240,33"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="138,46,140,106,134,105,136,51"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="415,147,415,208,411,204,411,151"/>
 </map>

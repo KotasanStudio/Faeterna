@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['coyoteavailable_0',['CoyoteAvailable',['../classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#ab6f5a70191a5de80730b38f3d9afccd8',1,'Faeterna::Scripts::Personaje::Lira']]]
+  ['bounceduration_0',['BounceDuration',['../classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a77a6e098d8bbc8d1cfd1bbbaa0399bdc',1,'Faeterna::Scripts::Tools::ButtonTools']]],
+  ['bouncescale_1',['BounceScale',['../classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#aed31a4efd8d140c0085468764f8a2021',1,'Faeterna::Scripts::Tools::ButtonTools']]]
 ];

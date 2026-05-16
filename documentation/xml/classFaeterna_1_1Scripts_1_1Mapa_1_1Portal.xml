@@ -15,12 +15,24 @@
           <declname>body</declname>
         </param>
         <briefdescription>
+<para>Método que se llama cuando un cuerpo entra en el área del portal. </para>
         </briefdescription>
         <detaileddescription>
+<para>Si el cuerpo es una instancia de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, se llama al método ChangeScene de forma diferida para cambiar a la escena de carga. Es importante usar CallDeferred para asegurarse de que el cambio de escena se realice después de que se hayan procesado todas las señales y eventos actuales, evitando posibles conflictos o errores durante la transición entre escenas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>El cuerpo que ha entrado en el área del portal. Este parámetro se espera que sea una instancia de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, que es el personaje principal del juego. Si el cuerpo no es una instancia de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>, no se realizará ningún cambio de escena. Es importante asegurarse de que el cuerpo que entra en el portal sea el personaje correcto para evitar cambios de escena no deseados. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Portal.cs" line="12" column="13" bodyfile="scripts/Mapa/Portal.cs" bodystart="12" bodyend="18"/>
+        <location file="scripts/Mapa/Portal.cs" line="18" column="13" bodyfile="scripts/Mapa/Portal.cs" bodystart="18" bodyend="22"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -31,12 +43,14 @@
         <name>ChangeScene</name>
         <qualifiedname>Faeterna.Scripts.Mapa.Portal.ChangeScene</qualifiedname>
         <briefdescription>
+<para>Método que se encarga de cambiar a la escena de carga. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se llama de forma diferida desde el método onBodyEnteredPortal para garantizar que el cambio de escena se realice después de que se hayan procesado todas las señales y eventos actuales. Este método utiliza el método ChangeSceneToFile del nodo raíz del árbol de escenas para cambiar a la escena de carga ubicada en &quot;res://scenes/Menus/pantalla_carga.tscn&quot;. Es importante asegurarse de que la ruta a la escena de carga sea correcta para evitar errores al intentar cambiar a esa escena. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Portal.cs" line="20" column="14" bodyfile="scripts/Mapa/Portal.cs" bodystart="20" bodyend="23"/>
+        <location file="scripts/Mapa/Portal.cs" line="27" column="14" bodyfile="scripts/Mapa/Portal.cs" bodystart="27" bodyend="30"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -65,7 +79,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Mapa/Portal.cs" line="9" column="15" bodyfile="scripts/Mapa/Portal.cs" bodystart="10" bodyend="24"/>
+    <location file="scripts/Mapa/Portal.cs" line="9" column="15" bodyfile="scripts/Mapa/Portal.cs" bodystart="10" bodyend="31"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1afb5ba0d1d34b28a726ca1fd63de3685c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Mapa::Portal</scope><name>ChangeScene</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1a02551bafcb0b75aa32f5d60df84b97a5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Mapa::Portal</scope><name>onBodyEnteredPortal</name></member>

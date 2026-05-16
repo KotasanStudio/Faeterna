@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo" name="Faeterna.Scripts.Tutorial.Turotial.DesvanecerNodo">
+<area shape="rect" id="Node000001" title="Método que se encarga de desvanecer o eliminar el nodo de control asociado al tutorial." alt="" coords="248,14,432,58"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial.html#ae35f50d0e18a9abb02cc924ff0b4881f" title="Método que se llama cuando un cuerpo entra en el área 2D del tutorial." alt="" coords="5,5,200,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,36,200,39,200,34,235,36"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.PauseMenu.OpenSettings" name="Faeterna.Scripts.Menus.PauseMenu.OpenSettings">
+<area shape="rect" id="Node000001" title="Abre el menú de opciones dentro del menú de pausa." alt="" coords="5,5,222,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="270,5,480,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,25,257,28,252,28,222,30"/>
+</map>

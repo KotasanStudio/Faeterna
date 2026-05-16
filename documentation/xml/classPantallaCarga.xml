@@ -11,12 +11,14 @@
         <name>nextScene</name>
         <qualifiedname>PantallaCarga.nextScene</qualifiedname>
         <briefdescription>
+<para>Escena que se cargará después de que la pantalla de carga haya terminado su animación. Se asigna en el editor y debe ser un PackedScene válido para que el cambio de escena funcione correctamente. Es importante asegurarse de que esta propiedad esté configurada correctamente para evitar errores al intentar cambiar a la siguiente escena después de la pantalla de carga. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/PantallaCarga.cs" line="7" column="21" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="7" bodyend="-1"/>
+        <location file="scripts/Menus/PantallaCarga.cs" line="8" column="21" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classPantallaCarga_1ad91a999a895f2e158a8ba23cd44cdbfd" compoundref="PantallaCarga_8cs" startline="13" endline="16">pantallaCargaCompletado</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -27,12 +29,15 @@
         <name>pantallaCargaCompletado</name>
         <qualifiedname>PantallaCarga.pantallaCargaCompletado</qualifiedname>
         <briefdescription>
+<para>Este método se llama al final de la animación de la pantalla de carga. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se encarga de cambiar a la siguiente escena utilizando el método ChangeSceneToPacked del nodo raíz del árbol de escenas. Es importante que este método se llame al final de la animación para garantizar que la transición a la siguiente escena sea suave y sin interrupciones. Asegúrate de que la animación de la pantalla de carga esté configurada para llamar a este método en el momento adecuado para lograr el efecto deseado. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/PantallaCarga.cs" line="9" column="13" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="9" bodyend="12"/>
+        <location file="scripts/Menus/PantallaCarga.cs" line="13" column="13" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="13" bodyend="16"/>
+        <references refid="classPantallaCarga_1a6a8b55a9420797fc8df5b2b8c7f8295f" compoundref="PantallaCarga_8cs" startline="8">nextScene</references>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -61,7 +66,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Menus/PantallaCarga.cs" line="5" column="15" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="6" bodyend="13"/>
+    <location file="scripts/Menus/PantallaCarga.cs" line="5" column="15" bodyfile="scripts/Menus/PantallaCarga.cs" bodystart="6" bodyend="17"/>
     <listofallmembers>
       <member refid="classPantallaCarga_1a6a8b55a9420797fc8df5b2b8c7f8295f" prot="public" virt="non-virtual"><scope>PantallaCarga</scope><name>nextScene</name></member>
       <member refid="classPantallaCarga_1ad91a999a895f2e158a8ba23cd44cdbfd" prot="public" virt="non-virtual"><scope>PantallaCarga</scope><name>pantallaCargaCompletado</name></member>

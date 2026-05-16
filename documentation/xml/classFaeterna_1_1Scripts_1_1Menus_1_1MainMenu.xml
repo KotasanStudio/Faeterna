@@ -18,6 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="12" column="33" bodyfile="scripts/Menus/MainMenu.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a2bcec9275f7a36e007450fa88f636acf" compoundref="MainMenu_8cs" startline="60" endline="74">Faeterna.Scripts.Menus.MainMenu.OnPlayPressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ab5b838454e4ff9d51108a181cdccc10f" prot="private" static="no" mutable="no">
         <type>TextureButton</type>
@@ -33,6 +34,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="15" column="33" bodyfile="scripts/Menus/MainMenu.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5d7b2b04a3d704b0e9d3670147061a4d" compoundref="MainMenu_8cs" startline="79" endline="93">Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a0c7e0314dbacba8ef6605246714d2a92" prot="private" static="no" mutable="no">
         <type>TextureButton</type>
@@ -48,6 +50,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="18" column="32" bodyfile="scripts/Menus/MainMenu.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ae5b4952d833ee5881f7c2155e29db51d" compoundref="MainMenu_8cs" startline="98" endline="108">Faeterna.Scripts.Menus.MainMenu.OnExitPressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a24b9d53712eefaef7095653d3fa99a02" prot="private" static="no" mutable="no">
         <type><ref refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu" kindref="compound">OptionsMenu</ref></type>
@@ -63,6 +66,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="21" column="30" bodyfile="scripts/Menus/MainMenu.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a05b220c7e49abd42f5dd02853ef2a30c" compoundref="MainMenu_8cs" startline="46" endline="55">Faeterna.Scripts.Menus.MainMenu._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a3ea1996fec7f6b9c73aa139cdfd00d6c" prot="private" static="no" mutable="no">
         <type><ref refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu" kindref="compound">PlayMenu</ref></type>
@@ -78,6 +82,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="24" column="27" bodyfile="scripts/Menus/MainMenu.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a05b220c7e49abd42f5dd02853ef2a30c" compoundref="MainMenu_8cs" startline="46" endline="55">Faeterna.Scripts.Menus.MainMenu._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1aa9b3676cd70e439c8385803d89ea4934" prot="private" static="no" mutable="no">
         <type>TextureRect</type>
@@ -93,6 +98,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="27" column="30" bodyfile="scripts/Menus/MainMenu.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" compoundref="MainMenu_8cs" startline="116" endline="122">Faeterna.Scripts.Menus.MainMenu.SetBlur</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -111,6 +117,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="32" column="30" bodyfile="scripts/Menus/MainMenu.cs" bodystart="32" bodyend="38"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ae5b4952d833ee5881f7c2155e29db51d" compoundref="MainMenu_8cs" startline="98" endline="108">Faeterna.Scripts.Menus.MainMenu.OnExitPressed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a2bcec9275f7a36e007450fa88f636acf" compoundref="MainMenu_8cs" startline="60" endline="74">Faeterna.Scripts.Menus.MainMenu.OnPlayPressed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5d7b2b04a3d704b0e9d3670147061a4d" compoundref="MainMenu_8cs" startline="79" endline="93">Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a05b220c7e49abd42f5dd02853ef2a30c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -141,6 +150,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="46" column="30" bodyfile="scripts/Menus/MainMenu.cs" bodystart="46" bodyend="55"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a24b9d53712eefaef7095653d3fa99a02" compoundref="MainMenu_8cs" startline="21">Faeterna.Scripts.Menus.MainMenu._optionsMenu</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a3ea1996fec7f6b9c73aa139cdfd00d6c" compoundref="MainMenu_8cs" startline="24">Faeterna.Scripts.Menus.MainMenu._playMenu</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" compoundref="MainMenu_8cs" startline="116" endline="122">Faeterna.Scripts.Menus.MainMenu.SetBlur</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -159,6 +171,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="60" column="22" bodyfile="scripts/Menus/MainMenu.cs" bodystart="60" bodyend="74"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5f5c7a215a36c98224c1dfaf7aa4f555" compoundref="MainMenu_8cs" startline="12">Faeterna.Scripts.Menus.MainMenu._startButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" compoundref="MainMenu_8cs" startline="116" endline="122">Faeterna.Scripts.Menus.MainMenu.SetBlur</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a582139ae269e4774d75c9c8655c2c450" compoundref="MainMenu_8cs" startline="32" endline="38">Faeterna.Scripts.Menus.MainMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5d7b2b04a3d704b0e9d3670147061a4d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -175,6 +191,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="79" column="22" bodyfile="scripts/Menus/MainMenu.cs" bodystart="79" bodyend="93"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ab5b838454e4ff9d51108a181cdccc10f" compoundref="MainMenu_8cs" startline="15">Faeterna.Scripts.Menus.MainMenu._settingsButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" compoundref="MainMenu_8cs" startline="116" endline="122">Faeterna.Scripts.Menus.MainMenu.SetBlur</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a582139ae269e4774d75c9c8655c2c450" compoundref="MainMenu_8cs" startline="32" endline="38">Faeterna.Scripts.Menus.MainMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ae5b4952d833ee5881f7c2155e29db51d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -191,6 +211,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="98" column="22" bodyfile="scripts/Menus/MainMenu.cs" bodystart="98" bodyend="108"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a0c7e0314dbacba8ef6605246714d2a92" compoundref="MainMenu_8cs" startline="18">Faeterna.Scripts.Menus.MainMenu._exitButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a582139ae269e4774d75c9c8655c2c450" compoundref="MainMenu_8cs" startline="32" endline="38">Faeterna.Scripts.Menus.MainMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -221,6 +244,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/MainMenu.cs" line="116" column="22" bodyfile="scripts/Menus/MainMenu.cs" bodystart="116" bodyend="122"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1aa9b3676cd70e439c8385803d89ea4934" compoundref="MainMenu_8cs" startline="27">Faeterna.Scripts.Menus.MainMenu._background</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a05b220c7e49abd42f5dd02853ef2a30c" compoundref="MainMenu_8cs" startline="46" endline="55">Faeterna.Scripts.Menus.MainMenu._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a2bcec9275f7a36e007450fa88f636acf" compoundref="MainMenu_8cs" startline="60" endline="74">Faeterna.Scripts.Menus.MainMenu.OnPlayPressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5d7b2b04a3d704b0e9d3670147061a4d" compoundref="MainMenu_8cs" startline="79" endline="93">Faeterna.Scripts.Menus.MainMenu.OnSettingsPressed</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -249,6 +276,31 @@
         <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_optionsMenu</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_playMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Menus.OptionsMenu</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_saveSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Menus.PlayMenu</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Tools.Saves</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves"/>
       </node>
     </collaborationgraph>
     <location file="scripts/Menus/MainMenu.cs" line="9" column="19" bodyfile="scripts/Menus/MainMenu.cs" bodystart="10" bodyend="123"/>

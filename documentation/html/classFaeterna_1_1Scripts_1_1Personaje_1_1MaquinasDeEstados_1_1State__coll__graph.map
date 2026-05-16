@@ -1,8 +1,12 @@
 <map id="Faeterna.Scripts.Personaje.MaquinasDeEstados.State" name="Faeterna.Scripts.Personaje.MaquinasDeEstados.State">
 <area shape="rect" id="Node000001" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="5,217,204,262"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="72,5,127,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,48,107,217,101,216,97,50"/>
-<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="120,82,430,144"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="138,38,220,81,215,83,138,43"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,153,136,219,133,214,219,154"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="246,5,302,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,25,199,32,166,42,134,59,109,84,95,116,91,152,94,187,101,217,95,216,89,188,86,152,90,115,105,81,131,55,163,38,198,27,233,22"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="119,82,428,144"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="275,47,276,83,271,81,272,51"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="280,217,478,262"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="317,23,381,42,414,58,442,80,466,107,482,134,485,163,473,194,462,208,447,219,445,214,458,204,469,192,480,162,477,136,462,110,439,84,411,63,379,47,317,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,151,144,170,126,193,114,218,109,215,121,190,140,166,161,154"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="248,156,246,176,251,192,264,206,282,219,277,218,261,210,246,194,240,176,244,160"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="366,202,348,170,324,147,326,142,352,166,371,203"/>
 </map>

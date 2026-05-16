@@ -18,6 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="14" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1b959c0eb342753368b8e5ea6db8e5b1" prot="private" static="no" mutable="no">
         <type>OptionButton</type>
@@ -34,6 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="19" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a501c38003078b138d511b00bb55f3ec1" prot="private" static="no" mutable="no">
         <type>OptionButton</type>
@@ -50,6 +52,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="24" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aab60b3955e67189184015af2871adf94" prot="private" static="no" mutable="no">
         <type>OptionButton</type>
@@ -65,6 +68,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="27" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a4591abb2c609cf9a19ccea63c6eba81f" prot="private" static="no" mutable="no">
         <type>HSlider</type>
@@ -110,6 +114,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="36" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2b1f8bc4a54ba46262bd90250029b592" prot="private" static="no" mutable="no">
         <type>HSlider</type>
@@ -125,6 +130,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="41" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8dbc9ed5e792211447164fd1819aa946" prot="private" static="no" mutable="no">
         <type>SpinBox</type>
@@ -155,6 +161,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="47" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a996d278a80f7cfd8a7fd75252f1fc397" prot="private" static="no" mutable="no">
         <type>SpinBox</type>
@@ -185,6 +192,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="53" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ae127125bf1c084ab3d5317b16ba015e1" prot="private" static="no" mutable="no">
         <type>SpinBox</type>
@@ -215,6 +223,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="59" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa1d18fe9669a0189ed72f3f9c9c96f9b" prot="private" static="no" mutable="no">
         <type>SpinBox</type>
@@ -245,6 +254,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="65" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2c373f122f1030e10f533cfb9acf28f0" prot="private" static="no" mutable="no">
         <type>SpinBox</type>
@@ -275,6 +285,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="73" column="32" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5353fde99aaca066e0a1f305dd92ce7b" prot="private" static="no" mutable="no">
         <type>TextureButton</type>
@@ -290,6 +301,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="76" column="32" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ace4c492cab9c8dc693ea337aa94af90e" compoundref="OptionsMenu_8cs" startline="518" endline="527">Faeterna.Scripts.Menus.OptionsMenu.OnExitPressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" prot="private" static="no" mutable="no">
         <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" kindref="compound">Saves</ref></type>
@@ -305,6 +317,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="79" column="23" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -321,6 +335,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="82" column="22" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" compoundref="OptionsMenu_8cs" startline="249" endline="258">Faeterna.Scripts.Menus.OptionsMenu.OnHSliderFPSValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" compoundref="OptionsMenu_8cs" startline="220" endline="241">Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" compoundref="OptionsMenu_8cs" startline="266" endline="275">Faeterna.Scripts.Menus.OptionsMenu.OnSpinFPSBoxValueChanged</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -337,6 +354,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="85" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" compoundref="OptionsMenu_8cs" startline="249" endline="258">Faeterna.Scripts.Menus.OptionsMenu.OnHSliderFPSValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" compoundref="OptionsMenu_8cs" startline="220" endline="241">Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" compoundref="OptionsMenu_8cs" startline="492" endline="513">Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" compoundref="OptionsMenu_8cs" startline="266" endline="275">Faeterna.Scripts.Menus.OptionsMenu.OnSpinFPSBoxValueChanged</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -355,6 +377,13 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="90" column="30" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="90" bodyend="109"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" compoundref="OptionsMenu_8cs" startline="85">Faeterna.Scripts.Menus.OptionsMenu._fpsValue</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" compoundref="OptionsMenu_8cs" startline="79">Faeterna.Scripts.Menus.OptionsMenu._saveSettings</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" compoundref="OptionsMenu_8cs" startline="404" endline="409">Faeterna.Scripts.Menus.OptionsMenu.OnHEnviromentSliderValueChanged</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" compoundref="OptionsMenu_8cs" startline="365" endline="370">Faeterna.Scripts.Menus.OptionsMenu.OnHMasterSliderValueChanged</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" compoundref="OptionsMenu_8cs" startline="378" endline="383">Faeterna.Scripts.Menus.OptionsMenu.OnHMusicSliderValueChanged</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" compoundref="OptionsMenu_8cs" startline="391" endline="396">Faeterna.Scripts.Menus.OptionsMenu.OnHSoundFXSliderValueChanged</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" compoundref="OptionsMenu_8cs" startline="417" endline="422">Faeterna.Scripts.Menus.OptionsMenu.OnHUISoundSliderValueChanged</references>
         <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af9b5437ca00a28b6f8ccf35e4ff6108e" compoundref="OptionsMenu_8cs" startline="117" endline="165">Faeterna.Scripts.Menus.OptionsMenu.OnOptionButtonItemSelected</references>
         <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" compoundref="OptionsMenu_8cs" startline="220" endline="241">Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</references>
         <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" compoundref="OptionsMenu_8cs" startline="283" endline="313">Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected</references>
@@ -483,6 +512,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="220" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="220" bodyend="241"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" compoundref="OptionsMenu_8cs" startline="85">Faeterna.Scripts.Menus.OptionsMenu._fpsValue</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" compoundref="OptionsMenu_8cs" startline="82">Faeterna.Scripts.Menus.OptionsMenu._isFpslock</references>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -514,6 +545,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="249" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="249" bodyend="258"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" compoundref="OptionsMenu_8cs" startline="85">Faeterna.Scripts.Menus.OptionsMenu._fpsValue</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" compoundref="OptionsMenu_8cs" startline="82">Faeterna.Scripts.Menus.OptionsMenu._isFpslock</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -544,6 +577,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="266" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="266" bodyend="275"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" compoundref="OptionsMenu_8cs" startline="85">Faeterna.Scripts.Menus.OptionsMenu._fpsValue</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" compoundref="OptionsMenu_8cs" startline="82">Faeterna.Scripts.Menus.OptionsMenu._isFpslock</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -574,6 +609,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="283" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="283" bodyend="313"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a483a48df78744459138ab078a4ac1ac9" compoundref="OptionsMenu_8cs" startline="321" endline="338">Faeterna.Scripts.Menus.OptionsMenu.ApplyShadowQuality</references>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -587,12 +623,26 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen maestro al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel general de volumen que afecta a todos los sonidos del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen maestro en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen maestro en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen general del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="350" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="350" bodyend="355"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="365" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="365" bodyend="370"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -605,12 +655,26 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de música al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de música en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de la música en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para las pistas musicales del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="357" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="357" bodyend="362"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="378" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="378" bodyend="383"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -623,12 +687,26 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de efectos de sonido al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de efectos de sonido en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los efectos de sonido en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con acciones, interacciones y eventos en el juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="364" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="364" bodyend="369"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="391" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="391" bodyend="396"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -641,12 +719,26 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de ambiente al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos ambientales, lo que afecta a los sonidos relacionados con el entorno del juego, como el viento, la lluvia, los animales, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de ambiente</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de ambiente en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos ambientales en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con el entorno del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de ambiente funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="371" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="371" bodyend="376"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="404" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="404" bodyend="409"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -659,12 +751,26 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de sonido de interfaz al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos relacionados con la interfaz del juego, como los clics, las notificaciones, los menús, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de sonido de interfaz en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos relacionados con la interfaz del juego en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos de la interfaz según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="378" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="378" bodyend="383"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="417" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="417" bodyend="422"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a68cd4704536b66f6ab371e4dbf0c0e73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -677,12 +783,25 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen maestro (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen maestro al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel general de volumen que afecta a todos los sonidos del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen maestro en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen maestro en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen general del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen maestro funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="385" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="385" bodyend="390"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="430" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="430" bodyend="435"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a871f2266e757373f1786715420a55134" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -695,12 +814,25 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de música (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de música al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de música en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de la música en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para las pistas musicales del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de música funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="392" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="392" bodyend="397"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="443" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="443" bodyend="448"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a76468231753a43706928fddc9dcd6b7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -713,12 +845,25 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de efectos de sonido (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de efectos de sonido al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de efectos de sonido en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los efectos de sonido en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con acciones, interacciones y eventos en el juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de efectos de sonido funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="399" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="399" bodyend="404"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="456" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="456" bodyend="461"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9c304bdc6d4a584f2ca06fb08bd6a953" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -731,12 +876,25 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de ambiente (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de ambiente al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos ambientales, lo que afecta a los sonidos relacionados con el entorno del juego, como el viento, la lluvia, los animales, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de ambiente</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de ambiente en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos ambientales en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos relacionados con el entorno del juego según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de ambiente funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="406" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="406" bodyend="411"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="469" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="469" bodyend="474"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9e514d1d9dc4ceb9015e9fd8636d494a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -749,12 +907,25 @@
           <declname>value</declname>
         </param>
         <briefdescription>
+<para>Se llama cuando se cambia el valor del control de volumen de sonido de interfaz (slider o spinbox). </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica el nuevo valor de volumen de sonido de interfaz al sistema de audio del juego en tiempo real. Permite al jugador ajustar el nivel de volumen específico para los sonidos relacionados con la interfaz del juego, como los clics, las notificaciones, los menús, etc. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor de volumen de sonido de interfaz en porcentaje (0-100) seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar el nivel de volumen de los sonidos relacionados con la interfaz del juego en el sistema de audio del juego en tiempo real, permitiendo al jugador ajustar el volumen específico para los sonidos de la interfaz según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de volumen de sonido de interfaz funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función utiliza la función NormalizeVolumeToDb para convertir el valor de porcentaje a decibelios antes de aplicarlo al sistema de audio. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="413" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="413" bodyend="418"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="482" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="482" bodyend="487"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" compoundref="OptionsMenu_8cs" startline="349" endline="357">Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -763,12 +934,28 @@
         <name>OnSavePressed</name>
         <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</qualifiedname>
         <briefdescription>
+<para>Se llama cuando se presiona el botón de guardar en el menú de opciones. </para>
         </briefdescription>
         <detaileddescription>
+<para>Aplica todas las configuraciones seleccionadas por el jugador y las guarda utilizando la clase SaveSettings. Esto incluye configuraciones gráficas como antialiasing, VSync, resolución, bloqueo de FPS, calidad de sombras, así como configuraciones de audio como volumen maestro, música, efectos de sonido, ambiente y sonido de interfaz. Al presionar el botón de guardar, se reproduce una animación de presión para proporcionar retroalimentación visual al jugador, y luego se llama al método SaveOptions de la clase SaveSettings para almacenar todas las configuraciones seleccionadas. Es importante que esta función esté correctamente implementada para que las configuraciones seleccionadas por el jugador se apliquen correctamente al juego y se guarden para futuras sesiones. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="420" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="420" bodyend="441"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="492" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="492" bodyend="513"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a706d33bb87ce91f3ed6ac24c4633e441" compoundref="OptionsMenu_8cs" startline="14">Faeterna.Scripts.Menus.OptionsMenu._antialiasing</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a810c24707bddb656b5874bcf361eb532" compoundref="OptionsMenu_8cs" startline="59">Faeterna.Scripts.Menus.OptionsMenu._enviroment</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aab60b3955e67189184015af2871adf94" compoundref="OptionsMenu_8cs" startline="27">Faeterna.Scripts.Menus.OptionsMenu._fpslock</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" compoundref="OptionsMenu_8cs" startline="85">Faeterna.Scripts.Menus.OptionsMenu._fpsValue</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2b1f8bc4a54ba46262bd90250029b592" compoundref="OptionsMenu_8cs" startline="41">Faeterna.Scripts.Menus.OptionsMenu._master</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a3ceb8889b7b460f3443c3aa53f7ac2c7" compoundref="OptionsMenu_8cs" startline="47">Faeterna.Scripts.Menus.OptionsMenu._music</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af42b24608f9111cf4f11f123f75e1bc7" compoundref="OptionsMenu_8cs" startline="73">Faeterna.Scripts.Menus.OptionsMenu._saveButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" compoundref="OptionsMenu_8cs" startline="79">Faeterna.Scripts.Menus.OptionsMenu._saveSettings</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a501c38003078b138d511b00bb55f3ec1" compoundref="OptionsMenu_8cs" startline="24">Faeterna.Scripts.Menus.OptionsMenu._screen</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a61c44c0b582a66c5e8141b0e8d425d32" compoundref="OptionsMenu_8cs" startline="36">Faeterna.Scripts.Menus.OptionsMenu._shadows</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8bbfc9a626e90fdb373cdada59b84fa9" compoundref="OptionsMenu_8cs" startline="53">Faeterna.Scripts.Menus.OptionsMenu._soundfx</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1e8601a88a878d09cc2fd05c1f4c03ad" compoundref="OptionsMenu_8cs" startline="65">Faeterna.Scripts.Menus.OptionsMenu._uisound</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1b959c0eb342753368b8e5ea6db8e5b1" compoundref="OptionsMenu_8cs" startline="19">Faeterna.Scripts.Menus.OptionsMenu._vsync</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ace4c492cab9c8dc693ea337aa94af90e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -777,12 +964,16 @@
         <name>OnExitPressed</name>
         <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnExitPressed</qualifiedname>
         <briefdescription>
+<para>Se llama cuando se presiona el botón de salir en el menú de opciones. </para>
         </briefdescription>
         <detaileddescription>
+<para>Cierra el menú de opciones y vuelve al menú principal. Al presionar el botón de salir, se reproduce una animación de presión para proporcionar retroalimentación visual al jugador, y luego se establece la propiedad Visible del menú de opciones en false para ocultarlo. Es importante que esta función esté correctamente implementada para que el menú de opciones se cierre correctamente y para que el jugador pueda volver al menú principal sin problemas. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="443" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="443" bodyend="452"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="518" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="518" bodyend="527"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5353fde99aaca066e0a1f305dd92ce7b" compoundref="OptionsMenu_8cs" startline="76">Faeterna.Scripts.Menus.OptionsMenu._exitButton</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" compoundref="ButtonTools_8cs" startline="38" endline="65">Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -815,6 +1006,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Menus/OptionsMenu.cs" line="321" column="29" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="321" bodyend="338"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" compoundref="OptionsMenu_8cs" startline="283" endline="313">Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -829,12 +1021,36 @@
           <declname>percentValue</declname>
         </param>
         <briefdescription>
+<para>Normaliza un valor de volumen dado en porcentaje (0-100) a decibelios (dB) para su uso con el sistema de audio del juego. </para>
         </briefdescription>
         <detaileddescription>
+<para>El sistema de audio generalmente utiliza decibelios para representar los niveles de volumen, donde 0 dB es el nivel máximo y valores negativos representan niveles más bajos. Esta función convierte un valor de porcentaje a un valor de decibelios utilizando una fórmula que asegura que un valor de 0% corresponda a -80 dB (silencio) y un valor de 100% corresponda a 0 dB (volumen máximo). Es importante que esta función esté correctamente implementada para que los controles de volumen en el menú de opciones funcionen correctamente y para que los cambios en el volumen se apliquen</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percentValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor de volumen en porcentaje (0-100) que se desea convertir a decibelios. Este valor se utiliza para calcular el nivel de volumen en decibelios que se aplicará al sistema de audio del juego. Es importante que este valor esté dentro del rango de 0 a 100 para que la función funcione correctamente y para que los cambios en el volumen se apliquen de manera adecuada al juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor de volumen en decibelios (dB) correspondiente al valor de porcentaje dado. Un valor de 0% corresponde a -80 dB (silencio) y un valor de 100% corresponde a 0 dB (volumen máximo). Este valor se utiliza para configurar el nivel de volumen en el sistema de audio del juego, permitiendo que los cambios realizados por el jugador en el menú de opciones se reflejen correctamente en el audio del juego. Es importante que este valor se calcule correctamente para que los controles de volumen funcionen adecuadamente en el menú de opciones. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Menus/OptionsMenu.cs" line="340" column="23" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="340" bodyend="348"/>
+        <location file="scripts/Menus/OptionsMenu.cs" line="349" column="23" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="349" bodyend="357"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" compoundref="OptionsMenu_8cs" startline="404" endline="409">Faeterna.Scripts.Menus.OptionsMenu.OnHEnviromentSliderValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" compoundref="OptionsMenu_8cs" startline="365" endline="370">Faeterna.Scripts.Menus.OptionsMenu.OnHMasterSliderValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" compoundref="OptionsMenu_8cs" startline="378" endline="383">Faeterna.Scripts.Menus.OptionsMenu.OnHMusicSliderValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" compoundref="OptionsMenu_8cs" startline="391" endline="396">Faeterna.Scripts.Menus.OptionsMenu.OnHSoundFXSliderValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" compoundref="OptionsMenu_8cs" startline="417" endline="422">Faeterna.Scripts.Menus.OptionsMenu.OnHUISoundSliderValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9c304bdc6d4a584f2ca06fb08bd6a953" compoundref="OptionsMenu_8cs" startline="469" endline="474">Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxEnviromentValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a68cd4704536b66f6ab371e4dbf0c0e73" compoundref="OptionsMenu_8cs" startline="430" endline="435">Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMasterValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a871f2266e757373f1786715420a55134" compoundref="OptionsMenu_8cs" startline="443" endline="448">Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMusicValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a76468231753a43706928fddc9dcd6b7c" compoundref="OptionsMenu_8cs" startline="456" endline="461">Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxSoundFXValueChanged</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9e514d1d9dc4ceb9015e9fd8636d494a" compoundref="OptionsMenu_8cs" startline="482" endline="487">Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxUISoundValueChanged</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -863,9 +1079,16 @@
         <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_saveSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Tools.Saves</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves"/>
       </node>
     </collaborationgraph>
-    <location file="scripts/Menus/OptionsMenu.cs" line="9" column="19" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="10" bodyend="453"/>
+    <location file="scripts/Menus/OptionsMenu.cs" line="9" column="19" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="10" bodyend="528"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a706d33bb87ce91f3ed6ac24c4633e441" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_antialiasing</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a810c24707bddb656b5874bcf361eb532" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_enviroment</name></member>

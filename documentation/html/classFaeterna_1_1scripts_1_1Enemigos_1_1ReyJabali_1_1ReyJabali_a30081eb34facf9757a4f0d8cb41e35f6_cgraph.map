@@ -1,0 +1,9 @@
+<map id="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess" name="Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess">
+<area shape="rect" id="Node000001" title="Control principal de física del boss: gravedad, persecución, regreso a casa y knockback." alt="" coords="5,75,263,119"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html#ac906f0782347307c5528372a5e1b3188" title="Voltea el sprite del boss y actualiza su dirección horizontal." alt="" coords="311,5,532,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,71,314,53,309,55,231,77"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="322,75,520,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,94,309,96,304,98,263,100"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="322,144,520,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,117,314,139,309,140,230,123"/>
+</map>

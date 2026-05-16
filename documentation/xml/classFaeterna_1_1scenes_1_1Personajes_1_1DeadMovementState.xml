@@ -176,6 +176,9 @@
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
         <childnode refid="3" relation="public-inheritance">
         </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_current_state</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>

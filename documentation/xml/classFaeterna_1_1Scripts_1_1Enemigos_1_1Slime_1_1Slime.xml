@@ -36,6 +36,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="17" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" compoundref="Slime_8cs" startline="111" endline="140">Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -53,6 +54,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="20" column="23" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" compoundref="Slime_8cs" startline="52" endline="65">Faeterna.Scripts.Enemigos.Slime.Slime._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a7eace498406eb91a402bf3a700e6ea3b" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -69,6 +71,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="23" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" compoundref="Slime_8cs" startline="72" endline="105">Faeterna.Scripts.Enemigos.Slime.Slime._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" compoundref="Slime_8cs" startline="111" endline="140">Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ab3ca6e40133dbe96f57af363080fc6e6" compoundref="Slime_8cs" startline="194" endline="233">Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a81a7603c8084dee81c4e196e99235215" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -85,6 +90,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="26" column="21" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" compoundref="Slime_8cs" startline="111" endline="140">Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a8ea65977a05b1d19e936fa952262521d" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -100,6 +106,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="30" column="30" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" compoundref="Slime_8cs" startline="111" endline="140">Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae4c57ee715b977a1c8b7111896184281" prot="private" static="no" mutable="no">
         <type>AudioStream</type>
@@ -115,6 +122,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="33" column="30" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ab3ca6e40133dbe96f57af363080fc6e6" compoundref="Slime_8cs" startline="194" endline="233">Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -150,8 +158,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="52" column="30" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="52" bodyend="65"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a5b277ad160c4b56dd67cb8fad8727abd" compoundref="Slime_8cs" startline="20">Faeterna.Scripts.Enemigos.Slime.Slime._jumpTimer</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc71179ad5e4f066eb5ff3e91ed68fb3" compoundref="Slime_8cs" startline="14">Faeterna.Scripts.Enemigos.Slime.Slime.JumpInterval</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" compoundref="Slime_8cs" startline="111" endline="140">Faeterna.Scripts.Enemigos.Slime.Slime.OnJumpTimerTimeout</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" compoundref="Enemy_8cs" startline="58">Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</references>
       </memberdef>
@@ -184,6 +194,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="72" column="30" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="72" bodyend="105"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a7eace498406eb91a402bf3a700e6ea3b" compoundref="Slime_8cs" startline="23">Faeterna.Scripts.Enemigos.Slime.Slime._isJumping</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" compoundref="Enemy_8cs" startline="64">Faeterna.Scripts.Enemigos.Enemy.Gravity</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
         <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" compoundref="Enemy_8cs" startline="55">Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</references>
@@ -298,6 +309,16 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="111" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="111" bodyend="140"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a7eace498406eb91a402bf3a700e6ea3b" compoundref="Slime_8cs" startline="23">Faeterna.Scripts.Enemigos.Slime.Slime._isJumping</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a8ea65977a05b1d19e936fa952262521d" compoundref="Slime_8cs" startline="30">Faeterna.Scripts.Enemigos.Slime.Slime._jumpAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a81a7603c8084dee81c4e196e99235215" compoundref="Slime_8cs" startline="26">Faeterna.Scripts.Enemigos.Slime.Slime._jumpDirection</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ad4be507fa018306266ecf2362d26abeb" compoundref="Slime_8cs" startline="17">Faeterna.Scripts.Enemigos.Slime.Slime.HorizontalSpeed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" compoundref="Enemy_8cs" startline="21">Faeterna.Scripts.Enemigos.Enemy.jumpVelocity</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" compoundref="Slime_8cs" startline="52" endline="65">Faeterna.Scripts.Enemigos.Slime.Slime._Ready</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae53963ac3e315f582b63477a32fc8fa4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -328,6 +349,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Enemigos/Slime/Slime.cs" line="180" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="180" bodyend="187"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ab3ca6e40133dbe96f57af363080fc6e6" compoundref="Slime_8cs" startline="194" endline="233">Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ab3ca6e40133dbe96f57af363080fc6e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -368,7 +390,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Enemigos/Slime/Slime.cs" line="194" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="194" bodyend="234"/>
+        <location file="scripts/Enemigos/Slime/Slime.cs" line="194" column="22" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="194" bodyend="233"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae4c57ee715b977a1c8b7111896184281" compoundref="Slime_8cs" startline="33">Faeterna.Scripts.Enemigos.Slime.Slime._hitAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a7eace498406eb91a402bf3a700e6ea3b" compoundref="Slime_8cs" startline="23">Faeterna.Scripts.Enemigos.Slime.Slime._isJumping</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" compoundref="Enemy_8cs" startline="49">Faeterna.Scripts.Enemigos.Enemy.attackHitBox</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" compoundref="Enemy_8cs" startline="40">Faeterna.Scripts.Enemigos.Enemy.detectionArea</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" compoundref="Enemy_8cs" startline="15">Faeterna.Scripts.Enemigos.Enemy.health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" compoundref="Enemy_8cs" startline="80" endline="87">Faeterna.Scripts.Enemigos.Enemy.hitShader</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" compoundref="Enemy_8cs" startline="46">Faeterna.Scripts.Enemigos.Enemy.hurtBox</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" compoundref="Enemy_8cs" startline="30">Faeterna.Scripts.Enemigos.Enemy.knockbackDuration</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" compoundref="Enemy_8cs" startline="55">Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" compoundref="Enemy_8cs" startline="58">Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae53963ac3e315f582b63477a32fc8fa4" compoundref="Slime_8cs" startline="180" endline="187">Faeterna.Scripts.Enemigos.Slime.Slime.OnHurtBoxAreaEntered</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -411,7 +447,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Enemigos/Slime/Slime.cs" line="11" column="19" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="12" bodyend="235"/>
+    <location file="scripts/Enemigos/Slime/Slime.cs" line="11" column="19" bodyfile="scripts/Enemigos/Slime/Slime.cs" bodystart="12" bodyend="234"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a5462bc4397a046c7e33573888a60fa11" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Slime::Slime</scope><name>_EnterTree</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae4c57ee715b977a1c8b7111896184281" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Slime::Slime</scope><name>_hitAudio</name></member>

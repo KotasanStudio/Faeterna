@@ -18,6 +18,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="15" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a847e0e6a1959945af908d29f2ef11aac" compoundref="JumpingMovementState_8cs" startline="30" endline="40">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.Enter</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1aef146ce29156fe2566133ac8afff5f1d" compoundref="JumpingMovementState_8cs" startline="113" endline="121">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a181a9ad6d7c78e94823b88a5b5dc17e3" compoundref="JumpingMovementState_8cs" startline="20" endline="25">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a54831e64ba92c34f0b8568ab6df65b8b" compoundref="JumpingMovementState_8cs" startline="49" endline="68">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1acfdd37e19297dcda210a2bc23ae04112" compoundref="JumpingMovementState_8cs" startline="76" endline="105">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.UpdatePhysics</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -37,6 +42,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="20" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="20" bodyend="25"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" compoundref="JumpingMovementState_8cs" startline="15">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState._player</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a847e0e6a1959945af908d29f2ef11aac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -54,6 +60,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="30" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="30" bodyend="40"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" compoundref="JumpingMovementState_8cs" startline="15">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState._player</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a54831e64ba92c34f0b8568ab6df65b8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -85,6 +92,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="49" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="49" bodyend="68"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" compoundref="JumpingMovementState_8cs" startline="15">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState._player</references>
         <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1acfdd37e19297dcda210a2bc23ae04112" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -117,6 +125,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="76" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="76" bodyend="105"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" compoundref="JumpingMovementState_8cs" startline="15">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState._player</references>
         <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1aef146ce29156fe2566133ac8afff5f1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -149,6 +158,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" line="113" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/JumpingMovementState.cs" bodystart="113" bodyend="121"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" compoundref="JumpingMovementState_8cs" startline="15">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState._player</references>
         <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
       </memberdef>
     </sectiondef>
@@ -176,16 +186,70 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="11">
+        <label>Control</label>
+      </node>
       <node id="1">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState"/>
         <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_player</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Faeterna.Scripts.Menus.DeathScreen</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Personaje.Lira</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>MovementStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>AnimTree</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>terrainParticles</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_deathScreen</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>_objectoDescription</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_lira</edgelabel>
         </childnode>
       </node>
       <node id="4">
         <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
         <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
         <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_current_state</edgelabel>
         </childnode>
       </node>
       <node id="2">
@@ -196,6 +260,15 @@
         <childnode refid="4" relation="usage">
           <edgelabel>stateMachine</edgelabel>
         </childnode>
+      </node>
+      <node id="8">
+        <label>Faeterna.scripts.Personaje.TerrainParticles</label>
+        <link refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GpuParticles2D</label>
       </node>
       <node id="3">
         <label>Node</label>

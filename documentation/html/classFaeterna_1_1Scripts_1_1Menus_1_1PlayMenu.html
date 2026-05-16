@@ -121,6 +121,48 @@ Collaboration diagram for Faeterna.Scripts.Menus.PlayMenu:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aef4463301d7250b44474391e56bed064" id="r_aef4463301d7250b44474391e56bed064"><td class="memItemLeft">override void&#160;</td><td class="memItemRight"><a class="el" href="#aef4463301d7250b44474391e56bed064">_Ready</a> ()</td></tr>
 <tr class="memdesc:aef4463301d7250b44474391e56bed064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando el nodo entra en la escena.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a952658120e9173b73365ce61c6c365d1" id="r_a952658120e9173b73365ce61c6c365d1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a952658120e9173b73365ce61c6c365d1">OnSavePressed</a> (int id)</td></tr>
+<tr class="memdesc:a952658120e9173b73365ce61c6c365d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando se presiona un botón de espacio de guardado.  <br /></td></tr>
+<tr class="memitem:a9a578ebda018ec5ed93872ad30adfcb3" id="r_a9a578ebda018ec5ed93872ad30adfcb3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a578ebda018ec5ed93872ad30adfcb3">OnDeletePressed</a> ()</td></tr>
+<tr class="memdesc:a9a578ebda018ec5ed93872ad30adfcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando se presiona el botón de eliminar.  <br /></td></tr>
+<tr class="memitem:ace2770fcd956eb08c6ded266dc6eb419" id="r_ace2770fcd956eb08c6ded266dc6eb419"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ace2770fcd956eb08c6ded266dc6eb419">OnBackPressed</a> ()</td></tr>
+<tr class="memdesc:ace2770fcd956eb08c6ded266dc6eb419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se llama cuando se presiona el botón de retroceso.  <br /></td></tr>
+<tr class="memitem:a34ef422a87a7e8520bb144e555482753" id="r_a34ef422a87a7e8520bb144e555482753"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34ef422a87a7e8520bb144e555482753">UpdateSlotBorder</a> (TextureButton button, bool isSelected)</td></tr>
+<tr class="memdesc:a34ef422a87a7e8520bb144e555482753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza el color del botón de slot para indicar si está seleccionado para eliminación.  <br /></td></tr>
+<tr class="memitem:a14e8a09d64763144a9f43f94cd655e9f" id="r_a14e8a09d64763144a9f43f94cd655e9f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14e8a09d64763144a9f43f94cd655e9f">CacheDefaultSlotTextures</a> ()</td></tr>
+<tr class="memdesc:a14e8a09d64763144a9f43f94cd655e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache.  <br /></td></tr>
+<tr class="memitem:a27553e6b6323d56dd4722b7514c84bf5" id="r_a27553e6b6323d56dd4722b7514c84bf5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27553e6b6323d56dd4722b7514c84bf5">RefreshSlotVisuals</a> ()</td></tr>
+<tr class="memdesc:a27553e6b6323d56dd4722b7514c84bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza las visuales de todos los espacios de guardado.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7d26593e4e118ba826501ce50b1d6507" id="r_a7d26593e4e118ba826501ce50b1d6507"><td class="memItemLeft">Array&lt; TextureButton &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7d26593e4e118ba826501ce50b1d6507">_saveButtons</a></td></tr>
+<tr class="memdesc:a7d26593e4e118ba826501ce50b1d6507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array de botones que representan los espacios de guardado disponibles (slots).  <br /></td></tr>
+<tr class="memitem:af6594f3162bfb089bf394efdeff91b35" id="r_af6594f3162bfb089bf394efdeff91b35"><td class="memItemLeft">TextureButton&#160;</td><td class="memItemRight"><a class="el" href="#af6594f3162bfb089bf394efdeff91b35">_deleteButton</a></td></tr>
+<tr class="memdesc:af6594f3162bfb089bf394efdeff91b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón para eliminar la partida guardada en el espacio seleccionado.  <br /></td></tr>
+<tr class="memitem:af7bbbed54f23adf59f5be5dcb69716be" id="r_af7bbbed54f23adf59f5be5dcb69716be"><td class="memItemLeft">TextureButton&#160;</td><td class="memItemRight"><a class="el" href="#af7bbbed54f23adf59f5be5dcb69716be">_backButton</a></td></tr>
+<tr class="memdesc:af7bbbed54f23adf59f5be5dcb69716be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón para volver desde el menú de selección de partidas al menú principal.  <br /></td></tr>
+<tr class="memitem:a3518ace563eabd0d1c070c5682c0285a" id="r_a3518ace563eabd0d1c070c5682c0285a"><td class="memItemLeft">Texture2D&#160;</td><td class="memItemRight"><a class="el" href="#a3518ace563eabd0d1c070c5682c0285a">_continueTexture</a></td></tr>
+<tr class="memdesc:a3518ace563eabd0d1c070c5682c0285a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Textura que se muestra en los botones de guardado cuando existe una partida guardada en ese espacio, indicando que se puede continuar desde esa partida.  <br /></td></tr>
+<tr class="memitem:ad156b6972427d71965352d45e097ef37" id="r_ad156b6972427d71965352d45e097ef37"><td class="memItemLeft"><a id="ad156b6972427d71965352d45e097ef37" name="ad156b6972427d71965352d45e097ef37"></a>
+int&#160;</td><td class="memItemRight"><b>_selectedSlot</b></td></tr>
+<tr class="memdesc:ad156b6972427d71965352d45e097ef37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Índice del espacio de guardado actualmente seleccionado el menú de selección de partidas. <br /></td></tr>
+<tr class="memitem:a9f915a0228e2e8ee8360f3124141c116" id="r_a9f915a0228e2e8ee8360f3124141c116"><td class="memItemLeft"><a id="a9f915a0228e2e8ee8360f3124141c116" name="a9f915a0228e2e8ee8360f3124141c116"></a>
+bool&#160;</td><td class="memItemRight"><b>_deleteMode</b></td></tr>
+<tr class="memdesc:a9f915a0228e2e8ee8360f3124141c116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica si el menú está esperando confirmación para borrar una partida. <br /></td></tr>
+<tr class="memitem:a6ff711fa53709ada4cb97f19402c3b28" id="r_a6ff711fa53709ada4cb97f19402c3b28"><td class="memItemLeft"><a id="a6ff711fa53709ada4cb97f19402c3b28" name="a6ff711fa53709ada4cb97f19402c3b28"></a>
+readonly List&lt; Texture2D &gt;&#160;</td><td class="memItemRight"><b>_defaultSlotTextures</b> = new()</td></tr>
+<tr class="memdesc:a6ff711fa53709ada4cb97f19402c3b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista que cache las texturas predeterminadas de cada botón de espacio de guardado, para poder restaurarlas cuando se elimina una partida guardada. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a88fe02b40285c9c556bf493f7a61956e" id="r_a88fe02b40285c9c556bf493f7a61956e"><td class="memItemLeft"><a id="a88fe02b40285c9c556bf493f7a61956e" name="a88fe02b40285c9c556bf493f7a61956e"></a>
+const string&#160;</td><td class="memItemRight"><b>DefaultGameScenePath</b> = &quot;res://<a class="el" href="namespaceFaeterna_1_1scenes.html">scenes</a>/Maps/Bosque.tscn&quot;</td></tr>
+<tr class="memitem:a50f189b80649c2e405409dfda51ef4f1" id="r_a50f189b80649c2e405409dfda51ef4f1"><td class="memItemLeft"><a id="a50f189b80649c2e405409dfda51ef4f1" name="a50f189b80649c2e405409dfda51ef4f1"></a>
+const string&#160;</td><td class="memItemRight"><b>ContinueTexturePath</b> = &quot;res://assets/Menu/SaveBottonContinue.png&quot;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control que representa el menú de selección de partidas guardadas del juego. </p>
@@ -151,6 +193,392 @@ Public Member Functions</h2></td></tr>
 
 <p>Se llama cuando el nodo entra en la escena. </p>
 <p>Carga la textura de "Continue" si no está asignada desde el editor, guarda las texturas predeterminadas de todos los botones de slots, actualiza las visuales de los espacios de guardado, y configura los eventos de visibilidad para refrescar las visuales cada vez que el menú se abre. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_aef4463301d7250b44474391e56bed064_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_aef4463301d7250b44474391e56bed064_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_aef4463301d7250b44474391e56bed064_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_aef4463301d7250b44474391e56bed064_cgraph">
+<area shape="rect" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,40,211,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a14e8a09d64763144a9f43f94cd655e9f" title="Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache." alt="" coords="259,5,488,50"/>
+<area shape="poly" title=" " alt="" coords="211,46,246,44,241,45,212,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a27553e6b6323d56dd4722b7514c84bf5" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="271,75,476,119"/>
+<area shape="poly" title=" " alt="" coords="211,73,258,81,252,82,211,78"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="536,75,742,119"/>
+<area shape="poly" title=" " alt="" coords="476,94,523,97,518,97,476,100"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14e8a09d64763144a9f43f94cd655e9f" name="a14e8a09d64763144a9f43f94cd655e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e8a09d64763144a9f43f94cd655e9f">&#9670;&#160;</a></span>CacheDefaultSlotTextures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.CacheDefaultSlotTextures </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache. </p>
+<p>Estas texturas se restauran cuando se elimina una partida guardada para mostrar nuevamente el estado "vacío" del slot. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a14e8a09d64763144a9f43f94cd655e9f_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a14e8a09d64763144a9f43f94cd655e9f_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a14e8a09d64763144a9f43f94cd655e9f_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a14e8a09d64763144a9f43f94cd655e9f_icgraph">
+<area shape="rect" title="Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache." alt="" coords="259,5,488,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#aef4463301d7250b44474391e56bed064" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="241,28,211,30,211,25,246,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ace2770fcd956eb08c6ded266dc6eb419" name="ace2770fcd956eb08c6ded266dc6eb419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2770fcd956eb08c6ded266dc6eb419">&#9670;&#160;</a></span>OnBackPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.OnBackPressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Se llama cuando se presiona el botón de retroceso. </p>
+<p>Reproduce la animación de presión y luego oculta este menú, volviendo al menú anterior (generalmente el menú principal). </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_ace2770fcd956eb08c6ded266dc6eb419_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_ace2770fcd956eb08c6ded266dc6eb419_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_ace2770fcd956eb08c6ded266dc6eb419_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_ace2770fcd956eb08c6ded266dc6eb419_cgraph">
+<area shape="rect" title="Se llama cuando se presiona el botón de retroceso." alt="" coords="5,5,211,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="259,5,469,50"/>
+<area shape="poly" title=" " alt="" coords="211,25,246,27,241,28,211,30"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a578ebda018ec5ed93872ad30adfcb3" name="a9a578ebda018ec5ed93872ad30adfcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a578ebda018ec5ed93872ad30adfcb3">&#9670;&#160;</a></span>OnDeletePressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.OnDeletePressed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Se llama cuando se presiona el botón de eliminar. </p>
+<p>Primer clic activa el modo delete para que selecciones un slot. Segundo clic (después de seleccionar un slot) elimina la partida guardada. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a9a578ebda018ec5ed93872ad30adfcb3_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a9a578ebda018ec5ed93872ad30adfcb3_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a9a578ebda018ec5ed93872ad30adfcb3_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a9a578ebda018ec5ed93872ad30adfcb3_cgraph">
+<area shape="rect" title="Se llama cuando se presiona el botón de eliminar." alt="" coords="5,40,211,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="259,5,469,50"/>
+<area shape="poly" title=" " alt="" coords="211,46,246,43,241,45,212,51"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a34ef422a87a7e8520bb144e555482753" title="Actualiza el color del botón de slot para indicar si está seleccionado para eliminación." alt="" coords="261,75,466,119"/>
+<area shape="poly" title=" " alt="" coords="211,74,248,81,243,81,211,79"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a952658120e9173b73365ce61c6c365d1" name="a952658120e9173b73365ce61c6c365d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952658120e9173b73365ce61c6c365d1">&#9670;&#160;</a></span>OnSavePressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.OnSavePressed </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Se llama cuando se presiona un botón de espacio de guardado. </p>
+<p>Si NO estamos en modo delete, carga la partida. Si estamos en modo delete, marca el slot con borde rojo para ser eliminado.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>Índice del botón de slot que fue presionado.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a952658120e9173b73365ce61c6c365d1_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a952658120e9173b73365ce61c6c365d1_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a952658120e9173b73365ce61c6c365d1_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a952658120e9173b73365ce61c6c365d1_cgraph">
+<area shape="rect" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,144,211,189"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a2e5ed6e85b985710587dc4c8c95d0f4c" title="Elimina el guardado completo de un slot (datos JSON + preview PNG)." alt="" coords="261,5,467,50"/>
+<area shape="poly" title=" " alt="" coords="135,141,190,101,257,60,274,55,269,58,260,65,193,105,139,145"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="259,75,469,119"/>
+<area shape="poly" title=" " alt="" coords="192,141,267,122,262,125,194,146"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a27553e6b6323d56dd4722b7514c84bf5" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="261,144,466,189"/>
+<area shape="poly" title=" " alt="" coords="211,164,248,165,243,167,212,169"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#accce028fb622f5fe038081c325db5886" title="Define el slot activo asegurando que no sea negativo." alt="" coords="261,213,467,258"/>
+<area shape="poly" title=" " alt="" coords="193,187,267,208,262,210,193,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a34ef422a87a7e8520bb144e555482753" title="Actualiza el color del botón de slot para indicar si está seleccionado para eliminación." alt="" coords="261,283,466,327"/>
+<area shape="poly" title=" " alt="" coords="138,187,193,228,260,268,274,277,269,276,257,273,190,232,136,192"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="517,144,723,189"/>
+<area shape="poly" title=" " alt="" coords="466,164,504,166,499,167,467,169"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27553e6b6323d56dd4722b7514c84bf5" name="a27553e6b6323d56dd4722b7514c84bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27553e6b6323d56dd4722b7514c84bf5">&#9670;&#160;</a></span>RefreshSlotVisuals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.RefreshSlotVisuals </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actualiza las visuales de todos los espacios de guardado. </p>
+<p>Si existe una partida guardada en un slot, muestra la textura de "Continue"; si no, muestra la textura predeterminada del slot. También actualiza el texto de etiqueta de cada botón para mostrar el número del slot y resetea los bordes a color normal. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_cgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_cgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_cgraph">
+<area shape="rect" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="5,5,211,50"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="259,5,465,50"/>
+<area shape="poly" title=" " alt="" coords="211,25,246,27,240,28,211,30"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a27553e6b6323d56dd4722b7514c84bf5_icgraph">
+<area shape="rect" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="259,40,464,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#aef4463301d7250b44474391e56bed064" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="240,47,211,44,211,39,246,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,75,211,119"/>
+<area shape="poly" title=" " alt="" coords="240,79,212,86,211,80,246,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34ef422a87a7e8520bb144e555482753" name="a34ef422a87a7e8520bb144e555482753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ef422a87a7e8520bb144e555482753">&#9670;&#160;</a></span>UpdateSlotBorder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Faeterna.Scripts.Menus.PlayMenu.UpdateSlotBorder </td>
+          <td>(</td>
+          <td class="paramtype">TextureButton</td>          <td class="paramname"><span class="paramname"><em>button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isSelected</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actualiza el color del botón de slot para indicar si está seleccionado para eliminación. </p>
+<p>Si está seleccionado, el borde se tintará de rojo; si no, es blanco (normal).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Botón de slot a actualizar.</td></tr>
+    <tr><td class="paramname">isSelected</td><td>Si true, se tinta de rojo; si false, de blanco.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a34ef422a87a7e8520bb144e555482753_icgraph.png" border="0" usemap="#aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a34ef422a87a7e8520bb144e555482753_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a34ef422a87a7e8520bb144e555482753_icgraph" id="aclassFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_a34ef422a87a7e8520bb144e555482753_icgraph">
+<area shape="rect" title="Actualiza el color del botón de slot para indicar si está seleccionado para eliminación." alt="" coords="259,40,464,85"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a9a578ebda018ec5ed93872ad30adfcb3" title="Se llama cuando se presiona el botón de eliminar." alt="" coords="5,5,211,50"/>
+<area shape="poly" title=" " alt="" coords="240,47,211,44,211,39,246,46"/>
+<area shape="rect" href="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a952658120e9173b73365ce61c6c365d1" title="Se llama cuando se presiona un botón de espacio de guardado." alt="" coords="5,75,211,119"/>
+<area shape="poly" title=" " alt="" coords="240,79,212,86,211,80,246,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="af7bbbed54f23adf59f5be5dcb69716be" name="af7bbbed54f23adf59f5be5dcb69716be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bbbed54f23adf59f5be5dcb69716be">&#9670;&#160;</a></span>_backButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureButton Faeterna.Scripts.Menus.PlayMenu._backButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Botón para volver desde el menú de selección de partidas al menú principal. </p>
+<p>Al hacer clic, oculta este menú y vuelve a mostrar el menú anterior. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de retroceso funcione correctamente en el menú de selección de partidas. </p>
+
+</div>
+</div>
+<a id="a3518ace563eabd0d1c070c5682c0285a" name="a3518ace563eabd0d1c070c5682c0285a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3518ace563eabd0d1c070c5682c0285a">&#9670;&#160;</a></span>_continueTexture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D Faeterna.Scripts.Menus.PlayMenu._continueTexture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Textura que se muestra en los botones de guardado cuando existe una partida guardada en ese espacio, indicando que se puede continuar desde esa partida. </p>
+<p>Se asigna desde el editor a través de export variable. Si no está asignada, se carga desde la ruta predeterminada. Es importante que esta referencia esté correctamente asignada para que las visuales de partidas guardadas funcionen correctamente en el menú de selección. </p>
+
+</div>
+</div>
+<a id="af6594f3162bfb089bf394efdeff91b35" name="af6594f3162bfb089bf394efdeff91b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6594f3162bfb089bf394efdeff91b35">&#9670;&#160;</a></span>_deleteButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextureButton Faeterna.Scripts.Menus.PlayMenu._deleteButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Botón para eliminar la partida guardada en el espacio seleccionado. </p>
+<p>Al hacer clic, borra los datos guardados del slot actual. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de eliminar funcione correctamente en el menú de selección de partidas. </p>
+
+</div>
+</div>
+<a id="a7d26593e4e118ba826501ce50b1d6507" name="a7d26593e4e118ba826501ce50b1d6507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d26593e4e118ba826501ce50b1d6507">&#9670;&#160;</a></span>_saveButtons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Array&lt;TextureButton&gt; Faeterna.Scripts.Menus.PlayMenu._saveButtons</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Array de botones que representan los espacios de guardado disponibles (slots). </p>
+<p>Se asignan desde el editor a través de export variable. Los botones permiten seleccionar un espacio específico para cargar o guardar una partida. Es importante que estas referencias estén correctamente asignadas para que el menú de selección de partidas funcione correctamente. </p>
 
 </div>
 </div>

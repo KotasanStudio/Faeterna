@@ -1,0 +1,9 @@
+<map id="Faeterna.Scripts.Menus.PlayMenu._Ready" name="Faeterna.Scripts.Menus.PlayMenu._Ready">
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,40,211,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a14e8a09d64763144a9f43f94cd655e9f" title="Guarda las texturas predeterminadas de cada botón de espacio de guardado en una lista cache." alt="" coords="259,5,488,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,46,246,44,241,45,212,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu.html#a27553e6b6323d56dd4722b7514c84bf5" title="Actualiza las visuales de todos los espacios de guardado." alt="" coords="271,75,476,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,73,258,81,252,82,211,78"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService.html#a02db5fdff64edd5da075a059a185b5bc" title="Indica si existe archivo de guardado para el slot dado." alt="" coords="536,75,742,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,94,523,97,518,97,476,100"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.PauseMenu.TogglePause" name="Faeterna.Scripts.Menus.PauseMenu.TogglePause">
+<area shape="rect" id="Node000001" title="Alterna el estado de pausa del juego." alt="" coords="270,5,486,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#a3f5447704b025fb30ce5ad4c98e1b0a5" title="Se llama para procesar eventos de entrada no manejados." alt="" coords="5,5,222,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,28,222,30,222,25,257,28"/>
+</map>

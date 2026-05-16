@@ -18,6 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Mapa/Bosque.cs" line="12" column="32" bodyfile="scripts/Mapa/Bosque.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classBosque_1ab6e359d6e12809544102c4f01fb855bf" compoundref="Bosque_8cs" startline="19" endline="29">_Ready</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -36,6 +37,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Mapa/Bosque.cs" line="19" column="26" bodyfile="scripts/Mapa/Bosque.cs" bodystart="19" bodyend="29"/>
+        <references refid="classBosque_1a9b0448b0543039106237dc2a8086712e" compoundref="Bosque_8cs" startline="12">_backgroundMusic</references>
       </memberdef>
       <memberdef kind="function" id="classBosque_1aef71764a5395088b86c28be18f7b2d30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>

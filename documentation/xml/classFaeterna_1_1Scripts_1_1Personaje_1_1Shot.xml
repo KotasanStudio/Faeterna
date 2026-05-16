@@ -12,12 +12,15 @@
         <qualifiedname>Faeterna.Scripts.Personaje.Shot.Speed</qualifiedname>
         <initializer>= 450f</initializer>
         <briefdescription>
+<para>Velocidad a la que se mueve la bala. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se puede ajustar en el editor para equilibrar el juego. Un valor típico podría ser 450, pero se recomienda probar diferentes velocidades para encontrar la que mejor se adapte al diseño del juego y a la sensación de disparo deseada. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="8" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="8" bodyend="-1"/>
+        <location file="scripts/Personaje/Shot.cs" line="11" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" compoundref="Shot_8cs" startline="39" endline="50">Faeterna.Scripts.Personaje.Shot._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ab6068d84b5e8614d5901a8bdeacca465" prot="private" static="no" mutable="no">
         <type>AnimatedSprite2D</type>
@@ -26,12 +29,14 @@
         <name>_animatedSprite</name>
         <qualifiedname>Faeterna.Scripts.Personaje.Shot._animatedSprite</qualifiedname>
         <briefdescription>
+<para>Referencia al nodo AnimatedSprite2D que se usará para mostrar la animación de la bala. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se asigna en el editor y se utiliza para cambiar la orientación de la animación según la dirección del disparo. Es importante asegurarse de que el nodo AnimatedSprite2D esté correctamente configurado con las animaciones necesarias para que la bala se vea bien en movimiento. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="10" column="35" bodyfile="scripts/Personaje/Shot.cs" bodystart="10" bodyend="-1"/>
+        <location file="scripts/Personaje/Shot.cs" line="16" column="35" bodyfile="scripts/Personaje/Shot.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -43,12 +48,15 @@
         <qualifiedname>Faeterna.Scripts.Personaje.Shot.Direction</qualifiedname>
         <initializer>= Vector2.Zero</initializer>
         <briefdescription>
+<para>Dirección en la que se mueve la bala. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se establece al crear la instancia de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot" kindref="compound">Shot</ref> y determina hacia dónde se desplazará. Es importante normalizar este vector para asegurar que la velocidad de la bala sea consistente sin importar la dirección. Por ejemplo, si el jugador dispara hacia arriba, la dirección podría ser (0, -1), mientras que si dispara hacia abajo, sería (0, 1). Para disparar hacia la derecha, sería (1, 0) y hacia la izquierda (-1, 0). Si se desea permitir disparos en ángulos diagonales, se pueden usar valores como (0.707f, -0.707f) para un disparo hacia arriba a la derecha. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="11" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="11" bodyend="-1"/>
+        <location file="scripts/Personaje/Shot.cs" line="21" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" compoundref="Shot_8cs" startline="39" endline="50">Faeterna.Scripts.Personaje.Shot._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a249a64cc206d50465270a5478e13c329" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -58,12 +66,13 @@
         <qualifiedname>Faeterna.Scripts.Personaje.Shot.ManaCost</qualifiedname>
         <initializer>= 20f</initializer>
         <briefdescription>
+<para>Costo de mana para disparar esta bala. Este valor se puede ajustar en el editor para equilibrar el juego. Un valor típico podría ser 20, pero se recomienda probar diferentes costos para encontrar el equilibrio adecuado entre el uso de habilidades y la gestión de recursos del jugador. Es importante que este costo sea lo suficientemente alto como para hacer que el jugador piense estratégicamente sobre cuándo usar su habilidad de disparo, pero no tan alto como para desincentivar su uso por completo. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="12" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="12" bodyend="-1"/>
+        <location file="scripts/Personaje/Shot.cs" line="24" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="24" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -74,12 +83,14 @@
         <name>_Ready</name>
         <qualifiedname>Faeterna.Scripts.Personaje.Shot._Ready</qualifiedname>
         <briefdescription>
+<para>En el método _Ready se pueden realizar configuraciones iniciales para la bala, como asegurarse de que el nodo AnimatedSprite2D esté asignado correctamente y configurar cualquier animación o efecto visual necesario. </para>
         </briefdescription>
         <detaileddescription>
+<para>También se pueden conectar señales para detectar colisiones con otros objetos, como el terreno o enemigos, lo que permitirá manejar la lógica de impacto y destrucción de la bala de manera adecuada. Es importante que este método esté bien implementado para garantizar que la bala funcione correctamente desde el momento en que es creada en el juego. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="15" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="15" bodyend="17"/>
+        <location file="scripts/Personaje/Shot.cs" line="29" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -92,12 +103,26 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>En el método _Process se maneja el movimiento de la bala. </para>
         </briefdescription>
         <detaileddescription>
+<para>Se verifica si la dirección es diferente de cero para evitar movimientos innecesarios. Luego, se traduce la posición de la bala en función de su dirección, velocidad y el tiempo delta para asegurar un movimiento suave y consistente. Además, se ajusta la orientación del sprite de la bala según la dirección del disparo, volteándolo horizontalmente si se dispara hacia la izquierda. Es importante que este método esté bien implementado para garantizar que la bala se mueva correctamente y tenga una apariencia adecuada durante su trayectoria.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame. Este valor se utiliza para calcular el movimiento de la bala de manera independiente de la tasa de frames, asegurando que la velocidad de la bala sea consistente sin importar el rendimiento del juego. Es importante usar este valor para multiplicar la velocidad de la bala, ya que esto permitirá que el movimiento sea suave y fluido incluso en situaciones donde la tasa de frames pueda variar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="20" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="20" bodyend="33"/>
+        <location file="scripts/Personaje/Shot.cs" line="39" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="39" bodyend="50"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a2bdddfea2e2a8d9dd8265c80ff5d7303" compoundref="Shot_8cs" startline="21">Faeterna.Scripts.Personaje.Shot.Direction</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a47dbbe76320c78394ae566719b6c9974" compoundref="Shot_8cs" startline="11">Faeterna.Scripts.Personaje.Shot.Speed</references>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -128,7 +153,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="39" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="39" bodyend="42"/>
+        <location file="scripts/Personaje/Shot.cs" line="56" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="56" bodyend="59"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" compoundref="Shot_8cs" startline="73" endline="81">Faeterna.Scripts.Personaje.Shot.HandleCollision</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a8babf0dada168b0bb193214a3833d277" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -147,7 +173,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="45" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="45" bodyend="48"/>
+        <location file="scripts/Personaje/Shot.cs" line="62" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="62" bodyend="65"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" compoundref="Shot_8cs" startline="73" endline="81">Faeterna.Scripts.Personaje.Shot.HandleCollision</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -160,12 +187,26 @@
           <declname>node</declname>
         </param>
         <briefdescription>
+<para>Handles collision logic for both Area2D and PhysicsBody2D nodes. </para>
         </briefdescription>
         <detaileddescription>
+<para>If the collided node is part of the &quot;Terreno&quot; group or is named &quot;Hurtbox&quot;, the bullet will be removed from the scene. This method centralizes collision handling to avoid code duplication between area and body collisions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Node instance that has collided with the bullet. This can be either an Area2D or a PhysicsBody2D, depending on the type of collision detected. The method checks the groups and name of the node to determine if it should trigger the destruction of the bullet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Personaje/Shot.cs" line="50" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="50" bodyend="58"/>
+        <location file="scripts/Personaje/Shot.cs" line="73" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="73" bodyend="81"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a7c292ad729364fba8adb7bba2d421966" compoundref="Shot_8cs" startline="56" endline="59">Faeterna.Scripts.Personaje.Shot.OnAreaEntered</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a8babf0dada168b0bb193214a3833d277" compoundref="Shot_8cs" startline="62" endline="65">Faeterna.Scripts.Personaje.Shot.OnBodyEntered</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -194,7 +235,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="scripts/Personaje/Shot.cs" line="6" column="19" bodyfile="scripts/Personaje/Shot.cs" bodystart="7" bodyend="59"/>
+    <location file="scripts/Personaje/Shot.cs" line="6" column="19" bodyfile="scripts/Personaje/Shot.cs" bodystart="7" bodyend="82"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ab6068d84b5e8614d5901a8bdeacca465" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>_animatedSprite</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>_Process</name></member>

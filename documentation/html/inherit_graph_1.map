@@ -8,8 +8,8 @@
 <area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="364,100,458,60,493,50,488,52,460,65,366,105"/>
 <area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html" title="Jabalí enemigo con capacidad de ataque acelerado." alt="" coords="460,75,657,119"/>
 <area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="414,114,462,110,457,111,415,119"/>
-<area shape="rect" id="Node000004" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html" title=" " alt="" coords="460,144,657,189"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali.html" title="Boss Rey Jabalí." alt="" coords="460,144,657,189"/>
 <area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="414,144,462,153,457,153,415,150"/>
-<area shape="rect" id="Node000005" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html" title=" " alt="" coords="460,213,657,258"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf.html" title="Lobo enemigo que alterna entre patrullar, hacer dash y responder a daño." alt="" coords="460,213,657,258"/>
 <area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="398,158,412,164,437,181,460,199,487,213,482,212,458,203,434,186,410,169,397,163"/>
 </map>

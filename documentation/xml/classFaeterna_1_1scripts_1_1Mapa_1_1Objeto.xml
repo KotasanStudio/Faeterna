@@ -13,27 +13,32 @@
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemsCsvPath</qualifiedname>
         <initializer>= &quot;res://data/items.csv&quot;</initializer>
         <briefdescription>
+<para>Ruta al archivo CSV que contiene los datos de los items. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="10" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="10" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="18" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7191480afbb91f12f03a5fe0d8cbaae0" compoundref="Objeto_8cs" startline="168" endline="223">Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a1976d4007dcb66ee5e9d73c3ed6ff0a5" prot="private" static="yes" mutable="no">
-        <type>readonly Dictionary&lt; int, ItemData &gt;</type>
+        <type>readonly Dictionary&lt; int, <ref refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData" kindref="compound">ItemData</ref> &gt;</type>
         <definition>readonly Dictionary&lt;int, ItemData&gt; Faeterna.scripts.Mapa.Objeto.ItemsCache</definition>
         <argsstring></argsstring>
         <name>ItemsCache</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemsCache</qualifiedname>
         <initializer>= new()</initializer>
         <briefdescription>
+<para>Caché estática con los datos de todos los items cargados desde el CSV. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="29" column="44" bodyfile="scripts/Mapa/Objeto.cs" bodystart="29" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="85" column="44" bodyfile="scripts/Mapa/Objeto.cs" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7191480afbb91f12f03a5fe0d8cbaae0" compoundref="Objeto_8cs" startline="168" endline="223">Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7a6e16bfc4b780c855f89f90e54cd909" prot="private" static="yes" mutable="no">
         <type>bool</type>
@@ -42,12 +47,14 @@
         <name>_itemsCargados</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._itemsCargados</qualifiedname>
         <briefdescription>
+<para>Indica si el CSV ya fue cargado previamente. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="30" column="29" bodyfile="scripts/Mapa/Objeto.cs" bodystart="30" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="90" column="29" bodyfile="scripts/Mapa/Objeto.cs" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7191480afbb91f12f03a5fe0d8cbaae0" compoundref="Objeto_8cs" startline="168" endline="223">Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -58,12 +65,16 @@
         <name>_itemId</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._itemId</qualifiedname>
         <briefdescription>
+<para>Identificador del item que representa este objeto en el CSV. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="12" column="22" bodyfile="scripts/Mapa/Objeto.cs" bodystart="12" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="23" column="22" bodyfile="scripts/Mapa/Objeto.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad0ddd0c58733379ea2cd6e4e6bc213d5" compoundref="Objeto_8cs" startline="276" endline="276">Faeterna.scripts.Mapa.Objeto.GetItemId</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac4d4ff927fb504dc152d85593c4a03dd" compoundref="Objeto_8cs" startline="262" endline="270">Faeterna.scripts.Mapa.Objeto.Recoger</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a9bdd7821d4de2b9add5b26e7404b6349" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -71,14 +82,15 @@
         <argsstring></argsstring>
         <name>_isTutorialItem</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._isTutorialItem</qualifiedname>
-        <initializer>= false</initializer>
         <briefdescription>
+<para>Indica si este objeto forma parte del tutorial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="13" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="13" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="28" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6ae7bfad4a4e67198391e67fa58862f2" compoundref="Objeto_8cs" startline="115" endline="125">Faeterna.scripts.Mapa.Objeto._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a5c0bf60be0f93f4373193db620a40384" prot="private" static="no" mutable="no">
         <type>Node2D</type>
@@ -87,12 +99,13 @@
         <name>_tutorial</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._tutorial</qualifiedname>
         <briefdescription>
+<para>Nodo auxiliar que se muestra u oculta cuando el objeto pertenece al tutorial. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="14" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="14" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="33" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac0657d4e1eb53df57145f7bb40d740dc" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -101,12 +114,14 @@
         <name>_itemName</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._itemName</qualifiedname>
         <briefdescription>
+<para>Datos visibles del item cargado desde el CSV. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="17" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="17" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="39" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2ad80e0691c6532e3b3321b9957125cc" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -115,12 +130,14 @@
         <name>_animationPath</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._animationPath</qualifiedname>
         <briefdescription>
+<para>Ruta del recurso visual o animación del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="18" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="18" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="44" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad97bcb8620fd9ad54cdc85835332aa95" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -129,12 +146,14 @@
         <name>_itemDescription</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._itemDescription</qualifiedname>
         <briefdescription>
+<para>Descripción textual del item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="19" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="19" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="49" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6bcf43e86d5f3767c25251e5d0654a56" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -143,12 +162,14 @@
         <name>_itemHistory</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._itemHistory</qualifiedname>
         <briefdescription>
+<para>Historia o lore asociado al item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="20" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="20" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="54" column="25" bodyfile="scripts/Mapa/Objeto.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a620dc4da79c2f315929dc5a2230b5f0d" prot="private" static="no" mutable="no">
         <type>PointLight2D</type>
@@ -157,12 +178,15 @@
         <name>_aroLuz</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._aroLuz</qualifiedname>
         <briefdescription>
+<para>Efecto visual de iluminación que rodea al item. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="23" column="31" bodyfile="scripts/Mapa/Objeto.cs" bodystart="23" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="60" column="31" bodyfile="scripts/Mapa/Objeto.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" compoundref="Objeto_8cs" startline="131" endline="142">Faeterna.scripts.Mapa.Objeto._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6ae7bfad4a4e67198391e67fa58862f2" compoundref="Objeto_8cs" startline="115" endline="125">Faeterna.scripts.Mapa.Objeto._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2573663c33b92bfdcd32f234007d104d" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -172,12 +196,15 @@
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._escalaMinima</qualifiedname>
         <initializer>= 0.1f</initializer>
         <briefdescription>
+<para>Escala mínima del efecto de luz. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="24" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="24" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="65" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" compoundref="Objeto_8cs" startline="131" endline="142">Faeterna.scripts.Mapa.Objeto._Process</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6ae7bfad4a4e67198391e67fa58862f2" compoundref="Objeto_8cs" startline="115" endline="125">Faeterna.scripts.Mapa.Objeto._Ready</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8ef46585e8bf0772b3a31e7d0f8dfcb4" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -187,12 +214,14 @@
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._escalaMaxima</qualifiedname>
         <initializer>= 1.0f</initializer>
         <briefdescription>
+<para>Escala máxima del efecto de luz. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="25" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="25" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="70" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" compoundref="Objeto_8cs" startline="131" endline="142">Faeterna.scripts.Mapa.Objeto._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a3dc290534cb282d95cf40ab5c2e16572" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -202,12 +231,14 @@
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._duracionAnimacion</qualifiedname>
         <initializer>= 2.0f</initializer>
         <briefdescription>
+<para>Duración completa del ciclo de animación de la luz. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="26" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="26" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="75" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" compoundref="Objeto_8cs" startline="131" endline="142">Faeterna.scripts.Mapa.Objeto._Process</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a14025ace66f6ee1b721a96edd3e715fe" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -216,12 +247,14 @@
         <name>_tiempoTranscurrido</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._tiempoTranscurrido</qualifiedname>
         <briefdescription>
+<para>Tiempo acumulado para la animación del efecto de luz. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="28" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="28" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="80" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" compoundref="Objeto_8cs" startline="131" endline="142">Faeterna.scripts.Mapa.Objeto._Process</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -232,12 +265,13 @@
         <name>ItemName</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemName</qualifiedname>
         <briefdescription>
+<para>Nombre visible del item cargado. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="32" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="32" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="95" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a23996611f453d54addaa8fe0c6ae046e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -246,12 +280,13 @@
         <name>AnimationPath</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.AnimationPath</qualifiedname>
         <briefdescription>
+<para>Ruta del recurso visual del item cargado. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="33" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="33" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="100" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a41563158c4f5a9de3866d2c556922b14" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -260,12 +295,13 @@
         <name>ItemDescription</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemDescription</qualifiedname>
         <briefdescription>
+<para>Descripción visible del item cargado. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="34" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="34" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="105" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a12d9f4e8fba70b6bd22257cbd0a18663" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -274,12 +310,13 @@
         <name>ItemHistory</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemHistory</qualifiedname>
         <briefdescription>
+<para>Historia visible del item cargado. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="35" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="35" bodyend="-1"/>
+        <location file="scripts/Mapa/Objeto.cs" line="110" column="23" bodyfile="scripts/Mapa/Objeto.cs" bodystart="110" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -290,12 +327,17 @@
         <name>_Ready</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto._Ready</qualifiedname>
         <briefdescription>
+<para>Inicializa el objeto, carga los datos del item y configura el efecto visual. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="37" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="37" bodyend="47"/>
+        <location file="scripts/Mapa/Objeto.cs" line="115" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="115" bodyend="125"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a620dc4da79c2f315929dc5a2230b5f0d" compoundref="Objeto_8cs" startline="60">Faeterna.scripts.Mapa.Objeto._aroLuz</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2573663c33b92bfdcd32f234007d104d" compoundref="Objeto_8cs" startline="65">Faeterna.scripts.Mapa.Objeto._escalaMinima</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a9bdd7821d4de2b9add5b26e7404b6349" compoundref="Objeto_8cs" startline="28">Faeterna.scripts.Mapa.Objeto._isTutorialItem</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -308,12 +350,28 @@
           <declname>delta</declname>
         </param>
         <briefdescription>
+<para>Actualiza la animación del aro de luz del objeto. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo transcurrido desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="49" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="49" bodyend="60"/>
+        <location file="scripts/Mapa/Objeto.cs" line="131" column="30" bodyfile="scripts/Mapa/Objeto.cs" bodystart="131" bodyend="142"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a620dc4da79c2f315929dc5a2230b5f0d" compoundref="Objeto_8cs" startline="60">Faeterna.scripts.Mapa.Objeto._aroLuz</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a3dc290534cb282d95cf40ab5c2e16572" compoundref="Objeto_8cs" startline="75">Faeterna.scripts.Mapa.Objeto._duracionAnimacion</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8ef46585e8bf0772b3a31e7d0f8dfcb4" compoundref="Objeto_8cs" startline="70">Faeterna.scripts.Mapa.Objeto._escalaMaxima</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2573663c33b92bfdcd32f234007d104d" compoundref="Objeto_8cs" startline="65">Faeterna.scripts.Mapa.Objeto._escalaMinima</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a14025ace66f6ee1b721a96edd3e715fe" compoundref="Objeto_8cs" startline="80">Faeterna.scripts.Mapa.Objeto._tiempoTranscurrido</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac4d4ff927fb504dc152d85593c4a03dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -326,12 +384,25 @@
           <declname>player</declname>
         </param>
         <briefdescription>
+<para>Recoge el objeto y otorga la habilidad correspondiente según su id. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jugador que recoge el objeto.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="149" column="21" bodyfile="scripts/Mapa/Objeto.cs" bodystart="149" bodyend="157"/>
+        <location file="scripts/Mapa/Objeto.cs" line="262" column="21" bodyfile="scripts/Mapa/Objeto.cs" bodystart="262" bodyend="270"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8999f4a49ef3b6552299e217d506ce7b" compoundref="Objeto_8cs" startline="23">Faeterna.scripts.Mapa.Objeto._itemId</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a73957cc0376dcda927478234280a9f6c" compoundref="Lira_8cs" startline="113">Faeterna.Scripts.Personaje.Lira._objectoDescription</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad0ddd0c58733379ea2cd6e4e6bc213d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -340,12 +411,17 @@
         <name>GetItemId</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.GetItemId</qualifiedname>
         <briefdescription>
+<para>Devuelve el identificador del item asociado a este objeto. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Id del item.</para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="158" column="20" bodyfile="scripts/Mapa/Objeto.cs" bodystart="158" bodyend="158"/>
+        <location file="scripts/Mapa/Objeto.cs" line="276" column="20" bodyfile="scripts/Mapa/Objeto.cs" bodystart="276" bodyend="276"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8999f4a49ef3b6552299e217d506ce7b" compoundref="Objeto_8cs" startline="23">Faeterna.scripts.Mapa.Objeto._itemId</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2a5921ffa00358eaffe9c59b037cbe06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector2</type>
@@ -354,12 +430,16 @@
         <name>GetPickUpPosition</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.GetPickUpPosition</qualifiedname>
         <briefdescription>
+<para>Devuelve la posición mundial del objeto para usarla como punto de recogida. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Posición mundial del objeto.</para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="160" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="160" bodyend="160"/>
+        <location file="scripts/Mapa/Objeto.cs" line="282" column="24" bodyfile="scripts/Mapa/Objeto.cs" bodystart="282" bodyend="282"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -370,12 +450,21 @@
         <name>CargarDatosDelItem</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</qualifiedname>
         <briefdescription>
+<para>Carga los datos del item actual desde la caché o desde el CSV si es necesario. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="62" column="22" bodyfile="scripts/Mapa/Objeto.cs" bodystart="62" bodyend="76"/>
+        <location file="scripts/Mapa/Objeto.cs" line="147" column="22" bodyfile="scripts/Mapa/Objeto.cs" bodystart="147" bodyend="163"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2ad80e0691c6532e3b3321b9957125cc" compoundref="Objeto_8cs" startline="44">Faeterna.scripts.Mapa.Objeto._animationPath</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad97bcb8620fd9ad54cdc85835332aa95" compoundref="Objeto_8cs" startline="49">Faeterna.scripts.Mapa.Objeto._itemDescription</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6bcf43e86d5f3767c25251e5d0654a56" compoundref="Objeto_8cs" startline="54">Faeterna.scripts.Mapa.Objeto._itemHistory</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8999f4a49ef3b6552299e217d506ce7b" compoundref="Objeto_8cs" startline="23">Faeterna.scripts.Mapa.Objeto._itemId</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac0657d4e1eb53df57145f7bb40d740dc" compoundref="Objeto_8cs" startline="39">Faeterna.scripts.Mapa.Objeto._itemName</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7191480afbb91f12f03a5fe0d8cbaae0" compoundref="Objeto_8cs" startline="168" endline="223">Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a1976d4007dcb66ee5e9d73c3ed6ff0a5" compoundref="Objeto_8cs" startline="85">Faeterna.scripts.Mapa.Objeto.ItemsCache</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6ae7bfad4a4e67198391e67fa58862f2" compoundref="Objeto_8cs" startline="115" endline="125">Faeterna.scripts.Mapa.Objeto._Ready</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -386,17 +475,24 @@
         <name>CargarItemsSiHaceFalta</name>
         <qualifiedname>Faeterna.scripts.Mapa.Objeto.CargarItemsSiHaceFalta</qualifiedname>
         <briefdescription>
+<para>Carga en memoria todos los items del CSV la primera vez que se necesitan. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Mapa/Objeto.cs" line="78" column="29" bodyfile="scripts/Mapa/Objeto.cs" bodystart="78" bodyend="133"/>
+        <location file="scripts/Mapa/Objeto.cs" line="168" column="29" bodyfile="scripts/Mapa/Objeto.cs" bodystart="168" bodyend="223"/>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7a6e16bfc4b780c855f89f90e54cd909" compoundref="Objeto_8cs" startline="90">Faeterna.scripts.Mapa.Objeto._itemsCargados</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a1976d4007dcb66ee5e9d73c3ed6ff0a5" compoundref="Objeto_8cs" startline="85">Faeterna.scripts.Mapa.Objeto.ItemsCache</references>
+        <references refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a3b7a3354759bd8f8780611bfb11110b2" compoundref="Objeto_8cs" startline="18">Faeterna.scripts.Mapa.Objeto.ItemsCsvPath</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" compoundref="Objeto_8cs" startline="147" endline="163">Faeterna.scripts.Mapa.Objeto.CargarDatosDelItem</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para><ref refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto" kindref="compound">Objeto</ref> coleccionable del mapa. </para>
     </briefdescription>
     <detaileddescription>
+<para>Carga sus datos desde el CSV de items, muestra un efecto visual de luz y, al interactuar con él, otorga una habilidad o abre la descripción del objeto recogido. </para>
     </detaileddescription>
     <inheritancegraph>
       <node id="1">
@@ -420,7 +516,7 @@
         <label>Node2D</label>
       </node>
     </collaborationgraph>
-    <location file="scripts/Mapa/Objeto.cs" line="8" column="19" bodyfile="scripts/Mapa/Objeto.cs" bodystart="9" bodyend="161"/>
+    <location file="scripts/Mapa/Objeto.cs" line="13" column="19" bodyfile="scripts/Mapa/Objeto.cs" bodystart="14" bodyend="283"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2ad80e0691c6532e3b3321b9957125cc" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto</scope><name>_animationPath</name></member>
       <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a620dc4da79c2f315929dc5a2230b5f0d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto</scope><name>_aroLuz</name></member>

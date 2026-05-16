@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage" name="Faeterna.Scripts.Enemigos.Slime.Slime.TakeDamage">
+<area shape="rect" id="Node000001" title="Reduce la salud del slime, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="308,5,506,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#ae53963ac3e315f582b63477a32fc8fa4" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,5,260,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,28,260,30,260,25,295,28"/>
+</map>

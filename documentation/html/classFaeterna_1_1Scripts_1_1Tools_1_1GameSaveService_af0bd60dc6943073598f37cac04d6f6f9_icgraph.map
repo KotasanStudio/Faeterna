@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync" name="Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync">
+<area shape="rect" id="Node000001" title="Guarda el progreso al tocar un checkpoint y genera la imagen preview del slot activo." alt="" coords="261,5,510,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint.html#a12e3ffb6fb60459cbfa58ced85113663" title="Acción que se ejecuta al interactuar con el checkpoint." alt="" coords="5,5,213,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,28,213,30,213,25,248,27"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali.OnHurtBoxAreaEntered" name="Faeterna.scripts.Enemigos.Jabali.Jabali.OnHurtBoxAreaEntered">
+<area shape="rect" id="Node000001" title="Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque." alt="" coords="5,75,258,119"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a9dffec2396c9e97ca2275969c9460a26" title="Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección." alt="" coords="306,40,503,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,78,293,76,288,78,259,83"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a7f33c738c66b4294cc9357db01c0e44e" title="Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte." alt="" coords="306,109,503,154"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,110,293,117,288,118,258,116"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#ad558297e0c21824865059793a4f33bc8" title="Desactiva las colisiones del jabalí para que no pueda golpear ni recibir daño después de muerto." alt="" coords="551,5,771,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,106,502,95,525,77,550,60,561,57,566,55,552,65,528,82,504,99,478,111"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a33462a3b5229312c755a468590029a92" title="Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño." alt="" coords="562,75,760,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="503,116,549,112,544,113,504,121"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="562,144,760,189"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="504,142,549,151,544,151,504,148"/>
+<area shape="rect" id="Node000007" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="562,213,760,258"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="450,152,552,199,572,208,566,207,550,203,449,157"/>
+</map>

@@ -18,6 +18,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="36" column="30" bodyfile="scripts/Tools/Saves.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" compoundref="Saves_8cs" startline="410" endline="414">Faeterna.Scripts.Tools.Saves.EnsurePreviewDirectory</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aa2b14abf061c0bb2f6d32d2a1892867c" prot="private" static="yes" mutable="no">
         <type>const int</type>
@@ -34,6 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="39" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" compoundref="Saves_8cs" startline="382" endline="405">Faeterna.Scripts.Tools.Saves.SavePreview</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a6578d83a26189b6d7c489600d9c3e755" prot="private" static="yes" mutable="no">
         <type>const int</type>
@@ -50,6 +52,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="42" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" compoundref="Saves_8cs" startline="382" endline="405">Faeterna.Scripts.Tools.Saves.SavePreview</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" prot="private" static="yes" mutable="no">
         <type>readonly JsonSerializerOptions</type>
@@ -69,6 +72,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="45" column="55" bodyfile="scripts/Tools/Saves.cs" bodystart="45" bodyend="48"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" compoundref="Saves_8cs" startline="318" endline="354">Faeterna.Scripts.Tools.Saves.LoadAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" compoundref="Saves_8cs" startline="277" endline="311">Faeterna.Scripts.Tools.Saves.SaveAsync</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -87,6 +92,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="51" column="37" bodyfile="scripts/Tools/Saves.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1adf807e36113063bcdda49726953fb302" compoundref="Saves_8cs" startline="87" endline="97">Faeterna.Scripts.Tools.Saves.Load</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" compoundref="Saves_8cs" startline="147" endline="162">Faeterna.Scripts.Tools.Saves.LoadOptions</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2671c9086b903044eba3d906436c6bb3" compoundref="Saves_8cs" startline="113" endline="140">Faeterna.Scripts.Tools.Saves.SaveOptions</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -106,8 +114,8 @@
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="57" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="57" bodyend="57"/>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" compoundref="Saves_8cs" startline="187" endline="190">Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</referencedby>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="264" endline="267">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="258">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="265" endline="268">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="259">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a4fa7347b0fea6b2d1dc9ab1e4a4628" compoundref="Saves_8cs" startline="168" endline="171">Faeterna.Scripts.Tools.Saves.SetActiveSlot</referencedby>
       </memberdef>
     </sectiondef>
@@ -172,6 +180,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="87" column="21" bodyfile="scripts/Tools/Saves.cs" bodystart="87" bodyend="97"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" compoundref="Saves_8cs" startline="51">Faeterna.Scripts.Tools.Saves.config</references>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a190b25c1de00c230de0e56d261803aab" compoundref="Saves_8cs" startline="64" endline="81">Faeterna.Scripts.Tools.Saves.Saves</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2671c9086b903044eba3d906436c6bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -322,6 +331,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="113" column="21" bodyfile="scripts/Tools/Saves.cs" bodystart="113" bodyend="140"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" compoundref="Saves_8cs" startline="51">Faeterna.Scripts.Tools.Saves.config</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4" kindref="member">OptionsData</ref></type>
@@ -341,6 +351,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="147" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="147" bodyend="162"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" compoundref="Saves_8cs" startline="51">Faeterna.Scripts.Tools.Saves.config</references>
         <references refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4">Faeterna.Scripts.Tools.OptionsData</references>
       </memberdef>
     </sectiondef>
@@ -406,6 +417,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="178" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="178" bodyend="181"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" compoundref="Saves_8cs" startline="361" endline="364">Faeterna.Scripts.Tools.Saves.GetSlotPath</references>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" compoundref="Saves_8cs" startline="187" endline="190">Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -458,6 +470,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="197" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="197" bodyend="200"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" compoundref="Saves_8cs" startline="371" endline="374">Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</references>
         <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" compoundref="Saves_8cs" startline="207" endline="222">Faeterna.Scripts.Tools.Saves.LoadPreviewTexture</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -490,6 +503,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="207" column="33" bodyfile="scripts/Tools/Saves.cs" bodystart="207" bodyend="222"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" compoundref="Saves_8cs" startline="371" endline="374">Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</references>
         <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" compoundref="Saves_8cs" startline="197" endline="200">Faeterna.Scripts.Tools.Saves.HasPreview</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -520,6 +534,9 @@
         <inbodydescription>
         </inbodydescription>
         <location file="scripts/Tools/Saves.cs" line="228" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="228" bodyend="232"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a3163852a2ec83567dc5a8b0b6c72792c" compoundref="Saves_8cs" startline="421" endline="434">Faeterna.Scripts.Tools.Saves.DeleteFileIfExists</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" compoundref="Saves_8cs" startline="361" endline="364">Faeterna.Scripts.Tools.Saves.GetSlotPath</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" compoundref="Saves_8cs" startline="371" endline="374">Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -599,10 +616,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="243" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="243" bodyend="258"/>
+        <location file="scripts/Tools/Saves.cs" line="243" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="243" bodyend="259"/>
         <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
-        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</references>
-        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" compoundref="Saves_8cs" startline="276" endline="310">Faeterna.Scripts.Tools.Saves.SaveAsync</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="202" endline="221">Faeterna.Scripts.Personaje.Lira.BuildSaveData</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1acb34a4445d3d96e2498217b3f6aaf2b3" compoundref="GameSaveService_8cs" startline="56" endline="57">Faeterna.Scripts.Tools.GameSaveService.GetDefeatedBossList</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" compoundref="Saves_8cs" startline="371" endline="374">Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" compoundref="Saves_8cs" startline="277" endline="311">Faeterna.Scripts.Tools.Saves.SaveAsync</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" compoundref="Saves_8cs" startline="382" endline="405">Faeterna.Scripts.Tools.Saves.SavePreview</references>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
@@ -620,9 +640,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="264" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="264" bodyend="267"/>
+        <location file="scripts/Tools/Saves.cs" line="265" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="265" bodyend="268"/>
         <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
-        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" compoundref="Saves_8cs" startline="317" endline="353">Faeterna.Scripts.Tools.Saves.LoadAsync</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" compoundref="Saves_8cs" startline="318" endline="354">Faeterna.Scripts.Tools.Saves.LoadAsync</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9e47db3cdaf412b366d9dcc745da21a6" compoundref="GameSaveService_8cs" startline="127" endline="135">Faeterna.Scripts.Tools.GameSaveService.LoadActiveSlotAsync</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task</type>
@@ -666,8 +687,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="276" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="276" bodyend="310"/>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="258">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
+        <location file="scripts/Tools/Saves.cs" line="277" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="277" bodyend="311"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" compoundref="Saves_8cs" startline="361" endline="364">Faeterna.Scripts.Tools.Saves.GetSlotPath</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" compoundref="Saves_8cs" startline="45" endline="48">Faeterna.Scripts.Tools.Saves.JsonOptions</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="259">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
@@ -698,8 +721,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="317" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="317" bodyend="353"/>
-        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="264" endline="267">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
+        <location file="scripts/Tools/Saves.cs" line="318" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="318" bodyend="354"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" compoundref="Saves_8cs" startline="361" endline="364">Faeterna.Scripts.Tools.Saves.GetSlotPath</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" compoundref="Saves_8cs" startline="45" endline="48">Faeterna.Scripts.Tools.Saves.JsonOptions</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="265" endline="268">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -732,7 +757,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="360" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="360" bodyend="363"/>
+        <location file="scripts/Tools/Saves.cs" line="361" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="361" bodyend="364"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" compoundref="Saves_8cs" startline="228" endline="232">Faeterna.Scripts.Tools.Saves.DeleteSlot</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ac738ffb0de07521042ddc21daa91410a" compoundref="Saves_8cs" startline="178" endline="181">Faeterna.Scripts.Tools.Saves.HasSave</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" compoundref="Saves_8cs" startline="318" endline="354">Faeterna.Scripts.Tools.Saves.LoadAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" compoundref="Saves_8cs" startline="277" endline="311">Faeterna.Scripts.Tools.Saves.SaveAsync</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -763,7 +792,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="370" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="370" bodyend="373"/>
+        <location file="scripts/Tools/Saves.cs" line="371" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="371" bodyend="374"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" compoundref="Saves_8cs" startline="228" endline="232">Faeterna.Scripts.Tools.Saves.DeleteSlot</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" compoundref="Saves_8cs" startline="197" endline="200">Faeterna.Scripts.Tools.Saves.HasPreview</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" compoundref="Saves_8cs" startline="207" endline="222">Faeterna.Scripts.Tools.Saves.LoadPreviewTexture</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="259">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -804,7 +837,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="381" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="381" bodyend="404"/>
+        <location file="scripts/Tools/Saves.cs" line="382" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="382" bodyend="405"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" compoundref="Saves_8cs" startline="410" endline="414">Faeterna.Scripts.Tools.Saves.EnsurePreviewDirectory</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a6578d83a26189b6d7c489600d9c3e755" compoundref="Saves_8cs" startline="42">Faeterna.Scripts.Tools.Saves.PreviewHeight</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aa2b14abf061c0bb2f6d32d2a1892867c" compoundref="Saves_8cs" startline="39">Faeterna.Scripts.Tools.Saves.PreviewWidth</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="259">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -820,7 +857,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="409" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="409" bodyend="413"/>
+        <location file="scripts/Tools/Saves.cs" line="410" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="410" bodyend="414"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a12752701f75a27349cd52b924c82bd86" compoundref="Saves_8cs" startline="36">Faeterna.Scripts.Tools.Saves.PreviewDirectory</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" compoundref="Saves_8cs" startline="382" endline="405">Faeterna.Scripts.Tools.Saves.SavePreview</referencedby>
       </memberdef>
       <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a3163852a2ec83567dc5a8b0b6c72792c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -862,7 +901,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="scripts/Tools/Saves.cs" line="420" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="420" bodyend="433"/>
+        <location file="scripts/Tools/Saves.cs" line="421" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="421" bodyend="434"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" compoundref="Saves_8cs" startline="228" endline="232">Faeterna.Scripts.Tools.Saves.DeleteSlot</referencedby>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -871,7 +911,7 @@
     <detaileddescription>
 <para>Maneja la persistencia de datos de juego utilizando archivos JSON y genera capturas de pantalla como previsualizaciones. También gestiona opciones de usuario como configuración de audio y video localStorage. Proporciona métodos para guardar, cargar, eliminar y verificar la existencia de partidas guardadas en diferentes slots. </para>
     </detaileddescription>
-    <location file="scripts/Tools/Saves.cs" line="33" column="11" bodyfile="scripts/Tools/Saves.cs" bodystart="34" bodyend="434"/>
+    <location file="scripts/Tools/Saves.cs" line="33" column="11" bodyfile="scripts/Tools/Saves.cs" bodystart="34" bodyend="435"/>
     <listofallmembers>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>ActiveSlot</name></member>
       <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>config</name></member>
