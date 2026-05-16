@@ -22,7 +22,7 @@ namespace Faeterna.Scripts.Personaje
         public const float Speed = 350.0f;
 
         /// <summary>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba).</summary>
-        public const float JumpVelocity = -500.0f;
+        public const float JumpVelocity = -450.0f;
 
         /// <summary>Gravedad usada en los estados aéreos. Se obtiene del ProjectSettings.</summary>
         public static float Gravity => ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
