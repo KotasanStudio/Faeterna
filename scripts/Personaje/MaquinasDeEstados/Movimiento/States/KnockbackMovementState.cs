@@ -34,7 +34,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
             if (_player == null) return;
 
             _isKnockbackActive = true;
-            _player.PlayAudio("hit");
             _player.SetAnimation("getHit");
             _knockbackTimer.Start();
         }

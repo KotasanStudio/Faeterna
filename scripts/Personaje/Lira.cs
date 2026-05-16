@@ -245,6 +245,7 @@ namespace Faeterna.Scripts.Personaje
             {
                 return;
             }
+            PlayAudio("hit");
             _currentHealth -= amount;
             UpdateHearts();
             if (_currentHealth <= 0)
@@ -357,6 +358,7 @@ namespace Faeterna.Scripts.Personaje
 
             if ((_currentMana - InstanciaShot.ManaCost) >= 0)
             {
+                PlayAudio("fireball");
                 // CAMBIO AQUÍ: En lugar de SetAnimation, usa el AnimTree
                 AnimTree?.Travel("shot");
 

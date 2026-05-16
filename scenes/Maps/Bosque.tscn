@@ -1103,7 +1103,7 @@ bus = &"Music"
 parameters/looping = true
 
 [node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(3790, 3713)
+position = Vector2(1612, 1755)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
 position = Vector2(9911, 413)
