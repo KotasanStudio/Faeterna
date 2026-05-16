@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Tools::ButtonTools</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a2d4824c47801bd92f0733b49500e4310" prot="private" static="yes" mutable="no">
+        <type>readonly Vector2</type>
+        <definition>readonly Vector2 Faeterna.Scripts.Tools.ButtonTools.PressedScale</definition>
+        <argsstring></argsstring>
+        <name>PressedScale</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.PressedScale</qualifiedname>
+        <initializer>= new(0.85f, 0.85f)</initializer>
+        <briefdescription>
+<para>Escala a la que se reduce el botón cuando se presiona (enciogimiento). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="14" column="41" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aed31a4efd8d140c0085468764f8a2021" prot="private" static="yes" mutable="no">
+        <type>readonly Vector2</type>
+        <definition>readonly Vector2 Faeterna.Scripts.Tools.ButtonTools.BounceScale</definition>
+        <argsstring></argsstring>
+        <name>BounceScale</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.BounceScale</qualifiedname>
+        <initializer>= new(1.1f, 1.1f)</initializer>
+        <briefdescription>
+<para>Escala a la que rebota el botón después de presionarse (mayor que normal). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="17" column="41" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a7797be1694f3f16d6b57b26533990aa5" prot="private" static="yes" mutable="no">
+        <type>readonly Vector2</type>
+        <definition>readonly Vector2 Faeterna.Scripts.Tools.ButtonTools.NormalScale</definition>
+        <argsstring></argsstring>
+        <name>NormalScale</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.NormalScale</qualifiedname>
+        <initializer>= Vector2.One</initializer>
+        <briefdescription>
+<para>Escala normal del botón (sin transformar). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="20" column="41" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a050b0f3a56aaa687503c1fcc10ef8f94" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Tools.ButtonTools.PressDuration</definition>
+        <argsstring></argsstring>
+        <name>PressDuration</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.PressDuration</qualifiedname>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+<para>Duración en segundos de la fase de presión (enciogimiento) del botón. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="23" column="29" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a77a6e098d8bbc8d1cfd1bbbaa0399bdc" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Tools.ButtonTools.BounceDuration</definition>
+        <argsstring></argsstring>
+        <name>BounceDuration</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.BounceDuration</qualifiedname>
+        <initializer>= 0.12f</initializer>
+        <briefdescription>
+<para>Duración en segundos de la fase de rebote del botón. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="26" column="29" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aabb236c3922354af7812294acd68de42" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Tools.ButtonTools.SettleDuration</definition>
+        <argsstring></argsstring>
+        <name>SettleDuration</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.SettleDuration</qualifiedname>
+        <initializer>= 0.08f</initializer>
+        <briefdescription>
+<para>Duración en segundos de la fase de asentamiento en la escala normal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="29" column="29" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</definition>
+        <argsstring>(Control button, Action onFinished=null)</argsstring>
+        <name>PlayPressAnimation</name>
+        <qualifiedname>Faeterna.Scripts.Tools.ButtonTools.PlayPressAnimation</qualifiedname>
+        <param>
+          <type>Control</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>onFinished</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vuelve a su tamaño original. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Al terminar la animación ejecuta el callback <emphasis>onFinished</emphasis>  si se proporciona. No requiere que el método que lo llame sea async.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Control (botón) al que se le aplicará la animación de presión.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onFinished</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callback opcional que se ejecutará cuando la animación termine completamente.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/ButtonTools.cs" line="38" column="28" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="38" bodyend="65"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1aa2aa974e576c7c727daee624d37e31f5" compoundref="PauseMenu_8cs" startline="156" endline="169">Faeterna.Scripts.Menus.PauseMenu.ResumeGame</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Utilidad estática que proporciona funcionalidades comunes para animaciones y efectos visuales en botones. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Ofrece métodos para crear animaciones de presión fluidas que mejoran la retroalimentación visual del usuario cuando interactúa con botones del menú y otros controles de interfaz. </para>
+    </detaileddescription>
+    <location file="scripts/Tools/ButtonTools.cs" line="11" column="19" bodyfile="scripts/Tools/ButtonTools.cs" bodystart="12" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a77a6e098d8bbc8d1cfd1bbbaa0399bdc" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>BounceDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aed31a4efd8d140c0085468764f8a2021" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>BounceScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a7797be1694f3f16d6b57b26533990aa5" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>NormalScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>PlayPressAnimation</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a050b0f3a56aaa687503c1fcc10ef8f94" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>PressDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a2d4824c47801bd92f0733b49500e4310" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>PressedScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aabb236c3922354af7812294acd68de42" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::ButtonTools</scope><name>SettleDuration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

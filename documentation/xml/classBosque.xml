@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classBosque" kind="class" language="C#" prot="public">
+    <compoundname>Bosque</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBosque_1a9b0448b0543039106237dc2a8086712e" prot="private" static="no" mutable="no">
+        <type>AudioStreamPlayer</type>
+        <definition>AudioStreamPlayer Bosque._backgroundMusic</definition>
+        <argsstring></argsstring>
+        <name>_backgroundMusic</name>
+        <qualifiedname>Bosque._backgroundMusic</qualifiedname>
+        <briefdescription>
+<para>Reproductor de audio para la música de fondo del bosque. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Bosque.cs" line="12" column="32" bodyfile="scripts/Mapa/Bosque.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBosque_1ab6e359d6e12809544102c4f01fb855bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Bosque._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Bosque._Ready</qualifiedname>
+        <briefdescription>
+<para>Inicialización del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se llama cuando la escena entra en el árbol. Inicia la reproducción de la música de fondo si está correctamente asignada. Si el reproductor de audio no está asignado, registra un error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Bosque.cs" line="19" column="26" bodyfile="scripts/Mapa/Bosque.cs" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classBosque_1aef71764a5395088b86c28be18f7b2d30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Bosque._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Bosque._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cada frame (física no incluida). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Actualmente no implementa lógica adicional. Puede ser utilizado en el futuro para lógica de actualización del bosque.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Bosque.cs" line="36" column="26" bodyfile="scripts/Mapa/Bosque.cs" bodystart="36" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Escena del bosque del juego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gestiona la reproducción de la música de fondo cuando el jugador entra en esta escena. Se asigna la referencia al reproductor de audio desde el editor a través de una export variable. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Bosque</label>
+        <link refid="classBosque"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Bosque</label>
+        <link refid="classBosque"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Mapa/Bosque.cs" line="9" column="15" bodyfile="scripts/Mapa/Bosque.cs" bodystart="10" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classBosque_1a9b0448b0543039106237dc2a8086712e" prot="private" virt="non-virtual"><scope>Bosque</scope><name>_backgroundMusic</name></member>
+      <member refid="classBosque_1aef71764a5395088b86c28be18f7b2d30" prot="public" virt="non-virtual"><scope>Bosque</scope><name>_Process</name></member>
+      <member refid="classBosque_1ab6e359d6e12809544102c4f01fb855bf" prot="public" virt="non-virtual"><scope>Bosque</scope><name>_Ready</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

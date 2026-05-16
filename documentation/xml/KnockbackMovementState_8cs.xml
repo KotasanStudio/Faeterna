@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="KnockbackMovementState_8cs" kind="file" language="C#">
+    <compoundname>KnockbackMovementState.cs</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::KnockbackMovementState</innerclass>
+    <innernamespace refid="namespaceFaeterna">Faeterna</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts">Faeterna::Scripts</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje">Faeterna::Scripts::Personaje</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados">Faeterna::Scripts::Personaje::MaquinasDeEstados</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Godot;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados" kindref="compound">Faeterna.Scripts.Personaje.MaquinasDeEstados</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">PlayerType<sp/>=<sp/><ref refid="namespaceFaeterna" kindref="compound">Faeterna</ref>.<ref refid="namespaceFaeterna_1_1Scripts" kindref="compound">Scripts</ref>.<ref refid="namespaceFaeterna_1_1Scripts_1_1Personaje" kindref="compound">Personaje</ref>.<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States" kindref="compound">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">partial<sp/>class<sp/></highlight><highlight class="normal"><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" kindref="compound">KnockbackMovementState</ref><sp/>:<sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" kindref="compound">State</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>PlayerType<sp/>_player;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Timer<sp/>_knockbackTimer;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_isKnockbackActive;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa7f852ecdac4f6ac0fc5f6ea433e7422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>async<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa7f852ecdac4f6ac0fc5f6ea433e7422" kindref="member">Ready</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_player<sp/>=<sp/>(PlayerType)GetTree().GetFirstNodeInGroup(</highlight><highlight class="stringliteral">&quot;Lira&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_player.IsNodeReady())</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await<sp/>ToSignal(_player,<sp/></highlight><highlight class="stringliteral">&quot;ready&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_knockbackTimer<sp/>=<sp/>GetNode&lt;Timer&gt;(</highlight><highlight class="stringliteral">&quot;KnockbackTimer&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_knockbackTimer.Timeout<sp/>+=<sp/>OnKnockbackFinished;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" kindref="member">Enter</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_player<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_isKnockbackActive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_player.SetAnimation(</highlight><highlight class="stringliteral">&quot;getHit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_knockbackTimer.Start();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128" kindref="member">UpdatePhysics</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>delta)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_player<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal"><sp/>||<sp/>!_isKnockbackActive)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2<sp/>velocity<sp/>=<sp/>_player.Velocity;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Aplicar<sp/>gravedad<sp/>para<sp/>que<sp/>el<sp/>arco<sp/>del<sp/>salto<sp/>sea<sp/>natural</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.Y<sp/>+=<sp/>PlayerType.Gravity<sp/>*<sp/>(float)delta;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decelerar<sp/>gradualmente<sp/>el<sp/>impulso<sp/>horizontal<sp/>(fricción)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velocity.X<sp/>=<sp/>Mathf.MoveToward(velocity.X,<sp/>0f,<sp/>PlayerType.Speed<sp/>*<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)delta<sp/>*<sp/>3f);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_player.Velocity<sp/>=<sp/>velocity;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_player.MoveAndSlide();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa6996062dd76283625bcc115615485c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa6996062dd76283625bcc115615485c6" kindref="member">HandleInput</ref>(InputEvent<sp/>ev)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09" kindref="member">Exit</ref>()</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_isKnockbackActive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_knockbackTimer<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!_knockbackTimer.IsStopped())</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_knockbackTimer.Stop();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnKnockbackFinished()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_isKnockbackActive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" kindref="member">stateMachine</ref>.TransitionTo(</highlight><highlight class="stringliteral">&quot;FallingMovementState&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/KnockbackMovementState.cs"/>
+  </compounddef>
+</doxygen>

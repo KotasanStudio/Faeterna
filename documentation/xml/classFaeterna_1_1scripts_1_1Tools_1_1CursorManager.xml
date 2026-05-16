@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::scripts::Tools::CursorManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aca0ed5bbe09daebb3af3cb71651e489d" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.scripts.Tools.CursorManager.CursorPath</definition>
+        <argsstring></argsstring>
+        <name>CursorPath</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager.CursorPath</qualifiedname>
+        <initializer>= &quot;res://assets/Icono y Cursor/Cursor.svg&quot;</initializer>
+        <briefdescription>
+<para>Ruta a la textura del cursor personalizado en los assets del proyecto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="13" column="30" bodyfile="scripts/Tools/CursorManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ac8583a7ec5282ef4bc937eed6968e583" prot="private" static="yes" mutable="no">
+        <type>readonly Vector2I</type>
+        <definition>readonly Vector2I Faeterna.scripts.Tools.CursorManager.CursorSize</definition>
+        <argsstring></argsstring>
+        <name>CursorSize</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager.CursorSize</qualifiedname>
+        <initializer>= new(32, 32)</initializer>
+        <briefdescription>
+<para>Tamaño en píxeles al que se redimensionará el cursor (ancho x alto). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="16" column="42" bodyfile="scripts/Tools/CursorManager.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ab09261f0b994635e98e302ce49776718" prot="private" static="yes" mutable="no">
+        <type>readonly Vector2</type>
+        <definition>readonly Vector2 Faeterna.scripts.Tools.CursorManager.CursorHotspot</definition>
+        <argsstring></argsstring>
+        <name>CursorHotspot</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager.CursorHotspot</qualifiedname>
+        <initializer>= new(2, 2)</initializer>
+        <briefdescription>
+<para>Punto de anclaje (hotspot) del cursor respecto a la textura (esquina superior izquierda). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="19" column="41" bodyfile="scripts/Tools/CursorManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a3463aa5f619ca9684ee6bf429c2780b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Tools.CursorManager._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager._Ready</qualifiedname>
+        <briefdescription>
+<para>Se llama cuando el nodo entra en la escena. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Carga y aplica el cursor personalizado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="24" column="30" bodyfile="scripts/Tools/CursorManager.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aeedcd5f8ec076b70e4df3fd90f813c1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Tools.CursorManager._ExitTree</definition>
+        <argsstring>()</argsstring>
+        <name>_ExitTree</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager._ExitTree</qualifiedname>
+        <briefdescription>
+<para>Se llama cuando el nodo sale de la escena. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Restaura el cursor predeterminado del sistema. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="57" column="30" bodyfile="scripts/Tools/CursorManager.cs" bodystart="57" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a80e502c98b82f75ca6d620575a626aa7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.scripts.Tools.CursorManager.ApplyCustomCursor</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyCustomCursor</name>
+        <qualifiedname>Faeterna.scripts.Tools.CursorManager.ApplyCustomCursor</qualifiedname>
+        <briefdescription>
+<para>Carga la textura del cursor desde el archivo especificado, la redimensiona al tamaño configurado y la aplica como el cursor del mouse del juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si la textura no se puede cargar o procesar, imprime un aviso. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CursorManager.cs" line="33" column="29" bodyfile="scripts/Tools/CursorManager.cs" bodystart="33" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Gestor del cursor personalizado del juego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Carga una textura de cursor personalizada desde el sistema de archivos, la redimensiona a un tamaño específico, y la aplica al juego como el cursor del mouse. Cuando el nodo se libera, restaura el cursor predeterminado del sistema. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.scripts.Tools.CursorManager</label>
+        <link refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.scripts.Tools.CursorManager</label>
+        <link refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Tools/CursorManager.cs" line="10" column="19" bodyfile="scripts/Tools/CursorManager.cs" bodystart="11" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aeedcd5f8ec076b70e4df3fd90f813c1d" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>_ExitTree</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a3463aa5f619ca9684ee6bf429c2780b3" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a80e502c98b82f75ca6d620575a626aa7" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>ApplyCustomCursor</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ab09261f0b994635e98e302ce49776718" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>CursorHotspot</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aca0ed5bbe09daebb3af3cb71651e489d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>CursorPath</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ac8583a7ec5282ef4bc937eed6968e583" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Tools::CursorManager</scope><name>CursorSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

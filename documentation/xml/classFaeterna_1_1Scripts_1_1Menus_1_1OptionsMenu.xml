@@ -1,0 +1,916 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Menus::OptionsMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a706d33bb87ce91f3ed6ac24c4633e441" prot="private" static="no" mutable="no">
+        <type>OptionButton</type>
+        <definition>OptionButton Faeterna.Scripts.Menus.OptionsMenu._antialiasing</definition>
+        <argsstring></argsstring>
+        <name>_antialiasing</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._antialiasing</qualifiedname>
+        <briefdescription>
+<para>Control para seleccionar el tipo de antialiasing. Permite elegir entre diferentes métodos de suavizado de bordes para mejorar la calidad visual del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de antialiasing funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="14" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1b959c0eb342753368b8e5ea6db8e5b1" prot="private" static="no" mutable="no">
+        <type>OptionButton</type>
+        <definition>OptionButton Faeterna.Scripts.Menus.OptionsMenu._vsync</definition>
+        <argsstring></argsstring>
+        <name>_vsync</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._vsync</qualifiedname>
+        <briefdescription>
+<para>Control para activar o desactivar VSync. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Permite sincronizar la tasa de refresco del juego con la frecuencia de actualización del monitor para evitar el tearing. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de VSync funcione correctamente en el menú de opciones. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="19" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a501c38003078b138d511b00bb55f3ec1" prot="private" static="no" mutable="no">
+        <type>OptionButton</type>
+        <definition>OptionButton Faeterna.Scripts.Menus.OptionsMenu._screen</definition>
+        <argsstring></argsstring>
+        <name>_screen</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._screen</qualifiedname>
+        <briefdescription>
+<para>Control para seleccionar el modo de pantalla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Permite elegir entre modo ventana, pantalla completa o sin bordes. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de modo de pantalla funcione correctamente en el menú de opciones. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="24" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aab60b3955e67189184015af2871adf94" prot="private" static="no" mutable="no">
+        <type>OptionButton</type>
+        <definition>OptionButton Faeterna.Scripts.Menus.OptionsMenu._fpslock</definition>
+        <argsstring></argsstring>
+        <name>_fpslock</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._fpslock</qualifiedname>
+        <briefdescription>
+<para>Control para activar o desactivar el bloqueo de FPS. Permite limitar la tasa de cuadros por segundo del juego para mejorar el rendimiento o reducir el consumo de energía. Al activar el bloqueo de FPS, se habilitan controles adicionales para configurar el valor del límite de FPS. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de bloqueo de FPS funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="27" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a4591abb2c609cf9a19ccea63c6eba81f" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._fpsslider</definition>
+        <argsstring></argsstring>
+        <name>_fpsslider</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._fpsslider</qualifiedname>
+        <briefdescription>
+<para>Controles para configurar el valor del límite de FPS cuando el bloqueo de FPS está activado. Permiten ajustar el límite de cuadros por segundo para equilibrar el rendimiento y la calidad visual según las preferencias del jugador. Estos controles solo están activos cuando el bloqueo de FPS está habilitado. Se asignan desde el editor a través de export variables. Es importante que estas referencias estén correctamente asignadas para que los controles de configuración de FPS funcionen correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="30" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9b930805769dd69517d986683b665161" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._fpsspinbox</definition>
+        <argsstring></argsstring>
+        <name>_fpsspinbox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._fpsspinbox</qualifiedname>
+        <briefdescription>
+<para>Control para configurar el valor del límite de FPS cuando el bloqueo de FPS está activado. Permite ajustar el límite de cuadros por segundo para equilibrar el rendimiento y la calidad visual según las preferencias del jugador. Este control solo está activo cuando el bloqueo de FPS está habilitado. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de configuración de FPS funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="33" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a61c44c0b582a66c5e8141b0e8d425d32" prot="private" static="no" mutable="no">
+        <type>OptionButton</type>
+        <definition>OptionButton Faeterna.Scripts.Menus.OptionsMenu._shadows</definition>
+        <argsstring></argsstring>
+        <name>_shadows</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._shadows</qualifiedname>
+        <briefdescription>
+<para>Control para seleccionar la calidad de las sombras. Permite elegir entre diferentes niveles de calidad de sombras para mejorar la apariencia visual del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de calidad de sombras funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="36" column="31" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2b1f8bc4a54ba46262bd90250029b592" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._master</definition>
+        <argsstring></argsstring>
+        <name>_master</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._master</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen maestro del juego. Permite configurar el nivel general de volumen que afecta a todos los sonidos del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen maestro funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="41" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8dbc9ed5e792211447164fd1819aa946" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._masterSpinBox</definition>
+        <argsstring></argsstring>
+        <name>_masterSpinBox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._masterSpinBox</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen maestro del juego. Permite configurar el nivel general de volumen que afecta a todos los sonidos del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen maestro funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="44" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a3ceb8889b7b460f3443c3aa53f7ac2c7" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._music</definition>
+        <argsstring></argsstring>
+        <name>_music</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._music</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de la música del juego. Permite configurar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de música funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="47" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a996d278a80f7cfd8a7fd75252f1fc397" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._musicSpinBox</definition>
+        <argsstring></argsstring>
+        <name>_musicSpinBox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._musicSpinBox</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de la música del juego. Permite configurar el nivel de volumen específico para la música, lo que afecta a las pistas musicales del juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de música funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="50" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8bbfc9a626e90fdb373cdada59b84fa9" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._soundfx</definition>
+        <argsstring></argsstring>
+        <name>_soundfx</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._soundfx</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los efectos de sonido del juego. Permite configurar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de efectos de sonido funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="53" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ae127125bf1c084ab3d5317b16ba015e1" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._soundfxSpinBox</definition>
+        <argsstring></argsstring>
+        <name>_soundfxSpinBox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._soundfxSpinBox</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los efectos de sonido del juego. Permite configurar el nivel de volumen específico para los efectos de sonido, lo que afecta a los sonidos relacionados con acciones, interacciones y eventos en el juego. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de efectos de sonido funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="56" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a810c24707bddb656b5874bcf361eb532" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._enviroment</definition>
+        <argsstring></argsstring>
+        <name>_enviroment</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._enviroment</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los sonidos ambientales del juego. Permite configurar el nivel de volumen específico para los sonidos relacionados con el ambiente, como el viento, la lluvia, los animales, etc. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de sonidos ambientales funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="59" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa1d18fe9669a0189ed72f3f9c9c96f9b" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._enviromentSpinBox</definition>
+        <argsstring></argsstring>
+        <name>_enviromentSpinBox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._enviromentSpinBox</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los sonidos ambientales del juego. Permite configurar el nivel de volumen específico para los sonidos relacionados con el ambiente, como el viento, la lluvia, los animales, etc. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de sonidos ambientales funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="62" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1e8601a88a878d09cc2fd05c1f4c03ad" prot="private" static="no" mutable="no">
+        <type>HSlider</type>
+        <definition>HSlider Faeterna.Scripts.Menus.OptionsMenu._uisound</definition>
+        <argsstring></argsstring>
+        <name>_uisound</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._uisound</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los sonidos de la interfaz de usuario (UI) del juego. Permite configurar el nivel de volumen específico para los sonidos relacionados con la interfaz, como clics, notificaciones, etc. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de sonidos UI funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="65" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2c373f122f1030e10f533cfb9acf28f0" prot="private" static="no" mutable="no">
+        <type>SpinBox</type>
+        <definition>SpinBox Faeterna.Scripts.Menus.OptionsMenu._uisoundSpinBox</definition>
+        <argsstring></argsstring>
+        <name>_uisoundSpinBox</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._uisoundSpinBox</qualifiedname>
+        <briefdescription>
+<para>Control para ajustar el volumen de los sonidos de la interfaz de usuario (UI) del juego. Permite configurar el nivel de volumen específico para los sonidos relacionados con la interfaz, como clics, notificaciones, etc. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el control de volumen de sonidos UI funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="68" column="26" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af42b24608f9111cf4f11f123f75e1bc7" prot="private" static="no" mutable="no">
+        <type>TextureButton</type>
+        <definition>TextureButton Faeterna.Scripts.Menus.OptionsMenu._saveButton</definition>
+        <argsstring></argsstring>
+        <name>_saveButton</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._saveButton</qualifiedname>
+        <briefdescription>
+<para>Botón para guardar los cambios realizados en las opciones. Al hacer clic, guarda la configuración actual en el sistema de guardado para que se mantenga en futuras sesiones. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de guardar funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="73" column="32" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5353fde99aaca066e0a1f305dd92ce7b" prot="private" static="no" mutable="no">
+        <type>TextureButton</type>
+        <definition>TextureButton Faeterna.Scripts.Menus.OptionsMenu._exitButton</definition>
+        <argsstring></argsstring>
+        <name>_exitButton</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._exitButton</qualifiedname>
+        <briefdescription>
+<para>Botón para salir del menú de opciones. Al hacer clic, cierra el menú de opciones y vuelve al menú principal o a la escena anterior. Se asigna desde el editor a través de export variable. Es importante que esta referencia esté correctamente asignada para que el botón de salir funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="76" column="32" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" kindref="compound">Saves</ref></type>
+        <definition>Saves Faeterna.Scripts.Menus.OptionsMenu._saveSettings</definition>
+        <argsstring></argsstring>
+        <name>_saveSettings</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._saveSettings</qualifiedname>
+        <briefdescription>
+<para>Instancia de la clase de guardado para cargar y guardar las opciones del juego. Permite persistir la configuración seleccionada por el jugador entre sesiones. Se utiliza para cargar las opciones al iniciar el menú y para guardar las opciones cuando se presiona el botón de guardar. Es importante que esta instancia esté correctamente inicializada para que el sistema de guardado funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="79" column="23" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Menus.OptionsMenu._isFpslock</definition>
+        <argsstring></argsstring>
+        <name>_isFpslock</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._isFpslock</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Variable para rastrear si el bloqueo de FPS está activado. Se utiliza para habilitar o deshabilitar los controles de configuración de FPS y para aplicar el límite de FPS en tiempo real. Cuando el bloqueo de FPS está activado, se permite configurar el valor del límite de FPS; cuando está desactivado, se deshabilitan esos controles y se elimina cualquier límite de FPS aplicado. Es importante que esta variable esté correctamente gestionada para que la funcionalidad de bloqueo de FPS funcione correctamente en el menú de opciones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="82" column="22" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Menus.OptionsMenu._fpsValue</definition>
+        <argsstring></argsstring>
+        <name>_fpsValue</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._fpsValue</qualifiedname>
+        <initializer>= 60</initializer>
+        <briefdescription>
+<para>Variable para almacenar el valor actual del límite de FPS cuando el bloqueo de FPS está activado. Se utiliza para aplicar el límite de FPS en tiempo real y para mostrar el valor actual en los controles de configuración de FPS. Este valor se actualiza cuando el jugador ajusta el límite de FPS a través de los controles del menú, y se aplica al motor para limitar la tasa de cuadros por segundo del juego. Es importante que esta variable esté correctamente gestionada para que la funcionalidad de bloqueo de FPS funcione correctamente en el menú de opciones. El valor predeterminado se establece en 60 FPS, pero puede ser ajustado por el jugador según sus preferencias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="85" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Menus.OptionsMenu._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu._Ready</qualifiedname>
+        <briefdescription>
+<para>Se llama cuando el nodo entra en la escena. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Carga las opciones guardadas previamente utilizando la clase de guardado y aplica cada configuración a los controles correspondientes del menú. Esto asegura que el menú de opciones refleje la configuración actual del juego al abrirlo, permitiendo al jugador ver y ajustar sus preferencias de video y audio según lo que se haya guardado en sesiones anteriores. Es importante que esta función esté correctamente implementada para que el menú de opciones funcione correctamente en términos de carga y aplicación de configuraciones guardadas. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="90" column="30" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="90" bodyend="109"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af9b5437ca00a28b6f8ccf35e4ff6108e" compoundref="OptionsMenu_8cs" startline="117" endline="165">Faeterna.Scripts.Menus.OptionsMenu.OnOptionButtonItemSelected</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" compoundref="OptionsMenu_8cs" startline="220" endline="241">Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" compoundref="OptionsMenu_8cs" startline="283" endline="313">Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a076c40873c3270c3306d95c18b1f85d6" compoundref="OptionsMenu_8cs" startline="173" endline="186">Faeterna.Scripts.Menus.OptionsMenu.OnVSyncButtonItemSelected</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1adada22c3dd410baa252e1267cc255f81" compoundref="OptionsMenu_8cs" startline="194" endline="212">Faeterna.Scripts.Menus.OptionsMenu.OnWindowButtonItemSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af9b5437ca00a28b6f8ccf35e4ff6108e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnOptionButtonItemSelected</definition>
+        <argsstring>(int index)</argsstring>
+        <name>OnOptionButtonItemSelected</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnOptionButtonItemSelected</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se selecciona una opción en el control de antialiasing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica la configuración de antialiasing seleccionada al viewport del juego en tiempo real. Permite al jugador elegir entre diferentes métodos de suavizado de bordes para mejorar la calidad visual del juego según sus preferencias. Cada opción corresponde a un método específico de antialiasing, y al seleccionar una opción, se actualizan las configuraciones del viewport para reflejar esa elección. Es importante que esta función esté correctamente implementada para que el control de antialiasing funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de la opción seleccionada en el control de antialiasing. Cada índice corresponde a un método específico de antialiasing (por ejemplo, 0 para desactivado, 1 para FXAA, 2 para TAA, etc.). Este índice se utiliza para determinar qué configuración de antialiasing aplicar al viewport del juego. Es importante que los índices estén correctamente asignados en el control de antialiasing para que esta función funcione correctamente y aplique la configuración deseada según la selección del jugador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="117" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="117" bodyend="165"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a076c40873c3270c3306d95c18b1f85d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnVSyncButtonItemSelected</definition>
+        <argsstring>(int index)</argsstring>
+        <name>OnVSyncButtonItemSelected</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnVSyncButtonItemSelected</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se selecciona una opción en el control de VSync. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica la configuración de VSync seleccionada al juego en tiempo real. Permite al jugador activar o desactivar la sincronización vertical para evitar el tearing y mejorar la calidad visual del juego según sus preferencias. Al seleccionar una opción, se actualiza la configuración de VSync del juego para reflejar esa elección. Es importante que esta función esté correctamente implementada para que el control de VSync funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de la opción seleccionada en el control de VSync. Por ejemplo, 0 para desactivado y 1 para activado. Este índice se utiliza para determinar si se debe habilitar o deshabilitar la sincronización vertical en el juego. Es importante que los índices estén correctamente asignados en el control de VSync para que esta función funcione correctamente y aplique la configuración deseada según la selección del jugador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="173" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="173" bodyend="186"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1adada22c3dd410baa252e1267cc255f81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnWindowButtonItemSelected</definition>
+        <argsstring>(int index)</argsstring>
+        <name>OnWindowButtonItemSelected</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnWindowButtonItemSelected</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se selecciona una opción en el control de modo de pantalla. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica la configuración de modo de pantalla seleccionada al juego en tiempo real. Permite al jugador elegir entre diferentes modos de pantalla (ventana, pantalla completa, sin bordes) para adaptar la experiencia de juego a sus preferencias y necesidades. Al seleccionar una opción, se actualiza la configuración del modo de pantalla del juego para reflejar esa elección. Es importante que esta función esté correctamente implementada para que el control de modo de pantalla funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de la opción seleccionada en el control de modo de pantalla. Por ejemplo, 0 para modo ventana, 1 para pantalla completa y 2 para sin bordes. Este índice se utiliza para determinar qué modo de pantalla aplicar al juego. Es importante que los índices estén correctamente asignados en el control de modo de pantalla para que esta función funcione correctamente y aplique la configuración deseada según la selección del jugador. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="194" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="194" bodyend="212"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</definition>
+        <argsstring>(int index)</argsstring>
+        <name>OnOptionFPSButtonItemSelected</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnOptionFPSButtonItemSelected</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se selecciona una opción en el control de bloqueo de FPS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica la configuración de bloqueo de FPS seleccionada al juego en tiempo real. Permite al jugador activar o desactivar el bloqueo de FPS para limitar la tasa de cuadros por segundo del juego según sus preferencias. Al activar el bloqueo de FPS, se habilitan controles adicionales para configurar el valor del límite de FPS; al desactivarlo, se deshabilitan esos controles y se elimina cualquier límite de FPS aplicado. Es importante que esta función esté correctamente implementada para que el control de bloqueo de FPS funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de la opción seleccionada en el control de bloqueo de FPS. Por ejemplo, 0 para desactivado y 1 para activado. Este índice se utiliza para determinar si se debe habilitar o deshabilitar el bloqueo de FPS en el juego. Es importante que los índices estén correctamente asignados en el control de bloqueo de FPS para que esta función funcione correctamente y aplique la configuración deseada según la selección del jugador. Además, al activar el bloqueo de FPS, se deben habilitar los controles para configurar el valor del límite de FPS, y al desactivarlo, se deben deshabilitar esos controles y eliminar cualquier límite de FPS aplicado. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="220" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="220" bodyend="241"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHSliderFPSValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHSliderFPSValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHSliderFPSValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se cambia el valor del control de configuración de FPS (slider o spinbox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica el nuevo valor del límite de FPS al juego en tiempo real. Permite al jugador ajustar el límite de cuadros por segundo para equilibrar el rendimiento y la calidad visual según sus preferencias. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de configuración de FPS funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego cuando el bloqueo de FPS está activado.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor del límite de FPS seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar la configuración de FPS del juego en tiempo real, permitiendo al jugador ajustar la tasa de cuadros por segundo según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de configuración de FPS funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego cuando el bloqueo de FPS está activado. Además, este valor debe mantenerse sincronizado entre el slider y el spinbox para reflejar la misma configuración de FPS en ambos controles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="249" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="249" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinFPSBoxValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinFPSBoxValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinFPSBoxValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se cambia el valor del control de configuración de FPS (slider o spinbox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica el nuevo valor del límite de FPS al juego en tiempo real. Permite al jugador ajustar el límite de cuadros por segundo para equilibrar el rendimiento y la calidad visual según sus preferencias. Este método se llama tanto desde el slider como desde el spinbox para asegurarse de que ambos controles estén sincronizados y reflejen el mismo valor. Es importante que esta función esté correctamente implementada para que los controles de configuración de FPS funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego cuando el bloqueo de FPS está activado.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nuevo valor del límite de FPS seleccionado por el jugador a través del slider o spinbox. Este valor se utiliza para actualizar la configuración de FPS del juego en tiempo real, permitiendo al jugador ajustar la tasa de cuadros por segundo según sus preferencias. Es importante que este valor se gestione correctamente para que los controles de configuración de FPS funcionen correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego cuando el bloqueo de FPS está activado. Además, este valor debe mantenerse sincronizado entre el slider y el spinbox para reflejar la misma configuración de FPS en ambos controles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="266" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="266" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected</definition>
+        <argsstring>(int index)</argsstring>
+        <name>OnOptionShadowButtonItemSelected</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cuando se selecciona una opción en el control de calidad de sombras. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica la configuración de calidad de sombras seleccionada al juego en tiempo real. Permite al jugador elegir entre diferentes niveles de calidad de sombras para mejorar la apariencia visual del juego según sus preferencias. Al seleccionar una opción, se actualiza la configuración de calidad de sombras del juego para reflejar esa elección. Es importante que esta función esté correctamente implementada para que el control de calidad de sombras funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función maneja posibles excepciones al aplicar la configuración de sombras, especialmente en entornos sin backend gráfico, para garantizar que el juego no se bloquee y que se informe adecuadamente al jugador si no se pueden aplicar las configuraciones seleccionadas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice de la opción seleccionada en el control de calidad de sombras. Cada índice corresponde a un nivel específico de calidad de sombras (por ejemplo, 0 para Hard, 1 para Soft Very Low, 2 para Soft Low, etc.). Este índice se utiliza para determinar qué configuración de calidad de sombras aplicar al juego. Es importante que los índices estén correctamente asignados en el control de calidad de sombras para que esta función funcione correctamente y aplique la configuración deseada según la selección del jugador. Además, esta función debe manejar posibles excepciones al aplicar la configuración de sombras, especialmente en entornos sin backend gráfico, para garantizar que el juego no se bloquee y que se informe adecuadamente al jugador si no se pueden aplicar las configuraciones seleccionadas. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="283" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="283" bodyend="313"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" compoundref="OptionsMenu_8cs" startline="90" endline="109">Faeterna.Scripts.Menus.OptionsMenu._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHMasterSliderValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHMasterSliderValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHMasterSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="350" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="350" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHMusicSliderValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHMusicSliderValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHMusicSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="357" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="357" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHSoundFXSliderValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHSoundFXSliderValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHSoundFXSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="364" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="364" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHEnviromentSliderValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHEnviromentSliderValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHEnviromentSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="371" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="371" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnHUISoundSliderValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnHUISoundSliderValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnHUISoundSliderValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="378" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="378" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a68cd4704536b66f6ab371e4dbf0c0e73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMasterValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinBoxMasterValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMasterValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="385" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="385" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a871f2266e757373f1786715420a55134" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMusicValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinBoxMusicValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxMusicValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="392" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="392" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a76468231753a43706928fddc9dcd6b7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxSoundFXValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinBoxSoundFXValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxSoundFXValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="399" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="399" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9c304bdc6d4a584f2ca06fb08bd6a953" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxEnviromentValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinBoxEnviromentValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxEnviromentValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="406" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="406" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9e514d1d9dc4ceb9015e9fd8636d494a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxUISoundValueChanged</definition>
+        <argsstring>(float value)</argsstring>
+        <name>OnSpinBoxUISoundValueChanged</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSpinBoxUISoundValueChanged</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="413" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="413" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</definition>
+        <argsstring>()</argsstring>
+        <name>OnSavePressed</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnSavePressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="420" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="420" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ace4c492cab9c8dc693ea337aa94af90e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.OptionsMenu.OnExitPressed</definition>
+        <argsstring>()</argsstring>
+        <name>OnExitPressed</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.OnExitPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="443" column="21" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="443" bodyend="452"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a483a48df78744459138ab078a4ac1ac9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Menus.OptionsMenu.ApplyShadowQuality</definition>
+        <argsstring>(RenderingServer.ShadowQuality quality)</argsstring>
+        <name>ApplyShadowQuality</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.ApplyShadowQuality</qualifiedname>
+        <param>
+          <type>RenderingServer.ShadowQuality</type>
+          <declname>quality</declname>
+        </param>
+        <briefdescription>
+<para>Aplica la configuración de calidad de sombras seleccionada al juego en tiempo real. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Permite al jugador elegir entre diferentes niveles de calidad de sombras para mejorar la apariencia visual del juego según sus preferencias. Al seleccionar una opción, se actualiza la configuración de calidad de sombras del juego para reflejar esa elección. Es importante que esta función esté correctamente implementada para que el control de calidad de sombras funcione correctamente en el menú de opciones y para que los cambios se apliquen en tiempo real al juego. Además, esta función maneja posibles excepciones al aplicar la configuración de sombras, especialmente en entornos sin backend gráfico, para garantizar que el juego no se bloquee y que se informe adecuadamente al jugador si no se pueden aplicar las configuraciones seleccionadas.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuración de calidad de sombras seleccionada por el jugador. Este parámetro se utiliza para determinar qué nivel de calidad de sombras aplicar al juego. Cada nivel de calidad de sombras corresponde a una configuración específica que afecta la apariencia visual de las sombras en el juego. Es importante que esta función maneje posibles excepciones al aplicar la configuración de sombras, especialmente en entornos sin backend gráfico, para garantizar que el juego no se bloquee y que se informe adecuadamente al jugador si no se pueden aplicar las configuraciones seleccionadas. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="321" column="29" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="321" bodyend="338"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</definition>
+        <argsstring>(float percentValue)</argsstring>
+        <name>NormalizeVolumeToDb</name>
+        <qualifiedname>Faeterna.Scripts.Menus.OptionsMenu.NormalizeVolumeToDb</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>percentValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/OptionsMenu.cs" line="340" column="23" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="340" bodyend="348"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Control que representa el menú de opciones del juego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Permite configurar ajustes de video (antialiasing, vsync, modo de pantalla, bloqueo de FPS, calidad de sombras) y audio (volumen maestro, música, efectos de sonido, ambiente, sonidos UI). Los cambios se aplican en tiempo real y se pueden guardar para futuras sesiones. El menú se integra con el sistema de guardado para cargar y guardar las opciones seleccionadas por el jugador. Se asignan los controles desde el editor a través de export variables para facilitar la conexión con la interfaz gráfica del menú. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Menus.OptionsMenu</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Menus.OptionsMenu</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Menus/OptionsMenu.cs" line="9" column="19" bodyfile="scripts/Menus/OptionsMenu.cs" bodystart="10" bodyend="453"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a706d33bb87ce91f3ed6ac24c4633e441" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_antialiasing</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a810c24707bddb656b5874bcf361eb532" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_enviroment</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa1d18fe9669a0189ed72f3f9c9c96f9b" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_enviromentSpinBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5353fde99aaca066e0a1f305dd92ce7b" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_exitButton</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aab60b3955e67189184015af2871adf94" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_fpslock</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a4591abb2c609cf9a19ccea63c6eba81f" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_fpsslider</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9b930805769dd69517d986683b665161" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_fpsspinbox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_fpsValue</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_isFpslock</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2b1f8bc4a54ba46262bd90250029b592" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_master</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8dbc9ed5e792211447164fd1819aa946" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_masterSpinBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a3ceb8889b7b460f3443c3aa53f7ac2c7" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_music</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a996d278a80f7cfd8a7fd75252f1fc397" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_musicSpinBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af42b24608f9111cf4f11f123f75e1bc7" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_saveButton</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_saveSettings</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a501c38003078b138d511b00bb55f3ec1" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_screen</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a61c44c0b582a66c5e8141b0e8d425d32" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_shadows</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8bbfc9a626e90fdb373cdada59b84fa9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_soundfx</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ae127125bf1c084ab3d5317b16ba015e1" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_soundfxSpinBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1e8601a88a878d09cc2fd05c1f4c03ad" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_uisound</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2c373f122f1030e10f533cfb9acf28f0" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_uisoundSpinBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1b959c0eb342753368b8e5ea6db8e5b1" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>_vsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a483a48df78744459138ab078a4ac1ac9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>ApplyShadowQuality</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>NormalizeVolumeToDb</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ace4c492cab9c8dc693ea337aa94af90e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnExitPressed</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHEnviromentSliderValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHMasterSliderValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHMusicSliderValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHSliderFPSValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHSoundFXSliderValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnHUISoundSliderValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af9b5437ca00a28b6f8ccf35e4ff6108e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnOptionButtonItemSelected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnOptionFPSButtonItemSelected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnOptionShadowButtonItemSelected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSavePressed</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9c304bdc6d4a584f2ca06fb08bd6a953" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinBoxEnviromentValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a68cd4704536b66f6ab371e4dbf0c0e73" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinBoxMasterValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a871f2266e757373f1786715420a55134" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinBoxMusicValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a76468231753a43706928fddc9dcd6b7c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinBoxSoundFXValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9e514d1d9dc4ceb9015e9fd8636d494a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinBoxUISoundValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnSpinFPSBoxValueChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a076c40873c3270c3306d95c18b1f85d6" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnVSyncButtonItemSelected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1adada22c3dd410baa252e1267cc255f81" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::OptionsMenu</scope><name>OnWindowButtonItemSelected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

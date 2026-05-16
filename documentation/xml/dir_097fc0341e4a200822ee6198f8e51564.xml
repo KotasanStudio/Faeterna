@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_097fc0341e4a200822ee6198f8e51564" kind="dir">
+    <compoundname>scripts/Tools</compoundname>
+    <innerfile refid="ButtonTools_8cs">ButtonTools.cs</innerfile>
+    <innerfile refid="CheckPoint_8cs">CheckPoint.cs</innerfile>
+    <innerfile refid="CursorManager_8cs">CursorManager.cs</innerfile>
+    <innerfile refid="GameSaveData_8cs">GameSaveData.cs</innerfile>
+    <innerfile refid="GameSaveService_8cs">GameSaveService.cs</innerfile>
+    <innerfile refid="Saves_8cs">Saves.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Tools/"/>
+  </compounddef>
+</doxygen>

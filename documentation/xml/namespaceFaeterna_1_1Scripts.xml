@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts</compoundname>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Enemigos">Faeterna::Scripts::Enemigos</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Mapa">Faeterna::Scripts::Mapa</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Menus">Faeterna::Scripts::Menus</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje">Faeterna::Scripts::Personaje</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Tools">Faeterna::Scripts::Tools</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Tutorial">Faeterna::Scripts::Tutorial</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Enemigos/Enemy.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

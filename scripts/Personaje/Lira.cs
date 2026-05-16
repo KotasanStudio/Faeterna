@@ -66,6 +66,9 @@ namespace Faeterna.Scripts.Personaje
         public LiraAnimationTree AnimTree;
         public bool ItsFliped = false;
         public bool IsInvulnerableByState = false;
+
+        [Export] private Camera2D _camera;
+
         /// <summary>Lista de <see cref="TextureRect"/> que representan los corazones de vida en la interfaz.</summary>
         [Export] public Array<TextureRect> _hearts;
 
@@ -75,25 +78,43 @@ namespace Faeterna.Scripts.Personaje
         /// <summary>Timer que controla la duración de la invencibilidad tras recibir daño.</summary>
         [Export] private Timer _invencibilityTimer;
 
+        /// <summary>
+        /// Áreas usadas para detectar colisiones de ataques (disparo y patada).
+        /// </summary>
         [ExportGroup("Atacks")]
         [Export] private Area2D _shotArea;
         [Export] private Area2D _kickArea;
 
+
+        /// <summary>Escena del proyectil disparado por el personaje. Se instancia al atacar y se le asignan propiedades como dirección y posición.</summary>
         [Export] private PackedScene _bullet;
 
-
+        /// <summary>
+        /// Nodo que emite partículas al caminar sobre el terreno. Se activa/desactiva desde los estados de movimiento para mejorar la inmersión visual.
+        /// </summary>
         [ExportGroup("Particles")]
         [Export] public TerrainParticles terrainParticles;
-
         [Export] public CpuParticles2D saltoParticulas;
-
         [Export] public CpuParticles2D dobleSaltoParticulas;
 
+        /// <summary>Flags de tutorial. Estas variables se usan para controlar eventos específicos del tutorial, como la aparición de mensajes o la activación de mecánicas. No afectan directamente a la jugabilidad, pero permiten personalizar la experiencia durante el tutorial.</summary>
         private bool _tutorial = false;
+
+        /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
         private bool _haveDobleJump { get; set;} = false;
+
+        /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
         private bool _haveDash { get; set;} = false;
+
+        /// <summary>Referencias a nodos de la interfaz y otros elementos relacionados con la salud, maná, muerte y descripción de objetos. Estos nodos se asignan desde el editor y se usan para actualizar visualmente la interfaz (corazones, barra de maná) y mostrar pantallas de muerte o descripciones de objetos cuando sea necesario. Aunque podrían estar gestionados por un sistema de UI separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos del personaje.</summary>
         [Export] public DeathScreen  _deathScreen;
+
+        /// <summary>Nodo que muestra la descripción de objetos al interactuar con ellos. Se asigna desde el editor y se usa para mostrar información relevante sobre objetos del juego (nombre, descripción, efectos) cuando el jugador interactúa con ellos. Aunque podría ser parte de un sistema de interacción más amplio, en este caso se incluye directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos relacionados con la interacción.</summary>
         [Export] public ObjetoDescription _objectoDescription;
+
+        /// <summary>
+        /// Referencias a nodos relacionados con el audio del personaje. El <see cref="AudioStreamPlayer2D"/> se usa para reproducir sonidos asociados a las acciones del personaje (correr, saltar, atacar, recibir daño). Los <see cref="AudioStream"/> representan los diferentes clips de audio que se asignan desde el editor y se reproducen según la acción realizada. Aunque podrían estar gestionados por un sistema de audio separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos relacionados con las acciones del personaje.
+        /// </summary>
         [ExportGroup("Audios")]
         [Export] public AudioStreamPlayer2D audioPlayer;
         [Export] public AudioStream _hitAudio;
@@ -120,6 +141,9 @@ namespace Faeterna.Scripts.Personaje
 
         }
 
+        /// <summary>
+        /// Intenta cargar el progreso guardado desde la ranura activa. Si se encuentra un guardado válido, se aplica al personaje. Si el guardado corresponde a una escena diferente a la actual, no se carga para evitar inconsistencias.
+        /// </summary>
         private async Task TryLoadFromActiveSlotAsync()
         {
             GameData gameData = await GameSaveService.LoadActiveSlotAsync();
@@ -138,6 +162,15 @@ namespace Faeterna.Scripts.Personaje
             ApplySaveData(gameData.PlayerData);
         }
 
+        /// <summary>
+        /// Construye un objeto <see cref="PlayerSaveData"/> con el estado actual del personaje, incluyendo posición, salud, maná y flags de movimiento. Este método se usa para guardar el progreso del jugador en checkpoints o al salir del juego. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se guardan como true por defecto, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador guardó mientras tenía estas habilidades disponibles. Al restaurar el juego, estas flags se resetearán a true para garantizar un estado limpio y consistente al cargar desde cualquier punto del juego.
+        /// </summary>
+        /// <param name="position">
+        /// Posición mundial del personaje que se guardará en el progreso. Esta posición se usa para colocar al personaje correctamente al cargar el juego desde un checkpoint o al restaurar el progreso. Es importante que esta posición sea precisa y corresponda a un punto válido en la escena para evitar problemas de colisiones o ubicaciones no deseadas al cargar el juego. Generalmente, esta posición se obtiene del nodo del personaje (GlobalPosition) al momento de guardar el progreso.
+        /// </param>
+        /// <returns>
+        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información necesaria para restaurar el estado del personaje al cargar el juego. Este objeto incluye la posición, salud, maná y flags de movimiento (aunque estas últimas se guardan como true por defecto). El objeto resultante se serializa y se almacena en el sistema de guardado para su posterior recuperación. Al cargar el juego, se aplicará esta información al personaje para restaurar su estado de manera consistente con el momento en que se guardó.
+        /// </returns>
         public PlayerSaveData BuildSaveData(Vector2 position)
         {
             return new PlayerSaveData
@@ -147,13 +180,19 @@ namespace Faeterna.Scripts.Personaje
                 Mana = _currentMana,
                 // NO guardamos las flags de movimiento (DoubleJump, Dash, Coyote) porque
                 // son transitorias y se manejan exclusivamente por la máquina de estados.
-                // Guardarlas causaría inconsistencias cuando el jugador carga.
+                // Guardarlas causa que el personaje vuele hasta el infinito y mas alla.
                 DoubleJumpAvailable = true,
                 DashAvailable = true,
                 CoyoteAvailable = true
             };
         }
 
+        /// <summary>
+        /// Aplica los datos de guardado al personaje, restaurando su posición, salud, maná y reseteando las flags de movimiento a true. Este método se usa al cargar el juego desde un checkpoint o al restaurar el progreso para colocar al personaje en el estado correcto. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador cargó mientras tenía estas habilidades disponibles. Al aplicar los datos de guardado, se garantiza un estado limpio y consistente para el personaje al cargar desde cualquier punto del juego.
+        /// </summary>
+        /// <param name="saveData">
+        /// Un objeto <see cref="PlayerSaveData"/> que contiene la información guardada del personaje, incluyendo posición, salud, maná y flags de movimiento. Este objeto se obtiene al cargar el juego desde un checkpoint o al restaurar el progreso. Al aplicar esta información al personaje, se restaurará su estado de manera consistente con el momento en que se guardó, asegurando que la posición, salud y maná sean correctos. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado para evitar inconsistencias en la jugabilidad al cargar el juego.
+        /// </param>
         public void ApplySaveData(PlayerSaveData saveData)
         {
             GlobalPosition = saveData.Position;
@@ -162,14 +201,8 @@ namespace Faeterna.Scripts.Personaje
             _currentHealth = Mathf.Clamp(saveData.Health, 0, Health);
             _currentMana = Mathf.Clamp(saveData.Mana, 0f, Mana);
 
-            // IMPORTANTE: Los flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable)
+            // IMPORTANTE: Los flags de movimiento
             // SIEMPRE se resetean a true al cargar, independientemente del valor guardado.
-            // Razones:
-            // 1. Estos flags son transitorios y se manejan completamente por la máquina de estados
-            // 2. Guardarlos causaría comportamientos no deseados (triple saltos, saltos infinitos)
-            // 3. Cuando el jugador carga en un checkpoint, comienza con un estado limpio
-            // 4. El flag CoyoteAvailable será controlado por RunningMovementState (línea 72)
-            // 5. El flag DoubleJumpAvailable será restaurado por FallingMovementState (línea 79)
             DoubleJumpAvailable = true;
             DashAvailable = true;
             CoyoteAvailable = true;
@@ -190,6 +223,13 @@ namespace Faeterna.Scripts.Personaje
                 GD.Print($"Setting animation to: {animationName}");
             }
         }
+
+        /// <summary>
+        /// Reproduce un sonido específico según el nombre proporcionado. Este método se usa para reproducir los diferentes efectos de sonido asociados a las acciones del personaje (correr, saltar, atacar, recibir daño). El método asigna el clip de audio correspondiente al <see cref="AudioStreamPlayer2D"/> y lo reproduce. Si se proporciona un nombre de audio desconocido, se imprime un error en la consola. Es importante asegurarse de que el <see cref="AudioStreamPlayer2D"/> esté correctamente asignado en el editor para evitar errores al intentar reproducir sonidos.
+        /// </summary>
+        /// <param name="audioName">
+        /// Nombre del audio a reproducir. Este nombre se usa para identificar qué clip de audio asignar al <see cref="AudioStreamPlayer2D"/> antes de reproducirlo. Los nombres válidos son: "run", "jump", "fall", "attack", "fireball", "dash", "hit" e "idle". Cada nombre corresponde a un clip de audio específico que debe ser asignado en el editor. Si se proporciona un nombre que no coincide con ninguno de los casos definidos, se imprimirá un error indicando que el nombre de audio es desconocido.
+        /// </param>
         public void PlayAudio(string audioName)
         {
             if (audioPlayer == null)
@@ -202,7 +242,7 @@ namespace Faeterna.Scripts.Personaje
             {
                 case "run":
                     audioPlayer.Stream = _runAudio;
-                    
+
                     break;
                 case "jump":
                     audioPlayer.Stream = _jumpAudio;
@@ -234,8 +274,7 @@ namespace Faeterna.Scripts.Personaje
         }
 
         /// <summary>
-        /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto
-        /// de flash en los corazones de la interfaz.
+        /// Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto de flash en los corazones de la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de puntos de vida a restar.</param>
         /// <param name="attackerPosition">Posición mundial del atacante, usada para calcular la dirección del knockback.</param>
@@ -250,12 +289,10 @@ namespace Faeterna.Scripts.Personaje
             UpdateHearts();
             if (_currentHealth <= 0)
             {
-                // El control se bloquea AQUÍ
                 MovementStateMachine?.TransitionTo("DeathMovementState");
                 return;
             }
 
-            // Si no ha muerto, aplicamos el knockback normal
             float directionX = GlobalPosition.X >= attackerPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * KnockbackForceX, KnockbackForceY);
             MovementStateMachine?.TransitionTo("KnockbackMovementState");
@@ -286,8 +323,7 @@ namespace Faeterna.Scripts.Personaje
         }
 
         /// <summary>
-        /// Cura al personaje, aumentando su salud hasta el máximo permitido
-        /// y actualizando la interfaz.
+        /// Cura al personaje, aumentando su salud hasta el máximo permitido y actualizando la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de puntos de vida a restaurar.</param>
         public void Heal(int amount)
@@ -320,8 +356,7 @@ namespace Faeterna.Scripts.Personaje
         }
 
         /// <summary>
-        /// Recupera maná del personaje hasta el máximo permitido
-        /// y actualiza la barra de la interfaz.
+        /// Recupera maná del personaje hasta el máximo permitido y actualiza la barra de la interfaz.
         /// </summary>
         /// <param name="amount">Cantidad de maná a recuperar.</param>
         public void RecoverMana(float amount)

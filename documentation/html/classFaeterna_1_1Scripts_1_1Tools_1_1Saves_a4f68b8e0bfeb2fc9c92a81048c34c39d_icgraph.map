@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.HasPreview" name="Faeterna.Scripts.Tools.Saves.HasPreview">
+<area shape="rect" id="Node000001" title="Verifica si existe una imagen de vista previa para el slot especificado." alt="" coords="264,5,474,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a9f504b1b72aa9131be6deb0327cfdcb1" title="Carga la textura de vista previa del slot desde el almacenamiento persistente." alt="" coords="5,5,216,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Faeterna.Scripts.Enemigos.Enemy.SetAnimation" name="Faeterna.Scripts.Enemigos.Enemy.SetAnimation">
+<area shape="rect" id="Node000001" title="Reproduce una animación en el sprite del enemigo." alt="" coords="263,160,461,205"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a343dc6a0b234f977e16733295816d685" title="Maneja la detección de un cuerpo dentro del área de detección (el jugador)." alt="" coords="11,5,209,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,151,270,117,213,81,193,70,192,65,216,77,273,112,324,150"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="6,91,214,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,157,194,139,193,134,266,155"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#a51a0d35bceafc219d76a6da06b7cb3be" title="Procesamiento de física cada frame." alt="" coords="5,160,215,205"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="244,184,216,185,215,180,249,182"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a051125c655bc29fd13c010ae4e4adac8" title="Inicialización del jabalí." alt="" coords="11,230,209,274"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="261,211,195,232,193,227,266,209"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime.html#af93780d4cfb7086dcabfc853370a19a8" title="Inicialización del slime." alt="" coords="11,299,209,344"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="324,214,274,254,216,289,189,301,187,296,213,284,271,250,319,216"/>
+</map>

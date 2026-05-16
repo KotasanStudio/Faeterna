@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classBossArea" kind="class" language="C#" prot="public">
+    <compoundname>BossArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBossArea_1a811c3a4a5b929a07107b4c5894eaf755" prot="private" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D BossArea._dashItem</definition>
+        <argsstring></argsstring>
+        <name>_dashItem</name>
+        <qualifiedname>BossArea._dashItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="9" column="17" bodyfile="scripts/Mapa/BossArea.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBossArea_1a3e1f0fd59bbe6ca447f24c81b8f1ee2e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kindref="compound">ReyJabali</ref></type>
+        <definition>ReyJabali BossArea._reyJabali</definition>
+        <argsstring></argsstring>
+        <name>_reyJabali</name>
+        <qualifiedname>BossArea._reyJabali</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="10" column="20" bodyfile="scripts/Mapa/BossArea.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBossArea_1ab6a80cc076175815dc28d15e57adf5de" prot="private" static="no" mutable="no">
+        <type>AudioStreamPlayer</type>
+        <definition>AudioStreamPlayer BossArea._backgroundAudioPLayer</definition>
+        <argsstring></argsstring>
+        <name>_backgroundAudioPLayer</name>
+        <qualifiedname>BossArea._backgroundAudioPLayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="11" column="28" bodyfile="scripts/Mapa/BossArea.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBossArea_1a782bf8e018726eb0849eb0bd518991dc" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream BossArea._backgroundAudio</definition>
+        <argsstring></argsstring>
+        <name>_backgroundAudio</name>
+        <qualifiedname>BossArea._backgroundAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="12" column="22" bodyfile="scripts/Mapa/BossArea.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBossArea_1a34d92b412ede87afc050d63a063ccd6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void BossArea._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>BossArea._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="15" column="22" bodyfile="scripts/Mapa/BossArea.cs" bodystart="15" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classBossArea_1a805137b34f0cd3f8f8d4051a1fe4bab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BossArea._on_body_entered</definition>
+        <argsstring>(Node2D body)</argsstring>
+        <name>_on_body_entered</name>
+        <qualifiedname>BossArea._on_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="30" column="13" bodyfile="scripts/Mapa/BossArea.cs" bodystart="30" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classBossArea_1ab9e8bac9f4d3d727c355a3672f24e136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BossArea.onJabaliBossDeath</definition>
+        <argsstring>()</argsstring>
+        <name>onJabaliBossDeath</name>
+        <qualifiedname>BossArea.onJabaliBossDeath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/BossArea.cs" line="41" column="13" bodyfile="scripts/Mapa/BossArea.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>BossArea</label>
+        <link refid="classBossArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>BossArea</label>
+        <link refid="classBossArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Mapa/BossArea.cs" line="6" column="15" bodyfile="scripts/Mapa/BossArea.cs" bodystart="7" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classBossArea_1a782bf8e018726eb0849eb0bd518991dc" prot="private" virt="non-virtual"><scope>BossArea</scope><name>_backgroundAudio</name></member>
+      <member refid="classBossArea_1ab6a80cc076175815dc28d15e57adf5de" prot="private" virt="non-virtual"><scope>BossArea</scope><name>_backgroundAudioPLayer</name></member>
+      <member refid="classBossArea_1a811c3a4a5b929a07107b4c5894eaf755" prot="private" virt="non-virtual"><scope>BossArea</scope><name>_dashItem</name></member>
+      <member refid="classBossArea_1a805137b34f0cd3f8f8d4051a1fe4bab3" prot="public" virt="non-virtual"><scope>BossArea</scope><name>_on_body_entered</name></member>
+      <member refid="classBossArea_1a34d92b412ede87afc050d63a063ccd6b" prot="public" virt="non-virtual"><scope>BossArea</scope><name>_Ready</name></member>
+      <member refid="classBossArea_1a3e1f0fd59bbe6ca447f24c81b8f1ee2e" prot="private" virt="non-virtual"><scope>BossArea</scope><name>_reyJabali</name></member>
+      <member refid="classBossArea_1ab9e8bac9f4d3d727c355a3672f24e136" prot="public" virt="non-virtual"><scope>BossArea</scope><name>onJabaliBossDeath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

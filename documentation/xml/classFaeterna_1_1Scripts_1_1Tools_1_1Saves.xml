@@ -1,0 +1,903 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Tools::Saves</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a12752701f75a27349cd52b924c82bd86" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Tools.Saves.PreviewDirectory</definition>
+        <argsstring></argsstring>
+        <name>PreviewDirectory</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.PreviewDirectory</qualifiedname>
+        <initializer>= &quot;user://save_previews&quot;</initializer>
+        <briefdescription>
+<para>Directorio donde se almacenan las imágenes de vista previa de las partidas guardadas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="36" column="30" bodyfile="scripts/Tools/Saves.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aa2b14abf061c0bb2f6d32d2a1892867c" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Faeterna.Scripts.Tools.Saves.PreviewWidth</definition>
+        <argsstring></argsstring>
+        <name>PreviewWidth</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.PreviewWidth</qualifiedname>
+        <initializer>= 512</initializer>
+        <briefdescription>
+<para>Ancho (en píxeles) de las imágenes de vista previa generadas de las partidas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="39" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a6578d83a26189b6d7c489600d9c3e755" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Faeterna.Scripts.Tools.Saves.PreviewHeight</definition>
+        <argsstring></argsstring>
+        <name>PreviewHeight</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.PreviewHeight</qualifiedname>
+        <initializer>= 288</initializer>
+        <briefdescription>
+<para>Alto (en píxeles) de las imágenes de vista previa generadas de las partidas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="42" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" prot="private" static="yes" mutable="no">
+        <type>readonly JsonSerializerOptions</type>
+        <definition>readonly JsonSerializerOptions Faeterna.Scripts.Tools.Saves.JsonOptions</definition>
+        <argsstring></argsstring>
+        <name>JsonOptions</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.JsonOptions</qualifiedname>
+        <initializer>                                                          = new()
+{
+    WriteIndented = true
+}</initializer>
+        <briefdescription>
+<para>Opciones de formato JSON para la serialización de datos de partida (indentado para legibilidad). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="45" column="55" bodyfile="scripts/Tools/Saves.cs" bodystart="45" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" prot="private" static="no" mutable="no">
+        <type>readonly ConfigFile</type>
+        <definition>readonly ConfigFile Faeterna.Scripts.Tools.Saves.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.config</qualifiedname>
+        <initializer>= new ConfigFile()</initializer>
+        <briefdescription>
+<para>Archivo de configuración usado para almacenar opciones de usuario (audio, video, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="51" column="37" bodyfile="scripts/Tools/Saves.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Tools.Saves.ActiveSlot</definition>
+        <argsstring></argsstring>
+        <name>ActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.ActiveSlot</qualifiedname>
+        <briefdescription>
+<para>Slot activo global para las operaciones de guardado/carga de partida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Este valor determina en qué espacio se guardará o cargará la partida. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="57" column="27" bodyfile="scripts/Tools/Saves.cs" bodystart="57" bodyend="57"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" compoundref="Saves_8cs" startline="187" endline="190">Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="264" endline="267">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="258">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a4fa7347b0fea6b2d1dc9ab1e4a4628" compoundref="Saves_8cs" startline="168" endline="171">Faeterna.Scripts.Tools.Saves.SetActiveSlot</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a190b25c1de00c230de0e56d261803aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Faeterna.Scripts.Tools.Saves.Saves</definition>
+        <argsstring>(bool isSave)</argsstring>
+        <name>Saves</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.Saves</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isSave</declname>
+        </param>
+        <briefdescription>
+<para>Constructor que inicializa el gestor de guardado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si isSave es verdadero, se prepara para guardar; si es falso, se carga el archivo de configuración desde el almacenamiento persistente.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isSave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indica si se inicializa para guardar (verdadero) o para cargar opciones (falso).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="64" column="16" bodyfile="scripts/Tools/Saves.cs" bodystart="64" bodyend="81"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1adf807e36113063bcdda49726953fb302" compoundref="Saves_8cs" startline="87" endline="97">Faeterna.Scripts.Tools.Saves.Load</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1adf807e36113063bcdda49726953fb302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Tools.Saves.Load</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>Load</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.Load</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Carga el archivo de configuración desde la ruta especificada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si el archivo no existe, crea uno nuevo.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta del archivo de configuración a cargar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="87" column="21" bodyfile="scripts/Tools/Saves.cs" bodystart="87" bodyend="97"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a190b25c1de00c230de0e56d261803aab" compoundref="Saves_8cs" startline="64" endline="81">Faeterna.Scripts.Tools.Saves.Saves</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2671c9086b903044eba3d906436c6bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Tools.Saves.SaveOptions</definition>
+        <argsstring>(int antialiasing, int vsync, int screen, int fpslock, int fpsValue, int shadows, double master, double music, double soundfx, double enviroment, double uisound)</argsstring>
+        <name>SaveOptions</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.SaveOptions</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>antialiasing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>vsync</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>screen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fpslock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fpsValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shadows</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>master</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>music</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>soundfx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>enviroment</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>uisound</declname>
+        </param>
+        <briefdescription>
+<para>Guarda las opciones de usuario (video y audio) en el archivo de configuración persistente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>antialiasing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opción de antialiasing seleccionada (0-5: Off, FXAA, TAA, MSAA 2x, MSAA 4x, MSAA 8x).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vsync</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Opción de VSync (0: Off, 1: On).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Modo de pantalla (0: Ventana, 1: Pantalla completa, 2: Sin bordes).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fpslock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bloqueo de FPS (0: Off, 1: On).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fpsValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Límite de FPS cuando el bloqueo está activado.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shadows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nivel de calidad de sombras (0-5: Hard, Soft Very Low, Soft Low, Soft Medium, Soft High, Soft Ultra).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>master</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volumen maestro (0.0-1.0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>music</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volumen de música (0.0-1.0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>soundfx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volumen de efectos de sonido (0.0-1.0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enviroment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volumen de sonidos ambientales (0.0-1.0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uisound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volumen de sonidos de UI (0.0-1.0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="113" column="21" bodyfile="scripts/Tools/Saves.cs" bodystart="113" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4" kindref="member">OptionsData</ref></type>
+        <definition>OptionsData Faeterna.Scripts.Tools.Saves.LoadOptions</definition>
+        <argsstring>()</argsstring>
+        <name>LoadOptions</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.LoadOptions</qualifiedname>
+        <briefdescription>
+<para>Carga las opciones de usuario guardadas y las devuelve como un registro <ref refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4" kindref="member">OptionsData</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si alguna opción no está guardada, se usan valores predeterminados.</para>
+<para><simplesect kind="return"><para>Registro con las opciones cargadas del archivo de configuración.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="147" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="147" bodyend="162"/>
+        <references refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4">Faeterna.Scripts.Tools.OptionsData</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a4fa7347b0fea6b2d1dc9ab1e4a4628" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.Saves.SetActiveSlot</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>SetActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.SetActiveSlot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Define el slot activo asegurando que no sea negativo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Un valor negativo se reemplaza automáticamente con 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot a activar (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="168" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="168" bodyend="171"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ac738ffb0de07521042ddc21daa91410a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.Saves.HasSave</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>HasSave</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.HasSave</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Verifica si existe un archivo de guardado para el slot especificado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot a verificar (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Verdadero si existe el archivo JSON del slot; falso en caso contrario.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="178" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="178" bodyend="181"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" compoundref="Saves_8cs" startline="187" endline="190">Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</definition>
+        <argsstring>()</argsstring>
+        <name>HasSaveInActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot</qualifiedname>
+        <briefdescription>
+<para>Verifica si el slot activo tiene un archivo de guardado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Verdadero si existe guardado en el slot activo; falso en caso contrario.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="187" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="187" bodyend="190"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ac738ffb0de07521042ddc21daa91410a" compoundref="Saves_8cs" startline="178" endline="181">Faeterna.Scripts.Tools.Saves.HasSave</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.Saves.HasPreview</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>HasPreview</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.HasPreview</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Verifica si existe una imagen de vista previa para el slot especificado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot a verificar (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Verdadero si existe la imagen PNG del slot; falso en caso contrario.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="197" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="197" bodyend="200"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" compoundref="Saves_8cs" startline="207" endline="222">Faeterna.Scripts.Tools.Saves.LoadPreviewTexture</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Faeterna.Scripts.Tools.Saves.LoadPreviewTexture</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>LoadPreviewTexture</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.LoadPreviewTexture</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Carga la textura de vista previa del slot desde el almacenamiento persistente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot de cuya previsualizacion se cargará (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Una Texture2D lista para usar en UI, o nulo si no existe o está corrupta.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="207" column="33" bodyfile="scripts/Tools/Saves.cs" bodystart="207" bodyend="222"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" compoundref="Saves_8cs" startline="197" endline="200">Faeterna.Scripts.Tools.Saves.HasPreview</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.Saves.DeleteSlot</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>DeleteSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.DeleteSlot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Elimina completamente un slot incluyendo su archivo de guardado JSON y su imagen de vista previa PNG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot a eliminar (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="228" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</definition>
+        <argsstring>(Lira player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport=null)</argsstring>
+        <name>SaveCheckpointAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</qualifiedname>
+        <param>
+          <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>checkpointId</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>scenePath</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>checkpointPosition</declname>
+        </param>
+        <param>
+          <type>Viewport</type>
+          <declname>viewport</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instancia del jugador desde la que se extrae el estado para guardar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkpointId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador único del checkpoint alcanzado.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scenePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta de la escena actual para validar cargas posteriores.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkpointPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición de respawn a persistir cuando se cargue desde este checkpoint.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport fuente para la captura de pantalla; si es nulo, usa el del jugador.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tarea asincrónica que completa cuando se guardan los datos y la previsualizacion.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="243" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="243" bodyend="258"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" compoundref="Saves_8cs" startline="276" endline="310">Faeterna.Scripts.Tools.Saves.SaveAsync</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
+        <definition>static Task&lt; GameData &gt; Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LoadActiveSlotAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</qualifiedname>
+        <briefdescription>
+<para>Carga los datos de la partida guardada en el slot activo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Datos cargados desde el slot activo, o nulo si el archivo no existe.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="264" column="28" bodyfile="scripts/Tools/Saves.cs" bodystart="264" bodyend="267"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" compoundref="Saves_8cs" startline="57" endline="57">Faeterna.Scripts.Tools.Saves.ActiveSlot</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" compoundref="Saves_8cs" startline="317" endline="353">Faeterna.Scripts.Tools.Saves.LoadAsync</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Faeterna.Scripts.Tools.Saves.SaveAsync</definition>
+        <argsstring>(int slot, GameData data)</argsstring>
+        <name>SaveAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.SaveAsync</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Los datos se serializan como JSON indentado para legibilidad.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot en el que se guardarán los datos (base 0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Datos serializables de la partida a guardar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tarea asincrónica que completa cuando se escriben los datos en disco.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="276" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="276" bodyend="310"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="258">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
+        <definition>static async Task&lt; GameData &gt; Faeterna.Scripts.Tools.Saves.LoadAsync</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>LoadAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.LoadAsync</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot del que se cargarán los datos (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Datos de la partida cargados, o nulo si el archivo del slot no existe.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="317" column="34" bodyfile="scripts/Tools/Saves.cs" bodystart="317" bodyend="353"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" compoundref="Saves_8cs" startline="264" endline="267">Faeterna.Scripts.Tools.Saves.LoadActiveSlotAsync</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Faeterna.Scripts.Tools.Saves.GetSlotPath</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>GetSlotPath</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.GetSlotPath</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Genera la ruta del archivo JSON para un slot específico. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ruta del archivo JSON del slot.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="360" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="360" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>GetSlotPreviewPath</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.GetSlotPreviewPath</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Genera la ruta del archivo PNG de vista previa para un slot específico. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Índice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ruta del archivo PNG de previsualizacion del slot.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="370" column="31" bodyfile="scripts/Tools/Saves.cs" bodystart="370" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.Saves.SavePreview</definition>
+        <argsstring>(Viewport viewport, string previewPath)</argsstring>
+        <name>SavePreview</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.SavePreview</qualifiedname>
+        <param>
+          <type>Viewport</type>
+          <declname>viewport</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>previewPath</declname>
+        </param>
+        <briefdescription>
+<para>Captura una imagen del viewport especificado, la redimensiona al tamaño estándar de previsualizacion y la guarda como archivo PNG en la ruta especificada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport de cuya textura se capturará la image.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>previewPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta donde se guardará la imagen PNG.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="381" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="381" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.Saves.EnsurePreviewDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>EnsurePreviewDirectory</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.EnsurePreviewDirectory</qualifiedname>
+        <briefdescription>
+<para>Crea el directorio de previsualizaciones si no existe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Necesario antes de guardar imágenes de vista previa. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="409" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="409" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a3163852a2ec83567dc5a8b0b6c72792c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.Saves.DeleteFileIfExists</definition>
+        <argsstring>(string userPath, string fileDescription)</argsstring>
+        <name>DeleteFileIfExists</name>
+        <qualifiedname>Faeterna.Scripts.Tools.Saves.DeleteFileIfExists</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>userPath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fileDescription</declname>
+        </param>
+        <briefdescription>
+<para>Intenta eliminar un archivo del almacenamiento persistente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Imprime un aviso si la eliminación falla.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta del archivo a eliminar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Descripción del archivo para mensajes de log (ej: &quot;save slot 1&quot;).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="420" column="29" bodyfile="scripts/Tools/Saves.cs" bodystart="420" bodyend="433"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase centralizada para gestionar el guardado y carga de datos del juego, incluyendo partidas guardadas (slots) e imágenes de vista previa. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Maneja la persistencia de datos de juego utilizando archivos JSON y genera capturas de pantalla como previsualizaciones. También gestiona opciones de usuario como configuración de audio y video localStorage. Proporciona métodos para guardar, cargar, eliminar y verificar la existencia de partidas guardadas en diferentes slots. </para>
+    </detaileddescription>
+    <location file="scripts/Tools/Saves.cs" line="33" column="11" bodyfile="scripts/Tools/Saves.cs" bodystart="34" bodyend="434"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>ActiveSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>config</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a3163852a2ec83567dc5a8b0b6c72792c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>DeleteFileIfExists</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>DeleteSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>EnsurePreviewDirectory</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>GetSlotPath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>GetSlotPreviewPath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>HasPreview</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ac738ffb0de07521042ddc21daa91410a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>HasSave</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>HasSaveInActiveSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>JsonOptions</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1adf807e36113063bcdda49726953fb302" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>Load</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>LoadActiveSlotAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>LoadAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>LoadOptions</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>LoadPreviewTexture</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a12752701f75a27349cd52b924c82bd86" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>PreviewDirectory</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a6578d83a26189b6d7c489600d9c3e755" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>PreviewHeight</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aa2b14abf061c0bb2f6d32d2a1892867c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>PreviewWidth</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>SaveAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>SaveCheckpointAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2671c9086b903044eba3d906436c6bb3" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>SaveOptions</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>SavePreview</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a190b25c1de00c230de0e56d261803aab" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>Saves</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a4fa7347b0fea6b2d1dc9ab1e4a4628" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::Saves</scope><name>SetActiveSlot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

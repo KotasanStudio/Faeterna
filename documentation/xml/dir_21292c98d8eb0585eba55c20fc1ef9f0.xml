@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_21292c98d8eb0585eba55c20fc1ef9f0" kind="dir">
+    <compoundname>scripts/Menus</compoundname>
+    <innerfile refid="DeathScreen_8cs">DeathScreen.cs</innerfile>
+    <innerfile refid="LogoAnimationScene_8cs">LogoAnimationScene.cs</innerfile>
+    <innerfile refid="MainMenu_8cs">MainMenu.cs</innerfile>
+    <innerfile refid="ObjetoDescription_8cs">ObjetoDescription.cs</innerfile>
+    <innerfile refid="OptionsMenu_8cs">OptionsMenu.cs</innerfile>
+    <innerfile refid="PantallaCarga_8cs">PantallaCarga.cs</innerfile>
+    <innerfile refid="PauseMenu_8cs">PauseMenu.cs</innerfile>
+    <innerfile refid="PlayMenu_8cs">PlayMenu.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Menus/"/>
+  </compounddef>
+</doxygen>

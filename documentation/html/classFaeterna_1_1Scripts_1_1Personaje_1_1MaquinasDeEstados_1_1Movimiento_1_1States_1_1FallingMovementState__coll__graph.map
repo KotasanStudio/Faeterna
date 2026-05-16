@@ -1,0 +1,10 @@
+<map id="Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState" name="Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState">
+<area shape="rect" id="Node000001" title="Estado que representa la caída de Lira." alt="" coords="5,311,290,373"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="48,217,247,262"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,275,150,312,145,309,146,279"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="115,5,170,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,47,150,217,144,216,141,51"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="164,82,473,144"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="181,38,263,81,258,83,181,43"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="262,155,179,219,176,214,266,152"/>
+</map>

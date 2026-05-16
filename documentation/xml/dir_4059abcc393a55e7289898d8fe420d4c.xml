@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_4059abcc393a55e7289898d8fe420d4c" kind="dir">
+    <compoundname>scripts/Mapa</compoundname>
+    <innerfile refid="Bosque_8cs">Bosque.cs</innerfile>
+    <innerfile refid="BossArea_8cs">BossArea.cs</innerfile>
+    <innerfile refid="Objeto_8cs">Objeto.cs</innerfile>
+    <innerfile refid="Portal_8cs">Portal.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Mapa/"/>
+  </compounddef>
+</doxygen>

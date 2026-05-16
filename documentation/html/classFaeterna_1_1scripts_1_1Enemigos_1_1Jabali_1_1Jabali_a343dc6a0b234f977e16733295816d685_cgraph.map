@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_entered" name="Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_entered">
+<area shape="rect" id="Node000001" title="Maneja la detección de un cuerpo dentro del área de detección (el jugador)." alt="" coords="5,5,203,67"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,14,449,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,34,237,36,232,36,203,39"/>
+</map>

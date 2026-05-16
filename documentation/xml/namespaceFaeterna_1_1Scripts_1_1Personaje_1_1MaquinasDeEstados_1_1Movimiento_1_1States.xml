@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::FallingMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::IdleMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::JumpingMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::KnockbackMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::RunningMovementState</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::StartPrayMovementState</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

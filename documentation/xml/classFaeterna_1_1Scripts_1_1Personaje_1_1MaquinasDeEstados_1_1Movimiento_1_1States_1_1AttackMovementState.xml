@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.State</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1ace4f0188bb195116f8c41648356dd827" prot="private" static="no" mutable="no">
+        <type>PlayerType</type>
+        <definition>PlayerType Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="10" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aa67925d102282670b6dacad0ef774a06" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._attackHitBox</definition>
+        <argsstring></argsstring>
+        <name>_attackHitBox</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._attackHitBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="11" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a827080eba392cce08dbe370ef79add8e" prot="private" static="no" mutable="no">
+        <type>AnimationPlayer</type>
+        <definition>AnimationPlayer Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._animPlayer</definition>
+        <argsstring></argsstring>
+        <name>_animPlayer</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._animPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="12" column="33" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a73639c719ac6c0b6546266734b1b7d94" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._animationConnected</definition>
+        <argsstring></argsstring>
+        <name>_animationConnected</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._animationConnected</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="13" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a8c0b57ca7dd12ccf3f7f132ed7976d8e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._frameConnected</definition>
+        <argsstring></argsstring>
+        <name>_frameConnected</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState._frameConnected</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="14" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a3a05654f0b9f111ebea182dfd539e1d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Ready</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890">Ready</reimplements>
+        <briefdescription>
+<para>Se invoca una sola vez cuando se inicializa el nodo/estado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="16" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a9063fdeb49e31811d1fe0ed57518df3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Enter</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a">Enter</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado empieza (se entra en él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="29" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="29" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a17d13f315850f2a8f6559c76baaa536f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Exit</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e">Exit</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado termina (se sale de él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="49" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a5d0778cf4403c9733efda13a4ef0c2eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.HandleInput</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68">HandleInput</reimplements>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Procesa eventos de entrada no manejados (unhandled input). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Evento de entrada recibido.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="66" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1acc23b2f548496e848a4094da3bec4f73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Update</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.Update</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53">Update</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización por frame (non-physics). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="67" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aad0fd9554744bd3482ceec043f349173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.FinalizarAtaque</definition>
+        <argsstring>()</argsstring>
+        <name>FinalizarAtaque</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.FinalizarAtaque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="100" column="21" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="100" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a7298c6e6879f1587714291ceb588c243" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.OnFrameChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnFrameChanged</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.OnFrameChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="69" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a98916f3debf870d0d9601e08dfb3413b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.OnAnimationFinished</definition>
+        <argsstring>(StringName animName)</argsstring>
+        <name>OnAnimationFinished</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.OnAnimationFinished</qualifiedname>
+        <param>
+          <type>StringName</type>
+          <declname>animName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="79" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="79" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a34320c3822e0d933db75bf2b3eae2427" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.SetHitBoxActive</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>SetHitBoxActive</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState.SetHitBoxActive</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="90" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="90" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" line="8" column="19" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/AttackMovementState.cs" bodystart="9" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a73639c719ac6c0b6546266734b1b7d94" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>_animationConnected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a827080eba392cce08dbe370ef79add8e" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>_animPlayer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aa67925d102282670b6dacad0ef774a06" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>_attackHitBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a8c0b57ca7dd12ccf3f7f132ed7976d8e" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>_frameConnected</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1ace4f0188bb195116f8c41648356dd827" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>_player</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a9063fdeb49e31811d1fe0ed57518df3e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a17d13f315850f2a8f6559c76baaa536f" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aad0fd9554744bd3482ceec043f349173" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>FinalizarAtaque</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a5d0778cf4403c9733efda13a4ef0c2eb" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a98916f3debf870d0d9601e08dfb3413b" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>OnAnimationFinished</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a7298c6e6879f1587714291ceb588c243" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>OnFrameChanged</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a3a05654f0b9f111ebea182dfd539e1d4" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a34320c3822e0d933db75bf2b3eae2427" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>SetHitBoxActive</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1acc23b2f548496e848a4094da3bec4f73" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Tutorial" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Tutorial</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial" prot="public">Faeterna::Scripts::Tutorial::Turotial</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Tutorial/Turotial.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

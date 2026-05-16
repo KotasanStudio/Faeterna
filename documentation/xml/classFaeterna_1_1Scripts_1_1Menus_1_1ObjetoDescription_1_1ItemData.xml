@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData" kind="class" language="C#" prot="private" sealed="yes">
+    <compoundname>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1ad26bd945aee4401413f5029050a09a12" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="153" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Menus.ObjetoDescription.ItemData.AnimationPath</definition>
+        <argsstring></argsstring>
+        <name>AnimationPath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.AnimationPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="154" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="155" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a56b83cb09889e7556b3fdd7bc140127d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Menus.ObjetoDescription.ItemData.History</definition>
+        <argsstring></argsstring>
+        <name>History</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.History</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="156" column="21" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="156" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</definition>
+        <argsstring>(string name, string animationPath, string description, string history)</argsstring>
+        <name>ItemData</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemData.ItemData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>animationPath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="158" column="14" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="158" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Menus/ObjetoDescription.cs" line="151" column="12" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="152" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>AnimationPath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>Description</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a56b83cb09889e7556b3fdd7bc140127d" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>History</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>ItemData</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1ad26bd945aee4401413f5029050a09a12" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

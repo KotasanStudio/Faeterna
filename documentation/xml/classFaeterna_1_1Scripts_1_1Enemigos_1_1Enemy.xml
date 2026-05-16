@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Enemigos::Enemy</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CharacterBody2D</basecompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime" prot="public" virt="non-virtual">Faeterna.Scripts.Enemigos.Slime.Slime</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali" prot="public" virt="non-virtual">Faeterna.scripts.Enemigos.Jabali.Jabali</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali" prot="public" virt="non-virtual">Faeterna.scripts.Enemigos.ReyJabali.ReyJabali</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf" prot="public" virt="non-virtual">Faeterna.scripts.Enemigos.Wolf.Wolf</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Enemigos.Enemy.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.health</qualifiedname>
+        <briefdescription>
+<para>Puntos de vida actuales del enemigo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="15" column="21" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" compoundref="Slime_8cs" startline="72" endline="105">Faeterna.Scripts.Enemigos.Slime.Slime._PhysicsProcess</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.dashSpeed</definition>
+        <argsstring></argsstring>
+        <name>dashSpeed</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.dashSpeed</qualifiedname>
+        <briefdescription>
+<para>Velocidad de desplazamiento durante el dash del enemigo (px/s). Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="18" column="23" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.jumpVelocity</definition>
+        <argsstring></argsstring>
+        <name>jumpVelocity</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.jumpVelocity</qualifiedname>
+        <briefdescription>
+<para>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba). Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="21" column="23" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" prot="public" static="no" mutable="no">
+        <type>AnimatedSprite2D</type>
+        <definition>AnimatedSprite2D Faeterna.Scripts.Enemigos.Enemy.animatedSprite</definition>
+        <argsstring></argsstring>
+        <name>animatedSprite</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.animatedSprite</qualifiedname>
+        <briefdescription>
+<para>Referencia al nodo AnimatedSprite2D que renderiza las animaciones del enemigo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="24" column="34" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1cc6281dc7a2e398d1574ead8cf03f0a" compoundref="Enemy_8cs" startline="69" endline="73">Faeterna.Scripts.Enemigos.Enemy._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a051125c655bc29fd13c010ae4e4adac8" compoundref="Jabali_8cs" startline="79" endline="86">Faeterna.scripts.Enemigos.Jabali.Jabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" compoundref="Slime_8cs" startline="52" endline="65">Faeterna.Scripts.Enemigos.Slime.Slime._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.dashDuration</definition>
+        <argsstring></argsstring>
+        <name>dashDuration</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.dashDuration</qualifiedname>
+        <briefdescription>
+<para>Duración del dash del enemigo en segundos. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="27" column="23" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.knockbackDuration</definition>
+        <argsstring></argsstring>
+        <name>knockbackDuration</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.knockbackDuration</qualifiedname>
+        <briefdescription>
+<para>Duración del knockback aplicado al enemigo en segundos. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="30" column="24" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Enemigos.Enemy.flipSprite</definition>
+        <argsstring></argsstring>
+        <name>flipSprite</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.flipSprite</qualifiedname>
+        <briefdescription>
+<para>Booleano que controla si el sprite del enemigo debe estar invertido (mirada izquierda/derecha). Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="33" column="22" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a5462bc4397a046c7e33573888a60fa11" compoundref="Slime_8cs" startline="39" endline="46">Faeterna.Scripts.Enemigos.Slime.Slime._EnterTree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D Faeterna.Scripts.Enemigos.Enemy.audioPlayer</definition>
+        <argsstring></argsstring>
+        <name>audioPlayer</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.audioPlayer</qualifiedname>
+        <briefdescription>
+<para>Reproductor de audio para los efectos de sonido del enemigo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="36" column="37" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" prot="public" static="no" mutable="no">
+        <type>CollisionShape2D</type>
+        <definition>CollisionShape2D Faeterna.Scripts.Enemigos.Enemy.detectionArea</definition>
+        <argsstring></argsstring>
+        <name>detectionArea</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.detectionArea</qualifiedname>
+        <briefdescription>
+<para>Área de detección del enemigo utilizada para detectar al jugador. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="40" column="34" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" prot="public" static="no" mutable="no">
+        <type>RayCast2D</type>
+        <definition>RayCast2D Faeterna.Scripts.Enemigos.Enemy.groundCheck</definition>
+        <argsstring></argsstring>
+        <name>groundCheck</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.groundCheck</qualifiedname>
+        <briefdescription>
+<para>RayCast2D que verifica si el enemigo está en el suelo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="43" column="27" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" prot="public" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.Scripts.Enemigos.Enemy.hurtBox</definition>
+        <argsstring></argsstring>
+        <name>hurtBox</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.hurtBox</qualifiedname>
+        <briefdescription>
+<para>Área de daño del enemigo que causa daño al jugador al colisionar. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="46" column="24" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" prot="public" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.Scripts.Enemigos.Enemy.attackHitBox</definition>
+        <argsstring></argsstring>
+        <name>attackHitBox</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.attackHitBox</qualifiedname>
+        <briefdescription>
+<para>Área de ataque del enemigo que inflige daño cuando golpea. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="49" column="24" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Enemigos.Enemy.dashDirection</definition>
+        <argsstring></argsstring>
+        <name>dashDirection</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.dashDirection</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Dirección del dash del enemigo (1 = derecha, -1 = izquierda). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="52" column="20" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</definition>
+        <argsstring></argsstring>
+        <name>knockbackTimer</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.knockbackTimer</qualifiedname>
+        <initializer>= 0f</initializer>
+        <briefdescription>
+<para>Temporizador para controlar la duración del knockback aplicado al enemigo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="55" column="22" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" compoundref="Slime_8cs" startline="72" endline="105">Faeterna.Scripts.Enemigos.Slime.Slime._PhysicsProcess</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" prot="public" static="no" mutable="no">
+        <type>ShaderMaterial</type>
+        <definition>ShaderMaterial Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</definition>
+        <argsstring></argsstring>
+        <name>shaderMaterial</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.shaderMaterial</qualifiedname>
+        <briefdescription>
+<para>Material de shader utilizado para efectos visuales de daño (como destello blanco). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="58" column="31" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" compoundref="Slime_8cs" startline="52" endline="65">Faeterna.Scripts.Enemigos.Slime.Slime._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" prot="public" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Faeterna.Scripts.Enemigos.Enemy.target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.target</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Referencia al objetivo actual del enemigo (generalmente el jugador). Es null si no hay objetivo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="61" column="23" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a030a1222a005412a31bcc89f64088bdc" compoundref="Slime_8cs" startline="158" endline="162">Faeterna.Scripts.Enemigos.Slime.Slime._on_detection_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ac47ee5494a24fb6b119a0315ce636b45" compoundref="Slime_8cs" startline="169" endline="173">Faeterna.Scripts.Enemigos.Slime.Slime._on_detection_area_body_exited</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Enemigos.Enemy.Gravity</definition>
+        <argsstring></argsstring>
+        <name>Gravity</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.Gravity</qualifiedname>
+        <briefdescription>
+<para>Gravedad obtenida del ProjectSettings, utilizada para la física del enemigo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="64" column="29" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" compoundref="Slime_8cs" startline="72" endline="105">Faeterna.Scripts.Enemigos.Slime.Slime._PhysicsProcess</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1cc6281dc7a2e398d1574ead8cf03f0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Enemigos.Enemy._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy._Ready</qualifiedname>
+        <briefdescription>
+<para>Inicialización del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la referencia al AnimatedSprite2D hijo si no está asignado. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="69" column="30" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="69" bodyend="73"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void Faeterna.Scripts.Enemigos.Enemy.hitShader</definition>
+        <argsstring>(ShaderMaterial shader)</argsstring>
+        <name>hitShader</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.hitShader</qualifiedname>
+        <param>
+          <type>ShaderMaterial</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+<para>Aplica un efecto de shader de destello blanco al enemigo cuando recibe daño. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>El efecto dura 0.1 segundos (100 ms) y luego vuelve al estado normal.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Material de shader al cual se le aplicará el efecto de destello.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="80" column="27" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="80" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Enemigos.Enemy.playAudio</definition>
+        <argsstring>(AudioStream audio)</argsstring>
+        <name>playAudio</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.playAudio</qualifiedname>
+        <param>
+          <type>AudioStream</type>
+          <declname>audio</declname>
+        </param>
+        <briefdescription>
+<para>Reproduce un efecto de sonido del enemigo a través del reproductor de audio. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>audio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>AudioStream que contiene el sonido a reproducir.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="93" column="21" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="93" bodyend="97"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" compoundref="Enemy_8cs" startline="36">Faeterna.Scripts.Enemigos.Enemy.audioPlayer</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Enemigos.Enemy.SetAnimation</definition>
+        <argsstring>(string animationName)</argsstring>
+        <name>SetAnimation</name>
+        <qualifiedname>Faeterna.Scripts.Enemigos.Enemy.SetAnimation</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>animationName</declname>
+        </param>
+        <briefdescription>
+<para>Reproduce una animación en el sprite del enemigo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animationName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la animación a reproducir.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Enemy.cs" line="103" column="21" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="103" bodyend="106"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a343dc6a0b234f977e16733295816d685" compoundref="Jabali_8cs" startline="321" endline="337">Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_entered</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" compoundref="Jabali_8cs" startline="93" endline="145">Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" compoundref="Slime_8cs" startline="72" endline="105">Faeterna.Scripts.Enemigos.Slime.Slime._PhysicsProcess</referencedby>
+        <referencedby refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a051125c655bc29fd13c010ae4e4adac8" compoundref="Jabali_8cs" startline="79" endline="86">Faeterna.scripts.Enemigos.Jabali.Jabali._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" compoundref="Slime_8cs" startline="52" endline="65">Faeterna.Scripts.Enemigos.Slime.Slime._Ready</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase base para todos los enemigos del juego. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Proporciona funcionalidades comunes como gestión de salud, animaciones, efectos de sonido y física (gravedad, knockback, etc.). Esta clase hereda de CharacterBody2D y es la base para enemigos específicos como Jabali, <ref refid="namespaceFaeterna_1_1Scripts_1_1Enemigos_1_1Slime" kindref="compound">Slime</ref>, Wolf y ReyJabali. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Enemigos.Slime.Slime</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.scripts.Enemigos.Jabali.Jabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Faeterna.scripts.Enemigos.Wolf.Wolf</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Enemigos/Enemy.cs" line="12" column="19" bodyfile="scripts/Enemigos/Enemy.cs" bodystart="13" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1cc6281dc7a2e398d1574ead8cf03f0a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>animatedSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>attackHitBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>audioPlayer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>dashDirection</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>dashDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>dashSpeed</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>detectionArea</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>flipSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>Gravity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>groundCheck</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>health</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>hitShader</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>hurtBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>jumpVelocity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>knockbackDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>knockbackTimer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>playAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>SetAnimation</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>shaderMaterial</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Enemigos::Enemy</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

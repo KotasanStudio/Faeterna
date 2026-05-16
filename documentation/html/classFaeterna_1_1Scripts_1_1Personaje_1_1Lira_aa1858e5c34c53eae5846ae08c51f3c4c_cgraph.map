@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Personaje.Lira.TakeDamage" name="Faeterna.Scripts.Personaje.Lira.TakeDamage">
+<area shape="rect" id="Node000001" title="Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto de flash en los corazones de ..." alt="" coords="5,5,204,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#afbfa6ae1f9719069eaa09e743a8e2537" title="Reproduce un sonido específico según el nombre proporcionado." alt="" coords="252,5,450,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.LoadOptions" name="Faeterna.Scripts.Tools.Saves.LoadOptions">
+<area shape="rect" id="Node000001" title="Carga las opciones de usuario guardadas y las devuelve como un registro OptionsData." alt="" coords="5,5,216,50"/>
+<area shape="rect" id="Node000002" href="$namespaceFaeterna_1_1Scripts_1_1Tools.html#a968d029d9f05c6841e815736207724c4" title="Registro que contiene los datos de configuración de opciones del juego, incluyendo ajustes de video (..." alt="" coords="264,14,512,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,251,28,246,28,216,30"/>
+</map>

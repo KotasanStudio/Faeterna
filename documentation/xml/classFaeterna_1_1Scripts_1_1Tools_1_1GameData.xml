@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Tools::GameData</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1af120d09e56fc31c95022551d04879f78" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Tools.GameData.SaveSlot</definition>
+        <argsstring></argsstring>
+        <name>SaveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.SaveSlot</qualifiedname>
+        <briefdescription>
+<para>Número del espacio de guardado (slot) donde se almacenan estos datos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="13" column="20" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1aed4025a397c67155480422c9a2d66530" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Tools.GameData.ScenePath</definition>
+        <argsstring></argsstring>
+        <name>ScenePath</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.ScenePath</qualifiedname>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+<para>Ruta de la escena donde el jugador estaba cuando se guardó la partida. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="16" column="23" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Tools.GameData.LastCheckpointId</definition>
+        <argsstring></argsstring>
+        <name>LastCheckpointId</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.LastCheckpointId</qualifiedname>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+<para>Identificador único del último punto de control (checkpoint) alcanzado por el jugador. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="19" column="23" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a7ab5f9e8837102e9132d29df34348d2e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Tools.GameData.PreviewImagePath</definition>
+        <argsstring></argsstring>
+        <name>PreviewImagePath</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.PreviewImagePath</qualifiedname>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+<para>Ruta del archivo de imagen de vista previa que representa el estado guardado en la interfaz de usuario. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="22" column="23" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a5bd32cfb137d089ff5b7a67dc6858d56" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref></type>
+        <definition>PlayerSaveData Faeterna.Scripts.Tools.GameData.PlayerData</definition>
+        <argsstring></argsstring>
+        <name>PlayerData</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameData.PlayerData</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Datos específicos del jugador (posición, salud, maná, habilidades disponibles). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveData.cs" line="25" column="31" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase que contiene los datos completos de una partida guardada, incluyendo información de la escena actual, datos del jugador y puntos de control. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Se utiliza para serializar y deserializar el estado del juego desde el almacenamiento persistente. </para>
+    </detaileddescription>
+    <location file="scripts/Tools/GameSaveData.cs" line="10" column="11" bodyfile="scripts/Tools/GameSaveData.cs" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>LastCheckpointId</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a5bd32cfb137d089ff5b7a67dc6858d56" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>PlayerData</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a7ab5f9e8837102e9132d29df34348d2e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>PreviewImagePath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1af120d09e56fc31c95022551d04879f78" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>SaveSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1aed4025a397c67155480422c9a2d66530" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameData</scope><name>ScenePath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

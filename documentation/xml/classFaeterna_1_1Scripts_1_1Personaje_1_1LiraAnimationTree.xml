@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::LiraAnimationTree</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1af5bfd9a19a36dfe30e1b54eae882940d" prot="private" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref></type>
+        <definition>Lira Faeterna.Scripts.Personaje.LiraAnimationTree._lira</definition>
+        <argsstring></argsstring>
+        <name>_lira</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree._lira</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="35" column="22" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ad8949bb2b63e4bc71c7a5210f7780605" prot="private" static="no" mutable="no">
+        <type>AnimationTree</type>
+        <definition>AnimationTree Faeterna.Scripts.Personaje.LiraAnimationTree._animTree</definition>
+        <argsstring></argsstring>
+        <name>_animTree</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree._animTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="36" column="31" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1aeb48b4e399ac389756c82a7871553694" prot="private" static="no" mutable="no">
+        <type>AnimationNodeStateMachinePlayback</type>
+        <definition>AnimationNodeStateMachinePlayback Faeterna.Scripts.Personaje.LiraAnimationTree._stateMachine</definition>
+        <argsstring></argsstring>
+        <name>_stateMachine</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree._stateMachine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="37" column="51" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac717fbe3ac7e69d050fc41b9ecb1c662" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateIdle</definition>
+        <argsstring></argsstring>
+        <name>StateIdle</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateIdle</qualifiedname>
+        <initializer>= &quot;idle&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="40" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adf83e51d688f243b335ccbb8be90fa60" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateRun</definition>
+        <argsstring></argsstring>
+        <name>StateRun</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateRun</qualifiedname>
+        <initializer>= &quot;run&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="41" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a909b31e3c167a55718ae93d6c2387e76" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateJump</definition>
+        <argsstring></argsstring>
+        <name>StateJump</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateJump</qualifiedname>
+        <initializer>= &quot;jump&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="42" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd6163c9cb3f70e0f369fbb30f4ebfe4" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateFall</definition>
+        <argsstring></argsstring>
+        <name>StateFall</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateFall</qualifiedname>
+        <initializer>= &quot;fall&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="43" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a881c6a52197958aff74ab2bc4be89ac5" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateDash</definition>
+        <argsstring></argsstring>
+        <name>StateDash</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateDash</qualifiedname>
+        <initializer>= &quot;dash&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="44" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ab6feb341c3c20343499937a732ae81c9" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateAim</definition>
+        <argsstring></argsstring>
+        <name>StateAim</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateAim</qualifiedname>
+        <initializer>= &quot;aim&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="45" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a8c9d9297975697897ceb97ceff37641a" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateShot</definition>
+        <argsstring></argsstring>
+        <name>StateShot</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateShot</qualifiedname>
+        <initializer>= &quot;shot&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="46" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a7f68a9b57baa4c326483ff9d86308281" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateKick</definition>
+        <argsstring></argsstring>
+        <name>StateKick</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateKick</qualifiedname>
+        <initializer>= &quot;kick&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="47" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9630392930498ecb13b011374ff0d167" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.StateGetHit</definition>
+        <argsstring></argsstring>
+        <name>StateGetHit</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.StateGetHit</qualifiedname>
+        <initializer>= &quot;getHit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="48" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac43dadce4d376844e552f98540e86378" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.ParamPlayback</definition>
+        <argsstring></argsstring>
+        <name>ParamPlayback</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.ParamPlayback</qualifiedname>
+        <initializer>= &quot;parameters/playback&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="51" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac6fe47c215805b1e03555af7541c5009" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.ParamKickRequest</definition>
+        <argsstring></argsstring>
+        <name>ParamKickRequest</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.ParamKickRequest</qualifiedname>
+        <initializer>= &quot;parameters/kick_shot/request&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="52" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a88934b2f258c423d2d33d8e042d846c3" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Personaje.LiraAnimationTree.ParamKickActive</definition>
+        <argsstring></argsstring>
+        <name>ParamKickActive</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.ParamKickActive</qualifiedname>
+        <initializer>= &quot;parameters/kick_shot/active&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="53" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a953a07579b5309deba30ad6fe760eff1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.LiraAnimationTree._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="56" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="56" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac1fe66510df1f9ad9904dbdaf893e0ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.Travel</definition>
+        <argsstring>(string stateName)</argsstring>
+        <name>Travel</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.Travel</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>stateName</declname>
+        </param>
+        <briefdescription>
+<para>Transiciona suavemente al estado indicado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="96" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="96" bodyend="100"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9d46b55a3865a5c0fffdae7dd1e0fbd2" compoundref="LiraAnimationTree_8cs" startline="142" endline="143">Faeterna.Scripts.Personaje.LiraAnimationTree.IsKicking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0bbca040f989c388797134172636a9a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.Start</definition>
+        <argsstring>(string stateName)</argsstring>
+        <name>Start</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.Start</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>stateName</declname>
+        </param>
+        <briefdescription>
+<para>Salta directamente al estado sin blend (útil para interrupciones). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="103" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="103" bodyend="107"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adc61cbcc7e8424f1dc5e175ad357117f" compoundref="LiraAnimationTree_8cs" startline="131" endline="139">Faeterna.Scripts.Personaje.LiraAnimationTree.PlayKick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac93e0c98c6be60e491b2fd974d140434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Personaje.LiraAnimationTree.CurrentState</definition>
+        <argsstring>()</argsstring>
+        <name>CurrentState</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.CurrentState</qualifiedname>
+        <briefdescription>
+<para>Devuelve el nombre del estado actual del StateMachine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="110" column="23" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="110" bodyend="110"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9d46b55a3865a5c0fffdae7dd1e0fbd2" compoundref="LiraAnimationTree_8cs" startline="142" endline="143">Faeterna.Scripts.Personaje.LiraAnimationTree.IsKicking</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a12732188e9ce3de91fe6c15b29d9326a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayIdle</definition>
+        <argsstring>()</argsstring>
+        <name>PlayIdle</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayIdle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="116" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1abb9f0bdd177c7ead5e58cb5d17c15574" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayRun</definition>
+        <argsstring>()</argsstring>
+        <name>PlayRun</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayRun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="117" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac8e0db3460053e2398a6685c0a4a5528" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayJump</definition>
+        <argsstring>()</argsstring>
+        <name>PlayJump</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayJump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="118" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4de9c451884f96af767ee93bfb6ba7b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayFall</definition>
+        <argsstring>()</argsstring>
+        <name>PlayFall</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayFall</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="119" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1accc6fd376587b50946e09b622d0215d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayDash</definition>
+        <argsstring>()</argsstring>
+        <name>PlayDash</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayDash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="120" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a1d1077e0465e61c2b32238c2c9c966da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayAim</definition>
+        <argsstring>()</argsstring>
+        <name>PlayAim</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayAim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="121" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd933f7ec1ced314084b9393296e3d23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayShot</definition>
+        <argsstring>()</argsstring>
+        <name>PlayShot</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayShot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="122" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a666bb70f9878ad75551dc0cbf8d5f226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayGetHit</definition>
+        <argsstring>()</argsstring>
+        <name>PlayGetHit</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayGetHit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="123" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adc61cbcc7e8424f1dc5e175ad357117f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.PlayKick</definition>
+        <argsstring>()</argsstring>
+        <name>PlayKick</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.PlayKick</qualifiedname>
+        <briefdescription>
+<para>Lanza la animación de kick. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si el StateMachine tiene un nodo OneShot llamado &quot;kick_shot&quot;, lo dispara para superponerlo sobre el estado base. De lo contrario, viaja al estado &quot;kick&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="131" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="131" bodyend="139"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0bbca040f989c388797134172636a9a7" compoundref="LiraAnimationTree_8cs" startline="103" endline="107">Faeterna.Scripts.Personaje.LiraAnimationTree.Start</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9d46b55a3865a5c0fffdae7dd1e0fbd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.LiraAnimationTree.IsKicking</definition>
+        <argsstring>()</argsstring>
+        <name>IsKicking</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.IsKicking</qualifiedname>
+        <briefdescription>
+<para>¿Está activa la animación de kick (OneShot)?</para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="142" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="142" bodyend="143"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac93e0c98c6be60e491b2fd974d140434" compoundref="LiraAnimationTree_8cs" startline="110" endline="110">Faeterna.Scripts.Personaje.LiraAnimationTree.CurrentState</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac1fe66510df1f9ad9904dbdaf893e0ec" compoundref="LiraAnimationTree_8cs" startline="96" endline="100">Faeterna.Scripts.Personaje.LiraAnimationTree.Travel</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4af3e9f4cad6a4ac32d4625421ea1fec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.LiraAnimationTree._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="149" column="30" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="149" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a70e636192dcf0ce23043d50b2e8c818b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.AimReleased</definition>
+        <argsstring>()</argsstring>
+        <name>AimReleased</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.AimReleased</qualifiedname>
+        <briefdescription>
+<para>Llama a este método cuando el jugador suelta el botón de aim. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reproduce aim al revés y luego vuelve a idle. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="227" column="21" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="227" bodyend="231"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0e77c611aa53d7bfcd4625f0114bfc01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.LiraAnimationTree.OnAnimationFinished</definition>
+        <argsstring>()</argsstring>
+        <name>OnAnimationFinished</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.LiraAnimationTree.OnAnimationFinished</qualifiedname>
+        <briefdescription>
+<para>Cuando termina una animación de un solo ciclo (kick, shot, getHit), volvemos al estado base. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/LiraAnimationTree.cs" line="188" column="22" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="188" bodyend="221"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Controlador del AnimationTree de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>SETUP EN GODOT:<orderedlist>
+<listitem><para>Añade un nodo AnimationTree como hijo de Lira2D.</para>
+</listitem><listitem><para>En el inspector:<itemizedlist>
+<listitem><para>Tree Root → AnimationNodeStateMachine</para>
+</listitem><listitem><para>Anim Player → ../AnimationPlayer</para>
+</listitem><listitem><para>Active → true</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Crea los estados en el StateMachine: idle | run | jump | fall | dash | aim | shot | kick | getHit</para>
+</listitem><listitem><para>Añade este script al nodo AnimationTree.</para>
+</listitem></orderedlist>
+</para>
+<para>TRANSICIONES RECOMENDADAS EN EL EDITOR: idle ──► run (auto, condición: blend_position != 0) run ──► idle (auto)<itemizedlist>
+<listitem><para>──► jump (auto, se controla desde código) jump ──► fall (auto) fall ──► idle/run (auto, al aterrizar)</para>
+</listitem><listitem><para>──► dash (auto) dash ──► idle/run (auto) idle ──► aim (auto) run ──► aim (auto) aim ──► idle (auto)</para>
+</listitem><listitem><para>──► kick (OneShot encima del estado base)</para>
+</listitem><listitem><para>──► getHit (auto, se dispara desde TakeDamage) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/LiraAnimationTree.cs" line="32" column="19" bodyfile="scripts/Personaje/LiraAnimationTree.cs" bodystart="33" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ad8949bb2b63e4bc71c7a5210f7780605" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>_animTree</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1af5bfd9a19a36dfe30e1b54eae882940d" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>_lira</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4af3e9f4cad6a4ac32d4625421ea1fec" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>_Process</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a953a07579b5309deba30ad6fe760eff1" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1aeb48b4e399ac389756c82a7871553694" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>_stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a70e636192dcf0ce23043d50b2e8c818b" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>AimReleased</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac93e0c98c6be60e491b2fd974d140434" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>CurrentState</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9d46b55a3865a5c0fffdae7dd1e0fbd2" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>IsKicking</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0e77c611aa53d7bfcd4625f0114bfc01" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>OnAnimationFinished</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a88934b2f258c423d2d33d8e042d846c3" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>ParamKickActive</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac6fe47c215805b1e03555af7541c5009" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>ParamKickRequest</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac43dadce4d376844e552f98540e86378" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>ParamPlayback</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a1d1077e0465e61c2b32238c2c9c966da" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayAim</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1accc6fd376587b50946e09b622d0215d2" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4de9c451884f96af767ee93bfb6ba7b3" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayFall</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a666bb70f9878ad75551dc0cbf8d5f226" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayGetHit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a12732188e9ce3de91fe6c15b29d9326a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayIdle</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac8e0db3460053e2398a6685c0a4a5528" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayJump</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adc61cbcc7e8424f1dc5e175ad357117f" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayKick</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1abb9f0bdd177c7ead5e58cb5d17c15574" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayRun</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd933f7ec1ced314084b9393296e3d23" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>PlayShot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0bbca040f989c388797134172636a9a7" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>Start</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ab6feb341c3c20343499937a732ae81c9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateAim</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a881c6a52197958aff74ab2bc4be89ac5" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd6163c9cb3f70e0f369fbb30f4ebfe4" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateFall</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9630392930498ecb13b011374ff0d167" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateGetHit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac717fbe3ac7e69d050fc41b9ecb1c662" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateIdle</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a909b31e3c167a55718ae93d6c2387e76" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateJump</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a7f68a9b57baa4c326483ff9d86308281" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateKick</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adf83e51d688f243b335ccbb8be90fa60" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateRun</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a8c9d9297975697897ceb97ceff37641a" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>StateShot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac1fe66510df1f9ad9904dbdaf893e0ec" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::LiraAnimationTree</scope><name>Travel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

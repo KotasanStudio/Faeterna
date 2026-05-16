@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.IdleMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.RunningMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.StartPrayMovementState</derivedcompoundref>
+    <derivedcompoundref refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState" prot="public" virt="non-virtual">Faeterna.scenes.Personajes.DeadMovementState</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine" kindref="compound">MovementStateMachine</ref></type>
+        <definition>MovementStateMachine Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</definition>
+        <argsstring></argsstring>
+        <name>stateMachine</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</qualifiedname>
+        <briefdescription>
+<para>Referencia a la máquina de estados que contiene este estado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se asigna desde <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine" kindref="compound">MovementStateMachine</ref> en tiempo de preparación. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="17" column="37" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ae3750b81885b71fffaf6386c048bc306" compoundref="DashMovementState_8cs" startline="41" endline="69">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Enter</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a8cc59140eb484cc0b832ed9ee8f39d0c" compoundref="DoubleJumpMovementState_8cs" startline="124" endline="129">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a8d7973378139bb39f3f8cb379160ce37" compoundref="FallingMovementState_8cs" startline="94" endline="101">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1ae5ebcc6c98d0c59d88b59fba28202763" compoundref="IdleMovementState_8cs" startline="45" endline="77">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.IdleMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1aef146ce29156fe2566133ac8afff5f1d" compoundref="JumpingMovementState_8cs" startline="113" endline="121">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1abd1912da7b2d7c1796b19ec10ce8f7df" compoundref="MagicMovementState_8cs" startline="75" endline="84">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ad521d268745b17412c04230aec2aad77" compoundref="RunningMovementState_8cs" startline="126" endline="165">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.RunningMovementState.HandleInput</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a3c6b72472b91471da43ffad145f9fa38" compoundref="DoubleJumpMovementState_8cs" startline="54" endline="73">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1af314be594d93511eb694683e8b8cfffe" compoundref="IdleMovementState_8cs" startline="29" endline="43">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.IdleMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a54831e64ba92c34f0b8568ab6df65b8b" compoundref="JumpingMovementState_8cs" startline="49" endline="68">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a3438b58da060b9427a31ca42be607c5d" compoundref="MagicMovementState_8cs" startline="30" endline="73">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a2a253e8834c3708b8ea8f3113599b0d7" compoundref="RunningMovementState_8cs" startline="55" endline="87">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.RunningMovementState.Update</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a4105bc475c64bfd9aef6f5feb74c898c" compoundref="DoubleJumpMovementState_8cs" startline="82" endline="115">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.UpdatePhysics</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a5f8fff9cad515b4f27555d2abf398a38" compoundref="FallingMovementState_8cs" startline="56" endline="85">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState.UpdatePhysics</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1acfdd37e19297dcda210a2bc23ae04112" compoundref="JumpingMovementState_8cs" startline="76" endline="105">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState.UpdatePhysics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Enter</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a034251812e5808f7d5d0eb63ca909a7c">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a9063fdeb49e31811d1fe0ed57518df3e">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ae3750b81885b71fffaf6386c048bc306">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a5fac56e255166a67d991bf412f8da599">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1ab3551defb75922274ab993f43b4c1fce">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1a45155d6b2197bd3b9bdf707941592111">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a847e0e6a1959945af908d29f2ef11aac">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ac85e6d9f32a06d92edde265cfa263639">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ad98add1662587e8bac2a56f1aa831a3f">Enter</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a0fd520b2077eec43ef647022a7c98b14">Enter</reimplementedby>
+        <briefdescription>
+<para>Se invoca cuando el estado empieza (se entra en él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="20" column="29" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Exit</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a17d13f315850f2a8f6559c76baaa536f">Exit</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a3135b4780aebfcca7121e166b06e282d">Exit</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09">Exit</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ae0d16289861de06f9f7fb031cf1c1c18">Exit</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a9ad7b28f5af0488f441e4e679f542a49">Exit</reimplementedby>
+        <briefdescription>
+<para>Se invoca cuando el estado termina (se sale de él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="23" column="29" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>new void</type>
+        <definition>virtual new void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Ready</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a8e5d88e79f0b941f2d62258bfc40b469">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a3a05654f0b9f111ebea182dfd539e1d4">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a1cb3b053d49b9ea8e5460791b92364b2">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9112bd424e28db7d312979b660d1060c">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a2da9f51796462111de8eb08b8dc34bd9">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1af75a0ceed53ef641c508722ab6c2ef42">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a181a9ad6d7c78e94823b88a5b5dc17e3">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa7f852ecdac4f6ac0fc5f6ea433e7422">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a8f8fa998191b488ec6a74672eb1a2176">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a40df988cb4c8f7cf39a5977b620cbc3c">Ready</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1aa1210b059e5b7eaf655c1925ca5b7079">Ready</reimplementedby>
+        <briefdescription>
+<para>Se invoca una sola vez cuando se inicializa el nodo/estado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="26" column="33" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Update</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.Update</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1af44a7a18c961c7a55c9226c8c5d17047">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1acc23b2f548496e848a4094da3bec4f73">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a3c6b72472b91471da43ffad145f9fa38">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a3c75eba5d7a8fc7117fd39472689f176">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1af314be594d93511eb694683e8b8cfffe">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a54831e64ba92c34f0b8568ab6df65b8b">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a3438b58da060b9427a31ca42be607c5d">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a2a253e8834c3708b8ea8f3113599b0d7">Update</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a932724f671db8e5026373599adc3f463">Update</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización por frame (non-physics). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="30" column="29" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.UpdatePhysics</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>UpdatePhysics</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.UpdatePhysics</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1adaea720831db65bfb3de998bcea8e089">UpdatePhysics</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a4105bc475c64bfd9aef6f5feb74c898c">UpdatePhysics</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a5f8fff9cad515b4f27555d2abf398a38">UpdatePhysics</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1acfdd37e19297dcda210a2bc23ae04112">UpdatePhysics</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128">UpdatePhysics</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a0319b386846bed2b3e7a718950b6a082">UpdatePhysics</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización en el paso de física (_PhysicsProcess). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde la última física.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="34" column="29" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Faeterna.Scripts.Personaje.MaquinasDeEstados.State.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.State.HandleInput</qualifiedname>
+        <reimplementedby refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1adc8863a1b3ad7e176e07ea9904c164a9">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a5d0778cf4403c9733efda13a4ef0c2eb">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1aebc7af6ef005b53e0d1e84b66443897b">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a8cc59140eb484cc0b832ed9ee8f39d0c">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a8d7973378139bb39f3f8cb379160ce37">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1ae5ebcc6c98d0c59d88b59fba28202763">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1aef146ce29156fe2566133ac8afff5f1d">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa6996062dd76283625bcc115615485c6">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1abd1912da7b2d7c1796b19ec10ce8f7df">HandleInput</reimplementedby>
+        <reimplementedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ad521d268745b17412c04230aec2aad77">HandleInput</reimplementedby>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Procesa eventos de entrada no manejados (unhandled input). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Evento de entrada recibido.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="38" column="29" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Clase base para todos los estados de la máquina de movimiento. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contiene los métodos ciclo de vida que deben implementar los estados concretos. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.AttackMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.FallingMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.IdleMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.JumpingMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.KnockbackMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.RunningMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.StartPrayMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Faeterna.scenes.Personajes.DeadMovementState</label>
+        <link refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" line="11" column="19" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/State.cs" bodystart="12" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

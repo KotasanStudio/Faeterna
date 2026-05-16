@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Mapa::Portal</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1a02551bafcb0b75aa32f5d60df84b97a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Mapa.Portal.onBodyEnteredPortal</definition>
+        <argsstring>(Node2D body)</argsstring>
+        <name>onBodyEnteredPortal</name>
+        <qualifiedname>Faeterna.Scripts.Mapa.Portal.onBodyEnteredPortal</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Portal.cs" line="12" column="13" bodyfile="scripts/Mapa/Portal.cs" bodystart="12" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1afb5ba0d1d34b28a726ca1fd63de3685c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Mapa.Portal.ChangeScene</definition>
+        <argsstring>()</argsstring>
+        <name>ChangeScene</name>
+        <qualifiedname>Faeterna.Scripts.Mapa.Portal.ChangeScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Portal.cs" line="20" column="14" bodyfile="scripts/Mapa/Portal.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Mapa.Portal</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Mapa.Portal</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Mapa/Portal.cs" line="9" column="15" bodyfile="scripts/Mapa/Portal.cs" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1afb5ba0d1d34b28a726ca1fd63de3685c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Mapa::Portal</scope><name>ChangeScene</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1a02551bafcb0b75aa32f5d60df84b97a5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Mapa::Portal</scope><name>onBodyEnteredPortal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

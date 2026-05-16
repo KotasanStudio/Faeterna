@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState" name="Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState">
+<area shape="rect" id="Node000001" title="Estado que representa el doble salto de Lira." alt="" coords="5,174,290,235"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State.html" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="48,81,247,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,139,150,174,145,172,146,143"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="120,5,175,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,46,150,81,145,80,146,51"/>
+</map>

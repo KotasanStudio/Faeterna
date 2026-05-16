@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1scenes" kind="namespace" language="C#">
+    <compoundname>Faeterna::scenes</compoundname>
+    <innernamespace refid="namespaceFaeterna_1_1scenes_1_1Personajes">Faeterna::scenes::Personajes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

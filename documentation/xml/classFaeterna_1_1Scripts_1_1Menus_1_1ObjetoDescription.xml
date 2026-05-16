@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Menus::ObjetoDescription</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData" prot="private">Faeterna::Scripts::Menus::ObjetoDescription::ItemData</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a7bcd7b790d2f3846da21d3a7ae01631f" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Menus.ObjetoDescription.ItemsCsvPath</definition>
+        <argsstring></argsstring>
+        <name>ItemsCsvPath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemsCsvPath</qualifiedname>
+        <initializer>= &quot;res://data/items.csv&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="9" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a0fcfe2d7274855427604c18336cd1cf8" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Menus.ObjetoDescription.ImageNodePath</definition>
+        <argsstring></argsstring>
+        <name>ImageNodePath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ImageNodePath</qualifiedname>
+        <initializer>= &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/TextureRect&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="10" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a2914c031623ee0e0602552db7aa0a902" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Menus.ObjetoDescription.NameNodePath</definition>
+        <argsstring></argsstring>
+        <name>NameNodePath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.NameNodePath</qualifiedname>
+        <initializer>= &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Name&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="11" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a37542b23b6955c306e93450b4adb9ea1" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Menus.ObjetoDescription.DescriptionNodePath</definition>
+        <argsstring></argsstring>
+        <name>DescriptionNodePath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.DescriptionNodePath</qualifiedname>
+        <initializer>= &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Description&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="12" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3380a25931445eb7256f260d9f102251" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Faeterna.Scripts.Menus.ObjetoDescription.HistoryNodePath</definition>
+        <argsstring></argsstring>
+        <name>HistoryNodePath</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.HistoryNodePath</qualifiedname>
+        <initializer>= &quot;MarginContainer/VBoxContainer/TextureRect2/MarginContainer/HBoxContainer/Lore&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="13" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a93fa64f6f9448793393051514e8d4528" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; int, ItemData &gt;</type>
+        <definition>readonly Dictionary&lt;int, ItemData&gt; Faeterna.Scripts.Menus.ObjetoDescription.ItemsCache</definition>
+        <argsstring></argsstring>
+        <name>ItemsCache</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ItemsCache</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="21" column="44" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9775eb59f5f6330c97ddc116f9acdafc" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Menus.ObjetoDescription._itemsCargados</definition>
+        <argsstring></argsstring>
+        <name>_itemsCargados</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._itemsCargados</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="22" column="29" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a422fd19bb65d0d91ca32f4d30de69c69" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Menus.ObjetoDescription._itemId</definition>
+        <argsstring></argsstring>
+        <name>_itemId</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._itemId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="15" column="22" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad3de828d3ed71904f9f5514073e2ac89" prot="private" static="no" mutable="no">
+        <type>TextureRect</type>
+        <definition>TextureRect Faeterna.Scripts.Menus.ObjetoDescription._imageAbility</definition>
+        <argsstring></argsstring>
+        <name>_imageAbility</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._imageAbility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="16" column="30" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9334fced79cdcf033143dc181060e139" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Faeterna.Scripts.Menus.ObjetoDescription._nameAbility</definition>
+        <argsstring></argsstring>
+        <name>_nameAbility</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._nameAbility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="17" column="24" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a23f49e190dea860bca38a9e67f24492c" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Faeterna.Scripts.Menus.ObjetoDescription._descriptionAbility</definition>
+        <argsstring></argsstring>
+        <name>_descriptionAbility</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._descriptionAbility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="18" column="24" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1aee51d80a0fdc119684ef8c255706e5eb" prot="private" static="no" mutable="no">
+        <type>Label</type>
+        <definition>Label Faeterna.Scripts.Menus.ObjetoDescription._historyAbility</definition>
+        <argsstring></argsstring>
+        <name>_historyAbility</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._historyAbility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="19" column="24" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ae584aca6a932a5132ad0ff49dcb75b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Faeterna.Scripts.Menus.ObjetoDescription.MenuClosedEventHandler</definition>
+        <argsstring>()</argsstring>
+        <name>MenuClosedEventHandler</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.MenuClosedEventHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="20" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ab3288ce976aea6d87e2cbda99d0745ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Menus.ObjetoDescription._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="24" column="26" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1acb90cb6b586aad8e2846f504c5a7920b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility</definition>
+        <argsstring>(bool visible, int itemId)</argsstring>
+        <name>ChangeVisibility</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.ChangeVisibility</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>itemId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="166" column="17" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="166" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad05a2ce6bae20d9ef7c35a1ad55de9c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Menus.ObjetoDescription._Input</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>_Input</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._Input</qualifiedname>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="176" column="26" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="176" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3770b2fbbf7ee24c3e6c021601852d34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.ObjetoDescription.EnlazarNodosSiHaceFalta</definition>
+        <argsstring>()</argsstring>
+        <name>EnlazarNodosSiHaceFalta</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.EnlazarNodosSiHaceFalta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="30" column="18" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="30" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1adcd45792ec173ad0a64840fc307eed6f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.ObjetoDescription.CargarDatosDelItem</definition>
+        <argsstring>()</argsstring>
+        <name>CargarDatosDelItem</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.CargarDatosDelItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="43" column="18" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="43" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a45cbb30884c3d267ad137d91e54f4151" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Menus.ObjetoDescription.AplicarImagen</definition>
+        <argsstring>(string resourcePath)</argsstring>
+        <name>AplicarImagen</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.AplicarImagen</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>resourcePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="74" column="18" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="74" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3f2b86ff4cd0724cb4b46c2c29f2b867" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Menus.ObjetoDescription.CargarItemsSiHaceFalta</definition>
+        <argsstring>()</argsstring>
+        <name>CargarItemsSiHaceFalta</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription.CargarItemsSiHaceFalta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="92" column="25" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="92" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3134a642742d8a85e9b80726f4c8ac0a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Menus.ObjetoDescription._textSet</definition>
+        <argsstring>(Label label, string value)</argsstring>
+        <name>_textSet</name>
+        <qualifiedname>Faeterna.Scripts.Menus.ObjetoDescription._textSet</qualifiedname>
+        <param>
+          <type>Label</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/ObjetoDescription.cs" line="146" column="25" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="146" bodyend="149"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Menus/ObjetoDescription.cs" line="7" column="19" bodyfile="scripts/Menus/ObjetoDescription.cs" bodystart="8" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a23f49e190dea860bca38a9e67f24492c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_descriptionAbility</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1aee51d80a0fdc119684ef8c255706e5eb" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_historyAbility</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad3de828d3ed71904f9f5514073e2ac89" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_imageAbility</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad05a2ce6bae20d9ef7c35a1ad55de9c6" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_Input</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a422fd19bb65d0d91ca32f4d30de69c69" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_itemId</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9775eb59f5f6330c97ddc116f9acdafc" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_itemsCargados</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9334fced79cdcf033143dc181060e139" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_nameAbility</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ab3288ce976aea6d87e2cbda99d0745ed" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3134a642742d8a85e9b80726f4c8ac0a" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>_textSet</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a45cbb30884c3d267ad137d91e54f4151" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>AplicarImagen</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1adcd45792ec173ad0a64840fc307eed6f" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>CargarDatosDelItem</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3f2b86ff4cd0724cb4b46c2c29f2b867" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>CargarItemsSiHaceFalta</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1acb90cb6b586aad8e2846f504c5a7920b" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>ChangeVisibility</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a37542b23b6955c306e93450b4adb9ea1" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>DescriptionNodePath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3770b2fbbf7ee24c3e6c021601852d34" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>EnlazarNodosSiHaceFalta</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3380a25931445eb7256f260d9f102251" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>HistoryNodePath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a0fcfe2d7274855427604c18336cd1cf8" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>ImageNodePath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a93fa64f6f9448793393051514e8d4528" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>ItemsCache</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a7bcd7b790d2f3846da21d3a7ae01631f" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>ItemsCsvPath</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ae584aca6a932a5132ad0ff49dcb75b3c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>MenuClosedEventHandler</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a2914c031623ee0e0602552db7aa0a902" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Menus::ObjetoDescription</scope><name>NameNodePath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

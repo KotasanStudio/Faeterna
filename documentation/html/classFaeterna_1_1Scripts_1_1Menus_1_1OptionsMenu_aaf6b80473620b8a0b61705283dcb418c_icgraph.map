@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected" name="Faeterna.Scripts.Menus.OptionsMenu.OnOptionShadowButtonItemSelected">
+<area shape="rect" id="Node000001" title="Se llama cuando se selecciona una opción en el control de calidad de sombras." alt="" coords="281,5,583,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a165aa18dea58ae2a848beba7608b4a9e" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,233,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,28,233,30,233,25,268,28"/>
+</map>

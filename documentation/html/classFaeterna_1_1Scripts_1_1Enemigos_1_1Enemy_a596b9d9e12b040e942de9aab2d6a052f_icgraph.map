@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Enemigos.Enemy.playAudio" name="Faeterna.Scripts.Enemigos.Enemy.playAudio">
+<area shape="rect" id="Node000001" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,5,459,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali.html#a1ddcf17193f82ce7aa02f6f8ac2656b9" title="Procesamiento de física cada frame." alt="" coords="5,5,213,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,28,213,30,213,25,247,27"/>
+</map>

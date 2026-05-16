@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1scripts_1_1Enemigos" kind="namespace" language="C#">
+    <compoundname>Faeterna::scripts::Enemigos</compoundname>
+    <innernamespace refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Jabali">Faeterna::scripts::Enemigos::Jabali</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali">Faeterna::scripts::Enemigos::ReyJabali</innernamespace>
+    <innernamespace refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Wolf">Faeterna::scripts::Enemigos::Wolf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Enemigos/Jabali/Jabali.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

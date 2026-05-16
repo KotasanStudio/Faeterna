@@ -1,0 +1,87 @@
+# Configuración de Doxygen para el proyecto Faeterna
+
+PROJECT_NAME           = "Faeterna"
+PROJECT_NUMBER         = "1.0.0"
+PROJECT_BRIEF          = "Un juego de plataformas 2D en C# con Godot"
+PROJECT_LOGO           = "icon.svg"
+
+INPUT                  = scripts/ scripts/Enemigos scripts/Mapa scripts/Menus scripts/Personaje scripts/Tools scripts/Tutorial scripts/Shaders scripts/Personaje/MaquinasDeEstados
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.cs
+RECURSIVE              = YES
+
+OUTPUT_DIRECTORY       = ./documentation
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = YES
+
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_STYLESHEET        =
+
+GENERATE_TREEVIEW      = YES
+GENERATE_DOCSET        = NO
+HAVE_DOT               = YES
+DOT_PATH               =
+CLASS_DIAGRAMS         = YES
+HIDE_UNDOC_RELATIONS   = YES
+
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+SORT_MEMBERS_CTORS_1ST = YES
+SORT_BY_SCOPE          = YES
+
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+
+SHOW_NAMESPACES        = YES
+SHOW_FILES             = YES
+SHOW_CLASSES           = YES
+
+LATEX_HIDE_INDICES     = NO
+
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_MISSING    = YES
+
+ENABLE_PREPROCESSING   = YES
+SKIP_FUNCTION_MACROS   = YES
+
+PREDEFINED             = DOXYGEN_SKIP_BLOCK
+EXPAND_ONLY_PREDEF     = NO
+
+EXCLUDE_PATTERNS       = */obj/* */bin/* */.git/*
+
+CLANG_ASSISTED_PARSING = NO
+CLANG_OPTIONS          =
+
+DOXYGEN_FILTERING_OUTPUT_METHODS = YES
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+
+EXTERNAL_SEARCH        = NO
+
+MSCGEN_PATH            =
+DIAGRAMS_DPI           = 75
+
+DISABLE_INDEX          = NO
+GENERATE_LEGEND        = YES
+HTML_TIMESTAMP         = NO
+

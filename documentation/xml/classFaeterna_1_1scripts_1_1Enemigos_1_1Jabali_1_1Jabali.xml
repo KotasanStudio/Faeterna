@@ -1,0 +1,742 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::scripts::Enemigos::Jabali::Jabali</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" prot="public" virt="non-virtual">Faeterna.Scripts.Enemigos.Enemy</basecompoundref>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76d" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>enemyDirection</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.enemyDirection</qualifiedname>
+        <enumvalue id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76da945d5e233cf7d6240f6b783b36a374ff" prot="private">
+          <name>Left</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76da92b09c7c48c520c3c55e497875da437c" prot="private">
+          <name>Right</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeración para las direcciones del jabalí. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="43" column="16" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a84de247f0973206d8d5ca4a51d035ac2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.scripts.Enemigos.Jabali.Jabali._dashDuration</definition>
+        <argsstring></argsstring>
+        <name>_dashDuration</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._dashDuration</qualifiedname>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+<para>Duración del dash del jabalí en segundos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="16" column="23" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0dbfb473416bd64e637beaeebc7e25db" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.Jabali.Jabali._isDashing</definition>
+        <argsstring></argsstring>
+        <name>_isDashing</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._isDashing</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jabalí está actualmente en estado de dash/carrera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="19" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9619b3b0c83b3bca1a4f43289e6f9d05" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.Jabali.Jabali._isChargingAttack</definition>
+        <argsstring></argsstring>
+        <name>_isChargingAttack</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._isChargingAttack</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jabalí está cargando su ataque especial. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="22" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ade1a94977301c6ee487d9200961aef7c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.Jabali.Jabali._isWall</definition>
+        <argsstring></argsstring>
+        <name>_isWall</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._isWall</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Indica si el jabalí está contra una pared. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="25" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa67078eda6ad04ad01dd7de7d693029a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.scripts.Enemigos.Jabali.Jabali._dashDirection</definition>
+        <argsstring></argsstring>
+        <name>_dashDirection</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._dashDirection</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Dirección actual del movimiento del jabalí (1 = derecha, -1 = izquierda). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="28" column="21" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a69edd41f838f716c98d5d9ddb6ab85af" prot="private" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Faeterna.scripts.Enemigos.Jabali.Jabali._target</definition>
+        <argsstring></argsstring>
+        <name>_target</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._target</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Referencia al objetivo actual del jabalí (el jugador si está detectado). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="31" column="24" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a19099056adfd1a6d3b11e81fb4f961bc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.scripts.Enemigos.Jabali.Jabali._knockbackTimer</definition>
+        <argsstring></argsstring>
+        <name>_knockbackTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._knockbackTimer</qualifiedname>
+        <initializer>= 0f</initializer>
+        <briefdescription>
+<para>Temporizador para controlar la duración del knockback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="34" column="23" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a736b63452228689f39ec9e4da0c06211" prot="private" static="no" mutable="no">
+        <type>ShaderMaterial</type>
+        <definition>ShaderMaterial Faeterna.scripts.Enemigos.Jabali.Jabali._shaderMaterial</definition>
+        <argsstring></argsstring>
+        <name>_shaderMaterial</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._shaderMaterial</qualifiedname>
+        <briefdescription>
+<para>Material de shader utilizado para efectos visuales de daño. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="40" column="32" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac6a544662d0d90f936b26e0f94c6815c" prot="private" static="no" mutable="no">
+        <type>enemyDirection</type>
+        <definition>enemyDirection Faeterna.scripts.Enemigos.Jabali.Jabali._currentDirection</definition>
+        <argsstring></argsstring>
+        <name>_currentDirection</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._currentDirection</qualifiedname>
+        <initializer>= enemyDirection.Right</initializer>
+        <briefdescription>
+<para>Dirección inicial del jabalí. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="50" column="33" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a372baaf3038a55d19b4f5ae81f342ef8" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.Jabali.Jabali._loadAttackTimer</definition>
+        <argsstring></argsstring>
+        <name>_loadAttackTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._loadAttackTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que controla la duración de la carga de ataque antes del dash. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="54" column="24" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a39549c5627b3705ad663b74d965b0550" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.Jabali.Jabali._deathAnimationTimer</definition>
+        <argsstring></argsstring>
+        <name>_deathAnimationTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._deathAnimationTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que espera a que la animación de muerte termine antes de eliminar el nodo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="57" column="24" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aefa2fa3561b0c5328aa2e8da3333f72b" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.Jabali.Jabali._dashTimer</definition>
+        <argsstring></argsstring>
+        <name>_dashTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._dashTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que controla el intervalo de dashes automáticos cuando no hay objetivo. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="60" column="24" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0225e5fe03d89aa0fba9951619b22f83" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Enemigos.Jabali.Jabali._runAudio</definition>
+        <argsstring></argsstring>
+        <name>_runAudio</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._runAudio</qualifiedname>
+        <briefdescription>
+<para>Sonido de carrera del jabalí. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="64" column="30" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a09643684ae9d06df5752d2f60075ea24" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Enemigos.Jabali.Jabali._hitAudio</definition>
+        <argsstring></argsstring>
+        <name>_hitAudio</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._hitAudio</qualifiedname>
+        <briefdescription>
+<para>Sonido de impacto cuando el jabalí recibe daño. Se asigna desde el editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="67" column="30" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad1112c0ee212cc61bb7e4abaa7506d2a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.Jabali.Jabali._isDead</definition>
+        <argsstring></argsstring>
+        <name>_isDead</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._isDead</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Indica si el jabalí está muerto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="70" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a4d2d4e32a76abdab136ef42cf463974b" prot="private" static="no" mutable="no">
+        <type>Random</type>
+        <definition>Random Faeterna.scripts.Enemigos.Jabali.Jabali._rnd</definition>
+        <argsstring></argsstring>
+        <name>_rnd</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._rnd</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+<para>Generador de números aleatorios utilizado para determinar dirección aleatoria. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="73" column="24" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac8aca40e6195aaeeade9487610b2e8b1" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.scripts.Enemigos.Jabali.Jabali.KnockbackDuration</definition>
+        <argsstring></argsstring>
+        <name>KnockbackDuration</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.KnockbackDuration</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+<para>Duración fija del knockback en segundos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="37" column="29" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a051125c655bc29fd13c010ae4e4adac8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Enemigos.Jabali.Jabali._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._Ready</qualifiedname>
+        <briefdescription>
+<para>Inicialización del jabalí. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Configura la dirección inicial, inicia el timer de dash, obtiene el material del shader y establece la animación inicial a &quot;idle&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="79" column="30" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="79" bodyend="86"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" compoundref="Enemy_8cs" startline="24">Faeterna.Scripts.Enemigos.Enemy.animatedSprite</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_PhysicsProcess</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Procesamiento de física cada frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gestiona la gravedad, el movimiento del dash, la carga de ataque, el knockback y el cambio de dirección.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="93" column="30" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="93" bodyend="145"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" compoundref="Enemy_8cs" startline="18">Faeterna.Scripts.Enemigos.Enemy.dashSpeed</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" compoundref="Enemy_8cs" startline="64">Faeterna.Scripts.Enemigos.Enemy.Gravity</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" compoundref="Enemy_8cs" startline="43">Faeterna.Scripts.Enemigos.Enemy.groundCheck</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" compoundref="Enemy_8cs" startline="93" endline="97">Faeterna.Scripts.Enemigos.Enemy.playAudio</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" compoundref="Enemy_8cs" startline="61">Faeterna.Scripts.Enemigos.Enemy.target</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa2fc026612e595fd81b9e51c5e584da3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali._on_load_attack_timer_timeout</definition>
+        <argsstring>()</argsstring>
+        <name>_on_load_attack_timer_timeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._on_load_attack_timer_timeout</qualifiedname>
+        <briefdescription>
+<para>Maneja el timeout del timer de carga de ataque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Detiene la carga y comienza el dash hacia el objetivo detectado (jugador). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="184" column="21" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="184" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac157be83708851126fe2273db0e67024" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali._on_attack_hit_box_body_entered</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_attack_hit_box_body_entered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._on_attack_hit_box_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+<para>Maneja la colisión del hitbox del ataque con otros cuerpos (el jugador recibe daño). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que colisionó con el hitbox.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="233" column="21" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a343dc6a0b234f977e16733295816d685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_entered</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_detection_area_body_entered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+<para>Maneja la detección de un cuerpo dentro del área de detección (el jugador). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inicia la carga del ataque si el cuerpo detectado es el jugador.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que entró en el área de detección.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="321" column="21" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="321" bodyend="337"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" compoundref="Enemy_8cs" startline="103" endline="106">Faeterna.Scripts.Enemigos.Enemy.SetAnimation</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a48bd560699f0edc0c102fa08e76666ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_exited</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_detection_area_body_exited</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali._on_detection_area_body_exited</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+<para>Maneja la salida de un cuerpo del área de detección. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reanuda el movimiento automático si el jugador sale del rango.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prota</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nodo que salió del área de detección.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="344" column="21" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="344" bodyend="351"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad2c27a413f5675e0f85f34813c888f0e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void Faeterna.scripts.Enemigos.Jabali.Jabali.OnDashTimerTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>OnDashTimerTimeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.OnDashTimerTimeout</qualifiedname>
+        <briefdescription>
+<para>Maneja el timeout del timer de dash automático. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inicia el dash, espera su duración, y luego determina la siguiente dirección (aleatorio o rebote en pared). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="151" column="28" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="151" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1acd2f16ad872491cff430703eb9b3033d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.StopDash</definition>
+        <argsstring>(ref Vector2 velocity)</argsstring>
+        <name>StopDash</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.StopDash</qualifiedname>
+        <param>
+          <type>ref Vector2</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+<para>Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>velocity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocidad actual del jabalí (se modifica por referencia).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="207" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="207" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9dffec2396c9e97ca2275969c9460a26" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.flipHJabali</definition>
+        <argsstring>(float directionX)</argsstring>
+        <name>flipHJabali</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.flipHJabali</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>directionX</declname>
+        </param>
+        <briefdescription>
+<para>Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directionX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dirección horizontal (positiva = derecha, negativa = izquierda).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="222" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ae1ce58f7efdccb48575f47aaa3d66c6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.OnHurtBoxAreaEntered</definition>
+        <argsstring>(Area2D area)</argsstring>
+        <name>OnHurtBoxAreaEntered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.OnHurtBoxAreaEntered</qualifiedname>
+        <param>
+          <type>Area2D</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Maneja la colisión del hurtbox (área de daño recibido) con áreas de ataque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica knockback y daño al jabalí si es golpeado por el jugador o un proyectil.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Área que colisionó con el hurtbox.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="244" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="244" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a7f33c738c66b4294cc9357db01c0e44e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.TakeDamage</definition>
+        <argsstring>(int v, Vector2 globalPosition)</argsstring>
+        <name>TakeDamage</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.TakeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>globalPosition</declname>
+        </param>
+        <briefdescription>
+<para>Reduce la salud del jabalí, aplica efectos visuales y de sonido, y maneja la muerte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de daño a aplicar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>globalPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición del atacante, utilizada para determinar dirección del knockback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="267" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="267" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0029f0b5479b9223437b9ea7fdc3d698" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.OnDeathAnimationTimerTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>OnDeathAnimationTimerTimeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.OnDeathAnimationTimerTimeout</qualifiedname>
+        <briefdescription>
+<para>Maneja el timeout del timer de animación de muerte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Elimina el nodo del jabalí. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="300" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="300" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad558297e0c21824865059793a4f33bc8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.Jabali.Jabali.desactiveCollision</definition>
+        <argsstring>()</argsstring>
+        <name>desactiveCollision</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.Jabali.Jabali.desactiveCollision</qualifiedname>
+        <briefdescription>
+<para>Desactiva las colisiones del jabalí para que no pueda golpear ni recibir daño después de muerto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/Jabali/Jabali.cs" line="308" column="22" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="308" bodyend="314"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Jabalí enemigo con capacidad de ataque acelerado. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Este enemigo alternamente corre de un lado a otro, y cuando detecta al jugador, carga un ataque antes de realizar un dash hacia él. Utiliza knockback y animaciones de carga. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Enemigos.Jabali.Jabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Enemigos.Jabali.Jabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Enemigos/Jabali/Jabali.cs" line="13" column="19" bodyfile="scripts/Enemigos/Jabali/Jabali.cs" bodystart="14" bodyend="353"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac6a544662d0d90f936b26e0f94c6815c" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_currentDirection</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa67078eda6ad04ad01dd7de7d693029a" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_dashDirection</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a84de247f0973206d8d5ca4a51d035ac2" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_dashDuration</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aefa2fa3561b0c5328aa2e8da3333f72b" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_dashTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a39549c5627b3705ad663b74d965b0550" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_deathAnimationTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a09643684ae9d06df5752d2f60075ea24" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_hitAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9619b3b0c83b3bca1a4f43289e6f9d05" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_isChargingAttack</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0dbfb473416bd64e637beaeebc7e25db" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_isDashing</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad1112c0ee212cc61bb7e4abaa7506d2a" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_isDead</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ade1a94977301c6ee487d9200961aef7c" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_isWall</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a19099056adfd1a6d3b11e81fb4f961bc" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_knockbackTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a372baaf3038a55d19b4f5ae81f342ef8" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_loadAttackTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac157be83708851126fe2273db0e67024" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_on_attack_hit_box_body_entered</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a343dc6a0b234f977e16733295816d685" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_on_detection_area_body_entered</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a48bd560699f0edc0c102fa08e76666ec" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_on_detection_area_body_exited</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa2fc026612e595fd81b9e51c5e584da3" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_on_load_attack_timer_timeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_PhysicsProcess</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a051125c655bc29fd13c010ae4e4adac8" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a4d2d4e32a76abdab136ef42cf463974b" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_rnd</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0225e5fe03d89aa0fba9951619b22f83" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_runAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a736b63452228689f39ec9e4da0c06211" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_shaderMaterial</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a69edd41f838f716c98d5d9ddb6ab85af" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>_target</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>animatedSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>attackHitBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>audioPlayer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>dashDirection</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>dashDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>dashSpeed</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad558297e0c21824865059793a4f33bc8" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>desactiveCollision</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>detectionArea</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>enemyDirection</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9dffec2396c9e97ca2275969c9460a26" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>flipHJabali</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>flipSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>Gravity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>groundCheck</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>health</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>hitShader</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>hurtBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>jumpVelocity</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac8aca40e6195aaeeade9487610b2e8b1" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>KnockbackDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>knockbackDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>knockbackTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad2c27a413f5675e0f85f34813c888f0e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>OnDashTimerTimeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0029f0b5479b9223437b9ea7fdc3d698" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>OnDeathAnimationTimerTimeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ae1ce58f7efdccb48575f47aaa3d66c6d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>OnHurtBoxAreaEntered</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>playAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>SetAnimation</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>shaderMaterial</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1acd2f16ad872491cff430703eb9b3033d" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>StopDash</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a7f33c738c66b4294cc9357db01c0e44e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>TakeDamage</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::Jabali::Jabali</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

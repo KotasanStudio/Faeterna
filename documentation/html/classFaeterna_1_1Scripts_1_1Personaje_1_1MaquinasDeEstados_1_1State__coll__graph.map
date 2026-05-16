@@ -1,0 +1,8 @@
+<map id="Faeterna.Scripts.Personaje.MaquinasDeEstados.State" name="Faeterna.Scripts.Personaje.MaquinasDeEstados.State">
+<area shape="rect" id="Node000001" title="Clase base para todos los estados de la máquina de movimiento." alt="" coords="5,217,204,262"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="72,5,127,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,48,107,217,101,216,97,50"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine.html" title=" " alt="" coords="120,82,430,144"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="138,38,220,81,215,83,138,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,153,136,219,133,214,219,154"/>
+</map>

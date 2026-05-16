@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_01fd2fa7cb82d3fdf7d0c78212ca093b" kind="dir">
+    <compoundname>scripts/Personaje/MaquinasDeEstados/Movimiento</compoundname>
+    <innerdir refid="dir_8e7f4744c19c2fb293fe6845e5fea702">scripts/Personaje/MaquinasDeEstados/Movimiento/States</innerdir>
+    <innerfile refid="MovementStateMachine_8cs">MovementStateMachine.cs</innerfile>
+    <innerfile refid="State_8cs">State.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/"/>
+  </compounddef>
+</doxygen>

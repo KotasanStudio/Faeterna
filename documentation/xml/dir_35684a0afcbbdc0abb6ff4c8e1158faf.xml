@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_35684a0afcbbdc0abb6ff4c8e1158faf" kind="dir">
+    <compoundname>scripts/Enemigos/Jabali</compoundname>
+    <innerfile refid="Jabali_8cs">Jabali.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Enemigos/Jabali/"/>
+  </compounddef>
+</doxygen>

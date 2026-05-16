@@ -10,6 +10,8 @@ namespace Faeterna.scripts.Mapa
         private const string ItemsCsvPath = "res://data/items.csv";
 
         [Export] private int _itemId;
+        [Export] private bool _isTutorialItem = false;
+        [Export] private Node2D _tutorial;
 
         [ExportGroup("Datos del ítem")]
         [Export] private string _itemName;
@@ -40,6 +42,8 @@ namespace Faeterna.scripts.Mapa
             {
                 _aroLuz.TextureScale = _escalaMinima;
             }
+
+            _tutorial.Visible = _isTutorialItem;
         }
 
         public override void _Process(double delta)

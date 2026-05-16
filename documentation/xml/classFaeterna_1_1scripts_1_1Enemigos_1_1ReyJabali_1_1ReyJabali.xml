@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" prot="public" virt="non-virtual">Faeterna.Scripts.Enemigos.Enemy</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2baa3957f830ef113eb9a5280009756a" prot="private" static="no" mutable="no">
+        <type>ShaderMaterial</type>
+        <definition>ShaderMaterial Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._shaderMaterial</definition>
+        <argsstring></argsstring>
+        <name>_shaderMaterial</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._shaderMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="12" column="32" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</definition>
+        <argsstring></argsstring>
+        <name>_isDashing</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDashing</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="15" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</definition>
+        <argsstring></argsstring>
+        <name>_isChargingAttack</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isChargingAttack</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="16" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</definition>
+        <argsstring></argsstring>
+        <name>_isDead</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isDead</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="17" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a4372500ccef2b256aaad36a044b27e15" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumped</definition>
+        <argsstring></argsstring>
+        <name>_jumped</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumped</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="19" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab55a963f20549e9e71fb85b5dab4d3a0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._falled</definition>
+        <argsstring></argsstring>
+        <name>_falled</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._falled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="20" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashCount</definition>
+        <argsstring></argsstring>
+        <name>_dashCount</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="22" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpCount</definition>
+        <argsstring></argsstring>
+        <name>_jumpCount</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="23" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._actionsBeforeJump</definition>
+        <argsstring></argsstring>
+        <name>_actionsBeforeJump</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._actionsBeforeJump</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="24" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</definition>
+        <argsstring></argsstring>
+        <name>_isReturningHome</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._isReturningHome</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="25" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._arrivalThreshold</definition>
+        <argsstring></argsstring>
+        <name>_arrivalThreshold</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._arrivalThreshold</qualifiedname>
+        <initializer>= 10f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="27" column="23" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</definition>
+        <argsstring></argsstring>
+        <name>_currentDirection</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._currentDirection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="30" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._initPosition</definition>
+        <argsstring></argsstring>
+        <name>_initPosition</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._initPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="31" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</definition>
+        <argsstring></argsstring>
+        <name>_startFacingLeft</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._startFacingLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="32" column="23" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adb9b6fe52eb4b7f213b3a9ef726855f8" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._bossArea</definition>
+        <argsstring></argsstring>
+        <name>_bossArea</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._bossArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="35" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1af3e847b5f6ad2e22bb0d880e0860f871" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._attackHitBox</definition>
+        <argsstring></argsstring>
+        <name>_attackHitBox</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._attackHitBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="36" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a047ded04396b988e6dca4e96ae36fb83" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hurtBox</definition>
+        <argsstring></argsstring>
+        <name>_hurtBox</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hurtBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="37" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashTimer</definition>
+        <argsstring></argsstring>
+        <name>_dashTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._dashTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="40" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</definition>
+        <argsstring></argsstring>
+        <name>_loadAttackTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._loadAttackTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="41" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a089ae431c3830502f05a8455bf548117" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._deathAnimationTimer</definition>
+        <argsstring></argsstring>
+        <name>_deathAnimationTimer</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._deathAnimationTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="42" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a55a79f9b9ee07f9e186fe72bc5f2a0e2" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpAudio</definition>
+        <argsstring></argsstring>
+        <name>_jumpAudio</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._jumpAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="45" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a20b303eb3f8fee04c7c76f1f102b7e16" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hitAudio</definition>
+        <argsstring></argsstring>
+        <name>_hitAudio</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._hitAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="46" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab915363e66a06b17d85c6ea7359f2218" prot="private" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._runAudio</definition>
+        <argsstring></argsstring>
+        <name>_runAudio</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._runAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="47" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" prot="private" static="no" mutable="no">
+        <type>Random</type>
+        <definition>Random Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._rnd</definition>
+        <argsstring></argsstring>
+        <name>_rnd</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._rnd</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="51" column="24" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0c0d4e771a38f8d837e00a622a0411cf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.WalkSpeed</definition>
+        <argsstring></argsstring>
+        <name>WalkSpeed</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.WalkSpeed</qualifiedname>
+        <initializer>= 150f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="26" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc7fad3f9485dfd1bdb700d34b484764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.jabaliBossdeathEventHandler</definition>
+        <argsstring>()</argsstring>
+        <name>jabaliBossdeathEventHandler</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.jabaliBossdeathEventHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="50" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac083cbcf481cd1a97598198ecc46785e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._EnterTree</definition>
+        <argsstring>()</argsstring>
+        <name>_EnterTree</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._EnterTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="54" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="58" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="58" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_PhysicsProcess</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._PhysicsProcess</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="75" column="30" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="75" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</definition>
+        <argsstring>()</argsstring>
+        <name>_on_load_attack_timer_timeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_load_attack_timer_timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="172" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="172" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</definition>
+        <argsstring>()</argsstring>
+        <name>_on_dash_timer_timeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_dash_timer_timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="217" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="217" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a43995674c4503e2486553fb6675d6685" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_attack_hit_box_body_entered</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_attack_hit_box_body_entered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_attack_hit_box_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="263" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_boss_area_body_entered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_entered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="333" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="333" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</definition>
+        <argsstring>(Node2D prota)</argsstring>
+        <name>_on_boss_area_body_exited</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali._on_boss_area_body_exited</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>prota</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="352" column="21" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="352" bodyend="368"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector2</type>
+        <definition>Vector2 Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</definition>
+        <argsstring>()</argsstring>
+        <name>DoNextJump</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DoNextJump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="234" column="25" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="234" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</definition>
+        <argsstring>()</argsstring>
+        <name>FlipHJabali</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.FlipHJabali</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="254" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</definition>
+        <argsstring>(Area2D area)</argsstring>
+        <name>OnHurtBoxAreaEntered</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnHurtBoxAreaEntered</qualifiedname>
+        <param>
+          <type>Area2D</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="269" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="269" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</definition>
+        <argsstring>(int amount, Vector2 sourcePosition)</argsstring>
+        <name>TakeDamage</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.TakeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>sourcePosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="295" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="295" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae7fa933dbe29355fba9e6bd2712c335e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnDeathAnimationTimerTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>OnDeathAnimationTimerTimeout</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.OnDeathAnimationTimerTimeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="316" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="316" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac1b029d0f060e1e571d782e99aebfb92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DesactiveCollision</definition>
+        <argsstring>()</argsstring>
+        <name>DesactiveCollision</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.DesactiveCollision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="321" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="321" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</definition>
+        <argsstring>()</argsstring>
+        <name>moveToinitPosition</name>
+        <qualifiedname>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali.moveToinitPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="370" column="22" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="370" bodyend="385"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.scripts.Enemigos.ReyJabali.ReyJabali</label>
+        <link refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Enemigos.Enemy</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Enemigos/ReyJabali/ReyJabali.cs" line="9" column="19" bodyfile="scripts/Enemigos/ReyJabali/ReyJabali.cs" bodystart="10" bodyend="386"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_actionsBeforeJump</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_arrivalThreshold</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1af3e847b5f6ad2e22bb0d880e0860f871" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_attackHitBox</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adb9b6fe52eb4b7f213b3a9ef726855f8" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_bossArea</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_currentDirection</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_dashCount</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_dashTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a089ae431c3830502f05a8455bf548117" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_deathAnimationTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac083cbcf481cd1a97598198ecc46785e" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_EnterTree</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab55a963f20549e9e71fb85b5dab4d3a0" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_falled</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a20b303eb3f8fee04c7c76f1f102b7e16" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_hitAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a047ded04396b988e6dca4e96ae36fb83" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_hurtBox</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_initPosition</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_isChargingAttack</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_isDashing</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_isDead</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_isReturningHome</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a55a79f9b9ee07f9e186fe72bc5f2a0e2" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_jumpAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_jumpCount</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a4372500ccef2b256aaad36a044b27e15" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_jumped</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_loadAttackTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a43995674c4503e2486553fb6675d6685" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_on_attack_hit_box_body_entered</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_on_boss_area_body_entered</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_on_boss_area_body_exited</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_on_dash_timer_timeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_on_load_attack_timer_timeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_PhysicsProcess</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_rnd</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab915363e66a06b17d85c6ea7359f2218" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_runAudio</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2baa3957f830ef113eb9a5280009756a" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_shaderMaterial</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>_startFacingLeft</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>animatedSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>attackHitBox</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>audioPlayer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>dashDirection</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>dashDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>dashSpeed</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac1b029d0f060e1e571d782e99aebfb92" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>DesactiveCollision</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>detectionArea</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>DoNextJump</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>FlipHJabali</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>flipSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>Gravity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>groundCheck</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>health</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>hitShader</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>hurtBox</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc7fad3f9485dfd1bdb700d34b484764" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>jabaliBossdeathEventHandler</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>jumpVelocity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>knockbackDuration</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>knockbackTimer</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>moveToinitPosition</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae7fa933dbe29355fba9e6bd2712c335e" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>OnDeathAnimationTimerTimeout</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>OnHurtBoxAreaEntered</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>playAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>SetAnimation</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>shaderMaterial</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" prot="private" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>TakeDamage</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>target</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0c0d4e771a38f8d837e00a622a0411cf" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</scope><name>WalkSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

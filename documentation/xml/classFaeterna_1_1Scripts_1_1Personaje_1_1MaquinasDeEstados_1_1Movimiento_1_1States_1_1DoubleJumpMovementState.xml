@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.State</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9d40db8343376d5e5d111ac8266c53ae" prot="private" static="no" mutable="no">
+        <type>PlayerType</type>
+        <definition>PlayerType Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState._player</qualifiedname>
+        <briefdescription>
+<para>Referencia al jugador (<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>) para acceder a su estado y controlar su movimiento durante el doble salto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="18" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9112bd424e28db7d312979b660d1060c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override async void</type>
+        <definition>override async void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Ready</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890">Ready</reimplements>
+        <briefdescription>
+<para>Se llama cuando el nodo entra en la escena. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene referencias al jugador, esperando a que esté listo si es necesario. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="23" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a5fac56e255166a67d991bf412f8da599" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Enter</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a">Enter</reimplements>
+        <briefdescription>
+<para>Se llama cuando se entra en este estado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Marca el doble salto como no disponible, establece la animación de doble salto y aplica la velocidad inicial del salto hacia arriba. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="34" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="34" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a3c6b72472b91471da43ffad145f9fa38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Update</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.Update</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53">Update</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Se llama cada frame (non-physics). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Controla la transición a caída cuando la velocidad vertical se vuelve positiva, y maneja la transición desde la animación de doble salto a la animación de salto normal cuando termina.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame. Se pasa al estado para que pueda usarlo en su lógica de actualización. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="54" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="54" bodyend="73"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a4105bc475c64bfd9aef6f5feb74c898c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.UpdatePhysics</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>UpdatePhysics</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.UpdatePhysics</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e">UpdatePhysics</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Se llama en el paso de física. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Aplica gravedad al jugador durante el doble salto, permite movimiento horizontal y actualiza el sprite según la dirección del movimiento.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde la última actualización de física. Se pasa al estado para su lógica de física. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="82" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="82" bodyend="115"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a8cc59140eb484cc0b832ed9ee8f39d0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState.HandleInput</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68">HandleInput</reimplements>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Se llama para procesar eventos de entrada no manejados. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Solo permite activar el dash durante el doble salto; el doble salto solo se puede realizar una vez por carga aérea y no se puede hacer otro salto.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Evento de entrada recibido. Se pasa al estado para que pueda procesar la entrada según su lógica específica. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="124" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="124" bodyend="129"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Estado que representa el doble salto de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>El jugador realiza un segundo salto mientras está en el aire. Solo está disponible una vez por carga aérea y se desactiva hasta que el jugador aterrice nuevamente. Gestiona la aplicación de gravedad y transiciona a otros estados después de completarse la animación del doble salto. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DoubleJumpMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" line="15" column="19" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DoubleJumpMovementState.cs" bodystart="16" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9d40db8343376d5e5d111ac8266c53ae" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>_player</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a5fac56e255166a67d991bf412f8da599" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a8cc59140eb484cc0b832ed9ee8f39d0c" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9112bd424e28db7d312979b660d1060c" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a3c6b72472b91471da43ffad145f9fa38" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a4105bc475c64bfd9aef6f5feb74c898c" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

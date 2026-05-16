@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot" name="Faeterna.Scripts.Tools.Saves.HasSaveInActiveSlot">
+<area shape="rect" id="Node000001" title="Verifica si el slot activo tiene un archivo de guardado." alt="" coords="5,5,216,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#ac738ffb0de07521042ddc21daa91410a" title="Verifica si existe un archivo de guardado para el slot especificado." alt="" coords="264,5,474,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,25,250,28,245,28,216,30"/>
+</map>

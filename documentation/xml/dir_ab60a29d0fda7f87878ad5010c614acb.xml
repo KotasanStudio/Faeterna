@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_ab60a29d0fda7f87878ad5010c614acb" kind="dir">
+    <compoundname>scripts/Enemigos</compoundname>
+    <innerdir refid="dir_35684a0afcbbdc0abb6ff4c8e1158faf">scripts/Enemigos/Jabali</innerdir>
+    <innerdir refid="dir_08609c05fb9dfab3e456cdc4c999beaa">scripts/Enemigos/ReyJabali</innerdir>
+    <innerdir refid="dir_719874ce86b3af64cda9b90bdc59ace5">scripts/Enemigos/Slime</innerdir>
+    <innerdir refid="dir_15398d9c3bef29b687f773c53f3d7837">scripts/Enemigos/Wolf</innerdir>
+    <innerfile refid="Enemy_8cs">Enemy.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Enemigos/"/>
+  </compounddef>
+</doxygen>

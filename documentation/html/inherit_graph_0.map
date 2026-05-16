@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,57,75,85"/>
+<area shape="rect" id="Node000001" href="$classBossArea.html" title=" " alt="" coords="195,5,278,33"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="88,53,122,43,197,26,193,30,123,48,91,58"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Mapa_1_1Portal.html" title=" " alt="" coords="132,57,340,85"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="90,69,134,70,129,72,91,74"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Shot.html" title=" " alt="" coords="123,109,350,137"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="90,84,123,94,173,108,168,109,122,99,89,89"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.Load" name="Faeterna.Scripts.Tools.Saves.Load">
+<area shape="rect" id="Node000001" title="Carga el archivo de configuración desde la ruta especificada." alt="" coords="264,14,505,42"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a190b25c1de00c230de0e56d261803aab" title="Constructor que inicializa el gestor de guardado." alt="" coords="5,5,216,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,28,216,30,216,25,251,28"/>
+</map>

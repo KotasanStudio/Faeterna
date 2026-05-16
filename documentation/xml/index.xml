@@ -1,0 +1,861 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::AttackMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1ace4f0188bb195116f8c41648356dd827" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aa67925d102282670b6dacad0ef774a06" kind="variable"><name>_attackHitBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a827080eba392cce08dbe370ef79add8e" kind="variable"><name>_animPlayer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a73639c719ac6c0b6546266734b1b7d94" kind="variable"><name>_animationConnected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a8c0b57ca7dd12ccf3f7f132ed7976d8e" kind="variable"><name>_frameConnected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a3a05654f0b9f111ebea182dfd539e1d4" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a9063fdeb49e31811d1fe0ed57518df3e" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a17d13f315850f2a8f6559c76baaa536f" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a5d0778cf4403c9733efda13a4ef0c2eb" kind="function"><name>HandleInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1acc23b2f548496e848a4094da3bec4f73" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1aad0fd9554744bd3482ceec043f349173" kind="function"><name>FinalizarAtaque</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a7298c6e6879f1587714291ceb588c243" kind="function"><name>OnFrameChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a98916f3debf870d0d9601e08dfb3413b" kind="function"><name>OnAnimationFinished</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1AttackMovementState_1a34320c3822e0d933db75bf2b3eae2427" kind="function"><name>SetHitBoxActive</name></member>
+  </compound>
+  <compound refid="classBosque" kind="class"><name>Bosque</name>
+    <member refid="classBosque_1a9b0448b0543039106237dc2a8086712e" kind="variable"><name>_backgroundMusic</name></member>
+    <member refid="classBosque_1ab6e359d6e12809544102c4f01fb855bf" kind="function"><name>_Ready</name></member>
+    <member refid="classBosque_1aef71764a5395088b86c28be18f7b2d30" kind="function"><name>_Process</name></member>
+  </compound>
+  <compound refid="classBossArea" kind="class"><name>BossArea</name>
+    <member refid="classBossArea_1a811c3a4a5b929a07107b4c5894eaf755" kind="variable"><name>_dashItem</name></member>
+    <member refid="classBossArea_1a3e1f0fd59bbe6ca447f24c81b8f1ee2e" kind="variable"><name>_reyJabali</name></member>
+    <member refid="classBossArea_1ab6a80cc076175815dc28d15e57adf5de" kind="variable"><name>_backgroundAudioPLayer</name></member>
+    <member refid="classBossArea_1a782bf8e018726eb0849eb0bd518991dc" kind="variable"><name>_backgroundAudio</name></member>
+    <member refid="classBossArea_1a34d92b412ede87afc050d63a063ccd6b" kind="function"><name>_Ready</name></member>
+    <member refid="classBossArea_1a805137b34f0cd3f8f8d4051a1fe4bab3" kind="function"><name>_on_body_entered</name></member>
+    <member refid="classBossArea_1ab9e8bac9f4d3d727c355a3672f24e136" kind="function"><name>onJabaliBossDeath</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" kind="class"><name>Faeterna::Scripts::Tools::ButtonTools</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a2d4824c47801bd92f0733b49500e4310" kind="variable"><name>PressedScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aed31a4efd8d140c0085468764f8a2021" kind="variable"><name>BounceScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a7797be1694f3f16d6b57b26533990aa5" kind="variable"><name>NormalScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a050b0f3a56aaa687503c1fcc10ef8f94" kind="variable"><name>PressDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a77a6e098d8bbc8d1cfd1bbbaa0399bdc" kind="variable"><name>BounceDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1aabb236c3922354af7812294acd68de42" kind="variable"><name>SettleDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools_1a8fa2d12ffaa71962de597446ba451f54" kind="function"><name>PlayPressAnimation</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint" kind="class"><name>Faeterna::Scripts::Tools::CheckPoint</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a440fb1125b6f8b5d9df9864845a78959" kind="variable"><name>_checkpointId</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" kind="variable"><name>_spawnPoint</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a12e3ffb6fb60459cbfa58ced85113663" kind="function"><name>ActionSaveProgress</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a7964230fab106746b818fc38ff60dc72" kind="function"><name>GetPrayPosition</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1af7d9244c606aee374a4e361ceb8b869b" kind="function"><name>OnAreaCheckPointEntered</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager" kind="class"><name>Faeterna::scripts::Tools::CursorManager</name>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aca0ed5bbe09daebb3af3cb71651e489d" kind="variable"><name>CursorPath</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ac8583a7ec5282ef4bc937eed6968e583" kind="variable"><name>CursorSize</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1ab09261f0b994635e98e302ce49776718" kind="variable"><name>CursorHotspot</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a3463aa5f619ca9684ee6bf429c2780b3" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1aeedcd5f8ec076b70e4df3fd90f813c1d" kind="function"><name>_ExitTree</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Tools_1_1CursorManager_1a80e502c98b82f75ca6d620575a626aa7" kind="function"><name>ApplyCustomCursor</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a7a2d3917db5982d18fe246810dd9073a" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a5a879f207dfd5fedca3133e467a6ade3" kind="variable"><name>_dashDurationTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1acdea8c6c7c15a72c8b2fb4a9c2362dc0" kind="variable"><name>_dashCooldownTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a0e6a5f9fc3584211f5ecd06c1a98f506" kind="variable"><name>_dashDirection</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a2dfbcdff87598489333a2c1bf22639ad" kind="variable"><name>_isDashing</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a1cb3b053d49b9ea8e5460791b92364b2" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ae3750b81885b71fffaf6386c048bc306" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1adaea720831db65bfb3de998bcea8e089" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1aebc7af6ef005b53e0d1e84b66443897b" kind="function"><name>HandleInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a3135b4780aebfcca7121e166b06e282d" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ad406a0706ee84e32927e9638798d8ada" kind="function"><name>OnDashFinished</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a701ff7b27c09d3137175e1532cc970b6" kind="function"><name>OnCooldownFinished</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState" kind="class"><name>Faeterna::scenes::Personajes::DeadMovementState</name>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a6562641188059a85f08d6a121aec9075" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a71b3103a45679d4dd7c459240f31e961" kind="variable"><name>_hasLanded</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a8e5d88e79f0b941f2d62258bfc40b469" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a034251812e5808f7d5d0eb63ca909a7c" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1af44a7a18c961c7a55c9226c8c5d17047" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1adc8863a1b3ad7e176e07ea9904c164a9" kind="function"><name>HandleInput</name></member>
+    <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1afd8a1d53644a79af709e7a13e35819f9" kind="function"><name>TriggerDeathOnGround</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen" kind="class"><name>Faeterna::Scripts::Menus::DeathScreen</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a13bc3770f95fec270e529d4fcad7b828" kind="variable"><name>DefaultGameScenePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a4e385882ef2f1bfdb3d3fe114f6eb2dd" kind="variable"><name>FadeInDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a3e7f9ccbd6437e403b399d967d057594" kind="variable"><name>_continueButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a183a4e3e31bdc26d6c79e3b84f34d8ec" kind="variable"><name>_returnButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a4ea0d120b2c73373cbc72aaa8ac44259" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1ae5f66d3b04dbaed20aa04ff18aedcca6" kind="function"><name>OnContinuarPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1afd6348f86db947f44ab9b5b659658724" kind="function"><name>OnReturnPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1ab7b14417a4206f691f51987fe4ee2b55" kind="function"><name>ChangeVisibility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen_1a5392cac035746352fd9f1fca9ee3e600" kind="function"><name>ContinueFromLastSaveAsync</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DoubleJumpMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9d40db8343376d5e5d111ac8266c53ae" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a9112bd424e28db7d312979b660d1060c" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a5fac56e255166a67d991bf412f8da599" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a3c6b72472b91471da43ffad145f9fa38" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a4105bc475c64bfd9aef6f5feb74c898c" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DoubleJumpMovementState_1a8cc59140eb484cc0b832ed9ee8f39d0c" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy" kind="class"><name>Faeterna::Scripts::Enemigos::Enemy</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a090cb12274bfe5ea5c62af09240851f2" kind="variable"><name>health</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a7faaf745771b1691195374d4776064ff" kind="variable"><name>dashSpeed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a9453495b604df8921fac15244c108724" kind="variable"><name>jumpVelocity</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1155da07d68c059de612a6137b239139" kind="variable"><name>animatedSprite</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a45910af81463df034004b5b843d9e027" kind="variable"><name>dashDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a89cbfcdff994daec8dab10def9ac0034" kind="variable"><name>knockbackDuration</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a95fe30806beca2c0487863fc2cd930ab" kind="variable"><name>flipSprite</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a6af8195b20d116b5897e35ee6f16cf41" kind="variable"><name>audioPlayer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a287eefaac829f63a742b4e1e40aa4d55" kind="variable"><name>detectionArea</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1ac360d11d3c47896ded9ec8f5247f3e8b" kind="variable"><name>groundCheck</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aad23ce0fe414472bae41915355fe8bba" kind="variable"><name>hurtBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a65548c93e1cbe6dc9a194cabb0e3710a" kind="variable"><name>attackHitBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a5d47c157a234e468919c82fe5b312cfa" kind="variable"><name>dashDirection</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1acbb78e2ddcc61a1c74b0d10058cef437" kind="variable"><name>knockbackTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a92004c0a6b8bdebd62dd0fd787d4707f" kind="variable"><name>shaderMaterial</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a8558163363dba83e93edcf096a6d2f7d" kind="variable"><name>target</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1aeac804e672801257ac64aa5bb21e8af2" kind="property"><name>Gravity</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a1cc6281dc7a2e398d1574ead8cf03f0a" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a33462a3b5229312c755a468590029a92" kind="function"><name>hitShader</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a596b9d9e12b040e942de9aab2d6a052f" kind="function"><name>playAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy_1a3bb76d736ca9e636de7dda814e0c17e3" kind="function"><name>SetAnimation</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::FallingMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a3bf7cdbd5e11e00d56e78a6c489326e1" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a2da9f51796462111de8eb08b8dc34bd9" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1ab3551defb75922274ab993f43b4c1fce" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a3c75eba5d7a8fc7117fd39472689f176" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a5f8fff9cad515b4f27555d2abf398a38" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1FallingMovementState_1a8d7973378139bb39f3f8cb379160ce37" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kind="class"><name>Faeterna::Scripts::Tools::GameData</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1af120d09e56fc31c95022551d04879f78" kind="property"><name>SaveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1aed4025a397c67155480422c9a2d66530" kind="property"><name>ScenePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a13188a19ebdca77e1f485c1e6c00c5ad" kind="property"><name>LastCheckpointId</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a7ab5f9e8837102e9132d29df34348d2e" kind="property"><name>PreviewImagePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData_1a5bd32cfb137d089ff5b7a67dc6858d56" kind="property"><name>PlayerData</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" kind="class"><name>Faeterna::Scripts::Tools::GameSaveService</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9d7a0f1a592fdfaae72991c24c7d9639" kind="property"><name>ActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1accce028fb622f5fe038081c325db5886" kind="function"><name>SetActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a02db5fdff64edd5da075a059a185b5bc" kind="function"><name>HasSave</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aa0e314f60869606ba6b0a0c83def7285" kind="function"><name>HasSaveInActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a528a855760cdb7bbfc16da8bfd3a4f06" kind="function"><name>HasPreview</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a82418b51f04d9b946331535b145aa183" kind="function"><name>LoadPreviewTexture</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a2e5ed6e85b985710587dc4c8c95d0f4c" kind="function"><name>DeleteSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1af0bd60dc6943073598f37cac04d6f6f9" kind="function"><name>SaveCheckpointAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aaa9a185acc9c3da515401db4f3bcc1ef" kind="function"><name>LoadActiveSlotAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a86e0695c860b020965ad0943e91045a7" kind="function"><name>SaveAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a0b80d74d77222774ed30d9a52165adef" kind="function"><name>LoadAsync</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::IdleMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1a4471d3899f7c1e517ad09825582ac7f1" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1af75a0ceed53ef641c508722ab6c2ef42" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1a45155d6b2197bd3b9bdf707941592111" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1af314be594d93511eb694683e8b8cfffe" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1IdleMovementState_1ae5ebcc6c98d0c59d88b59fba28202763" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData" kind="class"><name>Faeterna::scripts::Mapa::Objeto::ItemData</name>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a3ab2608193698b951eb61f5270ce00e2" kind="property"><name>Name</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" kind="property"><name>AnimationPath</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" kind="property"><name>Description</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1af0be4fff3b7f775863cace7b7498104e" kind="property"><name>History</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" kind="function"><name>ItemData</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData" kind="class"><name>Faeterna::Scripts::Menus::ObjetoDescription::ItemData</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1ad26bd945aee4401413f5029050a09a12" kind="property"><name>Name</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a71d86eba8c0684423999b2c0fa4d2cd5" kind="property"><name>AnimationPath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a347844f7a0a4390d8686b92e614cb5a1" kind="property"><name>Description</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1a56b83cb09889e7556b3fdd7bc140127d" kind="property"><name>History</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1_1ItemData_1acbf40d33ecffe2137263c6e51aa55fff" kind="function"><name>ItemData</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali" kind="class"><name>Faeterna::scripts::Enemigos::Jabali::Jabali</name>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76d" kind="enum"><name>enemyDirection</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76da945d5e233cf7d6240f6b783b36a374ff" kind="enumvalue"><name>Left</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a424e40bdfff5b50b1297b75b3f1cc76da92b09c7c48c520c3c55e497875da437c" kind="enumvalue"><name>Right</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a84de247f0973206d8d5ca4a51d035ac2" kind="variable"><name>_dashDuration</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0dbfb473416bd64e637beaeebc7e25db" kind="variable"><name>_isDashing</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9619b3b0c83b3bca1a4f43289e6f9d05" kind="variable"><name>_isChargingAttack</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ade1a94977301c6ee487d9200961aef7c" kind="variable"><name>_isWall</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa67078eda6ad04ad01dd7de7d693029a" kind="variable"><name>_dashDirection</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a69edd41f838f716c98d5d9ddb6ab85af" kind="variable"><name>_target</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a19099056adfd1a6d3b11e81fb4f961bc" kind="variable"><name>_knockbackTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a736b63452228689f39ec9e4da0c06211" kind="variable"><name>_shaderMaterial</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac6a544662d0d90f936b26e0f94c6815c" kind="variable"><name>_currentDirection</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a372baaf3038a55d19b4f5ae81f342ef8" kind="variable"><name>_loadAttackTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a39549c5627b3705ad663b74d965b0550" kind="variable"><name>_deathAnimationTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aefa2fa3561b0c5328aa2e8da3333f72b" kind="variable"><name>_dashTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0225e5fe03d89aa0fba9951619b22f83" kind="variable"><name>_runAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a09643684ae9d06df5752d2f60075ea24" kind="variable"><name>_hitAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad1112c0ee212cc61bb7e4abaa7506d2a" kind="variable"><name>_isDead</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a4d2d4e32a76abdab136ef42cf463974b" kind="variable"><name>_rnd</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac8aca40e6195aaeeade9487610b2e8b1" kind="variable"><name>KnockbackDuration</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a051125c655bc29fd13c010ae4e4adac8" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a1ddcf17193f82ce7aa02f6f8ac2656b9" kind="function"><name>_PhysicsProcess</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1aa2fc026612e595fd81b9e51c5e584da3" kind="function"><name>_on_load_attack_timer_timeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ac157be83708851126fe2273db0e67024" kind="function"><name>_on_attack_hit_box_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a343dc6a0b234f977e16733295816d685" kind="function"><name>_on_detection_area_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a48bd560699f0edc0c102fa08e76666ec" kind="function"><name>_on_detection_area_body_exited</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad2c27a413f5675e0f85f34813c888f0e" kind="function"><name>OnDashTimerTimeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1acd2f16ad872491cff430703eb9b3033d" kind="function"><name>StopDash</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a9dffec2396c9e97ca2275969c9460a26" kind="function"><name>flipHJabali</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ae1ce58f7efdccb48575f47aaa3d66c6d" kind="function"><name>OnHurtBoxAreaEntered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a7f33c738c66b4294cc9357db01c0e44e" kind="function"><name>TakeDamage</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1a0029f0b5479b9223437b9ea7fdc3d698" kind="function"><name>OnDeathAnimationTimerTimeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Jabali_1_1Jabali_1ad558297e0c21824865059793a4f33bc8" kind="function"><name>desactiveCollision</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::JumpingMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a3e8c0576d2f56797fbc8e2b81170b6c9" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a181a9ad6d7c78e94823b88a5b5dc17e3" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a847e0e6a1959945af908d29f2ef11aac" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1a54831e64ba92c34f0b8568ab6df65b8b" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1acfdd37e19297dcda210a2bc23ae04112" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1JumpingMovementState_1aef146ce29156fe2566133ac8afff5f1d" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::KnockbackMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aed301f268f56a35efa638f41e687f977" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5973bce36a4ec2a708c67e20c4cf31df" kind="variable"><name>_knockbackTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1ae1e9323123002e91e9290364b0455c31" kind="variable"><name>_isKnockbackActive</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa7f852ecdac4f6ac0fc5f6ea433e7422" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a1e44d2d5df66905d2570f390a42b97d7" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a83a26784ffb24ee0c767ac45fe51b128" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1aa6996062dd76283625bcc115615485c6" kind="function"><name>HandleInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a5dc9e7c33d02fbb3662f051b662e2f09" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1KnockbackMovementState_1a0d9d2de7c8eccca47943c2950195d607" kind="function"><name>OnKnockbackFinished</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kind="class"><name>Faeterna::Scripts::Personaje::Lira</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71764f040a67eb9871c61aa91f908635" kind="variable"><name>Speed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4638dfafa13d542118d6fb8f2352ad6c" kind="variable"><name>JumpVelocity</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ad2666add49fd8c25523eb909234452c5" kind="property"><name>Gravity</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a7b7063693131a5bd6367d364276d712d" kind="property"><name>_haveDobleJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0f93d916c311ba2eaefa194caeb57e3" kind="property"><name>_haveDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adc7e871f936faca2da3f07a79c35e664" kind="variable"><name>Health</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac0a76dcc98d202e2b7a1bc3d67596145" kind="variable"><name>Mana</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a76b78cff286e05cd23a7e94cb3533ae9" kind="variable"><name>KnockbackForceX</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a368e9483bb19262dd5e6faaf2f733bd7" kind="variable"><name>KnockbackForceY</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" kind="variable"><name>_currentHealth</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" kind="variable"><name>_currentMana</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8d75b1f2f734a49ebe688890b36cb113" kind="variable"><name>cameraInitPos</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a26164369cbfa19f9b87612f472b9d194" kind="variable"><name>DoubleJumpAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a59edde91fe9749ba746b73544d4070ad" kind="variable"><name>DashAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab6f5a70191a5de80730b38f3d9afccd8" kind="variable"><name>CoyoteAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae3482cbc72eb6305563a39fadb80a1ce" kind="variable"><name>animatedSprite</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4545e1fc18835d490b43c39648cba501" kind="variable"><name>MovementStateMachine</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a30a83cac5c09b4d9ab6a07649c4d99dd" kind="variable"><name>AnimTree</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae12388d45bd6a2470802f3eb7e7b8eaa" kind="variable"><name>ItsFliped</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0146a149da86644e8dbb4bfe30ae994" kind="variable"><name>IsInvulnerableByState</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac9afdfa0cf295e81ba05f85a5b90ac03" kind="variable"><name>_hearts</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a3101fa600e9af384d0a0a0c50acaca4c" kind="variable"><name>_manaBar</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae27974ec747eab514d16dfd9f0940f94" kind="variable"><name>terrainParticles</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9dedc2284a162f6970275d3884ce49db" kind="variable"><name>saltoParticulas</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a28cdf9fcfd09261fa56eeb33d82d4f05" kind="variable"><name>dobleSaltoParticulas</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a092bb8d96f3a731751ec9681f2bbdee7" kind="variable"><name>_deathScreen</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a73957cc0376dcda927478234280a9f6c" kind="variable"><name>_objectoDescription</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a044e4a58412183294368feeb894a9907" kind="variable"><name>audioPlayer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aec7068e13215a3a526bcf4455177ad94" kind="variable"><name>_hitAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa3f293ebee2536c94dd4120928b89344" kind="variable"><name>_runAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adead0ec7447d653026a60ab824f5d5f6" kind="variable"><name>_jumpAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afc89fbc5a008f1013d094f205076cf94" kind="variable"><name>_fallAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afba390beb1e2cca2ab5517cad02152eb" kind="variable"><name>_attackAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a184a59210557a4804cc3273eb8503977" kind="variable"><name>_fireBallAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6b9ed530c5f5aee84359dec3dfe652ed" kind="variable"><name>_dashAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9ebaf10c51338b64c9d13276def3fd98" kind="variable"><name>_camera</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af711eca47a99e9d2bf6c25e7b5183a3e" kind="variable"><name>_invencibilityTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a2c831b4d9f1dd723488017d8a116f3de" kind="variable"><name>_shotArea</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4a78eb45f8c8ed4860b0792c60f61ada" kind="variable"><name>_kickArea</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a16174597632aa0cf61e56461804a00cd" kind="variable"><name>_bullet</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a66a2aa0d72cc8c7c07882aa771c1ecc4" kind="variable"><name>_tutorial</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" kind="function"><name>BuildSaveData</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" kind="function"><name>ApplySaveData</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a473349739f5bbff8a5a67d5107ea7dfa" kind="function"><name>SetAnimation</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afbfa6ae1f9719069eaa09e743a8e2537" kind="function"><name>PlayAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" kind="function"><name>TakeDamage</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71b5a5639661f4fcb0a64ee71a8a24f0" kind="function"><name>Heal</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aedd7ef8fd71728d873cc418115728afb" kind="function"><name>UseMana</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a11d993a2339b30e612daa6d6dc6fe527" kind="function"><name>RecoverMana</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a718d487a93a375d1c8a0d1cc36c9199c" kind="function"><name>FlipH</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aaf8e1f44d73d07db2086a23060468f50" kind="function"><name>Shooting</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6a86c9cc99dea7bf869f98467bc9b99a" kind="function"><name>OnKickHitboxAreaEntered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1abad9492261e1ee56cc7837c81458a5b3" kind="function"><name>GiveDoubleJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab707959bd8d63e3e1e271d1eefabb603" kind="function"><name>GiveDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a27ef457db4a4d31b9235c232cc1a0379" kind="function"><name>HasDoubleJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a5b1901460c6675c142add9d9c799a140" kind="function"><name>HasDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" kind="function"><name>TryLoadFromActiveSlotAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a628c266a9fcb4bd6e0e6f0d6c4b2f928" kind="function"><name>UpdateHearts</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a39c9cbf69eaee2fb7a16a1fd532cf958" kind="function"><name>UpdateMana</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree" kind="class"><name>Faeterna::Scripts::Personaje::LiraAnimationTree</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1af5bfd9a19a36dfe30e1b54eae882940d" kind="variable"><name>_lira</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ad8949bb2b63e4bc71c7a5210f7780605" kind="variable"><name>_animTree</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1aeb48b4e399ac389756c82a7871553694" kind="variable"><name>_stateMachine</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac717fbe3ac7e69d050fc41b9ecb1c662" kind="variable"><name>StateIdle</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adf83e51d688f243b335ccbb8be90fa60" kind="variable"><name>StateRun</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a909b31e3c167a55718ae93d6c2387e76" kind="variable"><name>StateJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd6163c9cb3f70e0f369fbb30f4ebfe4" kind="variable"><name>StateFall</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a881c6a52197958aff74ab2bc4be89ac5" kind="variable"><name>StateDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ab6feb341c3c20343499937a732ae81c9" kind="variable"><name>StateAim</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a8c9d9297975697897ceb97ceff37641a" kind="variable"><name>StateShot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a7f68a9b57baa4c326483ff9d86308281" kind="variable"><name>StateKick</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9630392930498ecb13b011374ff0d167" kind="variable"><name>StateGetHit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac43dadce4d376844e552f98540e86378" kind="variable"><name>ParamPlayback</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac6fe47c215805b1e03555af7541c5009" kind="variable"><name>ParamKickRequest</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a88934b2f258c423d2d33d8e042d846c3" kind="variable"><name>ParamKickActive</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a953a07579b5309deba30ad6fe760eff1" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac1fe66510df1f9ad9904dbdaf893e0ec" kind="function"><name>Travel</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0bbca040f989c388797134172636a9a7" kind="function"><name>Start</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac93e0c98c6be60e491b2fd974d140434" kind="function"><name>CurrentState</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a12732188e9ce3de91fe6c15b29d9326a" kind="function"><name>PlayIdle</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1abb9f0bdd177c7ead5e58cb5d17c15574" kind="function"><name>PlayRun</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1ac8e0db3460053e2398a6685c0a4a5528" kind="function"><name>PlayJump</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4de9c451884f96af767ee93bfb6ba7b3" kind="function"><name>PlayFall</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1accc6fd376587b50946e09b622d0215d2" kind="function"><name>PlayDash</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a1d1077e0465e61c2b32238c2c9c966da" kind="function"><name>PlayAim</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1acd933f7ec1ced314084b9393296e3d23" kind="function"><name>PlayShot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a666bb70f9878ad75551dc0cbf8d5f226" kind="function"><name>PlayGetHit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1adc61cbcc7e8424f1dc5e175ad357117f" kind="function"><name>PlayKick</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a9d46b55a3865a5c0fffdae7dd1e0fbd2" kind="function"><name>IsKicking</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a4af3e9f4cad6a4ac32d4625421ea1fec" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a70e636192dcf0ce23043d50b2e8c818b" kind="function"><name>AimReleased</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree_1a0e77c611aa53d7bfcd4625f0114bfc01" kind="function"><name>OnAnimationFinished</name></member>
+  </compound>
+  <compound refid="classLogoAnimationScene" kind="class"><name>LogoAnimationScene</name>
+    <member refid="classLogoAnimationScene_1aaa1a71c946272c45fa1fabdb76251696" kind="variable"><name>logoTimer</name></member>
+    <member refid="classLogoAnimationScene_1add348c7a8fa3932cd77f09b86f9a7e1c" kind="function"><name>_Input</name></member>
+    <member refid="classLogoAnimationScene_1a297264d9677cf9fc2118a9550e1d5991" kind="function"><name>_on_logo_timer_timeout</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a574e9f902c8bd1a8be4d0f37f659db38" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a793dec1ebe2d262823b6b6054b8841e9" kind="variable"><name>_maxShotBallScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1acb7f44e0bf344c002ab5a825ca8f0cc9" kind="variable"><name>_defaultManaCost</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a6ad101e4f081f4d5c869cc86bc43d658" kind="variable"><name>_maxManaCost</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ad8df8648e999a48c039a92c2de08ea65" kind="variable"><name>_manaCost</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a94a3304811618c2c5067a0cdb0140e8a" kind="variable"><name>_isShooted</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a741737b09ce9b16cb42b52e135e9aa31" kind="variable"><name>_defaultShotBallScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a5600038c6af164c6372da4272999e92c" kind="variable"><name>_shotBallScale</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a8f8fa998191b488ec6a74672eb1a2176" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ac85e6d9f32a06d92edde265cfa263639" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a3438b58da060b9427a31ca42be607c5d" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1abd1912da7b2d7c1796b19ec10ce8f7df" kind="function"><name>HandleInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a98aefca6d5e6b6fa4d4086c986eb4c63" kind="function"><name>resetShotParameters</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu" kind="class"><name>Faeterna::Scripts::Menus::MainMenu</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5f5c7a215a36c98224c1dfaf7aa4f555" kind="variable"><name>_startButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ab5b838454e4ff9d51108a181cdccc10f" kind="variable"><name>_settingsButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a0c7e0314dbacba8ef6605246714d2a92" kind="variable"><name>_exitButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a24b9d53712eefaef7095653d3fa99a02" kind="variable"><name>_optionsMenu</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a3ea1996fec7f6b9c73aa139cdfd00d6c" kind="variable"><name>_playMenu</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1aa9b3676cd70e439c8385803d89ea4934" kind="variable"><name>_background</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a582139ae269e4774d75c9c8655c2c450" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a05b220c7e49abd42f5dd02853ef2a30c" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a2bcec9275f7a36e007450fa88f636acf" kind="function"><name>OnPlayPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a5d7b2b04a3d704b0e9d3670147061a4d" kind="function"><name>OnSettingsPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1ae5b4952d833ee5881f7c2155e29db51d" kind="function"><name>OnExitPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu_1a7b47576d35d460a83fcab585445fce90" kind="function"><name>SetBlur</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::MovementStateMachine</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a882113387a2feb2e87392991d99c1833" kind="variable"><name>initialState</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a31641c21ffa06139fe84a32f295acf07" kind="variable"><name>_states</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a5ba36d11fff7f792448cd1c6e642df98" kind="variable"><name>_current_state</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1aac6df2a379e694bf862497ef4a47b9e3" kind="property"><name>CurrentStateName</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a6fb7943d19fda3fcabb53603361cfea9" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a7e45b97e71f9fa0864269b0341072693" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a8551384bbded59e3fecb90129a14027c" kind="function"><name>_PhysicsProcess</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1a3471b9a890cb7256fcfd8bfb2a106583" kind="function"><name>_UnhandledInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine_1ae6759b9e2ab0b799b460bf68e8289a91" kind="function"><name>TransitionTo</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto" kind="class"><name>Faeterna::scripts::Mapa::Objeto</name>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a3b7a3354759bd8f8780611bfb11110b2" kind="variable"><name>ItemsCsvPath</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a1976d4007dcb66ee5e9d73c3ed6ff0a5" kind="variable"><name>ItemsCache</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7a6e16bfc4b780c855f89f90e54cd909" kind="variable"><name>_itemsCargados</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8999f4a49ef3b6552299e217d506ce7b" kind="variable"><name>_itemId</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a9bdd7821d4de2b9add5b26e7404b6349" kind="variable"><name>_isTutorialItem</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a5c0bf60be0f93f4373193db620a40384" kind="variable"><name>_tutorial</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac0657d4e1eb53df57145f7bb40d740dc" kind="variable"><name>_itemName</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2ad80e0691c6532e3b3321b9957125cc" kind="variable"><name>_animationPath</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad97bcb8620fd9ad54cdc85835332aa95" kind="variable"><name>_itemDescription</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6bcf43e86d5f3767c25251e5d0654a56" kind="variable"><name>_itemHistory</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a620dc4da79c2f315929dc5a2230b5f0d" kind="variable"><name>_aroLuz</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2573663c33b92bfdcd32f234007d104d" kind="variable"><name>_escalaMinima</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8ef46585e8bf0772b3a31e7d0f8dfcb4" kind="variable"><name>_escalaMaxima</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a3dc290534cb282d95cf40ab5c2e16572" kind="variable"><name>_duracionAnimacion</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a14025ace66f6ee1b721a96edd3e715fe" kind="variable"><name>_tiempoTranscurrido</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a39f404890a71ac97aa8a753b47b75487" kind="property"><name>ItemName</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a23996611f453d54addaa8fe0c6ae046e" kind="property"><name>AnimationPath</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a41563158c4f5a9de3866d2c556922b14" kind="property"><name>ItemDescription</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a12d9f4e8fba70b6bd22257cbd0a18663" kind="property"><name>ItemHistory</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a6ae7bfad4a4e67198391e67fa58862f2" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a8cf882bd887e1616404cd14fbe297548" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ac4d4ff927fb504dc152d85593c4a03dd" kind="function"><name>Recoger</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1ad0ddd0c58733379ea2cd6e4e6bc213d5" kind="function"><name>GetItemId</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a2a5921ffa00358eaffe9c59b037cbe06" kind="function"><name>GetPickUpPosition</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1af99a594329315ecbde3045e792b4a4a4" kind="function"><name>CargarDatosDelItem</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1a7191480afbb91f12f03a5fe0d8cbaae0" kind="function"><name>CargarItemsSiHaceFalta</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription" kind="class"><name>Faeterna::Scripts::Menus::ObjetoDescription</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a7bcd7b790d2f3846da21d3a7ae01631f" kind="variable"><name>ItemsCsvPath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a0fcfe2d7274855427604c18336cd1cf8" kind="variable"><name>ImageNodePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a2914c031623ee0e0602552db7aa0a902" kind="variable"><name>NameNodePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a37542b23b6955c306e93450b4adb9ea1" kind="variable"><name>DescriptionNodePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3380a25931445eb7256f260d9f102251" kind="variable"><name>HistoryNodePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a93fa64f6f9448793393051514e8d4528" kind="variable"><name>ItemsCache</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9775eb59f5f6330c97ddc116f9acdafc" kind="variable"><name>_itemsCargados</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a422fd19bb65d0d91ca32f4d30de69c69" kind="variable"><name>_itemId</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad3de828d3ed71904f9f5514073e2ac89" kind="variable"><name>_imageAbility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a9334fced79cdcf033143dc181060e139" kind="variable"><name>_nameAbility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a23f49e190dea860bca38a9e67f24492c" kind="variable"><name>_descriptionAbility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1aee51d80a0fdc119684ef8c255706e5eb" kind="variable"><name>_historyAbility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ae584aca6a932a5132ad0ff49dcb75b3c" kind="function"><name>MenuClosedEventHandler</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ab3288ce976aea6d87e2cbda99d0745ed" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1acb90cb6b586aad8e2846f504c5a7920b" kind="function"><name>ChangeVisibility</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1ad05a2ce6bae20d9ef7c35a1ad55de9c6" kind="function"><name>_Input</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3770b2fbbf7ee24c3e6c021601852d34" kind="function"><name>EnlazarNodosSiHaceFalta</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1adcd45792ec173ad0a64840fc307eed6f" kind="function"><name>CargarDatosDelItem</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a45cbb30884c3d267ad137d91e54f4151" kind="function"><name>AplicarImagen</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3f2b86ff4cd0724cb4b46c2c29f2b867" kind="function"><name>CargarItemsSiHaceFalta</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription_1a3134a642742d8a85e9b80726f4c8ac0a" kind="function"><name>_textSet</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu" kind="class"><name>Faeterna::Scripts::Menus::OptionsMenu</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a706d33bb87ce91f3ed6ac24c4633e441" kind="variable"><name>_antialiasing</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1b959c0eb342753368b8e5ea6db8e5b1" kind="variable"><name>_vsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a501c38003078b138d511b00bb55f3ec1" kind="variable"><name>_screen</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aab60b3955e67189184015af2871adf94" kind="variable"><name>_fpslock</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a4591abb2c609cf9a19ccea63c6eba81f" kind="variable"><name>_fpsslider</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9b930805769dd69517d986683b665161" kind="variable"><name>_fpsspinbox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a61c44c0b582a66c5e8141b0e8d425d32" kind="variable"><name>_shadows</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2b1f8bc4a54ba46262bd90250029b592" kind="variable"><name>_master</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8dbc9ed5e792211447164fd1819aa946" kind="variable"><name>_masterSpinBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a3ceb8889b7b460f3443c3aa53f7ac2c7" kind="variable"><name>_music</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a996d278a80f7cfd8a7fd75252f1fc397" kind="variable"><name>_musicSpinBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a8bbfc9a626e90fdb373cdada59b84fa9" kind="variable"><name>_soundfx</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ae127125bf1c084ab3d5317b16ba015e1" kind="variable"><name>_soundfxSpinBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a810c24707bddb656b5874bcf361eb532" kind="variable"><name>_enviroment</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa1d18fe9669a0189ed72f3f9c9c96f9b" kind="variable"><name>_enviromentSpinBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a1e8601a88a878d09cc2fd05c1f4c03ad" kind="variable"><name>_uisound</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2c373f122f1030e10f533cfb9acf28f0" kind="variable"><name>_uisoundSpinBox</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af42b24608f9111cf4f11f123f75e1bc7" kind="variable"><name>_saveButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5353fde99aaca066e0a1f305dd92ce7b" kind="variable"><name>_exitButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a49c2231b8d64ea474dfe465aacb3f6b8" kind="variable"><name>_saveSettings</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84ce88441fbc05b4c64d6532a90aa158" kind="variable"><name>_isFpslock</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a84d6646e846b8591af1d80263ccd0f3f" kind="variable"><name>_fpsValue</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a165aa18dea58ae2a848beba7608b4a9e" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1af9b5437ca00a28b6f8ccf35e4ff6108e" kind="function"><name>OnOptionButtonItemSelected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a076c40873c3270c3306d95c18b1f85d6" kind="function"><name>OnVSyncButtonItemSelected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1adada22c3dd410baa252e1267cc255f81" kind="function"><name>OnWindowButtonItemSelected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2dc72bd618d1e945014ceae47128583c" kind="function"><name>OnOptionFPSButtonItemSelected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a39c5c614dd928d1d27bc49898b9b9a47" kind="function"><name>OnHSliderFPSValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad0a2586ff1c1e9f47e0943be1924a459" kind="function"><name>OnSpinFPSBoxValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aaf6b80473620b8a0b61705283dcb418c" kind="function"><name>OnOptionShadowButtonItemSelected</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1aa12e69d376780b99f73c69789bddf87e" kind="function"><name>OnHMasterSliderValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a5b149fcaee778a0271d6d18d9fe6b7e8" kind="function"><name>OnHMusicSliderValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9073c5a14b39c826ba3a144de8e42417" kind="function"><name>OnHSoundFXSliderValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a565df7a03d280a75b55ae3d9563fbca6" kind="function"><name>OnHEnviromentSliderValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a2a8ae5fd3e24537a66232394e3251625" kind="function"><name>OnHUISoundSliderValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a68cd4704536b66f6ab371e4dbf0c0e73" kind="function"><name>OnSpinBoxMasterValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a871f2266e757373f1786715420a55134" kind="function"><name>OnSpinBoxMusicValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a76468231753a43706928fddc9dcd6b7c" kind="function"><name>OnSpinBoxSoundFXValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9c304bdc6d4a584f2ca06fb08bd6a953" kind="function"><name>OnSpinBoxEnviromentValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a9e514d1d9dc4ceb9015e9fd8636d494a" kind="function"><name>OnSpinBoxUISoundValueChanged</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a754cd1bc2f43832eb7fa737ceb330af2" kind="function"><name>OnSavePressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ace4c492cab9c8dc693ea337aa94af90e" kind="function"><name>OnExitPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1a483a48df78744459138ab078a4ac1ac9" kind="function"><name>ApplyShadowQuality</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu_1ad2586d49c776a8cc6ec5661030f100a9" kind="function"><name>NormalizeVolumeToDb</name></member>
+  </compound>
+  <compound refid="classPantallaCarga" kind="class"><name>PantallaCarga</name>
+    <member refid="classPantallaCarga_1a6a8b55a9420797fc8df5b2b8c7f8295f" kind="variable"><name>nextScene</name></member>
+    <member refid="classPantallaCarga_1ad91a999a895f2e158a8ba23cd44cdbfd" kind="function"><name>pantallaCargaCompletado</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu" kind="class"><name>Faeterna::Scripts::Menus::PauseMenu</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1adf5020b5b92b9fea119fd35e91709a8a" kind="variable"><name>_returnButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a99895944906cd047fb1ef16167d42af7" kind="variable"><name>_settingsButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a321ab961da2ae7e5d4d229d997eba2dd" kind="variable"><name>_exitButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a752b925b5d73f6208458cfb3810eb97d" kind="variable"><name>_optionsMenu</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1aa6318d9be2106b0079a1208b3c15f25d" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1ab7807fc578e2215663e647073cd272a7" kind="variable"><name>_deathScreen</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a41ff58792592912e721a89bd8267737d" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a3f5447704b025fb30ce5ad4c98e1b0a5" kind="function"><name>_UnhandledInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1aa2aa974e576c7c727daee624d37e31f5" kind="function"><name>ResumeGame</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a5e83e0be9598721c5f493d45cf5f553d" kind="function"><name>_ExitTree</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1aa2a5f47b2e06e1aefbea434c75fbf275" kind="function"><name>IsPauseInput</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a8a13b30cf3c26b27265a10cdf1901c6a" kind="function"><name>ApplyAlwaysProcessRecursive</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1adf324fb51bb87444403130f13ceb2a0a" kind="function"><name>TogglePause</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1ad77fcc472a2c062b90015c24469df7fc" kind="function"><name>PauseGame</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1ae35a2929f144c500e6d316ac5d24cf09" kind="function"><name>OpenSettings</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1a89164e3b7f3c3d72e9a845c8bdd288d1" kind="function"><name>ExitToMenu</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu_1ad618f504cc88bb82da4a09a925bd5506" kind="function"><name>VisibleUI</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kind="class"><name>Faeterna::Scripts::Tools::PlayerSaveData</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1ae51f10796d3bf2ba6a335d78e8902c0f" kind="property"><name>PositionX</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a938a52755908d60c87426953d76a8881" kind="property"><name>PositionY</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1ab949359b03caef04e37650f26e536138" kind="property"><name>Health</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a0f927b15478d4ad612d4a30678c39ac7" kind="property"><name>Mana</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a9073898f9dbebcfd6108a039babf9053" kind="property"><name>DoubleJumpAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a95dd3a66fc38dcc743adbdbd15fab6a5" kind="property"><name>DashAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a908ffad42edf60f4a57e6ed3d1f86616" kind="property"><name>CoyoteAvailable</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aabe9bb96353d7d5fb7616941c96a3840" kind="property"><name>Position</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu" kind="class"><name>Faeterna::Scripts::Menus::PlayMenu</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a88fe02b40285c9c556bf493f7a61956e" kind="variable"><name>DefaultGameScenePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a50f189b80649c2e405409dfda51ef4f1" kind="variable"><name>ContinueTexturePath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a7d26593e4e118ba826501ce50b1d6507" kind="variable"><name>_saveButtons</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af6594f3162bfb089bf394efdeff91b35" kind="variable"><name>_deleteButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1af7bbbed54f23adf59f5be5dcb69716be" kind="variable"><name>_backButton</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a3518ace563eabd0d1c070c5682c0285a" kind="variable"><name>_continueTexture</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ad156b6972427d71965352d45e097ef37" kind="variable"><name>_selectedSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9f915a0228e2e8ee8360f3124141c116" kind="variable"><name>_deleteMode</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a6ff711fa53709ada4cb97f19402c3b28" kind="variable"><name>_defaultSlotTextures</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1aef4463301d7250b44474391e56bed064" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a952658120e9173b73365ce61c6c365d1" kind="function"><name>OnSavePressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a9a578ebda018ec5ed93872ad30adfcb3" kind="function"><name>OnDeletePressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1ace2770fcd956eb08c6ded266dc6eb419" kind="function"><name>OnBackPressed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a34ef422a87a7e8520bb144e555482753" kind="function"><name>UpdateSlotBorder</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a14e8a09d64763144a9f43f94cd655e9f" kind="function"><name>CacheDefaultSlotTextures</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu_1a27553e6b6323d56dd4722b7514c84bf5" kind="function"><name>RefreshSlotVisuals</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal" kind="class"><name>Faeterna::Scripts::Mapa::Portal</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1a02551bafcb0b75aa32f5d60df84b97a5" kind="function"><name>onBodyEnteredPortal</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal_1afb5ba0d1d34b28a726ca1fd63de3685c" kind="function"><name>ChangeScene</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali" kind="class"><name>Faeterna::scripts::Enemigos::ReyJabali::ReyJabali</name>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2baa3957f830ef113eb9a5280009756a" kind="variable"><name>_shaderMaterial</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abf215deb7f8ea8aa794980432f9e6637" kind="variable"><name>_isDashing</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae17fc8bc739b4e1449a53dd464065649" kind="variable"><name>_isChargingAttack</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2a4419eb87c10e376ae071aae31e9867" kind="variable"><name>_isDead</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a4372500ccef2b256aaad36a044b27e15" kind="variable"><name>_jumped</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab55a963f20549e9e71fb85b5dab4d3a0" kind="variable"><name>_falled</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a5b947bb724eb22bdbaba1643d6202520" kind="variable"><name>_dashCount</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aff0448fcc969f7e5b43fc362a056236b" kind="variable"><name>_jumpCount</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa33e666b43c703aeb02960303d4aed43" kind="variable"><name>_actionsBeforeJump</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a196df23836c1b1b3ffeb83ffc6cec444" kind="variable"><name>_isReturningHome</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aea9fe46fddc54246c61e2976f4fc2e57" kind="variable"><name>_arrivalThreshold</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0ce343834131cd42f1f5e49086026a67" kind="variable"><name>_currentDirection</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1acb6c7de4b492a3d2eda9de86c25f8734" kind="variable"><name>_initPosition</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a64e53677b34d416da78f401ff46d0ad2" kind="variable"><name>_startFacingLeft</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adb9b6fe52eb4b7f213b3a9ef726855f8" kind="variable"><name>_bossArea</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1af3e847b5f6ad2e22bb0d880e0860f871" kind="variable"><name>_attackHitBox</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a047ded04396b988e6dca4e96ae36fb83" kind="variable"><name>_hurtBox</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a37b78081692d508a8c777c0a0f679f0e" kind="variable"><name>_dashTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aa42551f871183e0289f06865cee0916c" kind="variable"><name>_loadAttackTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a089ae431c3830502f05a8455bf548117" kind="variable"><name>_deathAnimationTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a55a79f9b9ee07f9e186fe72bc5f2a0e2" kind="variable"><name>_jumpAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a20b303eb3f8fee04c7c76f1f102b7e16" kind="variable"><name>_hitAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ab915363e66a06b17d85c6ea7359f2218" kind="variable"><name>_runAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aeb1d2ad9761795ed7365271b74520430" kind="variable"><name>_rnd</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a0c0d4e771a38f8d837e00a622a0411cf" kind="variable"><name>WalkSpeed</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc7fad3f9485dfd1bdb700d34b484764" kind="function"><name>jabaliBossdeathEventHandler</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac083cbcf481cd1a97598198ecc46785e" kind="function"><name>_EnterTree</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1adc469a70d453ae222683065680db364a" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a30081eb34facf9757a4f0d8cb41e35f6" kind="function"><name>_PhysicsProcess</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aceb4eb400836b10f4f71a76c717191a6" kind="function"><name>_on_load_attack_timer_timeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a7984f5320c61b7798497c1b9f871f974" kind="function"><name>_on_dash_timer_timeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a43995674c4503e2486553fb6675d6685" kind="function"><name>_on_attack_hit_box_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1abd1d7e47cae1c289dbcaf152a410a451" kind="function"><name>_on_boss_area_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a2cd99703683d89950cd70f04e767504a" kind="function"><name>_on_boss_area_body_exited</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a76dae4068f15654fdbfa1b3dbc465994" kind="function"><name>DoNextJump</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac906f0782347307c5528372a5e1b3188" kind="function"><name>FlipHJabali</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a907191ed3862a391ca40894c0916c6bf" kind="function"><name>OnHurtBoxAreaEntered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1aac2e48348915cd668255c0f3f5648271" kind="function"><name>TakeDamage</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ae7fa933dbe29355fba9e6bd2712c335e" kind="function"><name>OnDeathAnimationTimerTimeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1ac1b029d0f060e1e571d782e99aebfb92" kind="function"><name>DesactiveCollision</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali_1_1ReyJabali_1a94fe431e6eb2d891d31cb502caf46c35" kind="function"><name>moveToinitPosition</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::RunningMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1aaf934badfff6fc3a2acf0b2f1830fe5b" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1aba2b11a6a94dfe98f1ead23fea89a6cd" kind="variable"><name>_coyoteTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a40df988cb4c8f7cf39a5977b620cbc3c" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ad98add1662587e8bac2a56f1aa831a3f" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ae0d16289861de06f9f7fb031cf1c1c18" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a2a253e8834c3708b8ea8f3113599b0d7" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1a0319b386846bed2b3e7a718950b6a082" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1RunningMovementState_1ad521d268745b17412c04230aec2aad77" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" kind="class"><name>Faeterna::Scripts::Tools::Saves</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a12752701f75a27349cd52b924c82bd86" kind="variable"><name>PreviewDirectory</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aa2b14abf061c0bb2f6d32d2a1892867c" kind="variable"><name>PreviewWidth</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a6578d83a26189b6d7c489600d9c3e755" kind="variable"><name>PreviewHeight</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a40a8a32b25408d6cde398923fb03dd0b" kind="variable"><name>JsonOptions</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a32a4d441e455a0d8cefdf0c545cebdb4" kind="variable"><name>config</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad3fcd44b5f9bf6076e8ce2494721cef0" kind="property"><name>ActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a190b25c1de00c230de0e56d261803aab" kind="function"><name>Saves</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1adf807e36113063bcdda49726953fb302" kind="function"><name>Load</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2671c9086b903044eba3d906436c6bb3" kind="function"><name>SaveOptions</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" kind="function"><name>LoadOptions</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a4fa7347b0fea6b2d1dc9ab1e4a4628" kind="function"><name>SetActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ac738ffb0de07521042ddc21daa91410a" kind="function"><name>HasSave</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a544a7bd20bbcbcf9f0b585cc655601fd" kind="function"><name>HasSaveInActiveSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4f68b8e0bfeb2fc9c92a81048c34c39d" kind="function"><name>HasPreview</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a9f504b1b72aa9131be6deb0327cfdcb1" kind="function"><name>LoadPreviewTexture</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a4a99b3f00dd34d59334680c4621facf5" kind="function"><name>DeleteSlot</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" kind="function"><name>SaveCheckpointAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aaa8ef2500d1a69f77d611335995b2ef3" kind="function"><name>LoadActiveSlotAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a007c22a5b366ccbdadb3a52c8ab15ccb" kind="function"><name>SaveAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1af41c20346b77a4fac76819fcd9943a78" kind="function"><name>LoadAsync</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a725486c243fb16815658c098b8492643" kind="function"><name>GetSlotPath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ae19c38df8d82c9bcad7ff5b52e2b76bc" kind="function"><name>GetSlotPreviewPath</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a871993a93093821284cf9076f7803a1d" kind="function"><name>SavePreview</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1aebd232191c24102320ca3776b726321f" kind="function"><name>EnsurePreviewDirectory</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a3163852a2ec83567dc5a8b0b6c72792c" kind="function"><name>DeleteFileIfExists</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot" kind="class"><name>Faeterna::Scripts::Personaje::Shot</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a47dbbe76320c78394ae566719b6c9974" kind="variable"><name>Speed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ab6068d84b5e8614d5901a8bdeacca465" kind="variable"><name>_animatedSprite</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a2bdddfea2e2a8d9dd8265c80ff5d7303" kind="variable"><name>Direction</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a249a64cc206d50465270a5478e13c329" kind="variable"><name>ManaCost</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a98b95ad862c80e8e526b93ec24ec27e4" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a7c292ad729364fba8adb7bba2d421966" kind="function"><name>OnAreaEntered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a8babf0dada168b0bb193214a3833d277" kind="function"><name>OnBodyEntered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" kind="function"><name>HandleCollision</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime" kind="class"><name>Faeterna::Scripts::Enemigos::Slime::Slime</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc71179ad5e4f066eb5ff3e91ed68fb3" kind="variable"><name>JumpInterval</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ad4be507fa018306266ecf2362d26abeb" kind="variable"><name>HorizontalSpeed</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a5b277ad160c4b56dd67cb8fad8727abd" kind="variable"><name>_jumpTimer</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a7eace498406eb91a402bf3a700e6ea3b" kind="variable"><name>_isJumping</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a81a7603c8084dee81c4e196e99235215" kind="variable"><name>_jumpDirection</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a8ea65977a05b1d19e936fa952262521d" kind="variable"><name>_jumpAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae4c57ee715b977a1c8b7111896184281" kind="variable"><name>_hitAudio</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a5462bc4397a046c7e33573888a60fa11" kind="function"><name>_EnterTree</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1af93780d4cfb7086dcabfc853370a19a8" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a51a0d35bceafc219d76a6da06b7cb3be" kind="function"><name>_PhysicsProcess</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a2ddf2e3885a9013ef3e226d6847ee385" kind="function"><name>_on_attack_hit_box_body_entered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1a030a1222a005412a31bcc89f64088bdc" kind="function"><name>_on_detection_area_body_entered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ac47ee5494a24fb6b119a0315ce636b45" kind="function"><name>_on_detection_area_body_exited</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1afc1107145a1b311236ec40487d74a6c8" kind="function"><name>OnJumpTimerTimeout</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ae53963ac3e315f582b63477a32fc8fa4" kind="function"><name>OnHurtBoxAreaEntered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Enemigos_1_1Slime_1_1Slime_1ab3ca6e40133dbe96f57af363080fc6e6" kind="function"><name>TakeDamage</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::StartPrayMovementState</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a2d0f21d33b0e2d92dc4945f7c99c1100" kind="variable"><name>_player</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1ad9df792a47d3387e34d6731a975032a2" kind="variable"><name>_isInteracting</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1aa5fb99940028f52b55d29c307621fa64" kind="variable"><name>ArrivalThreshold</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a6eb761e7e70ba582aa61be80f9b41d11" kind="variable"><name>TargetPosition</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a0aa19c515c3fe4cdebdd67edff3cb665" kind="variable"><name>InteractorNode</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1aa1210b059e5b7eaf655c1925ca5b7079" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a0fd520b2077eec43ef647022a7c98b14" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a9ad7b28f5af0488f441e4e679f542a49" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a932724f671db8e5026373599adc3f463" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a99ea7722235be0b47a6a2d60bedbddb4" kind="function"><name>ExecuteInteraction</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" kind="class"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::State</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" kind="variable"><name>stateMachine</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a" kind="function"><name>Enter</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" kind="function"><name>Exit</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890" kind="function"><name>Ready</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53" kind="function"><name>Update</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" kind="function"><name>UpdatePhysics</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68" kind="function"><name>HandleInput</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles" kind="class"><name>Faeterna::scripts::Personaje::TerrainParticles</name>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a531a9d33d91a2618f7cc7c921154f08d" kind="variable"><name>_rayCast</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1aabf72af6db5bba005cd2cc47d33fba4b" kind="variable"><name>_atlasTextureId1</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a2256e03d809d8b987252744467a04d7d" kind="variable"><name>_atlasTextureId2</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a33a5423c5f2934b3248f1966ad2befa4" kind="variable"><name>_frameSize</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a9ef325bde85bbbafda65460d9d7a6f5a" kind="variable"><name>_freezeRandomFrameOnSpawn</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a063967edab342595f0be47bdf201175f" kind="variable"><name>_sourceAtlases</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a5c45fdb3426479902f2ebecea863e7da" kind="variable"><name>_runtimeAtlases</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a96ffbe3ae8b8cb1f1a2ba80c1abb4954" kind="variable"><name>_currentTextureId</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a3484de8242cb47bc43803addd46e5a6b" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1ae8babb429451ef260c68bd8da9bd6335" kind="function"><name>_Process</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a675f84a0e52b92df028ee9484946a21d" kind="function"><name>ApplySpriteSheetLayout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles_1a27ecb434a700bdb725d65a32eb111c20" kind="function"><name>ConfigureProcessMaterialRandomFrame</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial" kind="class"><name>Faeterna::Scripts::Tutorial::Turotial</name>
+    <member refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ac447f70f82759cf75967bb0150ec72f5" kind="variable"><name>_control</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1ae35f50d0e18a9abb02cc924ff0b4881f" kind="function"><name>_on_area_2d_body_entered</name></member>
+    <member refid="classFaeterna_1_1Scripts_1_1Tutorial_1_1Turotial_1aa7d3e920f01d9e201df7e89612fd3c9e" kind="function"><name>DesvanecerNodo</name></member>
+  </compound>
+  <compound refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf" kind="class"><name>Faeterna::scripts::Enemigos::Wolf::Wolf</name>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a2d0a3d949d85c328f7d8d7cf6a2b3ede" kind="variable"><name>DashInterval</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a6b885e45be8d9c3b2c6d888a032f4851" kind="variable"><name>_dashTimer</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1afe99cbf9006353cefd4f0308117204dc" kind="variable"><name>_isDashing</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a91a15a87eeddb4bc7269b1fdeb7266ab" kind="variable"><name>_rnd</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a485f9479e396ceb4a024a8e8009c402e" kind="variable"><name>_runAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae9ce7028138fb1394fa87a660f78566f" kind="variable"><name>_hitAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a74f496d6acc21571fd4494eceb6107de" kind="variable"><name>_attackAudio</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a5f006c44c277c8f781bc584a6ec8c1e6" kind="function"><name>_EnterTree</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a832693efeefdb30b092ac45c363c49ee" kind="function"><name>_Ready</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a7b88e060288811fd55ac82a17304992e" kind="function"><name>_PhysicsProcess</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a789b08da78ffc2505773fb2c41844904" kind="function"><name>_on_attack_hit_box_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a1663cb0e3c0a0773a79e8a45f02977c1" kind="function"><name>_on_detection_area_body_entered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ab428edf6f3bffecaacc4b920cea6c72a" kind="function"><name>_on_detection_area_body_exited</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a97068afa2887a0685ad87ca307fa9f46" kind="function"><name>OnDashTimerTimeout</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1ae25f2c7e50a69ce47b8df59343452934" kind="function"><name>OnHurtBoxAreaEntered</name></member>
+    <member refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf_1a60ad4b4177a210985496899f2a4289d7" kind="function"><name>TakeDamage</name></member>
+  </compound>
+  <compound refid="namespaceChickensoft_1_1SaveFileBuilder" kind="namespace"><name>Chickensoft::SaveFileBuilder</name>
+  </compound>
+  <compound refid="namespaceFaeterna" kind="namespace"><name>Faeterna</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scenes" kind="namespace"><name>Faeterna::scenes</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scenes_1_1Personajes" kind="namespace"><name>Faeterna::scenes::Personajes</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts" kind="namespace"><name>Faeterna::Scripts</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts" kind="namespace"><name>Faeterna::scripts</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Enemigos" kind="namespace"><name>Faeterna::Scripts::Enemigos</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Enemigos" kind="namespace"><name>Faeterna::scripts::Enemigos</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Jabali" kind="namespace"><name>Faeterna::scripts::Enemigos::Jabali</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1ReyJabali" kind="namespace"><name>Faeterna::scripts::Enemigos::ReyJabali</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Enemigos_1_1Slime" kind="namespace"><name>Faeterna::Scripts::Enemigos::Slime</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Wolf" kind="namespace"><name>Faeterna::scripts::Enemigos::Wolf</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Mapa" kind="namespace"><name>Faeterna::Scripts::Mapa</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Mapa" kind="namespace"><name>Faeterna::scripts::Mapa</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Menus" kind="namespace"><name>Faeterna::Scripts::Menus</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Personaje" kind="namespace"><name>Faeterna::Scripts::Personaje</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Personaje" kind="namespace"><name>Faeterna::scripts::Personaje</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados" kind="namespace"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento" kind="namespace"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States" kind="namespace"><name>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Tools" kind="namespace"><name>Faeterna::Scripts::Tools</name>
+    <member refid="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4" kind="function"><name>OptionsData</name></member>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1scripts_1_1Tools" kind="namespace"><name>Faeterna::scripts::Tools</name>
+  </compound>
+  <compound refid="namespaceFaeterna_1_1Scripts_1_1Tutorial" kind="namespace"><name>Faeterna::Scripts::Tutorial</name>
+  </compound>
+  <compound refid="namespaceGodot" kind="namespace"><name>Godot</name>
+  </compound>
+  <compound refid="namespaceGodot_1_1Collections" kind="namespace"><name>Godot::Collections</name>
+  </compound>
+  <compound refid="namespaceSystem" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Collections_1_1Generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1ComponentModel" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Runtime_1_1CompilerServices" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Text_1_1Json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Text_1_1Json_1_1Serialization" kind="namespace"><name>System::Text::Json::Serialization</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Threading_1_1Tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="Enemy_8cs" kind="file"><name>Enemy.cs</name>
+  </compound>
+  <compound refid="Jabali_8cs" kind="file"><name>Jabali.cs</name>
+  </compound>
+  <compound refid="ReyJabali_8cs" kind="file"><name>ReyJabali.cs</name>
+  </compound>
+  <compound refid="Slime_8cs" kind="file"><name>Slime.cs</name>
+  </compound>
+  <compound refid="Wolf_8cs" kind="file"><name>Wolf.cs</name>
+  </compound>
+  <compound refid="Bosque_8cs" kind="file"><name>Bosque.cs</name>
+  </compound>
+  <compound refid="BossArea_8cs" kind="file"><name>BossArea.cs</name>
+  </compound>
+  <compound refid="Objeto_8cs" kind="file"><name>Objeto.cs</name>
+  </compound>
+  <compound refid="Portal_8cs" kind="file"><name>Portal.cs</name>
+  </compound>
+  <compound refid="DeathScreen_8cs" kind="file"><name>DeathScreen.cs</name>
+  </compound>
+  <compound refid="LogoAnimationScene_8cs" kind="file"><name>LogoAnimationScene.cs</name>
+  </compound>
+  <compound refid="MainMenu_8cs" kind="file"><name>MainMenu.cs</name>
+  </compound>
+  <compound refid="ObjetoDescription_8cs" kind="file"><name>ObjetoDescription.cs</name>
+  </compound>
+  <compound refid="OptionsMenu_8cs" kind="file"><name>OptionsMenu.cs</name>
+  </compound>
+  <compound refid="PantallaCarga_8cs" kind="file"><name>PantallaCarga.cs</name>
+  </compound>
+  <compound refid="PauseMenu_8cs" kind="file"><name>PauseMenu.cs</name>
+  </compound>
+  <compound refid="PlayMenu_8cs" kind="file"><name>PlayMenu.cs</name>
+  </compound>
+  <compound refid="Lira_8cs" kind="file"><name>Lira.cs</name>
+  </compound>
+  <compound refid="LiraAnimationTree_8cs" kind="file"><name>LiraAnimationTree.cs</name>
+  </compound>
+  <compound refid="MovementStateMachine_8cs" kind="file"><name>MovementStateMachine.cs</name>
+  </compound>
+  <compound refid="State_8cs" kind="file"><name>State.cs</name>
+  </compound>
+  <compound refid="AttackMovementState_8cs" kind="file"><name>AttackMovementState.cs</name>
+    <member refid="AttackMovementState_8cs_1a4b75ddb7c0fcd333ba544c8a9dfc8dce" kind="typedef"><name>PlayerType</name></member>
+  </compound>
+  <compound refid="DashMovementState_8cs" kind="file"><name>DashMovementState.cs</name>
+  </compound>
+  <compound refid="DeadMovementState_8cs" kind="file"><name>DeadMovementState.cs</name>
+  </compound>
+  <compound refid="DoubleJumpMovementState_8cs" kind="file"><name>DoubleJumpMovementState.cs</name>
+  </compound>
+  <compound refid="FallingMovementState_8cs" kind="file"><name>FallingMovementState.cs</name>
+  </compound>
+  <compound refid="IdleMovementState_8cs" kind="file"><name>IdleMovementState.cs</name>
+  </compound>
+  <compound refid="JumpingMovementState_8cs" kind="file"><name>JumpingMovementState.cs</name>
+  </compound>
+  <compound refid="KnockbackMovementState_8cs" kind="file"><name>KnockbackMovementState.cs</name>
+  </compound>
+  <compound refid="MagicMovementState_8cs" kind="file"><name>MagicMovementState.cs</name>
+  </compound>
+  <compound refid="RunningMovementState_8cs" kind="file"><name>RunningMovementState.cs</name>
+  </compound>
+  <compound refid="StartPrayMovementState_8cs" kind="file"><name>StartPrayMovementState.cs</name>
+  </compound>
+  <compound refid="Shot_8cs" kind="file"><name>Shot.cs</name>
+  </compound>
+  <compound refid="TerrainParticles_8cs" kind="file"><name>TerrainParticles.cs</name>
+  </compound>
+  <compound refid="ButtonTools_8cs" kind="file"><name>ButtonTools.cs</name>
+  </compound>
+  <compound refid="CheckPoint_8cs" kind="file"><name>CheckPoint.cs</name>
+  </compound>
+  <compound refid="CursorManager_8cs" kind="file"><name>CursorManager.cs</name>
+  </compound>
+  <compound refid="GameSaveData_8cs" kind="file"><name>GameSaveData.cs</name>
+  </compound>
+  <compound refid="GameSaveService_8cs" kind="file"><name>GameSaveService.cs</name>
+  </compound>
+  <compound refid="Saves_8cs" kind="file"><name>Saves.cs</name>
+  </compound>
+  <compound refid="Turotial_8cs" kind="file"><name>Turotial.cs</name>
+  </compound>
+  <compound refid="dir_ab60a29d0fda7f87878ad5010c614acb" kind="dir"><name>scripts/Enemigos</name>
+  </compound>
+  <compound refid="dir_35684a0afcbbdc0abb6ff4c8e1158faf" kind="dir"><name>scripts/Enemigos/Jabali</name>
+  </compound>
+  <compound refid="dir_4059abcc393a55e7289898d8fe420d4c" kind="dir"><name>scripts/Mapa</name>
+  </compound>
+  <compound refid="dir_92ba699e1c81ee8cf98d6634f67b0222" kind="dir"><name>scripts/Personaje/MaquinasDeEstados</name>
+  </compound>
+  <compound refid="dir_21292c98d8eb0585eba55c20fc1ef9f0" kind="dir"><name>scripts/Menus</name>
+  </compound>
+  <compound refid="dir_01fd2fa7cb82d3fdf7d0c78212ca093b" kind="dir"><name>scripts/Personaje/MaquinasDeEstados/Movimiento</name>
+  </compound>
+  <compound refid="dir_1d2a5dffac4f6784c1476d5149160169" kind="dir"><name>scripts/Personaje</name>
+  </compound>
+  <compound refid="dir_08609c05fb9dfab3e456cdc4c999beaa" kind="dir"><name>scripts/Enemigos/ReyJabali</name>
+  </compound>
+  <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
+  </compound>
+  <compound refid="dir_719874ce86b3af64cda9b90bdc59ace5" kind="dir"><name>scripts/Enemigos/Slime</name>
+  </compound>
+  <compound refid="dir_8e7f4744c19c2fb293fe6845e5fea702" kind="dir"><name>scripts/Personaje/MaquinasDeEstados/Movimiento/States</name>
+  </compound>
+  <compound refid="dir_097fc0341e4a200822ee6198f8e51564" kind="dir"><name>scripts/Tools</name>
+  </compound>
+  <compound refid="dir_ea3e816f11af3a1c7b07cc613edb63d1" kind="dir"><name>scripts/Tutorial</name>
+  </compound>
+  <compound refid="dir_15398d9c3bef29b687f773c53f3d7837" kind="dir"><name>scripts/Enemigos/Wolf</name>
+  </compound>
+</doxygenindex>

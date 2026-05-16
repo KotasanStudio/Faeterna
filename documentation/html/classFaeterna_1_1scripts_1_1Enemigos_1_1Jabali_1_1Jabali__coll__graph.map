@@ -1,0 +1,7 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali" name="Faeterna.scripts.Enemigos.Jabali.Jabali">
+<area shape="rect" id="Node000001" title="Jabalí enemigo con capacidad de ataque acelerado." alt="" coords="6,174,203,218"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="37,5,172,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,46,107,81,102,80,104,51"/>
+</map>

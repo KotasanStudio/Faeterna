@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Menus" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Menus</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen" prot="public">Faeterna::Scripts::Menus::DeathScreen</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1MainMenu" prot="public">Faeterna::Scripts::Menus::MainMenu</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription" prot="public">Faeterna::Scripts::Menus::ObjetoDescription</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu" prot="public">Faeterna::Scripts::Menus::OptionsMenu</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu" prot="public">Faeterna::Scripts::Menus::PauseMenu</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Menus_1_1PlayMenu" prot="public">Faeterna::Scripts::Menus::PlayMenu</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Menus/DeathScreen.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

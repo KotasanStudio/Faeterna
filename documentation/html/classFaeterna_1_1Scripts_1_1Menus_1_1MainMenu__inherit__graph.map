@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Menus.MainMenu" name="Faeterna.Scripts.Menus.MainMenu">
+<area shape="rect" id="Node000001" title="Control que representa el menú principal del juego." alt="" coords="5,81,251,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="94,5,162,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,47,130,82,126,79,126,51"/>
+</map>

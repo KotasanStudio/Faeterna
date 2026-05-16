@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classLogoAnimationScene" kind="class" language="C#" prot="public">
+    <compoundname>LogoAnimationScene</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Control</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLogoAnimationScene_1aaa1a71c946272c45fa1fabdb76251696" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer LogoAnimationScene.logoTimer</definition>
+        <argsstring></argsstring>
+        <name>logoTimer</name>
+        <qualifiedname>LogoAnimationScene.logoTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="6" column="16" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLogoAnimationScene_1add348c7a8fa3932cd77f09b86f9a7e1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void LogoAnimationScene._Input</definition>
+        <argsstring>(InputEvent @event)</argsstring>
+        <name>_Input</name>
+        <qualifiedname>LogoAnimationScene._Input</qualifiedname>
+        <param>
+          <type>InputEvent @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="7" column="26" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLogoAnimationScene_1a297264d9677cf9fc2118a9550e1d5991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogoAnimationScene._on_logo_timer_timeout</definition>
+        <argsstring>()</argsstring>
+        <name>_on_logo_timer_timeout</name>
+        <qualifiedname>LogoAnimationScene._on_logo_timer_timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Menus/LogoAnimationScene.cs" line="15" column="13" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>LogoAnimationScene</label>
+        <link refid="classLogoAnimationScene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>LogoAnimationScene</label>
+        <link refid="classLogoAnimationScene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Menus/LogoAnimationScene.cs" line="4" column="15" bodyfile="scripts/Menus/LogoAnimationScene.cs" bodystart="5" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classLogoAnimationScene_1add348c7a8fa3932cd77f09b86f9a7e1c" prot="public" virt="non-virtual"><scope>LogoAnimationScene</scope><name>_Input</name></member>
+      <member refid="classLogoAnimationScene_1a297264d9677cf9fc2118a9550e1d5991" prot="public" virt="non-virtual"><scope>LogoAnimationScene</scope><name>_on_logo_timer_timeout</name></member>
+      <member refid="classLogoAnimationScene_1aaa1a71c946272c45fa1fabdb76251696" prot="private" virt="non-virtual"><scope>LogoAnimationScene</scope><name>logoTimer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

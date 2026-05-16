@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1scripts_1_1Enemigos_1_1Wolf" kind="namespace" language="C#">
+    <compoundname>Faeterna::scripts::Enemigos::Wolf</compoundname>
+    <innerclass refid="classFaeterna_1_1scripts_1_1Enemigos_1_1Wolf_1_1Wolf" prot="public">Faeterna::scripts::Enemigos::Wolf::Wolf</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Enemigos/Wolf/Wolf.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

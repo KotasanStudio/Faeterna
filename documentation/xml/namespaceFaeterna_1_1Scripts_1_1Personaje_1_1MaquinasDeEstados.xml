@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public">Faeterna::Scripts::Personaje::MaquinasDeEstados::State</innerclass>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento">Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/MovementStateMachine.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

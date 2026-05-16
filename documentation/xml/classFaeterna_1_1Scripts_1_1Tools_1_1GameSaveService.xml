@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Tools::GameSaveService</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9d7a0f1a592fdfaae72991c24c7d9639" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Tools.GameSaveService.ActiveSlot</definition>
+        <argsstring></argsstring>
+        <name>ActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.ActiveSlot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="14" column="27" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1accce028fb622f5fe038081c325db5886" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>SetActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.SetActiveSlot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Define el slot activo asegurando que no sea negativo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="20" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a02db5fdff64edd5da075a059a185b5bc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.GameSaveService.HasSave</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>HasSave</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.HasSave</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Indica si existe archivo de guardado para el slot dado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> si existe el JSON del slot; en caso contrario, <computeroutput>false</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="27" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aa0e314f60869606ba6b0a0c83def7285" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.GameSaveService.HasSaveInActiveSlot</definition>
+        <argsstring>()</argsstring>
+        <name>HasSaveInActiveSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.HasSaveInActiveSlot</qualifiedname>
+        <briefdescription>
+<para>Indica si el slot activo tiene archivo de guardado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> si existe guardado en el slot activo.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="33" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a528a855760cdb7bbfc16da8bfd3a4f06" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Faeterna.Scripts.Tools.GameSaveService.HasPreview</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>HasPreview</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.HasPreview</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Indica si existe una imagen preview asociada al slot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> si existe la imagen PNG del slot.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="40" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a82418b51f04d9b946331535b145aa183" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Texture2D</type>
+        <definition>static Texture2D Faeterna.Scripts.Tools.GameSaveService.LoadPreviewTexture</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>LoadPreviewTexture</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.LoadPreviewTexture</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Carga la textura de preview del slot desde disco. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Una Texture2D lista para usar en UI, o <computeroutput>null</computeroutput> si no existe/esta corrupta. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="49" column="33" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a2e5ed6e85b985710587dc4c8c95d0f4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Faeterna.Scripts.Tools.GameSaveService.DeleteSlot</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>DeleteSlot</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.DeleteSlot</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Elimina el guardado completo de un slot (datos JSON + preview PNG). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="55" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1af0bd60dc6943073598f37cac04d6f6f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>static Task Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync</definition>
+        <argsstring>(PlayerType player, string checkpointId, string scenePath, Vector2 checkpointPosition, Viewport viewport=null)</argsstring>
+        <name>SaveCheckpointAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.SaveCheckpointAsync</qualifiedname>
+        <param>
+          <type>PlayerType</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>checkpointId</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>scenePath</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>checkpointPosition</declname>
+        </param>
+        <param>
+          <type>Viewport</type>
+          <declname>viewport</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Guarda el progreso al tocar un checkpoint y genera la imagen preview del slot activo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instancia del jugador desde la que se extrae el estado.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkpointId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identificador del checkpoint alcanzado.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scenePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ruta de escena actual para validar cargas posteriores.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>checkpointPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posicion de respawn a persistir.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Viewport fuente para la captura; si es <computeroutput>null</computeroutput>, usa el del jugador.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tarea asincrona de guardado.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="66" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="66" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aaa9a185acc9c3da515401db4f3bcc1ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
+        <definition>static Task&lt; GameData &gt; Faeterna.Scripts.Tools.GameSaveService.LoadActiveSlotAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LoadActiveSlotAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.LoadActiveSlotAsync</qualifiedname>
+        <briefdescription>
+<para>Carga los datos del slot activo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Datos cargados o <computeroutput>null</computeroutput> si el archivo no existe.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="73" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a86e0695c860b020965ad0943e91045a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>static Task Faeterna.Scripts.Tools.GameSaveService.SaveAsync</definition>
+        <argsstring>(int slot, GameData data)</argsstring>
+        <name>SaveAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.SaveAsync</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Guarda en disco los datos de un slot usando SaveFile&lt;TData&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Datos serializables de la partida.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tarea asincrona de escritura.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="81" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a0b80d74d77222774ed30d9a52165adef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" kindref="compound">GameData</ref> &gt;</type>
+        <definition>static Task&lt; GameData &gt; Faeterna.Scripts.Tools.GameSaveService.LoadAsync</definition>
+        <argsstring>(int slot)</argsstring>
+        <name>LoadAsync</name>
+        <qualifiedname>Faeterna.Scripts.Tools.GameSaveService.LoadAsync</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Carga desde disco los datos de un slot usando SaveFile&lt;TData&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indice del slot (base 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Datos cargados o <computeroutput>null</computeroutput> si el archivo del slot no existe.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/GameSaveService.cs" line="88" column="28" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="88" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fachada de compatibilidad. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>La lógica real de guardado está centralizada en <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" kindref="compound">Saves</ref>. </para>
+    </detaileddescription>
+    <location file="scripts/Tools/GameSaveService.cs" line="12" column="19" bodyfile="scripts/Tools/GameSaveService.cs" bodystart="13" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a9d7a0f1a592fdfaae72991c24c7d9639" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>ActiveSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a2e5ed6e85b985710587dc4c8c95d0f4c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>DeleteSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a528a855760cdb7bbfc16da8bfd3a4f06" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>HasPreview</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a02db5fdff64edd5da075a059a185b5bc" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>HasSave</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aa0e314f60869606ba6b0a0c83def7285" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>HasSaveInActiveSlot</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1aaa9a185acc9c3da515401db4f3bcc1ef" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>LoadActiveSlotAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a0b80d74d77222774ed30d9a52165adef" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>LoadAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a82418b51f04d9b946331535b145aa183" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>LoadPreviewTexture</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1a86e0695c860b020965ad0943e91045a7" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>SaveAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1af0bd60dc6943073598f37cac04d6f6f9" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>SaveCheckpointAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService_1accce028fb622f5fe038081c325db5886" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::GameSaveService</scope><name>SetActiveSlot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

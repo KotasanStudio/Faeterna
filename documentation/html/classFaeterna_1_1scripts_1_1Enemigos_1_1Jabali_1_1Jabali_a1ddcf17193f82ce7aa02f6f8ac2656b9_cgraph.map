@@ -1,0 +1,7 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess" name="Faeterna.scripts.Enemigos.Jabali.Jabali._PhysicsProcess">
+<area shape="rect" id="Node000001" title="Procesamiento de física cada frame." alt="" coords="5,40,213,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a596b9d9e12b040e942de9aab2d6a052f" title="Reproduce un efecto de sonido del enemigo a través del reproductor de audio." alt="" coords="261,5,459,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,45,248,43,243,44,214,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="261,75,459,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,74,248,81,243,81,213,79"/>
+</map>

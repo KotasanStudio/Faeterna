@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Tools::CheckPoint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a440fb1125b6f8b5d9df9864845a78959" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Faeterna.Scripts.Tools.CheckPoint._checkpointId</definition>
+        <argsstring></argsstring>
+        <name>_checkpointId</name>
+        <qualifiedname>Faeterna.Scripts.Tools.CheckPoint._checkpointId</qualifiedname>
+        <initializer>= &quot;checkpoint_01&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CheckPoint.cs" line="11" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" prot="private" static="no" mutable="no">
+        <type>Node2D</type>
+        <definition>Node2D Faeterna.Scripts.Tools.CheckPoint._spawnPoint</definition>
+        <argsstring></argsstring>
+        <name>_spawnPoint</name>
+        <qualifiedname>Faeterna.Scripts.Tools.CheckPoint._spawnPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CheckPoint.cs" line="12" column="25" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a12e3ffb6fb60459cbfa58ced85113663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Faeterna.Scripts.Tools.CheckPoint.ActionSaveProgress</definition>
+        <argsstring>(Lira player)</argsstring>
+        <name>ActionSaveProgress</name>
+        <qualifiedname>Faeterna.Scripts.Tools.CheckPoint.ActionSaveProgress</qualifiedname>
+        <param>
+          <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref></type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CheckPoint.cs" line="14" column="27" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="14" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a7964230fab106746b818fc38ff60dc72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector2</type>
+        <definition>Vector2 Faeterna.Scripts.Tools.CheckPoint.GetPrayPosition</definition>
+        <argsstring>()</argsstring>
+        <name>GetPrayPosition</name>
+        <qualifiedname>Faeterna.Scripts.Tools.CheckPoint.GetPrayPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CheckPoint.cs" line="26" column="24" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1af7d9244c606aee374a4e361ceb8b869b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Tools.CheckPoint.OnAreaCheckPointEntered</definition>
+        <argsstring>(Node2D body)</argsstring>
+        <name>OnAreaCheckPointEntered</name>
+        <qualifiedname>Faeterna.Scripts.Tools.CheckPoint.OnAreaCheckPointEntered</qualifiedname>
+        <param>
+          <type>Node2D</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/CheckPoint.cs" line="28" column="21" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="28" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Tools.CheckPoint</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Tools.CheckPoint</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node2D</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Tools/CheckPoint.cs" line="9" column="19" bodyfile="scripts/Tools/CheckPoint.cs" bodystart="10" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a440fb1125b6f8b5d9df9864845a78959" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>_checkpointId</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1ae9a0ec5b475fb9e7ce07b81903137657" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>_spawnPoint</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a12e3ffb6fb60459cbfa58ced85113663" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>ActionSaveProgress</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1a7964230fab106746b818fc38ff60dc72" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>GetPrayPosition</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint_1af7d9244c606aee374a4e361ceb8b869b" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Tools::CheckPoint</scope><name>OnAreaCheckPointEntered</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

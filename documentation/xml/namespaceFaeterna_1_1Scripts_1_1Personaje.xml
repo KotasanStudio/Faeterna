@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Personaje" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Personaje</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" prot="public">Faeterna::Scripts::Personaje::Lira</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree" prot="public">Faeterna::Scripts::Personaje::LiraAnimationTree</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot" prot="public">Faeterna::Scripts::Personaje::Shot</innerclass>
+    <innernamespace refid="namespaceFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados">Faeterna::Scripts::Personaje::MaquinasDeEstados</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/Lira.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>

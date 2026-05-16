@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_8e7f4744c19c2fb293fe6845e5fea702" kind="dir">
+    <compoundname>scripts/Personaje/MaquinasDeEstados/Movimiento/States</compoundname>
+    <innerfile refid="AttackMovementState_8cs">AttackMovementState.cs</innerfile>
+    <innerfile refid="DashMovementState_8cs">DashMovementState.cs</innerfile>
+    <innerfile refid="DeadMovementState_8cs">DeadMovementState.cs</innerfile>
+    <innerfile refid="DoubleJumpMovementState_8cs">DoubleJumpMovementState.cs</innerfile>
+    <innerfile refid="FallingMovementState_8cs">FallingMovementState.cs</innerfile>
+    <innerfile refid="IdleMovementState_8cs">IdleMovementState.cs</innerfile>
+    <innerfile refid="JumpingMovementState_8cs">JumpingMovementState.cs</innerfile>
+    <innerfile refid="KnockbackMovementState_8cs">KnockbackMovementState.cs</innerfile>
+    <innerfile refid="MagicMovementState_8cs">MagicMovementState.cs</innerfile>
+    <innerfile refid="RunningMovementState_8cs">RunningMovementState.cs</innerfile>
+    <innerfile refid="StartPrayMovementState_8cs">StartPrayMovementState.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/"/>
+  </compounddef>
+</doxygen>

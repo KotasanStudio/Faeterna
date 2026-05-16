@@ -1,0 +1,13 @@
+<map id="Faeterna.Scripts.Menus.OptionsMenu._Ready" name="Faeterna.Scripts.Menus.OptionsMenu._Ready">
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,144,233,189"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#af9b5437ca00a28b6f8ccf35e4ff6108e" title="Se llama cuando se selecciona una opción en el control de antialiasing." alt="" coords="306,5,558,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,141,206,100,280,60,301,54,296,57,282,65,209,104,150,146"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a2dc72bd618d1e945014ceae47128583c" title="Se llama cuando se selecciona una opción en el control de bloqueo de FPS." alt="" coords="294,75,570,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,141,315,122,311,125,224,146"/>
+<area shape="rect" id="Node000004" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#aaf6b80473620b8a0b61705283dcb418c" title="Se llama cuando se selecciona una opción en el control de calidad de sombras." alt="" coords="281,144,583,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,164,267,165,262,167,234,169"/>
+<area shape="rect" id="Node000005" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#a076c40873c3270c3306d95c18b1f85d6" title="Se llama cuando se selecciona una opción en el control de VSync." alt="" coords="308,213,556,258"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="223,187,316,209,311,210,223,192"/>
+<area shape="rect" id="Node000006" href="$classFaeterna_1_1Scripts_1_1Menus_1_1OptionsMenu.html#adada22c3dd410baa252e1267cc255f81" title="Se llama cuando se selecciona una opción en el control de modo de pantalla." alt="" coords="302,283,562,327"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,187,209,228,282,268,301,277,296,277,280,273,206,233,148,192"/>
+</map>

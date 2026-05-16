@@ -1,0 +1,5 @@
+<map id="Faeterna.scripts.Enemigos.Jabali.Jabali._Ready" name="Faeterna.scripts.Enemigos.Jabali.Jabali._Ready">
+<area shape="rect" id="Node000001" title="Inicialización del jabalí." alt="" coords="5,5,203,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="251,5,449,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,25,237,27,232,28,203,30"/>
+</map>

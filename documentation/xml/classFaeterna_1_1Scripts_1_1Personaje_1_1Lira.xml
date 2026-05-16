@@ -1,0 +1,1248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::Lira</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CharacterBody2D</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71764f040a67eb9871c61aa91f908635" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Personaje.Lira.Speed</definition>
+        <argsstring></argsstring>
+        <name>Speed</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Speed</qualifiedname>
+        <initializer>= 350.0f</initializer>
+        <briefdescription>
+<para>Velocidad horizontal configurada del jugador (px/s). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="22" column="28" bodyfile="scripts/Personaje/Lira.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1StartPrayMovementState_1a932724f671db8e5026373599adc3f463" compoundref="StartPrayMovementState_8cs" startline="40" endline="58">Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.StartPrayMovementState.Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4638dfafa13d542118d6fb8f2352ad6c" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Personaje.Lira.JumpVelocity</definition>
+        <argsstring></argsstring>
+        <name>JumpVelocity</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.JumpVelocity</qualifiedname>
+        <initializer>= -500.0f</initializer>
+        <briefdescription>
+<para>Velocidad vertical aplicada al iniciar un salto (negativa = hacia arriba). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="25" column="28" bodyfile="scripts/Personaje/Lira.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ad2666add49fd8c25523eb909234452c5" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Personaje.Lira.Gravity</definition>
+        <argsstring></argsstring>
+        <name>Gravity</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Gravity</qualifiedname>
+        <briefdescription>
+<para>Gravedad usada en los estados aéreos. Se obtiene del ProjectSettings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="28" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a7b7063693131a5bd6367d364276d712d" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira._haveDobleJump</definition>
+        <argsstring></argsstring>
+        <name>_haveDobleJump</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._haveDobleJump</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="104" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0f93d916c311ba2eaefa194caeb57e3" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira._haveDash</definition>
+        <argsstring></argsstring>
+        <name>_haveDash</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._haveDash</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="107" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="107" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adc7e871f936faca2da3f07a79c35e664" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Faeterna.Scripts.Personaje.Lira.Health</definition>
+        <argsstring></argsstring>
+        <name>Health</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Health</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>Puntos de vida máximos del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="31" column="27" bodyfile="scripts/Personaje/Lira.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac0a76dcc98d202e2b7a1bc3d67596145" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Faeterna.Scripts.Personaje.Lira.Mana</definition>
+        <argsstring></argsstring>
+        <name>Mana</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Mana</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+<para>Maná máximo del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="34" column="27" bodyfile="scripts/Personaje/Lira.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a76b78cff286e05cd23a7e94cb3533ae9" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Personaje.Lira.KnockbackForceX</definition>
+        <argsstring></argsstring>
+        <name>KnockbackForceX</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.KnockbackForceX</qualifiedname>
+        <initializer>= 300.0f</initializer>
+        <briefdescription>
+<para>Fuerza horizontal del knockback al recibir daño. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="54" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a368e9483bb19262dd5e6faaf2f733bd7" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float Faeterna.Scripts.Personaje.Lira.KnockbackForceY</definition>
+        <argsstring></argsstring>
+        <name>KnockbackForceY</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.KnockbackForceY</qualifiedname>
+        <initializer>= -250.0f</initializer>
+        <briefdescription>
+<para>Fuerza vertical del knockback al recibir daño (negativa = hacia arriba). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="57" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Faeterna.Scripts.Personaje.Lira._currentHealth</definition>
+        <argsstring></argsstring>
+        <name>_currentHealth</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._currentHealth</qualifiedname>
+        <initializer>= Health</initializer>
+        <briefdescription>
+<para>Puntos de vida actuales del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="37" column="20" bodyfile="scripts/Personaje/Lira.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71b5a5639661f4fcb0a64ee71a8a24f0" compoundref="Lira_8cs" startline="329" endline="334">Faeterna.Scripts.Personaje.Lira.Heal</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" compoundref="Lira_8cs" startline="281" endline="301">Faeterna.Scripts.Personaje.Lira.TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Personaje.Lira._currentMana</definition>
+        <argsstring></argsstring>
+        <name>_currentMana</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._currentMana</qualifiedname>
+        <initializer>= Mana</initializer>
+        <briefdescription>
+<para>Maná actual del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="40" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a11d993a2339b30e612daa6d6dc6fe527" compoundref="Lira_8cs" startline="362" endline="367">Faeterna.Scripts.Personaje.Lira.RecoverMana</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aedd7ef8fd71728d873cc418115728afb" compoundref="Lira_8cs" startline="350" endline="356">Faeterna.Scripts.Personaje.Lira.UseMana</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8d75b1f2f734a49ebe688890b36cb113" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Faeterna.Scripts.Personaje.Lira.cameraInitPos</definition>
+        <argsstring></argsstring>
+        <name>cameraInitPos</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.cameraInitPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="42" column="24" bodyfile="scripts/Personaje/Lira.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a26164369cbfa19f9b87612f472b9d194" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.DoubleJumpAvailable</definition>
+        <argsstring></argsstring>
+        <name>DoubleJumpAvailable</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.DoubleJumpAvailable</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Indica si el doble salto está disponible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="45" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a59edde91fe9749ba746b73544d4070ad" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.DashAvailable</definition>
+        <argsstring></argsstring>
+        <name>DashAvailable</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.DashAvailable</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Indica si el dash está disponible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="48" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab6f5a70191a5de80730b38f3d9afccd8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.CoyoteAvailable</definition>
+        <argsstring></argsstring>
+        <name>CoyoteAvailable</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.CoyoteAvailable</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Indica si el coyote time está disponible (permite saltar brevemente tras abandonar el suelo). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="51" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" compoundref="Lira_8cs" startline="196" endline="212">Faeterna.Scripts.Personaje.Lira.ApplySaveData</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" compoundref="Lira_8cs" startline="174" endline="188">Faeterna.Scripts.Personaje.Lira.BuildSaveData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae3482cbc72eb6305563a39fadb80a1ce" prot="public" static="no" mutable="no">
+        <type>AnimatedSprite2D</type>
+        <definition>AnimatedSprite2D Faeterna.Scripts.Personaje.Lira.animatedSprite</definition>
+        <argsstring></argsstring>
+        <name>animatedSprite</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.animatedSprite</qualifiedname>
+        <briefdescription>
+<para>Referencia al nodo AnimatedSprite2D hijo que muestra las animaciones del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="60" column="33" bodyfile="scripts/Personaje/Lira.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" compoundref="Lira_8cs" startline="131" endline="142">Faeterna.Scripts.Personaje.Lira._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a473349739f5bbff8a5a67d5107ea7dfa" compoundref="Lira_8cs" startline="218" endline="225">Faeterna.Scripts.Personaje.Lira.SetAnimation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4545e1fc18835d490b43c39648cba501" prot="public" static="no" mutable="no">
+        <type>MovementStateMachine</type>
+        <definition>MovementStateMachine Faeterna.Scripts.Personaje.Lira.MovementStateMachine</definition>
+        <argsstring></argsstring>
+        <name>MovementStateMachine</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.MovementStateMachine</qualifiedname>
+        <briefdescription>
+<para>Referencia a la máquina de estados de movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="63" column="37" bodyfile="scripts/Personaje/Lira.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" compoundref="Lira_8cs" startline="131" endline="142">Faeterna.Scripts.Personaje.Lira._Ready</referencedby>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" compoundref="Lira_8cs" startline="281" endline="301">Faeterna.Scripts.Personaje.Lira.TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a30a83cac5c09b4d9ab6a07649c4d99dd" prot="public" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree" kindref="compound">LiraAnimationTree</ref></type>
+        <definition>LiraAnimationTree Faeterna.Scripts.Personaje.Lira.AnimTree</definition>
+        <argsstring></argsstring>
+        <name>AnimTree</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.AnimTree</qualifiedname>
+        <briefdescription>
+<para>Controlador del AnimationTree — sincroniza animaciones con el estado de movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="66" column="34" bodyfile="scripts/Personaje/Lira.cs" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" compoundref="Lira_8cs" startline="131" endline="142">Faeterna.Scripts.Personaje.Lira._Ready</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae12388d45bd6a2470802f3eb7e7b8eaa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.ItsFliped</definition>
+        <argsstring></argsstring>
+        <name>ItsFliped</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.ItsFliped</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="67" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0146a149da86644e8dbb4bfe30ae994" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.IsInvulnerableByState</definition>
+        <argsstring></argsstring>
+        <name>IsInvulnerableByState</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.IsInvulnerableByState</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="68" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac9afdfa0cf295e81ba05f85a5b90ac03" prot="public" static="no" mutable="no">
+        <type>Array&lt; TextureRect &gt;</type>
+        <definition>Array&lt;TextureRect&gt; Faeterna.Scripts.Personaje.Lira._hearts</definition>
+        <argsstring></argsstring>
+        <name>_hearts</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._hearts</qualifiedname>
+        <briefdescription>
+<para>Lista de TextureRect que representan los corazones de vida en la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="73" column="23" bodyfile="scripts/Personaje/Lira.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a3101fa600e9af384d0a0a0c50acaca4c" prot="public" static="no" mutable="no">
+        <type>TextureRect</type>
+        <definition>TextureRect Faeterna.Scripts.Personaje.Lira._manaBar</definition>
+        <argsstring></argsstring>
+        <name>_manaBar</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._manaBar</qualifiedname>
+        <briefdescription>
+<para>TextureRect que representa la barra de maná en la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="76" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae27974ec747eab514d16dfd9f0940f94" prot="public" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles" kindref="compound">TerrainParticles</ref></type>
+        <definition>TerrainParticles Faeterna.Scripts.Personaje.Lira.terrainParticles</definition>
+        <argsstring></argsstring>
+        <name>terrainParticles</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.terrainParticles</qualifiedname>
+        <briefdescription>
+<para>Nodo que emite partículas al caminar sobre el terreno. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se activa/desactiva desde los estados de movimiento para mejorar la inmersión visual. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="96" column="34" bodyfile="scripts/Personaje/Lira.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9dedc2284a162f6970275d3884ce49db" prot="public" static="no" mutable="no">
+        <type>CpuParticles2D</type>
+        <definition>CpuParticles2D Faeterna.Scripts.Personaje.Lira.saltoParticulas</definition>
+        <argsstring></argsstring>
+        <name>saltoParticulas</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.saltoParticulas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="97" column="32" bodyfile="scripts/Personaje/Lira.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a28cdf9fcfd09261fa56eeb33d82d4f05" prot="public" static="no" mutable="no">
+        <type>CpuParticles2D</type>
+        <definition>CpuParticles2D Faeterna.Scripts.Personaje.Lira.dobleSaltoParticulas</definition>
+        <argsstring></argsstring>
+        <name>dobleSaltoParticulas</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.dobleSaltoParticulas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="98" column="32" bodyfile="scripts/Personaje/Lira.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a092bb8d96f3a731751ec9681f2bbdee7" prot="public" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen" kindref="compound">DeathScreen</ref></type>
+        <definition>DeathScreen Faeterna.Scripts.Personaje.Lira._deathScreen</definition>
+        <argsstring></argsstring>
+        <name>_deathScreen</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._deathScreen</qualifiedname>
+        <briefdescription>
+<para>Referencias a nodos de la interfaz y otros elementos relacionados con la salud, maná, muerte y descripción de objetos. Estos nodos se asignan desde el editor y se usan para actualizar visualmente la interfaz (corazones, barra de maná) y mostrar pantallas de muerte o descripciones de objetos cuando sea necesario. Aunque podrían estar gestionados por un sistema de UI separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="110" column="30" bodyfile="scripts/Personaje/Lira.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a73957cc0376dcda927478234280a9f6c" prot="public" static="no" mutable="no">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription" kindref="compound">ObjetoDescription</ref></type>
+        <definition>ObjetoDescription Faeterna.Scripts.Personaje.Lira._objectoDescription</definition>
+        <argsstring></argsstring>
+        <name>_objectoDescription</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._objectoDescription</qualifiedname>
+        <briefdescription>
+<para>Nodo que muestra la descripción de objetos al interactuar con ellos. Se asigna desde el editor y se usa para mostrar información relevante sobre objetos del juego (nombre, descripción, efectos) cuando el jugador interactúa con ellos. Aunque podría ser parte de un sistema de interacción más amplio, en este caso se incluye directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos relacionados con la interacción. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="113" column="35" bodyfile="scripts/Personaje/Lira.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a044e4a58412183294368feeb894a9907" prot="public" static="no" mutable="no">
+        <type>AudioStreamPlayer2D</type>
+        <definition>AudioStreamPlayer2D Faeterna.Scripts.Personaje.Lira.audioPlayer</definition>
+        <argsstring></argsstring>
+        <name>audioPlayer</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.audioPlayer</qualifiedname>
+        <briefdescription>
+<para>Referencias a nodos relacionados con el audio del personaje. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>El AudioStreamPlayer2D se usa para reproducir sonidos asociados a las acciones del personaje (correr, saltar, atacar, recibir daño). Los AudioStream representan los diferentes clips de audio que se asignan desde el editor y se reproducen según la acción realizada. Aunque podrían estar gestionados por un sistema de audio separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos relacionados con las acciones del personaje. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="119" column="37" bodyfile="scripts/Personaje/Lira.cs" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afbfa6ae1f9719069eaa09e743a8e2537" compoundref="Lira_8cs" startline="233" endline="274">Faeterna.Scripts.Personaje.Lira.PlayAudio</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aec7068e13215a3a526bcf4455177ad94" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._hitAudio</definition>
+        <argsstring></argsstring>
+        <name>_hitAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._hitAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="120" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa3f293ebee2536c94dd4120928b89344" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._runAudio</definition>
+        <argsstring></argsstring>
+        <name>_runAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._runAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="121" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adead0ec7447d653026a60ab824f5d5f6" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._jumpAudio</definition>
+        <argsstring></argsstring>
+        <name>_jumpAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._jumpAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="122" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afc89fbc5a008f1013d094f205076cf94" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._fallAudio</definition>
+        <argsstring></argsstring>
+        <name>_fallAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._fallAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="123" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afba390beb1e2cca2ab5517cad02152eb" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._attackAudio</definition>
+        <argsstring></argsstring>
+        <name>_attackAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._attackAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="124" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a184a59210557a4804cc3273eb8503977" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._fireBallAudio</definition>
+        <argsstring></argsstring>
+        <name>_fireBallAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._fireBallAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="125" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6b9ed530c5f5aee84359dec3dfe652ed" prot="public" static="no" mutable="no">
+        <type>AudioStream</type>
+        <definition>AudioStream Faeterna.Scripts.Personaje.Lira._dashAudio</definition>
+        <argsstring></argsstring>
+        <name>_dashAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._dashAudio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="126" column="29" bodyfile="scripts/Personaje/Lira.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9ebaf10c51338b64c9d13276def3fd98" prot="private" static="no" mutable="no">
+        <type>Camera2D</type>
+        <definition>Camera2D Faeterna.Scripts.Personaje.Lira._camera</definition>
+        <argsstring></argsstring>
+        <name>_camera</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="70" column="27" bodyfile="scripts/Personaje/Lira.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af711eca47a99e9d2bf6c25e7b5183a3e" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.Scripts.Personaje.Lira._invencibilityTimer</definition>
+        <argsstring></argsstring>
+        <name>_invencibilityTimer</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._invencibilityTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que controla la duración de la invencibilidad tras recibir daño. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="79" column="24" bodyfile="scripts/Personaje/Lira.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a2c831b4d9f1dd723488017d8a116f3de" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.Scripts.Personaje.Lira._shotArea</definition>
+        <argsstring></argsstring>
+        <name>_shotArea</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._shotArea</qualifiedname>
+        <briefdescription>
+<para>Áreas usadas para detectar colisiones de ataques (disparo y patada). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="85" column="25" bodyfile="scripts/Personaje/Lira.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4a78eb45f8c8ed4860b0792c60f61ada" prot="private" static="no" mutable="no">
+        <type>Area2D</type>
+        <definition>Area2D Faeterna.Scripts.Personaje.Lira._kickArea</definition>
+        <argsstring></argsstring>
+        <name>_kickArea</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._kickArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="86" column="25" bodyfile="scripts/Personaje/Lira.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a16174597632aa0cf61e56461804a00cd" prot="private" static="no" mutable="no">
+        <type>PackedScene</type>
+        <definition>PackedScene Faeterna.Scripts.Personaje.Lira._bullet</definition>
+        <argsstring></argsstring>
+        <name>_bullet</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._bullet</qualifiedname>
+        <briefdescription>
+<para>Escena del proyectil disparado por el personaje. Se instancia al atacar y se le asignan propiedades como dirección y posición. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="90" column="30" bodyfile="scripts/Personaje/Lira.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a66a2aa0d72cc8c7c07882aa771c1ecc4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira._tutorial</definition>
+        <argsstring></argsstring>
+        <name>_tutorial</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._tutorial</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flags de tutorial. Estas variables se usan para controlar eventos específicos del tutorial, como la aparición de mensajes o la activación de mecánicas. No afectan directamente a la jugabilidad, pero permiten personalizar la experiencia durante el tutorial. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="101" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async void</type>
+        <definition>override async void Faeterna.Scripts.Personaje.Lira._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira._Ready</qualifiedname>
+        <briefdescription>
+<para>Inicialización del nodo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtiene la referencia al AnimatedSprite2D hijo. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="131" column="36" bodyfile="scripts/Personaje/Lira.cs" bodystart="131" bodyend="142"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae3482cbc72eb6305563a39fadb80a1ce" compoundref="Lira_8cs" startline="60">Faeterna.Scripts.Personaje.Lira.animatedSprite</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a30a83cac5c09b4d9ab6a07649c4d99dd" compoundref="Lira_8cs" startline="66">Faeterna.Scripts.Personaje.Lira.AnimTree</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4545e1fc18835d490b43c39648cba501" compoundref="Lira_8cs" startline="63">Faeterna.Scripts.Personaje.Lira.MovementStateMachine</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref></type>
+        <definition>PlayerSaveData Faeterna.Scripts.Personaje.Lira.BuildSaveData</definition>
+        <argsstring>(Vector2 position)</argsstring>
+        <name>BuildSaveData</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.BuildSaveData</qualifiedname>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Construye un objeto <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref> con el estado actual del personaje, incluyendo posición, salud, maná y flags de movimiento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Este método se usa para guardar el progreso del jugador en checkpoints o al salir del juego. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se guardan como true por defecto, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador guardó mientras tenía estas habilidades disponibles. Al restaurar el juego, estas flags se resetearán a true para garantizar un estado limpio y consistente al cargar desde cualquier punto del juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición mundial del personaje que se guardará en el progreso. Esta posición se usa para colocar al personaje correctamente al cargar el juego desde un checkpoint o al restaurar el progreso. Es importante que esta posición sea precisa y corresponda a un punto válido en la escena para evitar problemas de colisiones o ubicaciones no deseadas al cargar el juego. Generalmente, esta posición se obtiene del nodo del personaje (GlobalPosition) al momento de guardar el progreso. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un objeto <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref> que contiene la información necesaria para restaurar el estado del personaje al cargar el juego. Este objeto incluye la posición, salud, maná y flags de movimiento (aunque estas últimas se guardan como true por defecto). El objeto resultante se serializa y se almacena en el sistema de guardado para su posterior recuperación. Al cargar el juego, se aplicará esta información al personaje para restaurar su estado de manera consistente con el momento en que se guardó. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="174" column="31" bodyfile="scripts/Personaje/Lira.cs" bodystart="174" bodyend="188"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" compoundref="Lira_8cs" startline="37">Faeterna.Scripts.Personaje.Lira._currentHealth</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" compoundref="Lira_8cs" startline="40">Faeterna.Scripts.Personaje.Lira._currentMana</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab6f5a70191a5de80730b38f3d9afccd8" compoundref="Lira_8cs" startline="51">Faeterna.Scripts.Personaje.Lira.CoyoteAvailable</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a59edde91fe9749ba746b73544d4070ad" compoundref="Lira_8cs" startline="48">Faeterna.Scripts.Personaje.Lira.DashAvailable</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a26164369cbfa19f9b87612f472b9d194" compoundref="Lira_8cs" startline="45">Faeterna.Scripts.Personaje.Lira.DoubleJumpAvailable</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1a2f5fde47bb2faccc4651ef37a6ef82a9" compoundref="Saves_8cs" startline="243" endline="258">Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.ApplySaveData</definition>
+        <argsstring>(PlayerSaveData saveData)</argsstring>
+        <name>ApplySaveData</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.ApplySaveData</qualifiedname>
+        <param>
+          <type><ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref></type>
+          <declname>saveData</declname>
+        </param>
+        <briefdescription>
+<para>Aplica los datos de guardado al personaje, restaurando su posición, salud, maná y reseteando las flags de movimiento a true. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Este método se usa al cargar el juego desde un checkpoint o al restaurar el progreso para colocar al personaje en el estado correcto. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado, ya que son transitorias y se manejan exclusivamente por la máquina de estados. Guardarlas con su valor actual podría causar inconsistencias al cargar el juego, como permitir saltos infinitos o dashes múltiples si el jugador cargó mientras tenía estas habilidades disponibles. Al aplicar los datos de guardado, se garantiza un estado limpio y consistente para el personaje al cargar desde cualquier punto del juego.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>saveData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un objeto <ref refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" kindref="compound">PlayerSaveData</ref> que contiene la información guardada del personaje, incluyendo posición, salud, maná y flags de movimiento. Este objeto se obtiene al cargar el juego desde un checkpoint o al restaurar el progreso. Al aplicar esta información al personaje, se restaurará su estado de manera consistente con el momento en que se guardó, asegurando que la posición, salud y maná sean correctos. Es importante destacar que las flags de movimiento (DoubleJumpAvailable, DashAvailable, CoyoteAvailable) se resetean a true independientemente del valor guardado para evitar inconsistencias en la jugabilidad al cargar el juego. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="196" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="196" bodyend="212"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" compoundref="Lira_8cs" startline="37">Faeterna.Scripts.Personaje.Lira._currentHealth</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" compoundref="Lira_8cs" startline="40">Faeterna.Scripts.Personaje.Lira._currentMana</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab6f5a70191a5de80730b38f3d9afccd8" compoundref="Lira_8cs" startline="51">Faeterna.Scripts.Personaje.Lira.CoyoteAvailable</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a59edde91fe9749ba746b73544d4070ad" compoundref="Lira_8cs" startline="48">Faeterna.Scripts.Personaje.Lira.DashAvailable</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a26164369cbfa19f9b87612f472b9d194" compoundref="Lira_8cs" startline="45">Faeterna.Scripts.Personaje.Lira.DoubleJumpAvailable</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1ab949359b03caef04e37650f26e536138" compoundref="GameSaveData_8cs" startline="41" endline="41">Faeterna.Scripts.Tools.PlayerSaveData.Health</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1a0f927b15478d4ad612d4a30678c39ac7" compoundref="GameSaveData_8cs" startline="44" endline="44">Faeterna.Scripts.Tools.PlayerSaveData.Mana</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData_1aabe9bb96353d7d5fb7616941c96a3840" compoundref="GameSaveData_8cs" startline="61" endline="68">Faeterna.Scripts.Tools.PlayerSaveData.Position</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a473349739f5bbff8a5a67d5107ea7dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.SetAnimation</definition>
+        <argsstring>(string animationName)</argsstring>
+        <name>SetAnimation</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.SetAnimation</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>animationName</declname>
+        </param>
+        <briefdescription>
+<para>Reproduce una animación en el AnimatedSprite2D hijo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Método auxiliar usado por los estados para cambiar la animación. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="218" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="218" bodyend="225"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae3482cbc72eb6305563a39fadb80a1ce" compoundref="Lira_8cs" startline="60">Faeterna.Scripts.Personaje.Lira.animatedSprite</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afbfa6ae1f9719069eaa09e743a8e2537" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.PlayAudio</definition>
+        <argsstring>(string audioName)</argsstring>
+        <name>PlayAudio</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.PlayAudio</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>audioName</declname>
+        </param>
+        <briefdescription>
+<para>Reproduce un sonido específico según el nombre proporcionado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Este método se usa para reproducir los diferentes efectos de sonido asociados a las acciones del personaje (correr, saltar, atacar, recibir daño). El método asigna el clip de audio correspondiente al AudioStreamPlayer2D y lo reproduce. Si se proporciona un nombre de audio desconocido, se imprime un error en la consola. Es importante asegurarse de que el AudioStreamPlayer2D esté correctamente asignado en el editor para evitar errores al intentar reproducir sonidos.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>audioName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del audio a reproducir. Este nombre se usa para identificar qué clip de audio asignar al AudioStreamPlayer2D antes de reproducirlo. Los nombres válidos son: &quot;run&quot;, &quot;jump&quot;, &quot;fall&quot;, &quot;attack&quot;, &quot;fireball&quot;, &quot;dash&quot;, &quot;hit&quot; e &quot;idle&quot;. Cada nombre corresponde a un clip de audio específico que debe ser asignado en el editor. Si se proporciona un nombre que no coincide con ninguno de los casos definidos, se imprimirá un error indicando que el nombre de audio es desconocido. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="233" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="233" bodyend="274"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a044e4a58412183294368feeb894a9907" compoundref="Lira_8cs" startline="119">Faeterna.Scripts.Personaje.Lira.audioPlayer</references>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" compoundref="Lira_8cs" startline="281" endline="301">Faeterna.Scripts.Personaje.Lira.TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async void</type>
+        <definition>async void Faeterna.Scripts.Personaje.Lira.TakeDamage</definition>
+        <argsstring>(int amount, Vector2 attackerPosition)</argsstring>
+        <name>TakeDamage</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.TakeDamage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>attackerPosition</declname>
+        </param>
+        <briefdescription>
+<para>Aplica daño al personaje, reduciendo su salud y reproduciendo un efecto de flash en los corazones de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de puntos de vida a restar.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attackerPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición mundial del atacante, usada para calcular la dirección del knockback.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="281" column="27" bodyfile="scripts/Personaje/Lira.cs" bodystart="281" bodyend="301"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" compoundref="Lira_8cs" startline="37">Faeterna.Scripts.Personaje.Lira._currentHealth</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4545e1fc18835d490b43c39648cba501" compoundref="Lira_8cs" startline="63">Faeterna.Scripts.Personaje.Lira.MovementStateMachine</references>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afbfa6ae1f9719069eaa09e743a8e2537" compoundref="Lira_8cs" startline="233" endline="274">Faeterna.Scripts.Personaje.Lira.PlayAudio</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71b5a5639661f4fcb0a64ee71a8a24f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.Heal</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>Heal</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Heal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Cura al personaje, aumentando su salud hasta el máximo permitido y actualizando la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de puntos de vida a restaurar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="329" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="329" bodyend="334"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" compoundref="Lira_8cs" startline="37">Faeterna.Scripts.Personaje.Lira._currentHealth</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aedd7ef8fd71728d873cc418115728afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.UseMana</definition>
+        <argsstring>(float amount)</argsstring>
+        <name>UseMana</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.UseMana</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Consume maná del personaje y actualiza la barra de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de maná a gastar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="350" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="350" bodyend="356"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" compoundref="Lira_8cs" startline="40">Faeterna.Scripts.Personaje.Lira._currentMana</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a11d993a2339b30e612daa6d6dc6fe527" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.RecoverMana</definition>
+        <argsstring>(float amount)</argsstring>
+        <name>RecoverMana</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.RecoverMana</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Recupera maná del personaje hasta el máximo permitido y actualiza la barra de la interfaz. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad de maná a recuperar.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="362" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="362" bodyend="367"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" compoundref="Lira_8cs" startline="40">Faeterna.Scripts.Personaje.Lira._currentMana</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a718d487a93a375d1c8a0d1cc36c9199c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.FlipH</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>FlipH</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.FlipH</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="369" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="369" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aaf8e1f44d73d07db2086a23060468f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.Shooting</definition>
+        <argsstring>(double manaCost, double shotBallScale)</argsstring>
+        <name>Shooting</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.Shooting</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>manaCost</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>shotBallScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="388" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="388" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6a86c9cc99dea7bf869f98467bc9b99a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.OnKickHitboxAreaEntered</definition>
+        <argsstring>(Area2D area)</argsstring>
+        <name>OnKickHitboxAreaEntered</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.OnKickHitboxAreaEntered</qualifiedname>
+        <param>
+          <type>Area2D</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="410" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="410" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1abad9492261e1ee56cc7837c81458a5b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.GiveDoubleJump</definition>
+        <argsstring>()</argsstring>
+        <name>GiveDoubleJump</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.GiveDoubleJump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="416" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab707959bd8d63e3e1e271d1eefabb603" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.GiveDash</definition>
+        <argsstring>()</argsstring>
+        <name>GiveDash</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.GiveDash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="420" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a27ef457db4a4d31b9235c232cc1a0379" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.HasDoubleJump</definition>
+        <argsstring>()</argsstring>
+        <name>HasDoubleJump</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.HasDoubleJump</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="424" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="424" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a5b1901460c6675c142add9d9c799a140" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.Lira.HasDash</definition>
+        <argsstring>()</argsstring>
+        <name>HasDash</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.HasDash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="425" column="21" bodyfile="scripts/Personaje/Lira.cs" bodystart="425" bodyend="425"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Faeterna.Scripts.Personaje.Lira.TryLoadFromActiveSlotAsync</definition>
+        <argsstring>()</argsstring>
+        <name>TryLoadFromActiveSlotAsync</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.TryLoadFromActiveSlotAsync</qualifiedname>
+        <briefdescription>
+<para>Intenta cargar el progreso guardado desde la ranura activa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Si se encuentra un guardado válido, se aplica al personaje. Si el guardado corresponde a una escena diferente a la actual, no se carga para evitar inconsistencias. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="147" column="28" bodyfile="scripts/Personaje/Lira.cs" bodystart="147" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a628c266a9fcb4bd6e0e6f0d6c4b2f928" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.UpdateHearts</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateHearts</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.UpdateHearts</qualifiedname>
+        <briefdescription>
+<para>Actualiza visualmente los corazones de la interfaz según la salud actual. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="306" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="306" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a39c9cbf69eaee2fb7a16a1fd532cf958" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Lira.UpdateMana</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateMana</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Lira.UpdateMana</qualifiedname>
+        <briefdescription>
+<para>Actualiza visualmente la barra de maná de la interfaz según el maná actual. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Lira.cs" line="339" column="22" bodyfile="scripts/Personaje/Lira.cs" bodystart="339" bodyend="344"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceFaeterna_1_1Scripts_1_1Personaje" kindref="compound">Personaje</ref> principal del juego (<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gestiona salud, maná, animaciones y las banderas de movimiento utilizadas por la máquina de estados. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.Lira</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CharacterBody2D</label>
+      </node>
+      <node id="9">
+        <label>Control</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.Lira</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>MovementStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>AnimTree</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>terrainParticles</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_deathScreen</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_objectoDescription</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Faeterna.Scripts.Menus.DeathScreen</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1DeathScreen"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Faeterna.Scripts.Menus.ObjetoDescription</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Menus_1_1ObjetoDescription"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Faeterna.Scripts.Personaje.LiraAnimationTree</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Faeterna.scripts.Personaje.TerrainParticles</label>
+        <link refid="classFaeterna_1_1scripts_1_1Personaje_1_1TerrainParticles"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GpuParticles2D</label>
+      </node>
+      <node id="4">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/Lira.cs" line="19" column="19" bodyfile="scripts/Personaje/Lira.cs" bodystart="20" bodyend="426"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afba390beb1e2cca2ab5517cad02152eb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_attackAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a16174597632aa0cf61e56461804a00cd" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_bullet</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9ebaf10c51338b64c9d13276def3fd98" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_camera</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9fdbed78b76cb194576032bd23145def" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_currentHealth</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae6b65d2fd2c4df189be71d50a8fe3634" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_currentMana</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6b9ed530c5f5aee84359dec3dfe652ed" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_dashAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a092bb8d96f3a731751ec9681f2bbdee7" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_deathScreen</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afc89fbc5a008f1013d094f205076cf94" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_fallAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a184a59210557a4804cc3273eb8503977" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_fireBallAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0f93d916c311ba2eaefa194caeb57e3" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_haveDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a7b7063693131a5bd6367d364276d712d" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_haveDobleJump</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac9afdfa0cf295e81ba05f85a5b90ac03" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_hearts</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aec7068e13215a3a526bcf4455177ad94" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_hitAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af711eca47a99e9d2bf6c25e7b5183a3e" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_invencibilityTimer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adead0ec7447d653026a60ab824f5d5f6" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_jumpAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4a78eb45f8c8ed4860b0792c60f61ada" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_kickArea</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a3101fa600e9af384d0a0a0c50acaca4c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_manaBar</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a73957cc0376dcda927478234280a9f6c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_objectoDescription</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a0f91dd5dfad3358ab45f745e50192990" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa3f293ebee2536c94dd4120928b89344" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_runAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a2c831b4d9f1dd723488017d8a116f3de" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_shotArea</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a66a2aa0d72cc8c7c07882aa771c1ecc4" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>_tutorial</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae3482cbc72eb6305563a39fadb80a1ce" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>animatedSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a30a83cac5c09b4d9ab6a07649c4d99dd" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>AnimTree</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a57bcd5b2fd4fefab657ca0c69004707e" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>ApplySaveData</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a044e4a58412183294368feeb894a9907" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>audioPlayer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4ea24d2a414993531c604ab71de8edf1" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>BuildSaveData</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8d75b1f2f734a49ebe688890b36cb113" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>cameraInitPos</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab6f5a70191a5de80730b38f3d9afccd8" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>CoyoteAvailable</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a59edde91fe9749ba746b73544d4070ad" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>DashAvailable</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a28cdf9fcfd09261fa56eeb33d82d4f05" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>dobleSaltoParticulas</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a26164369cbfa19f9b87612f472b9d194" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>DoubleJumpAvailable</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a718d487a93a375d1c8a0d1cc36c9199c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>FlipH</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ab707959bd8d63e3e1e271d1eefabb603" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>GiveDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1abad9492261e1ee56cc7837c81458a5b3" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>GiveDoubleJump</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ad2666add49fd8c25523eb909234452c5" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Gravity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a5b1901460c6675c142add9d9c799a140" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>HasDash</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a27ef457db4a4d31b9235c232cc1a0379" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>HasDoubleJump</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71b5a5639661f4fcb0a64ee71a8a24f0" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Heal</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1adc7e871f936faca2da3f07a79c35e664" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Health</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1af0146a149da86644e8dbb4bfe30ae994" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>IsInvulnerableByState</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae12388d45bd6a2470802f3eb7e7b8eaa" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>ItsFliped</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4638dfafa13d542118d6fb8f2352ad6c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>JumpVelocity</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a76b78cff286e05cd23a7e94cb3533ae9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>KnockbackForceX</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a368e9483bb19262dd5e6faaf2f733bd7" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>KnockbackForceY</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ac0a76dcc98d202e2b7a1bc3d67596145" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Mana</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a4545e1fc18835d490b43c39648cba501" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>MovementStateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a6a86c9cc99dea7bf869f98467bc9b99a" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>OnKickHitboxAreaEntered</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1afbfa6ae1f9719069eaa09e743a8e2537" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>PlayAudio</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a11d993a2339b30e612daa6d6dc6fe527" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>RecoverMana</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a9dedc2284a162f6970275d3884ce49db" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>saltoParticulas</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a473349739f5bbff8a5a67d5107ea7dfa" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>SetAnimation</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aaf8e1f44d73d07db2086a23060468f50" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Shooting</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a71764f040a67eb9871c61aa91f908635" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>Speed</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aa1858e5c34c53eae5846ae08c51f3c4c" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>TakeDamage</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1ae27974ec747eab514d16dfd9f0940f94" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>terrainParticles</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a8f79c9b0bff8aa8f66354c8eb6af4a71" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>TryLoadFromActiveSlotAsync</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a628c266a9fcb4bd6e0e6f0d6c4b2f928" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>UpdateHearts</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1a39c9cbf69eaee2fb7a16a1fd532cf958" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>UpdateMana</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira_1aedd7ef8fd71728d873cc418115728afb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Lira</scope><name>UseMana</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

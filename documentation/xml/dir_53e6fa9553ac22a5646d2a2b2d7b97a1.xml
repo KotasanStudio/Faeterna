@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir">
+    <compoundname>scripts</compoundname>
+    <innerdir refid="dir_ab60a29d0fda7f87878ad5010c614acb">scripts/Enemigos</innerdir>
+    <innerdir refid="dir_4059abcc393a55e7289898d8fe420d4c">scripts/Mapa</innerdir>
+    <innerdir refid="dir_21292c98d8eb0585eba55c20fc1ef9f0">scripts/Menus</innerdir>
+    <innerdir refid="dir_1d2a5dffac4f6784c1476d5149160169">scripts/Personaje</innerdir>
+    <innerdir refid="dir_097fc0341e4a200822ee6198f8e51564">scripts/Tools</innerdir>
+    <innerdir refid="dir_ea3e816f11af3a1c7b07cc613edb63d1">scripts/Tutorial</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/"/>
+  </compounddef>
+</doxygen>

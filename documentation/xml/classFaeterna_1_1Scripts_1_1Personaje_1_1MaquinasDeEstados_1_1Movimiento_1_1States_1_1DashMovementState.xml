@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.State</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a7a2d3917db5982d18fe246810dd9073a" prot="private" static="no" mutable="no">
+        <type>PlayerType</type>
+        <definition>PlayerType Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._player</qualifiedname>
+        <briefdescription>
+<para>Referencia al jugador (<ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>) para acceder a su estado y controlar su movimiento durante el dash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="14" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a5a879f207dfd5fedca3133e467a6ade3" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashDurationTimer</definition>
+        <argsstring></argsstring>
+        <name>_dashDurationTimer</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashDurationTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que controla la duración del dash (cuánto tiempo dura el impulso). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="17" column="23" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1acdea8c6c7c15a72c8b2fb4a9c2362dc0" prot="private" static="no" mutable="no">
+        <type>Timer</type>
+        <definition>Timer Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashCooldownTimer</definition>
+        <argsstring></argsstring>
+        <name>_dashCooldownTimer</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashCooldownTimer</qualifiedname>
+        <briefdescription>
+<para>Timer que controla el cooldown antes de poder volver a hacer dash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="20" column="23" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a0e6a5f9fc3584211f5ecd06c1a98f506" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashDirection</definition>
+        <argsstring></argsstring>
+        <name>_dashDirection</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._dashDirection</qualifiedname>
+        <briefdescription>
+<para>Dirección horizontal del dash (1 = derecha, -1 = izquierda). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="23" column="23" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a2dfbcdff87598489333a2c1bf22639ad" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._isDashing</definition>
+        <argsstring></argsstring>
+        <name>_isDashing</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState._isDashing</qualifiedname>
+        <briefdescription>
+<para>Indica si el dash sigue activo (en impulso) o ya terminó y esperamos transición. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="26" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a1cb3b053d49b9ea8e5460791b92364b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override async void</type>
+        <definition>override async void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Ready</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890">Ready</reimplements>
+        <briefdescription>
+<para>Se invoca una sola vez cuando se inicializa el nodo/estado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="28" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="28" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ae3750b81885b71fffaf6386c048bc306" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Enter</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a">Enter</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado empieza (se entra en él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="41" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="41" bodyend="69"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1adaea720831db65bfb3de998bcea8e089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.UpdatePhysics</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>UpdatePhysics</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.UpdatePhysics</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e">UpdatePhysics</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización en el paso de física (_PhysicsProcess). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde la última física.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="71" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1aebc7af6ef005b53e0d1e84b66443897b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.HandleInput</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68">HandleInput</reimplements>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>No procesamos input durante el dash (invulnerabilidad de frames). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="81" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a3135b4780aebfcca7121e166b06e282d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.Exit</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e">Exit</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado termina (se sale de él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="83" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="83" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ad406a0706ee84e32927e9638798d8ada" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.OnDashFinished</definition>
+        <argsstring>()</argsstring>
+        <name>OnDashFinished</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.OnDashFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="90" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a701ff7b27c09d3137175e1532cc970b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.OnCooldownFinished</definition>
+        <argsstring>()</argsstring>
+        <name>OnCooldownFinished</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState.OnCooldownFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="98" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="98" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Estado que representa el movimiento de dash (impulso rápido horizontal) de <ref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Lira" kindref="compound">Lira</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.DashMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" line="11" column="19" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DashMovementState.cs" bodystart="12" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1acdea8c6c7c15a72c8b2fb4a9c2362dc0" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>_dashCooldownTimer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a0e6a5f9fc3584211f5ecd06c1a98f506" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>_dashDirection</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a5a879f207dfd5fedca3133e467a6ade3" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>_dashDurationTimer</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a2dfbcdff87598489333a2c1bf22639ad" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>_isDashing</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a7a2d3917db5982d18fe246810dd9073a" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>_player</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ae3750b81885b71fffaf6386c048bc306" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a3135b4780aebfcca7121e166b06e282d" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1aebc7af6ef005b53e0d1e84b66443897b" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a701ff7b27c09d3137175e1532cc970b6" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>OnCooldownFinished</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1ad406a0706ee84e32927e9638798d8ada" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>OnDashFinished</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1a1cb3b053d49b9ea8e5460791b92364b2" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1DashMovementState_1adaea720831db65bfb3de998bcea8e089" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::DashMovementState</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

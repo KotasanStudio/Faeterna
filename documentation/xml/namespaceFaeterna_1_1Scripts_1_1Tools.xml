@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Tools" kind="namespace" language="C#">
+    <compoundname>Faeterna::Scripts::Tools</compoundname>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools" prot="public">Faeterna::Scripts::Tools::ButtonTools</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1CheckPoint" prot="public">Faeterna::Scripts::Tools::CheckPoint</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameData" prot="public">Faeterna::Scripts::Tools::GameData</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1PlayerSaveData" prot="public">Faeterna::Scripts::Tools::PlayerSaveData</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1GameSaveService" prot="public">Faeterna::Scripts::Tools::GameSaveService</innerclass>
+    <innerclass refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves" prot="public">Faeterna::Scripts::Tools::Saves</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceFaeterna_1_1Scripts_1_1Tools_1a968d029d9f05c6841e815736207724c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>record</type>
+        <definition>record Faeterna.Scripts.Tools.OptionsData</definition>
+        <argsstring>(int Antialiasing, int Vsync, int Screen, int FpsLock, int FpsValue, int Shadows, float Master, float Music, float SoundFx, float Enviroment, float UiSound)</argsstring>
+        <name>OptionsData</name>
+        <qualifiedname>Faeterna.Scripts.Tools.OptionsData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Antialiasing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Vsync</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Screen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>FpsLock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>FpsValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Shadows</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Master</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Music</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>SoundFx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Enviroment</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UiSound</declname>
+        </param>
+        <briefdescription>
+<para>Registro que contiene los datos de configuración de opciones del juego, incluyendo ajustes de video (antialiasing, vsync, modo de pantalla, FPS, calidad de sombras) y audio (volumen maestro, música, efectos de sonido, ambiente, sonidos UI). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Se utiliza para serializar y deserializar las opciones de usuario. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Tools/Saves.cs" line="14" column="19" declfile="scripts/Tools/Saves.cs" declline="14" declcolumn="19"/>
+        <referencedby refid="classFaeterna_1_1Scripts_1_1Tools_1_1Saves_1ad88f9e7e1f5a133bc2cad5e9dca8d370" compoundref="Saves_8cs" startline="147" endline="162">Faeterna.Scripts.Tools.Saves.LoadOptions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Tools/ButtonTools.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

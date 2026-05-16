@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData" kind="class" language="C#" prot="private" sealed="yes">
+    <compoundname>Faeterna::scripts::Mapa::Objeto::ItemData</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a3ab2608193698b951eb61f5270ce00e2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.scripts.Mapa.Objeto.ItemData.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Objeto.cs" line="136" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.scripts.Mapa.Objeto.ItemData.AnimationPath</definition>
+        <argsstring></argsstring>
+        <name>AnimationPath</name>
+        <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.AnimationPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Objeto.cs" line="137" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.scripts.Mapa.Objeto.ItemData.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Objeto.cs" line="138" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="property" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1af0be4fff3b7f775863cace7b7498104e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Faeterna.scripts.Mapa.Objeto.ItemData.History</definition>
+        <argsstring></argsstring>
+        <name>History</name>
+        <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.History</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Objeto.cs" line="139" column="27" bodyfile="scripts/Mapa/Objeto.cs" bodystart="139" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</definition>
+        <argsstring>(string name, string animationPath, string description, string history)</argsstring>
+        <name>ItemData</name>
+        <qualifiedname>Faeterna.scripts.Mapa.Objeto.ItemData.ItemData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>animationPath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>description</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>history</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Mapa/Objeto.cs" line="141" column="20" bodyfile="scripts/Mapa/Objeto.cs" bodystart="141" bodyend="147"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scripts/Mapa/Objeto.cs" line="134" column="16" bodyfile="scripts/Mapa/Objeto.cs" bodystart="135" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a23c229f5cd8c4a4861ab2a64aa17ab4a" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>AnimationPath</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1ae0b9a4fe6b959d5cdd823c34286400b4" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>Description</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1af0be4fff3b7f775863cace7b7498104e" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>History</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a25927a2192dc4842f6742d3de727d8ce" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>ItemData</name></member>
+      <member refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto_1_1ItemData_1a3ab2608193698b951eb61f5270ce00e2" prot="public" virt="non-virtual"><scope>Faeterna::scripts::Mapa::Objeto::ItemData</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

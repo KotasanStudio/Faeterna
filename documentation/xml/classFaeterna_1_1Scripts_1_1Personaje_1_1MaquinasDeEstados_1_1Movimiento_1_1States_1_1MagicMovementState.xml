@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.State</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a574e9f902c8bd1a8be4d0f37f659db38" prot="private" static="no" mutable="no">
+        <type>PlayerType</type>
+        <definition>PlayerType Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="9" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a793dec1ebe2d262823b6b6054b8841e9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._maxShotBallScale</definition>
+        <argsstring></argsstring>
+        <name>_maxShotBallScale</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._maxShotBallScale</qualifiedname>
+        <initializer>= 4f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="10" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1acb7f44e0bf344c002ab5a825ca8f0cc9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._defaultManaCost</definition>
+        <argsstring></argsstring>
+        <name>_defaultManaCost</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._defaultManaCost</qualifiedname>
+        <initializer>= 20f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="11" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a6ad101e4f081f4d5c869cc86bc43d658" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._maxManaCost</definition>
+        <argsstring></argsstring>
+        <name>_maxManaCost</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._maxManaCost</qualifiedname>
+        <initializer>= 100f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="12" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ad8df8648e999a48c039a92c2de08ea65" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._manaCost</definition>
+        <argsstring></argsstring>
+        <name>_manaCost</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._manaCost</qualifiedname>
+        <initializer>= 20f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="13" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a94a3304811618c2c5067a0cdb0140e8a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._isShooted</definition>
+        <argsstring></argsstring>
+        <name>_isShooted</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._isShooted</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="14" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a741737b09ce9b16cb42b52e135e9aa31" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._defaultShotBallScale</definition>
+        <argsstring></argsstring>
+        <name>_defaultShotBallScale</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._defaultShotBallScale</qualifiedname>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="15" column="24" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a5600038c6af164c6372da4272999e92c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._shotBallScale</definition>
+        <argsstring></argsstring>
+        <name>_shotBallScale</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState._shotBallScale</qualifiedname>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="16" column="32" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a8f8fa998191b488ec6a74672eb1a2176" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override async void</type>
+        <definition>override async void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Ready</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890">Ready</reimplements>
+        <briefdescription>
+<para>Se invoca una sola vez cuando se inicializa el nodo/estado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="17" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ac85e6d9f32a06d92edde265cfa263639" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Enter</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a">Enter</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado empieza (se entra en él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="24" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a3438b58da060b9427a31ca42be607c5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Update</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.Update</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53">Update</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización por frame (non-physics). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="30" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="30" bodyend="73"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1abd1912da7b2d7c1796b19ec10ce8f7df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override async void</type>
+        <definition>override async void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.HandleInput</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68">HandleInput</reimplements>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Procesa eventos de entrada no manejados (unhandled input). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Evento de entrada recibido.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="75" column="36" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="75" bodyend="84"/>
+        <references refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" compoundref="State_8cs" startline="17">Faeterna.Scripts.Personaje.MaquinasDeEstados.State.stateMachine</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a98aefca6d5e6b6fa4d4086c986eb4c63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.resetShotParameters</definition>
+        <argsstring>()</argsstring>
+        <name>resetShotParameters</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState.resetShotParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="86" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="86" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States.MagicMovementState</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" line="7" column="15" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/MagicMovementState.cs" bodystart="8" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1acb7f44e0bf344c002ab5a825ca8f0cc9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_defaultManaCost</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a741737b09ce9b16cb42b52e135e9aa31" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_defaultShotBallScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a94a3304811618c2c5067a0cdb0140e8a" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_isShooted</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ad8df8648e999a48c039a92c2de08ea65" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_manaCost</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a6ad101e4f081f4d5c869cc86bc43d658" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_maxManaCost</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a793dec1ebe2d262823b6b6054b8841e9" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_maxShotBallScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a574e9f902c8bd1a8be4d0f37f659db38" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_player</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a5600038c6af164c6372da4272999e92c" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>_shotBallScale</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1ac85e6d9f32a06d92edde265cfa263639" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1abd1912da7b2d7c1796b19ec10ce8f7df" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a8f8fa998191b488ec6a74672eb1a2176" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a98aefca6d5e6b6fa4d4086c986eb4c63" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>resetShotParameters</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1States_1_1MagicMovementState_1a3438b58da060b9427a31ca42be607c5d" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" prot="public" virt="virtual"><scope>Faeterna::Scripts::Personaje::MaquinasDeEstados::Movimiento::States::MagicMovementState</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

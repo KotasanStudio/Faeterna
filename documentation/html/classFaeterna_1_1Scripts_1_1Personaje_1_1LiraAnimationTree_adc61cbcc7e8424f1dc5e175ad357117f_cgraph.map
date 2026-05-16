@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Personaje.LiraAnimationTree.PlayKick" name="Faeterna.Scripts.Personaje.LiraAnimationTree.PlayKick">
+<area shape="rect" id="Node000001" title="Lanza la animación de kick." alt="" coords="5,5,205,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1LiraAnimationTree.html#a0bbca040f989c388797134172636a9a7" title="Salta directamente al estado sin blend (útil para interrupciones)." alt="" coords="253,5,451,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,25,240,27,234,28,205,30"/>
+</map>

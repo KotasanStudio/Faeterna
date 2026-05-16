@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Tools.Saves.LoadAsync" name="Faeterna.Scripts.Tools.Saves.LoadAsync">
+<area shape="rect" id="Node000001" title="Carga los datos de una partida desde el slot especificado desde el almacenamiento persistente." alt="" coords="264,5,474,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#aaa8ef2500d1a69f77d611335995b2ef3" title="Carga los datos de la partida guardada en el slot activo." alt="" coords="5,5,216,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,28,216,30,216,25,250,28"/>
+</map>

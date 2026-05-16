@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync" name="Faeterna.Scripts.Tools.Saves.SaveCheckpointAsync">
+<area shape="rect" id="Node000001" title="Guarda el progreso de un checkpoint y genera una imagen de vista previa del estado actual del juego." alt="" coords="5,40,216,85"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Personaje_1_1Lira.html#a4ea24d2a414993531c604ab71de8edf1" title="Construye un objeto PlayerSaveData con el estado actual del personaje, incluyendo posición,..." alt="" coords="270,5,468,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,46,257,42,252,44,217,51"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1Saves.html#a007c22a5b366ccbdadb3a52c8ab15ccb" title="Guarda los datos de una partida en el slot especificado usando el sistema de archivo persistente." alt="" coords="264,75,474,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,74,251,81,245,81,216,79"/>
+</map>

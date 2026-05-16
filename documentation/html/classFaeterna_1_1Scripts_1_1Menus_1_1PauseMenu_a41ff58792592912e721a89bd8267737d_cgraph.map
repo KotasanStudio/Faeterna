@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Menus.PauseMenu._Ready" name="Faeterna.Scripts.Menus.PauseMenu._Ready">
+<area shape="rect" id="Node000001" title="Se llama cuando el nodo entra en la escena." alt="" coords="5,5,222,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Menus_1_1PauseMenu.html#aa2aa974e576c7c727daee624d37e31f5" title="Reanuda el juego desde el estado de pausa." alt="" coords="270,5,486,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,25,257,28,251,28,222,30"/>
+<area shape="rect" id="Node000003" href="$classFaeterna_1_1Scripts_1_1Tools_1_1ButtonTools.html#a8fa2d12ffaa71962de597446ba451f54" title="Reproduce una animación de &quot;press&quot; en el botón: se encoge, luego rebota más grande de lo normal y vue..." alt="" coords="534,5,744,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,25,521,28,516,28,487,30"/>
+</map>

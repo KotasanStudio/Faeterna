@@ -1,0 +1,7 @@
+<map id="Faeterna.Scripts.Enemigos.Slime.Slime" name="Faeterna.Scripts.Enemigos.Slime.Slime">
+<area shape="rect" id="Node000001" title="Enemigo tipo Slime que salta periódicamente." alt="" coords="5,174,204,218"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html" title="Clase base para todos los enemigos del juego." alt="" coords="5,81,204,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,139,107,174,102,173,103,143"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="37,5,172,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,46,107,81,102,80,104,51"/>
+</map>

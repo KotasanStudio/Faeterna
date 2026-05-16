@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::Scripts::Personaje::Shot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Area2D</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a47dbbe76320c78394ae566719b6c9974" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Personaje.Shot.Speed</definition>
+        <argsstring></argsstring>
+        <name>Speed</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.Speed</qualifiedname>
+        <initializer>= 450f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="8" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ab6068d84b5e8614d5901a8bdeacca465" prot="private" static="no" mutable="no">
+        <type>AnimatedSprite2D</type>
+        <definition>AnimatedSprite2D Faeterna.Scripts.Personaje.Shot._animatedSprite</definition>
+        <argsstring></argsstring>
+        <name>_animatedSprite</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot._animatedSprite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="10" column="35" bodyfile="scripts/Personaje/Shot.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a2bdddfea2e2a8d9dd8265c80ff5d7303" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Faeterna.Scripts.Personaje.Shot.Direction</definition>
+        <argsstring></argsstring>
+        <name>Direction</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.Direction</qualifiedname>
+        <initializer>= Vector2.Zero</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="11" column="24" bodyfile="scripts/Personaje/Shot.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a249a64cc206d50465270a5478e13c329" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Faeterna.Scripts.Personaje.Shot.ManaCost</definition>
+        <argsstring></argsstring>
+        <name>ManaCost</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.ManaCost</qualifiedname>
+        <initializer>= 20f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="12" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a98b95ad862c80e8e526b93ec24ec27e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.Shot._Ready</definition>
+        <argsstring>()</argsstring>
+        <name>_Ready</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot._Ready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="15" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.Scripts.Personaje.Shot._Process</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>_Process</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot._Process</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="20" column="30" bodyfile="scripts/Personaje/Shot.cs" bodystart="20" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a7c292ad729364fba8adb7bba2d421966" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Shot.OnAreaEntered</definition>
+        <argsstring>(Area2D area)</argsstring>
+        <name>OnAreaEntered</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.OnAreaEntered</qualifiedname>
+        <param>
+          <type>Area2D</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Handles logic when another Area2D enters the monitored area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Area2D instance that has entered the area. Cannot be null.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="39" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a8babf0dada168b0bb193214a3833d277" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Shot.OnBodyEntered</definition>
+        <argsstring>(Node body)</argsstring>
+        <name>OnBodyEntered</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.OnBodyEntered</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Elimina la bala al chocar con el terreno. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="45" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.Scripts.Personaje.Shot.HandleCollision</definition>
+        <argsstring>(Node node)</argsstring>
+        <name>HandleCollision</name>
+        <qualifiedname>Faeterna.Scripts.Personaje.Shot.HandleCollision</qualifiedname>
+        <param>
+          <type>Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/Shot.cs" line="50" column="22" bodyfile="scripts/Personaje/Shot.cs" bodystart="50" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.Shot</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Area2D</label>
+      </node>
+      <node id="1">
+        <label>Faeterna.Scripts.Personaje.Shot</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/Shot.cs" line="6" column="19" bodyfile="scripts/Personaje/Shot.cs" bodystart="7" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ab6068d84b5e8614d5901a8bdeacca465" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>_animatedSprite</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ad1b39982e500a3646c78fba6a0396697" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>_Process</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a98b95ad862c80e8e526b93ec24ec27e4" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>_Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a2bdddfea2e2a8d9dd8265c80ff5d7303" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>Direction</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1ac94a38b212730645d238baa6249c7498" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>HandleCollision</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a249a64cc206d50465270a5478e13c329" prot="public" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>ManaCost</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a7c292ad729364fba8adb7bba2d421966" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>OnAreaEntered</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a8babf0dada168b0bb193214a3833d277" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>OnBodyEntered</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1Shot_1a47dbbe76320c78394ae566719b6c9974" prot="private" virt="non-virtual"><scope>Faeterna::Scripts::Personaje::Shot</scope><name>Speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

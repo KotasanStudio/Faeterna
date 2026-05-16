@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState" kind="class" language="C#" prot="public">
+    <compoundname>Faeterna::scenes::Personajes::DeadMovementState</compoundname>
+    <basecompoundref refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State" prot="public" virt="non-virtual">Faeterna.Scripts.Personaje.MaquinasDeEstados.State</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a6562641188059a85f08d6a121aec9075" prot="private" static="no" mutable="no">
+        <type>PlayerType</type>
+        <definition>PlayerType Faeterna.scenes.Personajes.DeadMovementState._player</definition>
+        <argsstring></argsstring>
+        <name>_player</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState._player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="9" column="28" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a71b3103a45679d4dd7c459240f31e961" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Faeterna.scenes.Personajes.DeadMovementState._hasLanded</definition>
+        <argsstring></argsstring>
+        <name>_hasLanded</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState._hasLanded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="10" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a8e5d88e79f0b941f2d62258bfc40b469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scenes.Personajes.DeadMovementState.Ready</definition>
+        <argsstring>()</argsstring>
+        <name>Ready</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState.Ready</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a128572917f81f14a236ec0989ade6890">Ready</reimplements>
+        <briefdescription>
+<para>Se invoca una sola vez cuando se inicializa el nodo/estado. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="12" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a034251812e5808f7d5d0eb63ca909a7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scenes.Personajes.DeadMovementState.Enter</definition>
+        <argsstring>()</argsstring>
+        <name>Enter</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState.Enter</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a443935b5e540f1bf566b43b57e2e094a">Enter</reimplements>
+        <briefdescription>
+<para>Se invoca cuando el estado empieza (se entra en él). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="17" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="17" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1af44a7a18c961c7a55c9226c8c5d17047" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scenes.Personajes.DeadMovementState.Update</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState.Update</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aad15c487331647712da5e1be9e15fa53">Update</reimplements>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Actualización por frame (non-physics). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Delta en segundos. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tiempo en segundos desde el último frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="31" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="31" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1adc8863a1b3ad7e176e07ea9904c164a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Faeterna.scenes.Personajes.DeadMovementState.HandleInput</definition>
+        <argsstring>(InputEvent ev)</argsstring>
+        <name>HandleInput</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState.HandleInput</qualifiedname>
+        <reimplements refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1ab03b6aae5723f4e943269af95c89fc68">HandleInput</reimplements>
+        <param>
+          <type>InputEvent</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Procesa eventos de entrada no manejados (unhandled input). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Evento de entrada recibido.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="66" column="30" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="66" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1afd8a1d53644a79af709e7a13e35819f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Faeterna.scenes.Personajes.DeadMovementState.TriggerDeathOnGround</definition>
+        <argsstring>()</argsstring>
+        <name>TriggerDeathOnGround</name>
+        <qualifiedname>Faeterna.scenes.Personajes.DeadMovementState.TriggerDeathOnGround</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="49" column="22" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="49" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Faeterna.scenes.Personajes.DeadMovementState</label>
+        <link refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Faeterna.scenes.Personajes.DeadMovementState</label>
+        <link refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.MovementStateMachine</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1Movimiento_1_1MovementStateMachine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Faeterna.Scripts.Personaje.MaquinasDeEstados.State</label>
+        <link refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>stateMachine</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" line="7" column="19" bodyfile="scripts/Personaje/MaquinasDeEstados/Movimiento/States/DeadMovementState.cs" bodystart="8" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a71b3103a45679d4dd7c459240f31e961" prot="private" virt="non-virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>_hasLanded</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a6562641188059a85f08d6a121aec9075" prot="private" virt="non-virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>_player</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a034251812e5808f7d5d0eb63ca909a7c" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>Enter</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1afb1cff1c39771de8e16126cd4f10f31e" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>Exit</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1adc8863a1b3ad7e176e07ea9904c164a9" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>HandleInput</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1a8e5d88e79f0b941f2d62258bfc40b469" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>Ready</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1aba815a9ea10fdc53db6e843b685599fb" prot="public" virt="non-virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>stateMachine</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1afd8a1d53644a79af709e7a13e35819f9" prot="private" virt="non-virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>TriggerDeathOnGround</name></member>
+      <member refid="classFaeterna_1_1scenes_1_1Personajes_1_1DeadMovementState_1af44a7a18c961c7a55c9226c8c5d17047" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>Update</name></member>
+      <member refid="classFaeterna_1_1Scripts_1_1Personaje_1_1MaquinasDeEstados_1_1State_1a18c32aba3d168feed8574938ca126c6e" prot="public" virt="virtual"><scope>Faeterna::scenes::Personajes::DeadMovementState</scope><name>UpdatePhysics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

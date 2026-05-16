@@ -1,0 +1,5 @@
+<map id="Faeterna.Scripts.Enemigos.Slime.Slime._Ready" name="Faeterna.Scripts.Enemigos.Slime.Slime._Ready">
+<area shape="rect" id="Node000001" title="Inicialización del slime." alt="" coords="5,5,204,50"/>
+<area shape="rect" id="Node000002" href="$classFaeterna_1_1Scripts_1_1Enemigos_1_1Enemy.html#a3bb76d736ca9e636de7dda814e0c17e3" title="Reproduce una animación en el sprite del enemigo." alt="" coords="252,5,450,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,25,238,27,233,28,204,30"/>
+</map>
