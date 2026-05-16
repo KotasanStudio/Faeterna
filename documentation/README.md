@@ -14,7 +14,7 @@ Bienvenido a la documentación generada por **Doxygen** para el proyecto **Faete
 
 ## Estructura del Proyecto
 
-El proyecto Faeterna está organizado en los siguientes módulos:
+El proyecto Faeterna es un **metroidvania 2.5D** desarrollado en C# con Godot 4.6. Está organizado en los siguientes módulos:
 
 ### Personaje (`Scripts/Personaje`)
 - **Lira.cs** - Clase principal del jugador
@@ -81,8 +81,9 @@ doxygen Doxyfile
 
 - **Nombre:** Faeterna
 - **Versión:** 1.0.0
+- **Género:** Metroidvania 2.5D
 - **Motor:** Godot 4.x con C#
-- **Tipo:** Videojuego de plataformas 2D
+- **Lenguaje:** C#
 
 ---
 

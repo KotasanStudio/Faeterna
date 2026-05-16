@@ -170,5 +170,5 @@ Para mejorar aún más la documentación:
 
 **Documentación generada:** 16/05/2026  
 **Herramienta:** Doxygen 1.16.1  
-**Motor del proyecto:** Godot 4.x + C#
+**Motor del proyecto:** Godot 4.6 + C# (Metroidvania 2.5D)
 

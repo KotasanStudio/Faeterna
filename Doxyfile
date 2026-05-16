@@ -2,8 +2,8 @@
 
 PROJECT_NAME           = "Faeterna"
 PROJECT_NUMBER         = "1.0.0"
-PROJECT_BRIEF          = "Un juego de plataformas 2D en C# con Godot"
-PROJECT_LOGO           = "icon.svg"
+PROJECT_BRIEF          = "Un metroidvania 2.5D en C# con Godot"
+PROJECT_LOGO           = "assets/Icono y Cursor/LogoApp256.svg"
 
 INPUT                  = scripts/ scripts/Enemigos scripts/Mapa scripts/Menus scripts/Personaje scripts/Tools scripts/Tutorial scripts/Shaders scripts/Personaje/MaquinasDeEstados
 INPUT_ENCODING         = UTF-8

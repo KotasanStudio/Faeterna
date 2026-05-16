@@ -3,8 +3,8 @@
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[Faeterna]]></value></option>
   <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[1.0.0]]></value></option>
-  <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["Un juego de plataformas 2D en C# con Godot"]]></value></option>
-  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[icon.svg]]></value></option>
+  <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["Un metroidvania 2.5D en C# con Godot"]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA["assets/Icono y Cursor/LogoApp256.svg"]]></value></option>
   <option  id='PROJECT_ICON' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[./documentation]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
