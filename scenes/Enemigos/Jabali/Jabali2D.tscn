@@ -336,7 +336,6 @@ material = SubResource("ShaderMaterial_oa5ie")
 scale = Vector2(1.5, 1.5)
 collision_layer = 4
 script = ExtResource("1_y6bk4")
-_currentDirection = -1
 _loadAttackTimer = NodePath("DetectionArea/LoadAttackTimer")
 _deathAnimationTimer = NodePath("DeathAnimationTimer")
 _dashTimer = NodePath("DashTimer")
@@ -356,7 +355,9 @@ attackHitBox = NodePath("AttackHitBox")
 material = SubResource("ShaderMaterial_bhf6x")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
-animation = &"idle"
+animation = &"loadAttack"
+frame = 3
+frame_progress = 0.4223448
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185611458]
 position = Vector2(5.5199914, 2.4128647e-07)
@@ -402,7 +403,8 @@ target_position = Vector2(0, 62)
 one_shot = true
 
 [node name="DashTimer" type="Timer" parent="." unique_id=2014169799]
-wait_time = 3.0
+wait_time = 2.0
+one_shot = true
 
 [node name="jabaliAudio" type="AudioStreamPlayer2D" parent="." unique_id=1204025287]
 stream = SubResource("AudioStream_bhf6x")

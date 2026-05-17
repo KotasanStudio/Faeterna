@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using Faeterna.Scripts.Enemigos;
 using Faeterna.Scripts.Personaje;
 using Godot;
@@ -15,11 +16,11 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <summary>Duración del dash del jabalí en segundos.</summary>
         private float _dashDuration = 2f;
 
-        /// <summary>Indica si el jabalí está actualmente en estado de dash/carrera.</summary>
+        /// <summary>Indica si el jabalí está actualmente en estado de cargar ataque.</summary>
         private bool _isDashing = false;
 
-        /// <summary>Indica si el jabalí está cargando su ataque especial.</summary>
-        private bool _isChargingAttack = false;
+        /// <summary>Indica si el jabalí está actualmente en estado de cargar ataque.</summary>
+        private bool _isloadAttack = false;
 
         /// <summary>Indica si el jabalí está contra una pared.</summary>
         private bool _isWall = true;
@@ -39,15 +40,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <summary>Material de shader utilizado para efectos visuales de daño.</summary>
         private ShaderMaterial _shaderMaterial;
 
-        /// <summary>Enumeración para las direcciones del jabalí.</summary>
-        private enum enemyDirection
-        {
-            Left = -1,
-            Right = 1
-        }
-
-        /// <summary>Dirección inicial del jabalí. Se asigna desde el editor.</summary>
-        [Export] private enemyDirection _currentDirection = enemyDirection.Right;
 
         [ExportGroup("Timers")]
         /// <summary>Timer que controla la duración de la carga de ataque antes del dash. Se asigna desde el editor.</summary>
@@ -78,14 +70,15 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// </summary>
         public override void _Ready()
         {
-            
-            if(_runAudio==null)
+
+            if (_runAudio == null)
                 _runAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarRun.wav");
 
-            if(_hitAudio==null)
+            if (_hitAudio == null)
                 _hitAudio = GD.Load<AudioStream>("res://assets/Audio/Jabali/BoarJump.wav");
 
-            flipHJabali(_currentDirection == enemyDirection.Right ? 1 : -1);
+            if (flipSprite)
+                flipHJabali();
             _dashTimer.Start();
             _shaderMaterial = (ShaderMaterial)animatedSprite.Material;
             SetAnimation("idle");
@@ -105,34 +98,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
 
             if (!IsOnFloor())
                 velocity.Y += Gravity * (float)delta;
-            else
-            {
-
-                flipHJabali(_dashDirection);
-
-                if (_isChargingAttack)
-                {
-                    velocity.X = 0;
-                    SetAnimation("loadAttack");
-                }
-                else if (_isDashing)
-                {
-                    velocity.X = _dashDirection * dashSpeed;
-
-                    SetAnimation("run");
-                    groundCheck.ForceRaycastUpdate();
-
-                    if (!groundCheck.IsColliding() && target == null)
-                    {
-                        StopDash(ref velocity);
-                    }
-                }
-                else
-                {
-                    velocity.X = 0;
-                    SetAnimation("idle");
-                }
-            }
 
             if (_knockbackTimer > 0f)
             {
@@ -148,35 +113,58 @@ namespace Faeterna.scripts.Enemigos.Jabali
             MoveAndSlide();
         }
 
+        public override void _Process(double delta)
+        {
+            if (_isDead)
+            {
+                SetAnimation("die");
+                return;
+            }
+            if (_isDashing)
+            {
+                _loadAttackTimer.Stop();
+                SetAnimation("run");
+            }
+            else if (_isloadAttack)
+            {
+                _dashTimer.Stop();
+                SetAnimation("loadAttack");
+            }
+            else
+            {
+                SetAnimation("idle");
+            }
+        }
+
         /// <summary>
         /// Maneja el timeout del timer de dash automático. Inicia el dash, espera su duración,
         /// y luego determina la siguiente dirección (aleatorio o rebote en pared).
         /// </summary>
         private async void OnDashTimerTimeout()
         {
-            if (!IsOnFloor())
-                return;
+            GD.Print("dash timer out");
 
-            _isDashing = true;
+            Velocity = Vector2.Zero;
+            _isDashing = false;
 
-            await ToSignal(
-                GetTree().CreateTimer(_dashDuration),
-                "timeout"
-            );
+            if (target != null)
+            {
+                _loadAttackTimer.Start();
+            }else flipHJabali();
 
-            if(IsOnWall()){
+            if (IsOnWall())
+            {
                 float directionX = GlobalPosition.X * -1;
                 Velocity = new Vector2(directionX * 250f, -200f);
-                _dashDirection *=-1;
-                flipHJabali(_dashDirection);
+                _dashDirection *= -1;
+                flipHJabali();
 
-            }else{
-                Random _rng = new Random();
-                _dashDirection = (int)(_rng.Next(0, 2) == 0
-                ? enemyDirection.Left
-                : enemyDirection.Right);
             }
-            _isDashing = false;
+            else
+            {
+                Random _rng = new Random();
+                _dashDirection = _rng.Next(0, 2) == 0 ? 1 : -1;
+            }
         }
 
         /// <summary>
@@ -185,49 +173,36 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// </summary>
         public void _on_load_attack_timer_timeout()
         {
+            GD.Print("load attack timer out");
+
             if (_target == null || !IsOnFloor())
                 return;
 
-            _isChargingAttack = false;
-            _isDashing = true;
-            if(target!=null)playAudio(_runAudio);
-
+            _isloadAttack = false;
+            if (target != null)
+                playAudio(_runAudio);
 
             float directionX =
                 Mathf.Sign(_target.GlobalPosition.X - GlobalPosition.X);
 
-            if (directionX == 0)
-                directionX = 1;
-
             _dashDirection = (int)directionX;
 
-            flipHJabali(directionX);
-        }
-
-        /// <summary>
-        /// Detiene el dash del jabalí, establece la velocidad a cero y reinicia el timer de dash automático.
-        /// </summary>
-        /// <param name="velocity">Velocidad actual del jabalí (se modifica por referencia).</param>
-        private void StopDash(ref Vector2 velocity)
-        {
-            _isDashing = false;
-
-            velocity.X = 0;
-
-            SetAnimation("idle");
-
+            _isDashing = true;
+            Velocity = new Vector2(directionX * dashSpeed, Velocity.Y);
             _dashTimer.Start();
         }
+
 
         /// <summary>
         /// Voltea el sprite y ajusta la posición del raycast y área de detección según la dirección.
         /// </summary>
-        /// <param name="directionX">Dirección horizontal (positiva = derecha, negativa = izquierda).</param>
-        private void flipHJabali(float directionX)
+
+        private void flipHJabali()
         {
-            animatedSprite.FlipH = directionX < 0;
-            groundCheck.Position = new Vector2(Mathf.Abs(groundCheck.Position.X) * directionX, groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            detectionArea.Position = new Vector2(156.25f * directionX, 0); // Ajusta el área de detección
+            _dashDirection *= -1;
+            animatedSprite.FlipH = _dashDirection < 0;
+            groundCheck.Position = new Vector2(Mathf.Abs(groundCheck.Position.X) * _dashDirection, groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
+            detectionArea.Position = new Vector2(156.25f * _dashDirection, 0); // Ajusta el área de detección
         }
 
         /// <summary>
@@ -247,20 +222,23 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="area">Área que colisionó con el hurtbox.</param>
         private void OnHurtBoxAreaEntered(Area2D area)
         {
-            if (_isDead) return;
-            if (area.Name == "KickHitbox" && area.GetParent() is Lira lira){
+            if (_isDead)
+                return;
+            if (area.Name == "KickHitbox" && area.GetParent() is Lira lira)
+            {
                 TakeDamage(1, lira.GlobalPosition);
                 if (lira.GlobalPosition.X > GlobalPosition.X)
                 {
-                    flipHJabali(1); // Voltea hacia la derecha
+                    flipHJabali(); // Voltea hacia la derecha
                 }
                 else
                 {
                     // Lira está a la izquierda, aplica knockback hacia la derecha
                     Velocity = new Vector2(250f, -200f);
-                }}
+                }
+            }
             if (area is Shot shot)
-                TakeDamage((int)(shot.Scale.X*1.5f), shot.GlobalPosition);
+                TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
         }
 
         /// <summary>
@@ -277,22 +255,21 @@ namespace Faeterna.scripts.Enemigos.Jabali
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
 
+            if (!_isloadAttack && !_isDashing)
+                flipHJabali();
 
             if (health <= 0)
             {
+                _loadAttackTimer.Stop();
+                _dashTimer.Stop();
                 desactiveCollision();
                 _isDead = true;
                 Velocity = Vector2.Zero;
-                _isDashing = false;
-                _isChargingAttack = false;
-                _dashTimer.Stop();
-                _loadAttackTimer.Stop();
-                SetAnimation("die");
                 // Espera a que termine la animación de muerte antes de eliminar
                 _deathAnimationTimer.Start();
                 return;
             }
-            _isDashing = false;
+
             _knockbackTimer = KnockbackDuration;
         }
 
@@ -322,15 +299,13 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="prota">Nodo que entró en el área de detección.</param>
         public void _on_detection_area_body_entered(Node2D prota)
         {
+            GD.Print("body entered");
             if (prota is Lira lira)
             {
                 Velocity = Vector2.Zero;
-                _target = lira;
-                _dashTimer.Stop();
-                _isDashing = false;
-                Velocity = Vector2.Zero;
-                _isChargingAttack = true;
                 SetAnimation("loadAttack");
+                _target = lira;
+                _isloadAttack = true;
                 _loadAttackTimer.Start();
             }
 
@@ -343,10 +318,27 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="prota">Nodo que salió del área de detección.</param>
         public void _on_detection_area_body_exited(Node2D prota)
         {
-            if (prota is Lira)
+
+            GD.Print("body exited");
+
+
+            target = null;
+            if (prota is Lira lira)
             {
-                if (!_isDead)
-                    _dashTimer.Start();
+                Timer wait = new Timer
+                {
+                    WaitTime = 1f,
+                    OneShot = true
+                };
+                AddChild(wait);
+
+                wait.Timeout += () =>
+                {
+
+                    Velocity = Vector2.Zero;
+                };
+
+                wait.Start();
             }
         }
     }
