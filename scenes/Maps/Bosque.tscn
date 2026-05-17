@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="22_clm75"]
 [ext_resource type="PackedScene" uid="uid://cxbgresi8kvbh" path="res://scenes/Enemigos/ReyJabali/boss_area.tscn" id="23_ta6li"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="24_hn01x"]
-[ext_resource type="PackedScene" uid="uid://dxc8at77ej36c" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
+[ext_resource type="PackedScene" uid="uid://c6c8qeq4bois2" path="res://scenes/Maps/Objeto.tscn" id="25_snqwn"]
 [ext_resource type="AudioStream" uid="uid://ea51x71avsg4" path="res://assets/Audio/Background Music.mp3" id="26_tbcfi"]
 [ext_resource type="PackedScene" uid="uid://b5dfghgf6tja0" path="res://scenes/Maps/portal.tscn" id="27_q85yk"]
 
@@ -595,7 +595,7 @@ animations = [{
 script = ExtResource("1_lnic0")
 _backgroundMusic = NodePath("bosqueBackGroundAudio")
 
-[node name="Bosque" parent="." unique_id=643411856 instance=ExtResource("1_xyya0")]
+[node name="Bosque" parent="." unique_id=2096149889 instance=ExtResource("1_xyya0")]
 scale = Vector2(1.5, 1.5)
 
 [node name="CheckPoint\'s" type="Node2D" parent="." unique_id=1898015650]
@@ -1101,7 +1101,7 @@ bus = &"Music"
 parameters/looping = true
 
 [node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(7699, 2573)
+position = Vector2(1608, 1715)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
 position = Vector2(9911, 413)

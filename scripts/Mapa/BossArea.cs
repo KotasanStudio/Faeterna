@@ -1,6 +1,7 @@
 using Godot;
 using Faeterna.scripts.Enemigos.ReyJabali;
 using Faeterna.Scripts.Personaje;
+using System;
 
 namespace Faeterna.scripts.Mapa
 {
@@ -64,7 +65,17 @@ namespace Faeterna.scripts.Mapa
 			_backgroundAudioPLayer.Stream = _backgroundAudio;
 			_backgroundAudioPLayer.Play();
 
+		}
+		public void _on_body_exited(Node2D body)
+		{
 
+			if(body is not Lira)
+			return;
+
+			CollisionLayer = 0;
+			CollisionMask = 0;
+			_backgroundAudioPLayer.Stream = GD.Load<AudioStream>("res://assets/Audio/Background Music.mp3");
+			_backgroundAudioPLayer.Play();
 		}
 
 		/// <summary>

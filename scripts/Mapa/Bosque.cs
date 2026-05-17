@@ -18,15 +18,6 @@ public partial class Bosque : Node2D
     /// </summary>
     public override void _Ready()
     {
-        if (_backgroundMusic != null)
-        {
-            _backgroundMusic.Play();
-        }
-        else
-        {
-            GD.PrintErr("AudioStreamPlayer2D para música de fondo no asignado en Bosque");
-            _backgroundMusic = GetNode<AudioStreamPlayer>("bosqueBackGroundAudio");
-        }
     }
 
     /// <summary>

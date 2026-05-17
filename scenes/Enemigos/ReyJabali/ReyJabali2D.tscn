@@ -315,7 +315,7 @@ size = Vector2(40, 81.172806)
 size = Vector2(78.82719, 35.00113)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fgxyp"]
-size = Vector2(79.41347, 35.858284)
+size = Vector2(85.333336, 37.59581)
 
 [node name="ReyJabali" type="CharacterBody2D" unique_id=477752749 node_paths=PackedStringArray("_attackHitBox", "_hurtBox", "_dashTimer", "_loadAttackTimer", "_deathAnimationTimer", "animatedSprite", "audioPlayer", "hurtBox", "attackHitBox")]
 texture_filter = 1
@@ -331,7 +331,7 @@ _deathAnimationTimer = NodePath("DeathAnimationTimer")
 _jumpAudio = ExtResource("2_3o2so")
 _hitAudio = ExtResource("2_3o2so")
 _runAudio = ExtResource("3_3o2so")
-health = 40
+health = 30
 dashSpeed = 400.0
 jumpVelocity = -400.0
 animatedSprite = NodePath("AnimatedSprite2D")
@@ -369,7 +369,7 @@ collision_layer = 64
 collision_mask = 136
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=264853621]
-position = Vector2(8, 0.33333334)
+position = Vector2(8.333332, -0.53542966)
 shape = SubResource("RectangleShape2D_fgxyp")
 debug_color = Color(1, 1, 0, 0.14901961)
 
