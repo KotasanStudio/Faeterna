@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
-  <compounddef id="namespaceFaeterna_1_1Scripts_1_1Mapa" kind="namespace" language="C#">
-    <compoundname>Faeterna::Scripts::Mapa</compoundname>
-    <innerclass refid="classFaeterna_1_1Scripts_1_1Mapa_1_1Portal" prot="public">Faeterna::Scripts::Mapa::Portal</innerclass>
+  <compounddef id="namespaceFaeterna_1_1scripts_1_1Mapa" kind="namespace" language="C#">
+    <compoundname>Faeterna::scripts::Mapa</compoundname>
+    <innerclass refid="classFaeterna_1_1scripts_1_1Mapa_1_1BossArea" prot="public">Faeterna::scripts::Mapa::BossArea</innerclass>
+    <innerclass refid="classFaeterna_1_1scripts_1_1Mapa_1_1Objeto" prot="public">Faeterna::scripts::Mapa::Objeto</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="scripts/Mapa/Portal.cs" line="7" column="1"/>
+    <location file="scripts/Mapa/BossArea.cs" line="5" column="1"/>
   </compounddef>
 </doxygen>

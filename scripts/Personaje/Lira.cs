@@ -101,11 +101,18 @@ namespace Faeterna.Scripts.Personaje
         private bool _tutorial = false;
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        public bool _haveDobleJump { get; set;} = false;
+        public bool _haveDobleJump
+        {
+            get => LiraInventory.dobleJump;
+            set => LiraInventory.dobleJump = value;
+        }
 
         /// <summary>Flags de habilidades. Estas variables indican si el personaje ha adquirido ciertas habilidades (doble salto, dash) a lo largo del juego. Son usadas por la máquina de estados para determinar qué acciones están disponibles para el jugador en cada momento. Aunque podrían ser parte de un sistema de progresión más complejo, en este caso se manejan directamente en el personaje para simplificar su acceso desde los estados de movimiento.</summary>
-        public bool _haveDash { get; set;} = false;
-
+        public bool _haveDash
+        {
+            get => LiraInventory.dash;
+            set => LiraInventory.dash = value;
+        }
         /// <summary>Referencias a nodos de la interfaz y otros elementos relacionados con la salud, maná, muerte y descripción de objetos. Estos nodos se asignan desde el editor y se usan para actualizar visualmente la interfaz (corazones, barra de maná) y mostrar pantallas de muerte o descripciones de objetos cuando sea necesario. Aunque podrían estar gestionados por un sistema de UI separado, en este caso se incluyen directamente en el personaje para facilitar su acceso desde los estados de movimiento y otros métodos del personaje.</summary>
         [Export] public DeathScreen  _deathScreen;
 
