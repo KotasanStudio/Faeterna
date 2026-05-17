@@ -326,7 +326,7 @@ size = Vector2(40, 84.2222)
 size = Vector2(90, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14cm0"]
-size = Vector2(409.83334, 103.333336)
+size = Vector2(409.83334, 84)
 
 [sub_resource type="AudioStream" id="AudioStream_bhf6x"]
 
@@ -379,7 +379,7 @@ collision_layer = 32
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1887027826]
-position = Vector2(204.41667, 7.666668)
+position = Vector2(236, 16)
 shape = SubResource("RectangleShape2D_14cm0")
 debug_color = Color(1, 0, 0, 0.13333334)
 

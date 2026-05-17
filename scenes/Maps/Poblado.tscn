@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://pcul87tmeir8"]
 
 [ext_resource type="PackedScene" uid="uid://bfmip8vxtep10" path="res://scenes/Maps/Poblado.tmx" id="1_khiku"]
+[ext_resource type="Script" uid="uid://bqt18lj2uxfre" path="res://scripts/Mapa/Poblado.cs" id="1_y5fif"]
 [ext_resource type="PackedScene" uid="uid://dfndf3mqrnif5" path="res://scenes/Personajes/Lira2D.tscn" id="2_natxa"]
 [ext_resource type="PackedScene" uid="uid://csnmj3dpkpis4" path="res://scenes/Enemigos/Wolf/wolf_2d.tscn" id="3_tesvt"]
 [ext_resource type="PackedScene" uid="uid://s8s5wjp1vkr7" path="res://scenes/Enemigos/Jabali/Jabali2D.tscn" id="4_cl58p"]
@@ -56,6 +57,7 @@ fill_from = Vector2(0.5, 0.029411765)
 fill_to = Vector2(0, 0.12352941)
 
 [node name="Poblado" type="Node2D" unique_id=787324181]
+script = ExtResource("1_y5fif")
 
 [node name="Poblado" parent="." unique_id=1416380427 instance=ExtResource("1_khiku")]
 z_index = -1

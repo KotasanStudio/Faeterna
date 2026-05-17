@@ -202,7 +202,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             _dashDirection *= -1;
             animatedSprite.FlipH = _dashDirection < 0;
             groundCheck.Position = new Vector2(Mathf.Abs(groundCheck.Position.X) * _dashDirection, groundCheck.Position.Y); // Ajusta la posición del raycast según la dirección
-            detectionArea.Position = new Vector2(156.25f * _dashDirection, 0); // Ajusta el área de detección
+            detectionArea.Position = new Vector2(158f * _dashDirection, 0); // Ajusta el área de detección
         }
 
         /// <summary>
