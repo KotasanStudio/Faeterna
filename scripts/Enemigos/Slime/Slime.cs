@@ -190,7 +190,7 @@ namespace Faeterna.Scripts.Enemigos.Slime
                 TakeDamage(1, lira.GlobalPosition);
 
             if (area is Shot shot)
-                TakeDamage((int)shot.Scale.X, shot.GlobalPosition);
+                TakeDamage((int)(shot.Scale.X *1.5f+1), shot.GlobalPosition);
         }
 
         /// <summary>

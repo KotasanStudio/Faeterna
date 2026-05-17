@@ -1065,10 +1065,10 @@ flipSprite = true
 position = Vector2(7090, 2504)
 
 [node name="Wolf2D2" parent="Enemys" unique_id=758186489 instance=ExtResource("22_clm75")]
-position = Vector2(7737, 1505)
+position = Vector2(8514, 1463)
 
 [node name="Slime2D5" parent="Enemys" unique_id=1241965840 instance=ExtResource("21_2jxkj")]
-position = Vector2(8738, 1346)
+position = Vector2(7891, 1492)
 
 [node name="Slime2D6" parent="Enemys" unique_id=1852253628 instance=ExtResource("21_2jxkj")]
 position = Vector2(8223, 1108)

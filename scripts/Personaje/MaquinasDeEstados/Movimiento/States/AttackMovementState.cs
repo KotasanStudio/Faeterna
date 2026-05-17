@@ -16,8 +16,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
         public override void Ready()
         {
             _player = (PlayerType)GetTree().GetFirstNodeInGroup("Lira");
-            if (_player == null) return;
-
             _attackHitBox = _player.GetNodeOrNull<Area2D>("KickHitbox");
             _animPlayer   = _player.GetNodeOrNull<AnimationPlayer>("AnimationPlayer");
 
@@ -28,7 +26,6 @@ namespace Faeterna.Scripts.Personaje.MaquinasDeEstados.Movimiento.States
 
         public override void Enter()
         {
-            if (_player == null) return;
             _player.PlayAudio("attack");
 
             _player.SetAnimation("kick");

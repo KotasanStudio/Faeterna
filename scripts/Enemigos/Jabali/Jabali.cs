@@ -150,7 +150,9 @@ namespace Faeterna.scripts.Enemigos.Jabali
             if (target != null)
             {
                 _loadAttackTimer.Start();
-            }else flipHJabali();
+            }
+            else
+                flipHJabali();
 
             if (IsOnWall())
             {
@@ -229,7 +231,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
                 TakeDamage(1, lira.GlobalPosition);
             }
             if (area is Shot shot)
-                TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
+                TakeDamage((int)(shot.Scale.X * 1.5f + 1), shot.GlobalPosition);
         }
 
         /// <summary>
@@ -239,15 +241,15 @@ namespace Faeterna.scripts.Enemigos.Jabali
         /// <param name="globalPosition">Posición del atacante, utilizada para determinar dirección del knockback.</param>
         private void TakeDamage(int v, Vector2 globalPosition)
         {
+
+            if (!_isloadAttack && !_isDashing)
+                flipHJabali();
             health -= v;
             hitShader(_shaderMaterial);
             playAudio(_hitAudio);
             // Dirección opuesta al atacante + mini salto
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
-
-            if ((!_isloadAttack && !_isDashing) || target==null)
-                flipHJabali();
 
             if (health <= 0)
             {

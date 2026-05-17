@@ -391,7 +391,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
       }
       else if (area is Shot shot)
       {
-        TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
+        TakeDamage((int)(shot.Scale.X * 1.5f+1), shot.GlobalPosition);
       }
 
       if (target != null)

@@ -75,6 +75,9 @@ namespace Faeterna.Scripts.Menus
     /// </summary>
     private static bool _itemsCargados;
 
+    private Timer _wait;
+    private bool _canBeSkip = false;
+
     /// <summary>
     /// Inicializa el nodo, enlaza referencias si faltan y carga el item correspondiente.
     /// </summary>
@@ -82,6 +85,10 @@ namespace Faeterna.Scripts.Menus
     {
       EnlazarNodosSiHaceFalta();
       CargarDatosDelItem();
+
+      _wait = new Timer { WaitTime = 1f, OneShot = true };
+      AddChild(_wait);
+      _wait.Timeout += () => { _canBeSkip = true; };
     }
 
     /// <summary>
@@ -268,7 +275,9 @@ namespace Faeterna.Scripts.Menus
       {
         EnlazarNodosSiHaceFalta();
         _itemId = itemId;
+        _canBeSkip = false;
         CargarDatosDelItem();
+        _wait?.Start();
       }
     }
 
@@ -279,7 +288,7 @@ namespace Faeterna.Scripts.Menus
     public override void _Input(InputEvent ev)
     {
       // Solo si el menú es visible y presionan una tecla
-      if (Visible && ev is InputEventKey { Pressed: true })
+      if (Visible && ev is InputEventKey { Pressed: true } && _canBeSkip)
       {
         ChangeVisibility(false, _itemId);
         GetTree().Paused = false;

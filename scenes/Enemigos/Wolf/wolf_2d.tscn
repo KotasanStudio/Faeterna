@@ -202,7 +202,7 @@ script = ExtResource("1_loqlb")
 _runAudio = ExtResource("2_cbsxq")
 _hitAudio = ExtResource("3_texvx")
 _attackAudio = ExtResource("4_texvx")
-health = 3
+health = 5
 dashSpeed = 200.0
 animatedSprite = NodePath("AnimatedSprite2D")
 dashDuration = 2.0
@@ -215,7 +215,6 @@ hurtBox = NodePath("Hurtbox")
 attackHitBox = NodePath("AttackHitBox")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1909023128]
-light_mask = 4
 material = SubResource("ShaderMaterial_uh525")
 position = Vector2(8, -18)
 sprite_frames = SubResource("SpriteFrames_60w7s")
