@@ -263,7 +263,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6sflo"]
-size = Vector2(36, 685)
+size = Vector2(36, 1776.7964)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ta6li"]
 atlas = ExtResource("13_41jso")
@@ -1035,8 +1035,9 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Turotial Combate/Area2D" unique_id=1652764419]
-position = Vector2(0.5, 98.5)
+position = Vector2(386.5083, -287.5083)
 rotation = 0.7853982
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_6sflo")
 
 [node name="Enemys" type="Node2D" parent="." unique_id=1084485302]
@@ -1095,7 +1096,7 @@ bus = &"Music"
 parameters/looping = true
 
 [node name="Lira" parent="." unique_id=265467911 instance=ExtResource("2_mbhmg")]
-position = Vector2(1608, 1715)
+position = Vector2(1603, 1748)
 
 [node name="Portal" parent="." unique_id=1535852739 instance=ExtResource("27_q85yk")]
 position = Vector2(9911, 413)

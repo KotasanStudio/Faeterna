@@ -410,9 +410,12 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
     /// <param name="sourcePosition">Posición del atacante para calcular la dirección del knockback.</param>
     private void TakeDamage(int amount, Vector2 sourcePosition)
     {
-      health -= amount;
-      hitShader(_shaderMaterial);
       playAudio(_hitAudio);
+      hitShader(_shaderMaterial);
+      GD.Print(health);
+      if(target==null) return;
+
+      health -= amount;
       if (health > 0)
         return;
 
@@ -478,6 +481,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
     {
       if (prota is Lira)
       {
+        health = 30;
         target = null;
         _isDashing = false;
         _isChargingAttack = false;

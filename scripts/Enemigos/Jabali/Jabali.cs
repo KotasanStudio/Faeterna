@@ -227,15 +227,6 @@ namespace Faeterna.scripts.Enemigos.Jabali
             if (area.Name == "KickHitbox" && area.GetParent() is Lira lira)
             {
                 TakeDamage(1, lira.GlobalPosition);
-                if (lira.GlobalPosition.X > GlobalPosition.X)
-                {
-                    flipHJabali(); // Voltea hacia la derecha
-                }
-                else
-                {
-                    // Lira está a la izquierda, aplica knockback hacia la derecha
-                    Velocity = new Vector2(250f, -200f);
-                }
             }
             if (area is Shot shot)
                 TakeDamage((int)(shot.Scale.X * 1.5f), shot.GlobalPosition);
@@ -255,7 +246,7 @@ namespace Faeterna.scripts.Enemigos.Jabali
             float directionX = GlobalPosition.X >= globalPosition.X ? 1.0f : -1.0f;
             Velocity = new Vector2(directionX * 250f, -200f);
 
-            if (!_isloadAttack && !_isDashing)
+            if ((!_isloadAttack && !_isDashing) || target==null)
                 flipHJabali();
 
             if (health <= 0)

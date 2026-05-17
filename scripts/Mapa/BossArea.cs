@@ -69,13 +69,13 @@ namespace Faeterna.scripts.Mapa
 		public void _on_body_exited(Node2D body)
 		{
 
-			if(body is not Lira)
-			return;
+			if(body is Lira)
+			{
 
-			CollisionLayer = 0;
-			CollisionMask = 0;
 			_backgroundAudioPLayer.Stream = GD.Load<AudioStream>("res://assets/Audio/Background Music.mp3");
 			_backgroundAudioPLayer.Play();
+			}
+
 		}
 
 		/// <summary>
@@ -83,7 +83,9 @@ namespace Faeterna.scripts.Mapa
 		/// </summary>
 		public void OnJabaliBossDeath()
 		{
-			GD.Print("Jabali Boss ha muerto. Activando dash item...");
+			GD.Print("Jabali Boss ha muerto. Activando dash item...");							
+			CollisionLayer = 0;
+			CollisionMask = 0;
 			_dashItem.Visible = true;
 		}
 
