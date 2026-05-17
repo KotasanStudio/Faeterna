@@ -218,6 +218,7 @@ namespace Faeterna.scripts.Enemigos.ReyJabali
           _isReturningHome = false;
           if (_isChargingAttack)
           {
+            velocity.X=0;
             _dashTimer.Stop();
             SetAnimation("loadAttack");
           }

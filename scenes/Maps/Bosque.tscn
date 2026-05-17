@@ -1047,14 +1047,11 @@ _dashItem = NodePath("../../Objetos/dash")
 _backgroundAudioPLayer = NodePath("../../bosqueBackGroundAudio")
 
 [node name="Slime2D" parent="Enemys" unique_id=1506886063 instance=ExtResource("21_2jxkj")]
-position = Vector2(4681, 1680)
+position = Vector2(4473, 1686)
 flipSprite = true
 
 [node name="Wolf2D" parent="Enemys" unique_id=477752749 instance=ExtResource("22_clm75")]
 position = Vector2(6523, 1705)
-
-[node name="Slime2D2" parent="Enemys" unique_id=2025676785 instance=ExtResource("21_2jxkj")]
-position = Vector2(5237, 1677)
 
 [node name="Slime2D3" parent="Enemys" unique_id=238747619 instance=ExtResource("21_2jxkj")]
 position = Vector2(6858, 1681)
@@ -1080,10 +1077,7 @@ position = Vector2(9609, 538)
 flipSprite = true
 
 [node name="Slime2D7" parent="Enemys" unique_id=252558400 instance=ExtResource("21_2jxkj")]
-position = Vector2(969, 4040)
-
-[node name="Slime2D8" parent="Enemys" unique_id=1550917027 instance=ExtResource("21_2jxkj")]
-position = Vector2(1750, 4037)
+position = Vector2(749, 4037)
 
 [node name="Objetos" type="Node2D" parent="." unique_id=1724352281]
 
